@@ -16,7 +16,8 @@ namespace JoshAaronMiller.INaturalist
         {
             HasPositionalAccuracy, IsCaptive, IsEndemic, IsGeoreferenced,
             IsIdentified, WasIntroduced, IsMappable, IsNative, IsOutOfRange, HasProjectId, HasPhotos,
-            IsPopular, HasSounds, IsTaxonActive, IsThreatened, IsVerifiable, IsLicensed, IsPhotoLicensed
+            IsPopular, HasSounds, IsTaxonActive, IsThreatened, IsVerifiable, IsLicensed,
+            IsPhotoLicensed, ReturnIdOnly
         };
 
         public static Dictionary<BooleanParameter, string> BoolParamToString = new Dictionary<BooleanParameter, string>() {
@@ -37,7 +38,8 @@ namespace JoshAaronMiller.INaturalist
         { BooleanParameter.IsThreatened, "threatened" },
         { BooleanParameter.IsVerifiable, "verifiable" },
         { BooleanParameter.IsLicensed, "licensed" },
-        { BooleanParameter.IsPhotoLicensed, "photo_licensed" }
+        { BooleanParameter.IsPhotoLicensed, "photo_licensed" },
+        { BooleanParameter.ReturnIdOnly, "only_id" }
     };
 
         public enum License
@@ -98,8 +100,44 @@ namespace JoshAaronMiller.INaturalist
         { IdentificationAgreement.None, "" },
         { IdentificationAgreement.MostAgree, "most_agree" },
         { IdentificationAgreement.MostDisagree, "most_disagree" },
-        { IdentificationAgreement.SomeAgree, "some_agree" },
+        { IdentificationAgreement.SomeAgree, "some_agree" }
     };
+
+        public enum SearchProperty
+        {
+            All, Names, Tags, Description, Place
+        }
+
+        public enum QualityGrade
+        {
+            None, Casual, NeedsId, Research
+        }
+
+        public static Dictionary<QualityGrade, string> QualityToString = new Dictionary<QualityGrade, string>()
+    {
+        { QualityGrade.None, "" },
+        { QualityGrade.Casual, "casual" },
+        { QualityGrade.NeedsId, "needs_id" },
+        { QualityGrade.Research, "research" }
+    };
+
+        public enum OrderBy
+        {
+            CreatedAt, ObservedOn, SpeciesGuess, Votes, Id
+        };
+
+        public static Dictionary<OrderBy, string> OrderByToString = new Dictionary<OrderBy, string>() {
+            { OrderBy.CreatedAt, "created_at"},
+            { OrderBy.ObservedOn, "observed_on"},
+            { OrderBy.SpeciesGuess, "species_guess"},
+            { OrderBy.Votes, "votes"},
+            { OrderBy.Id, "id"},
+        };
+
+        public enum SortOrder
+        {
+            Desc, Asc
+        };
 
 
         Dictionary<string, bool> boolParams = new Dictionary<string, bool>();
@@ -374,10 +412,10 @@ namespace JoshAaronMiller.INaturalist
         /// <summary>
         /// Limit the search to the project restrictions of the given project ID.
         /// </summary>
-        /// <param name="projecdtId">The project ID to base this restriction on.</param>
-        public void ApplyProjectRulesFor(int projecdtId)
+        /// <param name="projectId">The project ID to base this restriction on.</param>
+        public void ApplyProjectRulesFor(int projectId)
         {
-            stringParams["apply_project_rules_for"] = projecdtId.ToString();
+            stringParams["apply_project_rules_for"] = projectId.ToString();
         }
 
         /// <summary>
@@ -561,6 +599,114 @@ namespace JoshAaronMiller.INaturalist
             stringParams["swlng"] = swlng.ToString();
         }
 
+
+        public void SetListId()
+        {
+            throw new NotImplementedException();
+        }
+
+
+        /// <summary>
+        /// Require the observations to be not in this project ID.
+        /// </summary>
+        /// <param name="ids">Project ID to exclude</param>
+        public void ExcludeProjectId(int id)
+        {
+            stringParams["not_in_project"] = id.ToString();
+        }
+
+        /// <summary>
+        /// Limit the search to observations that don't match the rules of the given project ID.
+        /// </summary>
+        /// <param name="projectId">The project ID to base this restriction on.</param>
+        public void ExcludeProjectRulesFor(int projectId)
+        {
+            stringParams["not_matching_project_rules_for"] = projectId.ToString();
+        }
+
+
+        /// <summary>
+        /// Search observation properties matching the query.
+        /// </summary>
+        /// <param name="property">The search property to apply the query to.</param>
+        /// <param name="query">The search query.</param>
+        public void SearchOnProperties(SearchProperty property, string query)
+        {
+            stringParams["q"] = query;
+            if (property != SearchProperty.All) //defaults to all
+            {
+                stringParams["search_on"] = property.ToString().ToLower();
+            }
+        }
+
+        /// <summary>
+        /// Limit the search to observations of this quality grade.
+        /// </summary>
+        /// <param name="quality">The quality grade to search for.</param>
+        public void SetQualityGrade(QualityGrade quality)
+        {
+            if (quality != QualityGrade.None)
+            {
+                stringParams["quality_grade"] = QualityToString[quality];
+            }
+        }
+
+        public void SetUpdatedSince()
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Limit the search to observations that [have / have not] been reviewed by a given user.
+        /// </summary>
+        /// <param name="userId">The user ID to consider their review.</param>
+        /// <param name="hasReviewed">If true, only include observations they have reviewed. If false, only include observations they have not reviewed.</param>
+        public void SetReviewedByUser(int userId, bool hasReviewed)
+        {
+            stringParams["reviewed"] = hasReviewed.ToString().ToLower();
+            stringParams["viewer_id"] = userId.ToString();
+        }
+
+        public void SetLocalePreference()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SetPreferredPlaceId()
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Set the Cache-Control HTTP header with this value as max-age, in seconds.This means subsequent identical requests will be cached on iNaturalist servers, and commonly within web browsers
+        /// </summary>
+        /// <param name="timeToLive">The max-age of the request, in seconds.</param>
+        public void SetCacheControl(int timeToLive)
+        {
+            stringParams["ttl"] = timeToLive.ToString();
+        }
+
+        /// <summary>
+        /// Set the number of search results per page and which page to receive. For example, SetPagination(50,2) would return results 51-100.
+        /// </summary>
+        /// <param name="resultsPerPage">How many results to return per page (default 30).</param>
+        /// <param name="page">Which page of results to return (default 1).</param>
+        public void SetPagination(int resultsPerPage = 30, int page = 1)
+        {
+            stringParams["per_page"] = resultsPerPage.ToString();
+            stringParams["page"] = page.ToString();
+        }
+
+        /// <summary>
+        /// Set how the results are ordered. Defaults to created at date, descending.
+        /// </summary>
+        /// <param name="orderBy">The parameter to sort the order by.</param>
+        /// <param name="sortOrder">Whether to sort ascending or descending.</param>
+        public void SetOrder(OrderBy orderBy, SortOrder sortOrder)
+        {
+            stringParams["order"] = sortOrder.ToString().ToLower();
+            stringParams["order_by"] = OrderByToString[orderBy];
+        }
 
 
         /// <summary>
