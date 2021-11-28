@@ -11,9 +11,9 @@ namespace JoshAaronMiller.INaturalist
     [System.Serializable]
     public class Observation
     {
-        static readonly Regex PhotoNameRegex = new Regex("photos/(.*)/");
-
-        public enum ImageSize { Any /*Default*/, Square /*75x75*/, Small /*240x240*/, Medium /*500x500*/, Large /*1024x1024*/};
+        static readonly Regex PhotoIdRegex = new Regex("photos/(.*)/");
+        public enum ImageSize { Any /*Default*/, Square /*75x75*/, Small /*240x240*/, 
+            Medium /*500x500*/, Large /*1024x1024*/};
 
         public string quality_grade;
         public string time_observed_at;
@@ -94,10 +94,10 @@ namespace JoshAaronMiller.INaturalist
                 }
                 else
                 {
-
-                    // url comes as prefix/photos/id/some_size.ext
-                    // we want prefix/photos/id/our_size.ext
-                    //urls.Add(new url);
+                    //assume original URL uses square or medium size
+                    string newUrl = originalUrl.Replace("square", size.ToString().ToLower());
+                    newUrl = newUrl.Replace("medium", size.ToString().ToLower());
+                    urls.Add(newUrl);
                 }
             }
             return urls;
@@ -117,7 +117,7 @@ namespace JoshAaronMiller.INaturalist
             {
                 foreach (string url in urls)
                 {
-                    MatchCollection mc = PhotoNameRegex.Matches(url);
+                    MatchCollection mc = PhotoIdRegex.Matches(url);
                     if (mc.Count < 1)
                     {
                         Debug.LogWarning("Could not read photo ID from URL " + url);

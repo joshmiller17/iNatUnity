@@ -30,9 +30,9 @@ namespace JoshAaronMiller.INaturalist
             List<Observation> results = SearchObservations(os);
             foreach (Observation r in results)
             {
-                foreach (string url in r.GetFullResPhotoUrls())
+                foreach (string url in r.GetPhotoUrls(Observation.ImageSize.Large))
                 {
-                    Debug.Log(url);
+                    Debug.Log("url is " + url);
                 }
             }
         }
