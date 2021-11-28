@@ -13,6 +13,8 @@ namespace JoshAaronMiller.INaturalist
     {
         static readonly Regex PhotoNameRegex = new Regex("photos/(.*)/");
 
+        public enum ImageSize { Any /*Default*/, Square /*75x75*/, Small /*240x240*/, Medium /*500x500*/, Large /*1024x1024*/};
+
         public string quality_grade;
         public string time_observed_at;
         public string taxon_geoprivacy;
@@ -76,62 +78,43 @@ namespace JoshAaronMiller.INaturalist
         public List<Identification> identifications;
 
         /// <summary>
-        /// Return all URLs of square-shaped photos from this observation.
+        /// Return all URLs of given size from this observation.
         /// </summary>
         /// <returns>List of URL strings.</returns>
-        public List<string> GetSquarePhotoUrls()
+        public List<string> GetPhotoUrls(ImageSize size)
         {
             List<string> urls = new List<string>();
             foreach (Photo p in photos)
             {
-                urls.Add(p.square_url);
+                string originalUrl = p.url;
+                if (size == ImageSize.Any)
+                {
+                    urls.Add(originalUrl);
+                    continue;
+                }
+                else
+                {
+
+                    // url comes as prefix/photos/id/some_size.ext
+                    // we want prefix/photos/id/our_size.ext
+                    //urls.Add(new url);
+                }
             }
             return urls;
         }
 
-        /// <summary>
-        /// Return all URLs of full-resolution photos from this observation.
-        /// </summary>
-        /// <returns>List of URL strings.</returns>
-        public List<string> GetFullResPhotoUrls()
-        {
-            List<string> urls = new List<string>();
-            foreach (Photo p in photos)
-            {
-                urls.Add(p.medium_url);
-            }
-            return urls;
-        }
 
         /// <summary>
-        /// Download all square photos from this observation to the folder path specified.
+        /// Download all photos of this size from this observation to the folder path specified.
         /// </summary>
         /// <param name="path">The folder to download photos to.</param>
-        public void DownloadSquarePhotos(string path)
+        public void DownloadPhotos(string path, ImageSize size)
         {
-            List<string> urls = GetSquarePhotoUrls();
-            _DownloadPhotos(urls, path);
-        }
+            List<string> urls = GetPhotoUrls(size);
 
-        /// <summary>
-        /// Download all full-resolution photos from this observation to the folder path specified.
-        /// </summary>
-        /// <param name="path">The folder to download photos to.</param>
-        public void DownloadFullResPhotos(string path)
-        {
-            List<string> urls = GetFullResPhotoUrls();
-            _DownloadPhotos(urls, path);
-        }
-
-        /// <summary>
-        /// Internal helper for actually downloading the photos.
-        /// </summary>
-        /// <param name="urls">The urls to download photos from.</param>
-        /// <param name="path">The folder to download photos to.</param>
-        void _DownloadPhotos(List<string> urls, string path)
-        {
             Directory.CreateDirectory(path); //create the folder if it doesn't exist
-            using (WebClient client = new WebClient()) {
+            using (WebClient client = new WebClient())
+            {
                 foreach (string url in urls)
                 {
                     MatchCollection mc = PhotoNameRegex.Matches(url);
@@ -146,7 +129,6 @@ namespace JoshAaronMiller.INaturalist
                 }
             }
         }
-
 
         public static Observation CreateFromJson(string jsonString)
         {

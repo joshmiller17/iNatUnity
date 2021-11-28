@@ -729,7 +729,7 @@ namespace JoshAaronMiller.INaturalist
             }
 
             string ret = string.Join("&", keyValuePairs);
-            ret = Uri.EscapeDataString(ret); //format for URL with percent encoding, e.g. "," becomes "%2C"
+            ret.Replace(",", "%2C");
             return ret;
         }
     }
