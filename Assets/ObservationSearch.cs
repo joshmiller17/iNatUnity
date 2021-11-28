@@ -311,8 +311,8 @@ public class ObservationSearch
     /// <summary>
     /// Limit the search to observations observed within a timeframe. Both start and end dates are optional.
     /// </summary>
-    /// <param name="start">The start date, formatted as yyyy-mm-dd. Limit observations to on or after this date.</param>
-    /// <param name="end">The end date, formatted as yyyy-mm-dd Limit observations to on or before this date.</param>
+    /// <param name="start">The start date, formatted as YYYY-MM-DD. Limit observations to on or after this date.</param>
+    /// <param name="end">The end date, formatted as YYYY-MM-DD. Limit observations to on or before this date.</param>
     public void SetObservedOnDateLimits(string start = "", string end = "")
     {
         if (start == end && start != "")
@@ -335,8 +335,8 @@ public class ObservationSearch
     /// <summary>
     /// Limit the search to observations created within a timeframe. Both start and end dates are optional.
     /// </summary>
-    /// <param name="start">The start date, formatted as yyyy-mm-dd. Limit observations to on or after this date.</param>
-    /// <param name="end">The end date, formatted as yyyy-mm-dd Limit observations to on or before this date.</param>
+    /// <param name="start">The start datetime, formatted as ISO-8601 datetime format: YYYY-MM-DDTHH:MMSS.mmmZ. Limit observations to created on or after this date.</param>
+    /// <param name="end">The end datetime, formatted as ISO-8601 datetime format: YYYY-MM-DDTHH:MMSS.mmmZ. Limit observations to created on or before this date.</param>
     public void SetCreatedOnDateLimits(string start = "", string end = "")
     {
         if (start == end && start != "")
@@ -516,6 +516,43 @@ public class ObservationSearch
         }
     }
 
+    public void SetIdentificationAgreement(IdentificationAgreement agreement)
+    {
+        if (agreement != IdentificationAgreement.None)
+        {
+            stringParams["identifications"] = IdentAgreementToString[agreement];
+        }
+    }
+
+    /// <summary>
+    /// Limit the search to a circle of [radius] kilometers around the specified latitude and longitude.
+    /// </summary>
+    /// <param name="lat">The latitude of the search's center.</param>
+    /// <param name="lng">The longitude of the search's center.</param>
+    /// <param name="radius">The radius of search in kilometers.</param>
+    public void SetBoundingCircle(double lat, double lng, double radius)
+    {
+        stringParams["lat"] = lat.ToString();
+        stringParams["lng"] = lng.ToString();
+        stringParams["radius"] = radius.ToString();
+    }
+
+    /// <summary>
+    /// Limit the search within a bounding box specified by northeast and southwest corners given in latitude and longitude.
+    /// </summary>
+    /// <param name="nelat">The northeast latitude.</param>
+    /// <param name="nelng">The northeast longitude.</param>
+    /// <param name="swlat">The southwest latitude.</param>
+    /// <param name="swlng">The southwest longitude.</param>
+    public void SetBoundingBox(double nelat, double nelng, double swlat, double swlng)
+    {
+        stringParams["nelat"] = nelat.ToString();
+        stringParams["nelng"] = nelng.ToString();
+        stringParams["swlat"] = swlat.ToString();
+        stringParams["swlng"] = swlng.ToString();
+    }
+
+ 
 
     /// <summary>
     /// Returns this ObservationSearch as a string of URL parameters.
