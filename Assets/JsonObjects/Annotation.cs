@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Annotation
+namespace JoshAaronMiller.INaturalist
 {
-    public string resource_type;
-    public int resource_id;
-    public int controlled_attribute_id;
-    public int controlled_value_id;
-
-
-    public static Annotation CreateFromJson(string jsonString)
+    [System.Serializable]
+    public class Annotation
     {
-        return JsonUtility.FromJson<Annotation>(jsonString);
+        public string resource_type;
+        public int resource_id;
+        public int controlled_attribute_id;
+        public int controlled_value_id;
+
+
+        public static Annotation CreateFromJson(string jsonString)
+        {
+            return JsonUtility.FromJson<Annotation>(jsonString);
+        }
     }
 }

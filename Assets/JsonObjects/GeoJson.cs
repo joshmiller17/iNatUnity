@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class GeoJson
+namespace JoshAaronMiller.INaturalist
 {
-    public string type;
-    public string coordinates;
 
-    public static GeoJson CreateFromJson(string jsonString)
+    [System.Serializable]
+    public class GeoJson
     {
-        return JsonUtility.FromJson<GeoJson>(jsonString);
+        public string type;
+        public string coordinates;
+
+        public static GeoJson CreateFromJson(string jsonString)
+        {
+            return JsonUtility.FromJson<GeoJson>(jsonString);
+        }
     }
 }

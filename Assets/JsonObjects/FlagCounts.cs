@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class FlagCounts
-{
-    public int resolved;
-    public int unresolved;
 
-    public static FlagCounts CreateFromJson(string jsonString)
+namespace JoshAaronMiller.INaturalist
+{
+    [System.Serializable]
+    public class FlagCounts
     {
-        return JsonUtility.FromJson<FlagCounts>(jsonString);
+        public int resolved;
+        public int unresolved;
+
+        public static FlagCounts CreateFromJson(string jsonString)
+        {
+            return JsonUtility.FromJson<FlagCounts>(jsonString);
+        }
     }
 }

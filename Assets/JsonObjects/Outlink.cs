@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Outlink
+namespace JoshAaronMiller.INaturalist
 {
-    public string source;
-    public string url;
 
-    public static Outlink CreateFromJson(string jsonString)
+    [System.Serializable]
+    public class Outlink
     {
-        return JsonUtility.FromJson<Outlink>(jsonString);
+        public string source;
+        public string url;
+
+        public static Outlink CreateFromJson(string jsonString)
+        {
+            return JsonUtility.FromJson<Outlink>(jsonString);
+        }
     }
 }

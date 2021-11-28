@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Dimensions
+namespace JoshAaronMiller.INaturalist
 {
-    public int height;
-    public int width;
 
-
-    public static Dimensions CreateFromJson(string jsonString)
+    [System.Serializable]
+    public class Dimensions
     {
-        return JsonUtility.FromJson<Dimensions>(jsonString);
+        public int height;
+        public int width;
+
+
+        public static Dimensions CreateFromJson(string jsonString)
+        {
+            return JsonUtility.FromJson<Dimensions>(jsonString);
+        }
     }
 }

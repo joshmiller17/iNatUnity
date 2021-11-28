@@ -2,16 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class ObsWebResult
+namespace JoshAaronMiller.INaturalist
 {
-    public int total_results;
-    public int page;
-    public int per_page;
-    public List<Observation> results;
-
-    public static ObsWebResult CreateFromJson(string jsonString)
+    [System.Serializable]
+    public class ObsWebResult
     {
-        return JsonUtility.FromJson<ObsWebResult>(jsonString);
+        public int total_results;
+        public int page;
+        public int per_page;
+        public List<Observation> results;
+
+        public static ObsWebResult CreateFromJson(string jsonString)
+        {
+            return JsonUtility.FromJson<ObsWebResult>(jsonString);
+        }
     }
 }
