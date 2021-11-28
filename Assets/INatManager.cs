@@ -7,6 +7,9 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
+/// <summary>
+/// The INatManager handles direct requests to the iNaturalist API.
+/// </summary>
 public class INatManager : MonoBehaviour
 {
     public static string BaseUrl = "https://api.inaturalist.org/v1/";
@@ -45,28 +48,6 @@ public class INatManager : MonoBehaviour
         callback(json);
     }
 
-    // --- HELPER FUNCTIONS ---
-
-    /// <summary>
-    /// A helper function for constructing web requests: turns a list of ints into a comma-separated string
-    /// </summary>
-    /// <param name="list">List of ints</param>
-    /// <returns>The list as a string with commas separating the values</returns>
-    string IntListToUrlParams(List<int> list)
-    {
-        if (list.Count == 0)
-            throw new ArgumentException("List cannot be empty", nameof(list));
-
-        string ret = list[0].ToString();
-        int index = 1;
-        while (index < list.Count)
-        {
-            ret += "," + list[index];
-            index += 1;
-        }
-        return ret;
-    }
-
     // --- ANNOTATIONS ---
 
     //CreateAnnotation
@@ -101,10 +82,10 @@ public class INatManager : MonoBehaviour
     /// Given an array of IDs, returns corresponding observations 
     /// </summary>
     /// <param name="id">The list of observation IDs to fetch</param>
-    /// <returns>Returns a JSON string object with metadata and an array of observations</returns>
+    /// <returns>A list of Observation JSON objects</returns>
     public List<Observation> GetObservationsById(List<int> ids)
     {
-        string idsAsStringList = IntListToUrlParams(ids);
+        string idsAsStringList = string.Join(",", ids);
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(BaseUrl + "observations/" + idsAsStringList);
         return ObsWebResult.CreateFromJson(DoWebRequest(request)).results;
     }
@@ -113,7 +94,7 @@ public class INatManager : MonoBehaviour
     /// Given an ID, returns the corresponding observation
     /// </summary>
     /// <param name="id">The list of observation IDs to fetch</param>
-    /// <returns>Returns a JSON string object with metadata and an array of observations</returns>
+    /// <returns>The Observation JSON object</returns>
     public Observation GetObservationById(int id)
     {
         return GetObservationsById(new List<int>() { id })[0];
@@ -132,7 +113,18 @@ public class INatManager : MonoBehaviour
     //SubscribeToObservation
     //VoteObservation
     //UnvoteObservation
-    //SearchObservations
+
+    /// <summary>
+    /// Given an ObservationSearch object, returns a list of matching observations
+    /// </summary>
+    /// <param name="obsSearch">An ObservationSearch object holding the parameters of the search</param>
+    /// <returns></returns>
+    public List<Observation> SearchObservations(ObservationSearch obsSearch)
+    {
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(BaseUrl + "observations/?" + obsSearch.ToUrlParameters());
+        return ObsWebResult.CreateFromJson(DoWebRequest(request)).results;
+    }
+
     //CreateObservation
     //GetDeletedObservations
     //GetObservationHistogram
