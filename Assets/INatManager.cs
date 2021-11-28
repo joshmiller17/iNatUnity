@@ -20,7 +20,21 @@ namespace JoshAaronMiller.INaturalist
         //TEST
         void Start()
         {
-            Observation o = GetObservationById(50000);
+            ObservationSearch os = new ObservationSearch();
+            os.SetOrder(ObservationSearch.OrderBy.SpeciesGuess, ObservationSearch.SortOrder.Asc);
+            os.SetQualityGrade(ObservationSearch.QualityGrade.NeedsId);
+            os.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { ObservationSearch.IconicTaxon.Reptilia });
+            os.SetObservedOnDateLimits("2021-10-1", "2021-11-1");
+            os.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
+            os.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
+            List<Observation> results = SearchObservations(os);
+            foreach (Observation r in results)
+            {
+                foreach (string url in r.GetFullResPhotoUrls())
+                {
+                    Debug.Log(url);
+                }
+            }
         }
 
         /// <summary>
@@ -125,7 +139,13 @@ namespace JoshAaronMiller.INaturalist
         public List<Observation> SearchObservations(ObservationSearch obsSearch)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(BaseUrl + "observations/?" + obsSearch.ToUrlParameters());
-            return ObsWebResult.CreateFromJson(DoWebRequest(request)).results;
+            
+            //TEST BLOCK
+            string test = DoWebRequest(request); //TEST
+            string destination = Application.persistentDataPath + "/log.txt";
+            File.WriteAllText(destination, test);
+
+            return ObsWebResult.CreateFromJson(test).results;
         }
 
         //CreateObservation

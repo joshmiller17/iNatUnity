@@ -381,7 +381,7 @@ namespace JoshAaronMiller.INaturalist
         /// </summary>
         /// <param name="start">The start datetime, formatted as ISO-8601 datetime format: YYYY-MM-DDTHH:MMSS.mmmZ. Limit observations to created on or after this date.</param>
         /// <param name="end">The end datetime, formatted as ISO-8601 datetime format: YYYY-MM-DDTHH:MMSS.mmmZ. Limit observations to created on or before this date.</param>
-        public void SetCreatedOnDateLimits(string start = "", string end = "")
+        public void SetCreatedOnDateTimeLimits(string start = "", string end = "")
         {
             if (start == end && start != "")
             {
