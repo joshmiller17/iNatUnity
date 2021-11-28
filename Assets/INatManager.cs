@@ -14,7 +14,7 @@ public class INatManager : MonoBehaviour
     //TEST
     void Start()
     {
-        Debug.Log(GetObservationById(1000));
+        Observation o = GetObservationById(50000);
     }
 
     /// <summary>
@@ -102,21 +102,21 @@ public class INatManager : MonoBehaviour
     /// </summary>
     /// <param name="id">The list of observation IDs to fetch</param>
     /// <returns>Returns a JSON string object with metadata and an array of observations</returns>
-    public string GetObservationsById(List<int> ids)
+    public List<Observation> GetObservationsById(List<int> ids)
     {
         string idsAsStringList = IntListToUrlParams(ids);
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(BaseUrl + "observations/" + idsAsStringList);
-        return DoWebRequest(request);
+        return ObsWebResult.CreateFromJson(DoWebRequest(request)).results;
     }
 
     /// <summary>
-    /// Given an array of IDs, returns corresponding observations 
+    /// Given an ID, returns the corresponding observation
     /// </summary>
     /// <param name="id">The list of observation IDs to fetch</param>
     /// <returns>Returns a JSON string object with metadata and an array of observations</returns>
-    public string GetObservationById(int id)
+    public Observation GetObservationById(int id)
     {
-        return GetObservationsById(new List<int>() { id });
+        return GetObservationsById(new List<int>() { id })[0];
     }
 
 
