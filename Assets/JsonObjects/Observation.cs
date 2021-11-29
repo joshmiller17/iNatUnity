@@ -109,27 +109,30 @@ namespace JoshAaronMiller.INaturalist
 
 
         /// <summary>
-        /// Download all photos of this size from this observation to the folder path specified.
+        /// Download all photos of this size from this observation to the folder path specified within the application's persistent data path.
         /// </summary>
-        /// <param name="path">The folder to download photos to.</param>
+        /// <param name="path">The folder to download photos to, relative to the Application.persistentDataPath.</param>
         public void DownloadPhotos(string path, ImageSize size)
         {
             List<string> urls = GetPhotoUrls(size);
 
-            Directory.CreateDirectory(path); //create the folder if it doesn't exist
+            string fullPath = Path.Combine(Application.persistentDataPath, path);
+            Directory.CreateDirectory(fullPath); //create the folder if it doesn't exist
             using (WebClient client = new WebClient())
             {
                 foreach (string url in urls)
                 {
-                    MatchCollection mc = PhotoIdRegex.Matches(url);
-                    if (mc.Count < 1)
+                    Match mc = PhotoIdRegex.Match(url);
+                    if (mc.Groups.Count < 2)
                     {
                         Debug.LogWarning("Could not read photo ID from URL " + url);
                         continue;
                     }
 
-                    string name = mc[0].Value;
-                    client.DownloadFile(new System.Uri(url), Path.Combine(path, name));
+                    string name = mc.Groups[1].Value;
+                    string ext = Path.GetExtension(url);
+                    string fileName = name + "_" + Path.GetFileNameWithoutExtension(url) /*iNat's size classification*/ + ext;
+                    client.DownloadFile(new System.Uri(url), Path.Combine(fullPath, fileName));
                 }
             }
         }

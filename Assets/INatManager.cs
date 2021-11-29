@@ -59,10 +59,7 @@ namespace JoshAaronMiller.INaturalist
             Debug.Log("Test callback");
             foreach (Observation r in results)
             {
-                foreach (string url in r.GetPhotoUrls(Observation.ImageSize.Large))
-                {
-                    Debug.Log("url is " + url);
-                }
+                r.DownloadPhotos("PhotoTest", Observation.ImageSize.Large);
             }
         }
 
