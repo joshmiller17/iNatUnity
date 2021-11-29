@@ -47,8 +47,8 @@ namespace JoshAaronMiller.INaturalist
             ObservationSearch os = new ObservationSearch();
             os.SetOrder(ObservationSearch.OrderBy.SpeciesGuess, ObservationSearch.SortOrder.Asc);
             os.SetQualityGrade(ObservationSearch.QualityGrade.NeedsId);
-            os.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { ObservationSearch.IconicTaxon.Reptilia });
-            os.SetObservedOnDateLimits("2021-6-1", "2021-8-1");
+            os.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { ObservationSearch.IconicTaxon.Mammalia });
+            os.SetObservedOnDateLimits("2021-1-1", "2021-4-1");
             os.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
             os.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
             SearchObservations(os, TestCallback);
@@ -95,6 +95,7 @@ namespace JoshAaronMiller.INaturalist
             else
             {
                 Debug.LogError("Web request failed with status code " + request.responseCode.ToString());
+                Debug.LogError(request.error);
             }
         }
 
