@@ -82,16 +82,23 @@ namespace JoshAaronMiller.INaturalist
             yield return request.SendWebRequest();
             while (!request.isDone)
                 yield return null;
-            byte[] result = request.downloadHandler.data;
-            string json = System.Text.Encoding.Default.GetString(result);
 
-            //DEBUG PRINT TODO REMOVE
-            string destination = Application.persistentDataPath + "/log.txt";
-            File.WriteAllText(destination, json);
+            if (!request.isHttpError && !request.isNetworkError)
+            {
+                byte[] result = request.downloadHandler.data;
+                string json = System.Text.Encoding.Default.GetString(result);
 
-            T response;
-            response = receiveRequest(json);
-            callback(response);
+                //DEBUG PRINT TODO REMOVE
+                string destination = Application.persistentDataPath + "/log.txt";
+                File.WriteAllText(destination, json);
+
+                T response = receiveRequest(json);
+                callback(response);
+            }
+            else
+            {
+                Debug.LogError("Web request failed with status code " + request.responseCode.ToString());
+            }
         }
 
         // --- ANNOTATIONS ---
