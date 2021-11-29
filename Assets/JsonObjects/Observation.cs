@@ -97,6 +97,10 @@ namespace JoshAaronMiller.INaturalist
                     //assume original URL uses square or medium size
                     string newUrl = originalUrl.Replace("square", size.ToString().ToLower());
                     newUrl = newUrl.Replace("medium", size.ToString().ToLower());
+                    if (originalUrl == newUrl && size != ImageSize.Square && size != ImageSize.Medium)
+                    {
+                        Debug.LogWarning("Assumption failed in Observation::GetPhotoUrls: default photo did not use square or medium size.");
+                    }
                     urls.Add(newUrl);
                 }
             }

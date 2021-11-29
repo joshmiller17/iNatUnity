@@ -24,7 +24,7 @@ namespace JoshAaronMiller.INaturalist
             os.SetOrder(ObservationSearch.OrderBy.SpeciesGuess, ObservationSearch.SortOrder.Asc);
             os.SetQualityGrade(ObservationSearch.QualityGrade.NeedsId);
             os.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { ObservationSearch.IconicTaxon.Reptilia });
-            os.SetObservedOnDateLimits("2021-10-1", "2021-11-1");
+            os.SetObservedOnDateLimits("2021-6-1", "2021-8-1");
             os.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
             os.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
             List<Observation> results = SearchObservations(os);
