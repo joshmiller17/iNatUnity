@@ -23,11 +23,6 @@ namespace JoshAaronMiller.INaturalist
         static float timeSinceLastServerCall = float.MaxValue;
 
 
-        void Start()
-        {
-            Test();
-        }
-
         private void Update()
         {
             if (timeSinceLastServerCall < ServerSleepTime)
@@ -36,32 +31,15 @@ namespace JoshAaronMiller.INaturalist
             }
         }
 
+        /// <summary>
+        /// Returns whether the INatManager is currently rate limiting itself to be kind to the server.
+        /// </summary>
+        /// <returns>Whether the INatManager is rate limited. Only make server calls when not rate limited.</returns>
         bool IsRateLimited()
         {
             return timeSinceLastServerCall < ServerSleepTime;
         }
 
-        void Test()
-        {
-            Debug.Log("Running test");
-            ObservationSearch os = new ObservationSearch();
-            os.SetOrder(ObservationSearch.OrderBy.SpeciesGuess, ObservationSearch.SortOrder.Asc);
-            os.SetQualityGrade(ObservationSearch.QualityGrade.NeedsId);
-            os.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { ObservationSearch.IconicTaxon.Mammalia });
-            os.SetObservedOnDateLimits("2021-1-1", "2021-4-1");
-            os.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
-            os.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
-            SearchObservations(os, TestCallback);
-        }
-
-        void TestCallback(List<Observation> results)
-        {
-            Debug.Log("Test callback");
-            foreach (Observation r in results)
-            {
-                r.DownloadPhotos("PhotoTest", Observation.ImageSize.Large);
-            }
-        }
 
         /// <summary>
         /// Perform an asynchronous web request.
@@ -75,6 +53,7 @@ namespace JoshAaronMiller.INaturalist
             {
                 yield return null;
             }
+            timeSinceLastServerCall = 0;
             Debug.Log("Sending web request: " + request.ToString());
             yield return request.SendWebRequest();
             while (!request.isDone)

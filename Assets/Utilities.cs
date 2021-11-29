@@ -18,6 +18,7 @@ namespace JoshAaronMiller.INaturalist
         /// <returns></returns>
         public static IEnumerator LoadImageFromPath(string fullPath, GameObject loadTo)
         {
+            Debug.Log("Loading image from: " + fullPath);
             RawImage rawImage = loadTo.GetComponent<RawImage>();
             if (rawImage == null)
             {
@@ -27,7 +28,7 @@ namespace JoshAaronMiller.INaturalist
             UnityWebRequest request = UnityWebRequestTexture.GetTexture(fullPath);
             yield return request.SendWebRequest();
 
-            if (!request.isHttpError && !request.isNetworkError)
+            if (request.isHttpError || request.isNetworkError)
             {
                 Debug.LogError("LoadImageFromPath failed with status code " + request.responseCode.ToString());
                 Debug.LogError(request.error);
@@ -37,6 +38,5 @@ namespace JoshAaronMiller.INaturalist
                 rawImage.texture = ((DownloadHandlerTexture)request.downloadHandler).texture;
             }
         }
-
     }
 }
