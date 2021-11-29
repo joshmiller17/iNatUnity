@@ -4,6 +4,7 @@ using System.IO;
 using System.Net;
 using System.Text.RegularExpressions;
 using UnityEngine;
+using static JoshAaronMiller.INaturalist.Utilities;
 
 namespace JoshAaronMiller.INaturalist
 {
@@ -135,6 +136,41 @@ namespace JoshAaronMiller.INaturalist
                     client.DownloadFile(new System.Uri(url), Path.Combine(fullPath, fileName));
                 }
             }
+        }
+
+        public ObservationSearch.IdentificationAgreement GetAgreementRate()
+        {
+            if (identifications_most_disagree)
+            {
+                return ObservationSearch.IdentificationAgreement.MostDisagree;
+            }
+            if (identifications_most_agree)
+            {
+                return ObservationSearch.IdentificationAgreement.MostAgree;
+            }
+            if (identifications_some_agree)
+            {
+                return ObservationSearch.IdentificationAgreement.SomeAgree;
+            }
+            return ObservationSearch.IdentificationAgreement.None;
+        }
+
+        /// <summary>
+        /// Returns an aggregation of the identifications for this observation.
+        /// </summary>
+        /// <returns>A Dictionary mapping taxon identifications (by preferred common name) to a count of the number of users who guessed that taxon.</returns>
+        public Dictionary<string, int> CountIdentifications()
+        {
+            DefaultDictionary<string, int> identMap = new DefaultDictionary<string, int>();
+            foreach (Identification ident in identifications)
+            {
+                if (ident.taxon != null && ident.taxon.preferred_common_name != null)
+                {
+                    identMap[ident.taxon.preferred_common_name] += 1;
+                }
+            }
+
+            return identMap;
         }
 
         public static Observation CreateFromJson(string jsonString)

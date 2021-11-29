@@ -54,7 +54,7 @@ namespace JoshAaronMiller.INaturalist
                 yield return null;
             }
             timeSinceLastServerCall = 0;
-            Debug.Log("Sending web request: " + request.ToString());
+            Debug.Log("Sending web request: " + request.url.ToString());
             yield return request.SendWebRequest();
             while (!request.isDone)
                 yield return null;
