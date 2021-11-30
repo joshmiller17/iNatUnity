@@ -15,8 +15,9 @@ namespace JoshAaronMiller.INaturalist
         /// </summary>
         /// <param name="fullPath">The full local path or URL.</param>
         /// <param name="loadTo">The GameObject to load the image into.</param>
+        /// <param name="callback">Optionally, a void function to call once the image is loaded successfully.</param>
         /// <returns></returns>
-        public static IEnumerator LoadImageFromPath(string fullPath, GameObject loadTo)
+        public static IEnumerator LoadImageFromPath(string fullPath, GameObject loadTo, System.Action callback = null)
         {
             Debug.Log("Loading image from: " + fullPath);
             RawImage rawImage = loadTo.GetComponent<RawImage>();
@@ -36,6 +37,10 @@ namespace JoshAaronMiller.INaturalist
             else
             {
                 rawImage.texture = ((DownloadHandlerTexture)request.downloadHandler).texture;
+                if (callback != null)
+                {
+                    callback();
+                }
             }
         }
 

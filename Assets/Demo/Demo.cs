@@ -10,55 +10,94 @@ public class Demo : MonoBehaviour
     public GameObject INatImage;
     public GameObject INatManagerObj;
     public GameObject AttributionObj;
+    public GameObject ObservationCountObj;
+    public GameObject LoadingTextObj;
     
     INatManager INatManager;
     Text Attribution;
+    Text ObservationCount;
 
-    // Start is called before the first frame update
+    List<Observation> observations = new List<Observation>();
+    int carouselIndex = 0;
+
     void Start()
     {
         INatManager = INatManagerObj.GetComponent<INatManager>();
         Attribution = AttributionObj.GetComponent<Text>();
+        ObservationCount = ObservationCountObj.GetComponent<Text>();
 
-        //TEST load an image
-        Debug.Log("Running test");
+        ShowDemoSearch();
+    }
+
+    void ShowDemoSearch()
+    {
         ObservationSearch os = new ObservationSearch();
         os.SetOrder(ObservationSearch.OrderBy.SpeciesGuess, ObservationSearch.SortOrder.Asc);
-        //os.SetQualityGrade(ObservationSearch.QualityGrade.Research);
         os.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { ObservationSearch.IconicTaxon.Mammalia });
         os.SetOrder(ObservationSearch.OrderBy.Votes, ObservationSearch.SortOrder.Desc);
         os.SetPagination(200, 1);
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
-        INatManager.SearchObservations(os, TestCallback);
-
+        INatManager.SearchObservations(os, PopulateCarousel);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void MoveCarouselLeft()
     {
-        
+        if (observations.Count == 0) return;
+        carouselIndex -= 1;
+        if (carouselIndex < 0)
+        {
+            carouselIndex = observations.Count - 1;
+        }
+        RefreshActiveObservation();
     }
 
-    void TestCallback(List<Observation> results)
+    public void MoveCarouselRight()
     {
-        Debug.Log(results.Count + " results");
+        if (observations.Count == 0) return;
+        carouselIndex += 1;
+        if (carouselIndex >= observations.Count)
+        {
+            carouselIndex = 0;
+        }
+        RefreshActiveObservation();
+    }
 
-        string photoUrl = results[0].GetPhotoUrls(Observation.ImageSize.Large)[0];
-        StartCoroutine(Utilities.LoadImageFromPath(photoUrl, INatImage));
-        Attribution.text = results[0].photos[0].attribution;
+    void RefreshActiveObservation()
+    {
+        LoadingTextObj.SetActive(true);
+        if (observations.Count == 0)
+        {
+            ObservationCount.text = "0 / 0";
+        }
+        else
+        {
+            ObservationCount.text = (carouselIndex + 1).ToString() + " / " + observations.Count;
+        }
+        string photoUrl = observations[carouselIndex].GetPhotoUrls(Observation.ImageSize.Large)[0];
+        StartCoroutine(Utilities.LoadImageFromPath(photoUrl, INatImage, RemoveLoading));
+        Attribution.text = observations[carouselIndex].photos[0].attribution;
+    }
+
+    public void RemoveLoading()
+    {
+        LoadingTextObj.SetActive(false);
+    }
+
+    void PopulateCarousel(List<Observation> results)
+    {
+        observations.Clear();
+        Debug.Log("Search yielded " + results.Count + " results");
+        carouselIndex = 0;
 
         foreach (Observation r in results)
         {
+            // for the purpose of this demo, only save results that have some disagreement and some popularity
             if (r.num_identification_disagreements < 1 || r.identifications_count < 5) continue;
-            Debug.Log(r.taxon.preferred_common_name + "/" + r.GetAgreementRate().ToString());
-            Debug.Log(r.photos[0].url);
             Dictionary<string, int> idents = r.CountIdentifications();
-            if (idents.Keys.Count > 3) continue;
-            foreach (KeyValuePair<string, int> ident in idents)
-            {
-                Debug.Log("--- " + ident.Key + ": " + ident.Value);
-            }
+            observations.Add(r);
         }
+        Debug.Log("Kept " + observations.Count + " observations");
+        RefreshActiveObservation();
     }
 }
