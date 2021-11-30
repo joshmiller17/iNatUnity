@@ -12,10 +12,15 @@ public class Demo : MonoBehaviour
     public GameObject AttributionObj;
     public GameObject ObservationCountObj;
     public GameObject LoadingTextObj;
+    public GameObject VoteButtonObjs;
+    public GameObject VoteButtonOneObj;
+    public GameObject VoteButtonTwoObj;
     
     INatManager INatManager;
     Text Attribution;
     Text ObservationCount;
+    Text VoteButtonOne;
+    Text VoteButtonTwo;
 
     List<Observation> observations = new List<Observation>();
     int carouselIndex = 0;
@@ -25,6 +30,9 @@ public class Demo : MonoBehaviour
         INatManager = INatManagerObj.GetComponent<INatManager>();
         Attribution = AttributionObj.GetComponent<Text>();
         ObservationCount = ObservationCountObj.GetComponent<Text>();
+        VoteButtonOne = VoteButtonOneObj.GetComponent<Text>();
+        VoteButtonTwo = VoteButtonTwoObj.GetComponent<Text>();
+        Debug.Log(VoteButtonOne);
 
         ShowDemoSearch();
     }
@@ -63,20 +71,72 @@ public class Demo : MonoBehaviour
         RefreshActiveObservation();
     }
 
+    public void VoteOptionOne()
+    {
+        // TODO submit vote
+        RemoveObservation();
+    }
+
+    public void VoteOptionTwo()
+    {
+        // TODO submit vote
+        RemoveObservation();
+    }
+
+    public void RemoveObservation()
+    {
+        observations.RemoveAt(carouselIndex);
+        if (carouselIndex > 0)
+        {
+            carouselIndex -= 1;
+        }
+        RefreshActiveObservation();
+    }
+
     void RefreshActiveObservation()
     {
         LoadingTextObj.SetActive(true);
         if (observations.Count == 0)
         {
             ObservationCount.text = "0 / 0";
+            VoteButtonObjs.SetActive(false);
         }
         else
         {
             ObservationCount.text = (carouselIndex + 1).ToString() + " / " + observations.Count;
+            VoteButtonObjs.SetActive(true);
         }
         string photoUrl = observations[carouselIndex].GetPhotoUrls(Observation.ImageSize.Large)[0];
         StartCoroutine(Utilities.LoadImageFromPath(photoUrl, INatImage, RemoveLoading));
         Attribution.text = observations[carouselIndex].photos[0].attribution;
+        if (VoteButtonObjs.activeInHierarchy)
+        {
+            PopulateVoteOptions();
+        }
+    }
+
+    void PopulateVoteOptions()
+    {
+        Dictionary<string, int> idents = observations[carouselIndex].CountIdentifications();
+        string bestNameOne = "";
+        int bestCountOne = 0;
+        string bestNameTwo = "";
+        int bestCountTwo = 0;
+        foreach (KeyValuePair<string, int> ident in idents)
+        {
+            if (ident.Value > bestCountOne && bestCountOne < bestCountTwo)
+            {
+                bestNameOne = ident.Key;
+                bestCountOne = ident.Value;
+            }
+            else if (ident.Value > bestCountTwo)
+            {
+                bestNameTwo = ident.Key;
+                bestCountTwo = ident.Value;
+            }
+        }
+        VoteButtonOne.text = bestNameOne;
+        VoteButtonTwo.text = bestNameTwo;
     }
 
     public void RemoveLoading()
@@ -94,7 +154,6 @@ public class Demo : MonoBehaviour
         {
             // for the purpose of this demo, only save results that have some disagreement and some popularity
             if (r.num_identification_disagreements < 1 || r.identifications_count < 5) continue;
-            Dictionary<string, int> idents = r.CountIdentifications();
             observations.Add(r);
         }
         Debug.Log("Kept " + observations.Count + " observations");

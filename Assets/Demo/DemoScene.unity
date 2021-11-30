@@ -584,7 +584,7 @@ GameObject:
   - component: {fileID: 738520292}
   - component: {fileID: 738520291}
   m_Layer: 5
-  m_Name: Text
+  m_Name: VoteOption2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -641,7 +641,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Loading
 --- !u!222 &738520292
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -684,6 +684,9 @@ MonoBehaviour:
   AttributionObj: {fileID: 884171947}
   ObservationCountObj: {fileID: 294962156}
   LoadingTextObj: {fileID: 2032130974}
+  VoteButtonObjs: {fileID: 1579083423}
+  VoteButtonOneObj: {fileID: 1233938481}
+  VoteButtonTwoObj: {fileID: 738520289}
 --- !u!4 &763041049
 Transform:
   m_ObjectHideFlags: 0
@@ -804,10 +807,10 @@ RectTransform:
   m_Father: {fileID: 278119062}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.3}
+  m_AnchorMin: {x: 0.1, y: 0}
+  m_AnchorMax: {x: 0.9, y: 0.3}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 40, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &884171949
 MonoBehaviour:
@@ -1434,7 +1437,7 @@ GameObject:
   - component: {fileID: 1233938484}
   - component: {fileID: 1233938483}
   m_Layer: 5
-  m_Name: Text
+  m_Name: VoteOption1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1491,7 +1494,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Loading
 --- !u!222 &1233938484
 CanvasRenderer:
   m_ObjectHideFlags: 0
