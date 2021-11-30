@@ -40,10 +40,9 @@ public class Demo : MonoBehaviour
     void ShowDemoSearch()
     {
         ObservationSearch os = new ObservationSearch();
-        os.SetOrder(ObservationSearch.OrderBy.SpeciesGuess, ObservationSearch.SortOrder.Asc);
-        os.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { ObservationSearch.IconicTaxon.Mammalia });
+        //os.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { ObservationSearch.IconicTaxon.Mammalia });
         os.SetOrder(ObservationSearch.OrderBy.Votes, ObservationSearch.SortOrder.Desc);
-        os.SetPagination(200, 1);
+        os.SetPagination(200, Random.Range(1,5));
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
         INatManager.SearchObservations(os, PopulateCarousel);
