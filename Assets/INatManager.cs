@@ -16,6 +16,8 @@ namespace JoshAaronMiller.INaturalist
     public class INatManager : MonoBehaviour
     {
         public static readonly string BaseUrl = "https://api.inaturalist.org/v1/";
+        public static readonly string ApiTokenUrl = "https://www.inaturalist.org/users/api_token";
+
         static List<Observation> JsonToObservations(string jsonString) => ObsWebResult.CreateFromJson(jsonString).results;
         static Observation JsonToObservation(string jsonString) => ObsWebResult.CreateFromJson(jsonString).results[0];
 
@@ -76,6 +78,17 @@ namespace JoshAaronMiller.INaturalist
                 Debug.LogError("Web request failed with status code " + request.responseCode.ToString());
                 Debug.LogError(request.error);
             }
+        }
+
+        // --- LOGIN ---
+        public void GetApiToken()
+        {
+            
+        }
+
+        public void TestPrint(string json)
+        {
+            Debug.Log(json);
         }
 
         // --- ANNOTATIONS ---

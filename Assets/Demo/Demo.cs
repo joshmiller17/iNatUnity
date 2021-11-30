@@ -34,7 +34,8 @@ public class Demo : MonoBehaviour
         VoteButtonTwo = VoteButtonTwoObj.GetComponent<Text>();
         Debug.Log(VoteButtonOne);
 
-        ShowDemoSearch();
+        INatManager.GetApiToken();
+        //ShowDemoSearch();
     }
 
     void ShowDemoSearch()
