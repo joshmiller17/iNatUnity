@@ -4,27 +4,48 @@ using UnityEngine;
 
 using JoshAaronMiller.INaturalist;
 using UnityEngine.UI;
+using System.Net;
+using System.Linq;
 
 public class Demo : MonoBehaviour
 {
-    public GameObject INatImage;
     public GameObject INatManagerObj;
+
+    [Space(10)]
+    [Header("Observation Carousel")]
+    public GameObject INatImage;
     public GameObject AttributionObj;
     public GameObject ObservationCountObj;
     public GameObject LoadingTextObj;
 
+    [Space(10)]
+    [Header("Vote Buttons")]
     public GameObject VoteButtonObjs;
     public GameObject VoteButtonOneObj;
     public GameObject VoteButtonTwoObj;
 
+    [Space(10)]
+    [Header("Login Panel")]
     public GameObject LoginButtonObj;
     public GameObject PostLoginObj;
+    public GameObject ErrorMessageObj;
+    public GameObject ApiTokenInputObj;
+    public GameObject LoggedInAsObj;
+    public GameObject InfoDetailsObj;
+
 
     INatManager INatManager;
     Text Attribution;
     Text ObservationCount;
     Text VoteButtonOne;
     Text VoteButtonTwo;
+    Text ErrorMessage;
+    Text LoggedInAs;
+    InputField ApiTokenInput;
+
+    static readonly string BadApiTokenSyntax = "Invalid syntax. Paste just the token string without quotes or the \"api_token\" label before it.";
+    static readonly string InvalidApiToken = "Invalid API token.";
+
 
     List<Observation> observations = new List<Observation>();
     int carouselIndex = 0;
@@ -36,7 +57,9 @@ public class Demo : MonoBehaviour
         ObservationCount = ObservationCountObj.GetComponent<Text>();
         VoteButtonOne = VoteButtonOneObj.GetComponent<Text>();
         VoteButtonTwo = VoteButtonTwoObj.GetComponent<Text>();
-        Debug.Log(VoteButtonOne);
+        ErrorMessage = ErrorMessageObj.GetComponent<Text>();
+        LoggedInAs = LoggedInAsObj.GetComponent<Text>();
+        ApiTokenInput = ApiTokenInputObj.GetComponent<InputField>();
 
         //ShowDemoSearch();
     }
@@ -45,6 +68,41 @@ public class Demo : MonoBehaviour
     {
         LoginButtonObj.SetActive(false);
         PostLoginObj.SetActive(true);
+        InfoDetailsObj.SetActive(true);
+    }
+
+    public void CheckApiToken()
+    {
+        string apiToken = ApiTokenInput.text;
+        if (new List<string>() { "\"", "{", "}", ":", "api_token" }.Any(apiToken.Contains))
+        {
+            ErrorMessage.text = BadApiTokenSyntax;
+            ErrorMessageObj.SetActive(true);
+        }
+        else
+        {
+            ErrorMessageObj.SetActive(false);
+            INatManager.SetApiToken(apiToken);
+            INatManager.GetUserMe(SetUser, SetUserError);
+        }
+    }
+
+    public void SetUser(User me)
+    {
+        ErrorMessageObj.SetActive(false);
+        LoggedInAs.text = "Logged in as: " + me.login;
+        LoggedInAsObj.SetActive(true);
+        PostLoginObj.SetActive(false);
+
+    }
+
+    public void SetUserError(Error e)
+    {
+        if (e.status == (int)HttpStatusCode.Unauthorized)
+        {
+            ErrorMessage.text = InvalidApiToken;
+            ErrorMessageObj.SetActive(true);
+        }
     }
 
     void ShowDemoSearch()
@@ -55,7 +113,12 @@ public class Demo : MonoBehaviour
         os.SetPagination(200, Random.Range(1,5));
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
-        INatManager.SearchObservations(os, PopulateCarousel);
+        INatManager.SearchObservations(os, PopulateCarousel, HandleError);
+    }
+
+    public void HandleError(Error e)
+    {
+        Debug.LogError(e.error);
     }
 
     public void MoveCarouselLeft()

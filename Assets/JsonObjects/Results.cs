@@ -5,16 +5,16 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class ObsWebResult
+    public class Results<T>
     {
         public int total_results;
         public int page;
         public int per_page;
-        public List<Observation> results;
+        public List<T> results;
 
-        public static ObsWebResult CreateFromJson(string jsonString)
+        public static Results<T> CreateFromJson(string jsonString)
         {
-            return JsonUtility.FromJson<ObsWebResult>(jsonString);
+            return JsonUtility.FromJson<Results<T>>(jsonString);
         }
     }
 }

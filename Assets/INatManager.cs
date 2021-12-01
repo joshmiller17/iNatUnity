@@ -18,11 +18,15 @@ namespace JoshAaronMiller.INaturalist
         public static readonly string BaseUrl = "https://api.inaturalist.org/v1/";
         public static readonly string ApiTokenUrl = "https://www.inaturalist.org/users/api_token";
 
-        static List<Observation> JsonToObservations(string jsonString) => ObsWebResult.CreateFromJson(jsonString).results;
-        static Observation JsonToObservation(string jsonString) => ObsWebResult.CreateFromJson(jsonString).results[0];
+        static List<Observation> JsonToObservations(string jsonString) => Results<Observation>.CreateFromJson(jsonString).results;
+        static Observation JsonToObservation(string jsonString) => Results<Observation>.CreateFromJson(jsonString).results[0];
+        static Error JsonToError(string errorString) => Error.CreateFromJson(errorString);
+        static User JsonToUser(string userString) => Results<User>.CreateFromJson(userString).results[0];
 
         static readonly float ServerSleepTime = 3; //be nice to server
         static float timeSinceLastServerCall = float.MaxValue;
+
+        string apiToken = "";
 
 
         private void Update()
@@ -49,34 +53,60 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="request">The UnityWebRequest</param>
         /// <param name="receiveRequest">The function which processes the server response (JSON encoded as string) and returns a response of type T.</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the processed response of type T.</param>
-        IEnumerator DoWebRequestAsync<T>(UnityWebRequest request, Func<string, T> receiveRequest, Action<T> callback)
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        /// <param name="authenticate">Whether to pass the API token along with the request, for API calls that require authentication only.</param>
+        IEnumerator DoWebRequestAsync<T>(UnityWebRequest request, Func<string, T> receiveRequest, Action<T> callback, Action<Error> errorCallback, bool authenticate=false)
         {
             if (IsRateLimited())
             {
-                yield return null;
+                Debug.Log("Too many requests, waiting");
+                yield return new WaitForSeconds(1);
             }
             timeSinceLastServerCall = 0;
             Debug.Log("Sending web request: " + request.url.ToString());
+            if (authenticate)
+            {
+                Debug.Log("Authorizing request");
+                request.SetRequestHeader("Authorization", apiToken);
+            }
             yield return request.SendWebRequest();
             while (!request.isDone)
                 yield return null;
 
+
+            byte[] result = request.downloadHandler.data;
+            string json = System.Text.Encoding.Default.GetString(result);
+
+            //DEBUG PRINT TODO REMOVE
+            string destination = Application.persistentDataPath + "/log.txt";
+            File.WriteAllText(destination, json);
+
             if (!request.isHttpError && !request.isNetworkError)
             {
-                byte[] result = request.downloadHandler.data;
-                string json = System.Text.Encoding.Default.GetString(result);
-
-                //DEBUG PRINT TODO REMOVE
-                string destination = Application.persistentDataPath + "/log.txt";
-                File.WriteAllText(destination, json);
-
-                T response = receiveRequest(json);
-                callback(response);
+                // check if it's an error by interpreting it as an error and seeing if we're wrong
+                Error error = JsonToError(json);
+                if (error.status == (int)HttpStatusCode.OK)
+                {
+                    Debug.Log("Web request success");
+                    T response = receiveRequest(json);
+                    callback(response);
+                }
+                else
+                {
+                    Debug.Log("Web request failure");
+                    if (error.status == (int)HttpStatusCode.Unauthorized)
+                    {
+                        apiToken = ""; //invalidate any API token we have on record, this one didn't work.
+                    }
+                    errorCallback(error);
+                }
             }
             else
             {
                 Debug.LogError("Web request failed with status code " + request.responseCode.ToString());
                 Debug.LogError(request.error);
+                Error error = JsonToError(json);
+                errorCallback(error);
             }
         }
 
@@ -84,6 +114,11 @@ namespace JoshAaronMiller.INaturalist
         public void GetApiToken()
         {
             Application.OpenURL("https://www.inaturalist.org/users/api_token");
+        }
+
+        public void SetApiToken(string token)
+        {
+            apiToken = token;
         }
 
         public void TestPrint(string json)
@@ -126,11 +161,12 @@ namespace JoshAaronMiller.INaturalist
         /// </summary>
         /// <param name="ids">The list of observation IDs to fetch</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the list of Observation objects found.</param>
-        public void GetObservationsById(List<int> ids, Action<List<Observation>> callback)
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetObservationsById(List<int> ids, Action<List<Observation>> callback, Action<Error> errorCallback)
         {
             string idsAsStringList = string.Join(",", ids);
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations/" + idsAsStringList);
-            StartCoroutine(DoWebRequestAsync(request, JsonToObservations, callback));
+            StartCoroutine(DoWebRequestAsync(request, JsonToObservations, callback, errorCallback));
         }
 
 
@@ -139,10 +175,11 @@ namespace JoshAaronMiller.INaturalist
         /// </summary>
         /// <param name="id">The observation ID to fetch</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the Observation object found.</param>
-        public void GetObservationById(List<int> id, Action<Observation> callback)
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetObservationById(List<int> id, Action<Observation> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations/" + id.ToString());
-            StartCoroutine(DoWebRequestAsync(request, JsonToObservation, callback));
+            StartCoroutine(DoWebRequestAsync(request, JsonToObservation, callback, errorCallback));
         }
 
 
@@ -165,10 +202,11 @@ namespace JoshAaronMiller.INaturalist
         /// </summary>
         /// <param name="obsSearch">An ObservationSearch object holding the parameters of the search</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the list of Observation objects found.</param>
-        public void SearchObservations(ObservationSearch obsSearch, Action<List<Observation>> callback)
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void SearchObservations(ObservationSearch obsSearch, Action<List<Observation>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations/?" + obsSearch.ToUrlParameters());
-            StartCoroutine(DoWebRequestAsync(request, JsonToObservations, callback));
+            StartCoroutine(DoWebRequestAsync(request, JsonToObservations, callback, errorCallback));
         }
 
         //CreateObservation
@@ -198,6 +236,39 @@ namespace JoshAaronMiller.INaturalist
 
 
         // --- USERS ---
+
+        //GetUserDetails(id)
+        //UpdateUser(id)
+        //GetUserProjects
+        //GetAutocompleteUser
+
+
+
+        /// <summary>
+        /// Fetch the User details for the authenticated user.
+        /// </summary>
+        /// <param name="callback">A function to callback when the request is done which takes as input the User object.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        /// <returns>Whether the INatManager has an API token to use for the authentication-required request.</returns>
+        public bool GetUserMe(Action<User> callback, Action<Error> errorCallback)
+        {
+            if (apiToken == "")
+            {
+                return false;
+            }
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "users/me");
+            StartCoroutine(DoWebRequestAsync(request, JsonToUser, callback, errorCallback, true));
+            return true;
+        }
+
+
+        //UnmuteUser
+        //MuteUser
+        //UpdateUserSession
+
+
+
+
 
 
         // --- OBSERVATION TILES ---

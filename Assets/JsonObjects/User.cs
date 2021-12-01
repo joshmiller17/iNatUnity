@@ -31,6 +31,7 @@ namespace JoshAaronMiller.INaturalist
 
         public static User CreateFromJson(string jsonString)
         {
+            Debug.Log("parsing json string: " + jsonString);
             return JsonUtility.FromJson<User>(jsonString);
         }
     }
