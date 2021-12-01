@@ -12,10 +12,14 @@ public class Demo : MonoBehaviour
     public GameObject AttributionObj;
     public GameObject ObservationCountObj;
     public GameObject LoadingTextObj;
+
     public GameObject VoteButtonObjs;
     public GameObject VoteButtonOneObj;
     public GameObject VoteButtonTwoObj;
-    
+
+    public GameObject LoginButtonObj;
+    public GameObject PostLoginObj;
+
     INatManager INatManager;
     Text Attribution;
     Text ObservationCount;
@@ -34,8 +38,13 @@ public class Demo : MonoBehaviour
         VoteButtonTwo = VoteButtonTwoObj.GetComponent<Text>();
         Debug.Log(VoteButtonOne);
 
-        INatManager.GetApiToken();
         //ShowDemoSearch();
+    }
+
+    public void ClickLoginButton()
+    {
+        LoginButtonObj.SetActive(false);
+        PostLoginObj.SetActive(true);
     }
 
     void ShowDemoSearch()

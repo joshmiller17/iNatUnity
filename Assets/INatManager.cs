@@ -83,7 +83,7 @@ namespace JoshAaronMiller.INaturalist
         // --- LOGIN ---
         public void GetApiToken()
         {
-            
+            Application.OpenURL("https://www.inaturalist.org/users/api_token");
         }
 
         public void TestPrint(string json)
