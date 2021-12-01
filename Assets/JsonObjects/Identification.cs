@@ -5,7 +5,7 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class Identification
+    public class Identification : JsonObject
     {
         public bool hidden;
         // disagreement not yet implemented
@@ -26,10 +26,5 @@ namespace JoshAaronMiller.INaturalist
         public User user;
         public int previous_observation_taxon_id;
         public Taxon taxon;
-
-        public static Identification CreateFromJson(string jsonString)
-        {
-            return JsonUtility.FromJson<Identification>(jsonString);
-        }
     }
 }

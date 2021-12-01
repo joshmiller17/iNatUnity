@@ -6,7 +6,7 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class Taxon
+    public class Taxon : JsonObject
     {
         public bool is_active;
         public string ancestry;
@@ -39,10 +39,5 @@ namespace JoshAaronMiller.INaturalist
         public string iconic_taxon_name;
         public string preferred_common_name;
         public string wikipedia_summary;
-
-        public static Taxon CreateFromJson(string jsonString)
-        {
-            return JsonUtility.FromJson<Taxon>(jsonString);
-        }
     }
 }

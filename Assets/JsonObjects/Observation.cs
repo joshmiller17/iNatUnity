@@ -10,7 +10,7 @@ namespace JoshAaronMiller.INaturalist
 {
 
     [System.Serializable]
-    public class Observation
+    public class Observation : JsonObject
     {
         static readonly Regex PhotoIdRegex = new Regex("photos/(.*)/");
         public enum ImageSize { Any /*Default*/, Square /*75x75*/, Small /*240x240*/, 
@@ -158,24 +158,19 @@ namespace JoshAaronMiller.INaturalist
         /// <summary>
         /// Returns an aggregation of the identifications for this observation.
         /// </summary>
-        /// <returns>A Dictionary mapping taxon identifications (by preferred common name) to a count of the number of users who guessed that taxon.</returns>
-        public Dictionary<string, int> CountIdentifications()
+        /// <returns>A Dictionary mapping taxon identifications to a count of the number of users who guessed that taxon.</returns>
+        public Dictionary<Taxon, int> CountIdentifications()
         {
-            DefaultDictionary<string, int> identMap = new DefaultDictionary<string, int>();
+            DefaultDictionary<Taxon, int> identMap = new DefaultDictionary<Taxon, int>();
             foreach (Identification ident in identifications)
             {
-                if (ident.taxon != null && ident.taxon.preferred_common_name != null)
+                if (ident.taxon != null)
                 {
-                    identMap[ident.taxon.preferred_common_name] += 1;
+                    identMap[ident.taxon] += 1;
                 }
             }
 
             return identMap;
-        }
-
-        public static Observation CreateFromJson(string jsonString)
-        {
-            return JsonUtility.FromJson<Observation>(jsonString);
         }
 
     }

@@ -6,14 +6,9 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class FlagCounts
+    public class FlagCounts : JsonObject
     {
         public int resolved;
         public int unresolved;
-
-        public static FlagCounts CreateFromJson(string jsonString)
-        {
-            return JsonUtility.FromJson<FlagCounts>(jsonString);
-        }
     }
 }

@@ -7,15 +7,9 @@ namespace JoshAaronMiller.INaturalist
 {
 
     [System.Serializable]
-    public class Error
+    public class Error : JsonObject
     {
         public string error;
         public int status = (int)HttpStatusCode.OK;
-
-
-        public static Error CreateFromJson(string jsonString)
-        {
-            return JsonUtility.FromJson<Error>(jsonString);
-        }
     }
 }

@@ -42,6 +42,8 @@ public class Demo : MonoBehaviour
     Text ErrorMessage;
     Text LoggedInAs;
     InputField ApiTokenInput;
+    Taxon VoteTaxonOne;
+    Taxon VoteTaxonTwo;
 
     static readonly string BadApiTokenSyntax = "Invalid syntax. Paste just the token string without quotes or the \"api_token\" label before it.";
     static readonly string InvalidApiToken = "Invalid API token.";
@@ -145,14 +147,20 @@ public class Demo : MonoBehaviour
 
     public void VoteOptionOne()
     {
-        // TODO submit vote
+        SubmitVote(VoteTaxonOne);
         RemoveObservation();
     }
 
     public void VoteOptionTwo()
     {
-        // TODO submit vote
+        SubmitVote(VoteTaxonTwo);
         RemoveObservation();
+    }
+
+    void SubmitVote(Taxon taxon)
+    {
+        Identification ident = new Identification();
+
     }
 
     public void RemoveObservation()
@@ -189,26 +197,24 @@ public class Demo : MonoBehaviour
 
     void PopulateVoteOptions()
     {
-        Dictionary<string, int> idents = observations[carouselIndex].CountIdentifications();
-        string bestNameOne = "";
+        Dictionary<Taxon, int> idents = observations[carouselIndex].CountIdentifications();
         int bestCountOne = 0;
-        string bestNameTwo = "";
         int bestCountTwo = 0;
-        foreach (KeyValuePair<string, int> ident in idents)
+        foreach (KeyValuePair<Taxon, int> ident in idents)
         {
             if (ident.Value > bestCountOne && bestCountOne < bestCountTwo)
             {
-                bestNameOne = ident.Key;
+                VoteButtonOne.text = ident.Key.preferred_common_name;
+                VoteTaxonOne = ident.Key;
                 bestCountOne = ident.Value;
             }
             else if (ident.Value > bestCountTwo)
             {
-                bestNameTwo = ident.Key;
+                VoteButtonTwo.text = ident.Key.preferred_common_name;
+                VoteTaxonTwo = ident.Key;
                 bestCountTwo = ident.Value;
             }
         }
-        VoteButtonOne.text = bestNameOne;
-        VoteButtonTwo.text = bestNameTwo;
     }
 
     public void RemoveLoading()

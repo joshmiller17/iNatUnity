@@ -6,15 +6,10 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class Sound
+    public class Sound : JsonObject
     {
         public int id;
         public string attribution;
         public string license_code;
-
-        public static Sound CreateFromJson(string jsonString)
-        {
-            return JsonUtility.FromJson<Sound>(jsonString);
-        }
     }
 }

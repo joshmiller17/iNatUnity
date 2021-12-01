@@ -5,7 +5,7 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class Photo
+    public class Photo : JsonObject
     {
         public int id;
         public string license_code;
@@ -15,10 +15,5 @@ namespace JoshAaronMiller.INaturalist
         // flags not yet implemented
         public string square_url;
         public string medium_url;
-
-        public static Photo CreateFromJson(string jsonString)
-        {
-            return JsonUtility.FromJson<Photo>(jsonString);
-        }
     }
 }

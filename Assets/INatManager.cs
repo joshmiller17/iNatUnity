@@ -18,10 +18,12 @@ namespace JoshAaronMiller.INaturalist
         public static readonly string BaseUrl = "https://api.inaturalist.org/v1/";
         public static readonly string ApiTokenUrl = "https://www.inaturalist.org/users/api_token";
 
-        static List<Observation> JsonToObservations(string jsonString) => Results<Observation>.CreateFromJson(jsonString).results;
-        static Observation JsonToObservation(string jsonString) => Results<Observation>.CreateFromJson(jsonString).results[0];
-        static Error JsonToError(string errorString) => Error.CreateFromJson(errorString);
-        static User JsonToUser(string userString) => Results<User>.CreateFromJson(userString).results[0];
+        static List<Observation> JsonToObservations(string jsonString) => Results<Observation>.CreateFromJson<Results<Observation>>(jsonString).results;
+        static Observation JsonToObservation(string jsonString) => Results<Observation>.CreateFromJson<Results<Observation>>(jsonString).results[0];
+        static Error JsonToError(string errorString) => Error.CreateFromJson<Error>(errorString);
+        static User JsonToUser(string userString) => Results<User>.CreateFromJson<Results<User>>(userString).results[0];
+
+        static readonly string UserAgent = "iNat+Unity by Josh Aaron Miller";
 
         static readonly float ServerSleepTime = 3; //be nice to server
         static float timeSinceLastServerCall = float.MaxValue;
@@ -63,6 +65,7 @@ namespace JoshAaronMiller.INaturalist
                 yield return new WaitForSeconds(1);
             }
             timeSinceLastServerCall = 0;
+            request.SetRequestHeader("User-Agent", UserAgent);
             Debug.Log("Sending web request: " + request.url.ToString());
             if (authenticate)
             {
@@ -77,7 +80,7 @@ namespace JoshAaronMiller.INaturalist
             byte[] result = request.downloadHandler.data;
             string json = System.Text.Encoding.Default.GetString(result);
 
-            //DEBUG PRINT TODO REMOVE
+            //Extra logging for debug
             string destination = Application.persistentDataPath + "/log.txt";
             File.WriteAllText(destination, json);
 
@@ -87,13 +90,12 @@ namespace JoshAaronMiller.INaturalist
                 Error error = JsonToError(json);
                 if (error.status == (int)HttpStatusCode.OK)
                 {
-                    Debug.Log("Web request success");
                     T response = receiveRequest(json);
                     callback(response);
                 }
                 else
                 {
-                    Debug.Log("Web request failure");
+                    Debug.LogWarning("Web request failed with status code " + request.responseCode.ToString());
                     if (error.status == (int)HttpStatusCode.Unauthorized)
                     {
                         apiToken = ""; //invalidate any API token we have on record, this one didn't work.
@@ -143,6 +145,21 @@ namespace JoshAaronMiller.INaturalist
 
 
         // --- IDENTIFICATIONS ---
+
+        //DeleteIdentification
+        //GetIdentification(id)
+        //UpdateIdentification
+        //SearchIdentifications
+
+        //CreateIdentification
+
+
+        //GetIdentificationCategories
+        //GetIdentificationSpeciesCounts
+        //GetIdentificationIdentifiers
+        //GetIdentificationObservers
+        //GetIdentificationRecentTaxa
+        //GetIdentificationSimilarSpecies
 
         // --- MESSAGES ---
 

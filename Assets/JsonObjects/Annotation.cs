@@ -5,17 +5,11 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class Annotation
+    public class Annotation : JsonObject
     {
         public string resource_type;
         public int resource_id;
         public int controlled_attribute_id;
         public int controlled_value_id;
-
-
-        public static Annotation CreateFromJson(string jsonString)
-        {
-            return JsonUtility.FromJson<Annotation>(jsonString);
-        }
     }
 }

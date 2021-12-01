@@ -6,15 +6,9 @@ namespace JoshAaronMiller.INaturalist
 {
 
     [System.Serializable]
-    public class Dimensions
+    public class Dimensions : JsonObject
     {
         public int height;
         public int width;
-
-
-        public static Dimensions CreateFromJson(string jsonString)
-        {
-            return JsonUtility.FromJson<Dimensions>(jsonString);
-        }
     }
 }

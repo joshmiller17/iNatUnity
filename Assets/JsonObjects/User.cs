@@ -5,7 +5,7 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class User
+    public class User : JsonObject
     {
         public int id;
         public string login;
@@ -28,11 +28,5 @@ namespace JoshAaronMiller.INaturalist
         public int universal_search_rank;
         public List<string> roles;
         public string icon_url;
-
-        public static User CreateFromJson(string jsonString)
-        {
-            Debug.Log("parsing json string: " + jsonString);
-            return JsonUtility.FromJson<User>(jsonString);
-        }
     }
 }

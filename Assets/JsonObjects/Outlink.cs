@@ -6,14 +6,9 @@ namespace JoshAaronMiller.INaturalist
 {
 
     [System.Serializable]
-    public class Outlink
+    public class Outlink : JsonObject
     {
         public string source;
         public string url;
-
-        public static Outlink CreateFromJson(string jsonString)
-        {
-            return JsonUtility.FromJson<Outlink>(jsonString);
-        }
     }
 }
