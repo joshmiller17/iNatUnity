@@ -23,6 +23,8 @@ namespace JoshAaronMiller.INaturalist
         static Error JsonToError(string errorString) => Error.CreateFromJson<Error>(errorString);
         static User JsonToUser(string userString) => Results<User>.CreateFromJson<Results<User>>(userString).results[0];
 
+        static Identification JsonToIdentification(string jsonString) => Identification.CreateFromJson<Identification>(jsonString);
+
         static readonly string UserAgent = "iNat+Unity by Josh Aaron Miller";
 
         static readonly float ServerSleepTime = 3; //be nice to server
@@ -151,7 +153,18 @@ namespace JoshAaronMiller.INaturalist
         //UpdateIdentification
         //SearchIdentifications
 
-        //CreateIdentification
+        /// <summary>
+        /// Submit an Identification.
+        /// </summary>
+        /// <param name="identSub">The parameters of the Identification. Requires at minimum observation ID and taxon ID.</param>
+        /// /// <param name="callback">A function to callback when the request is done which takes as input the Identification created.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void CreateIdentification(IdentificationSubmission identSub, Action<Identification> callback, Action<Error> errorCallback)
+        {
+            string postData = IdentificationSubmission.ToJson<IdentificationSubmission>(identSub);
+            UnityWebRequest request = UnityWebRequest.Post(BaseUrl + "identifications/", postData);
+            StartCoroutine(DoWebRequestAsync(request, JsonToIdentification, callback, errorCallback));
+        }
 
 
         //GetIdentificationCategories

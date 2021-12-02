@@ -29,21 +29,23 @@ public class Demo : MonoBehaviour
     public GameObject LoginButtonObj;
     public GameObject PostLoginObj;
     public GameObject ErrorMessageObj;
-    public GameObject ApiTokenInputObj;
+    public GameObject apiTokenInputObj;
     public GameObject LoggedInAsObj;
     public GameObject InfoDetailsObj;
 
 
-    INatManager INatManager;
-    Text Attribution;
-    Text ObservationCount;
-    Text VoteButtonOne;
-    Text VoteButtonTwo;
-    Text ErrorMessage;
-    Text LoggedInAs;
-    InputField ApiTokenInput;
-    Taxon VoteTaxonOne;
-    Taxon VoteTaxonTwo;
+    INatManager iNatManager;
+    Text attribution;
+    Text observationCount;
+    Text voteButtonOne;
+    Text voteButtonTwo;
+    Text errorMessage;
+    Text loggedInAs;
+    InputField apiTokenInput;
+    Taxon voteTaxonOne;
+    Taxon voteTaxonTwo;
+
+    User user;
 
     static readonly string BadApiTokenSyntax = "Invalid syntax. Paste just the token string without quotes or the \"api_token\" label before it.";
     static readonly string InvalidApiToken = "Invalid API token.";
@@ -51,19 +53,20 @@ public class Demo : MonoBehaviour
 
     List<Observation> observations = new List<Observation>();
     int carouselIndex = 0;
+    bool loggedIn = false;
 
     void Start()
     {
-        INatManager = INatManagerObj.GetComponent<INatManager>();
-        Attribution = AttributionObj.GetComponent<Text>();
-        ObservationCount = ObservationCountObj.GetComponent<Text>();
-        VoteButtonOne = VoteButtonOneObj.GetComponent<Text>();
-        VoteButtonTwo = VoteButtonTwoObj.GetComponent<Text>();
-        ErrorMessage = ErrorMessageObj.GetComponent<Text>();
-        LoggedInAs = LoggedInAsObj.GetComponent<Text>();
-        ApiTokenInput = ApiTokenInputObj.GetComponent<InputField>();
+        iNatManager = INatManagerObj.GetComponent<INatManager>();
+        attribution = AttributionObj.GetComponent<Text>();
+        observationCount = ObservationCountObj.GetComponent<Text>();
+        voteButtonOne = VoteButtonOneObj.GetComponent<Text>();
+        voteButtonTwo = VoteButtonTwoObj.GetComponent<Text>();
+        errorMessage = ErrorMessageObj.GetComponent<Text>();
+        loggedInAs = LoggedInAsObj.GetComponent<Text>();
+        apiTokenInput = apiTokenInputObj.GetComponent<InputField>();
 
-        //ShowDemoSearch();
+        ShowDemoSearch();
     }
 
     public void ClickLoginButton()
@@ -75,34 +78,36 @@ public class Demo : MonoBehaviour
 
     public void CheckApiToken()
     {
-        string apiToken = ApiTokenInput.text;
+        string apiToken = apiTokenInput.text;
         if (new List<string>() { "\"", "{", "}", ":", "api_token" }.Any(apiToken.Contains))
         {
-            ErrorMessage.text = BadApiTokenSyntax;
+            errorMessage.text = BadApiTokenSyntax;
             ErrorMessageObj.SetActive(true);
         }
         else
         {
             ErrorMessageObj.SetActive(false);
-            INatManager.SetApiToken(apiToken);
-            INatManager.GetUserMe(SetUser, SetUserError);
+            iNatManager.SetApiToken(apiToken);
+            iNatManager.GetUserMe(SetUser, SetUserError);
         }
     }
 
     public void SetUser(User me)
     {
+        user = me;
         ErrorMessageObj.SetActive(false);
-        LoggedInAs.text = "Logged in as: " + me.login;
+        loggedInAs.text = "Logged in as: " + user.login;
         LoggedInAsObj.SetActive(true);
         PostLoginObj.SetActive(false);
-
+        loggedIn = true;
+        TryShowVotingButtons();
     }
 
     public void SetUserError(Error e)
     {
         if (e.status == (int)HttpStatusCode.Unauthorized)
         {
-            ErrorMessage.text = InvalidApiToken;
+            errorMessage.text = InvalidApiToken;
             ErrorMessageObj.SetActive(true);
         }
     }
@@ -115,7 +120,7 @@ public class Demo : MonoBehaviour
         os.SetPagination(200, Random.Range(1,5));
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
-        INatManager.SearchObservations(os, PopulateCarousel, HandleError);
+        iNatManager.SearchObservations(os, PopulateCarousel, HandleError);
     }
 
     public void HandleError(Error e)
@@ -145,22 +150,42 @@ public class Demo : MonoBehaviour
         RefreshActiveObservation();
     }
 
+    public void TryShowVotingButtons()
+    {
+        if (loggedIn && observations.Count > 0)
+        {
+            VoteButtonObjs.SetActive(true);
+            PopulateVoteOptions();
+        }
+        else
+        {
+            VoteButtonObjs.SetActive(false);
+        }
+    }
+
     public void VoteOptionOne()
     {
-        SubmitVote(VoteTaxonOne);
+        SubmitVote(voteTaxonOne);
         RemoveObservation();
     }
 
     public void VoteOptionTwo()
     {
-        SubmitVote(VoteTaxonTwo);
+        SubmitVote(voteTaxonTwo);
         RemoveObservation();
     }
 
     void SubmitVote(Taxon taxon)
     {
-        Identification ident = new Identification();
+        IdentificationSubmission identSub = new IdentificationSubmission();
+        identSub.observation_id = observations[carouselIndex].id;
+        identSub.taxon_id = taxon.id;
+        iNatManager.CreateIdentification(identSub, CreateIdentificationCallback, HandleError);
+    }
 
+    public void CreateIdentificationCallback(Identification ident)
+    {
+        Debug.Log("Successfully submitted identification " + ident.id);
     }
 
     public void RemoveObservation()
@@ -178,17 +203,16 @@ public class Demo : MonoBehaviour
         LoadingTextObj.SetActive(true);
         if (observations.Count == 0)
         {
-            ObservationCount.text = "0 / 0";
-            VoteButtonObjs.SetActive(false);
+            observationCount.text = "0 / 0";
         }
         else
         {
-            ObservationCount.text = (carouselIndex + 1).ToString() + " / " + observations.Count;
-            VoteButtonObjs.SetActive(true);
+            observationCount.text = (carouselIndex + 1).ToString() + " / " + observations.Count;
         }
+        TryShowVotingButtons();
         string photoUrl = observations[carouselIndex].GetPhotoUrls(Observation.ImageSize.Large)[0];
         StartCoroutine(Utilities.LoadImageFromPath(photoUrl, INatImage, RemoveLoading));
-        Attribution.text = observations[carouselIndex].photos[0].attribution;
+        attribution.text = observations[carouselIndex].photos[0].attribution;
         if (VoteButtonObjs.activeInHierarchy)
         {
             PopulateVoteOptions();
@@ -202,16 +226,17 @@ public class Demo : MonoBehaviour
         int bestCountTwo = 0;
         foreach (KeyValuePair<Taxon, int> ident in idents)
         {
-            if (ident.Value > bestCountOne && bestCountOne < bestCountTwo)
+            if (ident.Value > bestCountOne && bestCountOne < bestCountTwo 
+                && ident.Key.preferred_common_name != "" && ident.Key.preferred_common_name != voteButtonTwo.text)
             {
-                VoteButtonOne.text = ident.Key.preferred_common_name;
-                VoteTaxonOne = ident.Key;
+                voteButtonOne.text = ident.Key.preferred_common_name;
+                voteTaxonOne = ident.Key;
                 bestCountOne = ident.Value;
             }
             else if (ident.Value > bestCountTwo)
             {
-                VoteButtonTwo.text = ident.Key.preferred_common_name;
-                VoteTaxonTwo = ident.Key;
+                voteButtonTwo.text = ident.Key.preferred_common_name;
+                voteTaxonTwo = ident.Key;
                 bestCountTwo = ident.Value;
             }
         }
@@ -230,6 +255,8 @@ public class Demo : MonoBehaviour
 
         foreach (Observation r in results)
         {
+            // TODO only show if user hasn't identified yet
+
             // for the purpose of this demo, only save results that have some disagreement and some popularity
             if (r.num_identification_disagreements < 1 || r.identifications_count < 5) continue;
             observations.Add(r);

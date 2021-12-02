@@ -9,7 +9,7 @@ namespace JoshAaronMiller.INaturalist
     [System.Serializable]
     public class Error : JsonObject
     {
-        public string error;
+        public string error; //TODO error may be a JSON
         public int status = (int)HttpStatusCode.OK;
     }
 }
