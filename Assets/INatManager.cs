@@ -75,10 +75,6 @@ namespace JoshAaronMiller.INaturalist
             while (!request.isDone)
                 yield return null;
 
-
-            Debug.Log(request.downloadedBytes);
-            Debug.Log(request.downloadHandler);
-            Debug.Log(request.downloadHandler.data);
             byte[] result = request.downloadHandler.data;
             string json = System.Text.Encoding.Default.GetString(result);
 
@@ -197,7 +193,10 @@ namespace JoshAaronMiller.INaturalist
             byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(postData);
             UnityWebRequest request = new UnityWebRequest(BaseUrl + "identifications/", "POST");
             request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            request.uploadHandler.contentType = "application/json";
             request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("content-type", "application/json");
+            request.SetRequestHeader("accept", "application/json");
             StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
         }
 
