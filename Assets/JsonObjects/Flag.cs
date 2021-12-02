@@ -18,4 +18,5 @@ namespace JoshAaronMiller.INaturalist
     {
         public Flag flag;
         public string flag_explanation; // if flag is type "other", include a comment
+    }
 }

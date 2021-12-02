@@ -167,16 +167,44 @@ namespace JoshAaronMiller.INaturalist
 
         // --- FLAGS ---
 
-        //CreateFlag not yet implemented TODO
-        //DeleteFlag not yet implemented TODO
-        //UpdateFlag not yet implemented TODO
+        //CreateFlag not yet implemented TODO POST
+
+        //DeleteFlag not yet implemented TODO DELETE
+
+        //UpdateFlag not yet implemented TODO PUT
 
 
         // --- IDENTIFICATIONS ---
 
-        //DeleteIdentification not yet implemented TODO
-        //GetIdentification(id) not yet implemented TODO
-        //UpdateIdentification not yet implemented TODO
+        //DeleteIdentification not yet implemented TODO DELETE
+
+        /// <summary>
+        /// Given an array of IDs, returns corresponding Identifications 
+        /// </summary>
+        /// <param name="identIds">The list of identification IDs to fetch</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of Identification objects found.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetIdentifications(List<int> identIds, Action<List<Identification>> callback, Action<Error> errorCallback)
+        {
+            string idsAsStringList = string.Join(",", identIds);
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/" + idsAsStringList);
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Identification>, callback, errorCallback));
+        }
+
+        /// <summary>
+        /// Given an array of IDs, returns corresponding Identifications 
+        /// </summary>
+        /// <param name="identId">The identification ID to fetch</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Identification object found.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetIdentification(int identId, Action<Identification> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/" + identId.ToString());
+            StartCoroutine(DoWebRequestAsync(request, FirstResultFromJson<Identification>, callback, errorCallback));
+        }
+
+
+        //UpdateIdentification not yet implemented TODO PUT
         //SearchIdentifications not yet implemented TODO
 
         /// <summary>
@@ -239,7 +267,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="ids">The list of observation IDs to fetch</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the list of Observation objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetObservationsById(List<int> ids, Action<List<Observation>> callback, Action<Error> errorCallback)
+        public void GetObservations(List<int> ids, Action<List<Observation>> callback, Action<Error> errorCallback)
         {
             string idsAsStringList = string.Join(",", ids);
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations/" + idsAsStringList);
@@ -253,7 +281,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="id">The observation ID to fetch</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the Observation object found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetObservationById(List<int> id, Action<Observation> callback, Action<Error> errorCallback)
+        public void GetObservation(int id, Action<Observation> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations/" + id.ToString());
             StartCoroutine(DoWebRequestAsync(request, FirstResultFromJson<Observation>, callback, errorCallback));
