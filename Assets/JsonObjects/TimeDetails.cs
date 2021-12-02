@@ -5,7 +5,7 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class TimeDetails : JsonObject
+    public class TimeDetails : JsonObject<TimeDetails>
     {
         public string date;
         public int day;

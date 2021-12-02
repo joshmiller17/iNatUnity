@@ -5,7 +5,7 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class User : JsonObject
+    public class User : JsonObject<User>
     {
         public int id;
         public string login;

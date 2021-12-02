@@ -6,7 +6,7 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class Taxon : JsonObject
+    public class Taxon : JsonObject<Taxon>
     {
         public bool is_active;
         public string ancestry;

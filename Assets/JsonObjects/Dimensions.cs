@@ -6,7 +6,7 @@ namespace JoshAaronMiller.INaturalist
 {
 
     [System.Serializable]
-    public class Dimensions : JsonObject
+    public class Dimensions : JsonObject<Dimensions>
     {
         public int height;
         public int width;

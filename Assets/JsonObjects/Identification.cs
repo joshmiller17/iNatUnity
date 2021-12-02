@@ -5,7 +5,7 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class Identification : JsonObject
+    public class Identification : JsonObject<Identification>
     {
         public bool hidden;
         // disagreement not yet implemented

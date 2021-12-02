@@ -5,7 +5,7 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class Photo : JsonObject
+    public class Photo : JsonObject<Photo>
     {
         public int id;
         public string license_code;

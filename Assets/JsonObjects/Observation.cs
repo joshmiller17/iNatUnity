@@ -10,7 +10,7 @@ namespace JoshAaronMiller.INaturalist
 {
 
     [System.Serializable]
-    public class Observation : JsonObject
+    public class Observation : JsonObject<Observation>
     {
         static readonly Regex PhotoIdRegex = new Regex("photos/(.*)/");
         public enum ImageSize { Any /*Default*/, Square /*75x75*/, Small /*240x240*/, 

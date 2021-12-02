@@ -18,12 +18,9 @@ namespace JoshAaronMiller.INaturalist
         public static readonly string BaseUrl = "https://api.inaturalist.org/v1/";
         public static readonly string ApiTokenUrl = "https://www.inaturalist.org/users/api_token";
 
-        static List<Observation> JsonToObservations(string jsonString) => Results<Observation>.CreateFromJson<Results<Observation>>(jsonString).results;
-        static Observation JsonToObservation(string jsonString) => Results<Observation>.CreateFromJson<Results<Observation>>(jsonString).results[0];
-        static Error JsonToError(string errorString) => Error.CreateFromJson<Error>(errorString);
-        static User JsonToUser(string userString) => Results<User>.CreateFromJson<Results<User>>(userString).results[0];
-
-        static Identification JsonToIdentification(string jsonString) => Identification.CreateFromJson<Identification>(jsonString);
+        static T FromJson<T>(string jsonString) => JsonObject<T>.CreateFromJson(jsonString);
+        static List<T> ResultsFromJson<T>(string jsonString) => JsonObject<Results<T>>.CreateFromJson(jsonString).results;
+        static T FirstResultFromJson<T>(string jsonString) => ResultsFromJson<T>(jsonString)[0];
 
         static readonly string UserAgent = "iNat+Unity by Josh Aaron Miller";
 
@@ -89,7 +86,7 @@ namespace JoshAaronMiller.INaturalist
             if (!request.isHttpError && !request.isNetworkError)
             {
                 // check if it's an error by interpreting it as an error and seeing if we're wrong
-                Error error = JsonToError(json);
+                Error error = FromJson<Error>(json);
                 if (error.status == (int)HttpStatusCode.OK)
                 {
                     T response = receiveRequest(json);
@@ -109,7 +106,7 @@ namespace JoshAaronMiller.INaturalist
             {
                 Debug.LogError("Web request failed with status code " + request.responseCode.ToString());
                 Debug.LogError(request.error);
-                Error error = JsonToError(json);
+                Error error = FromJson<Error>(json);
                 errorCallback(error);
             }
         }
@@ -139,9 +136,25 @@ namespace JoshAaronMiller.INaturalist
 
         // --- COMMENTS ---
 
+        //CreateComment
+        //DeleteComment
+        //UpdateComment
+
 
         // --- CONTROLLED TERMS ---
 
+        /// <summary>
+        /// Fetch a list of all attribute controlled terms as a List of ControlledTerms.
+        /// </summary>
+        /// <param name="callback">A function to callback when the request is done which takes as input the List of Controlled Terms created.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetTermsIndex(Action<List<ControlledTerm>> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "controlled_terms/");
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<ControlledTerm>, callback, errorCallback));
+        }
+
+        //GetTermsForTaxon
 
         // --- FLAGS ---
 
@@ -157,20 +170,20 @@ namespace JoshAaronMiller.INaturalist
         /// Submit an Identification.
         /// </summary>
         /// <param name="identSub">The parameters of the Identification. Requires at minimum observation ID and taxon ID.</param>
-        /// /// <param name="callback">A function to callback when the request is done which takes as input the Identification created.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Identification created.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
         public void CreateIdentification(IdentificationSubmission identSub, Action<Identification> callback, Action<Error> errorCallback)
         {
             WrappedIdentificationSubmission submission = new WrappedIdentificationSubmission();
             submission.identification = identSub;
-            string postData = WrappedIdentificationSubmission.ToJson<WrappedIdentificationSubmission>(submission);
+            string postData = WrappedIdentificationSubmission.ToJson(submission);
             UnityWebRequest request = new UnityWebRequest(BaseUrl + "identifications/", "POST");
             byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(postData);
             request.uploadHandler = new UploadHandlerRaw(bodyRaw);
             request.uploadHandler.contentType = "application/json";
             request.downloadHandler = new DownloadHandlerBuffer();
             request.SetRequestHeader("Content-Type", "application/json");
-            StartCoroutine(DoWebRequestAsync(request, JsonToIdentification, callback, errorCallback));
+            StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
         }
 
 
@@ -203,7 +216,7 @@ namespace JoshAaronMiller.INaturalist
         {
             string idsAsStringList = string.Join(",", ids);
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations/" + idsAsStringList);
-            StartCoroutine(DoWebRequestAsync(request, JsonToObservations, callback, errorCallback));
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Observation>, callback, errorCallback));
         }
 
 
@@ -216,7 +229,7 @@ namespace JoshAaronMiller.INaturalist
         public void GetObservationById(List<int> id, Action<Observation> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations/" + id.ToString());
-            StartCoroutine(DoWebRequestAsync(request, JsonToObservation, callback, errorCallback));
+            StartCoroutine(DoWebRequestAsync(request, FirstResultFromJson<Observation>, callback, errorCallback));
         }
 
 
@@ -243,7 +256,7 @@ namespace JoshAaronMiller.INaturalist
         public void SearchObservations(ObservationSearch obsSearch, Action<List<Observation>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations/?" + obsSearch.ToUrlParameters());
-            StartCoroutine(DoWebRequestAsync(request, JsonToObservations, callback, errorCallback));
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Observation>, callback, errorCallback));
         }
 
         //CreateObservation
@@ -294,7 +307,7 @@ namespace JoshAaronMiller.INaturalist
                 return false;
             }
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "users/me");
-            StartCoroutine(DoWebRequestAsync(request, JsonToUser, callback, errorCallback, true));
+            StartCoroutine(DoWebRequestAsync(request, FirstResultFromJson<User>, callback, errorCallback, true));
             return true;
         }
 

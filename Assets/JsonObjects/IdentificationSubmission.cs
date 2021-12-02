@@ -5,7 +5,7 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class IdentificationSubmission : JsonObject
+    public class IdentificationSubmission : JsonObject<IdentificationSubmission>
     {
         public int observation_id;
         public int taxon_id;
@@ -14,7 +14,7 @@ namespace JoshAaronMiller.INaturalist
     }
 
     [System.Serializable]
-    public class WrappedIdentificationSubmission : JsonObject
+    public class WrappedIdentificationSubmission : JsonObject<WrappedIdentificationSubmission>
     {
         public IdentificationSubmission identification;
     }

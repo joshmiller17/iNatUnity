@@ -5,7 +5,7 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class Results<T> : JsonObject
+    public class Results<T> : JsonObject<Results<T>>
     {
         public int total_results;
         public int page;

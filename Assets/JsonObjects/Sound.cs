@@ -6,7 +6,7 @@ using UnityEngine;
 namespace JoshAaronMiller.INaturalist
 {
     [System.Serializable]
-    public class Sound : JsonObject
+    public class Sound : JsonObject<Sound>
     {
         public int id;
         public string attribution;

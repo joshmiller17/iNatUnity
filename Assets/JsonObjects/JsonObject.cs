@@ -4,14 +4,14 @@ using UnityEngine;
 
 namespace JoshAaronMiller.INaturalist
 {
-    public class JsonObject
+    public abstract class JsonObject<T>
     {
-        public static T CreateFromJson<T>(string jsonString)
+        public static T CreateFromJson(string jsonString)
         {
             return JsonUtility.FromJson<T>(jsonString);
         }
 
-        public static string ToJson<T>(T obj)
+        public static string ToJson(T obj)
         {
             return JsonUtility.ToJson(obj);
         }
