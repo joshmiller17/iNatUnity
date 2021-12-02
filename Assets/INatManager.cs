@@ -167,17 +167,17 @@ namespace JoshAaronMiller.INaturalist
 
         // --- FLAGS ---
 
-        //CreateFlag not yet implemented
-        //DeleteFlag not yet implemented
-        //UpdateFlag not yet implemented
+        //CreateFlag not yet implemented TODO
+        //DeleteFlag not yet implemented TODO
+        //UpdateFlag not yet implemented TODO
 
 
         // --- IDENTIFICATIONS ---
 
-        //DeleteIdentification not yet implemented
-        //GetIdentification(id) not yet implemented
-        //UpdateIdentification not yet implemented
-        //SearchIdentifications not yet implemented
+        //DeleteIdentification not yet implemented TODO
+        //GetIdentification(id) not yet implemented TODO
+        //UpdateIdentification not yet implemented TODO
+        //SearchIdentifications not yet implemented TODO
 
         /// <summary>
         /// Submit an Identification.
@@ -201,20 +201,20 @@ namespace JoshAaronMiller.INaturalist
         }
 
 
-        //GetIdentificationCategories not yet implemented
-        //GetIdentificationSpeciesCounts not yet implemented
+        //GetIdentificationCategories not yet implemented TODO
+        //GetIdentificationSpeciesCounts not yet implemented TODO
         //GetIdentificationIdentifiers not yet implemented
         //GetIdentificationObservers not yet implemented
         //GetIdentificationRecentTaxa not yet implemented
-        //GetIdentificationSimilarSpecies not yet implemented
+        //GetIdentificationSimilarSpecies not yet implemented TODO
 
         // --- MESSAGES ---
 
-        //GetUserMessages not yet implemented
-        //CreateUserMessage not yet implemented
-        //DeleteMessageThread not yet implemented
-        //GetMessageThread not yet implemented
-        //GetCountUnreadMessages not yet implemented
+        //GetUserMessages not yet implemented TODO
+        //CreateUserMessage not yet implemented TODO
+        //DeleteMessageThread not yet implemented TODO
+        //GetMessageThread not yet implemented TODO
+        //GetCountUnreadMessages not yet implemented TODO
 
         // --- OBSERVATION FIELD VALUES ---
 
@@ -224,12 +224,14 @@ namespace JoshAaronMiller.INaturalist
 
         // --- OBSERVATION PHOTOS ---
 
-        //
+        //DeleteObservationPhoto not yet implemented TODO
+        //UpdateObservationPhoto not yet implemented TODO
+        //CreateObservationPhoto not yet implemented TODO
 
 
         // --- OBSERVATIONS ---
 
-        //DeleteObservation
+        //DeleteObservation not yet implemented TODO
 
         /// <summary>
         /// Given an array of IDs, returns corresponding observations 
@@ -258,18 +260,18 @@ namespace JoshAaronMiller.INaturalist
         }
 
 
-        //UpdateObservation
-        //FaveObservation
-        //UnfaveObservation
-        //ReviewObservation
-        //UnreviewObservation
-        //GetObservationSubscriptions
-        //DeleteQualityMetric
-        //SetQualityMetric
-        //GetObservationTaxonSummary
-        //SubscribeToObservation
-        //VoteObservation
-        //UnvoteObservation
+        //UpdateObservation not yet implemented TODO
+        //FaveObservation not yet implemented TODO
+        //UnfaveObservation not yet implemented TODO
+        //ReviewObservation not yet implemented TODO
+        //UnreviewObservation not yet implemented TODO
+        //GetObservationSubscriptions not yet implemented TODO
+        //DeleteQualityMetric not yet implemented
+        //SetQualityMetric not yet implemented
+        //GetObservationTaxonSummary not yet implemented TODO
+        //SubscribeToObservation not yet implemented TODO
+        //VoteObservation not yet implemented TODO
+        //UnvoteObservation not yet implemented TODO
 
 
         /// <summary>
@@ -284,38 +286,66 @@ namespace JoshAaronMiller.INaturalist
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Observation>, callback, errorCallback));
         }
 
-        //CreateObservation
-        //GetDeletedObservations
-        //GetObservationHistogram
-        //GetObservationIdentifiers
-        //GetObservationObservers
-        //GetObservationPopularFieldValues
-        //GetObservationSpeciesCounts
-        //GetObservationUserUpdates
-        //MarkObservationUpdatesAsViewed
+        //CreateObservation not yet implemented TODO
+        //GetDeletedObservations not yet implemented
+        //GetObservationHistogram not yet implemented TODO
+        //GetObservationIdentifiers not yet implemented
+        //GetObservationObservers not yet implemented
+        //GetObservationPopularFieldValues not yet implemented
+        //GetObservationSpeciesCounts not yet implemented TODO
+        //GetObservationUserUpdates not yet implemented
+        //MarkObservationUpdatesAsViewed not yet implemented
 
 
         // --- PLACES ---
 
+        //GetPlaceDetails not yet implemented TODO
+        //GetPlaceAutocomplete not yet implemented TODO
+        //GetNearbyPlaces not yet implemented TODO
+
+        // --- POSTS ---
+
+        // SearchPosts not yet implemented
+        // CreatePost not yet implemented
+        // DeletePost not yet implemented
+        // UpdatePost not yet implemented
+        // GetPostsForUser not yet implemented
 
         // --- PROJECT OBSERVATIONS ---
 
+        //DeleteProjectObservation not yet implemented
+        //UpdateProjectObservation not yet implemented
+        //CreateProjectObservation not yet implemented
 
         // --- PROJECTS ---
+
+        //SearchProjects not yet implemented
+        //GetProjectDetails not yet implemented
+        //JoinProject not yet implemented
+        //LeaveProject not yet implemented
+        //GetProjectMembers not yet implemented
+        //GetMyProjectMembership not yet implemented
+        //AddProject not yet implemented
+        //RemoveProject not yet implemented
+        //GetProjectAutocomplete not yet implemented
 
 
         // --- SEARCH ---
 
+        //SearchSite not yet implemented
 
         // --- TAXA ---
 
+        //GetTaxonDetails not yet implemented TODO
+        //SearchTaxa not yet implemented TODO
+        //GetTaxonAutocomplete not yet implemented TODO
 
         // --- USERS ---
 
-        //GetUserDetails(id)
-        //UpdateUser(id)
-        //GetUserProjects
-        //GetAutocompleteUser
+        //GetUserDetails(id) not yet implemented
+        //UpdateUser(id) not yet implemented
+        //GetUserProjects not yet implemented
+        //GetAutocompleteUser not yet implemented
 
 
 
@@ -337,26 +367,37 @@ namespace JoshAaronMiller.INaturalist
         }
 
 
-        //UnmuteUser
-        //MuteUser
-        //UpdateUserSession
-
-
-
+        //UnmuteUser not yet implemented
+        //MuteUser not yet implemented
+        //UpdateUserSession not yet implemented
 
 
 
         // --- OBSERVATION TILES ---
 
+        //GetColoredHeatmap not yet implemented
+        //GetGridTiles not yet implemented
+        //GetHeatmapTiles not yet implemented
+        //GetPointsTiles not yet implemented
+
 
         // --- POLYGON TILES ---
 
+        //GetPlaceTiles not yet implemented
+        //GetTaxonPlaceTiles not yet implemented
+        //GetTaxonRangeTiles not yet implemented
 
         // --- UTFGRID ---
+
+        //GetColoredHeatmapTilesUtfGrid not yet implemented
+        //GetGridTilesUtfGrid not yet implemented
+        //GetHeatmapTilesUtfGrid not yet implemented
+        //GetPointsTilesUtfGrid not yet implemented
 
 
         // --- PHOTOS ---
 
+        //CreatePhoto not yet implemented TODO
 
 
     }
