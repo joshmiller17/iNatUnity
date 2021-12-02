@@ -76,6 +76,9 @@ namespace JoshAaronMiller.INaturalist
                 yield return null;
 
 
+            Debug.Log(request.downloadedBytes);
+            Debug.Log(request.downloadHandler);
+            Debug.Log(request.downloadHandler.data);
             byte[] result = request.downloadHandler.data;
             string json = System.Text.Encoding.Default.GetString(result);
 
@@ -129,16 +132,16 @@ namespace JoshAaronMiller.INaturalist
 
         // --- ANNOTATIONS ---
 
-        //CreateAnnotation
-        //DeleteAnnotation
-        //VoteAnnotation
-        //UnvoteAnnotation
+        //CreateAnnotation not yet implemented
+        //DeleteAnnotation not yet implemented
+        //VoteAnnotation not yet implemented
+        //UnvoteAnnotation not yet implemented
 
         // --- COMMENTS ---
 
-        //CreateComment
-        //DeleteComment
-        //UpdateComment
+        //CreateComment not yet implemented
+        //DeleteComment not yet implemented
+        //UpdateComment not yet implemented
 
 
         // --- CONTROLLED TERMS ---
@@ -154,17 +157,31 @@ namespace JoshAaronMiller.INaturalist
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<ControlledTerm>, callback, errorCallback));
         }
 
-        //GetTermsForTaxon
+        /// <summary>
+        /// Fetch a list of all attribute controlled terms relevant to a taxon as a List of ControlledTerms.
+        /// </summary>
+        /// <param name="taxonId">The ID of the Taxon.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the List of Controlled Terms created.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetTermsForTaxon(int taxonId, Action<List<ControlledTerm>> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "controlled_terms/for_taxon?taxon_id=" + taxonId.ToString());
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<ControlledTerm>, callback, errorCallback));
+        }
 
         // --- FLAGS ---
+
+        //CreateFlag not yet implemented
+        //DeleteFlag not yet implemented
+        //UpdateFlag not yet implemented
 
 
         // --- IDENTIFICATIONS ---
 
-        //DeleteIdentification
-        //GetIdentification(id)
-        //UpdateIdentification
-        //SearchIdentifications
+        //DeleteIdentification not yet implemented
+        //GetIdentification(id) not yet implemented
+        //UpdateIdentification not yet implemented
+        //SearchIdentifications not yet implemented
 
         /// <summary>
         /// Submit an Identification.
@@ -177,29 +194,38 @@ namespace JoshAaronMiller.INaturalist
             WrappedIdentificationSubmission submission = new WrappedIdentificationSubmission();
             submission.identification = identSub;
             string postData = WrappedIdentificationSubmission.ToJson(submission);
-            UnityWebRequest request = new UnityWebRequest(BaseUrl + "identifications/", "POST");
             byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(postData);
+            UnityWebRequest request = new UnityWebRequest(BaseUrl + "identifications/", "POST");
             request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-            request.uploadHandler.contentType = "application/json";
             request.downloadHandler = new DownloadHandlerBuffer();
-            request.SetRequestHeader("Content-Type", "application/json");
             StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
         }
 
 
-        //GetIdentificationCategories
-        //GetIdentificationSpeciesCounts
-        //GetIdentificationIdentifiers
-        //GetIdentificationObservers
-        //GetIdentificationRecentTaxa
-        //GetIdentificationSimilarSpecies
+        //GetIdentificationCategories not yet implemented
+        //GetIdentificationSpeciesCounts not yet implemented
+        //GetIdentificationIdentifiers not yet implemented
+        //GetIdentificationObservers not yet implemented
+        //GetIdentificationRecentTaxa not yet implemented
+        //GetIdentificationSimilarSpecies not yet implemented
 
         // --- MESSAGES ---
 
+        //GetUserMessages not yet implemented
+        //CreateUserMessage not yet implemented
+        //DeleteMessageThread not yet implemented
+        //GetMessageThread not yet implemented
+        //GetCountUnreadMessages not yet implemented
+
         // --- OBSERVATION FIELD VALUES ---
 
+        //DeleteObservationFieldValue not yet implemented
+        //UpdateObservationFieldValue not yet implemented
+        //CreateObservationFieldValue not yet implemented
 
         // --- OBSERVATION PHOTOS ---
+
+        //
 
 
         // --- OBSERVATIONS ---
