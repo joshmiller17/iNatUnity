@@ -164,10 +164,12 @@ namespace JoshAaronMiller.INaturalist
             WrappedIdentificationSubmission submission = new WrappedIdentificationSubmission();
             submission.identification = identSub;
             string postData = WrappedIdentificationSubmission.ToJson<WrappedIdentificationSubmission>(submission);
-            Debug.Log("post data: " + postData); //TODO REMOVE
-            UnityWebRequest request = UnityWebRequest.Post(BaseUrl + "identifications/", postData);
+            UnityWebRequest request = new UnityWebRequest(BaseUrl + "identifications/", "POST");
+            byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(postData);
+            request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            request.uploadHandler.contentType = "application/json";
+            request.downloadHandler = new DownloadHandlerBuffer();
             request.SetRequestHeader("Content-Type", "application/json");
-            request.SetRequestHeader("Accept", "application/json");
             StartCoroutine(DoWebRequestAsync(request, JsonToIdentification, callback, errorCallback));
         }
 

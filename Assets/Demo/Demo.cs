@@ -115,9 +115,9 @@ public class Demo : MonoBehaviour
     void ShowDemoSearch()
     {
         ObservationSearch os = new ObservationSearch();
-        //os.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { ObservationSearch.IconicTaxon.Mammalia });
-        //os.SetOrder(ObservationSearch.OrderBy.Votes, ObservationSearch.SortOrder.Desc);
-        os.SetPagination(200, Random.Range(1,5));
+        os.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { (ObservationSearch.IconicTaxon)Random.Range(1,13) }); //limit to a random iconic taxon
+        os.SetOrder(ObservationSearch.OrderBy.Votes, ObservationSearch.SortOrder.Desc);
+        os.SetPagination(30, Random.Range(1,5));
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
         iNatManager.SearchObservations(os, PopulateCarousel, HandleError);
@@ -210,12 +210,19 @@ public class Demo : MonoBehaviour
             observationCount.text = (carouselIndex + 1).ToString() + " / " + observations.Count;
         }
         TryShowVotingButtons();
-        string photoUrl = observations[carouselIndex].GetPhotoUrls(Observation.ImageSize.Large)[0];
-        StartCoroutine(Utilities.LoadImageFromPath(photoUrl, INatImage, RemoveLoading));
-        attribution.text = observations[carouselIndex].photos[0].attribution;
-        if (VoteButtonObjs.activeInHierarchy)
+        if (observations.Count > 0)
         {
-            PopulateVoteOptions();
+            string photoUrl = observations[carouselIndex].GetPhotoUrls(Observation.ImageSize.Large)[0];
+            StartCoroutine(Utilities.LoadImageFromPath(photoUrl, INatImage, RemoveLoading));
+            attribution.text = observations[carouselIndex].photos[0].attribution;
+            if (VoteButtonObjs.activeInHierarchy)
+            {
+                PopulateVoteOptions();
+            }
+        }
+        else
+        {
+            RemoveLoading();
         }
     }
 
@@ -224,29 +231,41 @@ public class Demo : MonoBehaviour
         Dictionary<Taxon, int> idents = observations[carouselIndex].CountIdentifications();
         int bestCountOne = 0;
         int bestCountTwo = 0;
+        voteButtonOne.text = "";
+        voteButtonTwo.text = "";
         foreach (KeyValuePair<Taxon, int> ident in idents)
         {
             if (ident.Value > bestCountOne && bestCountOne < bestCountTwo 
-                && ident.Key.preferred_common_name != "" && ident.Key.preferred_common_name != voteButtonTwo.text)
+                && ident.Key.preferred_common_name != "" && ident.Key.preferred_common_name != null
+                && ident.Key.preferred_common_name != voteButtonTwo.text)
             {
                 voteButtonOne.text = ident.Key.preferred_common_name;
                 voteTaxonOne = ident.Key;
                 bestCountOne = ident.Value;
             }
-            else if (ident.Value > bestCountTwo)
+            else if (ident.Value > bestCountTwo
+                && ident.Key.preferred_common_name != "" && ident.Key.preferred_common_name != null)
             {
                 voteButtonTwo.text = ident.Key.preferred_common_name;
                 voteTaxonTwo = ident.Key;
                 bestCountTwo = ident.Value;
             }
         }
-        if (bestCountOne < 1)
+        if (bestCountOne < 1 || voteButtonOne.text == "")
         {
-            VoteButtonOneObj.SetActive(false);
+            VoteButtonOneObj.transform.parent.gameObject.SetActive(false);
         }
-        if (bestCountTwo < 1)
+        else
         {
-            VoteButtonTwoObj.SetActive(false);
+            VoteButtonOneObj.transform.parent.gameObject.SetActive(true);
+        }
+        if (bestCountTwo < 1 || voteButtonTwo.text == "")
+        {
+            VoteButtonTwoObj.transform.parent.gameObject.SetActive(false);
+        }
+        else
+        {
+            VoteButtonTwoObj.transform.parent.gameObject.SetActive(true);
         }
     }
 
@@ -260,16 +279,7 @@ public class Demo : MonoBehaviour
         observations.Clear();
         Debug.Log("Search yielded " + results.Count + " results");
         carouselIndex = 0;
-
-        foreach (Observation r in results)
-        {
-            // TODO only show if user hasn't identified yet
-
-            // for the purpose of this demo, only save results that have some disagreement and some popularity
-            if (r.num_identification_disagreements < 1 || r.identifications_count < 5) continue;
-            observations.Add(r);
-        }
-        Debug.Log("Kept " + observations.Count + " observations");
+        observations = results;
         RefreshActiveObservation();
     }
 }

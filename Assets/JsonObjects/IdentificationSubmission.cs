@@ -10,7 +10,7 @@ namespace JoshAaronMiller.INaturalist
         public int observation_id;
         public int taxon_id;
         public bool current = true;
-        public string body = "";
+        public string body = ""; //Optional user remarks on the identification.
     }
 
     [System.Serializable]
