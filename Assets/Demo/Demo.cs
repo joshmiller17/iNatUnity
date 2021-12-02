@@ -116,7 +116,7 @@ public class Demo : MonoBehaviour
     {
         ObservationSearch os = new ObservationSearch();
         //os.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { ObservationSearch.IconicTaxon.Mammalia });
-        os.SetOrder(ObservationSearch.OrderBy.Votes, ObservationSearch.SortOrder.Desc);
+        //os.SetOrder(ObservationSearch.OrderBy.Votes, ObservationSearch.SortOrder.Desc);
         os.SetPagination(200, Random.Range(1,5));
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
@@ -239,6 +239,14 @@ public class Demo : MonoBehaviour
                 voteTaxonTwo = ident.Key;
                 bestCountTwo = ident.Value;
             }
+        }
+        if (bestCountOne < 1)
+        {
+            VoteButtonOneObj.SetActive(false);
+        }
+        if (bestCountTwo < 1)
+        {
+            VoteButtonTwoObj.SetActive(false);
         }
     }
 

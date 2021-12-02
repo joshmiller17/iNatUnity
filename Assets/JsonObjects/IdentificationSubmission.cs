@@ -12,4 +12,10 @@ namespace JoshAaronMiller.INaturalist
         public bool current = true;
         public string body = "";
     }
+
+    [System.Serializable]
+    public class WrappedIdentificationSubmission : JsonObject
+    {
+        public IdentificationSubmission identification;
+    }
 }

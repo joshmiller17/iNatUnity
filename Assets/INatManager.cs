@@ -161,8 +161,13 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
         public void CreateIdentification(IdentificationSubmission identSub, Action<Identification> callback, Action<Error> errorCallback)
         {
-            string postData = IdentificationSubmission.ToJson<IdentificationSubmission>(identSub);
+            WrappedIdentificationSubmission submission = new WrappedIdentificationSubmission();
+            submission.identification = identSub;
+            string postData = WrappedIdentificationSubmission.ToJson<WrappedIdentificationSubmission>(submission);
+            Debug.Log("post data: " + postData); //TODO REMOVE
             UnityWebRequest request = UnityWebRequest.Post(BaseUrl + "identifications/", postData);
+            request.SetRequestHeader("Content-Type", "application/json");
+            request.SetRequestHeader("Accept", "application/json");
             StartCoroutine(DoWebRequestAsync(request, JsonToIdentification, callback, errorCallback));
         }
 
