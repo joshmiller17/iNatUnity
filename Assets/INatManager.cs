@@ -22,6 +22,8 @@ namespace JoshAaronMiller.INaturalist
         static List<T> ResultsFromJson<T>(string jsonString) => JsonObject<Results<T>>.CreateFromJson(jsonString).results;
         static T FirstResultFromJson<T>(string jsonString) => ResultsFromJson<T>(jsonString)[0];
 
+        static T NoOp<T>(T x) => x;
+
         static readonly string UserAgent = "iNat+Unity by Josh Aaron Miller";
 
         static readonly float ServerSleepTime = 3; //be nice to server
@@ -110,6 +112,39 @@ namespace JoshAaronMiller.INaturalist
             }
         }
 
+        /// <summary>
+        /// Construct and return a PUT request.
+        /// </summary>
+        /// <param name="url">The URL to send a PUT to.</param>
+        /// <param name="body">The string data to attach to the PUT.</param>
+        /// <returns>The UnityWebRequest.</returns>
+        UnityWebRequest MakePutRequest(string url, string body)
+        {
+            byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(body);
+            UnityWebRequest request = UnityWebRequest.Put(url, bodyRaw);
+            request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            request.uploadHandler.contentType = "application/json";
+            request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("Content-Type", "application/json");
+            request.SetRequestHeader("Accept", "application/json");
+            return request;
+        }
+
+        /// <summary>
+        /// Construct and return a POST request.
+        /// </summary>
+        /// <param name="url">The URL to send a POST to.</param>
+        /// <param name="body">The string data to attach to the POST.</param>
+        /// <returns>The UnityWebRequest.</returns>
+        UnityWebRequest MakePostRequest(string url, string body)
+        {
+            UnityWebRequest request = MakePutRequest(url, body);
+            request.method = "POST";
+            return request;
+        }
+
+
+
         // --- LOGIN ---
         public void GetApiToken()
         {
@@ -119,11 +154,6 @@ namespace JoshAaronMiller.INaturalist
         public void SetApiToken(string token)
         {
             apiToken = token;
-        }
-
-        public void TestPrint(string json)
-        {
-            Debug.Log(json);
         }
 
         // --- ANNOTATIONS ---
@@ -167,16 +197,59 @@ namespace JoshAaronMiller.INaturalist
 
         // --- FLAGS ---
 
-        //CreateFlag not yet implemented TODO POST
+        /// <summary>
+        /// Submit a Flag.
+        /// </summary>
+        /// <param name="flag">The parameters of the flag.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Flag created.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void CreateFlag(WrappedFlag flag, Action<Identification> callback, Action<Error> errorCallback)
+        {
+            string postData = WrappedFlag.ToJson(flag);
+            UnityWebRequest request = MakePostRequest(BaseUrl + "flags", postData);
+            StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
+        }
 
-        //DeleteFlag not yet implemented TODO DELETE
+        /// <summary>
+        /// Delete a Flag.
+        /// </summary>
+        /// <param name="flagId">The ID of the flag.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the server response (typically empty).</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void DeleteFlag(int flagId, Action<string> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Delete(BaseUrl + "flags/" + flagId.ToString());
+            StartCoroutine(DoWebRequestAsync(request, NoOp, callback, errorCallback));
+        }
 
-        //UpdateFlag not yet implemented TODO PUT
+        /// <summary>
+        /// Update a Flag.
+        /// </summary>
+        /// <param name="flagId">The ID of the flag.</param>
+        /// <param name="flag">The parameters of the flag.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Flag updated.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void UpdateFlag(int flagId, WrappedFlag flag, Action<Identification> callback, Action<Error> errorCallback)
+        {
+            string postData = WrappedFlag.ToJson(flag);
+            UnityWebRequest request = MakePutRequest(BaseUrl + "flags/" + flagId.ToString(), postData);
+            StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
+        }
 
 
         // --- IDENTIFICATIONS ---
 
-        //DeleteIdentification not yet implemented TODO DELETE
+        /// <summary>
+        /// Delete an Identification.
+        /// </summary>
+        /// <param name="flagId">The ID of the Identification.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the server response (typically empty).</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void DeleteIdentification(int identId, Action<string> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Delete(BaseUrl + "identifications/" + identId.ToString());
+            StartCoroutine(DoWebRequestAsync(request, NoOp, callback, errorCallback));
+        }
 
         /// <summary>
         /// Given an array of IDs, returns corresponding Identifications 
@@ -216,56 +289,108 @@ namespace JoshAaronMiller.INaturalist
             WrappedIdentificationSubmission submission = new WrappedIdentificationSubmission();
             submission.identification = identSub;
             string postData = WrappedIdentificationSubmission.ToJson(submission);
-            Debug.Log(postData);
-            byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(postData);
-            UnityWebRequest request = UnityWebRequest.Put(BaseUrl + "identifications/" + identId.ToString(), bodyRaw);
-            request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-            request.uploadHandler.contentType = "application/json";
-            request.downloadHandler = new DownloadHandlerBuffer();
-            request.SetRequestHeader("Content-Type", "application/json");
-            request.SetRequestHeader("Accept", "application/json");
+            UnityWebRequest request = MakePutRequest(BaseUrl + "identifications/" + identId.ToString(), postData);
             StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
         }
 
 
+        /// <summary>
+        /// Given an IdentificationSearch object, returns a list of matching Identifications
+        /// </summary>
+        /// <param name="identSearch">An IdentificationSearch object holding the parameters of the search</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of Identification objects found.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void SearchIdentifications(IdentificationSearch identSearch, Action<List<Identification>> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications?" + identSearch.ToUrlParameters());
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Identification>, callback, errorCallback));
+        }
 
 
-            //SearchIdentifications not yet implemented TODO
 
-
-
-            /// <summary>
-            /// Submit an Identification.
-            /// </summary>
-            /// <param name="identSub">The parameters of the Identification. Requires at minimum observation ID and taxon ID.</param>
-            /// <param name="callback">A function to callback when the request is done which takes as input the Identification created.</param>
-            /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-            public void CreateIdentification(IdentificationSubmission identSub, Action<Identification> callback, Action<Error> errorCallback)
+        /// <summary>
+        /// Submit an Identification.
+        /// </summary>
+        /// <param name="identSub">The parameters of the Identification. Requires at minimum observation ID and taxon ID.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Identification created.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void CreateIdentification(IdentificationSubmission identSub, Action<Identification> callback, Action<Error> errorCallback)
         {
             WrappedIdentificationSubmission submission = new WrappedIdentificationSubmission();
             submission.identification = identSub;
             string postData = WrappedIdentificationSubmission.ToJson(submission);
-            Debug.Log(postData);
-            byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(postData);
-            UnityWebRequest request = UnityWebRequest.Put(BaseUrl + "identifications", bodyRaw);
-            request.method = "POST";
-            request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-            request.uploadHandler.contentType = "application/json";
-            request.downloadHandler = new DownloadHandlerBuffer();
-            request.SetRequestHeader("Content-Type", "application/json");
-            request.SetRequestHeader("Accept", "application/json");
+            UnityWebRequest request = MakePostRequest(BaseUrl + "identifications", postData);
             StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
         }
 
+        /// <summary>
+        /// Given an IdentificationSearch object, returns the counts of how many identifications matching the search have a particular category.
+        /// </summary>
+        /// <param name="identSearch">An IdentificationSearch object holding the parameters of the search.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of IdentificationCategoryCount objects found.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetIdentificationCategories(IdentificationSearch identSearch, Action<List<IdentificationCategoryCount>> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/categories?" + identSearch.ToUrlParameters());
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<IdentificationCategoryCount>, callback, errorCallback));
+        }
 
-        //GetIdentificationCategories not yet implemented TODO
-        //GetIdentificationSpeciesCounts not yet implemented TODO
+        /// <summary>
+        /// Given an IdentificationSearch object, returns the counts of how many identifications matching the search have a particular leaf taxon.
+        /// </summary>
+        /// <param name="identSearch">An IdentificationSearch object holding the parameters of the search.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of IdentificationSpeciesCount objects found.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetIdentificationSpeciesCounts(IdentificationSearch identSearch, Action<List<IdentificationSpeciesCount>> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/species_counts?" + identSearch.ToUrlParameters());
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<IdentificationSpeciesCount>, callback, errorCallback));
+        }
+
+
         //GetIdentificationIdentifiers not yet implemented
         //GetIdentificationObservers not yet implemented
         //GetIdentificationRecentTaxa not yet implemented
-        //GetIdentificationSimilarSpecies not yet implemented TODO
+
+        /// <summary>
+        /// Given a Taxon ID, return similar taxa and counts of co-occurrence.
+        /// </summary>
+        /// <remarks>
+        /// The definition of "similar taxa" is operationalized by finding all observations of this taxon or identified as this taxon,
+        /// then taking the identifications of those observations and counting frequencies of identifications of other taxa.
+        /// In short, this returns a list mapping taxa to how many times they co-occurred with the searched taxon.
+        /// </remarks>
+        /// <param name="taxonId">The ID of the taxon to find similar taxa to.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of IdentificationSpeciesCount objects representing the results.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetSimilarSpecies(int taxonId, Action<List<IdentificationSpeciesCount>> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/similar_species?taxon_id=" + taxonId.ToString());
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<IdentificationSpeciesCount>, callback, errorCallback));
+        }
+
+        /// <summary>
+        /// Given a Taxon ID, return similar taxa and counts of co-occurrence.
+        /// </summary>
+        /// <remarks>
+        /// The definition of "similar taxa" is operationalized by finding all observations of this taxon or identified as this taxon,
+        /// then taking the identifications of those observations and counting frequencies of identifications of other taxa.
+        /// In short, this returns a list mapping taxa to how many times they co-occurred with the searched taxon.
+        /// </remarks>
+        /// <param name="taxonId">The ID of the taxon to find similar taxa to.</param>
+        /// /// <param name="obsSearch">Additional parameters to refine the search, limiting what observations can be included.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of IdentificationSpeciesCount objects representing the results.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetSimilarSpecies(int taxonId, ObservationSearch obsSearch, Action<List<IdentificationSpeciesCount>> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/similar_species?taxon_id=" + taxonId.ToString() + "&" + obsSearch.ToUrlParameters());
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<IdentificationSpeciesCount>, callback, errorCallback));
+        }
+
 
         // --- MESSAGES ---
+
+
 
         //GetUserMessages not yet implemented TODO
         //CreateUserMessage not yet implemented TODO
@@ -339,7 +464,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
         public void SearchObservations(ObservationSearch obsSearch, Action<List<Observation>> callback, Action<Error> errorCallback)
         {
-            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations/?" + obsSearch.ToUrlParameters());
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations?" + obsSearch.ToUrlParameters());
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Observation>, callback, errorCallback));
         }
 
