@@ -69,6 +69,20 @@ public class Demo : MonoBehaviour
         ShowDemoSearch();
     }
 
+    public void TestButton()
+    {
+        IdentificationSubmission ident = new IdentificationSubmission();
+        ident.observation_id = 36167334;
+        ident.taxon_id = 244400;
+        int identId = 224240608;
+        iNatManager.UpdateIdentification(identId, ident, TestPrint, HandleError);
+    }
+
+    public void TestPrint(Identification i)
+    {
+        Debug.Log("success!");
+    }
+
     public void ClickLoginButton()
     {
         LoginButtonObj.SetActive(false);
@@ -116,7 +130,7 @@ public class Demo : MonoBehaviour
     {
         ObservationSearch os = new ObservationSearch();
         os.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { (ObservationSearch.IconicTaxon)Random.Range(1,13) }); //limit to a random iconic taxon
-        os.SetOrder(ObservationSearch.OrderBy.Votes, ObservationSearch.SortOrder.Desc);
+        os.SetOrder(OrderBy.Votes, SortOrder.Desc);
         os.SetPagination(30, Random.Range(1,5));
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
         os.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);

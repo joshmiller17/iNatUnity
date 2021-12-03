@@ -192,7 +192,7 @@ namespace JoshAaronMiller.INaturalist
         }
 
         /// <summary>
-        /// Given an array of IDs, returns corresponding Identifications 
+        /// Given an ID, returns corresponding Identifications 
         /// </summary>
         /// <param name="identId">The identification ID to fetch</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the Identification object found.</param>
@@ -204,27 +204,56 @@ namespace JoshAaronMiller.INaturalist
         }
 
 
-        //UpdateIdentification not yet implemented TODO PUT
-        //SearchIdentifications not yet implemented TODO
-
         /// <summary>
-        /// Submit an Identification.
+        /// Update an Identification
         /// </summary>
-        /// <param name="identSub">The parameters of the Identification. Requires at minimum observation ID and taxon ID.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the Identification created.</param>
+        /// <param name="identId">The identification ID to update</param>
+        /// <param name="identSub">The updated information for the identification.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Identification object returned.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void CreateIdentification(IdentificationSubmission identSub, Action<Identification> callback, Action<Error> errorCallback)
+        public void UpdateIdentification(int identId, IdentificationSubmission identSub, Action<Identification> callback, Action<Error> errorCallback)
         {
             WrappedIdentificationSubmission submission = new WrappedIdentificationSubmission();
             submission.identification = identSub;
             string postData = WrappedIdentificationSubmission.ToJson(submission);
+            Debug.Log(postData);
             byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(postData);
-            UnityWebRequest request = new UnityWebRequest(BaseUrl + "identifications/", "POST");
+            UnityWebRequest request = UnityWebRequest.Put(BaseUrl + "identifications/" + identId.ToString(), bodyRaw);
             request.uploadHandler = new UploadHandlerRaw(bodyRaw);
             request.uploadHandler.contentType = "application/json";
             request.downloadHandler = new DownloadHandlerBuffer();
-            request.SetRequestHeader("content-type", "application/json");
-            request.SetRequestHeader("accept", "application/json");
+            request.SetRequestHeader("Content-Type", "application/json");
+            request.SetRequestHeader("Accept", "application/json");
+            StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
+        }
+
+
+
+
+            //SearchIdentifications not yet implemented TODO
+
+
+
+            /// <summary>
+            /// Submit an Identification.
+            /// </summary>
+            /// <param name="identSub">The parameters of the Identification. Requires at minimum observation ID and taxon ID.</param>
+            /// <param name="callback">A function to callback when the request is done which takes as input the Identification created.</param>
+            /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+            public void CreateIdentification(IdentificationSubmission identSub, Action<Identification> callback, Action<Error> errorCallback)
+        {
+            WrappedIdentificationSubmission submission = new WrappedIdentificationSubmission();
+            submission.identification = identSub;
+            string postData = WrappedIdentificationSubmission.ToJson(submission);
+            Debug.Log(postData);
+            byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(postData);
+            UnityWebRequest request = UnityWebRequest.Put(BaseUrl + "identifications", bodyRaw);
+            request.method = "POST";
+            request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            request.uploadHandler.contentType = "application/json";
+            request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("Content-Type", "application/json");
+            request.SetRequestHeader("Accept", "application/json");
             StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
         }
 
