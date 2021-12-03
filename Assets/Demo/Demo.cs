@@ -69,20 +69,6 @@ public class Demo : MonoBehaviour
         ShowDemoSearch();
     }
 
-    public void TestButton()
-    {
-        IdentificationSubmission ident = new IdentificationSubmission();
-        ident.observation_id = 36167334;
-        ident.taxon_id = 244400;
-        int identId = 224240608;
-        iNatManager.UpdateIdentification(identId, ident, TestPrint, HandleError);
-    }
-
-    public void TestPrint(Identification i)
-    {
-        Debug.Log("success!");
-    }
-
     public void ClickLoginButton()
     {
         LoginButtonObj.SetActive(false);

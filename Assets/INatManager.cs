@@ -55,7 +55,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="receiveRequest">The function which processes the server response (JSON encoded as string) and returns a response of type T.</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the processed response of type T.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        /// <param name="authenticate">Whether to pass the API token along with the request, for API calls that require authentication only.</param>
+        /// <param name="authenticate">Whether to pass the API token along with the request, for API calls that require authentication only. This is forced to true for all non-GET calls.</param>
         IEnumerator DoWebRequestAsync<T>(UnityWebRequest request, Func<string, T> receiveRequest, Action<T> callback, Action<Error> errorCallback, bool authenticate=false)
         {
             if (IsRateLimited())
@@ -66,7 +66,7 @@ namespace JoshAaronMiller.INaturalist
             timeSinceLastServerCall = 0;
             request.SetRequestHeader("User-Agent", UserAgent);
             Debug.Log("Sending web request: " + request.url.ToString());
-            if (authenticate)
+            if (authenticate || request.method != "GET") // everything that isn't a GET needs authentication
             {
                 Debug.Log("Authorizing request");
                 request.SetRequestHeader("Authorization", apiToken);
