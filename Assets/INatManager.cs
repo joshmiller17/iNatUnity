@@ -391,12 +391,28 @@ namespace JoshAaronMiller.INaturalist
         // --- MESSAGES ---
 
 
+        public void GetUserMessages() //TODO
+        {
 
-        //GetUserMessages not yet implemented TODO
+        }
+
+
+
         //CreateUserMessage not yet implemented TODO
         //DeleteMessageThread not yet implemented TODO
         //GetMessageThread not yet implemented TODO
-        //GetCountUnreadMessages not yet implemented TODO
+
+
+        /// <summary>
+        /// Returns a Count of unread messages in the authenticated user's inbox.
+        /// </summary>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Count of unread messages.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetCountUnreadMessages(Action<Count> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "messages/unread");
+            StartCoroutine(DoWebRequestAsync(request, FromJson<Count>, callback, errorCallback, authenticate: true));
+        }
 
         // --- OBSERVATION FIELD VALUES ---
 
@@ -536,16 +552,10 @@ namespace JoshAaronMiller.INaturalist
         /// </summary>
         /// <param name="callback">A function to callback when the request is done which takes as input the User object.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        /// <returns>Whether the INatManager has an API token to use for the authentication-required request.</returns>
-        public bool GetUserMe(Action<User> callback, Action<Error> errorCallback)
+        public void GetUserMe(Action<User> callback, Action<Error> errorCallback)
         {
-            if (apiToken == "")
-            {
-                return false;
-            }
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "users/me");
-            StartCoroutine(DoWebRequestAsync(request, FirstResultFromJson<User>, callback, errorCallback, true));
-            return true;
+            StartCoroutine(DoWebRequestAsync(request, FirstResultFromJson<User>, callback, errorCallback, authenticate:true));
         }
 
 
