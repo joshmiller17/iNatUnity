@@ -24,10 +24,14 @@ namespace JoshAaronMiller.INaturalist
         { BooleanParameter.IsFromTaxonChange, "is_change" },
         { BooleanParameter.IsTaxonActive, "taxon_active" },
         { BooleanParameter.IsObservationTaxonActive, "observation_taxon_active" },
-        { BooleanParameter.IsCurrent, "current" },
+        { BooleanParameter.IsCurrent, "current" }, //defaults to True
         { BooleanParameter.ReturnIdOnly, "only_id" }
     };
 
+        public enum IdentificationCategory
+        {
+            Any, Improving, Supporting, Leading, Maverick
+        };
 
         Dictionary<string, bool> boolParams = new Dictionary<string, bool>();
         Dictionary<string, string> stringParams = new Dictionary<string, string>();
@@ -68,6 +72,33 @@ namespace JoshAaronMiller.INaturalist
         }
 
         /// <summary>
+        /// Limit the search to observations with these taxa IDs and their descendents.
+        /// </summary>
+        /// <param name="ids">Observation taxa IDs to include</param>
+        public void IncludeObservationTaxonIds(List<int> ids)
+        {
+            stringParams["observation_taxon_id"] = string.Join(",", ids);
+        }
+
+        /// <summary>
+        /// Limit the search to identifications with these iconic taxa.
+        /// </summary>
+        /// <param name="ids">Iconic taxa IDs to include</param>
+        public void IncludeIconicTaxonIds(List<int> ids)
+        {
+            stringParams["iconic_taxon_id"] = string.Join(",", ids);
+        }
+
+        /// <summary>
+        /// Limit the search to identifications of observations with these iconic taxa.
+        /// </summary>
+        /// <param name="ids">Observation iconic taxa IDs to include</param>
+        public void IncludeObservationIconicTaxonIds(List<int> ids)
+        {
+            stringParams["observation_iconic_taxon_id"] = string.Join(",", ids);
+        }
+
+        /// <summary>
         /// Limit the search to exclude these taxa IDs and their descendents.
         /// </summary>
         /// <param name="ids">Taxa IDs to exclude</param>
@@ -76,15 +107,14 @@ namespace JoshAaronMiller.INaturalist
             stringParams["without_taxon_id"] = string.Join(",", ids);
         }
 
-
-
-
-        // TODO pick up from here
-
-
-
-
-
+        /// <summary>
+        /// Limit the search to exclude identifications of observations with taxa IDs and their descendents.
+        /// </summary>
+        /// <param name="ids">Observation taxa IDs to exclude</param>
+        public void ExcludeObservationTaxonIds(List<int> ids)
+        {
+            stringParams["without_observation_taxon_id"] = string.Join(",", ids);
+        }
 
 
         /// <summary>
@@ -94,144 +124,97 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="end">The end date, formatted as YYYY-MM-DD. Limit observations to on or before this date.</param>
         public void SetObservedOnDateLimits(string start = "", string end = "")
         {
-            if (start == end && start != "")
+            if (start != "")
             {
-                stringParams["observed_on"] = start;
+                stringParams["observed_d1"] = start;
             }
-            else
+            if (end != "")
             {
-                if (start != "")
-                {
-                    stringParams["d1"] = start;
-                }
-                if (end != "")
-                {
-                    stringParams["d2"] = start;
-                }
+                stringParams["observed_d2"] = start;
             }
         }
 
         /// <summary>
-        /// Limit the search to observations created within a timeframe. Both start and end dates are optional.
+        /// Limit the search to identifications created within a timeframe. Both start and end dates are optional.
         /// </summary>
-        /// <param name="start">The start datetime, formatted as ISO-8601 datetime format: YYYY-MM-DDTHH:MMSS.mmmZ. Limit observations to created on or after this date.</param>
-        /// <param name="end">The end datetime, formatted as ISO-8601 datetime format: YYYY-MM-DDTHH:MMSS.mmmZ. Limit observations to created on or before this date.</param>
-        public void SetCreatedOnDateTimeLimits(string start = "", string end = "")
+        /// <param name="start">The start date, formatted as YYYY-MM-DD. Limit identifications created on or after this date.</param>
+        /// <param name="end">The end date, formatted as YYYY-MM-DD. Limit identifications created on or before this date.</param>
+        public void SetCreatedOnDateLimits(string start = "", string end = "")
         {
-            if (start == end && start != "")
+            if (start != "")
             {
-                stringParams["created_on"] = start;
+                stringParams["d1"] = start;
             }
-            else
+            if (end != "")
             {
-                if (start != "")
-                {
-                    stringParams["created_d1"] = start;
-                }
-                if (end != "")
-                {
-                    stringParams["created_d2"] = start;
-                }
+                stringParams["d2"] = start;
             }
         }
 
         /// <summary>
-        /// Limit the search to taxa that this user has not previously observed.
+        /// Limit the search to identifications of observations created within a timeframe. Both start and end dates are optional.
         /// </summary>
-        /// <param name="userId">The user ID to base this restriction on.</param>
-        public void SetUnobservedByUserId(int userId)
+        /// <param name="start">The start date, formatted as YYYY-MM-DD. Limit identifications to observations created on or after this date.</param>
+        /// <param name="end">The end date, formatted as YYYY-MM-DD. Limit identifications to observations created on or before this date.</param>
+        public void SetObservationCreatedOnDateLimits(string start = "", string end = "")
         {
-            stringParams["unobserved_by_user_id"] = userId.ToString();
-        }
-
-        /// <summary>
-        /// Limit the search to the project restrictions of the given project ID.
-        /// </summary>
-        /// <param name="projectId">The project ID to base this restriction on.</param>
-        public void ApplyProjectRulesFor(int projectId)
-        {
-            stringParams["apply_project_rules_for"] = projectId.ToString();
-        }
-
-        /// <summary>
-        /// Limit the search to taxa of this conservation status code. If PlaceId is also set, only consider statuses specific to those places.
-        /// </summary>
-        /// <param name="code">The conservation status code.</param>
-        public void SetConservationStatusCode(string code)
-        {
-            stringParams["cs"] = code;
-        }
-
-        /// <summary>
-        /// Limit the search to taxa with a conservation status from this authority. If PlaceId is also set, only consider statuses specific to those places.
-        /// </summary>
-        /// <param name="auth">The conservation status authority.</param>
-        public void SetConservationStatusAuthority(string auth)
-        {
-            stringParams["csa"] = auth;
-        }
-
-        /// <summary>
-        /// Limit the search to taxa with these IUCN conservation statuses. If PlaceId is also set, only consider statuses specific to those places.
-        /// </summary>
-        /// <param name="cs">The IUCN conservation statuses.</param>
-        public void IncludeIUCNConservationStatuses(List<IucnConservationStatus> statuses)
-        {
-            List<string> stringStatuses = new List<string>();
-            foreach (IucnConservationStatus cs in statuses)
+            if (start != "")
             {
-
-                if (cs != IucnConservationStatus.None)
-                {
-                    stringStatuses.Add(cs.ToString().ToUpper());
-                }
+                stringParams["observation_created_d1"] = start;
             }
-            if (stringStatuses.Count > 0)
+            if (end != "")
             {
-                stringParams["csi"] = string.Join(",", stringStatuses);
+                stringParams["observation_created_d2"] = start;
             }
         }
 
         /// <summary>
-        /// Limit the search to observations with these geoprivacy settings.
+        /// Limit the search to identifications of taxa of these ranks.
         /// </summary>
-        /// <param name="geo">The geoprivacy settings.</param>
-        public void SetGeoprivacy(List<Geoprivacy> geos)
+        /// <param name="ranks">The list of taxon ranks to include in the search.</param>
+        public void IncludeTaxonRanks(List<TaxonRank> ranks)
         {
-            List<string> geoStrings = new List<string>();
-            foreach (Geoprivacy geo in geos)
-            {
-                if (geo != Geoprivacy.None)
-                {
-                    geoStrings.Add(GeoprivacyToString[geo]);
-                }
-            }
-
-            if (geoStrings.Count > 0)
-            {
-                stringParams["geoprivacy"] = string.Join(",", geoStrings);
-            }
+            stringParams["rank"] = string.Join(",", ranks);
         }
 
         /// <summary>
-        /// Filter observations by the most conservative geoprivacy applied by a conservation status associated with one of the taxa proposed in the current identifications.
+        /// Limit the search to identifications of observations that have a taxon of these ranks.
         /// </summary>
-        /// <param name="geo">The geoprivacy settings.</param>
-        public void IncludeTaxonGeoprivacy(List<Geoprivacy> geos)
+        /// <param name="ranks">The list of observation taxon ranks to include in the search.</param>
+        public void IncludeObservationTaxonRanks(List<TaxonRank> ranks)
         {
-            List<string> geoStrings = new List<string>();
-            foreach (Geoprivacy geo in geos)
-            {
-                if (geo != Geoprivacy.None)
-                {
-                    geoStrings.Add(GeoprivacyToString[geo]);
-                }
-            }
+            stringParams["observation_rank"] = string.Join(",", ranks);
+        }
 
-            if (geoStrings.Count > 0)
+        /// <summary>
+        /// Limit the search to identifications made by users of these IDs.
+        /// </summary>
+        /// <param name="userIds">The list of user IDs; limit the search to their identifications.</param>
+        public void IncludeIdentificationsByUserId(List<int> userIds)
+        {
+            stringParams["user_id"] = string.Join(",", userIds);
+        }
+
+        /// <summary>
+        /// Limit the search to identifications made by users with these login names.
+        /// </summary>
+        /// <param name="userLogins">The list of usernames; limit the search to their identifications.</param>
+        public void IncludeIdentificationsByUserLogin(List<int> userLogins)
+        {
+            stringParams["user_login"] = string.Join(",", userLogins);
+        }
+
+        /// <summary>
+        /// Limit the search to identifications with these category labels.
+        /// </summary>
+        /// <param name="categories">The identification categories to include in the search.</param>
+        public void IncludeCategories(List<string> categories)
+        {
+            if (categories.Contains("Any"))
             {
-                stringParams["taxon_geoprivacy"] = string.Join(",", geoStrings);
+                return; //Any is already default
             }
+            stringParams["category"] = string.Join(",", categories);
         }
 
         /// <summary>
@@ -253,124 +236,20 @@ namespace JoshAaronMiller.INaturalist
         }
 
         /// <summary>
-        /// Limit the search to observations with these iconic taxa.
+        /// Limit the search to identifications of observations with taxa between these limits.
         /// </summary>
-        /// <param name="iconicTaxa">The iconic taxa to include.</param>
-        public void SetIconicTaxa(List<IconicTaxon> iconicTaxa)
+        /// <param name="lowest">The lowest observation taxon rank to include in the search (include this and higher).</param>
+        /// <param name="highest">The highest observation taxon rank to include in the search (include this and lower).</param>
+        public void SetObservationTaxonRankLimits(TaxonRank lowest = TaxonRank.None, TaxonRank highest = TaxonRank.None)
         {
-            List<string> taxaStrings = new List<string>();
-            foreach (IconicTaxon taxon in iconicTaxa)
+            if (lowest != TaxonRank.None)
             {
-                if (taxon == IconicTaxon.None)
-                {
-                    continue;
-                }
-                else if (taxon == IconicTaxon.Unknown)
-                {
-                    taxaStrings.Add("unknown");
-                }
-                else
-                {
-                    taxaStrings.Add(taxon.ToString());
-                }
+                stringParams["observation_lrank"] = lowest.ToString().ToLower();
             }
 
-            if (taxaStrings.Count > 0)
+            if (highest != TaxonRank.None)
             {
-                stringParams["iconic_taxa"] = string.Join(",", taxaStrings);
-            }
-        }
-
-        /// <summary>
-        /// Limit the search to observations with IDs within this range. Both min and max are optional.
-        /// </summary>
-        /// <param name="min">Include this ID and higher.</param>
-        /// <param name="max">Include this ID and lower.</param>
-        public void SetObservationIdLimits(int min = -1, int max = -1)
-        {
-            if (min >= 0)
-            {
-                stringParams["id_above"] = (min - 1).ToString(); //API lists min and max as exclusive
-            }
-            if (max >= 0)
-            {
-                stringParams["id_below"] = (max + 1).ToString(); //API lists min and max as exclusive
-            }
-        }
-
-        public void SetIdentificationAgreement(IdentificationAgreement agreement)
-        {
-            if (agreement != IdentificationAgreement.None)
-            {
-                stringParams["identifications"] = IdentAgreementToString[agreement];
-            }
-        }
-
-        /// <summary>
-        /// Limit the search to a circle of [radius] kilometers around the specified latitude and longitude.
-        /// </summary>
-        /// <param name="lat">The latitude of the search's center.</param>
-        /// <param name="lng">The longitude of the search's center.</param>
-        /// <param name="radius">The radius of search in kilometers.</param>
-        public void SetBoundingCircle(double lat, double lng, double radius)
-        {
-            stringParams["lat"] = lat.ToString();
-            stringParams["lng"] = lng.ToString();
-            stringParams["radius"] = radius.ToString();
-        }
-
-        /// <summary>
-        /// Limit the search within a bounding box specified by northeast and southwest corners given in latitude and longitude.
-        /// </summary>
-        /// <param name="nelat">The northeast latitude.</param>
-        /// <param name="nelng">The northeast longitude.</param>
-        /// <param name="swlat">The southwest latitude.</param>
-        /// <param name="swlng">The southwest longitude.</param>
-        public void SetBoundingBox(double nelat, double nelng, double swlat, double swlng)
-        {
-            stringParams["nelat"] = nelat.ToString();
-            stringParams["nelng"] = nelng.ToString();
-            stringParams["swlat"] = swlat.ToString();
-            stringParams["swlng"] = swlng.ToString();
-        }
-
-
-        public void SetListId()
-        {
-            throw new NotImplementedException();
-        }
-
-
-        /// <summary>
-        /// Require the observations to be not in this project ID.
-        /// </summary>
-        /// <param name="ids">Project ID to exclude</param>
-        public void ExcludeProjectId(int id)
-        {
-            stringParams["not_in_project"] = id.ToString();
-        }
-
-        /// <summary>
-        /// Limit the search to observations that don't match the rules of the given project ID.
-        /// </summary>
-        /// <param name="projectId">The project ID to base this restriction on.</param>
-        public void ExcludeProjectRulesFor(int projectId)
-        {
-            stringParams["not_matching_project_rules_for"] = projectId.ToString();
-        }
-
-
-        /// <summary>
-        /// Search observation properties matching the query.
-        /// </summary>
-        /// <param name="property">The search property to apply the query to.</param>
-        /// <param name="query">The search query.</param>
-        public void SearchOnProperties(SearchProperty property, string query)
-        {
-            stringParams["q"] = query;
-            if (property != SearchProperty.All) //defaults to all
-            {
-                stringParams["search_on"] = property.ToString().ToLower();
+                stringParams["observation_hrank"] = highest.ToString().ToLower();
             }
         }
 
@@ -382,43 +261,25 @@ namespace JoshAaronMiller.INaturalist
         {
             if (quality != QualityGrade.None)
             {
-                stringParams["quality_grade"] = QualityToString[quality];
+                stringParams["quality_grade"] = Enums.QualityToString[quality];
             }
         }
 
-        public void SetUpdatedSince()
-        {
-            throw new NotImplementedException();
-        }
-
         /// <summary>
-        /// Limit the search to observations that [have / have not] been reviewed by a given user.
+        /// Limit the search to identifications with IDs within this range. Both min and max are optional.
         /// </summary>
-        /// <param name="userId">The user ID to consider their review.</param>
-        /// <param name="hasReviewed">If true, only include observations they have reviewed. If false, only include observations they have not reviewed.</param>
-        public void SetReviewedByUser(int userId, bool hasReviewed)
+        /// <param name="min">Include this ID and higher.</param>
+        /// <param name="max">Include this ID and lower.</param>
+        public void SetIdentificationnIdLimits(int min = -1, int max = -1)
         {
-            stringParams["reviewed"] = hasReviewed.ToString().ToLower();
-            stringParams["viewer_id"] = userId.ToString();
-        }
-
-        public void SetLocalePreference()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SetPreferredPlaceId()
-        {
-            throw new NotImplementedException();
-        }
-
-        /// <summary>
-        /// Set the Cache-Control HTTP header with this value as max-age, in seconds.This means subsequent identical requests will be cached on iNaturalist servers, and commonly within web browsers
-        /// </summary>
-        /// <param name="timeToLive">The max-age of the request, in seconds.</param>
-        public void SetCacheControl(int timeToLive)
-        {
-            stringParams["ttl"] = timeToLive.ToString();
+            if (min >= 0)
+            {
+                stringParams["id_above"] = (min - 1).ToString(); //API lists min and max as exclusive
+            }
+            if (max >= 0)
+            {
+                stringParams["id_below"] = (max + 1).ToString(); //API lists min and max as exclusive
+            }
         }
 
         /// <summary>
@@ -440,13 +301,13 @@ namespace JoshAaronMiller.INaturalist
         public void SetOrder(OrderBy orderBy, SortOrder sortOrder)
         {
             stringParams["order"] = sortOrder.ToString().ToLower();
-            stringParams["order_by"] = OrderByToString[orderBy];
+            stringParams["order_by"] = Enums.OrderByToString[orderBy];
         }
 
 
         /// <summary>
-        /// Returns this ObservationSearch as a string of URL parameters.
-        /// For use with INatManager::SearchObservations()
+        /// Returns this IdentificationSearch as a string of URL parameters.
+        /// For use with INatManager::SearchIdentifications()
         /// </summary>
         /// <returns>A string of URL parameters</returns>
         public string ToUrlParameters()
