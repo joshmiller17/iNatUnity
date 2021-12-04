@@ -10,7 +10,7 @@ namespace JoshAaronMiller.INaturalist
     /// An ObservationSearch is a set of parameters for searching iNaturalist Observations.
     /// Usage: myINatManager.SearchObservations(myObservationSearch)
     /// </summary>
-    public class ObservationSearch
+    public class ObservationSearch : SearchObject
     {
         public enum BooleanParameter
         {
@@ -100,10 +100,6 @@ namespace JoshAaronMiller.INaturalist
         {
             All, Names, Tags, Description, Place
         }
-
-
-        Dictionary<string, bool> boolParams = new Dictionary<string, bool>();
-        Dictionary<string, string> stringParams = new Dictionary<string, string>();
 
         public void SetBooleanParameter(BooleanParameter param, bool setting)
         {
@@ -668,31 +664,6 @@ namespace JoshAaronMiller.INaturalist
         {
             stringParams["order"] = sortOrder.ToString().ToLower();
             stringParams["order_by"] = Enums.OrderByToString[orderBy];
-        }
-
-
-        /// <summary>
-        /// Returns this ObservationSearch as a string of URL parameters.
-        /// For use with INatManager::SearchObservations()
-        /// </summary>
-        /// <returns>A string of URL parameters</returns>
-        public string ToUrlParameters()
-        {
-            List<string> keyValuePairs = new List<string>();
-
-            foreach (KeyValuePair<string, bool> entry in boolParams)
-            {
-                keyValuePairs.Add(entry.Key + "=" + entry.Value.ToString().ToLower());
-            }
-
-            foreach (KeyValuePair<string, string> entry in stringParams)
-            {
-                keyValuePairs.Add(entry.Key + "=" + entry.Value);
-            }
-
-            string ret = string.Join("&", keyValuePairs);
-            ret.Replace(",", "%2C");
-            return ret;
         }
     }
 }

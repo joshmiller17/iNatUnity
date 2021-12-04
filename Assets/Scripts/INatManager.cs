@@ -391,9 +391,16 @@ namespace JoshAaronMiller.INaturalist
         // --- MESSAGES ---
 
 
-        public void GetUserMessages() //TODO
+        /// <summary>
+        /// Given a MessageSearch object, returns a list of matching user messages
+        /// </summary>
+        /// <param name="messageSearch">A MessageSearch object holding the parameters of the search</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of Message objects found.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void SearchUserMessages(MessageSearch messageSearch, Action<List<UserMessage>> callback, Action<Error> errorCallback)
         {
-
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "messages?" + messageSearch.ToUrlParameters());
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<UserMessage>, callback, errorCallback, authenticate:true));
         }
 
 

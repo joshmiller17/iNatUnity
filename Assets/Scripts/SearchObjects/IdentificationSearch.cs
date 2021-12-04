@@ -7,10 +7,10 @@ namespace JoshAaronMiller.INaturalist
 {
 
     /// <summary>
-    /// An ObservationSearch is a set of parameters for searching iNaturalist Observations.
-    /// Usage: myINatManager.SearchObservations(myObservationSearch)
+    /// An IdentificationSearch is a set of parameters for searching iNaturalist Identifications.
+    /// Usage: myINatManager.SearchIdentifications(myIdentificationSearch)
     /// </summary>
-    public class IdentificationSearch
+    public class IdentificationSearch : SearchObject
     {
         public enum BooleanParameter
         {
@@ -32,10 +32,6 @@ namespace JoshAaronMiller.INaturalist
         {
             Any, Improving, Supporting, Leading, Maverick
         };
-
-        Dictionary<string, bool> boolParams = new Dictionary<string, bool>();
-        Dictionary<string, string> stringParams = new Dictionary<string, string>();
-
 
         public void SetBooleanParameter(BooleanParameter param, bool setting)
         {
@@ -302,31 +298,6 @@ namespace JoshAaronMiller.INaturalist
         {
             stringParams["order"] = sortOrder.ToString().ToLower();
             stringParams["order_by"] = Enums.OrderByToString[orderBy];
-        }
-
-
-        /// <summary>
-        /// Returns this IdentificationSearch as a string of URL parameters.
-        /// For use with INatManager::SearchIdentifications()
-        /// </summary>
-        /// <returns>A string of URL parameters</returns>
-        public string ToUrlParameters()
-        {
-            List<string> keyValuePairs = new List<string>();
-
-            foreach (KeyValuePair<string, bool> entry in boolParams)
-            {
-                keyValuePairs.Add(entry.Key + "=" + entry.Value.ToString().ToLower());
-            }
-
-            foreach (KeyValuePair<string, string> entry in stringParams)
-            {
-                keyValuePairs.Add(entry.Key + "=" + entry.Value);
-            }
-
-            string ret = string.Join("&", keyValuePairs);
-            ret.Replace(",", "%2C");
-            return ret;
         }
     }
 }
