@@ -47,7 +47,7 @@ namespace JoshAaronMiller.INaturalist
         public string observed_on;
         public string observed_on_string;
         public string updated_at;
-        public List<Photo> photos;
+        public List<PhotoJson> photos;
         public List<Sound> sounds;
         public List<int> place_ids;
         public bool captive;
@@ -85,7 +85,7 @@ namespace JoshAaronMiller.INaturalist
         public List<string> GetPhotoUrls(ImageSize size)
         {
             List<string> urls = new List<string>();
-            foreach (Photo p in photos)
+            foreach (PhotoJson p in photos)
             {
                 string originalUrl = p.url;
                 if (size == ImageSize.Any)

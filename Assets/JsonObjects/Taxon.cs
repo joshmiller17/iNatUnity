@@ -35,7 +35,7 @@ namespace JoshAaronMiller.INaturalist
         public int observations_count;
         public FlagCounts flag_counts;
         public int atlas_id;
-        public Photo default_photo;
+        public PhotoJson default_photo;
         public string iconic_taxon_name;
         public string preferred_common_name;
         public string wikipedia_summary;

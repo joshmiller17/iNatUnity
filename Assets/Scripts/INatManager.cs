@@ -580,7 +580,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="photo">The Photo to upload.</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the Observatoin Photo object returned.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void UpdateObservationPhoto(int obsPhotoId, int position, Photo photo, Action<Identification> callback, Action<Error> errorCallback)
+        public void UpdateObservationPhoto(int obsPhotoId, int position, PhotoFile photo, Action<Identification> callback, Action<Error> errorCallback)
         {
             WWWForm formData = new WWWForm();
             formData.AddField("observation_photo[position]", position);
@@ -598,7 +598,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="photo">The Photo to upload.</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the Observatoin Photo object returned.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void CreateObservationPhoto(int obsId, string obsUuid, Photo photo, Action<Identification> callback, Action<Error> errorCallback)
+        public void CreateObservationPhoto(int obsId, string obsUuid, PhotoFile photo, Action<Identification> callback, Action<Error> errorCallback)
         {
             WWWForm formData = new WWWForm();
             formData.AddField("observation_photo[observation_id]", obsId);

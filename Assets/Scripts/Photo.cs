@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace JoshAaronMiller.INaturalist
 {
-    public class Photo
+    public class PhotoFile
     {
         public string filePath;
         public string fileName;
