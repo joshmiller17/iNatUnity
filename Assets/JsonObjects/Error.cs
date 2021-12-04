@@ -11,5 +11,7 @@ namespace JoshAaronMiller.INaturalist
     {
         public string error; //TODO error may be a JSON
         public int status = (int)HttpStatusCode.OK;
+        public int code;
+        public string message;
     }
 }

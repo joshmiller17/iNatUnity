@@ -18,5 +18,6 @@ namespace JoshAaronMiller.INaturalist
         public TimeDetails updated_at;
         public User from_user;
         public User to_user;
+        public List<Flag> thread_flags;
     }
 }

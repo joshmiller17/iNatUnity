@@ -49,16 +49,13 @@ namespace JoshAaronMiller.INaturalist
             return timeSinceLastServerCall < ServerSleepTime;
         }
 
-
         /// <summary>
-        /// Perform an asynchronous web request.
+        /// Helper function to send the web request.
         /// </summary>
-        /// <param name="request">The UnityWebRequest</param>
-        /// <param name="receiveRequest">The function which processes the server response (JSON encoded as string) and returns a response of type T.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the processed response of type T.</param>
-        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        /// <param name="authenticate">Whether to pass the API token along with the request, for API calls that require authentication only. This is forced to true for all non-GET calls.</param>
-        IEnumerator DoWebRequestAsync<T>(UnityWebRequest request, Func<string, T> receiveRequest, Action<T> callback, Action<Error> errorCallback, bool authenticate=false)
+        /// <param name="request">The web request.</param>
+        /// <param name="authenticate">Whether to attach authentication header and API token.</param>
+        /// <returns></returns>
+        IEnumerator _SendWebRequestAsync(UnityWebRequest request, bool authenticate)
         {
             if (IsRateLimited())
             {
@@ -74,9 +71,15 @@ namespace JoshAaronMiller.INaturalist
                 request.SetRequestHeader("Authorization", apiToken);
             }
             yield return request.SendWebRequest();
-            while (!request.isDone)
-                yield return null;
+        }
 
+        /// <summary>
+        /// Download and interpret the server response as a JSON string.
+        /// </summary>
+        /// <param name="request">The web request.</param>
+        /// <returns>The response as a JSON string.</returns>
+        string _HandleWebResponse(UnityWebRequest request)
+        {
             byte[] result = request.downloadHandler.data;
             string json = System.Text.Encoding.Default.GetString(result);
 
@@ -84,30 +87,92 @@ namespace JoshAaronMiller.INaturalist
             string destination = Application.persistentDataPath + "/log.txt";
             File.WriteAllText(destination, json);
 
-            if (!request.isHttpError && !request.isNetworkError)
+            return json;
+        }
+
+        /// <summary>
+        /// If the server response was an error, handle it and return true. Otherwise return false.
+        /// </summary>
+        /// <param name="request">The web request.</param>
+        /// <param name="json">The response as a JSON string.</param>
+        /// <returns>If error, return it; otherwise return null.</returns>
+        Error _HandleWebError(UnityWebRequest request, string json)
+        {
+            // check if it's an error by interpreting it as an error and seeing if we're wrong
+            Error error = FromJson<Error>(json);
+
+            if (!request.isHttpError
+                && !request.isNetworkError
+                && error.status == (int)HttpStatusCode.OK)
             {
-                // check if it's an error by interpreting it as an error and seeing if we're wrong
-                Error error = FromJson<Error>(json);
-                if (error.status == (int)HttpStatusCode.OK)
-                {
-                    T response = receiveRequest(json);
-                    callback(response);
-                }
-                else
-                {
-                    Debug.LogWarning("Web request failed with status code " + request.responseCode.ToString());
-                    if (error.status == (int)HttpStatusCode.Unauthorized)
-                    {
-                        apiToken = ""; //invalidate any API token we have on record, this one didn't work.
-                    }
-                    errorCallback(error);
-                }
+                return null;
             }
             else
             {
                 Debug.LogError("Web request failed with status code " + request.responseCode.ToString());
                 Debug.LogError(request.error);
-                Error error = FromJson<Error>(json);
+                if (error.status == (int)HttpStatusCode.Unauthorized)
+                {
+                    apiToken = ""; //invalidate any API token we have on record, this one didn't work.
+                }
+                return error;
+            }
+        }
+
+
+        /// <summary>
+        /// Perform an asynchronous web request.
+        /// </summary>
+        /// <param name="request">The UnityWebRequest</param>
+        /// <param name="callback">A function to callback when the request is done.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        /// <param name="authenticate">Whether to pass the API token along with the request, for API calls that require authentication only. This is forced to true for all non-GET calls.</param>
+        IEnumerator DoWebRequestAsync(UnityWebRequest request, Action callback, Action<Error> errorCallback, bool authenticate = false)
+        {
+            _SendWebRequestAsync(request, authenticate);
+
+            while (!request.isDone)
+                yield return null;
+
+            string json = _HandleWebResponse(request);
+            Error error = _HandleWebError(request, json);
+
+            if (error == null)
+            {
+                callback();
+            }
+            else
+            {
+                errorCallback(error);
+            }
+        }
+
+
+        /// <summary>
+        /// Perform an asynchronous web request.
+        /// </summary>
+        /// <param name="request">The UnityWebRequest</param>
+        /// <param name="receiveRequest">The function which processes the server response (JSON encoded as string) and returns a response of type T.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the processed response of type T.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        /// <param name="authenticate">Whether to pass the API token along with the request, for API calls that require authentication only. This is forced to true for all non-GET calls.</param>
+        IEnumerator DoWebRequestAsync<T>(UnityWebRequest request, Func<string, T> receiveRequest, Action<T> callback, Action<Error> errorCallback, bool authenticate=false)
+        {
+            _SendWebRequestAsync(request, authenticate);
+
+            while (!request.isDone)
+                yield return null;
+
+            string json = _HandleWebResponse(request);
+            Error error = _HandleWebError(request, json);
+
+            if (error == null)
+            {
+                T response = receiveRequest(json);
+                callback(response);
+            }
+            else
+            {
                 errorCallback(error);
             }
         }
@@ -216,10 +281,10 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="flagId">The ID of the flag.</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the server response (typically empty).</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void DeleteFlag(int flagId, Action<string> callback, Action<Error> errorCallback)
+        public void DeleteFlag(int flagId, Action callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Delete(BaseUrl + "flags/" + flagId.ToString());
-            StartCoroutine(DoWebRequestAsync(request, NoOp, callback, errorCallback));
+            StartCoroutine(DoWebRequestAsync(request, callback, errorCallback));
         }
 
         /// <summary>
@@ -403,10 +468,27 @@ namespace JoshAaronMiller.INaturalist
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<UserMessage>, callback, errorCallback, authenticate:true));
         }
 
+        /// <summary>
+        /// Send a private message.
+        /// </summary>
+        /// <param name="newMessage">The message to be sent.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the new Message created.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void CreateUserMessage(UserMessage newMessage, Action<UserMessage> callback, Action<Error> errorCallback)
+        {
+            string postData = UserMessage.ToJson(newMessage);
+            UnityWebRequest request = MakePostRequest(BaseUrl + "messages", postData);
+            StartCoroutine(DoWebRequestAsync(request, FromJson<UserMessage>, callback, errorCallback));
+        }
+
+        
+        public void DeleteUserMessageThread(int threadId, Action callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Delete(BaseUrl + "messages/" + threadId.ToString());
+            StartCoroutine(DoWebRequestAsync(request, callback, errorCallback));
+        }
 
 
-        //CreateUserMessage not yet implemented TODO
-        //DeleteMessageThread not yet implemented TODO
         //GetMessageThread not yet implemented TODO
 
 
