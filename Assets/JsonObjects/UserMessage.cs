@@ -19,5 +19,6 @@ namespace JoshAaronMiller.INaturalist
         public User from_user;
         public User to_user;
         public List<Flag> thread_flags;
+        public int flaggable_message_id;
     }
 }

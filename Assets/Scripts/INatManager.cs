@@ -459,6 +459,9 @@ namespace JoshAaronMiller.INaturalist
         /// <summary>
         /// Given a MessageSearch object, returns a list of matching user messages
         /// </summary>
+        /// <remarks>
+        /// This function does not mark these messages as read. See GetUserMessageThread.
+        /// </remarks>
         /// <param name="messageSearch">A MessageSearch object holding the parameters of the search</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the list of Message objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
@@ -481,15 +484,29 @@ namespace JoshAaronMiller.INaturalist
             StartCoroutine(DoWebRequestAsync(request, FromJson<UserMessage>, callback, errorCallback));
         }
 
-        
+        /// <summary>
+        /// Delete all messages in a message thread.
+        /// </summary>
+        /// <param name="threadId">The thread to delete.</param>
+        /// <param name="callback">A function to callback when the request is done.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
         public void DeleteUserMessageThread(int threadId, Action callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Delete(BaseUrl + "messages/" + threadId.ToString());
             StartCoroutine(DoWebRequestAsync(request, callback, errorCallback));
         }
 
-
-        //GetMessageThread not yet implemented TODO
+        /// <summary>
+        /// Retrieves all messages in the specified thread and marks them all as read.
+        /// </summary>
+        /// <param name="threadId">The thread to fetch.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the thread fetched as a list of UserMessages.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetUserMessageThread(int threadId, Action<List<UserMessage>> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "messages/" + threadId.ToString());
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<UserMessage>, callback, errorCallback, authenticate: true));
+        }
 
 
         /// <summary>
