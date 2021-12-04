@@ -196,12 +196,41 @@ namespace JoshAaronMiller.INaturalist
         }
 
         /// <summary>
+        /// Construct and return a PUT request.
+        /// </summary>
+        /// <param name="url">The URL to send a PUT to.</param>
+        /// <param name="body">The WWWForm data to attach to the PUT.</param>
+        /// <returns>The UnityWebRequest.</returns>
+        UnityWebRequest MakePutRequest(string url, WWWForm body)
+        {
+            UnityWebRequest request = UnityWebRequest.Post(url, body);
+            request.method = "PUT";
+            request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("Content-Type", "application/json");
+            request.SetRequestHeader("Accept", "application/json");
+            return request;
+        }
+
+        /// <summary>
         /// Construct and return a POST request.
         /// </summary>
         /// <param name="url">The URL to send a POST to.</param>
         /// <param name="body">The string data to attach to the POST.</param>
         /// <returns>The UnityWebRequest.</returns>
         UnityWebRequest MakePostRequest(string url, string body)
+        {
+            UnityWebRequest request = MakePutRequest(url, body);
+            request.method = "POST";
+            return request;
+        }
+
+        /// <summary>
+        /// Construct and return a POST request.
+        /// </summary>
+        /// <param name="url">The URL to send a POST to.</param>
+        /// <param name="body">The WWWForm data to attach to the POST.</param>
+        /// <returns>The UnityWebRequest.</returns>
+        UnityWebRequest MakePostRequest(string url, WWWForm body)
         {
             UnityWebRequest request = MakePutRequest(url, body);
             request.method = "POST";
@@ -528,9 +557,57 @@ namespace JoshAaronMiller.INaturalist
 
         // --- OBSERVATION PHOTOS ---
 
-        //DeleteObservationPhoto not yet implemented TODO
-        //UpdateObservationPhoto not yet implemented TODO
-        //CreateObservationPhoto not yet implemented TODO
+
+        /// <summary>
+        /// Delete an observation photo.
+        /// </summary>
+        /// <param name="threadId">The observation photo to delete.</param>
+        /// <param name="callback">A function to callback when the request is done.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void DeleteObservationPhoto(int obsPhotoId, Action callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Delete(BaseUrl + "observation_photos/" + obsPhotoId.ToString());
+            StartCoroutine(DoWebRequestAsync(request, callback, errorCallback));
+        }
+
+
+
+        /// <summary>
+        /// Update an Observation Photo.
+        /// </summary>
+        /// <param name="obsPhotoId">The Observation Photo ID to update</param>
+        /// <param name="position">The position in which the photo is displayed for the observation.</param>
+        /// <param name="photo">The Photo to upload.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Observatoin Photo object returned.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void UpdateObservationPhoto(int obsPhotoId, int position, Photo photo, Action<Identification> callback, Action<Error> errorCallback)
+        {
+            WWWForm formData = new WWWForm();
+            formData.AddField("observation_photo[position]", position);
+            formData.AddBinaryData("file", photo.ToBytes(), photo.fileName, photo.fileType);
+
+            UnityWebRequest request = MakePutRequest(BaseUrl + "observation_photos/" + obsPhotoId.ToString(), formData);
+            StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
+        }
+
+        /// <summary>
+        /// Create an Observation Photo.
+        /// </summary>
+        /// <param name="obsId">The Observation ID to add the photo to</param>
+        /// <param name="obsUuid">The UUID of the observation.</param>
+        /// <param name="photo">The Photo to upload.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Observatoin Photo object returned.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void CreateObservationPhoto(int obsId, string obsUuid, Photo photo, Action<Identification> callback, Action<Error> errorCallback)
+        {
+            WWWForm formData = new WWWForm();
+            formData.AddField("observation_photo[observation_id]", obsId);
+            formData.AddField("observation_photo[uuid]", obsUuid);
+            formData.AddBinaryData("file", photo.ToBytes(), photo.fileName, photo.fileType);
+
+            UnityWebRequest request = MakePostRequest(BaseUrl + "observation_photos", formData);
+            StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
+        }
 
 
         // --- OBSERVATIONS ---
