@@ -1360,7 +1360,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 763041048}
+        m_MethodName: ToggleSpeciesSpecific
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &412276617
 GameObject:
@@ -1428,7 +1439,7 @@ MonoBehaviour:
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Option A
@@ -1683,7 +1694,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 763041048}
+        m_MethodName: TogglePublicDomain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &467786995
 GameObject:
@@ -1723,7 +1745,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.8}
   m_AnchorMax: {x: 0.9, y: 0.9}
-  m_AnchoredPosition: {x: 103.99996, y: 76.999985}
+  m_AnchoredPosition: {x: 103.99997, y: 76.999985}
   m_SizeDelta: {x: 103.999985, y: 19.249985}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &467786997
@@ -2650,7 +2672,11 @@ MonoBehaviour:
   apiTokenInputObj: {fileID: 1741198338}
   LoggedInAsObj: {fileID: 1390445313}
   InfoDetailsObj: {fileID: 372071749}
-  SearchButton: {fileID: 0}
+  SearchButton: {fileID: 658028539}
+  CityDropdownObj: {fileID: 467786995}
+  TaxonDropdownObj: {fileID: 1220886633}
+  YearDropdownObj: {fileID: 1736439481}
+  QualityGradeDropdownObj: {fileID: 850186275}
 --- !u!4 &763041049
 Transform:
   m_ObjectHideFlags: 0
@@ -3017,7 +3043,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.2}
   m_AnchorMax: {x: 0.9, y: 0.3}
-  m_AnchoredPosition: {x: 103.99996, y: -38.499992}
+  m_AnchoredPosition: {x: 103.99997, y: -38.499992}
   m_SizeDelta: {x: 103.999985, y: 19.24999}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &850186277
@@ -3295,7 +3321,7 @@ MonoBehaviour:
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Option A
@@ -3753,7 +3779,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 763041048}
+        m_MethodName: ToggleThreatened
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &975119460
 GameObject:
@@ -4641,7 +4678,7 @@ MonoBehaviour:
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Option A
@@ -5340,7 +5377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.6}
   m_AnchorMax: {x: 0.9, y: 0.7}
-  m_AnchoredPosition: {x: 103.99996, y: 38.49998}
+  m_AnchoredPosition: {x: 103.99997, y: 38.49998}
   m_SizeDelta: {x: 103.999985, y: 19.249989}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1220886635
@@ -7202,7 +7239,7 @@ MonoBehaviour:
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Option A
@@ -7636,7 +7673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.4}
   m_AnchorMax: {x: 0.9, y: 0.5}
-  m_AnchoredPosition: {x: 103.99996, y: 0}
+  m_AnchoredPosition: {x: 103.99997, y: 0}
   m_SizeDelta: {x: 103.999985, y: 19.249992}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1736439483
@@ -8071,7 +8108,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 763041048}
+        m_MethodName: ToggleCaptive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &1828558064
 GameObject:

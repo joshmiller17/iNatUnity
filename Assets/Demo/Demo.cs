@@ -36,6 +36,10 @@ public class Demo : MonoBehaviour
     [Space(10)]
     [Header("Criteria Panel")]
     public GameObject SearchButton;
+    public GameObject CityDropdownObj;
+    public GameObject TaxonDropdownObj;
+    public GameObject YearDropdownObj;
+    public GameObject QualityGradeDropdownObj;
 
 
     INatManager iNatManager;
@@ -48,11 +52,19 @@ public class Demo : MonoBehaviour
     InputField apiTokenInput;
     Taxon voteTaxonOne;
     Taxon voteTaxonTwo;
+    Dropdown cityDropdown;
+    Dropdown taxonDropdown;
+    Dropdown yearDropdown;
+    Dropdown qualityGradeDropdown;
 
     User user;
 
     static readonly string BadApiTokenSyntax = "Invalid syntax. Paste just the token string without quotes or the \"api_token\" label before it.";
     static readonly string InvalidApiToken = "Invalid API token.";
+    static readonly string DefaultCity = "Filter by location...";
+    static readonly string DefaultTaxon = "Filter by taxon...";
+    static readonly string DefaultYear = "Filter by year...";
+    static readonly string DefaultQuality = "Filter by quality...";
 
     // created using INatManager::GetPlacesAutocomplete
     static Dictionary<string, int> citiesToIds = new Dictionary<string, int>()
@@ -80,9 +92,21 @@ public class Demo : MonoBehaviour
         { "Spiders", ObservationSearch.IconicTaxon.Arachnida }
     };
 
+    static Dictionary<string, QualityGrade> qualityGrades = new Dictionary<string, QualityGrade>()
+    {
+        { "Casual", QualityGrade.Casual},
+        { "Needs ID", QualityGrade.NeedsId},
+        { "Research Grade", QualityGrade.Research}
+    };
+
     List<Observation> observations = new List<Observation>();
     int carouselIndex = 0;
     bool loggedIn = false;
+
+    bool threatened = false;
+    bool captive = false;
+    bool publicDomain = false;
+    bool speciesSpecific = false;
 
     ObservationSearch userSearch;
 
@@ -96,9 +120,79 @@ public class Demo : MonoBehaviour
         errorMessage = ErrorMessageObj.GetComponent<Text>();
         loggedInAs = LoggedInAsObj.GetComponent<Text>();
         apiTokenInput = apiTokenInputObj.GetComponent<InputField>();
+        cityDropdown = CityDropdownObj.GetComponent<Dropdown>();
+        taxonDropdown = TaxonDropdownObj.GetComponent<Dropdown>();
+        yearDropdown = YearDropdownObj.GetComponent<Dropdown>();
+        qualityGradeDropdown = QualityGradeDropdownObj.GetComponent<Dropdown>();
+
+        PopulateDropdowns();
 
         ShowDemoSearch();
     }
+
+    void PopulateDropdowns()
+    {
+        //Dropdown CityDropdown;
+        //Dropdown TaxonDropdown;
+        //Dropdown YearDropdown;
+        //Dropdown QualityGradeDropdown;
+
+        Dropdown.OptionData option;
+
+        List<Dropdown.OptionData> cities = new List<Dropdown.OptionData>();
+        option = new Dropdown.OptionData();
+        option.text = DefaultCity;
+        cities.Add(option);
+        foreach (string city in citiesToIds.Keys)
+        {
+            option = new Dropdown.OptionData();
+            option.text = city;
+            cities.Add(option);
+        }
+        cityDropdown.ClearOptions();
+        cityDropdown.AddOptions(cities);
+
+        List<Dropdown.OptionData> taxa = new List<Dropdown.OptionData>();
+        option = new Dropdown.OptionData();
+        option.text = DefaultTaxon;
+        taxa.Add(option);
+        foreach (string taxon in iconicTaxa.Keys)
+        {
+            option = new Dropdown.OptionData();
+            option.text = taxon;
+            taxa.Add(option);
+        }
+        taxonDropdown.ClearOptions();
+        taxonDropdown.AddOptions(taxa);
+
+        List<Dropdown.OptionData> years = new List<Dropdown.OptionData>();
+        option = new Dropdown.OptionData();
+        option.text = DefaultYear;
+        years.Add(option);
+        for (int year = 1990; year < 2022; year++)
+        {
+            option = new Dropdown.OptionData();
+            option.text = year.ToString();
+            years.Add(option);
+        }
+        yearDropdown.ClearOptions();
+        yearDropdown.AddOptions(years);
+
+        List<Dropdown.OptionData> qdList = new List<Dropdown.OptionData>();
+        option = new Dropdown.OptionData();
+        option.text = DefaultQuality;
+        qdList.Add(option);
+        foreach (string grade in qualityGrades.Keys)
+        {
+            option = new Dropdown.OptionData();
+            option.text = grade;
+            qdList.Add(option);
+        }
+
+        qualityGradeDropdown.ClearOptions();
+        qualityGradeDropdown.AddOptions(qdList);
+    }
+
 
     public void ClickLoginButton()
     {
@@ -143,19 +237,22 @@ public class Demo : MonoBehaviour
         }
     }
 
-    public void ToggleThreatened(bool threatened)
+    public void ToggleThreatened()
     {
+        threatened = !threatened;
         userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.IsThreatened, threatened);
     }
 
-    public void ToggleCaptive(bool captive)
+    public void ToggleCaptive()
     {
+        captive = !captive;
         userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.IsCaptive, captive);
     }
 
-    public void TogglePublicDomain(bool pd)
+    public void TogglePublicDomain()
     {
-        if (pd)
+        publicDomain = !publicDomain;
+        if (publicDomain)
         {
             userSearch.SetLicense(ObservationSearch.License.Cc0);
         }
@@ -165,9 +262,10 @@ public class Demo : MonoBehaviour
         }
     }
 
-    public void ToggleSpeciesSpecific(bool species)
+    public void ToggleSpeciesSpecific()
     {
-        if (species)
+        speciesSpecific = !speciesSpecific;
+        if (speciesSpecific)
         {
             userSearch.SetTaxonRankLimits(highest: TaxonRank.Species);
         }
