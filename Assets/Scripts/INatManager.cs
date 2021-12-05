@@ -433,12 +433,12 @@ namespace JoshAaronMiller.INaturalist
         /// Given an IdentificationSearch object, returns the counts of how many identifications matching the search have a particular leaf taxon.
         /// </summary>
         /// <param name="identSearch">An IdentificationSearch object holding the parameters of the search.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of IdentificationSpeciesCount objects found.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of SpeciesCount objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetIdentificationSpeciesCounts(IdentificationSearch identSearch, Action<List<IdentificationSpeciesCount>> callback, Action<Error> errorCallback)
+        public void GetIdentificationSpeciesCounts(IdentificationSearch identSearch, Action<List<SpeciesCount>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/species_counts?" + identSearch.ToUrlParameters());
-            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<IdentificationSpeciesCount>, callback, errorCallback));
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<SpeciesCount>, callback, errorCallback));
         }
 
 
@@ -455,12 +455,12 @@ namespace JoshAaronMiller.INaturalist
         /// In short, this returns a list mapping taxa to how many times they co-occurred with the searched taxon.
         /// </remarks>
         /// <param name="taxonId">The ID of the taxon to find similar taxa to.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of IdentificationSpeciesCount objects representing the results.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of SpeciesCount objects representing the results.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetSimilarSpecies(int taxonId, Action<List<IdentificationSpeciesCount>> callback, Action<Error> errorCallback)
+        public void GetSimilarSpecies(int taxonId, Action<List<SpeciesCount>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/similar_species?taxon_id=" + taxonId.ToString());
-            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<IdentificationSpeciesCount>, callback, errorCallback));
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<SpeciesCount>, callback, errorCallback));
         }
 
         /// <summary>
@@ -473,12 +473,12 @@ namespace JoshAaronMiller.INaturalist
         /// </remarks>
         /// <param name="taxonId">The ID of the taxon to find similar taxa to.</param>
         /// /// <param name="obsSearch">Additional parameters to refine the search, limiting what observations can be included.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of IdentificationSpeciesCount objects representing the results.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of SpeciesCount objects representing the results.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetSimilarSpecies(int taxonId, ObservationSearch obsSearch, Action<List<IdentificationSpeciesCount>> callback, Action<Error> errorCallback)
+        public void GetSimilarSpecies(int taxonId, ObservationSearch obsSearch, Action<List<SpeciesCount>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/similar_species?taxon_id=" + taxonId.ToString() + "&" + obsSearch.ToUrlParameters());
-            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<IdentificationSpeciesCount>, callback, errorCallback));
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<SpeciesCount>, callback, errorCallback));
         }
 
 
@@ -801,11 +801,32 @@ namespace JoshAaronMiller.INaturalist
 
 
         //GetDeletedObservations not yet implemented
-        //GetObservationHistogram not yet implemented TODO
+
+        //GetObservationHistogram not yet implemented
+        /* This is a neat function, but likely would require 
+        *  being able to JSONify dictionaries
+        *  which is currently unsupported by JsonUtility.
+        *  If you need a particular histogram, you can probably hard-code
+        *  something to get the data structure you need.
+        */
+
         //GetObservationIdentifiers not yet implemented
         //GetObservationObservers not yet implemented
         //GetObservationPopularFieldValues not yet implemented
-        //GetObservationSpeciesCounts not yet implemented TODO
+
+
+        /// <summary>
+        /// Given an ObservationSearch object, returns the counts of how many observations matching the search have a particular leaf taxon.
+        /// </summary>
+        /// <param name="observationSearch">An ObservationSearch object holding the parameters of the search.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of SpeciesCount objects found.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetObservationSpeciesCounts(ObservationSearch observationSearch, Action<List<SpeciesCount>> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations/species_counts?" + observationSearch.ToUrlParameters());
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<SpeciesCount>, callback, errorCallback));
+        }
+
         //GetObservationUserUpdates not yet implemented
         //MarkObservationUpdatesAsViewed not yet implemented
 

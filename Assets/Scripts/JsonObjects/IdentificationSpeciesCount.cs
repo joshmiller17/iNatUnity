@@ -6,7 +6,7 @@ namespace JoshAaronMiller.INaturalist
 {
 
     [System.Serializable]
-    public class IdentificationSpeciesCount : JsonObject<IdentificationSpeciesCount>
+    public class SpeciesCount : JsonObject<SpeciesCount>
     {
         public int count;
         public Taxon taxon;
