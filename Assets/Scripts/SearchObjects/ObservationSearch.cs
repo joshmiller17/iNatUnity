@@ -49,7 +49,7 @@ namespace JoshAaronMiller.INaturalist
         };
 
         public static Dictionary<License, string> LicenseToString = new Dictionary<License, string>() {
-        { License.None, "" },
+        { License.None, "" }, // doesn't distinguish between no license restrictions and no license (all rights reserved)
         { License.CcAttr, "cc-by" },
         { License.CcAttrNonCommercial, "cc-by-nc" },
         { License.CcAttrNoDerivs, "cc-by-nd" },
@@ -135,6 +135,10 @@ namespace JoshAaronMiller.INaturalist
             {
                 stringParams["license"] = LicenseToString[license];
             }
+            else
+            {
+                stringParams.Remove("license");
+            }
         }
 
         public void SetOfvDataType()
@@ -151,6 +155,10 @@ namespace JoshAaronMiller.INaturalist
             if (license != License.None)
             {
                 stringParams["photo_license"] = LicenseToString[license];
+            }
+            else
+            {
+                stringParams.Remove("photo_license");
             }
         }
 
@@ -182,6 +190,10 @@ namespace JoshAaronMiller.INaturalist
             {
                 stringParams["rank"] = rank.ToString().ToLower();
             }
+            else
+            {
+                stringParams.Remove("rank");
+            }
         }
 
         public void SetSiteId()
@@ -198,6 +210,10 @@ namespace JoshAaronMiller.INaturalist
             if (license != License.None)
             {
                 stringParams["sound_license"] = LicenseToString[license];
+            }
+            else
+            {
+                stringParams.Remove("sound_license");
             }
         }
 
@@ -468,10 +484,18 @@ namespace JoshAaronMiller.INaturalist
             {
                 stringParams["lrank"] = lowest.ToString().ToLower();
             }
+            else
+            {
+                stringParams.Remove("lrank");
+            }
 
             if (highest != TaxonRank.None)
             {
                 stringParams["hrank"] = highest.ToString().ToLower();
+            }
+            else
+            {
+                stringParams.Remove("hrank");
             }
         }
 
@@ -526,6 +550,10 @@ namespace JoshAaronMiller.INaturalist
             if (agreement != IdentificationAgreement.None)
             {
                 stringParams["identifications"] = IdentAgreementToString[agreement];
+            }
+            else
+            {
+                stringParams.Remove("identifications");
             }
         }
 
@@ -606,6 +634,10 @@ namespace JoshAaronMiller.INaturalist
             if (quality != QualityGrade.None)
             {
                 stringParams["quality_grade"] = Enums.QualityToString[quality];
+            }
+            else
+            {
+                stringParams.Remove("quality_grade");
             }
         }
 

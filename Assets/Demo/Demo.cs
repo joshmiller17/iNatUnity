@@ -33,6 +33,10 @@ public class Demo : MonoBehaviour
     public GameObject LoggedInAsObj;
     public GameObject InfoDetailsObj;
 
+    [Space(10)]
+    [Header("Criteria Panel")]
+    public GameObject SearchButton;
+
 
     INatManager iNatManager;
     Text attribution;
@@ -79,6 +83,8 @@ public class Demo : MonoBehaviour
     List<Observation> observations = new List<Observation>();
     int carouselIndex = 0;
     bool loggedIn = false;
+
+    ObservationSearch userSearch;
 
     void Start()
     {
@@ -137,15 +143,70 @@ public class Demo : MonoBehaviour
         }
     }
 
+    public void ToggleThreatened(bool threatened)
+    {
+        userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.IsThreatened, threatened);
+    }
+
+    public void ToggleCaptive(bool captive)
+    {
+        userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.IsCaptive, captive);
+    }
+
+    public void TogglePublicDomain(bool pd)
+    {
+        if (pd)
+        {
+            userSearch.SetLicense(ObservationSearch.License.Cc0);
+        }
+        else
+        {
+            userSearch.SetLicense(ObservationSearch.License.None);
+        }
+    }
+
+    public void ToggleSpeciesSpecific(bool species)
+    {
+        if (species)
+        {
+            userSearch.SetTaxonRankLimits(highest: TaxonRank.Species);
+        }
+        else
+        {
+            userSearch.SetTaxonRankLimits(TaxonRank.None, TaxonRank.None);
+        }
+    }
+
+    void DelaySearchButton()
+    {
+        SearchButton.GetComponent<Button>().interactable = false;
+        SearchButton.GetComponent<Image>().color = Color.gray;
+        SearchButton.transform.GetChild(0).GetComponent<Text>().text = "Please wait";
+        Invoke("EnableSearchButton", 3);
+    }
+
+    void EnableSearchButton()
+    {
+        SearchButton.GetComponent<Button>().interactable = true;
+        SearchButton.GetComponent<Image>().color = Color.yellow;
+        SearchButton.transform.GetChild(0).GetComponent<Text>().text = "Search!";
+    }
+
+    public void DoSearch()
+    {
+        iNatManager.SearchObservations(userSearch, PopulateCarousel, HandleError);
+        DelaySearchButton();
+    }
+
     void ShowDemoSearch()
     {
-        ObservationSearch os = new ObservationSearch();
-        os.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { (ObservationSearch.IconicTaxon)Random.Range(1,13) }); //limit to a random iconic taxon
-        os.SetOrder(OrderBy.Votes, SortOrder.Desc);
-        os.SetPagination(30, Random.Range(1,5));
-        os.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
-        os.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
-        iNatManager.SearchObservations(os, PopulateCarousel, HandleError);
+        userSearch = new ObservationSearch();
+        userSearch.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { (ObservationSearch.IconicTaxon)Random.Range(1,13) }); //limit to a random iconic taxon
+        userSearch.SetOrder(OrderBy.Votes, SortOrder.Desc);
+        userSearch.SetPagination(30, Random.Range(1,5));
+        userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
+        userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
+        DoSearch();
     }
 
     public void HandleError(Error e)

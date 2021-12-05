@@ -208,9 +208,12 @@ namespace JoshAaronMiller.INaturalist
         {
             if (categories.Contains("Any"))
             {
-                return; //Any is already default
+                stringParams.Remove("category"); //Any is already default
             }
-            stringParams["category"] = string.Join(",", categories);
+            else
+            {
+                stringParams["category"] = string.Join(",", categories);
+            }
         }
 
         /// <summary>
@@ -224,10 +227,18 @@ namespace JoshAaronMiller.INaturalist
             {
                 stringParams["lrank"] = lowest.ToString().ToLower();
             }
+            else
+            {
+                stringParams.Remove("lrank");
+            }
 
             if (highest != TaxonRank.None)
             {
                 stringParams["hrank"] = highest.ToString().ToLower();
+            }
+            else
+            {
+                stringParams.Remove("hrank");
             }
         }
 
@@ -258,6 +269,10 @@ namespace JoshAaronMiller.INaturalist
             if (quality != QualityGrade.None)
             {
                 stringParams["quality_grade"] = Enums.QualityToString[quality];
+            }
+            else
+            {
+                stringParams.Remove("quality_grade");
             }
         }
 
