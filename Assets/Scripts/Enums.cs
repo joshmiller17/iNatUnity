@@ -26,6 +26,19 @@ namespace JoshAaronMiller.INaturalist
         Desc, Asc
     };
 
+    public enum TaxonRankLevel
+    {
+        None = -1,
+        Subspecies = 5,
+        Species = 10,
+        Genus = 20,
+        Family = 30,
+        Order = 40,
+        Class = 50,
+        Phylum = 60,
+        Kingdom = 70
+    };
+
     public static class Enums
     {
 

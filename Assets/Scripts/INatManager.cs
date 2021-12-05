@@ -956,9 +956,43 @@ namespace JoshAaronMiller.INaturalist
 
         // --- TAXA ---
 
-        //GetTaxonDetails not yet implemented TODO
-        //SearchTaxa not yet implemented TODO
-        //GetTaxonAutocomplete not yet implemented TODO
+        /// <summary>
+        /// Given an array of IDs, returns corresponding Taxa 
+        /// </summary>
+        /// <param name="identIds">The list of taxa IDs to fetch</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of Taxon objects found.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetTaxonDetails(List<int> taxaIds, Action<List<Taxon>> callback, Action<Error> errorCallback)
+        {
+            string idsAsStringList = string.Join(",", taxaIds);
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "taxa/" + idsAsStringList);
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Taxon>, callback, errorCallback));
+        }
+
+        /// <summary>
+        /// Given an ID, returns corresponding Taxon 
+        /// </summary>
+        /// <param name="identId">The Taxon ID to fetch</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Taxon object found.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetTaxonDetails(int taxonId, Action<Taxon> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "taxa/" + taxonId.ToString());
+            StartCoroutine(DoWebRequestAsync(request, FirstResultFromJson<Taxon>, callback, errorCallback));
+        }
+
+
+        /// <summary>
+        /// Given a TaxonSearch object, returns a list of matching taxa
+        /// </summary>
+        /// <param name="taxonSearch">An TaxonSearch object holding the parameters of the search</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of Taxon objects found.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void SearchTaxa(TaxonSearch taxonSearch, Action<List<Taxon>> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "taxa?" + taxonSearch.ToUrlParameters());
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Taxon>, callback, errorCallback));
+        }
 
         // --- USERS ---
 

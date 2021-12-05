@@ -19,14 +19,14 @@ namespace JoshAaronMiller.INaturalist
         };
 
         public static Dictionary<BooleanParameter, string> BoolParamToString = new Dictionary<BooleanParameter, string>() {
-        { BooleanParameter.MatchesObservationTaxon, "current_taxon" },
-        { BooleanParameter.IsObserversIdentification, "own_observation" },
-        { BooleanParameter.IsFromTaxonChange, "is_change" },
-        { BooleanParameter.IsTaxonActive, "taxon_active" },
-        { BooleanParameter.IsObservationTaxonActive, "observation_taxon_active" },
-        { BooleanParameter.IsCurrent, "current" }, //defaults to True
-        { BooleanParameter.ReturnIdOnly, "only_id" }
-    };
+            { BooleanParameter.MatchesObservationTaxon, "current_taxon" },
+            { BooleanParameter.IsObserversIdentification, "own_observation" },
+            { BooleanParameter.IsFromTaxonChange, "is_change" },
+            { BooleanParameter.IsTaxonActive, "taxon_active" },
+            { BooleanParameter.IsObservationTaxonActive, "observation_taxon_active" },
+            { BooleanParameter.IsCurrent, "current" }, //defaults to True
+            { BooleanParameter.ReturnIdOnly, "only_id" }
+        };
 
         public enum IdentificationCategory
         {
