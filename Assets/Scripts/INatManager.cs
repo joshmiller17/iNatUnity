@@ -31,6 +31,16 @@ namespace JoshAaronMiller.INaturalist
 
         string apiToken = "";
 
+        public enum PlaceAdminLevel { 
+            None = -999,
+            Continent = -1, 
+            Country = 0,
+            State = 1,
+            County = 2,
+            Town = 3,
+            Park = 10
+        };
+
 
         private void Update()
         {
@@ -837,11 +847,17 @@ namespace JoshAaronMiller.INaturalist
         /// Given an ID, return the corresponding Place.
         /// </summary>
         /// <param name="placeId">The ID of the Place.</param>
+        /// <param name="adminLevel">Optionally, the admin level of the place to search.</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the Place fetched.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetPlaceDetails(int placeId, Action<Place> callback, Action<Error> errorCallback)
+        public void GetPlaceDetails(int placeId, Action<Place> callback, Action<Error> errorCallback, PlaceAdminLevel adminLevel = PlaceAdminLevel.None)
         {
-            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "places/" + placeId.ToString());
+            string urlSuffix = placeId.ToString();
+            if (adminLevel != PlaceAdminLevel.None)
+            {
+                urlSuffix += "?admin_level=" + ((int)adminLevel).ToString();
+            }
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "places/" + urlSuffix);
             StartCoroutine(DoWebRequestAsync(request, FirstResultFromJson<Place>, callback, errorCallback));
         }
 
@@ -849,18 +865,63 @@ namespace JoshAaronMiller.INaturalist
         /// Given a list of IDs, return the corresponding Places.
         /// </summary>
         /// <param name="placeIds">The IDs of the Places.</param>
+        /// <param name="adminLevel">Optionally, the admin level of the place to search.</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the list of Places fetched.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetPlaceDetails(List<int> placeIds, Action<List<Place>> callback, Action<Error> errorCallback)
+        public void GetPlaceDetails(List<int> placeIds, Action<List<Place>> callback, Action<Error> errorCallback, PlaceAdminLevel adminLevel = PlaceAdminLevel.None)
         {
             string idsAsStringList = string.Join(",", placeIds);
-            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "places/" + idsAsStringList);
+            string urlSuffix = idsAsStringList;
+            if (adminLevel != PlaceAdminLevel.None)
+            {
+                urlSuffix += "?admin_level=" + ((int)adminLevel).ToString();
+            }
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "places/" + urlSuffix);
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Place>, callback, errorCallback));
         }
 
 
-        //GetPlaceAutocomplete not yet implemented TODO
-        //GetNearbyPlaces not yet implemented TODO
+        /// <summary>
+        /// Given a string query, find all places with names starting with the query.
+        /// </summary>
+        /// <param name="query">The search term.</param>
+        /// <param name="orderByArea">If true, sort the results by area (default false).</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of Places fetched.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetPlacesAutocomplete(string query, Action<List<Place>> callback, Action<Error> errorCallback, bool orderByArea = false)
+        {
+            string urlSuffix = query;
+            if (orderByArea)
+            {
+                urlSuffix += "&order_by=area";
+            }
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "places/autocomplete?q=" + urlSuffix);
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Place>, callback, errorCallback));
+        }
+
+
+        /// <summary>
+        /// Given a bounding box and optional name query, return nearby places separated by curation status.
+        /// </summary>
+        /// <param name="nelat">The northeast latitude corner of the bounding box.</param>
+        /// <param name="nelng">The northeast longitude corner of the bounding box.</param>
+        /// <param name="swlat">The southwest latitude corner of the bounding box.</param>
+        /// <param name="swlng">The southwest longitude corner of the bounding box.</param>
+        /// <param name="name">The optional search term for the name.</param>
+        /// <param name="perPage">Number of results per page (default 30, max 200).</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of PlacesByCuration fetched.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetPlacesNearby(double nelat, double nelng, double swlat, double swlng, Action<PlacesByCuration> callback, Action<Error> errorCallback, string name = "", int perPage = 30)
+        {
+            string urlSuffix = String.Format("nelat={0}&nelng={1}&swlat={2}&swlng={3}", nelat, nelng, swlat, swlng);
+            if (name != "")
+            {
+                urlSuffix += "&name=" + name;
+            }
+            urlSuffix += "&per_page=" + perPage.ToString();
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "places/nearby?" + urlSuffix);
+            StartCoroutine(DoWebRequestAsync(request, FirstResultFromJson<PlacesByCuration>, callback, errorCallback));
+        }
 
         // --- POSTS ---
 
