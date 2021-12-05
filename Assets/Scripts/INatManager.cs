@@ -833,7 +833,32 @@ namespace JoshAaronMiller.INaturalist
 
         // --- PLACES ---
 
-        //GetPlaceDetails not yet implemented TODO
+        /// <summary>
+        /// Given an ID, return the corresponding Place.
+        /// </summary>
+        /// <param name="placeId">The ID of the Place.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Place fetched.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetPlaceDetails(int placeId, Action<Place> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "places/" + placeId.ToString());
+            StartCoroutine(DoWebRequestAsync(request, FirstResultFromJson<Place>, callback, errorCallback));
+        }
+
+        /// <summary>
+        /// Given a list of IDs, return the corresponding Places.
+        /// </summary>
+        /// <param name="placeIds">The IDs of the Places.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the list of Places fetched.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetPlaceDetails(List<int> placeIds, Action<List<Place>> callback, Action<Error> errorCallback)
+        {
+            string idsAsStringList = string.Join(",", placeIds);
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "places/" + idsAsStringList);
+            StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Place>, callback, errorCallback));
+        }
+
+
         //GetPlaceAutocomplete not yet implemented TODO
         //GetNearbyPlaces not yet implemented TODO
 
