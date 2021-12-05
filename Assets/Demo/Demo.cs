@@ -66,7 +66,7 @@ public class Demo : MonoBehaviour
     static readonly string DefaultYear = "Filter by year...";
     static readonly string DefaultQuality = "Filter by quality...";
 
-    // created using INatManager::GetPlacesAutocomplete
+    // Created using INatManager::GetPlacesAutocomplete
     static Dictionary<string, int> citiesToIds = new Dictionary<string, int>()
     {
         {"Boston", 26306 },
@@ -79,6 +79,8 @@ public class Demo : MonoBehaviour
         {"Tokyo", 10935 }
     };
 
+
+    // A sampling of the iconic taxa you can search with
     static Dictionary<string, ObservationSearch.IconicTaxon> iconicTaxa = new Dictionary<string, ObservationSearch.IconicTaxon>()
     {
         { "Amphibians", ObservationSearch.IconicTaxon.Amphibia },
@@ -92,6 +94,7 @@ public class Demo : MonoBehaviour
         { "Spiders", ObservationSearch.IconicTaxon.Arachnida }
     };
 
+    // How verified the observation is
     static Dictionary<string, QualityGrade> qualityGrades = new Dictionary<string, QualityGrade>()
     {
         { "Casual", QualityGrade.Casual},
@@ -126,19 +129,17 @@ public class Demo : MonoBehaviour
         qualityGradeDropdown = QualityGradeDropdownObj.GetComponent<Dropdown>();
 
         PopulateDropdowns();
-
         ShowDemoSearch();
     }
 
+    // ------ CRITERIA PANEL ------
     void PopulateDropdowns()
     {
-        //Dropdown CityDropdown;
-        //Dropdown TaxonDropdown;
-        //Dropdown YearDropdown;
-        //Dropdown QualityGradeDropdown;
+        Debug.Log("Initializing dropdown menus");
 
         Dropdown.OptionData option;
 
+        // City menu
         List<Dropdown.OptionData> cities = new List<Dropdown.OptionData>();
         option = new Dropdown.OptionData();
         option.text = DefaultCity;
@@ -152,6 +153,7 @@ public class Demo : MonoBehaviour
         cityDropdown.ClearOptions();
         cityDropdown.AddOptions(cities);
 
+        // Taxa menu
         List<Dropdown.OptionData> taxa = new List<Dropdown.OptionData>();
         option = new Dropdown.OptionData();
         option.text = DefaultTaxon;
@@ -165,6 +167,8 @@ public class Demo : MonoBehaviour
         taxonDropdown.ClearOptions();
         taxonDropdown.AddOptions(taxa);
 
+
+        // Year menu
         List<Dropdown.OptionData> years = new List<Dropdown.OptionData>();
         option = new Dropdown.OptionData();
         option.text = DefaultYear;
@@ -178,6 +182,8 @@ public class Demo : MonoBehaviour
         yearDropdown.ClearOptions();
         yearDropdown.AddOptions(years);
 
+
+        // Quality grade menu
         List<Dropdown.OptionData> qdList = new List<Dropdown.OptionData>();
         option = new Dropdown.OptionData();
         option.text = DefaultQuality;
@@ -188,7 +194,6 @@ public class Demo : MonoBehaviour
             option.text = grade;
             qdList.Add(option);
         }
-
         qualityGradeDropdown.ClearOptions();
         qualityGradeDropdown.AddOptions(qdList);
     }
@@ -226,50 +231,6 @@ public class Demo : MonoBehaviour
         if (choice != DefaultCity)
         {
             userSearch.SetQualityGrade(qualityGrades[choice]);
-        }
-    }
-
-
-    public void ClickLoginButton()
-    {
-        LoginButtonObj.SetActive(false);
-        PostLoginObj.SetActive(true);
-        InfoDetailsObj.SetActive(true);
-    }
-
-    public void CheckApiToken()
-    {
-        string apiToken = apiTokenInput.text;
-        if (new List<string>() { "\"", "{", "}", ":", "api_token" }.Any(apiToken.Contains))
-        {
-            errorMessage.text = BadApiTokenSyntax;
-            ErrorMessageObj.SetActive(true);
-        }
-        else
-        {
-            ErrorMessageObj.SetActive(false);
-            iNatManager.SetApiToken(apiToken);
-            iNatManager.GetUserMe(SetUser, SetUserError);
-        }
-    }
-
-    public void SetUser(User me)
-    {
-        user = me;
-        ErrorMessageObj.SetActive(false);
-        loggedInAs.text = "Logged in as: " + user.login;
-        LoggedInAsObj.SetActive(true);
-        PostLoginObj.SetActive(false);
-        loggedIn = true;
-        TryShowVotingButtons();
-    }
-
-    public void SetUserError(Error e)
-    {
-        if (e.status == (int)HttpStatusCode.Unauthorized)
-        {
-            errorMessage.text = InvalidApiToken;
-            ErrorMessageObj.SetActive(true);
         }
     }
 
@@ -328,25 +289,73 @@ public class Demo : MonoBehaviour
 
     public void DoSearch()
     {
+        Debug.Log("Sending observation search request");
         iNatManager.SearchObservations(userSearch, PopulateCarousel, HandleError);
         DelaySearchButton();
-    }
-
-    void ShowDemoSearch()
-    {
-        userSearch = new ObservationSearch();
-        userSearch.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { (ObservationSearch.IconicTaxon)Random.Range(1,13) }); //limit to a random iconic taxon
-        userSearch.SetOrder(OrderBy.Votes, SortOrder.Desc);
-        userSearch.SetPagination(30, Random.Range(1,5));
-        userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
-        userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
-        DoSearch();
     }
 
     public void HandleError(Error e)
     {
         Debug.LogError(e.error);
     }
+
+    void ShowDemoSearch()
+    {
+        userSearch = new ObservationSearch();
+        userSearch.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { (ObservationSearch.IconicTaxon)Random.Range(1, 13) }); //limit to a random iconic taxon
+        userSearch.SetOrder(OrderBy.Votes, SortOrder.Desc);
+        userSearch.SetPagination(30, Random.Range(1, 5));
+        userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
+        userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
+        DoSearch();
+    }
+
+    // ------ LOGIN PANEL ------
+
+    public void ClickLoginButton()
+    {
+        LoginButtonObj.SetActive(false);
+        PostLoginObj.SetActive(true);
+        InfoDetailsObj.SetActive(true);
+    }
+
+    public void CheckApiToken()
+    {
+        string apiToken = apiTokenInput.text;
+        if (new List<string>() { "\"", "{", "}", ":", "api_token" }.Any(apiToken.Contains))
+        {
+            errorMessage.text = BadApiTokenSyntax;
+            ErrorMessageObj.SetActive(true);
+        }
+        else
+        {
+            ErrorMessageObj.SetActive(false);
+            iNatManager.SetApiToken(apiToken);
+            iNatManager.GetUserMe(SetUser, SetUserError);
+        }
+    }
+
+    public void SetUser(User me)
+    {
+        user = me;
+        ErrorMessageObj.SetActive(false);
+        loggedInAs.text = "Logged in as: " + user.login;
+        LoggedInAsObj.SetActive(true);
+        PostLoginObj.SetActive(false);
+        loggedIn = true;
+        TryShowVotingButtons();
+    }
+
+    public void SetUserError(Error e)
+    {
+        if (e.status == (int)HttpStatusCode.Unauthorized)
+        {
+            errorMessage.text = InvalidApiToken;
+            ErrorMessageObj.SetActive(true);
+        }
+    }
+
+   // ------ OBSERVATION CAROUSEL ------
 
     public void MoveCarouselLeft()
     {
