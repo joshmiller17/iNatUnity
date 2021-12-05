@@ -193,6 +193,42 @@ public class Demo : MonoBehaviour
         qualityGradeDropdown.AddOptions(qdList);
     }
 
+    public void CitySelectDropdownCallback()
+    {
+        string choice = CityDropdownObj.transform.GetChild(0).gameObject.GetComponent<Text>().text;
+        if (choice != DefaultCity)
+        {
+            userSearch.IncludePlaceIds(new List<int>() { citiesToIds[choice] });
+        }
+    }
+
+    public void TaxonSelectDropdownCallback()
+    {
+        string choice = TaxonDropdownObj.transform.GetChild(0).gameObject.GetComponent<Text>().text;
+        if (choice != DefaultTaxon)
+        {
+            userSearch.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { iconicTaxa[choice] });
+        }
+    }
+
+    public void YearSelectDropdownCallback()
+    {
+        string choice = YearDropdownObj.transform.GetChild(0).gameObject.GetComponent<Text>().text;
+        if (choice != DefaultYear)
+        {
+            userSearch.IncludeYears(new List<int>() { System.Int32.Parse(choice) });
+        }
+    }
+
+    public void QualityGradeSelectDropdownCallback()
+    {
+        string choice = QualityGradeDropdownObj.transform.GetChild(0).gameObject.GetComponent<Text>().text;
+        if (choice != DefaultCity)
+        {
+            userSearch.SetQualityGrade(qualityGrades[choice]);
+        }
+    }
+
 
     public void ClickLoginButton()
     {
