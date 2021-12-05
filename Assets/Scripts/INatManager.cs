@@ -308,7 +308,7 @@ namespace JoshAaronMiller.INaturalist
         /// Delete a Flag.
         /// </summary>
         /// <param name="flagId">The ID of the flag.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the server response (typically empty).</param>
+        /// <param name="callback">A function to callback when the request is done.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
         public void DeleteFlag(int flagId, Action callback, Action<Error> errorCallback)
         {
@@ -337,7 +337,7 @@ namespace JoshAaronMiller.INaturalist
         /// Delete an Identification.
         /// </summary>
         /// <param name="flagId">The ID of the Identification.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the server response (typically empty).</param>
+        /// <param name="callback">A function to callback when the request is done.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
         public void DeleteIdentification(int identId, Action<string> callback, Action<Error> errorCallback)
         {
@@ -382,8 +382,8 @@ namespace JoshAaronMiller.INaturalist
         {
             WrappedIdentificationSubmission submission = new WrappedIdentificationSubmission();
             submission.identification = identSub;
-            string postData = WrappedIdentificationSubmission.ToJson(submission);
-            UnityWebRequest request = MakePutRequest(BaseUrl + "identifications/" + identId.ToString(), postData);
+            string putData = WrappedIdentificationSubmission.ToJson(submission);
+            UnityWebRequest request = MakePutRequest(BaseUrl + "identifications/" + identId.ToString(), putData);
             StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
         }
 
@@ -578,16 +578,16 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="obsPhotoId">The Observation Photo ID to update</param>
         /// <param name="position">The position in which the photo is displayed for the observation.</param>
         /// <param name="photo">The Photo to upload.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the Observatoin Photo object returned.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Observation Photo object returned.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void UpdateObservationPhoto(int obsPhotoId, int position, PhotoFile photo, Action<Identification> callback, Action<Error> errorCallback)
+        public void UpdateObservationPhoto(int obsPhotoId, int position, PhotoFile photo, Action<ObservationPhoto> callback, Action<Error> errorCallback)
         {
             WWWForm formData = new WWWForm();
             formData.AddField("observation_photo[position]", position);
             formData.AddBinaryData("file", photo.ToBytes(), photo.fileName, photo.fileType);
 
             UnityWebRequest request = MakePutRequest(BaseUrl + "observation_photos/" + obsPhotoId.ToString(), formData);
-            StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
+            StartCoroutine(DoWebRequestAsync(request, FromJson<ObservationPhoto>, callback, errorCallback));
         }
 
         /// <summary>
@@ -596,9 +596,9 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="obsId">The Observation ID to add the photo to</param>
         /// <param name="obsUuid">The UUID of the observation.</param>
         /// <param name="photo">The Photo to upload.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the Observatoin Photo object returned.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Observation Photo object returned.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void CreateObservationPhoto(int obsId, string obsUuid, PhotoFile photo, Action<Identification> callback, Action<Error> errorCallback)
+        public void CreateObservationPhoto(int obsId, string obsUuid, PhotoFile photo, Action<ObservationPhoto> callback, Action<Error> errorCallback)
         {
             WWWForm formData = new WWWForm();
             formData.AddField("observation_photo[observation_id]", obsId);
@@ -606,13 +606,23 @@ namespace JoshAaronMiller.INaturalist
             formData.AddBinaryData("file", photo.ToBytes(), photo.fileName, photo.fileType);
 
             UnityWebRequest request = MakePostRequest(BaseUrl + "observation_photos", formData);
-            StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
+            StartCoroutine(DoWebRequestAsync(request, FromJson<ObservationPhoto>, callback, errorCallback));
         }
 
 
         // --- OBSERVATIONS ---
 
-        //DeleteObservation not yet implemented TODO
+        /// <summary>
+        /// Delete an Observation.
+        /// </summary>
+        /// <param name="obsId">The ID of the Observation.</param>
+        /// <param name="callback">A function to callback when the request is done.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void DeleteObservation(int obsId, Action callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Delete(BaseUrl + "observations/" + obsId.ToString());
+            StartCoroutine(DoWebRequestAsync(request, callback, errorCallback));
+        }
 
         /// <summary>
         /// Given an array of IDs, returns corresponding observations 
@@ -641,18 +651,124 @@ namespace JoshAaronMiller.INaturalist
         }
 
 
-        //UpdateObservation not yet implemented TODO
-        //FaveObservation not yet implemented TODO
-        //UnfaveObservation not yet implemented TODO
-        //ReviewObservation not yet implemented TODO
-        //UnreviewObservation not yet implemented TODO
-        //GetObservationSubscriptions not yet implemented TODO
+        /// <summary>
+        /// Update an Observation.
+        /// </summary>
+        /// <param name="obsId">The Observation ID to update</param>
+        /// <param name="observation">An ObservationSubmission object containing the updated information for the observation.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Observation object returned.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void UpdateObservation(int obsId, ObservationSubmission observation, Action<Observation> callback, Action<Error> errorCallback)
+        {
+            WrappedObservationSubmission submission = new WrappedObservationSubmission();
+            submission.observation = observation;
+            string putData = WrappedObservationSubmission.ToJson(submission);
+            UnityWebRequest request = MakePutRequest(BaseUrl + "observations/" + obsId.ToString(), putData);
+            StartCoroutine(DoWebRequestAsync(request, FromJson<Observation>, callback, errorCallback));
+        }
+
+        /// <summary>
+        /// "Fave" an Observation.
+        /// </summary>
+        /// <param name="obsId">The Observation ID.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Observation object returned.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void FaveObservation(int obsId, Action<Observation> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = MakePostRequest(BaseUrl + "observations/" + obsId.ToString() + "/fave", ""); //API doesn't expect any POST data
+            StartCoroutine(DoWebRequestAsync(request, FromJson<Observation>, callback, errorCallback));
+        }
+
+        /// <summary>
+        /// "Unfave" an Observation, or delete Fave mark.
+        /// </summary>
+        /// <param name="obsId">The Observation ID.</param>
+        /// <param name="callback">A function to callback when the request is done.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void UnfaveObservation(int obsId, Action callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Delete(BaseUrl + "observations/" + obsId.ToString() + "/unfave");
+            StartCoroutine(DoWebRequestAsync(request, callback, errorCallback));
+        }
+
+        /// <summary>
+        /// Mark an observation as reviewed by the authenticated user.
+        /// </summary>
+        /// <param name="obsId">The Observation ID.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Observation object returned.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void ReviewObservation(int obsId, Action<Observation> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = MakePostRequest(BaseUrl + "observations/" + obsId.ToString() + "/review", ""); //API doesn't expect any POST data
+            StartCoroutine(DoWebRequestAsync(request, FromJson<Observation>, callback, errorCallback));
+        }
+
+        /// <summary>
+        /// Mark an observation as unreviewed by the authenticated user.
+        /// </summary>
+        /// <param name="obsId">The Observation ID.</param>
+        /// <param name="callback">A function to callback when the request is done.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void UnreviewObservation(int obsId, Action callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Delete(BaseUrl + "observations/" + obsId.ToString() + "/unreview");
+            StartCoroutine(DoWebRequestAsync(request, callback, errorCallback));
+        }
+
+
+
+        //GetObservationSubscriptions not yet implemented
+        //   API hook seems confusing and/or deprecated
+
         //DeleteQualityMetric not yet implemented
         //SetQualityMetric not yet implemented
-        //GetObservationTaxonSummary not yet implemented TODO
-        //SubscribeToObservation not yet implemented TODO
-        //VoteObservation not yet implemented TODO
-        //UnvoteObservation not yet implemented TODO
+
+        /// <summary>
+        /// Given an observation ID, fetch the TaxonSummary of that Observation.
+        /// </summary>
+        /// <remarks>
+        /// Probably most useful for getting a Wikipedia summary of the taxon, see TaxonSummary object.
+        /// </remarks>
+        /// <param name="obsId">The observation  ID to fetch</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the TaxonSummary object returned.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void GetObservationTaxonSummary(int obsId, Action<TaxonSummary> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations/" + obsId.ToString() + "/taxon_summary");
+            StartCoroutine(DoWebRequestAsync(request, FirstResultFromJson<TaxonSummary>, callback, errorCallback));
+        }
+
+
+        //SubscribeToObservation not yet implemented
+        //    always returns true
+
+        /// <summary>
+        /// Vote on an Observation; see Vote object for usage.
+        /// </summary>
+        /// <param name="obsId">The Observation ID.</param>
+        /// <param name="vote">The Vote to submit.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Observation object returned.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void VoteObservation(int obsId, Vote vote, Action<Observation> callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = MakePostRequest(BaseUrl + "votes/vote/observation/" + obsId.ToString(), Vote.ToJson(vote));
+            StartCoroutine(DoWebRequestAsync(request, FromJson<Observation>, callback, errorCallback));
+        }
+
+
+        /// <summary>
+        /// Delete a Vote from an Observation.
+        /// </summary>
+        /// <param name="obsId">The Observation ID.</param>
+        /// <param name="vote">The Vote to delete.</param>
+        /// <param name="callback">A function to callback when the request is done.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void UnvoteObservation(int obsId, Vote vote, Action callback, Action<Error> errorCallback)
+        {
+            UnityWebRequest request = MakePutRequest(BaseUrl + "votes/unvote/observation/", Vote.ToJson(vote)); //weirdly, this DELETE has a body
+            request.method = "DELETE";
+            StartCoroutine(DoWebRequestAsync(request, callback, errorCallback));
+        }
 
 
         /// <summary>
@@ -667,7 +783,23 @@ namespace JoshAaronMiller.INaturalist
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Observation>, callback, errorCallback));
         }
 
-        //CreateObservation not yet implemented TODO
+        /// <summary>
+        /// Create an Observation.
+        /// </summary>
+        /// <param name="observation">An ObservationSubmission object containing the information for the observation.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Observation object returned.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void CreateObservation(ObservationSubmission observation, Action<Observation> callback, Action<Error> errorCallback)
+        {
+            WrappedObservationSubmission submission = new WrappedObservationSubmission();
+            submission.observation = observation;
+            string postData = WrappedObservationSubmission.ToJson(submission);
+            UnityWebRequest request = MakePostRequest(BaseUrl + "observations", postData);
+            StartCoroutine(DoWebRequestAsync(request, FromJson<Observation>, callback, errorCallback));
+        }
+
+
+
         //GetDeletedObservations not yet implemented
         //GetObservationHistogram not yet implemented TODO
         //GetObservationIdentifiers not yet implemented
@@ -772,7 +904,20 @@ namespace JoshAaronMiller.INaturalist
 
         // --- PHOTOS ---
 
-        //CreatePhoto not yet implemented TODO
+        /// <summary>
+        /// Create a Photo.
+        /// </summary>
+        /// <param name="photo">The Photo to upload.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Photo object returned.</param>
+        /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        public void CreatePhoto(PhotoFile photo, Action<PhotoJson> callback, Action<Error> errorCallback)
+        {
+            WWWForm formData = new WWWForm();
+            formData.AddBinaryData("file", photo.ToBytes(), photo.fileName, photo.fileType);
+
+            UnityWebRequest request = MakePostRequest(BaseUrl + "photos", formData);
+            StartCoroutine(DoWebRequestAsync(request, FromJson<PhotoJson>, callback, errorCallback));
+        }
 
 
     }
