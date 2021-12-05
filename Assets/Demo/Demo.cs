@@ -50,6 +50,31 @@ public class Demo : MonoBehaviour
     static readonly string BadApiTokenSyntax = "Invalid syntax. Paste just the token string without quotes or the \"api_token\" label before it.";
     static readonly string InvalidApiToken = "Invalid API token.";
 
+    // created using INatManager::GetPlacesAutocomplete
+    static Dictionary<string, int> citiesToIds = new Dictionary<string, int>()
+    {
+        {"Boston", 26306 },
+        {"Dubai", 157073 },
+        {"London", 30370 },
+        {"Los Angeles", 962 },
+        {"New York", 48 },
+        {"Paris", 99545 },
+        {"Sydney", 18683 },
+        {"Tokyo", 10935 }
+    };
+
+    static Dictionary<string, ObservationSearch.IconicTaxon> iconicTaxa = new Dictionary<string, ObservationSearch.IconicTaxon>()
+    {
+        { "Amphibians", ObservationSearch.IconicTaxon.Amphibia },
+        { "Birds", ObservationSearch.IconicTaxon.Aves },
+        { "Insects", ObservationSearch.IconicTaxon.Insecta },
+        { "Mammals", ObservationSearch.IconicTaxon.Mammalia },
+        { "Mushrooms", ObservationSearch.IconicTaxon.Fungi },
+        { "Mollusks", ObservationSearch.IconicTaxon.Mollusca },
+        { "Plants", ObservationSearch.IconicTaxon.Plantae },
+        { "Reptiles", ObservationSearch.IconicTaxon.Reptilia },
+        { "Spiders", ObservationSearch.IconicTaxon.Arachnida }
+    };
 
     List<Observation> observations = new List<Observation>();
     int carouselIndex = 0;
