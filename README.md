@@ -37,9 +37,11 @@ iNatManager.SearchObservations(myObservationSearch, ProcessObservations, HandleE
 ## Common Use Cases and Examples
 
 
+# Documentation
+
+## iNaturalist + Unity
+The full iNaturalist + Unity documentation is available [here](https://joshmiller17.github.io/iNatUnity/docs/api/JoshAaronMiller.INaturalist.html).
+
 
 ## iNaturalist API Documentation
 The official iNaturalist API documentation is available [here](https://api.inaturalist.org/v1/docs/).
-
-
-## Documentation coming soon...
