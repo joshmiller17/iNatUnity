@@ -1,0 +1,1055 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Assembly-CSharp</name>
+    </assembly>
+    <members>
+        <member name="T:JoshAaronMiller.INaturalist.INatManager">
+            <summary>
+            The INatManager handles direct requests to the iNaturalist API.
+            </summary>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.IsRateLimited">
+            <summary>
+            Returns whether the INatManager is currently rate limiting itself to be kind to the server.
+            </summary>
+            <returns>Whether the INatManager is rate limited. Only make server calls when not rate limited.</returns>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager._SendWebRequestAsync(UnityEngine.Networking.UnityWebRequest,System.Boolean)">
+            <summary>
+            Helper function to send the web request.
+            </summary>
+            <param name="request">The web request.</param>
+            <param name="authenticate">Whether to attach authentication header and API token.</param>
+            <returns></returns>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager._HandleWebResponse(UnityEngine.Networking.UnityWebRequest)">
+            <summary>
+            Download and interpret the server response as a JSON string.
+            </summary>
+            <param name="request">The web request.</param>
+            <returns>The response as a JSON string.</returns>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager._HandleWebError(UnityEngine.Networking.UnityWebRequest,System.String)">
+            <summary>
+            If the server response was an error, handle it and return true. Otherwise return false.
+            </summary>
+            <param name="request">The web request.</param>
+            <param name="json">The response as a JSON string.</param>
+            <returns>If error, return it; otherwise return null.</returns>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.DoWebRequestAsync(UnityEngine.Networking.UnityWebRequest,System.Action,System.Action{JoshAaronMiller.INaturalist.Error},System.Boolean)">
+            <summary>
+            Perform an asynchronous web request.
+            </summary>
+            <param name="request">The UnityWebRequest</param>
+            <param name="callback">A function to callback when the request is done.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+            <param name="authenticate">Whether to pass the API token along with the request, for API calls that require authentication only. This is forced to true for all non-GET calls.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.DoWebRequestAsync``1(UnityEngine.Networking.UnityWebRequest,System.Func{System.String,``0},System.Action{``0},System.Action{JoshAaronMiller.INaturalist.Error},System.Boolean)">
+            <summary>
+            Perform an asynchronous web request.
+            </summary>
+            <param name="request">The UnityWebRequest</param>
+            <param name="receiveRequest">The function which processes the server response (JSON encoded as string) and returns a response of type T.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the processed response of type T.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+            <param name="authenticate">Whether to pass the API token along with the request, for API calls that require authentication only. This is forced to true for all non-GET calls.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.MakePutRequest(System.String,System.String)">
+            <summary>
+            Construct and return a PUT request.
+            </summary>
+            <param name="url">The URL to send a PUT to.</param>
+            <param name="body">The string data to attach to the PUT.</param>
+            <returns>The UnityWebRequest.</returns>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.MakePutRequest(System.String,UnityEngine.WWWForm)">
+            <summary>
+            Construct and return a PUT request.
+            </summary>
+            <param name="url">The URL to send a PUT to.</param>
+            <param name="body">The WWWForm data to attach to the PUT.</param>
+            <returns>The UnityWebRequest.</returns>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.MakePostRequest(System.String,System.String)">
+            <summary>
+            Construct and return a POST request.
+            </summary>
+            <param name="url">The URL to send a POST to.</param>
+            <param name="body">The string data to attach to the POST.</param>
+            <returns>The UnityWebRequest.</returns>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.MakePostRequest(System.String,UnityEngine.WWWForm)">
+            <summary>
+            Construct and return a POST request.
+            </summary>
+            <param name="url">The URL to send a POST to.</param>
+            <param name="body">The WWWForm data to attach to the POST.</param>
+            <returns>The UnityWebRequest.</returns>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetTermsIndex(System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Fetch a list of all attribute controlled terms as a List of ControlledTerms.
+            </summary>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of Controlled Terms created.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetTermsForTaxon(System.Int32,System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Fetch a list of all attribute controlled terms relevant to a taxon as a List of ControlledTerms.
+            </summary>
+            <param name="taxonId">The ID of the Taxon.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of Controlled Terms created.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.CreateFlag(JoshAaronMiller.INaturalist.WrappedFlag,System.Action{JoshAaronMiller.INaturalist.Identification},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Submit a Flag.
+            </summary>
+            <param name="flag">The parameters of the flag.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Flag created.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.DeleteFlag(System.Int32,System.Action,System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Delete a Flag.
+            </summary>
+            <param name="flagId">The ID of the flag.</param>
+            <param name="callback">A function to callback when the request is done.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.UpdateFlag(System.Int32,JoshAaronMiller.INaturalist.WrappedFlag,System.Action{JoshAaronMiller.INaturalist.Identification},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Update a Flag.
+            </summary>
+            <param name="flagId">The ID of the flag.</param>
+            <param name="flag">The parameters of the flag.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Flag updated.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.DeleteIdentification(System.Int32,System.Action{System.String},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Delete an Identification.
+            </summary>
+            <param name="identId">The ID of the Identification.</param>
+            <param name="callback">A function to callback when the request is done.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetIdentifications(System.Collections.Generic.List{System.Int32},System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given an array of IDs, returns corresponding Identifications 
+            </summary>
+            <param name="identIds">The list of identification IDs to fetch</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of Identification objects found.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetIdentification(System.Int32,System.Action{JoshAaronMiller.INaturalist.Identification},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given an ID, returns corresponding Identifications 
+            </summary>
+            <param name="identId">The identification ID to fetch</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Identification object found.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.UpdateIdentification(System.Int32,JoshAaronMiller.INaturalist.IdentificationSubmission,System.Action{JoshAaronMiller.INaturalist.Identification},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Update an Identification
+            </summary>
+            <param name="identId">The identification ID to update</param>
+            <param name="identSub">The updated information for the identification.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Identification object returned.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.SearchIdentifications(JoshAaronMiller.INaturalist.IdentificationSearch,System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given an IdentificationSearch object, returns a list of matching Identifications
+            </summary>
+            <param name="identSearch">An IdentificationSearch object holding the parameters of the search</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of Identification objects found.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.CreateIdentification(JoshAaronMiller.INaturalist.IdentificationSubmission,System.Action{JoshAaronMiller.INaturalist.Identification},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Submit an Identification.
+            </summary>
+            <param name="identSub">The parameters of the Identification. Requires at minimum observation ID and taxon ID.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Identification created.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetIdentificationCategories(JoshAaronMiller.INaturalist.IdentificationSearch,System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.IdentificationCategoryCount}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given an IdentificationSearch object, returns the counts of how many identifications matching the search have a particular category.
+            </summary>
+            <param name="identSearch">An IdentificationSearch object holding the parameters of the search.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of IdentificationCategoryCount objects found.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetIdentificationSpeciesCounts(JoshAaronMiller.INaturalist.IdentificationSearch,System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given an IdentificationSearch object, returns the counts of how many identifications matching the search have a particular leaf taxon.
+            </summary>
+            <param name="identSearch">An IdentificationSearch object holding the parameters of the search.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of SpeciesCount objects found.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32,System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given a Taxon ID, return similar taxa and counts of co-occurrence.
+            </summary>
+            <remarks>
+            The definition of "similar taxa" is operationalized by finding all observations of this taxon or identified as this taxon,
+            then taking the identifications of those observations and counting frequencies of identifications of other taxa.
+            In short, this returns a list mapping taxa to how many times they co-occurred with the searched taxon.
+            </remarks>
+            <param name="taxonId">The ID of the taxon to find similar taxa to.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of SpeciesCount objects representing the results.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32,JoshAaronMiller.INaturalist.ObservationSearch,System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given a Taxon ID, return similar taxa and counts of co-occurrence.
+            </summary>
+            <remarks>
+            The definition of "similar taxa" is operationalized by finding all observations of this taxon or identified as this taxon,
+            then taking the identifications of those observations and counting frequencies of identifications of other taxa.
+            In short, this returns a list mapping taxa to how many times they co-occurred with the searched taxon.
+            </remarks>
+            <param name="taxonId">The ID of the taxon to find similar taxa to.</param>
+            /// <param name="obsSearch">Additional parameters to refine the search, limiting what observations can be included.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of SpeciesCount objects representing the results.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.SearchUserMessages(JoshAaronMiller.INaturalist.MessageSearch,System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given a MessageSearch object, returns a list of matching user messages
+            </summary>
+            <remarks>
+            This function does not mark these messages as read. See GetUserMessageThread.
+            </remarks>
+            <param name="messageSearch">A MessageSearch object holding the parameters of the search</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of Message objects found.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.CreateUserMessage(JoshAaronMiller.INaturalist.UserMessage,System.Action{JoshAaronMiller.INaturalist.UserMessage},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Send a private message.
+            </summary>
+            <param name="newMessage">The message to be sent.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the new Message created.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.DeleteUserMessageThread(System.Int32,System.Action,System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Delete all messages in a message thread.
+            </summary>
+            <param name="threadId">The thread to delete.</param>
+            <param name="callback">A function to callback when the request is done.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetUserMessageThread(System.Int32,System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Retrieves all messages in the specified thread and marks them all as read.
+            </summary>
+            <param name="threadId">The thread to fetch.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the thread fetched as a Results list of UserMessages.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetCountUnreadMessages(System.Action{JoshAaronMiller.INaturalist.Count},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Returns a Count of unread messages in the authenticated user's inbox.
+            </summary>
+            <param name="callback">A function to callback when the request is done which takes as input the Count of unread messages.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.DeleteObservationPhoto(System.Int32,System.Action,System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Delete an observation photo.
+            </summary>
+            <param name="obsPhotoId">The observation photo to delete.</param>
+            <param name="callback">A function to callback when the request is done.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.UpdateObservationPhoto(System.Int32,System.Int32,JoshAaronMiller.INaturalist.PhotoFile,System.Action{JoshAaronMiller.INaturalist.ObservationPhoto},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Update an Observation Photo.
+            </summary>
+            <param name="obsPhotoId">The Observation Photo ID to update</param>
+            <param name="position">The position in which the photo is displayed for the observation.</param>
+            <param name="photo">The Photo to upload.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Observation Photo object returned.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.CreateObservationPhoto(System.Int32,System.String,JoshAaronMiller.INaturalist.PhotoFile,System.Action{JoshAaronMiller.INaturalist.ObservationPhoto},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Create an Observation Photo.
+            </summary>
+            <param name="obsId">The Observation ID to add the photo to</param>
+            <param name="obsUuid">The UUID of the observation.</param>
+            <param name="photo">The Photo to upload.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Observation Photo object returned.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.DeleteObservation(System.Int32,System.Action,System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Delete an Observation.
+            </summary>
+            <param name="obsId">The ID of the Observation.</param>
+            <param name="callback">A function to callback when the request is done.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetObservations(System.Collections.Generic.List{System.Int32},System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given an array of IDs, returns corresponding observations 
+            </summary>
+            <param name="ids">The list of observation IDs to fetch</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of Observation objects found.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetObservation(System.Int32,System.Action{JoshAaronMiller.INaturalist.Observation},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given an ID, returns corresponding observations
+            </summary>
+            <param name="id">The observation ID to fetch</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Observation object found.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.UpdateObservation(System.Int32,JoshAaronMiller.INaturalist.ObservationSubmission,System.Action{JoshAaronMiller.INaturalist.Observation},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Update an Observation.
+            </summary>
+            <param name="obsId">The Observation ID to update</param>
+            <param name="observation">An ObservationSubmission object containing the updated information for the observation.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Observation object returned.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.FaveObservation(System.Int32,System.Action{JoshAaronMiller.INaturalist.Observation},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            "Fave" an Observation.
+            </summary>
+            <param name="obsId">The Observation ID.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Observation object returned.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.UnfaveObservation(System.Int32,System.Action,System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            "Unfave" an Observation, or delete Fave mark.
+            </summary>
+            <param name="obsId">The Observation ID.</param>
+            <param name="callback">A function to callback when the request is done.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.ReviewObservation(System.Int32,System.Action{JoshAaronMiller.INaturalist.Observation},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Mark an observation as reviewed by the authenticated user.
+            </summary>
+            <param name="obsId">The Observation ID.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Observation object returned.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.UnreviewObservation(System.Int32,System.Action,System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Mark an observation as unreviewed by the authenticated user.
+            </summary>
+            <param name="obsId">The Observation ID.</param>
+            <param name="callback">A function to callback when the request is done.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetObservationTaxonSummary(System.Int32,System.Action{JoshAaronMiller.INaturalist.TaxonSummary},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given an observation ID, fetch the TaxonSummary of that Observation.
+            </summary>
+            <remarks>
+            Probably most useful for getting a Wikipedia summary of the taxon, see TaxonSummary object.
+            </remarks>
+            <param name="obsId">The observation  ID to fetch</param>
+            <param name="callback">A function to callback when the request is done which takes as input the TaxonSummary object returned.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.VoteObservation(System.Int32,JoshAaronMiller.INaturalist.Vote,System.Action{JoshAaronMiller.INaturalist.Observation},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Vote on an Observation; see Vote object for usage.
+            </summary>
+            <param name="obsId">The Observation ID.</param>
+            <param name="vote">The Vote to submit.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Observation object returned.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.UnvoteObservation(System.Int32,JoshAaronMiller.INaturalist.Vote,System.Action,System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Delete a Vote from an Observation.
+            </summary>
+            <param name="obsId">The Observation ID.</param>
+            <param name="vote">The Vote to delete.</param>
+            <param name="callback">A function to callback when the request is done.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.SearchObservations(JoshAaronMiller.INaturalist.ObservationSearch,System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given an ObservationSearch object, returns a list of matching observations
+            </summary>
+            <param name="obsSearch">An ObservationSearch object holding the parameters of the search</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of Observation objects found.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.CreateObservation(JoshAaronMiller.INaturalist.ObservationSubmission,System.Action{JoshAaronMiller.INaturalist.Observation},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Create an Observation.
+            </summary>
+            <param name="observation">An ObservationSubmission object containing the information for the observation.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Observation object returned.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetObservationSpeciesCounts(JoshAaronMiller.INaturalist.ObservationSearch,System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given an ObservationSearch object, returns the counts of how many observations matching the search have a particular leaf taxon.
+            </summary>
+            <param name="observationSearch">An ObservationSearch object holding the parameters of the search.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of SpeciesCount objects found.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Int32,System.Action{JoshAaronMiller.INaturalist.Place},System.Action{JoshAaronMiller.INaturalist.Error},JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)">
+            <summary>
+            Given an ID, return the corresponding Place.
+            </summary>
+            <param name="placeId">The ID of the Place.</param>
+            <param name="adminLevel">Optionally, the admin level of the place to search.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Place fetched.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Collections.Generic.List{System.Int32},System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}},System.Action{JoshAaronMiller.INaturalist.Error},JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)">
+            <summary>
+            Given a list of IDs, return the corresponding Places.
+            </summary>
+            <param name="placeIds">The IDs of the Places.</param>
+            <param name="adminLevel">Optionally, the admin level of the place to search.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of Places fetched.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetPlacesAutocomplete(System.String,System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}},System.Action{JoshAaronMiller.INaturalist.Error},System.Boolean)">
+            <summary>
+            Given a string query, find all places with names starting with the query.
+            </summary>
+            <param name="query">The search term.</param>
+            <param name="orderByArea">If true, sort the results by area (default false).</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of Places fetched.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetPlacesNearby(System.Double,System.Double,System.Double,System.Double,System.Action{JoshAaronMiller.INaturalist.PlacesByCuration},System.Action{JoshAaronMiller.INaturalist.Error},System.String,System.Int32)">
+            <summary>
+            Given a bounding box and optional name query, return nearby places separated by curation status.
+            </summary>
+            <param name="nelat">The northeast latitude corner of the bounding box.</param>
+            <param name="nelng">The northeast longitude corner of the bounding box.</param>
+            <param name="swlat">The southwest latitude corner of the bounding box.</param>
+            <param name="swlng">The southwest longitude corner of the bounding box.</param>
+            <param name="name">The optional search term for the name.</param>
+            <param name="perPage">Number of results per page (default 30, max 200).</param>
+            <param name="callback">A function to callback when the request is done which takes as input the list of PlacesByCuration fetched.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Collections.Generic.List{System.Int32},System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given an array of IDs, returns corresponding Taxa 
+            </summary>
+            <param name="taxaIds">The list of taxa IDs to fetch</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of Taxon objects found.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Int32,System.Action{JoshAaronMiller.INaturalist.Taxon},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given an ID, returns corresponding Taxon 
+            </summary>
+            <param name="taxonId">The Taxon ID to fetch</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Taxon object found.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.SearchTaxa(JoshAaronMiller.INaturalist.TaxonSearch,System.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Given a TaxonSearch object, returns a list of matching taxa
+            </summary>
+            <param name="taxonSearch">An TaxonSearch object holding the parameters of the search</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Results list of Taxon objects found.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.GetUserMe(System.Action{JoshAaronMiller.INaturalist.User},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Fetch the User details for the authenticated user.
+            </summary>
+            <param name="callback">A function to callback when the request is done which takes as input the User object.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.INatManager.CreatePhoto(JoshAaronMiller.INaturalist.PhotoFile,System.Action{JoshAaronMiller.INaturalist.PhotoJson},System.Action{JoshAaronMiller.INaturalist.Error})">
+            <summary>
+            Create a Photo.
+            </summary>
+            <param name="photo">The Photo to upload.</param>
+            <param name="callback">A function to callback when the request is done which takes as input the Photo object returned.</param>
+            <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.Observation.GetPhotoUrls(JoshAaronMiller.INaturalist.Observation.ImageSize)">
+            <summary>
+            Return all URLs of given size from this observation.
+            </summary>
+            <returns>List of URL strings.</returns>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.Observation.DownloadPhotos(System.String,JoshAaronMiller.INaturalist.Observation.ImageSize)">
+            <summary>
+            Download all photos of this size from this observation to the folder path specified within the application's persistent data path.
+            </summary>
+            <param name="path">The folder to download photos to, relative to the Application.persistentDataPath.</param>
+            <param name="size">The size of the image to download.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.Observation.CountIdentifications">
+            <summary>
+            Returns an aggregation of the identifications for this observation.
+            </summary>
+            <returns>A Dictionary mapping taxon identifications to a count of the number of users who guessed that taxon.</returns>
+        </member>
+        <member name="F:JoshAaronMiller.INaturalist.Place.place_type">
+            Supported admin levels are: -1 (continent), 0 (country), 1 (state), 2 (county), 3 (town), 10 (park)
+        </member>
+        <member name="F:JoshAaronMiller.INaturalist.Place.id">
+            geographic lng/lat
+        </member>
+        <member name="T:JoshAaronMiller.INaturalist.IdentificationSearch">
+            <summary>
+            An IdentificationSearch is a set of parameters for searching iNaturalist Identifications.
+            Usage: myINatManager.SearchIdentifications(myIdentificationSearch)
+            </summary>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Require the search to include these IDs.
+            </summary>
+            <param name="ids">IDs to include</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludePlaceIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Require the observations to be within these place IDs.
+            </summary>
+            <param name="ids">Place IDs to require</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Limit the search to these taxa IDs and their descendents.
+            </summary>
+            <param name="ids">Taxa IDs to include</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Limit the search to observations with these taxa IDs and their descendents.
+            </summary>
+            <param name="ids">Observation taxa IDs to include</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIconicTaxonIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Limit the search to identifications with these iconic taxa.
+            </summary>
+            <param name="ids">Iconic taxa IDs to include</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationIconicTaxonIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Limit the search to identifications of observations with these iconic taxa.
+            </summary>
+            <param name="ids">Observation iconic taxa IDs to include</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeTaxonIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Limit the search to exclude these taxa IDs and their descendents.
+            </summary>
+            <param name="ids">Taxa IDs to exclude</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeObservationTaxonIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Limit the search to exclude identifications of observations with taxa IDs and their descendents.
+            </summary>
+            <param name="ids">Observation taxa IDs to exclude</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.SetObservedOnDateLimits(System.String,System.String)">
+            <summary>
+            Limit the search to observations observed within a timeframe. Both start and end dates are optional.
+            </summary>
+            <param name="start">The start date, formatted as YYYY-MM-DD. Limit observations to on or after this date.</param>
+            <param name="end">The end date, formatted as YYYY-MM-DD. Limit observations to on or before this date.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.SetCreatedOnDateLimits(System.String,System.String)">
+            <summary>
+            Limit the search to identifications created within a timeframe. Both start and end dates are optional.
+            </summary>
+            <param name="start">The start date, formatted as YYYY-MM-DD. Limit identifications created on or after this date.</param>
+            <param name="end">The end date, formatted as YYYY-MM-DD. Limit identifications created on or before this date.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationCreatedOnDateLimits(System.String,System.String)">
+            <summary>
+            Limit the search to identifications of observations created within a timeframe. Both start and end dates are optional.
+            </summary>
+            <param name="start">The start date, formatted as YYYY-MM-DD. Limit identifications to observations created on or after this date.</param>
+            <param name="end">The end date, formatted as YYYY-MM-DD. Limit identifications to observations created on or before this date.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})">
+            <summary>
+            Limit the search to identifications of taxa of these ranks.
+            </summary>
+            <param name="ranks">The list of taxon ranks to include in the search.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})">
+            <summary>
+            Limit the search to identifications of observations that have a taxon of these ranks.
+            </summary>
+            <param name="ranks">The list of observation taxon ranks to include in the search.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserId(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Limit the search to identifications made by users of these IDs.
+            </summary>
+            <param name="userIds">The list of user IDs; limit the search to their identifications.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserLogin(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Limit the search to identifications made by users with these login names.
+            </summary>
+            <param name="userLogins">The list of usernames; limit the search to their identifications.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeCategories(System.Collections.Generic.List{System.String})">
+            <summary>
+            Limit the search to identifications with these category labels.
+            </summary>
+            <param name="categories">The identification categories to include in the search.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.SetTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank,JoshAaronMiller.INaturalist.TaxonRank)">
+            <summary>
+            Limit the search to taxa between these limits.
+            </summary>
+            <param name="lowest">The lowest taxon rank to include in the search (include this and higher).</param>
+            <param name="highest">The highest taxon rank to include in the search (include this and lower).</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank,JoshAaronMiller.INaturalist.TaxonRank)">
+            <summary>
+            Limit the search to identifications of observations with taxa between these limits.
+            </summary>
+            <param name="lowest">The lowest observation taxon rank to include in the search (include this and higher).</param>
+            <param name="highest">The highest observation taxon rank to include in the search (include this and lower).</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.SetQualityGrade(JoshAaronMiller.INaturalist.QualityGrade)">
+            <summary>
+            Limit the search to observations of this quality grade.
+            </summary>
+            <param name="quality">The quality grade to search for.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.SetIdentificationnIdLimits(System.Int32,System.Int32)">
+            <summary>
+            Limit the search to identifications with IDs within this range. Both min and max are optional.
+            </summary>
+            <param name="min">Include this ID and higher.</param>
+            <param name="max">Include this ID and lower.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.SetPagination(System.Int32,System.Int32)">
+            <summary>
+            Set the number of search results per page and which page to receive. For example, SetPagination(50,2) would return results 51-100.
+            </summary>
+            <param name="resultsPerPage">How many results to return per page (default 30).</param>
+            <param name="page">Which page of results to return (default 1).</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.IdentificationSearch.SetOrder(JoshAaronMiller.INaturalist.OrderBy,JoshAaronMiller.INaturalist.SortOrder)">
+            <summary>
+            Set how the results are ordered. Defaults to created at date, descending.
+            </summary>
+            <param name="orderBy">The parameter to sort the order by.</param>
+            <param name="sortOrder">Whether to sort ascending or descending.</param>
+        </member>
+        <member name="T:JoshAaronMiller.INaturalist.MessageSearch">
+            <summary>
+            A MessageSearch is a set of parameters for searching an iNaturalist user's private messages.
+            Usage: myINatManager.GetUserMessages(myMessageSearch)
+            </summary>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.MessageSearch.SetPage(System.Int32)">
+            <summary>
+            Set the pagination page number.
+            </summary>
+            <param name="page">The page of results to fetch.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.MessageSearch.SetBox(JoshAaronMiller.INaturalist.MessageSearch.Box)">
+            <summary>
+            Set which box to search, defaults to inbox.
+            </summary>
+            <param name="box">The box of messages to search.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.MessageSearch.SetQuery(System.String)">
+            <summary>
+            Set an optional query string to search for in the subject and body of messages.
+            </summary>
+            <param name="q">The query string; search will return only messages that match this query in subject or body.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.MessageSearch.SetCorrespondent(System.String)">
+            <summary>
+            Limit the search to only messages with a correspondent of this user ID or username.
+            </summary>
+            <param name="user">The user ID or username to limit the search to.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.MessageSearch.ShowOnlyLatestMessagePerThread(System.Boolean)">
+            <summary>
+            If this setting is toggled on (default off), group the results by thread ID,
+            only show the latest message per thread, and include a thread_messages_count
+            which shows the total number of messages in that thread.
+            </summary>
+            <remarks>
+            Note that this setting can only be used if query (`q`) is not set and
+            thread_messages_count always reports the count from `any` box instead of the
+            box specified.
+            </remarks>
+            <param name="on">Whether to only show the latest message per thread.</param>
+        </member>
+        <member name="T:JoshAaronMiller.INaturalist.ObservationSearch">
+            <summary>
+            An ObservationSearch is a set of parameters for searching iNaturalist Observations.
+            Usage: myINatManager.SearchObservations(myObservationSearch)
+            </summary>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.IncludeIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Require the search to include these IDs.
+            </summary>
+            <param name="ids">IDs to include</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.ExcludeIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Require the search to exclude these IDs.
+            </summary>
+            <param name="ids">IDs to exclude</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetLicense(JoshAaronMiller.INaturalist.ObservationSearch.License)">
+            <summary>
+            Require the observations returned to have this license.
+            </summary>
+            <param name="license">Required license</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetPhotoLicense(JoshAaronMiller.INaturalist.ObservationSearch.License)">
+            <summary>
+            Require the observations to have at least one photo with this license.
+            </summary>
+            <param name="license">Required license</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.IncludePlaceIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Require the observations to be within these place IDs.
+            </summary>
+            <param name="ids">Place IDs to require</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.IncludeProjectIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Require the observations to be included in these project IDs.
+            </summary>
+            <param name="ids">Project IDs to search</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetTaxonRank(JoshAaronMiller.INaturalist.TaxonRank)">
+            <summary>
+            Require the observations returned to have this taxon rank.
+            </summary>
+            <param name="rank">Required taxonomic rank.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetSoundLicense(JoshAaronMiller.INaturalist.ObservationSearch.License)">
+            <summary>
+            Require the observations to have at least one sound with this license.
+            </summary>
+            <param name="license">Required license</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.IncludeTaxonIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Limit the search to these taxa IDs and their descendents.
+            </summary>
+            <param name="ids">Taxa IDs to include</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.ExcludeTaxonIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Limit the search to exclude these taxa IDs and their descendents.
+            </summary>
+            <param name="ids">Taxa IDs to exclude</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.IncludeTaxonNames(System.Collections.Generic.List{System.String})">
+            <summary>
+            Limit the search to these scientific or common taxa names.
+            </summary>
+            <param name="names">Taxa names to match</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetIdentifiedByUserId(System.Int32)">
+            <summary>
+            Limit the search to observations with identifications by the user with this ID.
+            </summary>
+            <param name="userId">The user's ID to restrict the search to.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.IncludeDays(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Limit the search to observations on these days of the month.
+            </summary>
+            <param name="days">Days to match.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.IncludeMonths(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Limit the search to observations on these months.
+            </summary>
+            <param name="months">Months to match.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.IncludeYears(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Limit the search to observations on these years.
+            </summary>
+            <param name="years">Years to match.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetAccuracyMinimum(System.Int32)">
+            <summary>
+            Limit the search to observations with a positional accuracy above this value.
+            </summary>
+            <param name="min">The positional accuracy in meters.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetAccuracyMaximum(System.Int32,System.Boolean)">
+            <summary>
+            Limit the search to observations with a positional accuracy below this value.
+            </summary>
+            <param name="max">The positional accuracy in meters.</param>
+            <param name="canBeUnknown">Whether the positional accuracy can be unknown.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetObservedOnDateLimits(System.String,System.String)">
+            <summary>
+            Limit the search to observations observed within a timeframe. Both start and end dates are optional.
+            </summary>
+            <param name="start">The start date, formatted as YYYY-MM-DD. Limit observations to on or after this date.</param>
+            <param name="end">The end date, formatted as YYYY-MM-DD. Limit observations to on or before this date.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetCreatedOnDateTimeLimits(System.String,System.String)">
+            <summary>
+            Limit the search to observations created within a timeframe. Both start and end dates are optional.
+            </summary>
+            <param name="start">The start datetime, formatted as ISO-8601 datetime format: YYYY-MM-DDTHH:MMSS.mmmZ. Limit observations to created on or after this date.</param>
+            <param name="end">The end datetime, formatted as ISO-8601 datetime format: YYYY-MM-DDTHH:MMSS.mmmZ. Limit observations to created on or before this date.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetUnobservedByUserId(System.Int32)">
+            <summary>
+            Limit the search to taxa that this user has not previously observed.
+            </summary>
+            <param name="userId">The user ID to base this restriction on.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.ApplyProjectRulesFor(System.Int32)">
+            <summary>
+            Limit the search to the project restrictions of the given project ID.
+            </summary>
+            <param name="projectId">The project ID to base this restriction on.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetConservationStatusCode(System.String)">
+            <summary>
+            Limit the search to taxa of this conservation status code. If PlaceId is also set, only consider statuses specific to those places.
+            </summary>
+            <param name="code">The conservation status code.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetConservationStatusAuthority(System.String)">
+            <summary>
+            Limit the search to taxa with a conservation status from this authority. If PlaceId is also set, only consider statuses specific to those places.
+            </summary>
+            <param name="auth">The conservation status authority.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.IncludeIUCNConservationStatuses(System.Collections.Generic.List{JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus})">
+            <summary>
+            Limit the search to taxa with these IUCN conservation statuses. If PlaceId is also set, only consider statuses specific to those places.
+            </summary>
+            <param name="cs">The IUCN conservation statuses.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetGeoprivacy(System.Collections.Generic.List{JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy})">
+            <summary>
+            Limit the search to observations with these geoprivacy settings.
+            </summary>
+            <param name="geo">The geoprivacy settings.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.IncludeTaxonGeoprivacy(System.Collections.Generic.List{JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy})">
+            <summary>
+            Filter observations by the most conservative geoprivacy applied by a conservation status associated with one of the taxa proposed in the current identifications.
+            </summary>
+            <param name="geos">The geoprivacy settings.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank,JoshAaronMiller.INaturalist.TaxonRank)">
+            <summary>
+            Limit the search to taxa between these limits.
+            </summary>
+            <param name="lowest">The lowest taxon rank to include in the search (include this and higher).</param>
+            <param name="highest">The highest taxon rank to include in the search (include this and lower).</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetIconicTaxa(System.Collections.Generic.List{JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon})">
+            <summary>
+            Limit the search to observations with these iconic taxa.
+            </summary>
+            <param name="iconicTaxa">The iconic taxa to include.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetObservationIdLimits(System.Int32,System.Int32)">
+            <summary>
+            Limit the search to observations with IDs within this range. Both min and max are optional.
+            </summary>
+            <param name="min">Include this ID and higher.</param>
+            <param name="max">Include this ID and lower.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetBoundingCircle(System.Double,System.Double,System.Double)">
+            <summary>
+            Limit the search to a circle of [radius] kilometers around the specified latitude and longitude.
+            </summary>
+            <param name="lat">The latitude of the search's center.</param>
+            <param name="lng">The longitude of the search's center.</param>
+            <param name="radius">The radius of search in kilometers.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetBoundingBox(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Limit the search within a bounding box specified by northeast and southwest corners given in latitude and longitude.
+            </summary>
+            <param name="nelat">The northeast latitude.</param>
+            <param name="nelng">The northeast longitude.</param>
+            <param name="swlat">The southwest latitude.</param>
+            <param name="swlng">The southwest longitude.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.ExcludeProjectId(System.Int32)">
+            <summary>
+            Require the observations to be not in this project ID.
+            </summary>
+            <param name="id">Project ID to exclude</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.ExcludeProjectRulesFor(System.Int32)">
+            <summary>
+            Limit the search to observations that don't match the rules of the given project ID.
+            </summary>
+            <param name="projectId">The project ID to base this restriction on.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SearchOnProperties(JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty,System.String)">
+            <summary>
+            Search observation properties matching the query.
+            </summary>
+            <param name="property">The search property to apply the query to.</param>
+            <param name="query">The search query.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetQualityGrade(JoshAaronMiller.INaturalist.QualityGrade)">
+            <summary>
+            Limit the search to observations of this quality grade.
+            </summary>
+            <param name="quality">The quality grade to search for.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetReviewedByUser(System.Int32,System.Boolean)">
+            <summary>
+            Limit the search to observations that [have / have not] been reviewed by a given user.
+            </summary>
+            <param name="userId">The user ID to consider their review.</param>
+            <param name="hasReviewed">If true, only include observations they have reviewed. If false, only include observations they have not reviewed.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetCacheControl(System.Int32)">
+            <summary>
+            Set the Cache-Control HTTP header with this value as max-age, in seconds.This means subsequent identical requests will be cached on iNaturalist servers, and commonly within web browsers
+            </summary>
+            <param name="timeToLive">The max-age of the request, in seconds.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetPagination(System.Int32,System.Int32)">
+            <summary>
+            Set the number of search results per page and which page to receive. For example, SetPagination(50,2) would return results 51-100.
+            </summary>
+            <param name="resultsPerPage">How many results to return per page (default 30).</param>
+            <param name="page">Which page of results to return (default 1).</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.ObservationSearch.SetOrder(JoshAaronMiller.INaturalist.OrderBy,JoshAaronMiller.INaturalist.SortOrder)">
+            <summary>
+            Set how the results are ordered. Defaults to created at date, descending.
+            </summary>
+            <param name="orderBy">The parameter to sort the order by.</param>
+            <param name="sortOrder">Whether to sort ascending or descending.</param>
+        </member>
+        <member name="T:JoshAaronMiller.INaturalist.SearchObject">
+            <summary>
+            A search object has a set of bool and string parameters for conducting a query using the INatManager.
+            </summary>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters">
+            <summary>
+            Returns this search object as a string of URL parameters.
+            </summary>
+            <returns>A string of URL parameters</returns>
+        </member>
+        <member name="T:JoshAaronMiller.INaturalist.TaxonSearch">
+            <summary>
+            A TaxonSearch is a set of parameters for searching iNaturalist Taxa.
+            Usage: myINatManager.SearchTaxa(myTaxonSearch)
+            </summary>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.TaxonSearch.SetNameBeginsWith(System.String)">
+            <summary>
+            Limit the search to taxa that begin with this substring
+            </summary>
+            <param name="query">The start of the taxa names</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.TaxonSearch.IncludeIds(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Require the search to include these IDs.
+            </summary>
+            <param name="ids">IDs to include</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.TaxonSearch.SetParentId(System.Int32)">
+            <summary>
+            Limit the search to children of this taxon ID.
+            </summary>
+            <param name="parentId">The parent taxon's ID</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.TaxonSearch.IncludeTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})">
+            <summary>
+            Limit the search to taxa of these ranks.
+            </summary>
+            <param name="ranks">The list of taxon ranks to include in the search.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonRankLevel(JoshAaronMiller.INaturalist.TaxonRankLevel)">
+            <summary>
+            Limit the search to taxa of this rank level.
+            </summary>
+            <param name="rankLevel">The rank level to limit the search to.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonIdLimits(System.Int32,System.Int32)">
+            <summary>
+            Limit the search to taxa with IDs within this range. Both min and max are optional.
+            </summary>
+            <param name="min">Include this ID and higher.</param>
+            <param name="max">Include this ID and lower.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.TaxonSearch.SetPagination(System.Int32,System.Int32)">
+            <summary>
+            Set the number of search results per page and which page to receive. For example, SetPagination(50,2) would return results 51-100.
+            </summary>
+            <param name="resultsPerPage">How many results to return per page (default 30).</param>
+            <param name="page">Which page of results to return (default 1).</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.TaxonSearch.SetLocalePreference(System.String)">
+            <summary>
+            Set the locale preference for taxon common names.
+            </summary>
+            <remarks>
+            I'm not really sure what a valid input looks like.
+            </remarks>
+            <param name="locale">The locale preference.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.TaxonSearch.SetPreferredPlaceId(System.Int32)">
+            <summary>
+            Set a place preference for regional taxon common names.
+            </summary>
+            <remarks>
+            I think this means that taxon common names will be based on the place specified.
+            </remarks>
+            <param name="placeId">The place ID of the preference.</param>
+        </member>
+        <member name="M:JoshAaronMiller.INaturalist.Utilities.LoadImageFromPath(System.String,UnityEngine.GameObject,System.Action)">
+            <summary>
+            Loads an image from a local file or URL into the texture of a GameObject's RawImage component.
+            Creates a RawImage component if none exists.
+            </summary>
+            <param name="fullPath">The full local path or URL.</param>
+            <param name="loadTo">The GameObject to load the image into.</param>
+            <param name="callback">Optionally, a void function to call once the image is loaded successfully.</param>
+            <returns></returns>
+        </member>
+        <member name="T:JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2">
+            <summary>
+            A simple implementation of Python's defaultdict, which creates a default value if the key does not exist.
+            Adapted from https://stackoverflow.com/questions/15622622/analogue-of-pythons-defaultdict
+            </summary>
+        </member>
+    </members>
+</doc>
