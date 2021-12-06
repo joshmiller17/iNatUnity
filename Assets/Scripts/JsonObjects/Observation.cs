@@ -113,6 +113,7 @@ namespace JoshAaronMiller.INaturalist
         /// Download all photos of this size from this observation to the folder path specified within the application's persistent data path.
         /// </summary>
         /// <param name="path">The folder to download photos to, relative to the Application.persistentDataPath.</param>
+        /// <param name="size">The size of the image to download.</param>
         public void DownloadPhotos(string path, ImageSize size)
         {
             List<string> urls = GetPhotoUrls(size);

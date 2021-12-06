@@ -183,7 +183,7 @@ namespace JoshAaronMiller.INaturalist
         /// <summary>
         /// Require the observations returned to have this taxon rank.
         /// </summary>
-        /// <param name="license">Required license</param>
+        /// <param name="rank">Required taxonomic rank.</param>
         public void SetTaxonRank(TaxonRank rank)
         {
             if (rank != TaxonRank.None)
@@ -238,7 +238,7 @@ namespace JoshAaronMiller.INaturalist
         /// <summary>
         /// Limit the search to these scientific or common taxa names.
         /// </summary>
-        /// <param name="ids">Taxa names to match</param>
+        /// <param name="names">Taxa names to match</param>
         public void IncludeTaxonNames(List<string> names)
         {
             stringParams["taxon_name"] = string.Join(",", names);
@@ -284,7 +284,7 @@ namespace JoshAaronMiller.INaturalist
         /// <summary>
         /// Limit the search to observations on these years.
         /// </summary>
-        /// <param name="months">Years to match.</param>
+        /// <param name="years">Years to match.</param>
         public void IncludeYears(List<int> years)
         {
             stringParams["year"] = string.Join(",", years);
@@ -455,7 +455,7 @@ namespace JoshAaronMiller.INaturalist
         /// <summary>
         /// Filter observations by the most conservative geoprivacy applied by a conservation status associated with one of the taxa proposed in the current identifications.
         /// </summary>
-        /// <param name="geo">The geoprivacy settings.</param>
+        /// <param name="geos">The geoprivacy settings.</param>
         public void IncludeTaxonGeoprivacy(List<Geoprivacy> geos)
         {
             List<string> geoStrings = new List<string>();
@@ -595,7 +595,7 @@ namespace JoshAaronMiller.INaturalist
         /// <summary>
         /// Require the observations to be not in this project ID.
         /// </summary>
-        /// <param name="ids">Project ID to exclude</param>
+        /// <param name="id">Project ID to exclude</param>
         public void ExcludeProjectId(int id)
         {
             stringParams["not_in_project"] = id.ToString();

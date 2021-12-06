@@ -354,7 +354,7 @@ namespace JoshAaronMiller.INaturalist
         /// <summary>
         /// Delete an Identification.
         /// </summary>
-        /// <param name="flagId">The ID of the Identification.</param>
+        /// <param name="identId">The ID of the Identification.</param>
         /// <param name="callback">A function to callback when the request is done.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
         public void DeleteIdentification(int identId, Action<string> callback, Action<Error> errorCallback)
@@ -582,7 +582,7 @@ namespace JoshAaronMiller.INaturalist
         /// <summary>
         /// Delete an observation photo.
         /// </summary>
-        /// <param name="threadId">The observation photo to delete.</param>
+        /// <param name="obsPhotoId">The observation photo to delete.</param>
         /// <param name="callback">A function to callback when the request is done.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
         public void DeleteObservationPhoto(int obsPhotoId, Action callback, Action<Error> errorCallback)
@@ -981,7 +981,7 @@ namespace JoshAaronMiller.INaturalist
         /// <summary>
         /// Given an array of IDs, returns corresponding Taxa 
         /// </summary>
-        /// <param name="identIds">The list of taxa IDs to fetch</param>
+        /// <param name="taxaIds">The list of taxa IDs to fetch</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the Results list of Taxon objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
         public void GetTaxonDetails(List<int> taxaIds, Action<Results<Taxon>> callback, Action<Error> errorCallback)
@@ -994,7 +994,7 @@ namespace JoshAaronMiller.INaturalist
         /// <summary>
         /// Given an ID, returns corresponding Taxon 
         /// </summary>
-        /// <param name="identId">The Taxon ID to fetch</param>
+        /// <param name="taxonId">The Taxon ID to fetch</param>
         /// <param name="callback">A function to callback when the request is done which takes as input the Taxon object found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
         public void GetTaxonDetails(int taxonId, Action<Taxon> callback, Action<Error> errorCallback)
