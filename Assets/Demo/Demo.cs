@@ -139,7 +139,8 @@ public class Demo : MonoBehaviour
         ShowDemoSearch();
     }
 
-    // ------ CRITERIA PANEL ------
+    #region Criteria Panel
+
     void PopulateDropdowns()
     {
         Debug.Log("Initializing dropdown menus");
@@ -317,7 +318,9 @@ public class Demo : MonoBehaviour
         DoSearch();
     }
 
-    // ------ LOGIN PANEL ------
+    #endregion
+
+    #region Login Panel
 
     public void ClickLoginButton()
     {
@@ -362,7 +365,9 @@ public class Demo : MonoBehaviour
         }
     }
 
-   // ------ OBSERVATION CAROUSEL ------
+    #endregion
+
+    #region Observation Carousel
 
     public void MoveCarouselLeft()
     {
@@ -521,4 +526,6 @@ public class Demo : MonoBehaviour
         observations = results.results;
         RefreshActiveObservation();
     }
+
+    #endregion
 }

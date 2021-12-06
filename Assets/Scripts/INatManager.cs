@@ -249,7 +249,7 @@ namespace JoshAaronMiller.INaturalist
 
 
 
-        // --- LOGIN ---
+        #region Login
         public void GetApiToken()
         {
             Application.OpenURL("https://www.inaturalist.org/users/api_token");
@@ -259,22 +259,26 @@ namespace JoshAaronMiller.INaturalist
         {
             apiToken = token;
         }
+        #endregion
 
-        // --- ANNOTATIONS ---
+        #region Annotations
 
         //CreateAnnotation not yet implemented
         //DeleteAnnotation not yet implemented
         //VoteAnnotation not yet implemented
         //UnvoteAnnotation not yet implemented
 
-        // --- COMMENTS ---
+        #endregion
+
+        #region Comments
 
         //CreateComment not yet implemented
         //DeleteComment not yet implemented
         //UpdateComment not yet implemented
 
+        #endregion
 
-        // --- CONTROLLED TERMS ---
+        #region Controlled Terms
 
         /// <summary>
         /// Fetch a list of all attribute controlled terms as a List of ControlledTerms.
@@ -299,7 +303,9 @@ namespace JoshAaronMiller.INaturalist
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<ControlledTerm>, callback, errorCallback));
         }
 
-        // --- FLAGS ---
+        #endregion
+
+        #region Flags
 
         /// <summary>
         /// Submit a Flag.
@@ -340,8 +346,10 @@ namespace JoshAaronMiller.INaturalist
             StartCoroutine(DoWebRequestAsync(request, FromJson<Identification>, callback, errorCallback));
         }
 
+        #endregion
 
-        // --- IDENTIFICATIONS ---
+        #region Identifications
+
 
         /// <summary>
         /// Delete an Identification.
@@ -491,9 +499,9 @@ namespace JoshAaronMiller.INaturalist
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<SpeciesCount>, callback, errorCallback));
         }
 
+        #endregion
 
-        // --- MESSAGES ---
-
+        #region Messages
 
         /// <summary>
         /// Given a MessageSearch object, returns a list of matching user messages
@@ -559,14 +567,17 @@ namespace JoshAaronMiller.INaturalist
             StartCoroutine(DoWebRequestAsync(request, FromJson<Count>, callback, errorCallback, authenticate: true));
         }
 
-        // --- OBSERVATION FIELD VALUES ---
+        #endregion
+
+        #region Observation Field Values
 
         //DeleteObservationFieldValue not yet implemented
         //UpdateObservationFieldValue not yet implemented
         //CreateObservationFieldValue not yet implemented
 
-        // --- OBSERVATION PHOTOS ---
+        #endregion
 
+        #region Observation Photos
 
         /// <summary>
         /// Delete an observation photo.
@@ -619,8 +630,9 @@ namespace JoshAaronMiller.INaturalist
             StartCoroutine(DoWebRequestAsync(request, FromJson<ObservationPhoto>, callback, errorCallback));
         }
 
+        #endregion
 
-        // --- OBSERVATIONS ---
+        #region Observations
 
         /// <summary>
         /// Delete an Observation.
@@ -840,8 +852,9 @@ namespace JoshAaronMiller.INaturalist
         //GetObservationUserUpdates not yet implemented
         //MarkObservationUpdatesAsViewed not yet implemented
 
+        #endregion
 
-        // --- PLACES ---
+        #region Places
 
         /// <summary>
         /// Given an ID, return the corresponding Place.
@@ -923,7 +936,9 @@ namespace JoshAaronMiller.INaturalist
             StartCoroutine(DoWebRequestAsync(request, FirstResultFromJson<PlacesByCuration>, callback, errorCallback));
         }
 
-        // --- POSTS ---
+        #endregion
+
+        #region Posts
 
         // SearchPosts not yet implemented
         // CreatePost not yet implemented
@@ -931,13 +946,17 @@ namespace JoshAaronMiller.INaturalist
         // UpdatePost not yet implemented
         // GetPostsForUser not yet implemented
 
-        // --- PROJECT OBSERVATIONS ---
+        #endregion
+
+        #region Project Observations
 
         //DeleteProjectObservation not yet implemented
         //UpdateProjectObservation not yet implemented
         //CreateProjectObservation not yet implemented
 
-        // --- PROJECTS ---
+        #endregion
+
+        #region Projects
 
         //SearchProjects not yet implemented
         //GetProjectDetails not yet implemented
@@ -949,12 +968,15 @@ namespace JoshAaronMiller.INaturalist
         //RemoveProject not yet implemented
         //GetProjectAutocomplete not yet implemented
 
+        #endregion
 
-        // --- SEARCH ---
+        #region Search
 
         //SearchSite not yet implemented
 
-        // --- TAXA ---
+        #endregion
+
+        #region Taxa
 
         /// <summary>
         /// Given an array of IDs, returns corresponding Taxa 
@@ -994,7 +1016,9 @@ namespace JoshAaronMiller.INaturalist
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Taxon>, callback, errorCallback));
         }
 
-        // --- USERS ---
+        #endregion
+
+        #region Users
 
         //GetUserDetails(id) not yet implemented
         //UpdateUser(id) not yet implemented
@@ -1020,30 +1044,35 @@ namespace JoshAaronMiller.INaturalist
         //UpdateUserSession not yet implemented
 
 
+        #endregion
 
-        // --- OBSERVATION TILES ---
+        #region Observation Tiles
 
         //GetColoredHeatmap not yet implemented
         //GetGridTiles not yet implemented
         //GetHeatmapTiles not yet implemented
         //GetPointsTiles not yet implemented
 
+        #endregion
 
-        // --- POLYGON TILES ---
+        #region Polygon Tiles
 
         //GetPlaceTiles not yet implemented
         //GetTaxonPlaceTiles not yet implemented
         //GetTaxonRangeTiles not yet implemented
 
-        // --- UTFGRID ---
+        #endregion
+
+        #region UTF Grid
 
         //GetColoredHeatmapTilesUtfGrid not yet implemented
         //GetGridTilesUtfGrid not yet implemented
         //GetHeatmapTilesUtfGrid not yet implemented
         //GetPointsTilesUtfGrid not yet implemented
 
+        #endregion
 
-        // --- PHOTOS ---
+        #region Photos
 
         /// <summary>
         /// Create a Photo.
@@ -1060,6 +1089,7 @@ namespace JoshAaronMiller.INaturalist
             StartCoroutine(DoWebRequestAsync(request, FromJson<PhotoJson>, callback, errorCallback));
         }
 
+        #endregion
 
     }
 }
