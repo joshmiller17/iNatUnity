@@ -20,7 +20,7 @@ items:
   source:
     id: MessageSearch
     path: ''
-    startLine: 2850
+    startLine: 2868
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -37,6 +37,7 @@ items:
   inheritedMembers:
   - JoshAaronMiller.INaturalist.SearchObject.boolParams
   - JoshAaronMiller.INaturalist.SearchObject.stringParams
+  - JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
   - JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
   modifiers.csharp:
   - public
@@ -58,7 +59,7 @@ items:
   source:
     id: SetPage
     path: ''
-    startLine: 2862
+    startLine: 2880
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -90,7 +91,7 @@ items:
   source:
     id: SetBox
     path: ''
-    startLine: 2871
+    startLine: 2889
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -122,7 +123,7 @@ items:
   source:
     id: SetQuery
     path: ''
-    startLine: 2880
+    startLine: 2898
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -154,7 +155,7 @@ items:
   source:
     id: SetCorrespondent
     path: ''
-    startLine: 2889
+    startLine: 2907
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -186,7 +187,7 @@ items:
   source:
     id: ShowOnlyLatestMessagePerThread
     path: ''
-    startLine: 2905
+    startLine: 2923
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -236,6 +237,45 @@ references:
   name: stringParams
   nameWithType: SearchObject.stringParams
   fullName: JoshAaronMiller.INaturalist.SearchObject.stringParams
+- uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  isExternal: true
+  name: RemoveStringParameter(String)
+  nameWithType: SearchObject.RemoveStringParameter(String)
+  fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+    name: RemoveStringParameter
+    nameWithType: SearchObject.RemoveStringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+    name: RemoveStringParameter
+    nameWithType: SearchObject.RemoveStringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
   commentId: M:JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
   parent: JoshAaronMiller.INaturalist.SearchObject

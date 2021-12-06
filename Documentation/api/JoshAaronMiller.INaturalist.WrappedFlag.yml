@@ -17,7 +17,7 @@ items:
   source:
     id: WrappedFlag
     path: ''
-    startLine: 1903
+    startLine: 1921
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -61,7 +61,7 @@ items:
   source:
     id: flag
     path: ''
-    startLine: 1906
+    startLine: 1924
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -88,7 +88,7 @@ items:
   source:
     id: flag_explanation
     path: ''
-    startLine: 1907
+    startLine: 1925
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

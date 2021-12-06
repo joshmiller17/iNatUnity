@@ -35,7 +35,7 @@ items:
   source:
     id: User
     path: ''
-    startLine: 2454
+    startLine: 2472
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -79,7 +79,7 @@ items:
   source:
     id: id
     path: ''
-    startLine: 2457
+    startLine: 2475
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -106,7 +106,7 @@ items:
   source:
     id: login
     path: ''
-    startLine: 2458
+    startLine: 2476
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -133,7 +133,7 @@ items:
   source:
     id: spam
     path: ''
-    startLine: 2459
+    startLine: 2477
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -160,7 +160,7 @@ items:
   source:
     id: suspended
     path: ''
-    startLine: 2460
+    startLine: 2478
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -187,7 +187,7 @@ items:
   source:
     id: created_at
     path: ''
-    startLine: 2461
+    startLine: 2479
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -214,7 +214,7 @@ items:
   source:
     id: site_id
     path: ''
-    startLine: 2462
+    startLine: 2480
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -241,7 +241,7 @@ items:
   source:
     id: login_autocomplete
     path: ''
-    startLine: 2464
+    startLine: 2482
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -268,7 +268,7 @@ items:
   source:
     id: login_exact
     path: ''
-    startLine: 2465
+    startLine: 2483
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -295,7 +295,7 @@ items:
   source:
     id: name
     path: ''
-    startLine: 2466
+    startLine: 2484
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -322,7 +322,7 @@ items:
   source:
     id: name_autocomplete
     path: ''
-    startLine: 2467
+    startLine: 2485
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -349,7 +349,7 @@ items:
   source:
     id: orcid
     path: ''
-    startLine: 2468
+    startLine: 2486
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -376,7 +376,7 @@ items:
   source:
     id: icon
     path: ''
-    startLine: 2469
+    startLine: 2487
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -403,7 +403,7 @@ items:
   source:
     id: observations_count
     path: ''
-    startLine: 2470
+    startLine: 2488
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -430,7 +430,7 @@ items:
   source:
     id: identifications_count
     path: ''
-    startLine: 2471
+    startLine: 2489
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -457,7 +457,7 @@ items:
   source:
     id: journal_posts_count
     path: ''
-    startLine: 2472
+    startLine: 2490
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -484,7 +484,7 @@ items:
   source:
     id: activity_count
     path: ''
-    startLine: 2473
+    startLine: 2491
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -511,7 +511,7 @@ items:
   source:
     id: species_count
     path: ''
-    startLine: 2474
+    startLine: 2492
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -538,7 +538,7 @@ items:
   source:
     id: universal_search_rank
     path: ''
-    startLine: 2475
+    startLine: 2493
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -565,7 +565,7 @@ items:
   source:
     id: roles
     path: ''
-    startLine: 2476
+    startLine: 2494
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -592,7 +592,7 @@ items:
   source:
     id: icon_url
     path: ''
-    startLine: 2477
+    startLine: 2495
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

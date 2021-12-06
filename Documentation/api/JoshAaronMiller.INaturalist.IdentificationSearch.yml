@@ -39,7 +39,7 @@ items:
   source:
     id: IdentificationSearch
     path: ''
-    startLine: 2534
+    startLine: 2552
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -56,6 +56,7 @@ items:
   inheritedMembers:
   - JoshAaronMiller.INaturalist.SearchObject.boolParams
   - JoshAaronMiller.INaturalist.SearchObject.stringParams
+  - JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
   - JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
   modifiers.csharp:
   - public
@@ -77,7 +78,7 @@ items:
   source:
     id: BoolParamToString
     path: ''
-    startLine: 2542
+    startLine: 2560
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -106,7 +107,7 @@ items:
   source:
     id: SetBooleanParameter
     path: ''
-    startLine: 2557
+    startLine: 2575
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -137,7 +138,7 @@ items:
   source:
     id: IncludeIds
     path: ''
-    startLine: 2567
+    startLine: 2585
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -172,7 +173,7 @@ items:
   source:
     id: IncludePlaceIds
     path: ''
-    startLine: 2577
+    startLine: 2595
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -207,7 +208,7 @@ items:
   source:
     id: IncludeTaxonIds
     path: ''
-    startLine: 2586
+    startLine: 2604
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -242,7 +243,7 @@ items:
   source:
     id: IncludeObservationTaxonIds
     path: ''
-    startLine: 2595
+    startLine: 2613
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -277,7 +278,7 @@ items:
   source:
     id: IncludeIconicTaxonIds
     path: ''
-    startLine: 2604
+    startLine: 2622
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -312,7 +313,7 @@ items:
   source:
     id: IncludeObservationIconicTaxonIds
     path: ''
-    startLine: 2613
+    startLine: 2631
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -347,7 +348,7 @@ items:
   source:
     id: ExcludeTaxonIds
     path: ''
-    startLine: 2622
+    startLine: 2640
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -382,7 +383,7 @@ items:
   source:
     id: ExcludeObservationTaxonIds
     path: ''
-    startLine: 2631
+    startLine: 2649
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -417,7 +418,7 @@ items:
   source:
     id: SetObservedOnDateLimits
     path: ''
-    startLine: 2642
+    startLine: 2660
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -452,7 +453,7 @@ items:
   source:
     id: SetCreatedOnDateLimits
     path: ''
-    startLine: 2659
+    startLine: 2677
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -487,7 +488,7 @@ items:
   source:
     id: SetObservationCreatedOnDateLimits
     path: ''
-    startLine: 2676
+    startLine: 2694
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -522,7 +523,7 @@ items:
   source:
     id: IncludeTaxonRanks
     path: ''
-    startLine: 2692
+    startLine: 2710
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -557,7 +558,7 @@ items:
   source:
     id: IncludeObservationTaxonRanks
     path: ''
-    startLine: 2701
+    startLine: 2719
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -592,7 +593,7 @@ items:
   source:
     id: IncludeIdentificationsByUserId
     path: ''
-    startLine: 2710
+    startLine: 2728
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -627,7 +628,7 @@ items:
   source:
     id: IncludeIdentificationsByUserLogin
     path: ''
-    startLine: 2719
+    startLine: 2737
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -662,7 +663,7 @@ items:
   source:
     id: IncludeCategories
     path: ''
-    startLine: 2728
+    startLine: 2746
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -697,7 +698,7 @@ items:
   source:
     id: SetTaxonRankLimits
     path: ''
-    startLine: 2745
+    startLine: 2763
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -732,7 +733,7 @@ items:
   source:
     id: SetObservationTaxonRankLimits
     path: ''
-    startLine: 2771
+    startLine: 2789
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -767,7 +768,7 @@ items:
   source:
     id: SetQualityGrade
     path: ''
-    startLine: 2788
+    startLine: 2806
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -799,7 +800,7 @@ items:
   source:
     id: SetIdentificationnIdLimits
     path: ''
-    startLine: 2805
+    startLine: 2823
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -834,7 +835,7 @@ items:
   source:
     id: SetPagination
     path: ''
-    startLine: 2822
+    startLine: 2840
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -869,7 +870,7 @@ items:
   source:
     id: SetOrder
     path: ''
-    startLine: 2833
+    startLine: 2851
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -921,6 +922,45 @@ references:
   name: stringParams
   nameWithType: SearchObject.stringParams
   fullName: JoshAaronMiller.INaturalist.SearchObject.stringParams
+- uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  isExternal: true
+  name: RemoveStringParameter(String)
+  nameWithType: SearchObject.RemoveStringParameter(String)
+  fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+    name: RemoveStringParameter
+    nameWithType: SearchObject.RemoveStringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+    name: RemoveStringParameter
+    nameWithType: SearchObject.RemoveStringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
   commentId: M:JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
   parent: JoshAaronMiller.INaturalist.SearchObject

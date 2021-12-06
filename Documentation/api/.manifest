@@ -484,6 +484,7 @@
   "JoshAaronMiller.INaturalist.Results`1.total_results": "JoshAaronMiller.INaturalist.Results-1.yml",
   "JoshAaronMiller.INaturalist.SearchObject": "JoshAaronMiller.INaturalist.SearchObject.yml",
   "JoshAaronMiller.INaturalist.SearchObject.boolParams": "JoshAaronMiller.INaturalist.SearchObject.yml",
+  "JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)": "JoshAaronMiller.INaturalist.SearchObject.yml",
   "JoshAaronMiller.INaturalist.SearchObject.stringParams": "JoshAaronMiller.INaturalist.SearchObject.yml",
   "JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters": "JoshAaronMiller.INaturalist.SearchObject.yml",
   "JoshAaronMiller.INaturalist.SortOrder": "JoshAaronMiller.INaturalist.SortOrder.yml",

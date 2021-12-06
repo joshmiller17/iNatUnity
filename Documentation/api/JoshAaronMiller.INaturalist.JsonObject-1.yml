@@ -17,7 +17,7 @@ items:
   source:
     id: JsonObject
     path: ''
-    startLine: 2039
+    startLine: 2057
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -87,7 +87,7 @@ items:
   source:
     id: CreateFromJson
     path: ''
-    startLine: 2041
+    startLine: 2059
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -122,7 +122,7 @@ items:
   source:
     id: ToJson
     path: ''
-    startLine: 2046
+    startLine: 2064
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

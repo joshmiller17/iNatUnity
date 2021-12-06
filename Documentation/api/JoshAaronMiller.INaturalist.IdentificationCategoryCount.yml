@@ -17,7 +17,7 @@ items:
   source:
     id: IdentificationCategoryCount
     path: ''
-    startLine: 1990
+    startLine: 2008
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -61,7 +61,7 @@ items:
   source:
     id: category
     path: ''
-    startLine: 1993
+    startLine: 2011
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -88,7 +88,7 @@ items:
   source:
     id: count
     path: ''
-    startLine: 1994
+    startLine: 2012
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

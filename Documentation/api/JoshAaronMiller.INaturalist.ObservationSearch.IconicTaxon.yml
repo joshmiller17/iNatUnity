@@ -30,7 +30,7 @@ items:
   source:
     id: IconicTaxon
     path: ''
-    startLine: 3000
+    startLine: 3018
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -57,7 +57,7 @@ items:
   source:
     id: None
     path: ''
-    startLine: 3002
+    startLine: 3020
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -85,7 +85,7 @@ items:
   source:
     id: Actinopterygii
     path: ''
-    startLine: 3002
+    startLine: 3020
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -113,7 +113,7 @@ items:
   source:
     id: Animalia
     path: ''
-    startLine: 3002
+    startLine: 3020
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -141,7 +141,7 @@ items:
   source:
     id: Amphibia
     path: ''
-    startLine: 3002
+    startLine: 3020
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -169,7 +169,7 @@ items:
   source:
     id: Arachnida
     path: ''
-    startLine: 3002
+    startLine: 3020
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -197,7 +197,7 @@ items:
   source:
     id: Aves
     path: ''
-    startLine: 3002
+    startLine: 3020
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -225,7 +225,7 @@ items:
   source:
     id: Chromista
     path: ''
-    startLine: 3002
+    startLine: 3020
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -253,7 +253,7 @@ items:
   source:
     id: Fungi
     path: ''
-    startLine: 3002
+    startLine: 3020
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -281,7 +281,7 @@ items:
   source:
     id: Insecta
     path: ''
-    startLine: 3003
+    startLine: 3021
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -309,7 +309,7 @@ items:
   source:
     id: Mammalia
     path: ''
-    startLine: 3003
+    startLine: 3021
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -337,7 +337,7 @@ items:
   source:
     id: Mollusca
     path: ''
-    startLine: 3003
+    startLine: 3021
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -365,7 +365,7 @@ items:
   source:
     id: Reptilia
     path: ''
-    startLine: 3003
+    startLine: 3021
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -393,7 +393,7 @@ items:
   source:
     id: Plantae
     path: ''
-    startLine: 3003
+    startLine: 3021
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -421,7 +421,7 @@ items:
   source:
     id: Protozoa
     path: ''
-    startLine: 3003
+    startLine: 3021
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -449,7 +449,7 @@ items:
   source:
     id: Unknown
     path: ''
-    startLine: 3003
+    startLine: 3021
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

@@ -19,7 +19,7 @@ items:
   source:
     id: Error
     path: ''
-    startLine: 1879
+    startLine: 1897
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -63,7 +63,7 @@ items:
   source:
     id: error
     path: ''
-    startLine: 1882
+    startLine: 1900
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -90,7 +90,7 @@ items:
   source:
     id: status
     path: ''
-    startLine: 1883
+    startLine: 1901
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -117,7 +117,7 @@ items:
   source:
     id: code
     path: ''
-    startLine: 1884
+    startLine: 1902
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -144,7 +144,7 @@ items:
   source:
     id: message
     path: ''
-    startLine: 1885
+    startLine: 1903
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

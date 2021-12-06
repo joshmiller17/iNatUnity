@@ -29,7 +29,7 @@ items:
   source:
     id: Identification
     path: ''
-    startLine: 1959
+    startLine: 1977
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -73,7 +73,7 @@ items:
   source:
     id: hidden
     path: ''
-    startLine: 1962
+    startLine: 1980
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -100,7 +100,7 @@ items:
   source:
     id: created_at
     path: ''
-    startLine: 1965
+    startLine: 1983
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -127,7 +127,7 @@ items:
   source:
     id: taxon_id
     path: ''
-    startLine: 1966
+    startLine: 1984
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -154,7 +154,7 @@ items:
   source:
     id: own_observation
     path: ''
-    startLine: 1968
+    startLine: 1986
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -181,7 +181,7 @@ items:
   source:
     id: uuid
     path: ''
-    startLine: 1969
+    startLine: 1987
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -208,7 +208,7 @@ items:
   source:
     id: vision
     path: ''
-    startLine: 1972
+    startLine: 1990
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -235,7 +235,7 @@ items:
   source:
     id: current
     path: ''
-    startLine: 1973
+    startLine: 1991
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -262,7 +262,7 @@ items:
   source:
     id: id
     path: ''
-    startLine: 1974
+    startLine: 1992
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -289,7 +289,7 @@ items:
   source:
     id: created_at_details
     path: ''
-    startLine: 1975
+    startLine: 1993
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -316,7 +316,7 @@ items:
   source:
     id: category
     path: ''
-    startLine: 1976
+    startLine: 1994
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -343,7 +343,7 @@ items:
   source:
     id: spam
     path: ''
-    startLine: 1977
+    startLine: 1995
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -370,7 +370,7 @@ items:
   source:
     id: user
     path: ''
-    startLine: 1978
+    startLine: 1996
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -397,7 +397,7 @@ items:
   source:
     id: previous_observation_taxon_id
     path: ''
-    startLine: 1979
+    startLine: 1997
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -424,7 +424,7 @@ items:
   source:
     id: taxon
     path: ''
-    startLine: 1980
+    startLine: 1998
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

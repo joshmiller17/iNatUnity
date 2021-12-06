@@ -65,7 +65,7 @@ items:
   source:
     id: INatManager
     path: ''
-    startLine: 611
+    startLine: 629
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -98,7 +98,7 @@ items:
   source:
     id: BaseUrl
     path: ''
-    startLine: 613
+    startLine: 631
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -129,7 +129,7 @@ items:
   source:
     id: ApiTokenUrl
     path: ''
-    startLine: 614
+    startLine: 632
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -160,7 +160,7 @@ items:
   source:
     id: GetApiToken
     path: ''
-    startLine: 848
+    startLine: 866
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -186,7 +186,7 @@ items:
   source:
     id: SetApiToken
     path: ''
-    startLine: 853
+    startLine: 871
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -215,7 +215,7 @@ items:
   source:
     id: GetTermsIndex
     path: ''
-    startLine: 883
+    startLine: 901
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -253,7 +253,7 @@ items:
   source:
     id: GetTermsForTaxon
     path: ''
-    startLine: 895
+    startLine: 913
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -294,7 +294,7 @@ items:
   source:
     id: CreateFlag
     path: ''
-    startLine: 911
+    startLine: 929
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -335,7 +335,7 @@ items:
   source:
     id: DeleteFlag
     path: ''
-    startLine: 924
+    startLine: 942
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -376,7 +376,7 @@ items:
   source:
     id: UpdateFlag
     path: ''
-    startLine: 937
+    startLine: 955
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -420,7 +420,7 @@ items:
   source:
     id: DeleteIdentification
     path: ''
-    startLine: 955
+    startLine: 973
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -461,7 +461,7 @@ items:
   source:
     id: GetIdentifications
     path: ''
-    startLine: 967
+    startLine: 985
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -502,7 +502,7 @@ items:
   source:
     id: GetIdentification
     path: ''
-    startLine: 980
+    startLine: 998
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -543,7 +543,7 @@ items:
   source:
     id: UpdateIdentification
     path: ''
-    startLine: 994
+    startLine: 1012
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -587,7 +587,7 @@ items:
   source:
     id: SearchIdentifications
     path: ''
-    startLine: 1010
+    startLine: 1028
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -628,7 +628,7 @@ items:
   source:
     id: CreateIdentification
     path: ''
-    startLine: 1024
+    startLine: 1042
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -669,7 +669,7 @@ items:
   source:
     id: GetIdentificationCategories
     path: ''
-    startLine: 1039
+    startLine: 1057
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -710,7 +710,7 @@ items:
   source:
     id: GetIdentificationSpeciesCounts
     path: ''
-    startLine: 1051
+    startLine: 1069
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -751,7 +751,7 @@ items:
   source:
     id: GetSimilarSpecies
     path: ''
-    startLine: 1073
+    startLine: 1091
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -793,7 +793,7 @@ items:
   source:
     id: GetSimilarSpecies
     path: ''
-    startLine: 1091
+    startLine: 1109
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -838,7 +838,7 @@ items:
   source:
     id: SearchUserMessages
     path: ''
-    startLine: 1110
+    startLine: 1128
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -880,7 +880,7 @@ items:
   source:
     id: CreateUserMessage
     path: ''
-    startLine: 1122
+    startLine: 1140
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -921,7 +921,7 @@ items:
   source:
     id: DeleteUserMessageThread
     path: ''
-    startLine: 1135
+    startLine: 1153
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -962,7 +962,7 @@ items:
   source:
     id: GetUserMessageThread
     path: ''
-    startLine: 1147
+    startLine: 1165
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1003,7 +1003,7 @@ items:
   source:
     id: GetCountUnreadMessages
     path: ''
-    startLine: 1159
+    startLine: 1177
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1041,7 +1041,7 @@ items:
   source:
     id: DeleteObservationPhoto
     path: ''
-    startLine: 1183
+    startLine: 1201
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1082,7 +1082,7 @@ items:
   source:
     id: UpdateObservationPhoto
     path: ''
-    startLine: 1199
+    startLine: 1217
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1129,7 +1129,7 @@ items:
   source:
     id: CreateObservationPhoto
     path: ''
-    startLine: 1217
+    startLine: 1235
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1176,7 +1176,7 @@ items:
   source:
     id: DeleteObservation
     path: ''
-    startLine: 1238
+    startLine: 1256
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1217,7 +1217,7 @@ items:
   source:
     id: GetObservations
     path: ''
-    startLine: 1250
+    startLine: 1268
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1258,7 +1258,7 @@ items:
   source:
     id: GetObservation
     path: ''
-    startLine: 1264
+    startLine: 1282
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1299,7 +1299,7 @@ items:
   source:
     id: UpdateObservation
     path: ''
-    startLine: 1278
+    startLine: 1296
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1343,7 +1343,7 @@ items:
   source:
     id: FaveObservation
     path: ''
-    startLine: 1293
+    startLine: 1311
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1384,7 +1384,7 @@ items:
   source:
     id: UnfaveObservation
     path: ''
-    startLine: 1305
+    startLine: 1323
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1425,7 +1425,7 @@ items:
   source:
     id: ReviewObservation
     path: ''
-    startLine: 1317
+    startLine: 1335
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1466,7 +1466,7 @@ items:
   source:
     id: UnreviewObservation
     path: ''
-    startLine: 1329
+    startLine: 1347
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1507,7 +1507,7 @@ items:
   source:
     id: GetObservationTaxonSummary
     path: ''
-    startLine: 1352
+    startLine: 1370
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1549,7 +1549,7 @@ items:
   source:
     id: VoteObservation
     path: ''
-    startLine: 1369
+    startLine: 1387
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1593,7 +1593,7 @@ items:
   source:
     id: UnvoteObservation
     path: ''
-    startLine: 1383
+    startLine: 1401
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1637,7 +1637,7 @@ items:
   source:
     id: SearchObservations
     path: ''
-    startLine: 1397
+    startLine: 1415
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1678,7 +1678,7 @@ items:
   source:
     id: CreateObservation
     path: ''
-    startLine: 1409
+    startLine: 1427
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1719,7 +1719,7 @@ items:
   source:
     id: GetObservationSpeciesCounts
     path: ''
-    startLine: 1441
+    startLine: 1459
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1760,7 +1760,7 @@ items:
   source:
     id: GetPlaceDetails
     path: ''
-    startLine: 1461
+    startLine: 1479
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1804,7 +1804,7 @@ items:
   source:
     id: GetPlaceDetails
     path: ''
-    startLine: 1479
+    startLine: 1497
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1848,7 +1848,7 @@ items:
   source:
     id: GetPlacesAutocomplete
     path: ''
-    startLine: 1499
+    startLine: 1517
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1892,7 +1892,7 @@ items:
   source:
     id: GetPlacesNearby
     path: ''
-    startLine: 1522
+    startLine: 1540
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1948,7 +1948,7 @@ items:
   source:
     id: GetTaxonDetails
     path: ''
-    startLine: 1582
+    startLine: 1600
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1989,7 +1989,7 @@ items:
   source:
     id: GetTaxonDetails
     path: ''
-    startLine: 1595
+    startLine: 1613
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -2030,7 +2030,7 @@ items:
   source:
     id: SearchTaxa
     path: ''
-    startLine: 1608
+    startLine: 1626
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -2071,7 +2071,7 @@ items:
   source:
     id: GetUserMe
     path: ''
-    startLine: 1630
+    startLine: 1648
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -2109,7 +2109,7 @@ items:
   source:
     id: CreatePhoto
     path: ''
-    startLine: 1678
+    startLine: 1696
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

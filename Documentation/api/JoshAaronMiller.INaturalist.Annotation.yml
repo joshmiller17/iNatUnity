@@ -19,7 +19,7 @@ items:
   source:
     id: Annotation
     path: ''
-    startLine: 1786
+    startLine: 1804
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -63,7 +63,7 @@ items:
   source:
     id: resource_type
     path: ''
-    startLine: 1789
+    startLine: 1807
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -90,7 +90,7 @@ items:
   source:
     id: resource_id
     path: ''
-    startLine: 1790
+    startLine: 1808
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -117,7 +117,7 @@ items:
   source:
     id: controlled_attribute_id
     path: ''
-    startLine: 1791
+    startLine: 1809
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -144,7 +144,7 @@ items:
   source:
     id: controlled_value_id
     path: ''
-    startLine: 1792
+    startLine: 1810
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

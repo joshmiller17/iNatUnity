@@ -26,7 +26,7 @@ items:
   source:
     id: ObservationPhoto
     path: ''
-    startLine: 2237
+    startLine: 2255
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -70,7 +70,7 @@ items:
   source:
     id: id
     path: ''
-    startLine: 2240
+    startLine: 2258
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -97,7 +97,7 @@ items:
   source:
     id: observation_id
     path: ''
-    startLine: 2241
+    startLine: 2259
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -124,7 +124,7 @@ items:
   source:
     id: photo_id
     path: ''
-    startLine: 2242
+    startLine: 2260
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -151,7 +151,7 @@ items:
   source:
     id: position
     path: ''
-    startLine: 2243
+    startLine: 2261
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -178,7 +178,7 @@ items:
   source:
     id: created_at
     path: ''
-    startLine: 2244
+    startLine: 2262
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -205,7 +205,7 @@ items:
   source:
     id: updated_at
     path: ''
-    startLine: 2245
+    startLine: 2263
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -232,7 +232,7 @@ items:
   source:
     id: old_uuid
     path: ''
-    startLine: 2246
+    startLine: 2264
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -259,7 +259,7 @@ items:
   source:
     id: uuid
     path: ''
-    startLine: 2247
+    startLine: 2265
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -286,7 +286,7 @@ items:
   source:
     id: created_at_utc
     path: ''
-    startLine: 2248
+    startLine: 2266
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -313,7 +313,7 @@ items:
   source:
     id: updated_at_utc
     path: ''
-    startLine: 2249
+    startLine: 2267
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -340,7 +340,7 @@ items:
   source:
     id: photo
     path: ''
-    startLine: 2250
+    startLine: 2268
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

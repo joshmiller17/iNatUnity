@@ -16,7 +16,7 @@ items:
   source:
     id: Utilities
     path: ''
-    startLine: 1719
+    startLine: 1737
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -46,7 +46,7 @@ items:
   source:
     id: LoadImageFromPath
     path: ''
-    startLine: 1730
+    startLine: 1748
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

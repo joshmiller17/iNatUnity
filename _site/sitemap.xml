@@ -2,397 +2,397 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/Global.Demo.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/Global.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Annotation.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.BoundingBoxGeoJson.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.ControlledTerm.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.ControlledTermValue.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Count.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Dimensions.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Enums.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Error.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Flag.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.FlagCounts.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.GeoJson.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.GeometryGeoJson.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Identification.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.IdentificationCategoryCount.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.IdentificationSearch.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.IdentificationSubmission.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.INatManager.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.JsonObject-1.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.MessageSearch.Box.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.MessageSearch.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Observation.ImageSize.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Observation.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.ObservationPhoto.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.ObservationSearch.License.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.ObservationSearch.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.ObservationSubmission.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.OrderBy.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Outlink.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.PhotoFile.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.PhotoJson.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Place.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.PlacesByCuration.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.QualityGrade.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Results-1.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.SearchObject.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.SortOrder.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Sound.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.SpeciesCount.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Taxon.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.TaxonRank.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.TaxonRankLevel.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.TaxonSearch.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.TaxonSummary.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.TimeDetails.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.User.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.UserMessage.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Utilities.DefaultDictionary-2.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Utilities.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.Vote.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.WrappedFlag.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.WrappedIdentificationSubmission.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.WrappedObservationSubmission.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/api/JoshAaronMiller.INaturalist.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/joshmiller17/iNatUnity/manual/index.html</loc>
-    <lastmod>2021-12-06T05:17:16-05:00</lastmod>
+    <lastmod>2021-12-06T05:45:37-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

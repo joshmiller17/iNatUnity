@@ -4225,6 +4225,19 @@ references:
   commentId: F:JoshAaronMiller.INaturalist.SearchObject.boolParams
   fullName: JoshAaronMiller.INaturalist.SearchObject.boolParams
   nameWithType: SearchObject.boolParams
+- uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  name: RemoveStringParameter(String)
+  href: api/JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_RemoveStringParameter_System_String_
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  nameWithType: SearchObject.RemoveStringParameter(String)
+- uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter*
+  name: RemoveStringParameter
+  href: api/JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_RemoveStringParameter_
+  commentId: Overload:JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
+  isSpec: "True"
+  fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
+  nameWithType: SearchObject.RemoveStringParameter
 - uid: JoshAaronMiller.INaturalist.SearchObject.stringParams
   name: stringParams
   href: api/JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_stringParams

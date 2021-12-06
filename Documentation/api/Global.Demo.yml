@@ -600,7 +600,7 @@ items:
   source:
     id: CitySelectDropdownCallback
     path: ''
-    startLine: 208
+    startLine: 209
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -626,7 +626,7 @@ items:
   source:
     id: TaxonSelectDropdownCallback
     path: ''
-    startLine: 217
+    startLine: 224
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -652,7 +652,7 @@ items:
   source:
     id: YearSelectDropdownCallback
     path: ''
-    startLine: 226
+    startLine: 237
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -678,7 +678,7 @@ items:
   source:
     id: QualityGradeSelectDropdownCallback
     path: ''
-    startLine: 235
+    startLine: 250
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -704,7 +704,7 @@ items:
   source:
     id: ToggleThreatened
     path: ''
-    startLine: 244
+    startLine: 263
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -730,7 +730,7 @@ items:
   source:
     id: ToggleCaptive
     path: ''
-    startLine: 250
+    startLine: 269
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -756,7 +756,7 @@ items:
   source:
     id: TogglePublicDomain
     path: ''
-    startLine: 256
+    startLine: 275
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -782,7 +782,7 @@ items:
   source:
     id: ToggleSpeciesSpecific
     path: ''
-    startLine: 269
+    startLine: 288
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -808,7 +808,7 @@ items:
   source:
     id: DoSearch
     path: ''
-    startLine: 297
+    startLine: 316
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -834,7 +834,7 @@ items:
   source:
     id: HandleError
     path: ''
-    startLine: 304
+    startLine: 323
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -863,7 +863,7 @@ items:
   source:
     id: ClickLoginButton
     path: ''
-    startLine: 324
+    startLine: 342
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -889,7 +889,7 @@ items:
   source:
     id: CheckApiToken
     path: ''
-    startLine: 331
+    startLine: 349
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -915,7 +915,7 @@ items:
   source:
     id: SetUser
     path: ''
-    startLine: 347
+    startLine: 365
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -944,7 +944,7 @@ items:
   source:
     id: SetUserError
     path: ''
-    startLine: 358
+    startLine: 376
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -973,7 +973,7 @@ items:
   source:
     id: MoveCarouselLeft
     path: ''
-    startLine: 371
+    startLine: 389
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -999,7 +999,7 @@ items:
   source:
     id: MoveCarouselRight
     path: ''
-    startLine: 382
+    startLine: 400
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -1025,7 +1025,7 @@ items:
   source:
     id: TryShowVotingButtons
     path: ''
-    startLine: 393
+    startLine: 411
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -1051,7 +1051,7 @@ items:
   source:
     id: VoteOptionOne
     path: ''
-    startLine: 406
+    startLine: 424
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -1077,7 +1077,7 @@ items:
   source:
     id: VoteOptionTwo
     path: ''
-    startLine: 412
+    startLine: 430
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -1103,7 +1103,7 @@ items:
   source:
     id: CreateIdentificationCallback
     path: ''
-    startLine: 426
+    startLine: 444
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -1132,7 +1132,7 @@ items:
   source:
     id: RemoveObservation
     path: ''
-    startLine: 431
+    startLine: 449
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -1158,7 +1158,7 @@ items:
   source:
     id: RemoveLoading
     path: ''
-    startLine: 514
+    startLine: 532
   assemblies:
   - cs.temp.dll
   namespace: Global

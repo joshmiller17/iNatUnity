@@ -17,7 +17,7 @@ items:
   source:
     id: SortOrder
     path: ''
-    startLine: 555
+    startLine: 573
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -44,7 +44,7 @@ items:
   source:
     id: Desc
     path: ''
-    startLine: 557
+    startLine: 575
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -72,7 +72,7 @@ items:
   source:
     id: Asc
     path: ''
-    startLine: 557
+    startLine: 575
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

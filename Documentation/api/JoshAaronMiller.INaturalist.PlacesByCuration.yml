@@ -17,7 +17,7 @@ items:
   source:
     id: PlacesByCuration
     path: ''
-    startLine: 2336
+    startLine: 2354
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -61,7 +61,7 @@ items:
   source:
     id: standard
     path: ''
-    startLine: 2339
+    startLine: 2357
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -88,7 +88,7 @@ items:
   source:
     id: community
     path: ''
-    startLine: 2340
+    startLine: 2358
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

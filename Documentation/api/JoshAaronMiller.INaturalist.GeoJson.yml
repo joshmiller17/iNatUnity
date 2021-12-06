@@ -17,7 +17,7 @@ items:
   source:
     id: GeoJson
     path: ''
-    startLine: 1931
+    startLine: 1949
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -61,7 +61,7 @@ items:
   source:
     id: type
     path: ''
-    startLine: 1934
+    startLine: 1952
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -88,7 +88,7 @@ items:
   source:
     id: coordinates
     path: ''
-    startLine: 1935
+    startLine: 1953
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

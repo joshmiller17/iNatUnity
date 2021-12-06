@@ -6,6 +6,7 @@ items:
   parent: JoshAaronMiller.INaturalist
   children:
   - JoshAaronMiller.INaturalist.SearchObject.boolParams
+  - JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
   - JoshAaronMiller.INaturalist.SearchObject.stringParams
   - JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
   langs:
@@ -18,7 +19,7 @@ items:
   source:
     id: SearchObject
     path: ''
-    startLine: 3631
+    startLine: 3649
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -56,7 +57,7 @@ items:
   source:
     id: boolParams
     path: ''
-    startLine: 3633
+    startLine: 3651
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -83,7 +84,7 @@ items:
   source:
     id: stringParams
     path: ''
-    startLine: 3634
+    startLine: 3652
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -96,6 +97,38 @@ items:
   - protected
   modifiers.vb:
   - Protected
+- uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  id: RemoveStringParameter(System.String)
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  langs:
+  - csharp
+  - vb
+  name: RemoveStringParameter(String)
+  nameWithType: SearchObject.RemoveStringParameter(String)
+  fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  type: Method
+  source:
+    id: RemoveStringParameter
+    path: ''
+    startLine: 3658
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nRemove a parameter from the search.\n"
+  example: []
+  syntax:
+    content: public void RemoveStringParameter(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key to remove
+    content.vb: Public Sub RemoveStringParameter(key As String)
+  overload: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
   commentId: M:JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
   id: ToUrlParameters
@@ -110,7 +143,7 @@ items:
   source:
     id: ToUrlParameters
     path: ''
-    startLine: 3641
+    startLine: 3667
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -323,11 +356,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters*
-  commentId: Overload:JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
-  name: ToUrlParameters
-  nameWithType: SearchObject.ToUrlParameters
-  fullName: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+- uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter*
+  commentId: Overload:JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
+  name: RemoveStringParameter
+  nameWithType: SearchObject.RemoveStringParameter
+  fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -335,3 +368,8 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters*
+  commentId: Overload:JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  name: ToUrlParameters
+  nameWithType: SearchObject.ToUrlParameters
+  fullName: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters

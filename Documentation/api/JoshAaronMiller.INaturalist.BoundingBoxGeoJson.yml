@@ -17,7 +17,7 @@ items:
   source:
     id: BoundingBoxGeoJson
     path: ''
-    startLine: 1802
+    startLine: 1820
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -61,7 +61,7 @@ items:
   source:
     id: type
     path: ''
-    startLine: 1805
+    startLine: 1823
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -88,7 +88,7 @@ items:
   source:
     id: coordinates
     path: ''
-    startLine: 1806
+    startLine: 1824
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

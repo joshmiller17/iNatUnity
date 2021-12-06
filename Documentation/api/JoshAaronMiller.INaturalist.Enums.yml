@@ -17,7 +17,7 @@ items:
   source:
     id: Enums
     path: ''
-    startLine: 573
+    startLine: 591
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -47,7 +47,7 @@ items:
   source:
     id: QualityToString
     path: ''
-    startLine: 576
+    startLine: 594
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -76,7 +76,7 @@ items:
   source:
     id: OrderByToString
     path: ''
-    startLine: 584
+    startLine: 602
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

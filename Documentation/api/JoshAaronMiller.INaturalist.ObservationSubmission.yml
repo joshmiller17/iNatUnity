@@ -18,7 +18,7 @@ items:
   source:
     id: ObservationSubmission
     path: ''
-    startLine: 2259
+    startLine: 2277
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -62,7 +62,7 @@ items:
   source:
     id: species_guess
     path: ''
-    startLine: 2262
+    startLine: 2280
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -89,7 +89,7 @@ items:
   source:
     id: taxon_id
     path: ''
-    startLine: 2263
+    startLine: 2281
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -116,7 +116,7 @@ items:
   source:
     id: description
     path: ''
-    startLine: 2264
+    startLine: 2282
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

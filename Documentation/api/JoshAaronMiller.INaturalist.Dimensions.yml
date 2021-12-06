@@ -17,7 +17,7 @@ items:
   source:
     id: Dimensions
     path: ''
-    startLine: 1864
+    startLine: 1882
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -61,7 +61,7 @@ items:
   source:
     id: height
     path: ''
-    startLine: 1867
+    startLine: 1885
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -88,7 +88,7 @@ items:
   source:
     id: width
     path: ''
-    startLine: 1868
+    startLine: 1886
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

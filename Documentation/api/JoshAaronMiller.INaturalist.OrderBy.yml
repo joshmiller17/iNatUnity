@@ -20,7 +20,7 @@ items:
   source:
     id: OrderBy
     path: ''
-    startLine: 550
+    startLine: 568
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -47,7 +47,7 @@ items:
   source:
     id: CreatedAt
     path: ''
-    startLine: 552
+    startLine: 570
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -75,7 +75,7 @@ items:
   source:
     id: ObservedOn
     path: ''
-    startLine: 552
+    startLine: 570
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -103,7 +103,7 @@ items:
   source:
     id: SpeciesGuess
     path: ''
-    startLine: 552
+    startLine: 570
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -131,7 +131,7 @@ items:
   source:
     id: Votes
     path: ''
-    startLine: 552
+    startLine: 570
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -159,7 +159,7 @@ items:
   source:
     id: Id
     path: ''
-    startLine: 552
+    startLine: 570
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

@@ -27,7 +27,7 @@ items:
   source:
     id: Place
     path: ''
-    startLine: 2313
+    startLine: 2331
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -71,7 +71,7 @@ items:
   source:
     id: ancestor_place_ids
     path: ''
-    startLine: 2316
+    startLine: 2334
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -98,7 +98,7 @@ items:
   source:
     id: bounding_box_geojson
     path: ''
-    startLine: 2317
+    startLine: 2335
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -125,7 +125,7 @@ items:
   source:
     id: bbox_area
     path: ''
-    startLine: 2318
+    startLine: 2336
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -152,7 +152,7 @@ items:
   source:
     id: admin_level
     path: ''
-    startLine: 2319
+    startLine: 2337
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -179,7 +179,7 @@ items:
   source:
     id: place_type
     path: ''
-    startLine: 2320
+    startLine: 2338
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -207,7 +207,7 @@ items:
   source:
     id: name
     path: ''
-    startLine: 2321
+    startLine: 2339
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -234,7 +234,7 @@ items:
   source:
     id: location
     path: ''
-    startLine: 2322
+    startLine: 2340
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -261,7 +261,7 @@ items:
   source:
     id: id
     path: ''
-    startLine: 2323
+    startLine: 2341
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -289,7 +289,7 @@ items:
   source:
     id: display_name
     path: ''
-    startLine: 2324
+    startLine: 2342
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -316,7 +316,7 @@ items:
   source:
     id: uuid
     path: ''
-    startLine: 2325
+    startLine: 2343
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -343,7 +343,7 @@ items:
   source:
     id: slug
     path: ''
-    startLine: 2326
+    startLine: 2344
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -370,7 +370,7 @@ items:
   source:
     id: geometry_geojson
     path: ''
-    startLine: 2327
+    startLine: 2345
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

@@ -17,7 +17,7 @@ items:
   source:
     id: FlagCounts
     path: ''
-    startLine: 1917
+    startLine: 1935
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -61,7 +61,7 @@ items:
   source:
     id: resolved
     path: ''
-    startLine: 1920
+    startLine: 1938
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -88,7 +88,7 @@ items:
   source:
     id: unresolved
     path: ''
-    startLine: 1921
+    startLine: 1939
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

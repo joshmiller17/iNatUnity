@@ -17,7 +17,7 @@ items:
   source:
     id: Vote
     path: ''
-    startLine: 2510
+    startLine: 2528
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -61,7 +61,7 @@ items:
   source:
     id: vote
     path: ''
-    startLine: 2513
+    startLine: 2531
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -88,7 +88,7 @@ items:
   source:
     id: scope
     path: ''
-    startLine: 2519
+    startLine: 2537
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

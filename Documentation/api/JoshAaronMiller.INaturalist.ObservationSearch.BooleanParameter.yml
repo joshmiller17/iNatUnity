@@ -34,7 +34,7 @@ items:
   source:
     id: BooleanParameter
     path: ''
-    startLine: 2935
+    startLine: 2953
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -61,7 +61,7 @@ items:
   source:
     id: HasPositionalAccuracy
     path: ''
-    startLine: 2937
+    startLine: 2955
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -89,7 +89,7 @@ items:
   source:
     id: IsCaptive
     path: ''
-    startLine: 2937
+    startLine: 2955
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -117,7 +117,7 @@ items:
   source:
     id: IsEndemic
     path: ''
-    startLine: 2937
+    startLine: 2955
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -145,7 +145,7 @@ items:
   source:
     id: IsGeoreferenced
     path: ''
-    startLine: 2937
+    startLine: 2955
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -173,7 +173,7 @@ items:
   source:
     id: IsIdentified
     path: ''
-    startLine: 2938
+    startLine: 2956
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -201,7 +201,7 @@ items:
   source:
     id: WasIntroduced
     path: ''
-    startLine: 2938
+    startLine: 2956
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -229,7 +229,7 @@ items:
   source:
     id: IsMappable
     path: ''
-    startLine: 2938
+    startLine: 2956
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -257,7 +257,7 @@ items:
   source:
     id: IsNative
     path: ''
-    startLine: 2938
+    startLine: 2956
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -285,7 +285,7 @@ items:
   source:
     id: IsOutOfRange
     path: ''
-    startLine: 2938
+    startLine: 2956
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -313,7 +313,7 @@ items:
   source:
     id: HasProjectId
     path: ''
-    startLine: 2938
+    startLine: 2956
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -341,7 +341,7 @@ items:
   source:
     id: HasPhotos
     path: ''
-    startLine: 2938
+    startLine: 2956
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -369,7 +369,7 @@ items:
   source:
     id: IsPopular
     path: ''
-    startLine: 2939
+    startLine: 2957
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -397,7 +397,7 @@ items:
   source:
     id: HasSounds
     path: ''
-    startLine: 2939
+    startLine: 2957
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -425,7 +425,7 @@ items:
   source:
     id: IsTaxonActive
     path: ''
-    startLine: 2939
+    startLine: 2957
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -453,7 +453,7 @@ items:
   source:
     id: IsThreatened
     path: ''
-    startLine: 2939
+    startLine: 2957
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -481,7 +481,7 @@ items:
   source:
     id: IsVerifiable
     path: ''
-    startLine: 2939
+    startLine: 2957
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -509,7 +509,7 @@ items:
   source:
     id: IsLicensed
     path: ''
-    startLine: 2939
+    startLine: 2957
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -537,7 +537,7 @@ items:
   source:
     id: IsPhotoLicensed
     path: ''
-    startLine: 2940
+    startLine: 2958
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -565,7 +565,7 @@ items:
   source:
     id: ReturnIdOnly
     path: ''
-    startLine: 2940
+    startLine: 2958
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

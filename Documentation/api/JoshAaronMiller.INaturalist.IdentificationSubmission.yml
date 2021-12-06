@@ -19,7 +19,7 @@ items:
   source:
     id: IdentificationSubmission
     path: ''
-    startLine: 2017
+    startLine: 2035
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -63,7 +63,7 @@ items:
   source:
     id: observation_id
     path: ''
-    startLine: 2020
+    startLine: 2038
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -90,7 +90,7 @@ items:
   source:
     id: taxon_id
     path: ''
-    startLine: 2021
+    startLine: 2039
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -117,7 +117,7 @@ items:
   source:
     id: current
     path: ''
-    startLine: 2022
+    startLine: 2040
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -144,7 +144,7 @@ items:
   source:
     id: body
     path: ''
-    startLine: 2023
+    startLine: 2041
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

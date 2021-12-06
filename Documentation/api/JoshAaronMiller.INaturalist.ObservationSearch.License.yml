@@ -23,7 +23,7 @@ items:
   source:
     id: License
     path: ''
-    startLine: 2965
+    startLine: 2983
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -50,7 +50,7 @@ items:
   source:
     id: None
     path: ''
-    startLine: 2967
+    startLine: 2985
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -78,7 +78,7 @@ items:
   source:
     id: CcAttr
     path: ''
-    startLine: 2967
+    startLine: 2985
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -106,7 +106,7 @@ items:
   source:
     id: CcAttrNonCommercial
     path: ''
-    startLine: 2967
+    startLine: 2985
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -134,7 +134,7 @@ items:
   source:
     id: CcAttrNoDerivs
     path: ''
-    startLine: 2967
+    startLine: 2985
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -162,7 +162,7 @@ items:
   source:
     id: CcShareAlike
     path: ''
-    startLine: 2967
+    startLine: 2985
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -190,7 +190,7 @@ items:
   source:
     id: CcAttrNonCommercialNoDerivs
     path: ''
-    startLine: 2968
+    startLine: 2986
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -218,7 +218,7 @@ items:
   source:
     id: CcAttrNonCommercialShareAlike
     path: ''
-    startLine: 2968
+    startLine: 2986
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -246,7 +246,7 @@ items:
   source:
     id: Cc0
     path: ''
-    startLine: 2968
+    startLine: 2986
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

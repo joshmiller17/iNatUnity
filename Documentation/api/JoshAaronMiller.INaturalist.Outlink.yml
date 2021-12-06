@@ -17,7 +17,7 @@ items:
   source:
     id: Outlink
     path: ''
-    startLine: 2280
+    startLine: 2298
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -61,7 +61,7 @@ items:
   source:
     id: source
     path: ''
-    startLine: 2283
+    startLine: 2301
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -88,7 +88,7 @@ items:
   source:
     id: url
     path: ''
-    startLine: 2284
+    startLine: 2302
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

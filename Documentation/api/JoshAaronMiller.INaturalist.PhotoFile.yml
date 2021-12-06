@@ -19,7 +19,7 @@ items:
   source:
     id: PhotoFile
     path: ''
-    startLine: 1698
+    startLine: 1716
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -48,7 +48,7 @@ items:
   source:
     id: filePath
     path: ''
-    startLine: 1700
+    startLine: 1718
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -75,7 +75,7 @@ items:
   source:
     id: fileName
     path: ''
-    startLine: 1701
+    startLine: 1719
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -102,7 +102,7 @@ items:
   source:
     id: fileType
     path: ''
-    startLine: 1702
+    startLine: 1720
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -129,7 +129,7 @@ items:
   source:
     id: ToBytes
     path: ''
-    startLine: 1704
+    startLine: 1722
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

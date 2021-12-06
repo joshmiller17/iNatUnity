@@ -16,7 +16,7 @@ items:
   source:
     id: WrappedObservationSubmission
     path: ''
-    startLine: 2267
+    startLine: 2285
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -60,7 +60,7 @@ items:
   source:
     id: observation
     path: ''
-    startLine: 2270
+    startLine: 2288
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

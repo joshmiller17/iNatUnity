@@ -18,7 +18,7 @@ items:
   source:
     id: Flag
     path: ''
-    startLine: 1895
+    startLine: 1913
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -62,7 +62,7 @@ items:
   source:
     id: flaggable_type
     path: ''
-    startLine: 1898
+    startLine: 1916
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -89,7 +89,7 @@ items:
   source:
     id: flaggable_id
     path: ''
-    startLine: 1899
+    startLine: 1917
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -116,7 +116,7 @@ items:
   source:
     id: flag
     path: ''
-    startLine: 1900
+    startLine: 1918
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
