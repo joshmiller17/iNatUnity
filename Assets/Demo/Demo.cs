@@ -136,7 +136,8 @@ public class Demo : MonoBehaviour
         qualityGradeDropdown = QualityGradeDropdownObj.GetComponent<Dropdown>();
 
         PopulateDropdowns();
-        ShowDemoSearch();
+        InitializeDemoSearch();
+        DoSearch();
     }
 
     #region Criteria Panel
@@ -213,6 +214,12 @@ public class Demo : MonoBehaviour
         {
             userSearch.SetBoundingCircle(citiesToGeoLocations[choice].Item1, citiesToGeoLocations[choice].Item2, SearchRadius);
         }
+        else
+        {
+            userSearch.RemoveStringParameter("lat");
+            userSearch.RemoveStringParameter("lng");
+            userSearch.RemoveStringParameter("radius");
+        }
     }
 
     public void TaxonSelectDropdownCallback()
@@ -221,6 +228,10 @@ public class Demo : MonoBehaviour
         if (choice != DefaultTaxon)
         {
             userSearch.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { iconicTaxa[choice] });
+        }
+        else
+        {
+            userSearch.RemoveStringParameter("iconic_taxa");
         }
     }
 
@@ -231,6 +242,10 @@ public class Demo : MonoBehaviour
         {
             userSearch.IncludeYears(new List<int>() { System.Int32.Parse(choice) });
         }
+        else
+        {
+            userSearch.RemoveStringParameter("year");
+        }
     }
 
     public void QualityGradeSelectDropdownCallback()
@@ -239,6 +254,10 @@ public class Demo : MonoBehaviour
         if (choice != DefaultQuality)
         {
             userSearch.SetQualityGrade(qualityGrades[choice]);
+        }
+        else
+        {
+            userSearch.RemoveStringParameter("quality_grade");
         }
     }
 
@@ -307,7 +326,7 @@ public class Demo : MonoBehaviour
         Debug.LogError(e.error);
     }
 
-    void ShowDemoSearch()
+    void InitializeDemoSearch()
     {
         userSearch = new ObservationSearch();
         userSearch.SetIconicTaxa(new List<ObservationSearch.IconicTaxon>() { (ObservationSearch.IconicTaxon)Random.Range(1, 13) }); //limit to a random iconic taxon
@@ -315,7 +334,6 @@ public class Demo : MonoBehaviour
         userSearch.SetPagination(30, Random.Range(1, 5));
         userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.HasPhotos, true);
         userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.IsPopular, true);
-        DoSearch();
     }
 
     #endregion

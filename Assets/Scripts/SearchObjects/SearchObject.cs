@@ -12,6 +12,14 @@ namespace JoshAaronMiller.INaturalist
         protected Dictionary<string, bool> boolParams = new Dictionary<string, bool>();
         protected Dictionary<string, string> stringParams = new Dictionary<string, string>();
 
+        /// <summary>
+        /// Remove a parameter from the search.
+        /// </summary>
+        /// <param name="key">The key to remove</param>
+        public void RemoveStringParameter(string key)
+        {
+            stringParams.Remove(key);
+        }
 
         /// <summary>
         /// Returns this search object as a string of URL parameters.
