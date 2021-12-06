@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.MessageSearch.Box
+  commentId: T:JoshAaronMiller.INaturalist.MessageSearch.Box
+  id: MessageSearch.Box
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.MessageSearch.Box.Any
+  - JoshAaronMiller.INaturalist.MessageSearch.Box.Inbox
+  - JoshAaronMiller.INaturalist.MessageSearch.Box.Sent
+  langs:
+  - csharp
+  - vb
+  name: MessageSearch.Box
+  nameWithType: MessageSearch.Box
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.Box
+  type: Enum
+  source:
+    id: Box
+    path: ''
+    startLine: 2853
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum Box
+    content.vb: Public Enum Box
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.MessageSearch.Box.Inbox
+  commentId: F:JoshAaronMiller.INaturalist.MessageSearch.Box.Inbox
+  id: Inbox
+  parent: JoshAaronMiller.INaturalist.MessageSearch.Box
+  langs:
+  - csharp
+  - vb
+  name: Inbox
+  nameWithType: MessageSearch.Box.Inbox
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.Box.Inbox
+  type: Field
+  source:
+    id: Inbox
+    path: ''
+    startLine: 2855
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Inbox = 0
+    return:
+      type: JoshAaronMiller.INaturalist.MessageSearch.Box
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.MessageSearch.Box.Sent
+  commentId: F:JoshAaronMiller.INaturalist.MessageSearch.Box.Sent
+  id: Sent
+  parent: JoshAaronMiller.INaturalist.MessageSearch.Box
+  langs:
+  - csharp
+  - vb
+  name: Sent
+  nameWithType: MessageSearch.Box.Sent
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.Box.Sent
+  type: Field
+  source:
+    id: Sent
+    path: ''
+    startLine: 2855
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Sent = 1
+    return:
+      type: JoshAaronMiller.INaturalist.MessageSearch.Box
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.MessageSearch.Box.Any
+  commentId: F:JoshAaronMiller.INaturalist.MessageSearch.Box.Any
+  id: Any
+  parent: JoshAaronMiller.INaturalist.MessageSearch.Box
+  langs:
+  - csharp
+  - vb
+  name: Any
+  nameWithType: MessageSearch.Box.Any
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.Box.Any
+  type: Field
+  source:
+    id: Any
+    path: ''
+    startLine: 2855
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Any = 2
+    return:
+      type: JoshAaronMiller.INaturalist.MessageSearch.Box
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.MessageSearch.Box
+  commentId: T:JoshAaronMiller.INaturalist.MessageSearch.Box
+  parent: JoshAaronMiller.INaturalist
+  name: MessageSearch.Box
+  nameWithType: MessageSearch.Box
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.Box

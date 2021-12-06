@@ -1,0 +1,366 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.WrappedFlag
+  commentId: T:JoshAaronMiller.INaturalist.WrappedFlag
+  id: WrappedFlag
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.WrappedFlag.flag
+  - JoshAaronMiller.INaturalist.WrappedFlag.flag_explanation
+  langs:
+  - csharp
+  - vb
+  name: WrappedFlag
+  nameWithType: WrappedFlag
+  fullName: JoshAaronMiller.INaturalist.WrappedFlag
+  type: Class
+  source:
+    id: WrappedFlag
+    path: ''
+    startLine: 1903
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class WrappedFlag : JsonObject<WrappedFlag>
+    content.vb: >-
+      <Serializable>
+
+      Public Class WrappedFlag
+          Inherits JsonObject(Of WrappedFlag)
+  inheritance:
+  - System.Object
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.WrappedFlag}
+  inheritedMembers:
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.WrappedFlag}.CreateFromJson(System.String)
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.WrappedFlag}.ToJson(JoshAaronMiller.INaturalist.WrappedFlag)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JoshAaronMiller.INaturalist.WrappedFlag.flag
+  commentId: F:JoshAaronMiller.INaturalist.WrappedFlag.flag
+  id: flag
+  parent: JoshAaronMiller.INaturalist.WrappedFlag
+  langs:
+  - csharp
+  - vb
+  name: flag
+  nameWithType: WrappedFlag.flag
+  fullName: JoshAaronMiller.INaturalist.WrappedFlag.flag
+  type: Field
+  source:
+    id: flag
+    path: ''
+    startLine: 1906
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public Flag flag
+    return:
+      type: JoshAaronMiller.INaturalist.Flag
+    content.vb: Public flag As Flag
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.WrappedFlag.flag_explanation
+  commentId: F:JoshAaronMiller.INaturalist.WrappedFlag.flag_explanation
+  id: flag_explanation
+  parent: JoshAaronMiller.INaturalist.WrappedFlag
+  langs:
+  - csharp
+  - vb
+  name: flag_explanation
+  nameWithType: WrappedFlag.flag_explanation
+  fullName: JoshAaronMiller.INaturalist.WrappedFlag.flag_explanation
+  type: Field
+  source:
+    id: flag_explanation
+    path: ''
+    startLine: 1907
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string flag_explanation
+    return:
+      type: System.String
+    content.vb: Public flag_explanation As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.WrappedFlag}
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.WrappedFlag}
+  parent: JoshAaronMiller.INaturalist
+  definition: JoshAaronMiller.INaturalist.JsonObject`1
+  name: JsonObject<WrappedFlag>
+  nameWithType: JsonObject<WrappedFlag>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.WrappedFlag>
+  nameWithType.vb: JsonObject(Of WrappedFlag)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.WrappedFlag)
+  name.vb: JsonObject(Of WrappedFlag)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.WrappedFlag
+    name: WrappedFlag
+    nameWithType: WrappedFlag
+    fullName: JoshAaronMiller.INaturalist.WrappedFlag
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.WrappedFlag
+    name: WrappedFlag
+    nameWithType: WrappedFlag
+    fullName: JoshAaronMiller.INaturalist.WrappedFlag
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.WrappedFlag}.CreateFromJson(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.WrappedFlag}.CreateFromJson(System.String)
+  parent: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.WrappedFlag}
+  definition: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  name: CreateFromJson(String)
+  nameWithType: JsonObject<WrappedFlag>.CreateFromJson(String)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.WrappedFlag>.CreateFromJson(System.String)
+  nameWithType.vb: JsonObject(Of WrappedFlag).CreateFromJson(String)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.WrappedFlag).CreateFromJson(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject<WrappedFlag>.CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.WrappedFlag>.CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject(Of WrappedFlag).CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.WrappedFlag).CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.WrappedFlag}.ToJson(JoshAaronMiller.INaturalist.WrappedFlag)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.WrappedFlag}.ToJson(JoshAaronMiller.INaturalist.WrappedFlag)
+  parent: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.WrappedFlag}
+  definition: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  name: ToJson(WrappedFlag)
+  nameWithType: JsonObject<WrappedFlag>.ToJson(WrappedFlag)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.WrappedFlag>.ToJson(JoshAaronMiller.INaturalist.WrappedFlag)
+  nameWithType.vb: JsonObject(Of WrappedFlag).ToJson(WrappedFlag)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.WrappedFlag).ToJson(JoshAaronMiller.INaturalist.WrappedFlag)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject<WrappedFlag>.ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.WrappedFlag>.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.WrappedFlag
+    name: WrappedFlag
+    nameWithType: WrappedFlag
+    fullName: JoshAaronMiller.INaturalist.WrappedFlag
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject(Of WrappedFlag).ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.WrappedFlag).ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.WrappedFlag
+    name: WrappedFlag
+    nameWithType: WrappedFlag
+    fullName: JoshAaronMiller.INaturalist.WrappedFlag
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JoshAaronMiller.INaturalist.JsonObject`1
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject`1
+  name: JsonObject<T>
+  nameWithType: JsonObject<T>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>
+  nameWithType.vb: JsonObject(Of T)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T)
+  name.vb: JsonObject(Of T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  isExternal: true
+  name: CreateFromJson(String)
+  nameWithType: JsonObject<T>.CreateFromJson(String)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson(System.String)
+  nameWithType.vb: JsonObject(Of T).CreateFromJson(String)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject<T>.CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject(Of T).CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  name: ToJson(T)
+  nameWithType: JsonObject<T>.ToJson(T)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson(T)
+  nameWithType.vb: JsonObject(Of T).ToJson(T)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson(T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject<T>.ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject(Of T).ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.Flag
+  commentId: T:JoshAaronMiller.INaturalist.Flag
+  parent: JoshAaronMiller.INaturalist
+  name: Flag
+  nameWithType: Flag
+  fullName: JoshAaronMiller.INaturalist.Flag
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

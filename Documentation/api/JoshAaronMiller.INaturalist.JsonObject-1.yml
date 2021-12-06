@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.JsonObject`1
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject`1
+  id: JsonObject`1
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  - JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  langs:
+  - csharp
+  - vb
+  name: JsonObject<T>
+  nameWithType: JsonObject<T>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>
+  type: Class
+  source:
+    id: JsonObject
+    path: ''
+    startLine: 2039
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public abstract class JsonObject<T>
+    typeParameters:
+    - id: T
+    content.vb: Public MustInherit Class JsonObject(Of T)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - JoshAaronMiller.INaturalist.Annotation
+  - JoshAaronMiller.INaturalist.BoundingBoxGeoJson
+  - JoshAaronMiller.INaturalist.ControlledTerm
+  - JoshAaronMiller.INaturalist.ControlledTermValue
+  - JoshAaronMiller.INaturalist.Count
+  - JoshAaronMiller.INaturalist.Dimensions
+  - JoshAaronMiller.INaturalist.Error
+  - JoshAaronMiller.INaturalist.Flag
+  - JoshAaronMiller.INaturalist.FlagCounts
+  - JoshAaronMiller.INaturalist.GeoJson
+  - JoshAaronMiller.INaturalist.GeometryGeoJson
+  - JoshAaronMiller.INaturalist.Identification
+  - JoshAaronMiller.INaturalist.IdentificationCategoryCount
+  - JoshAaronMiller.INaturalist.IdentificationSubmission
+  - JoshAaronMiller.INaturalist.Observation
+  - JoshAaronMiller.INaturalist.ObservationPhoto
+  - JoshAaronMiller.INaturalist.ObservationSubmission
+  - JoshAaronMiller.INaturalist.Outlink
+  - JoshAaronMiller.INaturalist.PhotoJson
+  - JoshAaronMiller.INaturalist.Place
+  - JoshAaronMiller.INaturalist.PlacesByCuration
+  - JoshAaronMiller.INaturalist.Results`1
+  - JoshAaronMiller.INaturalist.Sound
+  - JoshAaronMiller.INaturalist.SpeciesCount
+  - JoshAaronMiller.INaturalist.Taxon
+  - JoshAaronMiller.INaturalist.TaxonSummary
+  - JoshAaronMiller.INaturalist.TimeDetails
+  - JoshAaronMiller.INaturalist.User
+  - JoshAaronMiller.INaturalist.UserMessage
+  - JoshAaronMiller.INaturalist.Vote
+  - JoshAaronMiller.INaturalist.WrappedFlag
+  - JoshAaronMiller.INaturalist.WrappedIdentificationSubmission
+  - JoshAaronMiller.INaturalist.WrappedObservationSubmission
+  nameWithType.vb: JsonObject(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T)
+  name.vb: JsonObject(Of T)
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  id: CreateFromJson(System.String)
+  parent: JoshAaronMiller.INaturalist.JsonObject`1
+  langs:
+  - csharp
+  - vb
+  name: CreateFromJson(String)
+  nameWithType: JsonObject<T>.CreateFromJson(String)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson(System.String)
+  type: Method
+  source:
+    id: CreateFromJson
+    path: ''
+    startLine: 2041
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public static T CreateFromJson(string jsonString)
+    parameters:
+    - id: jsonString
+      type: System.String
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function CreateFromJson(jsonString As String) As T
+  overload: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson*
+  nameWithType.vb: JsonObject(Of T).CreateFromJson(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson(System.String)
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  id: ToJson(`0)
+  parent: JoshAaronMiller.INaturalist.JsonObject`1
+  langs:
+  - csharp
+  - vb
+  name: ToJson(T)
+  nameWithType: JsonObject<T>.ToJson(T)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson(T)
+  type: Method
+  source:
+    id: ToJson
+    path: ''
+    startLine: 2046
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public static string ToJson(T obj)
+    parameters:
+    - id: obj
+      type: '{T}'
+    return:
+      type: System.String
+    content.vb: Public Shared Function ToJson(obj As T) As String
+  overload: JoshAaronMiller.INaturalist.JsonObject`1.ToJson*
+  nameWithType.vb: JsonObject(Of T).ToJson(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson(T)
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson*
+  commentId: Overload:JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson
+  name: CreateFromJson
+  nameWithType: JsonObject<T>.CreateFromJson
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson
+  nameWithType.vb: JsonObject(Of T).CreateFromJson
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson*
+  commentId: Overload:JoshAaronMiller.INaturalist.JsonObject`1.ToJson
+  name: ToJson
+  nameWithType: JsonObject<T>.ToJson
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson
+  nameWithType.vb: JsonObject(Of T).ToJson
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson

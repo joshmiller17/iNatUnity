@@ -1,0 +1,3631 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.INatManager
+  commentId: T:JoshAaronMiller.INaturalist.INatManager
+  id: INatManager
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.INatManager.ApiTokenUrl
+  - JoshAaronMiller.INaturalist.INatManager.BaseUrl
+  - JoshAaronMiller.INaturalist.INatManager.CreateFlag(JoshAaronMiller.INaturalist.WrappedFlag,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.CreateIdentification(JoshAaronMiller.INaturalist.IdentificationSubmission,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.CreateObservation(JoshAaronMiller.INaturalist.ObservationSubmission,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.CreateObservationPhoto(System.Int32,System.String,JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.ObservationPhoto},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.CreatePhoto(JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.PhotoJson},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.CreateUserMessage(JoshAaronMiller.INaturalist.UserMessage,Action{JoshAaronMiller.INaturalist.UserMessage},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.DeleteFlag(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.DeleteIdentification(System.Int32,Action{System.String},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.DeleteObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.DeleteObservationPhoto(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.DeleteUserMessageThread(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.FaveObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetApiToken
+  - JoshAaronMiller.INaturalist.INatManager.GetCountUnreadMessages(Action{JoshAaronMiller.INaturalist.Count},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetIdentification(System.Int32,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetIdentificationCategories(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.IdentificationCategoryCount}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetIdentifications(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetIdentificationSpeciesCounts(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetObservations(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetObservationSpeciesCounts(JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetObservationTaxonSummary(System.Int32,Action{JoshAaronMiller.INaturalist.TaxonSummary},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}},Action{JoshAaronMiller.INaturalist.Error},JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)
+  - JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Int32,Action{JoshAaronMiller.INaturalist.Place},Action{JoshAaronMiller.INaturalist.Error},JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)
+  - JoshAaronMiller.INaturalist.INatManager.GetPlacesAutocomplete(System.String,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}},Action{JoshAaronMiller.INaturalist.Error},System.Boolean)
+  - JoshAaronMiller.INaturalist.INatManager.GetPlacesNearby(System.Double,System.Double,System.Double,System.Double,Action{JoshAaronMiller.INaturalist.PlacesByCuration},Action{JoshAaronMiller.INaturalist.Error},System.String,System.Int32)
+  - JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32,JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Int32,Action{JoshAaronMiller.INaturalist.Taxon},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetTermsForTaxon(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetTermsIndex(Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetUserMe(Action{JoshAaronMiller.INaturalist.User},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.GetUserMessageThread(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.ReviewObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.SearchIdentifications(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.SearchObservations(JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.SearchTaxa(JoshAaronMiller.INaturalist.TaxonSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.SearchUserMessages(JoshAaronMiller.INaturalist.MessageSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.SetApiToken(System.String)
+  - JoshAaronMiller.INaturalist.INatManager.UnfaveObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.UnreviewObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.UnvoteObservation(System.Int32,JoshAaronMiller.INaturalist.Vote,Action,Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.UpdateFlag(System.Int32,JoshAaronMiller.INaturalist.WrappedFlag,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.UpdateIdentification(System.Int32,JoshAaronMiller.INaturalist.IdentificationSubmission,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.UpdateObservation(System.Int32,JoshAaronMiller.INaturalist.ObservationSubmission,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.UpdateObservationPhoto(System.Int32,System.Int32,JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.ObservationPhoto},Action{JoshAaronMiller.INaturalist.Error})
+  - JoshAaronMiller.INaturalist.INatManager.VoteObservation(System.Int32,JoshAaronMiller.INaturalist.Vote,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  langs:
+  - csharp
+  - vb
+  name: INatManager
+  nameWithType: INatManager
+  fullName: JoshAaronMiller.INaturalist.INatManager
+  type: Class
+  source:
+    id: INatManager
+    path: ''
+    startLine: 611
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nThe INatManager handles direct requests to the iNaturalist API.\n"
+  example: []
+  syntax:
+    content: 'public class INatManager : MonoBehaviour'
+    content.vb: >-
+      Public Class INatManager
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JoshAaronMiller.INaturalist.INatManager.BaseUrl
+  commentId: F:JoshAaronMiller.INaturalist.INatManager.BaseUrl
+  id: BaseUrl
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: BaseUrl
+  nameWithType: INatManager.BaseUrl
+  fullName: JoshAaronMiller.INaturalist.INatManager.BaseUrl
+  type: Field
+  source:
+    id: BaseUrl
+    path: ''
+    startLine: 613
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public static readonly string BaseUrl
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly BaseUrl As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: JoshAaronMiller.INaturalist.INatManager.ApiTokenUrl
+  commentId: F:JoshAaronMiller.INaturalist.INatManager.ApiTokenUrl
+  id: ApiTokenUrl
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: ApiTokenUrl
+  nameWithType: INatManager.ApiTokenUrl
+  fullName: JoshAaronMiller.INaturalist.INatManager.ApiTokenUrl
+  type: Field
+  source:
+    id: ApiTokenUrl
+    path: ''
+    startLine: 614
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public static readonly string ApiTokenUrl
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly ApiTokenUrl As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: JoshAaronMiller.INaturalist.INatManager.GetApiToken
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetApiToken
+  id: GetApiToken
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetApiToken()
+  nameWithType: INatManager.GetApiToken()
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetApiToken()
+  type: Method
+  source:
+    id: GetApiToken
+    path: ''
+    startLine: 848
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public void GetApiToken()
+    content.vb: Public Sub GetApiToken
+  overload: JoshAaronMiller.INaturalist.INatManager.GetApiToken*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.INatManager.SetApiToken(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.SetApiToken(System.String)
+  id: SetApiToken(System.String)
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: SetApiToken(String)
+  nameWithType: INatManager.SetApiToken(String)
+  fullName: JoshAaronMiller.INaturalist.INatManager.SetApiToken(System.String)
+  type: Method
+  source:
+    id: SetApiToken
+    path: ''
+    startLine: 853
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public void SetApiToken(string token)
+    parameters:
+    - id: token
+      type: System.String
+    content.vb: Public Sub SetApiToken(token As String)
+  overload: JoshAaronMiller.INaturalist.INatManager.SetApiToken*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.INatManager.GetTermsIndex(Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetTermsIndex(Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetTermsIndex(Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetTermsIndex(Action<Results<ControlledTerm>>, Action<Error>)
+  nameWithType: INatManager.GetTermsIndex(Action<Results<ControlledTerm>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetTermsIndex(Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.ControlledTerm>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetTermsIndex
+    path: ''
+    startLine: 883
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nFetch a list of all attribute controlled terms as a List of ControlledTerms.\n"
+  example: []
+  syntax:
+    content: public void GetTermsIndex(Action<Results<ControlledTerm>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}}
+      description: A function to callback when the request is done which takes as input the Results list of Controlled Terms created.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetTermsIndex(callback As Action(Of Results(Of ControlledTerm)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetTermsIndex*
+  nameWithType.vb: INatManager.GetTermsIndex(Action(Of Results(Of ControlledTerm)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetTermsIndex(Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.ControlledTerm)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetTermsIndex(Action(Of Results(Of ControlledTerm)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetTermsForTaxon(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetTermsForTaxon(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetTermsForTaxon(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetTermsForTaxon(Int32, Action<Results<ControlledTerm>>, Action<Error>)
+  nameWithType: INatManager.GetTermsForTaxon(Int32, Action<Results<ControlledTerm>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetTermsForTaxon(System.Int32, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.ControlledTerm>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetTermsForTaxon
+    path: ''
+    startLine: 895
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nFetch a list of all attribute controlled terms relevant to a taxon as a List of ControlledTerms.\n"
+  example: []
+  syntax:
+    content: public void GetTermsForTaxon(int taxonId, Action<Results<ControlledTerm>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: taxonId
+      type: System.Int32
+      description: The ID of the Taxon.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}}
+      description: A function to callback when the request is done which takes as input the Results list of Controlled Terms created.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetTermsForTaxon(taxonId As Integer, callback As Action(Of Results(Of ControlledTerm)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetTermsForTaxon*
+  nameWithType.vb: INatManager.GetTermsForTaxon(Int32, Action(Of Results(Of ControlledTerm)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetTermsForTaxon(System.Int32, Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.ControlledTerm)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetTermsForTaxon(Int32, Action(Of Results(Of ControlledTerm)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.CreateFlag(JoshAaronMiller.INaturalist.WrappedFlag,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.CreateFlag(JoshAaronMiller.INaturalist.WrappedFlag,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  id: CreateFlag(JoshAaronMiller.INaturalist.WrappedFlag,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: CreateFlag(WrappedFlag, Action<Identification>, Action<Error>)
+  nameWithType: INatManager.CreateFlag(WrappedFlag, Action<Identification>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.CreateFlag(JoshAaronMiller.INaturalist.WrappedFlag, Action<JoshAaronMiller.INaturalist.Identification>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: CreateFlag
+    path: ''
+    startLine: 911
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nSubmit a Flag.\n"
+  example: []
+  syntax:
+    content: public void CreateFlag(WrappedFlag flag, Action<Identification> callback, Action<Error> errorCallback)
+    parameters:
+    - id: flag
+      type: JoshAaronMiller.INaturalist.WrappedFlag
+      description: The parameters of the flag.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Identification}
+      description: A function to callback when the request is done which takes as input the Flag created.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub CreateFlag(flag As WrappedFlag, callback As Action(Of Identification), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.CreateFlag*
+  nameWithType.vb: INatManager.CreateFlag(WrappedFlag, Action(Of Identification), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.CreateFlag(JoshAaronMiller.INaturalist.WrappedFlag, Action(Of JoshAaronMiller.INaturalist.Identification), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: CreateFlag(WrappedFlag, Action(Of Identification), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.DeleteFlag(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.DeleteFlag(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  id: DeleteFlag(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: DeleteFlag(Int32, Action, Action<Error>)
+  nameWithType: INatManager.DeleteFlag(Int32, Action, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.DeleteFlag(System.Int32, Action, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: DeleteFlag
+    path: ''
+    startLine: 924
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nDelete a Flag.\n"
+  example: []
+  syntax:
+    content: public void DeleteFlag(int flagId, Action callback, Action<Error> errorCallback)
+    parameters:
+    - id: flagId
+      type: System.Int32
+      description: The ID of the flag.
+    - id: callback
+      type: Global.Action
+      description: A function to callback when the request is done.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub DeleteFlag(flagId As Integer, callback As Action, errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.DeleteFlag*
+  nameWithType.vb: INatManager.DeleteFlag(Int32, Action, Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.DeleteFlag(System.Int32, Action, Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: DeleteFlag(Int32, Action, Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.UpdateFlag(System.Int32,JoshAaronMiller.INaturalist.WrappedFlag,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.UpdateFlag(System.Int32,JoshAaronMiller.INaturalist.WrappedFlag,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  id: UpdateFlag(System.Int32,JoshAaronMiller.INaturalist.WrappedFlag,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateFlag(Int32, WrappedFlag, Action<Identification>, Action<Error>)
+  nameWithType: INatManager.UpdateFlag(Int32, WrappedFlag, Action<Identification>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.UpdateFlag(System.Int32, JoshAaronMiller.INaturalist.WrappedFlag, Action<JoshAaronMiller.INaturalist.Identification>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: UpdateFlag
+    path: ''
+    startLine: 937
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nUpdate a Flag.\n"
+  example: []
+  syntax:
+    content: public void UpdateFlag(int flagId, WrappedFlag flag, Action<Identification> callback, Action<Error> errorCallback)
+    parameters:
+    - id: flagId
+      type: System.Int32
+      description: The ID of the flag.
+    - id: flag
+      type: JoshAaronMiller.INaturalist.WrappedFlag
+      description: The parameters of the flag.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Identification}
+      description: A function to callback when the request is done which takes as input the Flag updated.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub UpdateFlag(flagId As Integer, flag As WrappedFlag, callback As Action(Of Identification), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.UpdateFlag*
+  nameWithType.vb: INatManager.UpdateFlag(Int32, WrappedFlag, Action(Of Identification), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.UpdateFlag(System.Int32, JoshAaronMiller.INaturalist.WrappedFlag, Action(Of JoshAaronMiller.INaturalist.Identification), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: UpdateFlag(Int32, WrappedFlag, Action(Of Identification), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.DeleteIdentification(System.Int32,Action{System.String},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.DeleteIdentification(System.Int32,Action{System.String},Action{JoshAaronMiller.INaturalist.Error})
+  id: DeleteIdentification(System.Int32,Action{System.String},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: DeleteIdentification(Int32, Action<String>, Action<Error>)
+  nameWithType: INatManager.DeleteIdentification(Int32, Action<String>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.DeleteIdentification(System.Int32, Action<System.String>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: DeleteIdentification
+    path: ''
+    startLine: 955
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nDelete an Identification.\n"
+  example: []
+  syntax:
+    content: public void DeleteIdentification(int identId, Action<string> callback, Action<Error> errorCallback)
+    parameters:
+    - id: identId
+      type: System.Int32
+      description: The ID of the Identification.
+    - id: callback
+      type: Global.Action{System.String}
+      description: A function to callback when the request is done.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub DeleteIdentification(identId As Integer, callback As Action(Of String), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.DeleteIdentification*
+  nameWithType.vb: INatManager.DeleteIdentification(Int32, Action(Of String), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.DeleteIdentification(System.Int32, Action(Of System.String), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: DeleteIdentification(Int32, Action(Of String), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetIdentifications(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetIdentifications(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetIdentifications(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetIdentifications(List<Int32>, Action<Results<Identification>>, Action<Error>)
+  nameWithType: INatManager.GetIdentifications(List<Int32>, Action<Results<Identification>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetIdentifications(System.Collections.Generic.List<System.Int32>, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.Identification>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetIdentifications
+    path: ''
+    startLine: 967
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven an array of IDs, returns corresponding Identifications \n"
+  example: []
+  syntax:
+    content: public void GetIdentifications(List<int> identIds, Action<Results<Identification>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: identIds
+      type: System.Collections.Generic.List{System.Int32}
+      description: The list of identification IDs to fetch
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}}
+      description: A function to callback when the request is done which takes as input the Results list of Identification objects found.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetIdentifications(identIds As List(Of Integer), callback As Action(Of Results(Of Identification)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetIdentifications*
+  nameWithType.vb: INatManager.GetIdentifications(List(Of Int32), Action(Of Results(Of Identification)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetIdentifications(System.Collections.Generic.List(Of System.Int32), Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.Identification)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetIdentifications(List(Of Int32), Action(Of Results(Of Identification)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetIdentification(System.Int32,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetIdentification(System.Int32,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetIdentification(System.Int32,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetIdentification(Int32, Action<Identification>, Action<Error>)
+  nameWithType: INatManager.GetIdentification(Int32, Action<Identification>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetIdentification(System.Int32, Action<JoshAaronMiller.INaturalist.Identification>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetIdentification
+    path: ''
+    startLine: 980
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven an ID, returns corresponding Identifications \n"
+  example: []
+  syntax:
+    content: public void GetIdentification(int identId, Action<Identification> callback, Action<Error> errorCallback)
+    parameters:
+    - id: identId
+      type: System.Int32
+      description: The identification ID to fetch
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Identification}
+      description: A function to callback when the request is done which takes as input the Identification object found.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetIdentification(identId As Integer, callback As Action(Of Identification), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetIdentification*
+  nameWithType.vb: INatManager.GetIdentification(Int32, Action(Of Identification), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetIdentification(System.Int32, Action(Of JoshAaronMiller.INaturalist.Identification), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetIdentification(Int32, Action(Of Identification), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.UpdateIdentification(System.Int32,JoshAaronMiller.INaturalist.IdentificationSubmission,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.UpdateIdentification(System.Int32,JoshAaronMiller.INaturalist.IdentificationSubmission,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  id: UpdateIdentification(System.Int32,JoshAaronMiller.INaturalist.IdentificationSubmission,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateIdentification(Int32, IdentificationSubmission, Action<Identification>, Action<Error>)
+  nameWithType: INatManager.UpdateIdentification(Int32, IdentificationSubmission, Action<Identification>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.UpdateIdentification(System.Int32, JoshAaronMiller.INaturalist.IdentificationSubmission, Action<JoshAaronMiller.INaturalist.Identification>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: UpdateIdentification
+    path: ''
+    startLine: 994
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nUpdate an Identification\n"
+  example: []
+  syntax:
+    content: public void UpdateIdentification(int identId, IdentificationSubmission identSub, Action<Identification> callback, Action<Error> errorCallback)
+    parameters:
+    - id: identId
+      type: System.Int32
+      description: The identification ID to update
+    - id: identSub
+      type: JoshAaronMiller.INaturalist.IdentificationSubmission
+      description: The updated information for the identification.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Identification}
+      description: A function to callback when the request is done which takes as input the Identification object returned.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub UpdateIdentification(identId As Integer, identSub As IdentificationSubmission, callback As Action(Of Identification), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.UpdateIdentification*
+  nameWithType.vb: INatManager.UpdateIdentification(Int32, IdentificationSubmission, Action(Of Identification), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.UpdateIdentification(System.Int32, JoshAaronMiller.INaturalist.IdentificationSubmission, Action(Of JoshAaronMiller.INaturalist.Identification), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: UpdateIdentification(Int32, IdentificationSubmission, Action(Of Identification), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.SearchIdentifications(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.SearchIdentifications(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}},Action{JoshAaronMiller.INaturalist.Error})
+  id: SearchIdentifications(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: SearchIdentifications(IdentificationSearch, Action<Results<Identification>>, Action<Error>)
+  nameWithType: INatManager.SearchIdentifications(IdentificationSearch, Action<Results<Identification>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.SearchIdentifications(JoshAaronMiller.INaturalist.IdentificationSearch, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.Identification>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: SearchIdentifications
+    path: ''
+    startLine: 1010
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven an IdentificationSearch object, returns a list of matching Identifications\n"
+  example: []
+  syntax:
+    content: public void SearchIdentifications(IdentificationSearch identSearch, Action<Results<Identification>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: identSearch
+      type: JoshAaronMiller.INaturalist.IdentificationSearch
+      description: An IdentificationSearch object holding the parameters of the search
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}}
+      description: A function to callback when the request is done which takes as input the Results list of Identification objects found.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub SearchIdentifications(identSearch As IdentificationSearch, callback As Action(Of Results(Of Identification)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.SearchIdentifications*
+  nameWithType.vb: INatManager.SearchIdentifications(IdentificationSearch, Action(Of Results(Of Identification)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.SearchIdentifications(JoshAaronMiller.INaturalist.IdentificationSearch, Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.Identification)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: SearchIdentifications(IdentificationSearch, Action(Of Results(Of Identification)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.CreateIdentification(JoshAaronMiller.INaturalist.IdentificationSubmission,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.CreateIdentification(JoshAaronMiller.INaturalist.IdentificationSubmission,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  id: CreateIdentification(JoshAaronMiller.INaturalist.IdentificationSubmission,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: CreateIdentification(IdentificationSubmission, Action<Identification>, Action<Error>)
+  nameWithType: INatManager.CreateIdentification(IdentificationSubmission, Action<Identification>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.CreateIdentification(JoshAaronMiller.INaturalist.IdentificationSubmission, Action<JoshAaronMiller.INaturalist.Identification>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: CreateIdentification
+    path: ''
+    startLine: 1024
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nSubmit an Identification.\n"
+  example: []
+  syntax:
+    content: public void CreateIdentification(IdentificationSubmission identSub, Action<Identification> callback, Action<Error> errorCallback)
+    parameters:
+    - id: identSub
+      type: JoshAaronMiller.INaturalist.IdentificationSubmission
+      description: The parameters of the Identification. Requires at minimum observation ID and taxon ID.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Identification}
+      description: A function to callback when the request is done which takes as input the Identification created.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub CreateIdentification(identSub As IdentificationSubmission, callback As Action(Of Identification), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.CreateIdentification*
+  nameWithType.vb: INatManager.CreateIdentification(IdentificationSubmission, Action(Of Identification), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.CreateIdentification(JoshAaronMiller.INaturalist.IdentificationSubmission, Action(Of JoshAaronMiller.INaturalist.Identification), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: CreateIdentification(IdentificationSubmission, Action(Of Identification), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetIdentificationCategories(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.IdentificationCategoryCount}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetIdentificationCategories(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.IdentificationCategoryCount}},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetIdentificationCategories(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.IdentificationCategoryCount}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetIdentificationCategories(IdentificationSearch, Action<Results<IdentificationCategoryCount>>, Action<Error>)
+  nameWithType: INatManager.GetIdentificationCategories(IdentificationSearch, Action<Results<IdentificationCategoryCount>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetIdentificationCategories(JoshAaronMiller.INaturalist.IdentificationSearch, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.IdentificationCategoryCount>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetIdentificationCategories
+    path: ''
+    startLine: 1039
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven an IdentificationSearch object, returns the counts of how many identifications matching the search have a particular category.\n"
+  example: []
+  syntax:
+    content: public void GetIdentificationCategories(IdentificationSearch identSearch, Action<Results<IdentificationCategoryCount>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: identSearch
+      type: JoshAaronMiller.INaturalist.IdentificationSearch
+      description: An IdentificationSearch object holding the parameters of the search.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.IdentificationCategoryCount}}
+      description: A function to callback when the request is done which takes as input the Results list of IdentificationCategoryCount objects found.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetIdentificationCategories(identSearch As IdentificationSearch, callback As Action(Of Results(Of IdentificationCategoryCount)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetIdentificationCategories*
+  nameWithType.vb: INatManager.GetIdentificationCategories(IdentificationSearch, Action(Of Results(Of IdentificationCategoryCount)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetIdentificationCategories(JoshAaronMiller.INaturalist.IdentificationSearch, Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.IdentificationCategoryCount)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetIdentificationCategories(IdentificationSearch, Action(Of Results(Of IdentificationCategoryCount)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetIdentificationSpeciesCounts(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetIdentificationSpeciesCounts(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetIdentificationSpeciesCounts(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetIdentificationSpeciesCounts(IdentificationSearch, Action<Results<SpeciesCount>>, Action<Error>)
+  nameWithType: INatManager.GetIdentificationSpeciesCounts(IdentificationSearch, Action<Results<SpeciesCount>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetIdentificationSpeciesCounts(JoshAaronMiller.INaturalist.IdentificationSearch, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.SpeciesCount>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetIdentificationSpeciesCounts
+    path: ''
+    startLine: 1051
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven an IdentificationSearch object, returns the counts of how many identifications matching the search have a particular leaf taxon.\n"
+  example: []
+  syntax:
+    content: public void GetIdentificationSpeciesCounts(IdentificationSearch identSearch, Action<Results<SpeciesCount>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: identSearch
+      type: JoshAaronMiller.INaturalist.IdentificationSearch
+      description: An IdentificationSearch object holding the parameters of the search.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}}
+      description: A function to callback when the request is done which takes as input the Results list of SpeciesCount objects found.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetIdentificationSpeciesCounts(identSearch As IdentificationSearch, callback As Action(Of Results(Of SpeciesCount)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetIdentificationSpeciesCounts*
+  nameWithType.vb: INatManager.GetIdentificationSpeciesCounts(IdentificationSearch, Action(Of Results(Of SpeciesCount)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetIdentificationSpeciesCounts(JoshAaronMiller.INaturalist.IdentificationSearch, Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.SpeciesCount)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetIdentificationSpeciesCounts(IdentificationSearch, Action(Of Results(Of SpeciesCount)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetSimilarSpecies(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetSimilarSpecies(Int32, Action<Results<SpeciesCount>>, Action<Error>)
+  nameWithType: INatManager.GetSimilarSpecies(Int32, Action<Results<SpeciesCount>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.SpeciesCount>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetSimilarSpecies
+    path: ''
+    startLine: 1073
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven a Taxon ID, return similar taxa and counts of co-occurrence.\n"
+  remarks: "\nThe definition of &quot;similar taxa&quot; is operationalized by finding all observations of this taxon or identified as this taxon,\nthen taking the identifications of those observations and counting frequencies of identifications of other taxa.\nIn short, this returns a list mapping taxa to how many times they co-occurred with the searched taxon.\n"
+  example: []
+  syntax:
+    content: public void GetSimilarSpecies(int taxonId, Action<Results<SpeciesCount>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: taxonId
+      type: System.Int32
+      description: The ID of the taxon to find similar taxa to.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}}
+      description: A function to callback when the request is done which takes as input the Results list of SpeciesCount objects representing the results.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetSimilarSpecies(taxonId As Integer, callback As Action(Of Results(Of SpeciesCount)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies*
+  nameWithType.vb: INatManager.GetSimilarSpecies(Int32, Action(Of Results(Of SpeciesCount)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32, Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.SpeciesCount)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetSimilarSpecies(Int32, Action(Of Results(Of SpeciesCount)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32,JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32,JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetSimilarSpecies(System.Int32,JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetSimilarSpecies(Int32, ObservationSearch, Action<Results<SpeciesCount>>, Action<Error>)
+  nameWithType: INatManager.GetSimilarSpecies(Int32, ObservationSearch, Action<Results<SpeciesCount>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32, JoshAaronMiller.INaturalist.ObservationSearch, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.SpeciesCount>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetSimilarSpecies
+    path: ''
+    startLine: 1091
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven a Taxon ID, return similar taxa and counts of co-occurrence.\n"
+  remarks: "\nThe definition of &quot;similar taxa&quot; is operationalized by finding all observations of this taxon or identified as this taxon,\nthen taking the identifications of those observations and counting frequencies of identifications of other taxa.\nIn short, this returns a list mapping taxa to how many times they co-occurred with the searched taxon.\n"
+  example: []
+  syntax:
+    content: public void GetSimilarSpecies(int taxonId, ObservationSearch obsSearch, Action<Results<SpeciesCount>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: taxonId
+      type: System.Int32
+      description: The ID of the taxon to find similar taxa to.
+    - id: obsSearch
+      type: JoshAaronMiller.INaturalist.ObservationSearch
+      description: Additional parameters to refine the search, limiting what observations can be included.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}}
+      description: A function to callback when the request is done which takes as input the Results list of SpeciesCount objects representing the results.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetSimilarSpecies(taxonId As Integer, obsSearch As ObservationSearch, callback As Action(Of Results(Of SpeciesCount)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies*
+  nameWithType.vb: INatManager.GetSimilarSpecies(Int32, ObservationSearch, Action(Of Results(Of SpeciesCount)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32, JoshAaronMiller.INaturalist.ObservationSearch, Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.SpeciesCount)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetSimilarSpecies(Int32, ObservationSearch, Action(Of Results(Of SpeciesCount)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.SearchUserMessages(JoshAaronMiller.INaturalist.MessageSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.SearchUserMessages(JoshAaronMiller.INaturalist.MessageSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}},Action{JoshAaronMiller.INaturalist.Error})
+  id: SearchUserMessages(JoshAaronMiller.INaturalist.MessageSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: SearchUserMessages(MessageSearch, Action<Results<UserMessage>>, Action<Error>)
+  nameWithType: INatManager.SearchUserMessages(MessageSearch, Action<Results<UserMessage>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.SearchUserMessages(JoshAaronMiller.INaturalist.MessageSearch, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.UserMessage>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: SearchUserMessages
+    path: ''
+    startLine: 1110
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven a MessageSearch object, returns a list of matching user messages\n"
+  remarks: "\nThis function does not mark these messages as read. See GetUserMessageThread.\n"
+  example: []
+  syntax:
+    content: public void SearchUserMessages(MessageSearch messageSearch, Action<Results<UserMessage>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: messageSearch
+      type: JoshAaronMiller.INaturalist.MessageSearch
+      description: A MessageSearch object holding the parameters of the search
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}}
+      description: A function to callback when the request is done which takes as input the Results list of Message objects found.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub SearchUserMessages(messageSearch As MessageSearch, callback As Action(Of Results(Of UserMessage)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.SearchUserMessages*
+  nameWithType.vb: INatManager.SearchUserMessages(MessageSearch, Action(Of Results(Of UserMessage)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.SearchUserMessages(JoshAaronMiller.INaturalist.MessageSearch, Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.UserMessage)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: SearchUserMessages(MessageSearch, Action(Of Results(Of UserMessage)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.CreateUserMessage(JoshAaronMiller.INaturalist.UserMessage,Action{JoshAaronMiller.INaturalist.UserMessage},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.CreateUserMessage(JoshAaronMiller.INaturalist.UserMessage,Action{JoshAaronMiller.INaturalist.UserMessage},Action{JoshAaronMiller.INaturalist.Error})
+  id: CreateUserMessage(JoshAaronMiller.INaturalist.UserMessage,Action{JoshAaronMiller.INaturalist.UserMessage},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: CreateUserMessage(UserMessage, Action<UserMessage>, Action<Error>)
+  nameWithType: INatManager.CreateUserMessage(UserMessage, Action<UserMessage>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.CreateUserMessage(JoshAaronMiller.INaturalist.UserMessage, Action<JoshAaronMiller.INaturalist.UserMessage>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: CreateUserMessage
+    path: ''
+    startLine: 1122
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nSend a private message.\n"
+  example: []
+  syntax:
+    content: public void CreateUserMessage(UserMessage newMessage, Action<UserMessage> callback, Action<Error> errorCallback)
+    parameters:
+    - id: newMessage
+      type: JoshAaronMiller.INaturalist.UserMessage
+      description: The message to be sent.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.UserMessage}
+      description: A function to callback when the request is done which takes as input the new Message created.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub CreateUserMessage(newMessage As UserMessage, callback As Action(Of UserMessage), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.CreateUserMessage*
+  nameWithType.vb: INatManager.CreateUserMessage(UserMessage, Action(Of UserMessage), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.CreateUserMessage(JoshAaronMiller.INaturalist.UserMessage, Action(Of JoshAaronMiller.INaturalist.UserMessage), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: CreateUserMessage(UserMessage, Action(Of UserMessage), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.DeleteUserMessageThread(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.DeleteUserMessageThread(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  id: DeleteUserMessageThread(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: DeleteUserMessageThread(Int32, Action, Action<Error>)
+  nameWithType: INatManager.DeleteUserMessageThread(Int32, Action, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.DeleteUserMessageThread(System.Int32, Action, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: DeleteUserMessageThread
+    path: ''
+    startLine: 1135
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nDelete all messages in a message thread.\n"
+  example: []
+  syntax:
+    content: public void DeleteUserMessageThread(int threadId, Action callback, Action<Error> errorCallback)
+    parameters:
+    - id: threadId
+      type: System.Int32
+      description: The thread to delete.
+    - id: callback
+      type: Global.Action
+      description: A function to callback when the request is done.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub DeleteUserMessageThread(threadId As Integer, callback As Action, errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.DeleteUserMessageThread*
+  nameWithType.vb: INatManager.DeleteUserMessageThread(Int32, Action, Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.DeleteUserMessageThread(System.Int32, Action, Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: DeleteUserMessageThread(Int32, Action, Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetUserMessageThread(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetUserMessageThread(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetUserMessageThread(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetUserMessageThread(Int32, Action<Results<UserMessage>>, Action<Error>)
+  nameWithType: INatManager.GetUserMessageThread(Int32, Action<Results<UserMessage>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetUserMessageThread(System.Int32, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.UserMessage>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetUserMessageThread
+    path: ''
+    startLine: 1147
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nRetrieves all messages in the specified thread and marks them all as read.\n"
+  example: []
+  syntax:
+    content: public void GetUserMessageThread(int threadId, Action<Results<UserMessage>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: threadId
+      type: System.Int32
+      description: The thread to fetch.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}}
+      description: A function to callback when the request is done which takes as input the thread fetched as a Results list of UserMessages.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetUserMessageThread(threadId As Integer, callback As Action(Of Results(Of UserMessage)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetUserMessageThread*
+  nameWithType.vb: INatManager.GetUserMessageThread(Int32, Action(Of Results(Of UserMessage)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetUserMessageThread(System.Int32, Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.UserMessage)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetUserMessageThread(Int32, Action(Of Results(Of UserMessage)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetCountUnreadMessages(Action{JoshAaronMiller.INaturalist.Count},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetCountUnreadMessages(Action{JoshAaronMiller.INaturalist.Count},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetCountUnreadMessages(Action{JoshAaronMiller.INaturalist.Count},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetCountUnreadMessages(Action<Count>, Action<Error>)
+  nameWithType: INatManager.GetCountUnreadMessages(Action<Count>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetCountUnreadMessages(Action<JoshAaronMiller.INaturalist.Count>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetCountUnreadMessages
+    path: ''
+    startLine: 1159
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nReturns a Count of unread messages in the authenticated user&apos;s inbox.\n"
+  example: []
+  syntax:
+    content: public void GetCountUnreadMessages(Action<Count> callback, Action<Error> errorCallback)
+    parameters:
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Count}
+      description: A function to callback when the request is done which takes as input the Count of unread messages.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetCountUnreadMessages(callback As Action(Of Count), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetCountUnreadMessages*
+  nameWithType.vb: INatManager.GetCountUnreadMessages(Action(Of Count), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetCountUnreadMessages(Action(Of JoshAaronMiller.INaturalist.Count), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetCountUnreadMessages(Action(Of Count), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.DeleteObservationPhoto(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.DeleteObservationPhoto(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  id: DeleteObservationPhoto(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: DeleteObservationPhoto(Int32, Action, Action<Error>)
+  nameWithType: INatManager.DeleteObservationPhoto(Int32, Action, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.DeleteObservationPhoto(System.Int32, Action, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: DeleteObservationPhoto
+    path: ''
+    startLine: 1183
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nDelete an observation photo.\n"
+  example: []
+  syntax:
+    content: public void DeleteObservationPhoto(int obsPhotoId, Action callback, Action<Error> errorCallback)
+    parameters:
+    - id: obsPhotoId
+      type: System.Int32
+      description: The observation photo to delete.
+    - id: callback
+      type: Global.Action
+      description: A function to callback when the request is done.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub DeleteObservationPhoto(obsPhotoId As Integer, callback As Action, errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.DeleteObservationPhoto*
+  nameWithType.vb: INatManager.DeleteObservationPhoto(Int32, Action, Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.DeleteObservationPhoto(System.Int32, Action, Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: DeleteObservationPhoto(Int32, Action, Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.UpdateObservationPhoto(System.Int32,System.Int32,JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.ObservationPhoto},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.UpdateObservationPhoto(System.Int32,System.Int32,JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.ObservationPhoto},Action{JoshAaronMiller.INaturalist.Error})
+  id: UpdateObservationPhoto(System.Int32,System.Int32,JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.ObservationPhoto},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateObservationPhoto(Int32, Int32, PhotoFile, Action<ObservationPhoto>, Action<Error>)
+  nameWithType: INatManager.UpdateObservationPhoto(Int32, Int32, PhotoFile, Action<ObservationPhoto>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.UpdateObservationPhoto(System.Int32, System.Int32, JoshAaronMiller.INaturalist.PhotoFile, Action<JoshAaronMiller.INaturalist.ObservationPhoto>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: UpdateObservationPhoto
+    path: ''
+    startLine: 1199
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nUpdate an Observation Photo.\n"
+  example: []
+  syntax:
+    content: public void UpdateObservationPhoto(int obsPhotoId, int position, PhotoFile photo, Action<ObservationPhoto> callback, Action<Error> errorCallback)
+    parameters:
+    - id: obsPhotoId
+      type: System.Int32
+      description: The Observation Photo ID to update
+    - id: position
+      type: System.Int32
+      description: The position in which the photo is displayed for the observation.
+    - id: photo
+      type: JoshAaronMiller.INaturalist.PhotoFile
+      description: The Photo to upload.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.ObservationPhoto}
+      description: A function to callback when the request is done which takes as input the Observation Photo object returned.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub UpdateObservationPhoto(obsPhotoId As Integer, position As Integer, photo As PhotoFile, callback As Action(Of ObservationPhoto), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.UpdateObservationPhoto*
+  nameWithType.vb: INatManager.UpdateObservationPhoto(Int32, Int32, PhotoFile, Action(Of ObservationPhoto), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.UpdateObservationPhoto(System.Int32, System.Int32, JoshAaronMiller.INaturalist.PhotoFile, Action(Of JoshAaronMiller.INaturalist.ObservationPhoto), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: UpdateObservationPhoto(Int32, Int32, PhotoFile, Action(Of ObservationPhoto), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.CreateObservationPhoto(System.Int32,System.String,JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.ObservationPhoto},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.CreateObservationPhoto(System.Int32,System.String,JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.ObservationPhoto},Action{JoshAaronMiller.INaturalist.Error})
+  id: CreateObservationPhoto(System.Int32,System.String,JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.ObservationPhoto},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: CreateObservationPhoto(Int32, String, PhotoFile, Action<ObservationPhoto>, Action<Error>)
+  nameWithType: INatManager.CreateObservationPhoto(Int32, String, PhotoFile, Action<ObservationPhoto>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.CreateObservationPhoto(System.Int32, System.String, JoshAaronMiller.INaturalist.PhotoFile, Action<JoshAaronMiller.INaturalist.ObservationPhoto>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: CreateObservationPhoto
+    path: ''
+    startLine: 1217
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nCreate an Observation Photo.\n"
+  example: []
+  syntax:
+    content: public void CreateObservationPhoto(int obsId, string obsUuid, PhotoFile photo, Action<ObservationPhoto> callback, Action<Error> errorCallback)
+    parameters:
+    - id: obsId
+      type: System.Int32
+      description: The Observation ID to add the photo to
+    - id: obsUuid
+      type: System.String
+      description: The UUID of the observation.
+    - id: photo
+      type: JoshAaronMiller.INaturalist.PhotoFile
+      description: The Photo to upload.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.ObservationPhoto}
+      description: A function to callback when the request is done which takes as input the Observation Photo object returned.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub CreateObservationPhoto(obsId As Integer, obsUuid As String, photo As PhotoFile, callback As Action(Of ObservationPhoto), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.CreateObservationPhoto*
+  nameWithType.vb: INatManager.CreateObservationPhoto(Int32, String, PhotoFile, Action(Of ObservationPhoto), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.CreateObservationPhoto(System.Int32, System.String, JoshAaronMiller.INaturalist.PhotoFile, Action(Of JoshAaronMiller.INaturalist.ObservationPhoto), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: CreateObservationPhoto(Int32, String, PhotoFile, Action(Of ObservationPhoto), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.DeleteObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.DeleteObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  id: DeleteObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: DeleteObservation(Int32, Action, Action<Error>)
+  nameWithType: INatManager.DeleteObservation(Int32, Action, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.DeleteObservation(System.Int32, Action, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: DeleteObservation
+    path: ''
+    startLine: 1238
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nDelete an Observation.\n"
+  example: []
+  syntax:
+    content: public void DeleteObservation(int obsId, Action callback, Action<Error> errorCallback)
+    parameters:
+    - id: obsId
+      type: System.Int32
+      description: The ID of the Observation.
+    - id: callback
+      type: Global.Action
+      description: A function to callback when the request is done.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub DeleteObservation(obsId As Integer, callback As Action, errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.DeleteObservation*
+  nameWithType.vb: INatManager.DeleteObservation(Int32, Action, Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.DeleteObservation(System.Int32, Action, Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: DeleteObservation(Int32, Action, Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetObservations(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetObservations(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetObservations(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetObservations(List<Int32>, Action<Results<Observation>>, Action<Error>)
+  nameWithType: INatManager.GetObservations(List<Int32>, Action<Results<Observation>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetObservations(System.Collections.Generic.List<System.Int32>, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.Observation>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetObservations
+    path: ''
+    startLine: 1250
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven an array of IDs, returns corresponding observations \n"
+  example: []
+  syntax:
+    content: public void GetObservations(List<int> ids, Action<Results<Observation>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: ids
+      type: System.Collections.Generic.List{System.Int32}
+      description: The list of observation IDs to fetch
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}}
+      description: A function to callback when the request is done which takes as input the Results list of Observation objects found.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetObservations(ids As List(Of Integer), callback As Action(Of Results(Of Observation)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetObservations*
+  nameWithType.vb: INatManager.GetObservations(List(Of Int32), Action(Of Results(Of Observation)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetObservations(System.Collections.Generic.List(Of System.Int32), Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.Observation)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetObservations(List(Of Int32), Action(Of Results(Of Observation)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetObservation(Int32, Action<Observation>, Action<Error>)
+  nameWithType: INatManager.GetObservation(Int32, Action<Observation>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetObservation(System.Int32, Action<JoshAaronMiller.INaturalist.Observation>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetObservation
+    path: ''
+    startLine: 1264
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven an ID, returns corresponding observations\n"
+  example: []
+  syntax:
+    content: public void GetObservation(int id, Action<Observation> callback, Action<Error> errorCallback)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: The observation ID to fetch
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Observation}
+      description: A function to callback when the request is done which takes as input the Observation object found.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetObservation(id As Integer, callback As Action(Of Observation), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetObservation*
+  nameWithType.vb: INatManager.GetObservation(Int32, Action(Of Observation), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetObservation(System.Int32, Action(Of JoshAaronMiller.INaturalist.Observation), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetObservation(Int32, Action(Of Observation), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.UpdateObservation(System.Int32,JoshAaronMiller.INaturalist.ObservationSubmission,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.UpdateObservation(System.Int32,JoshAaronMiller.INaturalist.ObservationSubmission,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  id: UpdateObservation(System.Int32,JoshAaronMiller.INaturalist.ObservationSubmission,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateObservation(Int32, ObservationSubmission, Action<Observation>, Action<Error>)
+  nameWithType: INatManager.UpdateObservation(Int32, ObservationSubmission, Action<Observation>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.UpdateObservation(System.Int32, JoshAaronMiller.INaturalist.ObservationSubmission, Action<JoshAaronMiller.INaturalist.Observation>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: UpdateObservation
+    path: ''
+    startLine: 1278
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nUpdate an Observation.\n"
+  example: []
+  syntax:
+    content: public void UpdateObservation(int obsId, ObservationSubmission observation, Action<Observation> callback, Action<Error> errorCallback)
+    parameters:
+    - id: obsId
+      type: System.Int32
+      description: The Observation ID to update
+    - id: observation
+      type: JoshAaronMiller.INaturalist.ObservationSubmission
+      description: An ObservationSubmission object containing the updated information for the observation.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Observation}
+      description: A function to callback when the request is done which takes as input the Observation object returned.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub UpdateObservation(obsId As Integer, observation As ObservationSubmission, callback As Action(Of Observation), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.UpdateObservation*
+  nameWithType.vb: INatManager.UpdateObservation(Int32, ObservationSubmission, Action(Of Observation), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.UpdateObservation(System.Int32, JoshAaronMiller.INaturalist.ObservationSubmission, Action(Of JoshAaronMiller.INaturalist.Observation), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: UpdateObservation(Int32, ObservationSubmission, Action(Of Observation), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.FaveObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.FaveObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  id: FaveObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: FaveObservation(Int32, Action<Observation>, Action<Error>)
+  nameWithType: INatManager.FaveObservation(Int32, Action<Observation>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.FaveObservation(System.Int32, Action<JoshAaronMiller.INaturalist.Observation>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: FaveObservation
+    path: ''
+    startLine: 1293
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\n&quot;Fave&quot; an Observation.\n"
+  example: []
+  syntax:
+    content: public void FaveObservation(int obsId, Action<Observation> callback, Action<Error> errorCallback)
+    parameters:
+    - id: obsId
+      type: System.Int32
+      description: The Observation ID.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Observation}
+      description: A function to callback when the request is done which takes as input the Observation object returned.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub FaveObservation(obsId As Integer, callback As Action(Of Observation), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.FaveObservation*
+  nameWithType.vb: INatManager.FaveObservation(Int32, Action(Of Observation), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.FaveObservation(System.Int32, Action(Of JoshAaronMiller.INaturalist.Observation), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: FaveObservation(Int32, Action(Of Observation), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.UnfaveObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.UnfaveObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  id: UnfaveObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: UnfaveObservation(Int32, Action, Action<Error>)
+  nameWithType: INatManager.UnfaveObservation(Int32, Action, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.UnfaveObservation(System.Int32, Action, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: UnfaveObservation
+    path: ''
+    startLine: 1305
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\n&quot;Unfave&quot; an Observation, or delete Fave mark.\n"
+  example: []
+  syntax:
+    content: public void UnfaveObservation(int obsId, Action callback, Action<Error> errorCallback)
+    parameters:
+    - id: obsId
+      type: System.Int32
+      description: The Observation ID.
+    - id: callback
+      type: Global.Action
+      description: A function to callback when the request is done.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub UnfaveObservation(obsId As Integer, callback As Action, errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.UnfaveObservation*
+  nameWithType.vb: INatManager.UnfaveObservation(Int32, Action, Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.UnfaveObservation(System.Int32, Action, Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: UnfaveObservation(Int32, Action, Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.ReviewObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.ReviewObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  id: ReviewObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: ReviewObservation(Int32, Action<Observation>, Action<Error>)
+  nameWithType: INatManager.ReviewObservation(Int32, Action<Observation>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.ReviewObservation(System.Int32, Action<JoshAaronMiller.INaturalist.Observation>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: ReviewObservation
+    path: ''
+    startLine: 1317
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nMark an observation as reviewed by the authenticated user.\n"
+  example: []
+  syntax:
+    content: public void ReviewObservation(int obsId, Action<Observation> callback, Action<Error> errorCallback)
+    parameters:
+    - id: obsId
+      type: System.Int32
+      description: The Observation ID.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Observation}
+      description: A function to callback when the request is done which takes as input the Observation object returned.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub ReviewObservation(obsId As Integer, callback As Action(Of Observation), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.ReviewObservation*
+  nameWithType.vb: INatManager.ReviewObservation(Int32, Action(Of Observation), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.ReviewObservation(System.Int32, Action(Of JoshAaronMiller.INaturalist.Observation), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: ReviewObservation(Int32, Action(Of Observation), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.UnreviewObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.UnreviewObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  id: UnreviewObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: UnreviewObservation(Int32, Action, Action<Error>)
+  nameWithType: INatManager.UnreviewObservation(Int32, Action, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.UnreviewObservation(System.Int32, Action, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: UnreviewObservation
+    path: ''
+    startLine: 1329
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nMark an observation as unreviewed by the authenticated user.\n"
+  example: []
+  syntax:
+    content: public void UnreviewObservation(int obsId, Action callback, Action<Error> errorCallback)
+    parameters:
+    - id: obsId
+      type: System.Int32
+      description: The Observation ID.
+    - id: callback
+      type: Global.Action
+      description: A function to callback when the request is done.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub UnreviewObservation(obsId As Integer, callback As Action, errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.UnreviewObservation*
+  nameWithType.vb: INatManager.UnreviewObservation(Int32, Action, Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.UnreviewObservation(System.Int32, Action, Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: UnreviewObservation(Int32, Action, Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetObservationTaxonSummary(System.Int32,Action{JoshAaronMiller.INaturalist.TaxonSummary},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetObservationTaxonSummary(System.Int32,Action{JoshAaronMiller.INaturalist.TaxonSummary},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetObservationTaxonSummary(System.Int32,Action{JoshAaronMiller.INaturalist.TaxonSummary},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetObservationTaxonSummary(Int32, Action<TaxonSummary>, Action<Error>)
+  nameWithType: INatManager.GetObservationTaxonSummary(Int32, Action<TaxonSummary>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetObservationTaxonSummary(System.Int32, Action<JoshAaronMiller.INaturalist.TaxonSummary>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetObservationTaxonSummary
+    path: ''
+    startLine: 1352
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven an observation ID, fetch the TaxonSummary of that Observation.\n"
+  remarks: "\nProbably most useful for getting a Wikipedia summary of the taxon, see TaxonSummary object.\n"
+  example: []
+  syntax:
+    content: public void GetObservationTaxonSummary(int obsId, Action<TaxonSummary> callback, Action<Error> errorCallback)
+    parameters:
+    - id: obsId
+      type: System.Int32
+      description: The observation  ID to fetch
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.TaxonSummary}
+      description: A function to callback when the request is done which takes as input the TaxonSummary object returned.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetObservationTaxonSummary(obsId As Integer, callback As Action(Of TaxonSummary), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetObservationTaxonSummary*
+  nameWithType.vb: INatManager.GetObservationTaxonSummary(Int32, Action(Of TaxonSummary), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetObservationTaxonSummary(System.Int32, Action(Of JoshAaronMiller.INaturalist.TaxonSummary), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetObservationTaxonSummary(Int32, Action(Of TaxonSummary), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.VoteObservation(System.Int32,JoshAaronMiller.INaturalist.Vote,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.VoteObservation(System.Int32,JoshAaronMiller.INaturalist.Vote,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  id: VoteObservation(System.Int32,JoshAaronMiller.INaturalist.Vote,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: VoteObservation(Int32, Vote, Action<Observation>, Action<Error>)
+  nameWithType: INatManager.VoteObservation(Int32, Vote, Action<Observation>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.VoteObservation(System.Int32, JoshAaronMiller.INaturalist.Vote, Action<JoshAaronMiller.INaturalist.Observation>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: VoteObservation
+    path: ''
+    startLine: 1369
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nVote on an Observation; see Vote object for usage.\n"
+  example: []
+  syntax:
+    content: public void VoteObservation(int obsId, Vote vote, Action<Observation> callback, Action<Error> errorCallback)
+    parameters:
+    - id: obsId
+      type: System.Int32
+      description: The Observation ID.
+    - id: vote
+      type: JoshAaronMiller.INaturalist.Vote
+      description: The Vote to submit.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Observation}
+      description: A function to callback when the request is done which takes as input the Observation object returned.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub VoteObservation(obsId As Integer, vote As Vote, callback As Action(Of Observation), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.VoteObservation*
+  nameWithType.vb: INatManager.VoteObservation(Int32, Vote, Action(Of Observation), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.VoteObservation(System.Int32, JoshAaronMiller.INaturalist.Vote, Action(Of JoshAaronMiller.INaturalist.Observation), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: VoteObservation(Int32, Vote, Action(Of Observation), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.UnvoteObservation(System.Int32,JoshAaronMiller.INaturalist.Vote,Action,Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.UnvoteObservation(System.Int32,JoshAaronMiller.INaturalist.Vote,Action,Action{JoshAaronMiller.INaturalist.Error})
+  id: UnvoteObservation(System.Int32,JoshAaronMiller.INaturalist.Vote,Action,Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: UnvoteObservation(Int32, Vote, Action, Action<Error>)
+  nameWithType: INatManager.UnvoteObservation(Int32, Vote, Action, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.UnvoteObservation(System.Int32, JoshAaronMiller.INaturalist.Vote, Action, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: UnvoteObservation
+    path: ''
+    startLine: 1383
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nDelete a Vote from an Observation.\n"
+  example: []
+  syntax:
+    content: public void UnvoteObservation(int obsId, Vote vote, Action callback, Action<Error> errorCallback)
+    parameters:
+    - id: obsId
+      type: System.Int32
+      description: The Observation ID.
+    - id: vote
+      type: JoshAaronMiller.INaturalist.Vote
+      description: The Vote to delete.
+    - id: callback
+      type: Global.Action
+      description: A function to callback when the request is done.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub UnvoteObservation(obsId As Integer, vote As Vote, callback As Action, errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.UnvoteObservation*
+  nameWithType.vb: INatManager.UnvoteObservation(Int32, Vote, Action, Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.UnvoteObservation(System.Int32, JoshAaronMiller.INaturalist.Vote, Action, Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: UnvoteObservation(Int32, Vote, Action, Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.SearchObservations(JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.SearchObservations(JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}},Action{JoshAaronMiller.INaturalist.Error})
+  id: SearchObservations(JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: SearchObservations(ObservationSearch, Action<Results<Observation>>, Action<Error>)
+  nameWithType: INatManager.SearchObservations(ObservationSearch, Action<Results<Observation>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.SearchObservations(JoshAaronMiller.INaturalist.ObservationSearch, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.Observation>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: SearchObservations
+    path: ''
+    startLine: 1397
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven an ObservationSearch object, returns a list of matching observations\n"
+  example: []
+  syntax:
+    content: public void SearchObservations(ObservationSearch obsSearch, Action<Results<Observation>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: obsSearch
+      type: JoshAaronMiller.INaturalist.ObservationSearch
+      description: An ObservationSearch object holding the parameters of the search
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}}
+      description: A function to callback when the request is done which takes as input the Results list of Observation objects found.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub SearchObservations(obsSearch As ObservationSearch, callback As Action(Of Results(Of Observation)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.SearchObservations*
+  nameWithType.vb: INatManager.SearchObservations(ObservationSearch, Action(Of Results(Of Observation)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.SearchObservations(JoshAaronMiller.INaturalist.ObservationSearch, Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.Observation)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: SearchObservations(ObservationSearch, Action(Of Results(Of Observation)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.CreateObservation(JoshAaronMiller.INaturalist.ObservationSubmission,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.CreateObservation(JoshAaronMiller.INaturalist.ObservationSubmission,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  id: CreateObservation(JoshAaronMiller.INaturalist.ObservationSubmission,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: CreateObservation(ObservationSubmission, Action<Observation>, Action<Error>)
+  nameWithType: INatManager.CreateObservation(ObservationSubmission, Action<Observation>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.CreateObservation(JoshAaronMiller.INaturalist.ObservationSubmission, Action<JoshAaronMiller.INaturalist.Observation>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: CreateObservation
+    path: ''
+    startLine: 1409
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nCreate an Observation.\n"
+  example: []
+  syntax:
+    content: public void CreateObservation(ObservationSubmission observation, Action<Observation> callback, Action<Error> errorCallback)
+    parameters:
+    - id: observation
+      type: JoshAaronMiller.INaturalist.ObservationSubmission
+      description: An ObservationSubmission object containing the information for the observation.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Observation}
+      description: A function to callback when the request is done which takes as input the Observation object returned.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub CreateObservation(observation As ObservationSubmission, callback As Action(Of Observation), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.CreateObservation*
+  nameWithType.vb: INatManager.CreateObservation(ObservationSubmission, Action(Of Observation), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.CreateObservation(JoshAaronMiller.INaturalist.ObservationSubmission, Action(Of JoshAaronMiller.INaturalist.Observation), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: CreateObservation(ObservationSubmission, Action(Of Observation), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetObservationSpeciesCounts(JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetObservationSpeciesCounts(JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetObservationSpeciesCounts(JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetObservationSpeciesCounts(ObservationSearch, Action<Results<SpeciesCount>>, Action<Error>)
+  nameWithType: INatManager.GetObservationSpeciesCounts(ObservationSearch, Action<Results<SpeciesCount>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetObservationSpeciesCounts(JoshAaronMiller.INaturalist.ObservationSearch, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.SpeciesCount>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetObservationSpeciesCounts
+    path: ''
+    startLine: 1441
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven an ObservationSearch object, returns the counts of how many observations matching the search have a particular leaf taxon.\n"
+  example: []
+  syntax:
+    content: public void GetObservationSpeciesCounts(ObservationSearch observationSearch, Action<Results<SpeciesCount>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: observationSearch
+      type: JoshAaronMiller.INaturalist.ObservationSearch
+      description: An ObservationSearch object holding the parameters of the search.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}}
+      description: A function to callback when the request is done which takes as input the Results list of SpeciesCount objects found.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetObservationSpeciesCounts(observationSearch As ObservationSearch, callback As Action(Of Results(Of SpeciesCount)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetObservationSpeciesCounts*
+  nameWithType.vb: INatManager.GetObservationSpeciesCounts(ObservationSearch, Action(Of Results(Of SpeciesCount)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetObservationSpeciesCounts(JoshAaronMiller.INaturalist.ObservationSearch, Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.SpeciesCount)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetObservationSpeciesCounts(ObservationSearch, Action(Of Results(Of SpeciesCount)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Int32,Action{JoshAaronMiller.INaturalist.Place},Action{JoshAaronMiller.INaturalist.Error},JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Int32,Action{JoshAaronMiller.INaturalist.Place},Action{JoshAaronMiller.INaturalist.Error},JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)
+  id: GetPlaceDetails(System.Int32,Action{JoshAaronMiller.INaturalist.Place},Action{JoshAaronMiller.INaturalist.Error},JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetPlaceDetails(Int32, Action<Place>, Action<Error>, INatManager.PlaceAdminLevel)
+  nameWithType: INatManager.GetPlaceDetails(Int32, Action<Place>, Action<Error>, INatManager.PlaceAdminLevel)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Int32, Action<JoshAaronMiller.INaturalist.Place>, Action<JoshAaronMiller.INaturalist.Error>, JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)
+  type: Method
+  source:
+    id: GetPlaceDetails
+    path: ''
+    startLine: 1461
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven an ID, return the corresponding Place.\n"
+  example: []
+  syntax:
+    content: public void GetPlaceDetails(int placeId, Action<Place> callback, Action<Error> errorCallback, INatManager.PlaceAdminLevel adminLevel = INatManager.PlaceAdminLevel.None)
+    parameters:
+    - id: placeId
+      type: System.Int32
+      description: The ID of the Place.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Place}
+      description: A function to callback when the request is done which takes as input the Place fetched.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    - id: adminLevel
+      type: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+      description: Optionally, the admin level of the place to search.
+    content.vb: Public Sub GetPlaceDetails(placeId As Integer, callback As Action(Of Place), errorCallback As Action(Of  Error), adminLevel As INatManager.PlaceAdminLevel = INatManager.PlaceAdminLevel.None)
+  overload: JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails*
+  nameWithType.vb: INatManager.GetPlaceDetails(Int32, Action(Of Place), Action(Of Error), INatManager.PlaceAdminLevel)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Int32, Action(Of JoshAaronMiller.INaturalist.Place), Action(Of JoshAaronMiller.INaturalist.Error), JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)
+  name.vb: GetPlaceDetails(Int32, Action(Of Place), Action(Of Error), INatManager.PlaceAdminLevel)
+- uid: JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}},Action{JoshAaronMiller.INaturalist.Error},JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}},Action{JoshAaronMiller.INaturalist.Error},JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)
+  id: GetPlaceDetails(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}},Action{JoshAaronMiller.INaturalist.Error},JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetPlaceDetails(List<Int32>, Action<Results<Place>>, Action<Error>, INatManager.PlaceAdminLevel)
+  nameWithType: INatManager.GetPlaceDetails(List<Int32>, Action<Results<Place>>, Action<Error>, INatManager.PlaceAdminLevel)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Collections.Generic.List<System.Int32>, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.Place>>, Action<JoshAaronMiller.INaturalist.Error>, JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)
+  type: Method
+  source:
+    id: GetPlaceDetails
+    path: ''
+    startLine: 1479
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven a list of IDs, return the corresponding Places.\n"
+  example: []
+  syntax:
+    content: public void GetPlaceDetails(List<int> placeIds, Action<Results<Place>> callback, Action<Error> errorCallback, INatManager.PlaceAdminLevel adminLevel = INatManager.PlaceAdminLevel.None)
+    parameters:
+    - id: placeIds
+      type: System.Collections.Generic.List{System.Int32}
+      description: The IDs of the Places.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}}
+      description: A function to callback when the request is done which takes as input the Results list of Places fetched.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    - id: adminLevel
+      type: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+      description: Optionally, the admin level of the place to search.
+    content.vb: Public Sub GetPlaceDetails(placeIds As List(Of Integer), callback As Action(Of Results(Of Place)), errorCallback As Action(Of  Error), adminLevel As INatManager.PlaceAdminLevel = INatManager.PlaceAdminLevel.None)
+  overload: JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails*
+  nameWithType.vb: INatManager.GetPlaceDetails(List(Of Int32), Action(Of Results(Of Place)), Action(Of Error), INatManager.PlaceAdminLevel)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Collections.Generic.List(Of System.Int32), Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.Place)), Action(Of JoshAaronMiller.INaturalist.Error), JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)
+  name.vb: GetPlaceDetails(List(Of Int32), Action(Of Results(Of Place)), Action(Of Error), INatManager.PlaceAdminLevel)
+- uid: JoshAaronMiller.INaturalist.INatManager.GetPlacesAutocomplete(System.String,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}},Action{JoshAaronMiller.INaturalist.Error},System.Boolean)
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetPlacesAutocomplete(System.String,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}},Action{JoshAaronMiller.INaturalist.Error},System.Boolean)
+  id: GetPlacesAutocomplete(System.String,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}},Action{JoshAaronMiller.INaturalist.Error},System.Boolean)
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetPlacesAutocomplete(String, Action<Results<Place>>, Action<Error>, Boolean)
+  nameWithType: INatManager.GetPlacesAutocomplete(String, Action<Results<Place>>, Action<Error>, Boolean)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetPlacesAutocomplete(System.String, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.Place>>, Action<JoshAaronMiller.INaturalist.Error>, System.Boolean)
+  type: Method
+  source:
+    id: GetPlacesAutocomplete
+    path: ''
+    startLine: 1499
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven a string query, find all places with names starting with the query.\n"
+  example: []
+  syntax:
+    content: public void GetPlacesAutocomplete(string query, Action<Results<Place>> callback, Action<Error> errorCallback, bool orderByArea = false)
+    parameters:
+    - id: query
+      type: System.String
+      description: The search term.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}}
+      description: A function to callback when the request is done which takes as input the Results list of Places fetched.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    - id: orderByArea
+      type: System.Boolean
+      description: If true, sort the results by area (default false).
+    content.vb: Public Sub GetPlacesAutocomplete(query As String, callback As Action(Of Results(Of Place)), errorCallback As Action(Of  Error), orderByArea As Boolean = False)
+  overload: JoshAaronMiller.INaturalist.INatManager.GetPlacesAutocomplete*
+  nameWithType.vb: INatManager.GetPlacesAutocomplete(String, Action(Of Results(Of Place)), Action(Of Error), Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetPlacesAutocomplete(System.String, Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.Place)), Action(Of JoshAaronMiller.INaturalist.Error), System.Boolean)
+  name.vb: GetPlacesAutocomplete(String, Action(Of Results(Of Place)), Action(Of Error), Boolean)
+- uid: JoshAaronMiller.INaturalist.INatManager.GetPlacesNearby(System.Double,System.Double,System.Double,System.Double,Action{JoshAaronMiller.INaturalist.PlacesByCuration},Action{JoshAaronMiller.INaturalist.Error},System.String,System.Int32)
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetPlacesNearby(System.Double,System.Double,System.Double,System.Double,Action{JoshAaronMiller.INaturalist.PlacesByCuration},Action{JoshAaronMiller.INaturalist.Error},System.String,System.Int32)
+  id: GetPlacesNearby(System.Double,System.Double,System.Double,System.Double,Action{JoshAaronMiller.INaturalist.PlacesByCuration},Action{JoshAaronMiller.INaturalist.Error},System.String,System.Int32)
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetPlacesNearby(Double, Double, Double, Double, Action<PlacesByCuration>, Action<Error>, String, Int32)
+  nameWithType: INatManager.GetPlacesNearby(Double, Double, Double, Double, Action<PlacesByCuration>, Action<Error>, String, Int32)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetPlacesNearby(System.Double, System.Double, System.Double, System.Double, Action<JoshAaronMiller.INaturalist.PlacesByCuration>, Action<JoshAaronMiller.INaturalist.Error>, System.String, System.Int32)
+  type: Method
+  source:
+    id: GetPlacesNearby
+    path: ''
+    startLine: 1522
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven a bounding box and optional name query, return nearby places separated by curation status.\n"
+  example: []
+  syntax:
+    content: public void GetPlacesNearby(double nelat, double nelng, double swlat, double swlng, Action<PlacesByCuration> callback, Action<Error> errorCallback, string name = "", int perPage = 30)
+    parameters:
+    - id: nelat
+      type: System.Double
+      description: The northeast latitude corner of the bounding box.
+    - id: nelng
+      type: System.Double
+      description: The northeast longitude corner of the bounding box.
+    - id: swlat
+      type: System.Double
+      description: The southwest latitude corner of the bounding box.
+    - id: swlng
+      type: System.Double
+      description: The southwest longitude corner of the bounding box.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.PlacesByCuration}
+      description: A function to callback when the request is done which takes as input the list of PlacesByCuration fetched.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    - id: name
+      type: System.String
+      description: The optional search term for the name.
+    - id: perPage
+      type: System.Int32
+      description: Number of results per page (default 30, max 200).
+    content.vb: Public Sub GetPlacesNearby(nelat As Double, nelng As Double, swlat As Double, swlng As Double, callback As Action(Of PlacesByCuration), errorCallback As Action(Of  Error), name As String = "", perPage As Integer = 30)
+  overload: JoshAaronMiller.INaturalist.INatManager.GetPlacesNearby*
+  nameWithType.vb: INatManager.GetPlacesNearby(Double, Double, Double, Double, Action(Of PlacesByCuration), Action(Of Error), String, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetPlacesNearby(System.Double, System.Double, System.Double, System.Double, Action(Of JoshAaronMiller.INaturalist.PlacesByCuration), Action(Of JoshAaronMiller.INaturalist.Error), System.String, System.Int32)
+  name.vb: GetPlacesNearby(Double, Double, Double, Double, Action(Of PlacesByCuration), Action(Of Error), String, Int32)
+- uid: JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetTaxonDetails(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetTaxonDetails(List<Int32>, Action<Results<Taxon>>, Action<Error>)
+  nameWithType: INatManager.GetTaxonDetails(List<Int32>, Action<Results<Taxon>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Collections.Generic.List<System.Int32>, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.Taxon>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetTaxonDetails
+    path: ''
+    startLine: 1582
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven an array of IDs, returns corresponding Taxa \n"
+  example: []
+  syntax:
+    content: public void GetTaxonDetails(List<int> taxaIds, Action<Results<Taxon>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: taxaIds
+      type: System.Collections.Generic.List{System.Int32}
+      description: The list of taxa IDs to fetch
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}}
+      description: A function to callback when the request is done which takes as input the Results list of Taxon objects found.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetTaxonDetails(taxaIds As List(Of Integer), callback As Action(Of Results(Of Taxon)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails*
+  nameWithType.vb: INatManager.GetTaxonDetails(List(Of Int32), Action(Of Results(Of Taxon)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Collections.Generic.List(Of System.Int32), Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.Taxon)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetTaxonDetails(List(Of Int32), Action(Of Results(Of Taxon)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Int32,Action{JoshAaronMiller.INaturalist.Taxon},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Int32,Action{JoshAaronMiller.INaturalist.Taxon},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetTaxonDetails(System.Int32,Action{JoshAaronMiller.INaturalist.Taxon},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetTaxonDetails(Int32, Action<Taxon>, Action<Error>)
+  nameWithType: INatManager.GetTaxonDetails(Int32, Action<Taxon>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Int32, Action<JoshAaronMiller.INaturalist.Taxon>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetTaxonDetails
+    path: ''
+    startLine: 1595
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven an ID, returns corresponding Taxon \n"
+  example: []
+  syntax:
+    content: public void GetTaxonDetails(int taxonId, Action<Taxon> callback, Action<Error> errorCallback)
+    parameters:
+    - id: taxonId
+      type: System.Int32
+      description: The Taxon ID to fetch
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Taxon}
+      description: A function to callback when the request is done which takes as input the Taxon object found.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetTaxonDetails(taxonId As Integer, callback As Action(Of Taxon), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails*
+  nameWithType.vb: INatManager.GetTaxonDetails(Int32, Action(Of Taxon), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Int32, Action(Of JoshAaronMiller.INaturalist.Taxon), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetTaxonDetails(Int32, Action(Of Taxon), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.SearchTaxa(JoshAaronMiller.INaturalist.TaxonSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.SearchTaxa(JoshAaronMiller.INaturalist.TaxonSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}},Action{JoshAaronMiller.INaturalist.Error})
+  id: SearchTaxa(JoshAaronMiller.INaturalist.TaxonSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: SearchTaxa(TaxonSearch, Action<Results<Taxon>>, Action<Error>)
+  nameWithType: INatManager.SearchTaxa(TaxonSearch, Action<Results<Taxon>>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.SearchTaxa(JoshAaronMiller.INaturalist.TaxonSearch, Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.Taxon>>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: SearchTaxa
+    path: ''
+    startLine: 1608
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nGiven a TaxonSearch object, returns a list of matching taxa\n"
+  example: []
+  syntax:
+    content: public void SearchTaxa(TaxonSearch taxonSearch, Action<Results<Taxon>> callback, Action<Error> errorCallback)
+    parameters:
+    - id: taxonSearch
+      type: JoshAaronMiller.INaturalist.TaxonSearch
+      description: An TaxonSearch object holding the parameters of the search
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}}
+      description: A function to callback when the request is done which takes as input the Results list of Taxon objects found.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub SearchTaxa(taxonSearch As TaxonSearch, callback As Action(Of Results(Of Taxon)), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.SearchTaxa*
+  nameWithType.vb: INatManager.SearchTaxa(TaxonSearch, Action(Of Results(Of Taxon)), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.SearchTaxa(JoshAaronMiller.INaturalist.TaxonSearch, Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.Taxon)), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: SearchTaxa(TaxonSearch, Action(Of Results(Of Taxon)), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.GetUserMe(Action{JoshAaronMiller.INaturalist.User},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.GetUserMe(Action{JoshAaronMiller.INaturalist.User},Action{JoshAaronMiller.INaturalist.Error})
+  id: GetUserMe(Action{JoshAaronMiller.INaturalist.User},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: GetUserMe(Action<User>, Action<Error>)
+  nameWithType: INatManager.GetUserMe(Action<User>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetUserMe(Action<JoshAaronMiller.INaturalist.User>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: GetUserMe
+    path: ''
+    startLine: 1630
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nFetch the User details for the authenticated user.\n"
+  example: []
+  syntax:
+    content: public void GetUserMe(Action<User> callback, Action<Error> errorCallback)
+    parameters:
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.User}
+      description: A function to callback when the request is done which takes as input the User object.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub GetUserMe(callback As Action(Of User), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.GetUserMe*
+  nameWithType.vb: INatManager.GetUserMe(Action(Of User), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.GetUserMe(Action(Of JoshAaronMiller.INaturalist.User), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: GetUserMe(Action(Of User), Action(Of Error))
+- uid: JoshAaronMiller.INaturalist.INatManager.CreatePhoto(JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.PhotoJson},Action{JoshAaronMiller.INaturalist.Error})
+  commentId: M:JoshAaronMiller.INaturalist.INatManager.CreatePhoto(JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.PhotoJson},Action{JoshAaronMiller.INaturalist.Error})
+  id: CreatePhoto(JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.PhotoJson},Action{JoshAaronMiller.INaturalist.Error})
+  parent: JoshAaronMiller.INaturalist.INatManager
+  langs:
+  - csharp
+  - vb
+  name: CreatePhoto(PhotoFile, Action<PhotoJson>, Action<Error>)
+  nameWithType: INatManager.CreatePhoto(PhotoFile, Action<PhotoJson>, Action<Error>)
+  fullName: JoshAaronMiller.INaturalist.INatManager.CreatePhoto(JoshAaronMiller.INaturalist.PhotoFile, Action<JoshAaronMiller.INaturalist.PhotoJson>, Action<JoshAaronMiller.INaturalist.Error>)
+  type: Method
+  source:
+    id: CreatePhoto
+    path: ''
+    startLine: 1678
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nCreate a Photo.\n"
+  example: []
+  syntax:
+    content: public void CreatePhoto(PhotoFile photo, Action<PhotoJson> callback, Action<Error> errorCallback)
+    parameters:
+    - id: photo
+      type: JoshAaronMiller.INaturalist.PhotoFile
+      description: The Photo to upload.
+    - id: callback
+      type: Global.Action{JoshAaronMiller.INaturalist.PhotoJson}
+      description: A function to callback when the request is done which takes as input the Photo object returned.
+    - id: errorCallback
+      type: Global.Action{JoshAaronMiller.INaturalist.Error}
+      description: A function to callback when iNaturalist returns an error message.
+    content.vb: Public Sub CreatePhoto(photo As PhotoFile, callback As Action(Of PhotoJson), errorCallback As Action(Of  Error))
+  overload: JoshAaronMiller.INaturalist.INatManager.CreatePhoto*
+  nameWithType.vb: INatManager.CreatePhoto(PhotoFile, Action(Of PhotoJson), Action(Of Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.INatManager.CreatePhoto(JoshAaronMiller.INaturalist.PhotoFile, Action(Of JoshAaronMiller.INaturalist.PhotoJson), Action(Of JoshAaronMiller.INaturalist.Error))
+  name.vb: CreatePhoto(PhotoFile, Action(Of PhotoJson), Action(Of Error))
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: JoshAaronMiller.INaturalist.INatManager.GetApiToken*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetApiToken
+  name: GetApiToken
+  nameWithType: INatManager.GetApiToken
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetApiToken
+- uid: JoshAaronMiller.INaturalist.INatManager.SetApiToken*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.SetApiToken
+  name: SetApiToken
+  nameWithType: INatManager.SetApiToken
+  fullName: JoshAaronMiller.INaturalist.INatManager.SetApiToken
+- uid: JoshAaronMiller.INaturalist.INatManager.GetTermsIndex*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetTermsIndex
+  name: GetTermsIndex
+  nameWithType: INatManager.GetTermsIndex
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetTermsIndex
+- uid: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}}'
+  definition: Global.Action`1
+  name: Action<Results<ControlledTerm>>
+  nameWithType: Action<Results<ControlledTerm>>
+  fullName: Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.ControlledTerm>>
+  nameWithType.vb: Action(Of Results(Of ControlledTerm))
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.ControlledTerm))
+  name.vb: Action(Of Results(Of ControlledTerm))
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.ControlledTerm
+    name: ControlledTerm
+    nameWithType: ControlledTerm
+    fullName: JoshAaronMiller.INaturalist.ControlledTerm
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.ControlledTerm
+    name: ControlledTerm
+    nameWithType: ControlledTerm
+    fullName: JoshAaronMiller.INaturalist.ControlledTerm
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.Action{JoshAaronMiller.INaturalist.Error}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Error}'
+  definition: Global.Action`1
+  name: Action<Error>
+  nameWithType: Action<Error>
+  fullName: Action<JoshAaronMiller.INaturalist.Error>
+  nameWithType.vb: Action(Of Error)
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Error)
+  name.vb: Action(Of Error)
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Error
+    name: Error
+    nameWithType: Error
+    fullName: JoshAaronMiller.INaturalist.Error
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Error
+    name: Error
+    nameWithType: Error
+    fullName: JoshAaronMiller.INaturalist.Error
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.GetTermsForTaxon*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetTermsForTaxon
+  name: GetTermsForTaxon
+  nameWithType: INatManager.GetTermsForTaxon
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetTermsForTaxon
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: JoshAaronMiller.INaturalist.INatManager.CreateFlag*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.CreateFlag
+  name: CreateFlag
+  nameWithType: INatManager.CreateFlag
+  fullName: JoshAaronMiller.INaturalist.INatManager.CreateFlag
+- uid: JoshAaronMiller.INaturalist.WrappedFlag
+  commentId: T:JoshAaronMiller.INaturalist.WrappedFlag
+  parent: JoshAaronMiller.INaturalist
+  name: WrappedFlag
+  nameWithType: WrappedFlag
+  fullName: JoshAaronMiller.INaturalist.WrappedFlag
+- uid: Global.Action{JoshAaronMiller.INaturalist.Identification}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Identification}'
+  definition: Global.Action`1
+  name: Action<Identification>
+  nameWithType: Action<Identification>
+  fullName: Action<JoshAaronMiller.INaturalist.Identification>
+  nameWithType.vb: Action(Of Identification)
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Identification)
+  name.vb: Action(Of Identification)
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Identification
+    name: Identification
+    nameWithType: Identification
+    fullName: JoshAaronMiller.INaturalist.Identification
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Identification
+    name: Identification
+    nameWithType: Identification
+    fullName: JoshAaronMiller.INaturalist.Identification
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.DeleteFlag*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.DeleteFlag
+  name: DeleteFlag
+  nameWithType: INatManager.DeleteFlag
+  fullName: JoshAaronMiller.INaturalist.INatManager.DeleteFlag
+- uid: Global.Action
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: Action
+- uid: JoshAaronMiller.INaturalist.INatManager.UpdateFlag*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.UpdateFlag
+  name: UpdateFlag
+  nameWithType: INatManager.UpdateFlag
+  fullName: JoshAaronMiller.INaturalist.INatManager.UpdateFlag
+- uid: JoshAaronMiller.INaturalist.INatManager.DeleteIdentification*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.DeleteIdentification
+  name: DeleteIdentification
+  nameWithType: INatManager.DeleteIdentification
+  fullName: JoshAaronMiller.INaturalist.INatManager.DeleteIdentification
+- uid: Global.Action{System.String}
+  commentId: '!:Global.Action{System.String}'
+  definition: Global.Action`1
+  name: Action<String>
+  nameWithType: Action<String>
+  fullName: Action<System.String>
+  nameWithType.vb: Action(Of String)
+  fullName.vb: Action(Of System.String)
+  name.vb: Action(Of String)
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.GetIdentifications*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetIdentifications
+  name: GetIdentifications
+  nameWithType: INatManager.GetIdentifications
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetIdentifications
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: System.Collections.Generic.List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: System.Collections.Generic.List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}}'
+  definition: Global.Action`1
+  name: Action<Results<Identification>>
+  nameWithType: Action<Results<Identification>>
+  fullName: Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.Identification>>
+  nameWithType.vb: Action(Of Results(Of Identification))
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.Identification))
+  name.vb: Action(Of Results(Of Identification))
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Identification
+    name: Identification
+    nameWithType: Identification
+    fullName: JoshAaronMiller.INaturalist.Identification
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Identification
+    name: Identification
+    nameWithType: Identification
+    fullName: JoshAaronMiller.INaturalist.Identification
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: JoshAaronMiller.INaturalist.INatManager.GetIdentification*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetIdentification
+  name: GetIdentification
+  nameWithType: INatManager.GetIdentification
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetIdentification
+- uid: JoshAaronMiller.INaturalist.INatManager.UpdateIdentification*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.UpdateIdentification
+  name: UpdateIdentification
+  nameWithType: INatManager.UpdateIdentification
+  fullName: JoshAaronMiller.INaturalist.INatManager.UpdateIdentification
+- uid: JoshAaronMiller.INaturalist.IdentificationSubmission
+  commentId: T:JoshAaronMiller.INaturalist.IdentificationSubmission
+  parent: JoshAaronMiller.INaturalist
+  name: IdentificationSubmission
+  nameWithType: IdentificationSubmission
+  fullName: JoshAaronMiller.INaturalist.IdentificationSubmission
+- uid: JoshAaronMiller.INaturalist.INatManager.SearchIdentifications*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.SearchIdentifications
+  name: SearchIdentifications
+  nameWithType: INatManager.SearchIdentifications
+  fullName: JoshAaronMiller.INaturalist.INatManager.SearchIdentifications
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch
+  commentId: T:JoshAaronMiller.INaturalist.IdentificationSearch
+  parent: JoshAaronMiller.INaturalist
+  name: IdentificationSearch
+  nameWithType: IdentificationSearch
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch
+- uid: JoshAaronMiller.INaturalist.INatManager.CreateIdentification*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.CreateIdentification
+  name: CreateIdentification
+  nameWithType: INatManager.CreateIdentification
+  fullName: JoshAaronMiller.INaturalist.INatManager.CreateIdentification
+- uid: JoshAaronMiller.INaturalist.INatManager.GetIdentificationCategories*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetIdentificationCategories
+  name: GetIdentificationCategories
+  nameWithType: INatManager.GetIdentificationCategories
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetIdentificationCategories
+- uid: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.IdentificationCategoryCount}}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.IdentificationCategoryCount}}'
+  definition: Global.Action`1
+  name: Action<Results<IdentificationCategoryCount>>
+  nameWithType: Action<Results<IdentificationCategoryCount>>
+  fullName: Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.IdentificationCategoryCount>>
+  nameWithType.vb: Action(Of Results(Of IdentificationCategoryCount))
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.IdentificationCategoryCount))
+  name.vb: Action(Of Results(Of IdentificationCategoryCount))
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.IdentificationCategoryCount
+    name: IdentificationCategoryCount
+    nameWithType: IdentificationCategoryCount
+    fullName: JoshAaronMiller.INaturalist.IdentificationCategoryCount
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.IdentificationCategoryCount
+    name: IdentificationCategoryCount
+    nameWithType: IdentificationCategoryCount
+    fullName: JoshAaronMiller.INaturalist.IdentificationCategoryCount
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.GetIdentificationSpeciesCounts*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetIdentificationSpeciesCounts
+  name: GetIdentificationSpeciesCounts
+  nameWithType: INatManager.GetIdentificationSpeciesCounts
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetIdentificationSpeciesCounts
+- uid: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}}'
+  definition: Global.Action`1
+  name: Action<Results<SpeciesCount>>
+  nameWithType: Action<Results<SpeciesCount>>
+  fullName: Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.SpeciesCount>>
+  nameWithType.vb: Action(Of Results(Of SpeciesCount))
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.SpeciesCount))
+  name.vb: Action(Of Results(Of SpeciesCount))
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.SpeciesCount
+    name: SpeciesCount
+    nameWithType: SpeciesCount
+    fullName: JoshAaronMiller.INaturalist.SpeciesCount
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.SpeciesCount
+    name: SpeciesCount
+    nameWithType: SpeciesCount
+    fullName: JoshAaronMiller.INaturalist.SpeciesCount
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies
+  name: GetSimilarSpecies
+  nameWithType: INatManager.GetSimilarSpecies
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies
+- uid: JoshAaronMiller.INaturalist.ObservationSearch
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch
+  nameWithType: ObservationSearch
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch
+- uid: JoshAaronMiller.INaturalist.INatManager.SearchUserMessages*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.SearchUserMessages
+  name: SearchUserMessages
+  nameWithType: INatManager.SearchUserMessages
+  fullName: JoshAaronMiller.INaturalist.INatManager.SearchUserMessages
+- uid: JoshAaronMiller.INaturalist.MessageSearch
+  commentId: T:JoshAaronMiller.INaturalist.MessageSearch
+  parent: JoshAaronMiller.INaturalist
+  name: MessageSearch
+  nameWithType: MessageSearch
+  fullName: JoshAaronMiller.INaturalist.MessageSearch
+- uid: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}}'
+  definition: Global.Action`1
+  name: Action<Results<UserMessage>>
+  nameWithType: Action<Results<UserMessage>>
+  fullName: Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.UserMessage>>
+  nameWithType.vb: Action(Of Results(Of UserMessage))
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.UserMessage))
+  name.vb: Action(Of Results(Of UserMessage))
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.UserMessage
+    name: UserMessage
+    nameWithType: UserMessage
+    fullName: JoshAaronMiller.INaturalist.UserMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.UserMessage
+    name: UserMessage
+    nameWithType: UserMessage
+    fullName: JoshAaronMiller.INaturalist.UserMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.CreateUserMessage*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.CreateUserMessage
+  name: CreateUserMessage
+  nameWithType: INatManager.CreateUserMessage
+  fullName: JoshAaronMiller.INaturalist.INatManager.CreateUserMessage
+- uid: JoshAaronMiller.INaturalist.UserMessage
+  commentId: T:JoshAaronMiller.INaturalist.UserMessage
+  parent: JoshAaronMiller.INaturalist
+  name: UserMessage
+  nameWithType: UserMessage
+  fullName: JoshAaronMiller.INaturalist.UserMessage
+- uid: Global.Action{JoshAaronMiller.INaturalist.UserMessage}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.UserMessage}'
+  definition: Global.Action`1
+  name: Action<UserMessage>
+  nameWithType: Action<UserMessage>
+  fullName: Action<JoshAaronMiller.INaturalist.UserMessage>
+  nameWithType.vb: Action(Of UserMessage)
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.UserMessage)
+  name.vb: Action(Of UserMessage)
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.UserMessage
+    name: UserMessage
+    nameWithType: UserMessage
+    fullName: JoshAaronMiller.INaturalist.UserMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.UserMessage
+    name: UserMessage
+    nameWithType: UserMessage
+    fullName: JoshAaronMiller.INaturalist.UserMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.DeleteUserMessageThread*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.DeleteUserMessageThread
+  name: DeleteUserMessageThread
+  nameWithType: INatManager.DeleteUserMessageThread
+  fullName: JoshAaronMiller.INaturalist.INatManager.DeleteUserMessageThread
+- uid: JoshAaronMiller.INaturalist.INatManager.GetUserMessageThread*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetUserMessageThread
+  name: GetUserMessageThread
+  nameWithType: INatManager.GetUserMessageThread
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetUserMessageThread
+- uid: JoshAaronMiller.INaturalist.INatManager.GetCountUnreadMessages*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetCountUnreadMessages
+  name: GetCountUnreadMessages
+  nameWithType: INatManager.GetCountUnreadMessages
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetCountUnreadMessages
+- uid: Global.Action{JoshAaronMiller.INaturalist.Count}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Count}'
+  definition: Global.Action`1
+  name: Action<Count>
+  nameWithType: Action<Count>
+  fullName: Action<JoshAaronMiller.INaturalist.Count>
+  nameWithType.vb: Action(Of Count)
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Count)
+  name.vb: Action(Of Count)
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Count
+    name: Count
+    nameWithType: Count
+    fullName: JoshAaronMiller.INaturalist.Count
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Count
+    name: Count
+    nameWithType: Count
+    fullName: JoshAaronMiller.INaturalist.Count
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.DeleteObservationPhoto*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.DeleteObservationPhoto
+  name: DeleteObservationPhoto
+  nameWithType: INatManager.DeleteObservationPhoto
+  fullName: JoshAaronMiller.INaturalist.INatManager.DeleteObservationPhoto
+- uid: JoshAaronMiller.INaturalist.INatManager.UpdateObservationPhoto*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.UpdateObservationPhoto
+  name: UpdateObservationPhoto
+  nameWithType: INatManager.UpdateObservationPhoto
+  fullName: JoshAaronMiller.INaturalist.INatManager.UpdateObservationPhoto
+- uid: JoshAaronMiller.INaturalist.PhotoFile
+  commentId: T:JoshAaronMiller.INaturalist.PhotoFile
+  parent: JoshAaronMiller.INaturalist
+  name: PhotoFile
+  nameWithType: PhotoFile
+  fullName: JoshAaronMiller.INaturalist.PhotoFile
+- uid: Global.Action{JoshAaronMiller.INaturalist.ObservationPhoto}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.ObservationPhoto}'
+  definition: Global.Action`1
+  name: Action<ObservationPhoto>
+  nameWithType: Action<ObservationPhoto>
+  fullName: Action<JoshAaronMiller.INaturalist.ObservationPhoto>
+  nameWithType.vb: Action(Of ObservationPhoto)
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.ObservationPhoto)
+  name.vb: Action(Of ObservationPhoto)
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.ObservationPhoto
+    name: ObservationPhoto
+    nameWithType: ObservationPhoto
+    fullName: JoshAaronMiller.INaturalist.ObservationPhoto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.ObservationPhoto
+    name: ObservationPhoto
+    nameWithType: ObservationPhoto
+    fullName: JoshAaronMiller.INaturalist.ObservationPhoto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.CreateObservationPhoto*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.CreateObservationPhoto
+  name: CreateObservationPhoto
+  nameWithType: INatManager.CreateObservationPhoto
+  fullName: JoshAaronMiller.INaturalist.INatManager.CreateObservationPhoto
+- uid: JoshAaronMiller.INaturalist.INatManager.DeleteObservation*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.DeleteObservation
+  name: DeleteObservation
+  nameWithType: INatManager.DeleteObservation
+  fullName: JoshAaronMiller.INaturalist.INatManager.DeleteObservation
+- uid: JoshAaronMiller.INaturalist.INatManager.GetObservations*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetObservations
+  name: GetObservations
+  nameWithType: INatManager.GetObservations
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetObservations
+- uid: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}}'
+  definition: Global.Action`1
+  name: Action<Results<Observation>>
+  nameWithType: Action<Results<Observation>>
+  fullName: Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.Observation>>
+  nameWithType.vb: Action(Of Results(Of Observation))
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.Observation))
+  name.vb: Action(Of Results(Of Observation))
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Observation
+    name: Observation
+    nameWithType: Observation
+    fullName: JoshAaronMiller.INaturalist.Observation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Observation
+    name: Observation
+    nameWithType: Observation
+    fullName: JoshAaronMiller.INaturalist.Observation
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.GetObservation*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetObservation
+  name: GetObservation
+  nameWithType: INatManager.GetObservation
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetObservation
+- uid: Global.Action{JoshAaronMiller.INaturalist.Observation}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Observation}'
+  definition: Global.Action`1
+  name: Action<Observation>
+  nameWithType: Action<Observation>
+  fullName: Action<JoshAaronMiller.INaturalist.Observation>
+  nameWithType.vb: Action(Of Observation)
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Observation)
+  name.vb: Action(Of Observation)
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Observation
+    name: Observation
+    nameWithType: Observation
+    fullName: JoshAaronMiller.INaturalist.Observation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Observation
+    name: Observation
+    nameWithType: Observation
+    fullName: JoshAaronMiller.INaturalist.Observation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.UpdateObservation*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.UpdateObservation
+  name: UpdateObservation
+  nameWithType: INatManager.UpdateObservation
+  fullName: JoshAaronMiller.INaturalist.INatManager.UpdateObservation
+- uid: JoshAaronMiller.INaturalist.ObservationSubmission
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSubmission
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSubmission
+  nameWithType: ObservationSubmission
+  fullName: JoshAaronMiller.INaturalist.ObservationSubmission
+- uid: JoshAaronMiller.INaturalist.INatManager.FaveObservation*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.FaveObservation
+  name: FaveObservation
+  nameWithType: INatManager.FaveObservation
+  fullName: JoshAaronMiller.INaturalist.INatManager.FaveObservation
+- uid: JoshAaronMiller.INaturalist.INatManager.UnfaveObservation*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.UnfaveObservation
+  name: UnfaveObservation
+  nameWithType: INatManager.UnfaveObservation
+  fullName: JoshAaronMiller.INaturalist.INatManager.UnfaveObservation
+- uid: JoshAaronMiller.INaturalist.INatManager.ReviewObservation*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.ReviewObservation
+  name: ReviewObservation
+  nameWithType: INatManager.ReviewObservation
+  fullName: JoshAaronMiller.INaturalist.INatManager.ReviewObservation
+- uid: JoshAaronMiller.INaturalist.INatManager.UnreviewObservation*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.UnreviewObservation
+  name: UnreviewObservation
+  nameWithType: INatManager.UnreviewObservation
+  fullName: JoshAaronMiller.INaturalist.INatManager.UnreviewObservation
+- uid: JoshAaronMiller.INaturalist.INatManager.GetObservationTaxonSummary*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetObservationTaxonSummary
+  name: GetObservationTaxonSummary
+  nameWithType: INatManager.GetObservationTaxonSummary
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetObservationTaxonSummary
+- uid: Global.Action{JoshAaronMiller.INaturalist.TaxonSummary}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.TaxonSummary}'
+  definition: Global.Action`1
+  name: Action<TaxonSummary>
+  nameWithType: Action<TaxonSummary>
+  fullName: Action<JoshAaronMiller.INaturalist.TaxonSummary>
+  nameWithType.vb: Action(Of TaxonSummary)
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.TaxonSummary)
+  name.vb: Action(Of TaxonSummary)
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.TaxonSummary
+    name: TaxonSummary
+    nameWithType: TaxonSummary
+    fullName: JoshAaronMiller.INaturalist.TaxonSummary
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.TaxonSummary
+    name: TaxonSummary
+    nameWithType: TaxonSummary
+    fullName: JoshAaronMiller.INaturalist.TaxonSummary
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.VoteObservation*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.VoteObservation
+  name: VoteObservation
+  nameWithType: INatManager.VoteObservation
+  fullName: JoshAaronMiller.INaturalist.INatManager.VoteObservation
+- uid: JoshAaronMiller.INaturalist.Vote
+  commentId: T:JoshAaronMiller.INaturalist.Vote
+  parent: JoshAaronMiller.INaturalist
+  name: Vote
+  nameWithType: Vote
+  fullName: JoshAaronMiller.INaturalist.Vote
+- uid: JoshAaronMiller.INaturalist.INatManager.UnvoteObservation*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.UnvoteObservation
+  name: UnvoteObservation
+  nameWithType: INatManager.UnvoteObservation
+  fullName: JoshAaronMiller.INaturalist.INatManager.UnvoteObservation
+- uid: JoshAaronMiller.INaturalist.INatManager.SearchObservations*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.SearchObservations
+  name: SearchObservations
+  nameWithType: INatManager.SearchObservations
+  fullName: JoshAaronMiller.INaturalist.INatManager.SearchObservations
+- uid: JoshAaronMiller.INaturalist.INatManager.CreateObservation*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.CreateObservation
+  name: CreateObservation
+  nameWithType: INatManager.CreateObservation
+  fullName: JoshAaronMiller.INaturalist.INatManager.CreateObservation
+- uid: JoshAaronMiller.INaturalist.INatManager.GetObservationSpeciesCounts*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetObservationSpeciesCounts
+  name: GetObservationSpeciesCounts
+  nameWithType: INatManager.GetObservationSpeciesCounts
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetObservationSpeciesCounts
+- uid: JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails
+  name: GetPlaceDetails
+  nameWithType: INatManager.GetPlaceDetails
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails
+- uid: Global.Action{JoshAaronMiller.INaturalist.Place}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Place}'
+  definition: Global.Action`1
+  name: Action<Place>
+  nameWithType: Action<Place>
+  fullName: Action<JoshAaronMiller.INaturalist.Place>
+  nameWithType.vb: Action(Of Place)
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Place)
+  name.vb: Action(Of Place)
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Place
+    name: Place
+    nameWithType: Place
+    fullName: JoshAaronMiller.INaturalist.Place
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Place
+    name: Place
+    nameWithType: Place
+    fullName: JoshAaronMiller.INaturalist.Place
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  commentId: T:JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  parent: JoshAaronMiller.INaturalist
+  name: INatManager.PlaceAdminLevel
+  nameWithType: INatManager.PlaceAdminLevel
+  fullName: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+- uid: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}}'
+  definition: Global.Action`1
+  name: Action<Results<Place>>
+  nameWithType: Action<Results<Place>>
+  fullName: Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.Place>>
+  nameWithType.vb: Action(Of Results(Of Place))
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.Place))
+  name.vb: Action(Of Results(Of Place))
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Place
+    name: Place
+    nameWithType: Place
+    fullName: JoshAaronMiller.INaturalist.Place
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Place
+    name: Place
+    nameWithType: Place
+    fullName: JoshAaronMiller.INaturalist.Place
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.GetPlacesAutocomplete*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetPlacesAutocomplete
+  name: GetPlacesAutocomplete
+  nameWithType: INatManager.GetPlacesAutocomplete
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetPlacesAutocomplete
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: JoshAaronMiller.INaturalist.INatManager.GetPlacesNearby*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetPlacesNearby
+  name: GetPlacesNearby
+  nameWithType: INatManager.GetPlacesNearby
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetPlacesNearby
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Global.Action{JoshAaronMiller.INaturalist.PlacesByCuration}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.PlacesByCuration}'
+  definition: Global.Action`1
+  name: Action<PlacesByCuration>
+  nameWithType: Action<PlacesByCuration>
+  fullName: Action<JoshAaronMiller.INaturalist.PlacesByCuration>
+  nameWithType.vb: Action(Of PlacesByCuration)
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.PlacesByCuration)
+  name.vb: Action(Of PlacesByCuration)
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.PlacesByCuration
+    name: PlacesByCuration
+    nameWithType: PlacesByCuration
+    fullName: JoshAaronMiller.INaturalist.PlacesByCuration
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.PlacesByCuration
+    name: PlacesByCuration
+    nameWithType: PlacesByCuration
+    fullName: JoshAaronMiller.INaturalist.PlacesByCuration
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails
+  name: GetTaxonDetails
+  nameWithType: INatManager.GetTaxonDetails
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails
+- uid: Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}}'
+  definition: Global.Action`1
+  name: Action<Results<Taxon>>
+  nameWithType: Action<Results<Taxon>>
+  fullName: Action<JoshAaronMiller.INaturalist.Results<JoshAaronMiller.INaturalist.Taxon>>
+  nameWithType.vb: Action(Of Results(Of Taxon))
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Results(Of JoshAaronMiller.INaturalist.Taxon))
+  name.vb: Action(Of Results(Of Taxon))
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Taxon
+    name: Taxon
+    nameWithType: Taxon
+    fullName: JoshAaronMiller.INaturalist.Taxon
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Taxon
+    name: Taxon
+    nameWithType: Taxon
+    fullName: JoshAaronMiller.INaturalist.Taxon
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.Action{JoshAaronMiller.INaturalist.Taxon}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.Taxon}'
+  definition: Global.Action`1
+  name: Action<Taxon>
+  nameWithType: Action<Taxon>
+  fullName: Action<JoshAaronMiller.INaturalist.Taxon>
+  nameWithType.vb: Action(Of Taxon)
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.Taxon)
+  name.vb: Action(Of Taxon)
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Taxon
+    name: Taxon
+    nameWithType: Taxon
+    fullName: JoshAaronMiller.INaturalist.Taxon
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Taxon
+    name: Taxon
+    nameWithType: Taxon
+    fullName: JoshAaronMiller.INaturalist.Taxon
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.SearchTaxa*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.SearchTaxa
+  name: SearchTaxa
+  nameWithType: INatManager.SearchTaxa
+  fullName: JoshAaronMiller.INaturalist.INatManager.SearchTaxa
+- uid: JoshAaronMiller.INaturalist.TaxonSearch
+  commentId: T:JoshAaronMiller.INaturalist.TaxonSearch
+  parent: JoshAaronMiller.INaturalist
+  name: TaxonSearch
+  nameWithType: TaxonSearch
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch
+- uid: JoshAaronMiller.INaturalist.INatManager.GetUserMe*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.GetUserMe
+  name: GetUserMe
+  nameWithType: INatManager.GetUserMe
+  fullName: JoshAaronMiller.INaturalist.INatManager.GetUserMe
+- uid: Global.Action{JoshAaronMiller.INaturalist.User}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.User}'
+  definition: Global.Action`1
+  name: Action<User>
+  nameWithType: Action<User>
+  fullName: Action<JoshAaronMiller.INaturalist.User>
+  nameWithType.vb: Action(Of User)
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.User)
+  name.vb: Action(Of User)
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.User
+    name: User
+    nameWithType: User
+    fullName: JoshAaronMiller.INaturalist.User
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.User
+    name: User
+    nameWithType: User
+    fullName: JoshAaronMiller.INaturalist.User
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.INatManager.CreatePhoto*
+  commentId: Overload:JoshAaronMiller.INaturalist.INatManager.CreatePhoto
+  name: CreatePhoto
+  nameWithType: INatManager.CreatePhoto
+  fullName: JoshAaronMiller.INaturalist.INatManager.CreatePhoto
+- uid: Global.Action{JoshAaronMiller.INaturalist.PhotoJson}
+  commentId: '!:Global.Action{JoshAaronMiller.INaturalist.PhotoJson}'
+  definition: Global.Action`1
+  name: Action<PhotoJson>
+  nameWithType: Action<PhotoJson>
+  fullName: Action<JoshAaronMiller.INaturalist.PhotoJson>
+  nameWithType.vb: Action(Of PhotoJson)
+  fullName.vb: Action(Of JoshAaronMiller.INaturalist.PhotoJson)
+  name.vb: Action(Of PhotoJson)
+  spec.csharp:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.PhotoJson
+    name: PhotoJson
+    nameWithType: PhotoJson
+    fullName: JoshAaronMiller.INaturalist.PhotoJson
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.PhotoJson
+    name: PhotoJson
+    nameWithType: PhotoJson
+    fullName: JoshAaronMiller.INaturalist.PhotoJson
+  - name: )
+    nameWithType: )
+    fullName: )

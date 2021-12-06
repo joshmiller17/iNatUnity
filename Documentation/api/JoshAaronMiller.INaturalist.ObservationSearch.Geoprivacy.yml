@@ -1,0 +1,187 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  id: ObservationSearch.Geoprivacy
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.None
+  - JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.Obscured
+  - JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.ObscuredPrivate
+  - JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.Open
+  - JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.Private
+  langs:
+  - csharp
+  - vb
+  name: ObservationSearch.Geoprivacy
+  nameWithType: ObservationSearch.Geoprivacy
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  type: Enum
+  source:
+    id: Geoprivacy
+    path: ''
+    startLine: 2987
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum Geoprivacy
+    content.vb: Public Enum Geoprivacy
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.None
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.None
+  id: None
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ObservationSearch.Geoprivacy.None
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 2989
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: None = 0
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.Obscured
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.Obscured
+  id: Obscured
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  langs:
+  - csharp
+  - vb
+  name: Obscured
+  nameWithType: ObservationSearch.Geoprivacy.Obscured
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.Obscured
+  type: Field
+  source:
+    id: Obscured
+    path: ''
+    startLine: 2989
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Obscured = 1
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.ObscuredPrivate
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.ObscuredPrivate
+  id: ObscuredPrivate
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  langs:
+  - csharp
+  - vb
+  name: ObscuredPrivate
+  nameWithType: ObservationSearch.Geoprivacy.ObscuredPrivate
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.ObscuredPrivate
+  type: Field
+  source:
+    id: ObscuredPrivate
+    path: ''
+    startLine: 2989
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ObscuredPrivate = 2
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.Open
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.Open
+  id: Open
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  langs:
+  - csharp
+  - vb
+  name: Open
+  nameWithType: ObservationSearch.Geoprivacy.Open
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.Open
+  type: Field
+  source:
+    id: Open
+    path: ''
+    startLine: 2989
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Open = 3
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.Private
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.Private
+  id: Private
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  langs:
+  - csharp
+  - vb
+  name: Private
+  nameWithType: ObservationSearch.Geoprivacy.Private
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.Private
+  type: Field
+  source:
+    id: Private
+    path: ''
+    startLine: 2989
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Private = 4
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.Geoprivacy
+  nameWithType: ObservationSearch.Geoprivacy
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy

@@ -1,0 +1,440 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.PlacesByCuration
+  commentId: T:JoshAaronMiller.INaturalist.PlacesByCuration
+  id: PlacesByCuration
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.PlacesByCuration.community
+  - JoshAaronMiller.INaturalist.PlacesByCuration.standard
+  langs:
+  - csharp
+  - vb
+  name: PlacesByCuration
+  nameWithType: PlacesByCuration
+  fullName: JoshAaronMiller.INaturalist.PlacesByCuration
+  type: Class
+  source:
+    id: PlacesByCuration
+    path: ''
+    startLine: 2336
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class PlacesByCuration : JsonObject<PlacesByCuration>
+    content.vb: >-
+      <Serializable>
+
+      Public Class PlacesByCuration
+          Inherits JsonObject(Of PlacesByCuration)
+  inheritance:
+  - System.Object
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.PlacesByCuration}
+  inheritedMembers:
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.PlacesByCuration}.CreateFromJson(System.String)
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.PlacesByCuration}.ToJson(JoshAaronMiller.INaturalist.PlacesByCuration)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JoshAaronMiller.INaturalist.PlacesByCuration.standard
+  commentId: F:JoshAaronMiller.INaturalist.PlacesByCuration.standard
+  id: standard
+  parent: JoshAaronMiller.INaturalist.PlacesByCuration
+  langs:
+  - csharp
+  - vb
+  name: standard
+  nameWithType: PlacesByCuration.standard
+  fullName: JoshAaronMiller.INaturalist.PlacesByCuration.standard
+  type: Field
+  source:
+    id: standard
+    path: ''
+    startLine: 2339
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public List<Place> standard
+    return:
+      type: System.Collections.Generic.List{JoshAaronMiller.INaturalist.Place}
+    content.vb: Public standard As List(Of Place)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.PlacesByCuration.community
+  commentId: F:JoshAaronMiller.INaturalist.PlacesByCuration.community
+  id: community
+  parent: JoshAaronMiller.INaturalist.PlacesByCuration
+  langs:
+  - csharp
+  - vb
+  name: community
+  nameWithType: PlacesByCuration.community
+  fullName: JoshAaronMiller.INaturalist.PlacesByCuration.community
+  type: Field
+  source:
+    id: community
+    path: ''
+    startLine: 2340
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public List<Place> community
+    return:
+      type: System.Collections.Generic.List{JoshAaronMiller.INaturalist.Place}
+    content.vb: Public community As List(Of Place)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.PlacesByCuration}
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.PlacesByCuration}
+  parent: JoshAaronMiller.INaturalist
+  definition: JoshAaronMiller.INaturalist.JsonObject`1
+  name: JsonObject<PlacesByCuration>
+  nameWithType: JsonObject<PlacesByCuration>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.PlacesByCuration>
+  nameWithType.vb: JsonObject(Of PlacesByCuration)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.PlacesByCuration)
+  name.vb: JsonObject(Of PlacesByCuration)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.PlacesByCuration
+    name: PlacesByCuration
+    nameWithType: PlacesByCuration
+    fullName: JoshAaronMiller.INaturalist.PlacesByCuration
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.PlacesByCuration
+    name: PlacesByCuration
+    nameWithType: PlacesByCuration
+    fullName: JoshAaronMiller.INaturalist.PlacesByCuration
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.PlacesByCuration}.CreateFromJson(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.PlacesByCuration}.CreateFromJson(System.String)
+  parent: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.PlacesByCuration}
+  definition: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  name: CreateFromJson(String)
+  nameWithType: JsonObject<PlacesByCuration>.CreateFromJson(String)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.PlacesByCuration>.CreateFromJson(System.String)
+  nameWithType.vb: JsonObject(Of PlacesByCuration).CreateFromJson(String)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.PlacesByCuration).CreateFromJson(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject<PlacesByCuration>.CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.PlacesByCuration>.CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject(Of PlacesByCuration).CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.PlacesByCuration).CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.PlacesByCuration}.ToJson(JoshAaronMiller.INaturalist.PlacesByCuration)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.PlacesByCuration}.ToJson(JoshAaronMiller.INaturalist.PlacesByCuration)
+  parent: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.PlacesByCuration}
+  definition: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  name: ToJson(PlacesByCuration)
+  nameWithType: JsonObject<PlacesByCuration>.ToJson(PlacesByCuration)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.PlacesByCuration>.ToJson(JoshAaronMiller.INaturalist.PlacesByCuration)
+  nameWithType.vb: JsonObject(Of PlacesByCuration).ToJson(PlacesByCuration)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.PlacesByCuration).ToJson(JoshAaronMiller.INaturalist.PlacesByCuration)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject<PlacesByCuration>.ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.PlacesByCuration>.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.PlacesByCuration
+    name: PlacesByCuration
+    nameWithType: PlacesByCuration
+    fullName: JoshAaronMiller.INaturalist.PlacesByCuration
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject(Of PlacesByCuration).ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.PlacesByCuration).ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.PlacesByCuration
+    name: PlacesByCuration
+    nameWithType: PlacesByCuration
+    fullName: JoshAaronMiller.INaturalist.PlacesByCuration
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JoshAaronMiller.INaturalist.JsonObject`1
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject`1
+  name: JsonObject<T>
+  nameWithType: JsonObject<T>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>
+  nameWithType.vb: JsonObject(Of T)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T)
+  name.vb: JsonObject(Of T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  isExternal: true
+  name: CreateFromJson(String)
+  nameWithType: JsonObject<T>.CreateFromJson(String)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson(System.String)
+  nameWithType.vb: JsonObject(Of T).CreateFromJson(String)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject<T>.CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject(Of T).CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  name: ToJson(T)
+  nameWithType: JsonObject<T>.ToJson(T)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson(T)
+  nameWithType.vb: JsonObject(Of T).ToJson(T)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson(T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject<T>.ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject(Of T).ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{JoshAaronMiller.INaturalist.Place}
+  commentId: T:System.Collections.Generic.List{JoshAaronMiller.INaturalist.Place}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Place>
+  nameWithType: List<Place>
+  fullName: System.Collections.Generic.List<JoshAaronMiller.INaturalist.Place>
+  nameWithType.vb: List(Of Place)
+  fullName.vb: System.Collections.Generic.List(Of JoshAaronMiller.INaturalist.Place)
+  name.vb: List(Of Place)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Place
+    name: Place
+    nameWithType: Place
+    fullName: JoshAaronMiller.INaturalist.Place
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Place
+    name: Place
+    nameWithType: Place
+    fullName: JoshAaronMiller.INaturalist.Place
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

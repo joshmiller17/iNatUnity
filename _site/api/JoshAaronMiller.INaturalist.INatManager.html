@@ -1,0 +1,2217 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class INatManager
+   | iNat+Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class INatManager
+   | iNat+Unity ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="JoshAaronMiller.INaturalist.INatManager">
+  
+  
+  <h1 id="JoshAaronMiller_INaturalist_INatManager" data-uid="JoshAaronMiller.INaturalist.INatManager" class="text-break">Class INatManager
+  </h1>
+  <div class="markdown level0 summary"><p>The INatManager handles direct requests to the iNaturalist API.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">INatManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="JoshAaronMiller.INaturalist.html">JoshAaronMiller.INaturalist</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="JoshAaronMiller_INaturalist_INatManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class INatManager : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_ApiTokenUrl" data-uid="JoshAaronMiller.INaturalist.INatManager.ApiTokenUrl">ApiTokenUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ApiTokenUrl</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_BaseUrl" data-uid="JoshAaronMiller.INaturalist.INatManager.BaseUrl">BaseUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string BaseUrl</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_CreateFlag_" data-uid="JoshAaronMiller.INaturalist.INatManager.CreateFlag*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_CreateFlag_JoshAaronMiller_INaturalist_WrappedFlag_Action_JoshAaronMiller_INaturalist_Identification__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.CreateFlag(JoshAaronMiller.INaturalist.WrappedFlag,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})">CreateFlag(WrappedFlag, Action&lt;Identification&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Submit a Flag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateFlag(WrappedFlag flag, Action&lt;Identification&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.WrappedFlag.html">WrappedFlag</a></td>
+        <td><span class="parametername">flag</span></td>
+        <td><p>The parameters of the flag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Identification.html">Identification</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Flag created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_CreateIdentification_" data-uid="JoshAaronMiller.INaturalist.INatManager.CreateIdentification*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_CreateIdentification_JoshAaronMiller_INaturalist_IdentificationSubmission_Action_JoshAaronMiller_INaturalist_Identification__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.CreateIdentification(JoshAaronMiller.INaturalist.IdentificationSubmission,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})">CreateIdentification(IdentificationSubmission, Action&lt;Identification&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Submit an Identification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateIdentification(IdentificationSubmission identSub, Action&lt;Identification&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.IdentificationSubmission.html">IdentificationSubmission</a></td>
+        <td><span class="parametername">identSub</span></td>
+        <td><p>The parameters of the Identification. Requires at minimum observation ID and taxon ID.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Identification.html">Identification</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Identification created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_CreateObservation_" data-uid="JoshAaronMiller.INaturalist.INatManager.CreateObservation*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_CreateObservation_JoshAaronMiller_INaturalist_ObservationSubmission_Action_JoshAaronMiller_INaturalist_Observation__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.CreateObservation(JoshAaronMiller.INaturalist.ObservationSubmission,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})">CreateObservation(ObservationSubmission, Action&lt;Observation&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Create an Observation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateObservation(ObservationSubmission observation, Action&lt;Observation&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.ObservationSubmission.html">ObservationSubmission</a></td>
+        <td><span class="parametername">observation</span></td>
+        <td><p>An ObservationSubmission object containing the information for the observation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Observation.html">Observation</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Observation object returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_CreateObservationPhoto_" data-uid="JoshAaronMiller.INaturalist.INatManager.CreateObservationPhoto*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_CreateObservationPhoto_System_Int32_System_String_JoshAaronMiller_INaturalist_PhotoFile_Action_JoshAaronMiller_INaturalist_ObservationPhoto__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.CreateObservationPhoto(System.Int32,System.String,JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.ObservationPhoto},Action{JoshAaronMiller.INaturalist.Error})">CreateObservationPhoto(Int32, String, PhotoFile, Action&lt;ObservationPhoto&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Create an Observation Photo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateObservationPhoto(int obsId, string obsUuid, PhotoFile photo, Action&lt;ObservationPhoto&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">obsId</span></td>
+        <td><p>The Observation ID to add the photo to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">obsUuid</span></td>
+        <td><p>The UUID of the observation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.PhotoFile.html">PhotoFile</a></td>
+        <td><span class="parametername">photo</span></td>
+        <td><p>The Photo to upload.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.ObservationPhoto.html">ObservationPhoto</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Observation Photo object returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_CreatePhoto_" data-uid="JoshAaronMiller.INaturalist.INatManager.CreatePhoto*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_CreatePhoto_JoshAaronMiller_INaturalist_PhotoFile_Action_JoshAaronMiller_INaturalist_PhotoJson__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.CreatePhoto(JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.PhotoJson},Action{JoshAaronMiller.INaturalist.Error})">CreatePhoto(PhotoFile, Action&lt;PhotoJson&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Create a Photo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreatePhoto(PhotoFile photo, Action&lt;PhotoJson&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.PhotoFile.html">PhotoFile</a></td>
+        <td><span class="parametername">photo</span></td>
+        <td><p>The Photo to upload.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.PhotoJson.html">PhotoJson</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Photo object returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_CreateUserMessage_" data-uid="JoshAaronMiller.INaturalist.INatManager.CreateUserMessage*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_CreateUserMessage_JoshAaronMiller_INaturalist_UserMessage_Action_JoshAaronMiller_INaturalist_UserMessage__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.CreateUserMessage(JoshAaronMiller.INaturalist.UserMessage,Action{JoshAaronMiller.INaturalist.UserMessage},Action{JoshAaronMiller.INaturalist.Error})">CreateUserMessage(UserMessage, Action&lt;UserMessage&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Send a private message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateUserMessage(UserMessage newMessage, Action&lt;UserMessage&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.UserMessage.html">UserMessage</a></td>
+        <td><span class="parametername">newMessage</span></td>
+        <td><p>The message to be sent.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.UserMessage.html">UserMessage</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the new Message created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_DeleteFlag_" data-uid="JoshAaronMiller.INaturalist.INatManager.DeleteFlag*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_DeleteFlag_System_Int32_Action_Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.DeleteFlag(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})">DeleteFlag(Int32, Action, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Delete a Flag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteFlag(int flagId, Action callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">flagId</span></td>
+        <td><p>The ID of the flag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_DeleteIdentification_" data-uid="JoshAaronMiller.INaturalist.INatManager.DeleteIdentification*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_DeleteIdentification_System_Int32_Action_System_String__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.DeleteIdentification(System.Int32,Action{System.String},Action{JoshAaronMiller.INaturalist.Error})">DeleteIdentification(Int32, Action&lt;String&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Delete an Identification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteIdentification(int identId, Action&lt;string&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">identId</span></td>
+        <td><p>The ID of the Identification.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_DeleteObservation_" data-uid="JoshAaronMiller.INaturalist.INatManager.DeleteObservation*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_DeleteObservation_System_Int32_Action_Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.DeleteObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})">DeleteObservation(Int32, Action, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Delete an Observation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteObservation(int obsId, Action callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">obsId</span></td>
+        <td><p>The ID of the Observation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_DeleteObservationPhoto_" data-uid="JoshAaronMiller.INaturalist.INatManager.DeleteObservationPhoto*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_DeleteObservationPhoto_System_Int32_Action_Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.DeleteObservationPhoto(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})">DeleteObservationPhoto(Int32, Action, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Delete an observation photo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteObservationPhoto(int obsPhotoId, Action callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">obsPhotoId</span></td>
+        <td><p>The observation photo to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_DeleteUserMessageThread_" data-uid="JoshAaronMiller.INaturalist.INatManager.DeleteUserMessageThread*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_DeleteUserMessageThread_System_Int32_Action_Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.DeleteUserMessageThread(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})">DeleteUserMessageThread(Int32, Action, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Delete all messages in a message thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteUserMessageThread(int threadId, Action callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">threadId</span></td>
+        <td><p>The thread to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_FaveObservation_" data-uid="JoshAaronMiller.INaturalist.INatManager.FaveObservation*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_FaveObservation_System_Int32_Action_JoshAaronMiller_INaturalist_Observation__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.FaveObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})">FaveObservation(Int32, Action&lt;Observation&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>&quot;Fave&quot; an Observation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FaveObservation(int obsId, Action&lt;Observation&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">obsId</span></td>
+        <td><p>The Observation ID.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Observation.html">Observation</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Observation object returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetApiToken_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetApiToken*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetApiToken" data-uid="JoshAaronMiller.INaturalist.INatManager.GetApiToken">GetApiToken()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetApiToken()</code></pre>
+  </div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetCountUnreadMessages_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetCountUnreadMessages*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetCountUnreadMessages_Action_JoshAaronMiller_INaturalist_Count__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetCountUnreadMessages(Action{JoshAaronMiller.INaturalist.Count},Action{JoshAaronMiller.INaturalist.Error})">GetCountUnreadMessages(Action&lt;Count&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a Count of unread messages in the authenticated user&apos;s inbox.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetCountUnreadMessages(Action&lt;Count&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Count.html">Count</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Count of unread messages.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetIdentification_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetIdentification*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetIdentification_System_Int32_Action_JoshAaronMiller_INaturalist_Identification__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetIdentification(System.Int32,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})">GetIdentification(Int32, Action&lt;Identification&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given an ID, returns corresponding Identifications </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetIdentification(int identId, Action&lt;Identification&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">identId</span></td>
+        <td><p>The identification ID to fetch</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Identification.html">Identification</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Identification object found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetIdentificationCategories_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetIdentificationCategories*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetIdentificationCategories_JoshAaronMiller_INaturalist_IdentificationSearch_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_IdentificationCategoryCount___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetIdentificationCategories(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.IdentificationCategoryCount}},Action{JoshAaronMiller.INaturalist.Error})">GetIdentificationCategories(IdentificationSearch, Action&lt;Results&lt;IdentificationCategoryCount&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given an IdentificationSearch object, returns the counts of how many identifications matching the search have a particular category.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetIdentificationCategories(IdentificationSearch identSearch, Action&lt;Results&lt;IdentificationCategoryCount&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.IdentificationSearch.html">IdentificationSearch</a></td>
+        <td><span class="parametername">identSearch</span></td>
+        <td><p>An IdentificationSearch object holding the parameters of the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.IdentificationCategoryCount.html">IdentificationCategoryCount</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of IdentificationCategoryCount objects found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetIdentifications_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetIdentifications*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetIdentifications_System_Collections_Generic_List_System_Int32__Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_Identification___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetIdentifications(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}},Action{JoshAaronMiller.INaturalist.Error})">GetIdentifications(List&lt;Int32&gt;, Action&lt;Results&lt;Identification&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given an array of IDs, returns corresponding Identifications </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetIdentifications(List&lt;int&gt; identIds, Action&lt;Results&lt;Identification&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">identIds</span></td>
+        <td><p>The list of identification IDs to fetch</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Identification.html">Identification</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of Identification objects found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetIdentificationSpeciesCounts_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetIdentificationSpeciesCounts*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetIdentificationSpeciesCounts_JoshAaronMiller_INaturalist_IdentificationSearch_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_SpeciesCount___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetIdentificationSpeciesCounts(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})">GetIdentificationSpeciesCounts(IdentificationSearch, Action&lt;Results&lt;SpeciesCount&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given an IdentificationSearch object, returns the counts of how many identifications matching the search have a particular leaf taxon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetIdentificationSpeciesCounts(IdentificationSearch identSearch, Action&lt;Results&lt;SpeciesCount&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.IdentificationSearch.html">IdentificationSearch</a></td>
+        <td><span class="parametername">identSearch</span></td>
+        <td><p>An IdentificationSearch object holding the parameters of the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.SpeciesCount.html">SpeciesCount</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of SpeciesCount objects found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetObservation_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetObservation*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetObservation_System_Int32_Action_JoshAaronMiller_INaturalist_Observation__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})">GetObservation(Int32, Action&lt;Observation&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given an ID, returns corresponding observations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetObservation(int id, Action&lt;Observation&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The observation ID to fetch</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Observation.html">Observation</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Observation object found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetObservations_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetObservations*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetObservations_System_Collections_Generic_List_System_Int32__Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_Observation___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetObservations(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}},Action{JoshAaronMiller.INaturalist.Error})">GetObservations(List&lt;Int32&gt;, Action&lt;Results&lt;Observation&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given an array of IDs, returns corresponding observations </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetObservations(List&lt;int&gt; ids, Action&lt;Results&lt;Observation&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td><p>The list of observation IDs to fetch</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Observation.html">Observation</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of Observation objects found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetObservationSpeciesCounts_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetObservationSpeciesCounts*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetObservationSpeciesCounts_JoshAaronMiller_INaturalist_ObservationSearch_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_SpeciesCount___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetObservationSpeciesCounts(JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})">GetObservationSpeciesCounts(ObservationSearch, Action&lt;Results&lt;SpeciesCount&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given an ObservationSearch object, returns the counts of how many observations matching the search have a particular leaf taxon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetObservationSpeciesCounts(ObservationSearch observationSearch, Action&lt;Results&lt;SpeciesCount&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.html">ObservationSearch</a></td>
+        <td><span class="parametername">observationSearch</span></td>
+        <td><p>An ObservationSearch object holding the parameters of the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.SpeciesCount.html">SpeciesCount</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of SpeciesCount objects found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetObservationTaxonSummary_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetObservationTaxonSummary*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetObservationTaxonSummary_System_Int32_Action_JoshAaronMiller_INaturalist_TaxonSummary__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetObservationTaxonSummary(System.Int32,Action{JoshAaronMiller.INaturalist.TaxonSummary},Action{JoshAaronMiller.INaturalist.Error})">GetObservationTaxonSummary(Int32, Action&lt;TaxonSummary&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given an observation ID, fetch the TaxonSummary of that Observation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetObservationTaxonSummary(int obsId, Action&lt;TaxonSummary&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">obsId</span></td>
+        <td><p>The observation  ID to fetch</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.TaxonSummary.html">TaxonSummary</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the TaxonSummary object returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="JoshAaronMiller_INaturalist_INatManager_GetObservationTaxonSummary_System_Int32_Action_JoshAaronMiller_INaturalist_TaxonSummary__Action_JoshAaronMiller_INaturalist_Error___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Probably most useful for getting a Wikipedia summary of the taxon, see TaxonSummary object.</p>
+</div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetPlaceDetails_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetPlaceDetails_System_Collections_Generic_List_System_Int32__Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_Place___Action_JoshAaronMiller_INaturalist_Error__JoshAaronMiller_INaturalist_INatManager_PlaceAdminLevel_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}},Action{JoshAaronMiller.INaturalist.Error},JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)">GetPlaceDetails(List&lt;Int32&gt;, Action&lt;Results&lt;Place&gt;&gt;, Action&lt;Error&gt;, INatManager.PlaceAdminLevel)</h4>
+  <div class="markdown level1 summary"><p>Given a list of IDs, return the corresponding Places.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPlaceDetails(List&lt;int&gt; placeIds, Action&lt;Results&lt;Place&gt;&gt; callback, Action&lt;Error&gt; errorCallback, INatManager.PlaceAdminLevel adminLevel = INatManager.PlaceAdminLevel.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">placeIds</span></td>
+        <td><p>The IDs of the Places.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Place.html">Place</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of Places fetched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.html">INatManager.PlaceAdminLevel</a></td>
+        <td><span class="parametername">adminLevel</span></td>
+        <td><p>Optionally, the admin level of the place to search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetPlaceDetails_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetPlaceDetails_System_Int32_Action_JoshAaronMiller_INaturalist_Place__Action_JoshAaronMiller_INaturalist_Error__JoshAaronMiller_INaturalist_INatManager_PlaceAdminLevel_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetPlaceDetails(System.Int32,Action{JoshAaronMiller.INaturalist.Place},Action{JoshAaronMiller.INaturalist.Error},JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel)">GetPlaceDetails(Int32, Action&lt;Place&gt;, Action&lt;Error&gt;, INatManager.PlaceAdminLevel)</h4>
+  <div class="markdown level1 summary"><p>Given an ID, return the corresponding Place.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPlaceDetails(int placeId, Action&lt;Place&gt; callback, Action&lt;Error&gt; errorCallback, INatManager.PlaceAdminLevel adminLevel = INatManager.PlaceAdminLevel.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">placeId</span></td>
+        <td><p>The ID of the Place.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Place.html">Place</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Place fetched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.html">INatManager.PlaceAdminLevel</a></td>
+        <td><span class="parametername">adminLevel</span></td>
+        <td><p>Optionally, the admin level of the place to search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetPlacesAutocomplete_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetPlacesAutocomplete*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetPlacesAutocomplete_System_String_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_Place___Action_JoshAaronMiller_INaturalist_Error__System_Boolean_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetPlacesAutocomplete(System.String,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Place}},Action{JoshAaronMiller.INaturalist.Error},System.Boolean)">GetPlacesAutocomplete(String, Action&lt;Results&lt;Place&gt;&gt;, Action&lt;Error&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Given a string query, find all places with names starting with the query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPlacesAutocomplete(string query, Action&lt;Results&lt;Place&gt;&gt; callback, Action&lt;Error&gt; errorCallback, bool orderByArea = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The search term.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Place.html">Place</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of Places fetched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">orderByArea</span></td>
+        <td><p>If true, sort the results by area (default false).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetPlacesNearby_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetPlacesNearby*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetPlacesNearby_System_Double_System_Double_System_Double_System_Double_Action_JoshAaronMiller_INaturalist_PlacesByCuration__Action_JoshAaronMiller_INaturalist_Error__System_String_System_Int32_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetPlacesNearby(System.Double,System.Double,System.Double,System.Double,Action{JoshAaronMiller.INaturalist.PlacesByCuration},Action{JoshAaronMiller.INaturalist.Error},System.String,System.Int32)">GetPlacesNearby(Double, Double, Double, Double, Action&lt;PlacesByCuration&gt;, Action&lt;Error&gt;, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Given a bounding box and optional name query, return nearby places separated by curation status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPlacesNearby(double nelat, double nelng, double swlat, double swlng, Action&lt;PlacesByCuration&gt; callback, Action&lt;Error&gt; errorCallback, string name = &quot;&quot;, int perPage = 30)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">nelat</span></td>
+        <td><p>The northeast latitude corner of the bounding box.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">nelng</span></td>
+        <td><p>The northeast longitude corner of the bounding box.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">swlat</span></td>
+        <td><p>The southwest latitude corner of the bounding box.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">swlng</span></td>
+        <td><p>The southwest longitude corner of the bounding box.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.PlacesByCuration.html">PlacesByCuration</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the list of PlacesByCuration fetched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The optional search term for the name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">perPage</span></td>
+        <td><p>Number of results per page (default 30, max 200).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetSimilarSpecies_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetSimilarSpecies_System_Int32_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_SpeciesCount___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})">GetSimilarSpecies(Int32, Action&lt;Results&lt;SpeciesCount&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given a Taxon ID, return similar taxa and counts of co-occurrence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetSimilarSpecies(int taxonId, Action&lt;Results&lt;SpeciesCount&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">taxonId</span></td>
+        <td><p>The ID of the taxon to find similar taxa to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.SpeciesCount.html">SpeciesCount</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of SpeciesCount objects representing the results.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="JoshAaronMiller_INaturalist_INatManager_GetSimilarSpecies_System_Int32_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_SpeciesCount___Action_JoshAaronMiller_INaturalist_Error___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The definition of &quot;similar taxa&quot; is operationalized by finding all observations of this taxon or identified as this taxon,
+then taking the identifications of those observations and counting frequencies of identifications of other taxa.
+In short, this returns a list mapping taxa to how many times they co-occurred with the searched taxon.</p>
+</div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetSimilarSpecies_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetSimilarSpecies_System_Int32_JoshAaronMiller_INaturalist_ObservationSearch_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_SpeciesCount___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetSimilarSpecies(System.Int32,JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.SpeciesCount}},Action{JoshAaronMiller.INaturalist.Error})">GetSimilarSpecies(Int32, ObservationSearch, Action&lt;Results&lt;SpeciesCount&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given a Taxon ID, return similar taxa and counts of co-occurrence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetSimilarSpecies(int taxonId, ObservationSearch obsSearch, Action&lt;Results&lt;SpeciesCount&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">taxonId</span></td>
+        <td><p>The ID of the taxon to find similar taxa to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.html">ObservationSearch</a></td>
+        <td><span class="parametername">obsSearch</span></td>
+        <td><p>Additional parameters to refine the search, limiting what observations can be included.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.SpeciesCount.html">SpeciesCount</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of SpeciesCount objects representing the results.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="JoshAaronMiller_INaturalist_INatManager_GetSimilarSpecies_System_Int32_JoshAaronMiller_INaturalist_ObservationSearch_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_SpeciesCount___Action_JoshAaronMiller_INaturalist_Error___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The definition of &quot;similar taxa&quot; is operationalized by finding all observations of this taxon or identified as this taxon,
+then taking the identifications of those observations and counting frequencies of identifications of other taxa.
+In short, this returns a list mapping taxa to how many times they co-occurred with the searched taxon.</p>
+</div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetTaxonDetails_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetTaxonDetails_System_Collections_Generic_List_System_Int32__Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_Taxon___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Collections.Generic.List{System.Int32},Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}},Action{JoshAaronMiller.INaturalist.Error})">GetTaxonDetails(List&lt;Int32&gt;, Action&lt;Results&lt;Taxon&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given an array of IDs, returns corresponding Taxa </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetTaxonDetails(List&lt;int&gt; taxaIds, Action&lt;Results&lt;Taxon&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">taxaIds</span></td>
+        <td><p>The list of taxa IDs to fetch</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Taxon.html">Taxon</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of Taxon objects found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetTaxonDetails_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetTaxonDetails_System_Int32_Action_JoshAaronMiller_INaturalist_Taxon__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetTaxonDetails(System.Int32,Action{JoshAaronMiller.INaturalist.Taxon},Action{JoshAaronMiller.INaturalist.Error})">GetTaxonDetails(Int32, Action&lt;Taxon&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given an ID, returns corresponding Taxon </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetTaxonDetails(int taxonId, Action&lt;Taxon&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">taxonId</span></td>
+        <td><p>The Taxon ID to fetch</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Taxon.html">Taxon</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Taxon object found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetTermsForTaxon_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetTermsForTaxon*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetTermsForTaxon_System_Int32_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_ControlledTerm___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetTermsForTaxon(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}},Action{JoshAaronMiller.INaturalist.Error})">GetTermsForTaxon(Int32, Action&lt;Results&lt;ControlledTerm&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Fetch a list of all attribute controlled terms relevant to a taxon as a List of ControlledTerms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetTermsForTaxon(int taxonId, Action&lt;Results&lt;ControlledTerm&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">taxonId</span></td>
+        <td><p>The ID of the Taxon.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.ControlledTerm.html">ControlledTerm</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of Controlled Terms created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetTermsIndex_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetTermsIndex*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetTermsIndex_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_ControlledTerm___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetTermsIndex(Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.ControlledTerm}},Action{JoshAaronMiller.INaturalist.Error})">GetTermsIndex(Action&lt;Results&lt;ControlledTerm&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Fetch a list of all attribute controlled terms as a List of ControlledTerms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetTermsIndex(Action&lt;Results&lt;ControlledTerm&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.ControlledTerm.html">ControlledTerm</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of Controlled Terms created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetUserMe_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetUserMe*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetUserMe_Action_JoshAaronMiller_INaturalist_User__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetUserMe(Action{JoshAaronMiller.INaturalist.User},Action{JoshAaronMiller.INaturalist.Error})">GetUserMe(Action&lt;User&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Fetch the User details for the authenticated user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetUserMe(Action&lt;User&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.User.html">User</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the User object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_GetUserMessageThread_" data-uid="JoshAaronMiller.INaturalist.INatManager.GetUserMessageThread*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_GetUserMessageThread_System_Int32_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_UserMessage___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.GetUserMessageThread(System.Int32,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}},Action{JoshAaronMiller.INaturalist.Error})">GetUserMessageThread(Int32, Action&lt;Results&lt;UserMessage&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Retrieves all messages in the specified thread and marks them all as read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetUserMessageThread(int threadId, Action&lt;Results&lt;UserMessage&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">threadId</span></td>
+        <td><p>The thread to fetch.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.UserMessage.html">UserMessage</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the thread fetched as a Results list of UserMessages.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_ReviewObservation_" data-uid="JoshAaronMiller.INaturalist.INatManager.ReviewObservation*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_ReviewObservation_System_Int32_Action_JoshAaronMiller_INaturalist_Observation__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.ReviewObservation(System.Int32,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})">ReviewObservation(Int32, Action&lt;Observation&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Mark an observation as reviewed by the authenticated user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReviewObservation(int obsId, Action&lt;Observation&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">obsId</span></td>
+        <td><p>The Observation ID.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Observation.html">Observation</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Observation object returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_SearchIdentifications_" data-uid="JoshAaronMiller.INaturalist.INatManager.SearchIdentifications*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_SearchIdentifications_JoshAaronMiller_INaturalist_IdentificationSearch_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_Identification___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.SearchIdentifications(JoshAaronMiller.INaturalist.IdentificationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Identification}},Action{JoshAaronMiller.INaturalist.Error})">SearchIdentifications(IdentificationSearch, Action&lt;Results&lt;Identification&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given an IdentificationSearch object, returns a list of matching Identifications</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SearchIdentifications(IdentificationSearch identSearch, Action&lt;Results&lt;Identification&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.IdentificationSearch.html">IdentificationSearch</a></td>
+        <td><span class="parametername">identSearch</span></td>
+        <td><p>An IdentificationSearch object holding the parameters of the search</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Identification.html">Identification</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of Identification objects found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_SearchObservations_" data-uid="JoshAaronMiller.INaturalist.INatManager.SearchObservations*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_SearchObservations_JoshAaronMiller_INaturalist_ObservationSearch_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_Observation___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.SearchObservations(JoshAaronMiller.INaturalist.ObservationSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Observation}},Action{JoshAaronMiller.INaturalist.Error})">SearchObservations(ObservationSearch, Action&lt;Results&lt;Observation&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given an ObservationSearch object, returns a list of matching observations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SearchObservations(ObservationSearch obsSearch, Action&lt;Results&lt;Observation&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.html">ObservationSearch</a></td>
+        <td><span class="parametername">obsSearch</span></td>
+        <td><p>An ObservationSearch object holding the parameters of the search</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Observation.html">Observation</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of Observation objects found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_SearchTaxa_" data-uid="JoshAaronMiller.INaturalist.INatManager.SearchTaxa*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_SearchTaxa_JoshAaronMiller_INaturalist_TaxonSearch_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_Taxon___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.SearchTaxa(JoshAaronMiller.INaturalist.TaxonSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.Taxon}},Action{JoshAaronMiller.INaturalist.Error})">SearchTaxa(TaxonSearch, Action&lt;Results&lt;Taxon&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given a TaxonSearch object, returns a list of matching taxa</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SearchTaxa(TaxonSearch taxonSearch, Action&lt;Results&lt;Taxon&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.TaxonSearch.html">TaxonSearch</a></td>
+        <td><span class="parametername">taxonSearch</span></td>
+        <td><p>An TaxonSearch object holding the parameters of the search</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Taxon.html">Taxon</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of Taxon objects found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_SearchUserMessages_" data-uid="JoshAaronMiller.INaturalist.INatManager.SearchUserMessages*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_SearchUserMessages_JoshAaronMiller_INaturalist_MessageSearch_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_UserMessage___Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.SearchUserMessages(JoshAaronMiller.INaturalist.MessageSearch,Action{JoshAaronMiller.INaturalist.Results{JoshAaronMiller.INaturalist.UserMessage}},Action{JoshAaronMiller.INaturalist.Error})">SearchUserMessages(MessageSearch, Action&lt;Results&lt;UserMessage&gt;&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Given a MessageSearch object, returns a list of matching user messages</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SearchUserMessages(MessageSearch messageSearch, Action&lt;Results&lt;UserMessage&gt;&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.MessageSearch.html">MessageSearch</a></td>
+        <td><span class="parametername">messageSearch</span></td>
+        <td><p>A MessageSearch object holding the parameters of the search</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Results-1.html">Results</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.UserMessage.html">UserMessage</a>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Results list of Message objects found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="JoshAaronMiller_INaturalist_INatManager_SearchUserMessages_JoshAaronMiller_INaturalist_MessageSearch_Action_JoshAaronMiller_INaturalist_Results_JoshAaronMiller_INaturalist_UserMessage___Action_JoshAaronMiller_INaturalist_Error___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This function does not mark these messages as read. See GetUserMessageThread.</p>
+</div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_SetApiToken_" data-uid="JoshAaronMiller.INaturalist.INatManager.SetApiToken*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_SetApiToken_System_String_" data-uid="JoshAaronMiller.INaturalist.INatManager.SetApiToken(System.String)">SetApiToken(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetApiToken(string token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_UnfaveObservation_" data-uid="JoshAaronMiller.INaturalist.INatManager.UnfaveObservation*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_UnfaveObservation_System_Int32_Action_Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.UnfaveObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})">UnfaveObservation(Int32, Action, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>&quot;Unfave&quot; an Observation, or delete Fave mark.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnfaveObservation(int obsId, Action callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">obsId</span></td>
+        <td><p>The Observation ID.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_UnreviewObservation_" data-uid="JoshAaronMiller.INaturalist.INatManager.UnreviewObservation*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_UnreviewObservation_System_Int32_Action_Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.UnreviewObservation(System.Int32,Action,Action{JoshAaronMiller.INaturalist.Error})">UnreviewObservation(Int32, Action, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Mark an observation as unreviewed by the authenticated user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnreviewObservation(int obsId, Action callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">obsId</span></td>
+        <td><p>The Observation ID.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_UnvoteObservation_" data-uid="JoshAaronMiller.INaturalist.INatManager.UnvoteObservation*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_UnvoteObservation_System_Int32_JoshAaronMiller_INaturalist_Vote_Action_Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.UnvoteObservation(System.Int32,JoshAaronMiller.INaturalist.Vote,Action,Action{JoshAaronMiller.INaturalist.Error})">UnvoteObservation(Int32, Vote, Action, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Delete a Vote from an Observation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnvoteObservation(int obsId, Vote vote, Action callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">obsId</span></td>
+        <td><p>The Observation ID.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.Vote.html">Vote</a></td>
+        <td><span class="parametername">vote</span></td>
+        <td><p>The Vote to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_UpdateFlag_" data-uid="JoshAaronMiller.INaturalist.INatManager.UpdateFlag*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_UpdateFlag_System_Int32_JoshAaronMiller_INaturalist_WrappedFlag_Action_JoshAaronMiller_INaturalist_Identification__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.UpdateFlag(System.Int32,JoshAaronMiller.INaturalist.WrappedFlag,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})">UpdateFlag(Int32, WrappedFlag, Action&lt;Identification&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Update a Flag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateFlag(int flagId, WrappedFlag flag, Action&lt;Identification&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">flagId</span></td>
+        <td><p>The ID of the flag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.WrappedFlag.html">WrappedFlag</a></td>
+        <td><span class="parametername">flag</span></td>
+        <td><p>The parameters of the flag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Identification.html">Identification</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Flag updated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_UpdateIdentification_" data-uid="JoshAaronMiller.INaturalist.INatManager.UpdateIdentification*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_UpdateIdentification_System_Int32_JoshAaronMiller_INaturalist_IdentificationSubmission_Action_JoshAaronMiller_INaturalist_Identification__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.UpdateIdentification(System.Int32,JoshAaronMiller.INaturalist.IdentificationSubmission,Action{JoshAaronMiller.INaturalist.Identification},Action{JoshAaronMiller.INaturalist.Error})">UpdateIdentification(Int32, IdentificationSubmission, Action&lt;Identification&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Update an Identification</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateIdentification(int identId, IdentificationSubmission identSub, Action&lt;Identification&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">identId</span></td>
+        <td><p>The identification ID to update</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.IdentificationSubmission.html">IdentificationSubmission</a></td>
+        <td><span class="parametername">identSub</span></td>
+        <td><p>The updated information for the identification.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Identification.html">Identification</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Identification object returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_UpdateObservation_" data-uid="JoshAaronMiller.INaturalist.INatManager.UpdateObservation*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_UpdateObservation_System_Int32_JoshAaronMiller_INaturalist_ObservationSubmission_Action_JoshAaronMiller_INaturalist_Observation__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.UpdateObservation(System.Int32,JoshAaronMiller.INaturalist.ObservationSubmission,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})">UpdateObservation(Int32, ObservationSubmission, Action&lt;Observation&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Update an Observation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateObservation(int obsId, ObservationSubmission observation, Action&lt;Observation&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">obsId</span></td>
+        <td><p>The Observation ID to update</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.ObservationSubmission.html">ObservationSubmission</a></td>
+        <td><span class="parametername">observation</span></td>
+        <td><p>An ObservationSubmission object containing the updated information for the observation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Observation.html">Observation</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Observation object returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_UpdateObservationPhoto_" data-uid="JoshAaronMiller.INaturalist.INatManager.UpdateObservationPhoto*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_UpdateObservationPhoto_System_Int32_System_Int32_JoshAaronMiller_INaturalist_PhotoFile_Action_JoshAaronMiller_INaturalist_ObservationPhoto__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.UpdateObservationPhoto(System.Int32,System.Int32,JoshAaronMiller.INaturalist.PhotoFile,Action{JoshAaronMiller.INaturalist.ObservationPhoto},Action{JoshAaronMiller.INaturalist.Error})">UpdateObservationPhoto(Int32, Int32, PhotoFile, Action&lt;ObservationPhoto&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Update an Observation Photo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateObservationPhoto(int obsPhotoId, int position, PhotoFile photo, Action&lt;ObservationPhoto&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">obsPhotoId</span></td>
+        <td><p>The Observation Photo ID to update</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The position in which the photo is displayed for the observation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.PhotoFile.html">PhotoFile</a></td>
+        <td><span class="parametername">photo</span></td>
+        <td><p>The Photo to upload.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.ObservationPhoto.html">ObservationPhoto</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Observation Photo object returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_INatManager_VoteObservation_" data-uid="JoshAaronMiller.INaturalist.INatManager.VoteObservation*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_INatManager_VoteObservation_System_Int32_JoshAaronMiller_INaturalist_Vote_Action_JoshAaronMiller_INaturalist_Observation__Action_JoshAaronMiller_INaturalist_Error__" data-uid="JoshAaronMiller.INaturalist.INatManager.VoteObservation(System.Int32,JoshAaronMiller.INaturalist.Vote,Action{JoshAaronMiller.INaturalist.Observation},Action{JoshAaronMiller.INaturalist.Error})">VoteObservation(Int32, Vote, Action&lt;Observation&gt;, Action&lt;Error&gt;)</h4>
+  <div class="markdown level1 summary"><p>Vote on an Observation; see Vote object for usage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void VoteObservation(int obsId, Vote vote, Action&lt;Observation&gt; callback, Action&lt;Error&gt; errorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">obsId</span></td>
+        <td><p>The Observation ID.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.Vote.html">Vote</a></td>
+        <td><span class="parametername">vote</span></td>
+        <td><p>The Vote to submit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Observation.html">Observation</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>A function to callback when the request is done which takes as input the Observation object returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.Error.html">Error</a>&gt;</td>
+        <td><span class="parametername">errorCallback</span></td>
+        <td><p>A function to callback when iNaturalist returns an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

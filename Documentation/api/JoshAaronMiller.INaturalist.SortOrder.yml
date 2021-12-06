@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.SortOrder
+  commentId: T:JoshAaronMiller.INaturalist.SortOrder
+  id: SortOrder
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.SortOrder.Asc
+  - JoshAaronMiller.INaturalist.SortOrder.Desc
+  langs:
+  - csharp
+  - vb
+  name: SortOrder
+  nameWithType: SortOrder
+  fullName: JoshAaronMiller.INaturalist.SortOrder
+  type: Enum
+  source:
+    id: SortOrder
+    path: ''
+    startLine: 555
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum SortOrder
+    content.vb: Public Enum SortOrder
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.SortOrder.Desc
+  commentId: F:JoshAaronMiller.INaturalist.SortOrder.Desc
+  id: Desc
+  parent: JoshAaronMiller.INaturalist.SortOrder
+  langs:
+  - csharp
+  - vb
+  name: Desc
+  nameWithType: SortOrder.Desc
+  fullName: JoshAaronMiller.INaturalist.SortOrder.Desc
+  type: Field
+  source:
+    id: Desc
+    path: ''
+    startLine: 557
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Desc = 0
+    return:
+      type: JoshAaronMiller.INaturalist.SortOrder
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SortOrder.Asc
+  commentId: F:JoshAaronMiller.INaturalist.SortOrder.Asc
+  id: Asc
+  parent: JoshAaronMiller.INaturalist.SortOrder
+  langs:
+  - csharp
+  - vb
+  name: Asc
+  nameWithType: SortOrder.Asc
+  fullName: JoshAaronMiller.INaturalist.SortOrder.Asc
+  type: Field
+  source:
+    id: Asc
+    path: ''
+    startLine: 557
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Asc = 1
+    return:
+      type: JoshAaronMiller.INaturalist.SortOrder
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.SortOrder
+  commentId: T:JoshAaronMiller.INaturalist.SortOrder
+  parent: JoshAaronMiller.INaturalist
+  name: SortOrder
+  nameWithType: SortOrder
+  fullName: JoshAaronMiller.INaturalist.SortOrder

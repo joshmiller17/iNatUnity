@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  id: ObservationSearch.IdentificationAgreement
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.MostAgree
+  - JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.MostDisagree
+  - JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.None
+  - JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.SomeAgree
+  langs:
+  - csharp
+  - vb
+  name: ObservationSearch.IdentificationAgreement
+  nameWithType: ObservationSearch.IdentificationAgreement
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  type: Enum
+  source:
+    id: IdentificationAgreement
+    path: ''
+    startLine: 3006
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum IdentificationAgreement
+    content.vb: Public Enum IdentificationAgreement
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.None
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.None
+  id: None
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ObservationSearch.IdentificationAgreement.None
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 3008
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: None = 0
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.MostAgree
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.MostAgree
+  id: MostAgree
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  langs:
+  - csharp
+  - vb
+  name: MostAgree
+  nameWithType: ObservationSearch.IdentificationAgreement.MostAgree
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.MostAgree
+  type: Field
+  source:
+    id: MostAgree
+    path: ''
+    startLine: 3008
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: MostAgree = 1
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.MostDisagree
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.MostDisagree
+  id: MostDisagree
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  langs:
+  - csharp
+  - vb
+  name: MostDisagree
+  nameWithType: ObservationSearch.IdentificationAgreement.MostDisagree
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.MostDisagree
+  type: Field
+  source:
+    id: MostDisagree
+    path: ''
+    startLine: 3008
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: MostDisagree = 2
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.SomeAgree
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.SomeAgree
+  id: SomeAgree
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  langs:
+  - csharp
+  - vb
+  name: SomeAgree
+  nameWithType: ObservationSearch.IdentificationAgreement.SomeAgree
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.SomeAgree
+  type: Field
+  source:
+    id: SomeAgree
+    path: ''
+    startLine: 3008
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: SomeAgree = 3
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.IdentificationAgreement
+  nameWithType: ObservationSearch.IdentificationAgreement
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement

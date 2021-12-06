@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.License
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.License
+  id: ObservationSearch.License
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.ObservationSearch.License.Cc0
+  - JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttr
+  - JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNoDerivs
+  - JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNonCommercial
+  - JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNonCommercialNoDerivs
+  - JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNonCommercialShareAlike
+  - JoshAaronMiller.INaturalist.ObservationSearch.License.CcShareAlike
+  - JoshAaronMiller.INaturalist.ObservationSearch.License.None
+  langs:
+  - csharp
+  - vb
+  name: ObservationSearch.License
+  nameWithType: ObservationSearch.License
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.License
+  type: Enum
+  source:
+    id: License
+    path: ''
+    startLine: 2965
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum License
+    content.vb: Public Enum License
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.License.None
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.License.None
+  id: None
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.License
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ObservationSearch.License.None
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.License.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 2967
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: None = 0
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.License
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttr
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttr
+  id: CcAttr
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.License
+  langs:
+  - csharp
+  - vb
+  name: CcAttr
+  nameWithType: ObservationSearch.License.CcAttr
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttr
+  type: Field
+  source:
+    id: CcAttr
+    path: ''
+    startLine: 2967
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: CcAttr = 1
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.License
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNonCommercial
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNonCommercial
+  id: CcAttrNonCommercial
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.License
+  langs:
+  - csharp
+  - vb
+  name: CcAttrNonCommercial
+  nameWithType: ObservationSearch.License.CcAttrNonCommercial
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNonCommercial
+  type: Field
+  source:
+    id: CcAttrNonCommercial
+    path: ''
+    startLine: 2967
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: CcAttrNonCommercial = 2
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.License
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNoDerivs
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNoDerivs
+  id: CcAttrNoDerivs
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.License
+  langs:
+  - csharp
+  - vb
+  name: CcAttrNoDerivs
+  nameWithType: ObservationSearch.License.CcAttrNoDerivs
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNoDerivs
+  type: Field
+  source:
+    id: CcAttrNoDerivs
+    path: ''
+    startLine: 2967
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: CcAttrNoDerivs = 3
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.License
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.License.CcShareAlike
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.License.CcShareAlike
+  id: CcShareAlike
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.License
+  langs:
+  - csharp
+  - vb
+  name: CcShareAlike
+  nameWithType: ObservationSearch.License.CcShareAlike
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.License.CcShareAlike
+  type: Field
+  source:
+    id: CcShareAlike
+    path: ''
+    startLine: 2967
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: CcShareAlike = 4
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.License
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNonCommercialNoDerivs
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNonCommercialNoDerivs
+  id: CcAttrNonCommercialNoDerivs
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.License
+  langs:
+  - csharp
+  - vb
+  name: CcAttrNonCommercialNoDerivs
+  nameWithType: ObservationSearch.License.CcAttrNonCommercialNoDerivs
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNonCommercialNoDerivs
+  type: Field
+  source:
+    id: CcAttrNonCommercialNoDerivs
+    path: ''
+    startLine: 2968
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: CcAttrNonCommercialNoDerivs = 5
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.License
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNonCommercialShareAlike
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNonCommercialShareAlike
+  id: CcAttrNonCommercialShareAlike
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.License
+  langs:
+  - csharp
+  - vb
+  name: CcAttrNonCommercialShareAlike
+  nameWithType: ObservationSearch.License.CcAttrNonCommercialShareAlike
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.License.CcAttrNonCommercialShareAlike
+  type: Field
+  source:
+    id: CcAttrNonCommercialShareAlike
+    path: ''
+    startLine: 2968
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: CcAttrNonCommercialShareAlike = 6
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.License
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.License.Cc0
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.License.Cc0
+  id: Cc0
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.License
+  langs:
+  - csharp
+  - vb
+  name: Cc0
+  nameWithType: ObservationSearch.License.Cc0
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.License.Cc0
+  type: Field
+  source:
+    id: Cc0
+    path: ''
+    startLine: 2968
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Cc0 = 7
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.License
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.License
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.License
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.License
+  nameWithType: ObservationSearch.License
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.License

@@ -1,0 +1,967 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.User
+  commentId: T:JoshAaronMiller.INaturalist.User
+  id: User
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.User.activity_count
+  - JoshAaronMiller.INaturalist.User.created_at
+  - JoshAaronMiller.INaturalist.User.icon
+  - JoshAaronMiller.INaturalist.User.icon_url
+  - JoshAaronMiller.INaturalist.User.id
+  - JoshAaronMiller.INaturalist.User.identifications_count
+  - JoshAaronMiller.INaturalist.User.journal_posts_count
+  - JoshAaronMiller.INaturalist.User.login
+  - JoshAaronMiller.INaturalist.User.login_autocomplete
+  - JoshAaronMiller.INaturalist.User.login_exact
+  - JoshAaronMiller.INaturalist.User.name
+  - JoshAaronMiller.INaturalist.User.name_autocomplete
+  - JoshAaronMiller.INaturalist.User.observations_count
+  - JoshAaronMiller.INaturalist.User.orcid
+  - JoshAaronMiller.INaturalist.User.roles
+  - JoshAaronMiller.INaturalist.User.site_id
+  - JoshAaronMiller.INaturalist.User.spam
+  - JoshAaronMiller.INaturalist.User.species_count
+  - JoshAaronMiller.INaturalist.User.suspended
+  - JoshAaronMiller.INaturalist.User.universal_search_rank
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: User
+  fullName: JoshAaronMiller.INaturalist.User
+  type: Class
+  source:
+    id: User
+    path: ''
+    startLine: 2454
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class User : JsonObject<User>
+    content.vb: >-
+      <Serializable>
+
+      Public Class User
+          Inherits JsonObject(Of User)
+  inheritance:
+  - System.Object
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.User}
+  inheritedMembers:
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.User}.CreateFromJson(System.String)
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.User}.ToJson(JoshAaronMiller.INaturalist.User)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JoshAaronMiller.INaturalist.User.id
+  commentId: F:JoshAaronMiller.INaturalist.User.id
+  id: id
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: User.id
+  fullName: JoshAaronMiller.INaturalist.User.id
+  type: Field
+  source:
+    id: id
+    path: ''
+    startLine: 2457
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int id
+    return:
+      type: System.Int32
+    content.vb: Public id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.login
+  commentId: F:JoshAaronMiller.INaturalist.User.login
+  id: login
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: login
+  nameWithType: User.login
+  fullName: JoshAaronMiller.INaturalist.User.login
+  type: Field
+  source:
+    id: login
+    path: ''
+    startLine: 2458
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string login
+    return:
+      type: System.String
+    content.vb: Public login As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.spam
+  commentId: F:JoshAaronMiller.INaturalist.User.spam
+  id: spam
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: spam
+  nameWithType: User.spam
+  fullName: JoshAaronMiller.INaturalist.User.spam
+  type: Field
+  source:
+    id: spam
+    path: ''
+    startLine: 2459
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public bool spam
+    return:
+      type: System.Boolean
+    content.vb: Public spam As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.suspended
+  commentId: F:JoshAaronMiller.INaturalist.User.suspended
+  id: suspended
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: suspended
+  nameWithType: User.suspended
+  fullName: JoshAaronMiller.INaturalist.User.suspended
+  type: Field
+  source:
+    id: suspended
+    path: ''
+    startLine: 2460
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public bool suspended
+    return:
+      type: System.Boolean
+    content.vb: Public suspended As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.created_at
+  commentId: F:JoshAaronMiller.INaturalist.User.created_at
+  id: created_at
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: created_at
+  nameWithType: User.created_at
+  fullName: JoshAaronMiller.INaturalist.User.created_at
+  type: Field
+  source:
+    id: created_at
+    path: ''
+    startLine: 2461
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string created_at
+    return:
+      type: System.String
+    content.vb: Public created_at As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.site_id
+  commentId: F:JoshAaronMiller.INaturalist.User.site_id
+  id: site_id
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: site_id
+  nameWithType: User.site_id
+  fullName: JoshAaronMiller.INaturalist.User.site_id
+  type: Field
+  source:
+    id: site_id
+    path: ''
+    startLine: 2462
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int site_id
+    return:
+      type: System.Int32
+    content.vb: Public site_id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.login_autocomplete
+  commentId: F:JoshAaronMiller.INaturalist.User.login_autocomplete
+  id: login_autocomplete
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: login_autocomplete
+  nameWithType: User.login_autocomplete
+  fullName: JoshAaronMiller.INaturalist.User.login_autocomplete
+  type: Field
+  source:
+    id: login_autocomplete
+    path: ''
+    startLine: 2464
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string login_autocomplete
+    return:
+      type: System.String
+    content.vb: Public login_autocomplete As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.login_exact
+  commentId: F:JoshAaronMiller.INaturalist.User.login_exact
+  id: login_exact
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: login_exact
+  nameWithType: User.login_exact
+  fullName: JoshAaronMiller.INaturalist.User.login_exact
+  type: Field
+  source:
+    id: login_exact
+    path: ''
+    startLine: 2465
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string login_exact
+    return:
+      type: System.String
+    content.vb: Public login_exact As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.name
+  commentId: F:JoshAaronMiller.INaturalist.User.name
+  id: name
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: User.name
+  fullName: JoshAaronMiller.INaturalist.User.name
+  type: Field
+  source:
+    id: name
+    path: ''
+    startLine: 2466
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string name
+    return:
+      type: System.String
+    content.vb: Public name As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.name_autocomplete
+  commentId: F:JoshAaronMiller.INaturalist.User.name_autocomplete
+  id: name_autocomplete
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: name_autocomplete
+  nameWithType: User.name_autocomplete
+  fullName: JoshAaronMiller.INaturalist.User.name_autocomplete
+  type: Field
+  source:
+    id: name_autocomplete
+    path: ''
+    startLine: 2467
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string name_autocomplete
+    return:
+      type: System.String
+    content.vb: Public name_autocomplete As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.orcid
+  commentId: F:JoshAaronMiller.INaturalist.User.orcid
+  id: orcid
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: orcid
+  nameWithType: User.orcid
+  fullName: JoshAaronMiller.INaturalist.User.orcid
+  type: Field
+  source:
+    id: orcid
+    path: ''
+    startLine: 2468
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string orcid
+    return:
+      type: System.String
+    content.vb: Public orcid As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.icon
+  commentId: F:JoshAaronMiller.INaturalist.User.icon
+  id: icon
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: icon
+  nameWithType: User.icon
+  fullName: JoshAaronMiller.INaturalist.User.icon
+  type: Field
+  source:
+    id: icon
+    path: ''
+    startLine: 2469
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string icon
+    return:
+      type: System.String
+    content.vb: Public icon As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.observations_count
+  commentId: F:JoshAaronMiller.INaturalist.User.observations_count
+  id: observations_count
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: observations_count
+  nameWithType: User.observations_count
+  fullName: JoshAaronMiller.INaturalist.User.observations_count
+  type: Field
+  source:
+    id: observations_count
+    path: ''
+    startLine: 2470
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int observations_count
+    return:
+      type: System.Int32
+    content.vb: Public observations_count As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.identifications_count
+  commentId: F:JoshAaronMiller.INaturalist.User.identifications_count
+  id: identifications_count
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: identifications_count
+  nameWithType: User.identifications_count
+  fullName: JoshAaronMiller.INaturalist.User.identifications_count
+  type: Field
+  source:
+    id: identifications_count
+    path: ''
+    startLine: 2471
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int identifications_count
+    return:
+      type: System.Int32
+    content.vb: Public identifications_count As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.journal_posts_count
+  commentId: F:JoshAaronMiller.INaturalist.User.journal_posts_count
+  id: journal_posts_count
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: journal_posts_count
+  nameWithType: User.journal_posts_count
+  fullName: JoshAaronMiller.INaturalist.User.journal_posts_count
+  type: Field
+  source:
+    id: journal_posts_count
+    path: ''
+    startLine: 2472
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int journal_posts_count
+    return:
+      type: System.Int32
+    content.vb: Public journal_posts_count As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.activity_count
+  commentId: F:JoshAaronMiller.INaturalist.User.activity_count
+  id: activity_count
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: activity_count
+  nameWithType: User.activity_count
+  fullName: JoshAaronMiller.INaturalist.User.activity_count
+  type: Field
+  source:
+    id: activity_count
+    path: ''
+    startLine: 2473
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int activity_count
+    return:
+      type: System.Int32
+    content.vb: Public activity_count As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.species_count
+  commentId: F:JoshAaronMiller.INaturalist.User.species_count
+  id: species_count
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: species_count
+  nameWithType: User.species_count
+  fullName: JoshAaronMiller.INaturalist.User.species_count
+  type: Field
+  source:
+    id: species_count
+    path: ''
+    startLine: 2474
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int species_count
+    return:
+      type: System.Int32
+    content.vb: Public species_count As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.universal_search_rank
+  commentId: F:JoshAaronMiller.INaturalist.User.universal_search_rank
+  id: universal_search_rank
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: universal_search_rank
+  nameWithType: User.universal_search_rank
+  fullName: JoshAaronMiller.INaturalist.User.universal_search_rank
+  type: Field
+  source:
+    id: universal_search_rank
+    path: ''
+    startLine: 2475
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int universal_search_rank
+    return:
+      type: System.Int32
+    content.vb: Public universal_search_rank As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.roles
+  commentId: F:JoshAaronMiller.INaturalist.User.roles
+  id: roles
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: roles
+  nameWithType: User.roles
+  fullName: JoshAaronMiller.INaturalist.User.roles
+  type: Field
+  source:
+    id: roles
+    path: ''
+    startLine: 2476
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public List<string> roles
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public roles As List(Of String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.User.icon_url
+  commentId: F:JoshAaronMiller.INaturalist.User.icon_url
+  id: icon_url
+  parent: JoshAaronMiller.INaturalist.User
+  langs:
+  - csharp
+  - vb
+  name: icon_url
+  nameWithType: User.icon_url
+  fullName: JoshAaronMiller.INaturalist.User.icon_url
+  type: Field
+  source:
+    id: icon_url
+    path: ''
+    startLine: 2477
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string icon_url
+    return:
+      type: System.String
+    content.vb: Public icon_url As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.User}
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.User}
+  parent: JoshAaronMiller.INaturalist
+  definition: JoshAaronMiller.INaturalist.JsonObject`1
+  name: JsonObject<User>
+  nameWithType: JsonObject<User>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.User>
+  nameWithType.vb: JsonObject(Of User)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.User)
+  name.vb: JsonObject(Of User)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.User
+    name: User
+    nameWithType: User
+    fullName: JoshAaronMiller.INaturalist.User
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.User
+    name: User
+    nameWithType: User
+    fullName: JoshAaronMiller.INaturalist.User
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.User}.CreateFromJson(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.User}.CreateFromJson(System.String)
+  parent: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.User}
+  definition: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  name: CreateFromJson(String)
+  nameWithType: JsonObject<User>.CreateFromJson(String)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.User>.CreateFromJson(System.String)
+  nameWithType.vb: JsonObject(Of User).CreateFromJson(String)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.User).CreateFromJson(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject<User>.CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.User>.CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject(Of User).CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.User).CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.User}.ToJson(JoshAaronMiller.INaturalist.User)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.User}.ToJson(JoshAaronMiller.INaturalist.User)
+  parent: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.User}
+  definition: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  name: ToJson(User)
+  nameWithType: JsonObject<User>.ToJson(User)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.User>.ToJson(JoshAaronMiller.INaturalist.User)
+  nameWithType.vb: JsonObject(Of User).ToJson(User)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.User).ToJson(JoshAaronMiller.INaturalist.User)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject<User>.ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.User>.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.User
+    name: User
+    nameWithType: User
+    fullName: JoshAaronMiller.INaturalist.User
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject(Of User).ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.User).ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.User
+    name: User
+    nameWithType: User
+    fullName: JoshAaronMiller.INaturalist.User
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JoshAaronMiller.INaturalist.JsonObject`1
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject`1
+  name: JsonObject<T>
+  nameWithType: JsonObject<T>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>
+  nameWithType.vb: JsonObject(Of T)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T)
+  name.vb: JsonObject(Of T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  isExternal: true
+  name: CreateFromJson(String)
+  nameWithType: JsonObject<T>.CreateFromJson(String)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson(System.String)
+  nameWithType.vb: JsonObject(Of T).CreateFromJson(String)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject<T>.CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject(Of T).CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  name: ToJson(T)
+  nameWithType: JsonObject<T>.ToJson(T)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson(T)
+  nameWithType.vb: JsonObject(Of T).ToJson(T)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson(T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject<T>.ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject(Of T).ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

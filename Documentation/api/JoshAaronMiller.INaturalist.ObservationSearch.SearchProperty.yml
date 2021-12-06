@@ -1,0 +1,187 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  id: ObservationSearch.SearchProperty
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.All
+  - JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Description
+  - JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Names
+  - JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Place
+  - JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Tags
+  langs:
+  - csharp
+  - vb
+  name: ObservationSearch.SearchProperty
+  nameWithType: ObservationSearch.SearchProperty
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  type: Enum
+  source:
+    id: SearchProperty
+    path: ''
+    startLine: 3019
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum SearchProperty
+    content.vb: Public Enum SearchProperty
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.All
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.All
+  id: All
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: ObservationSearch.SearchProperty.All
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.All
+  type: Field
+  source:
+    id: All
+    path: ''
+    startLine: 3021
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: All = 0
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Names
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Names
+  id: Names
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  langs:
+  - csharp
+  - vb
+  name: Names
+  nameWithType: ObservationSearch.SearchProperty.Names
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Names
+  type: Field
+  source:
+    id: Names
+    path: ''
+    startLine: 3021
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Names = 1
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Tags
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Tags
+  id: Tags
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: ObservationSearch.SearchProperty.Tags
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Tags
+  type: Field
+  source:
+    id: Tags
+    path: ''
+    startLine: 3021
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Tags = 2
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Description
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Description
+  id: Description
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: ObservationSearch.SearchProperty.Description
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Description
+  type: Field
+  source:
+    id: Description
+    path: ''
+    startLine: 3021
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Description = 3
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Place
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Place
+  id: Place
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  langs:
+  - csharp
+  - vb
+  name: Place
+  nameWithType: ObservationSearch.SearchProperty.Place
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.Place
+  type: Field
+  source:
+    id: Place
+    path: ''
+    startLine: 3021
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Place = 4
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.SearchProperty
+  nameWithType: ObservationSearch.SearchProperty
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty

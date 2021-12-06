@@ -1,0 +1,187 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.OrderBy
+  commentId: T:JoshAaronMiller.INaturalist.OrderBy
+  id: OrderBy
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.OrderBy.CreatedAt
+  - JoshAaronMiller.INaturalist.OrderBy.Id
+  - JoshAaronMiller.INaturalist.OrderBy.ObservedOn
+  - JoshAaronMiller.INaturalist.OrderBy.SpeciesGuess
+  - JoshAaronMiller.INaturalist.OrderBy.Votes
+  langs:
+  - csharp
+  - vb
+  name: OrderBy
+  nameWithType: OrderBy
+  fullName: JoshAaronMiller.INaturalist.OrderBy
+  type: Enum
+  source:
+    id: OrderBy
+    path: ''
+    startLine: 550
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum OrderBy
+    content.vb: Public Enum OrderBy
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.OrderBy.CreatedAt
+  commentId: F:JoshAaronMiller.INaturalist.OrderBy.CreatedAt
+  id: CreatedAt
+  parent: JoshAaronMiller.INaturalist.OrderBy
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: OrderBy.CreatedAt
+  fullName: JoshAaronMiller.INaturalist.OrderBy.CreatedAt
+  type: Field
+  source:
+    id: CreatedAt
+    path: ''
+    startLine: 552
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: CreatedAt = 0
+    return:
+      type: JoshAaronMiller.INaturalist.OrderBy
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.OrderBy.ObservedOn
+  commentId: F:JoshAaronMiller.INaturalist.OrderBy.ObservedOn
+  id: ObservedOn
+  parent: JoshAaronMiller.INaturalist.OrderBy
+  langs:
+  - csharp
+  - vb
+  name: ObservedOn
+  nameWithType: OrderBy.ObservedOn
+  fullName: JoshAaronMiller.INaturalist.OrderBy.ObservedOn
+  type: Field
+  source:
+    id: ObservedOn
+    path: ''
+    startLine: 552
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ObservedOn = 1
+    return:
+      type: JoshAaronMiller.INaturalist.OrderBy
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.OrderBy.SpeciesGuess
+  commentId: F:JoshAaronMiller.INaturalist.OrderBy.SpeciesGuess
+  id: SpeciesGuess
+  parent: JoshAaronMiller.INaturalist.OrderBy
+  langs:
+  - csharp
+  - vb
+  name: SpeciesGuess
+  nameWithType: OrderBy.SpeciesGuess
+  fullName: JoshAaronMiller.INaturalist.OrderBy.SpeciesGuess
+  type: Field
+  source:
+    id: SpeciesGuess
+    path: ''
+    startLine: 552
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: SpeciesGuess = 2
+    return:
+      type: JoshAaronMiller.INaturalist.OrderBy
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.OrderBy.Votes
+  commentId: F:JoshAaronMiller.INaturalist.OrderBy.Votes
+  id: Votes
+  parent: JoshAaronMiller.INaturalist.OrderBy
+  langs:
+  - csharp
+  - vb
+  name: Votes
+  nameWithType: OrderBy.Votes
+  fullName: JoshAaronMiller.INaturalist.OrderBy.Votes
+  type: Field
+  source:
+    id: Votes
+    path: ''
+    startLine: 552
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Votes = 3
+    return:
+      type: JoshAaronMiller.INaturalist.OrderBy
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.OrderBy.Id
+  commentId: F:JoshAaronMiller.INaturalist.OrderBy.Id
+  id: Id
+  parent: JoshAaronMiller.INaturalist.OrderBy
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: OrderBy.Id
+  fullName: JoshAaronMiller.INaturalist.OrderBy.Id
+  type: Field
+  source:
+    id: Id
+    path: ''
+    startLine: 552
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Id = 4
+    return:
+      type: JoshAaronMiller.INaturalist.OrderBy
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.OrderBy
+  commentId: T:JoshAaronMiller.INaturalist.OrderBy
+  parent: JoshAaronMiller.INaturalist
+  name: OrderBy
+  nameWithType: OrderBy
+  fullName: JoshAaronMiller.INaturalist.OrderBy

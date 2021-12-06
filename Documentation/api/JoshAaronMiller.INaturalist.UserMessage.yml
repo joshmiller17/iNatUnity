@@ -1,0 +1,774 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.UserMessage
+  commentId: T:JoshAaronMiller.INaturalist.UserMessage
+  id: UserMessage
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.UserMessage.body
+  - JoshAaronMiller.INaturalist.UserMessage.created_at
+  - JoshAaronMiller.INaturalist.UserMessage.flaggable_message_id
+  - JoshAaronMiller.INaturalist.UserMessage.from_user
+  - JoshAaronMiller.INaturalist.UserMessage.id
+  - JoshAaronMiller.INaturalist.UserMessage.read_at
+  - JoshAaronMiller.INaturalist.UserMessage.subject
+  - JoshAaronMiller.INaturalist.UserMessage.thread_flags
+  - JoshAaronMiller.INaturalist.UserMessage.thread_id
+  - JoshAaronMiller.INaturalist.UserMessage.thread_messages_count
+  - JoshAaronMiller.INaturalist.UserMessage.to_user
+  - JoshAaronMiller.INaturalist.UserMessage.updated_at
+  - JoshAaronMiller.INaturalist.UserMessage.user_id
+  langs:
+  - csharp
+  - vb
+  name: UserMessage
+  nameWithType: UserMessage
+  fullName: JoshAaronMiller.INaturalist.UserMessage
+  type: Class
+  source:
+    id: UserMessage
+    path: ''
+    startLine: 2486
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class UserMessage : JsonObject<UserMessage>
+    content.vb: >-
+      <Serializable>
+
+      Public Class UserMessage
+          Inherits JsonObject(Of UserMessage)
+  inheritance:
+  - System.Object
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.UserMessage}
+  inheritedMembers:
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.UserMessage}.CreateFromJson(System.String)
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.UserMessage}.ToJson(JoshAaronMiller.INaturalist.UserMessage)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JoshAaronMiller.INaturalist.UserMessage.id
+  commentId: F:JoshAaronMiller.INaturalist.UserMessage.id
+  id: id
+  parent: JoshAaronMiller.INaturalist.UserMessage
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: UserMessage.id
+  fullName: JoshAaronMiller.INaturalist.UserMessage.id
+  type: Field
+  source:
+    id: id
+    path: ''
+    startLine: 2489
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int id
+    return:
+      type: System.Int32
+    content.vb: Public id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.UserMessage.user_id
+  commentId: F:JoshAaronMiller.INaturalist.UserMessage.user_id
+  id: user_id
+  parent: JoshAaronMiller.INaturalist.UserMessage
+  langs:
+  - csharp
+  - vb
+  name: user_id
+  nameWithType: UserMessage.user_id
+  fullName: JoshAaronMiller.INaturalist.UserMessage.user_id
+  type: Field
+  source:
+    id: user_id
+    path: ''
+    startLine: 2490
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int user_id
+    return:
+      type: System.Int32
+    content.vb: Public user_id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.UserMessage.thread_id
+  commentId: F:JoshAaronMiller.INaturalist.UserMessage.thread_id
+  id: thread_id
+  parent: JoshAaronMiller.INaturalist.UserMessage
+  langs:
+  - csharp
+  - vb
+  name: thread_id
+  nameWithType: UserMessage.thread_id
+  fullName: JoshAaronMiller.INaturalist.UserMessage.thread_id
+  type: Field
+  source:
+    id: thread_id
+    path: ''
+    startLine: 2491
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int thread_id
+    return:
+      type: System.Int32
+    content.vb: Public thread_id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.UserMessage.subject
+  commentId: F:JoshAaronMiller.INaturalist.UserMessage.subject
+  id: subject
+  parent: JoshAaronMiller.INaturalist.UserMessage
+  langs:
+  - csharp
+  - vb
+  name: subject
+  nameWithType: UserMessage.subject
+  fullName: JoshAaronMiller.INaturalist.UserMessage.subject
+  type: Field
+  source:
+    id: subject
+    path: ''
+    startLine: 2492
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string subject
+    return:
+      type: System.String
+    content.vb: Public subject As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.UserMessage.body
+  commentId: F:JoshAaronMiller.INaturalist.UserMessage.body
+  id: body
+  parent: JoshAaronMiller.INaturalist.UserMessage
+  langs:
+  - csharp
+  - vb
+  name: body
+  nameWithType: UserMessage.body
+  fullName: JoshAaronMiller.INaturalist.UserMessage.body
+  type: Field
+  source:
+    id: body
+    path: ''
+    startLine: 2493
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string body
+    return:
+      type: System.String
+    content.vb: Public body As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.UserMessage.thread_messages_count
+  commentId: F:JoshAaronMiller.INaturalist.UserMessage.thread_messages_count
+  id: thread_messages_count
+  parent: JoshAaronMiller.INaturalist.UserMessage
+  langs:
+  - csharp
+  - vb
+  name: thread_messages_count
+  nameWithType: UserMessage.thread_messages_count
+  fullName: JoshAaronMiller.INaturalist.UserMessage.thread_messages_count
+  type: Field
+  source:
+    id: thread_messages_count
+    path: ''
+    startLine: 2494
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int thread_messages_count
+    return:
+      type: System.Int32
+    content.vb: Public thread_messages_count As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.UserMessage.read_at
+  commentId: F:JoshAaronMiller.INaturalist.UserMessage.read_at
+  id: read_at
+  parent: JoshAaronMiller.INaturalist.UserMessage
+  langs:
+  - csharp
+  - vb
+  name: read_at
+  nameWithType: UserMessage.read_at
+  fullName: JoshAaronMiller.INaturalist.UserMessage.read_at
+  type: Field
+  source:
+    id: read_at
+    path: ''
+    startLine: 2495
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public TimeDetails read_at
+    return:
+      type: JoshAaronMiller.INaturalist.TimeDetails
+    content.vb: Public read_at As TimeDetails
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.UserMessage.created_at
+  commentId: F:JoshAaronMiller.INaturalist.UserMessage.created_at
+  id: created_at
+  parent: JoshAaronMiller.INaturalist.UserMessage
+  langs:
+  - csharp
+  - vb
+  name: created_at
+  nameWithType: UserMessage.created_at
+  fullName: JoshAaronMiller.INaturalist.UserMessage.created_at
+  type: Field
+  source:
+    id: created_at
+    path: ''
+    startLine: 2496
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public TimeDetails created_at
+    return:
+      type: JoshAaronMiller.INaturalist.TimeDetails
+    content.vb: Public created_at As TimeDetails
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.UserMessage.updated_at
+  commentId: F:JoshAaronMiller.INaturalist.UserMessage.updated_at
+  id: updated_at
+  parent: JoshAaronMiller.INaturalist.UserMessage
+  langs:
+  - csharp
+  - vb
+  name: updated_at
+  nameWithType: UserMessage.updated_at
+  fullName: JoshAaronMiller.INaturalist.UserMessage.updated_at
+  type: Field
+  source:
+    id: updated_at
+    path: ''
+    startLine: 2497
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public TimeDetails updated_at
+    return:
+      type: JoshAaronMiller.INaturalist.TimeDetails
+    content.vb: Public updated_at As TimeDetails
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.UserMessage.from_user
+  commentId: F:JoshAaronMiller.INaturalist.UserMessage.from_user
+  id: from_user
+  parent: JoshAaronMiller.INaturalist.UserMessage
+  langs:
+  - csharp
+  - vb
+  name: from_user
+  nameWithType: UserMessage.from_user
+  fullName: JoshAaronMiller.INaturalist.UserMessage.from_user
+  type: Field
+  source:
+    id: from_user
+    path: ''
+    startLine: 2498
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public User from_user
+    return:
+      type: JoshAaronMiller.INaturalist.User
+    content.vb: Public from_user As User
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.UserMessage.to_user
+  commentId: F:JoshAaronMiller.INaturalist.UserMessage.to_user
+  id: to_user
+  parent: JoshAaronMiller.INaturalist.UserMessage
+  langs:
+  - csharp
+  - vb
+  name: to_user
+  nameWithType: UserMessage.to_user
+  fullName: JoshAaronMiller.INaturalist.UserMessage.to_user
+  type: Field
+  source:
+    id: to_user
+    path: ''
+    startLine: 2499
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public User to_user
+    return:
+      type: JoshAaronMiller.INaturalist.User
+    content.vb: Public to_user As User
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.UserMessage.thread_flags
+  commentId: F:JoshAaronMiller.INaturalist.UserMessage.thread_flags
+  id: thread_flags
+  parent: JoshAaronMiller.INaturalist.UserMessage
+  langs:
+  - csharp
+  - vb
+  name: thread_flags
+  nameWithType: UserMessage.thread_flags
+  fullName: JoshAaronMiller.INaturalist.UserMessage.thread_flags
+  type: Field
+  source:
+    id: thread_flags
+    path: ''
+    startLine: 2500
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public List<Flag> thread_flags
+    return:
+      type: System.Collections.Generic.List{JoshAaronMiller.INaturalist.Flag}
+    content.vb: Public thread_flags As List(Of Flag)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.UserMessage.flaggable_message_id
+  commentId: F:JoshAaronMiller.INaturalist.UserMessage.flaggable_message_id
+  id: flaggable_message_id
+  parent: JoshAaronMiller.INaturalist.UserMessage
+  langs:
+  - csharp
+  - vb
+  name: flaggable_message_id
+  nameWithType: UserMessage.flaggable_message_id
+  fullName: JoshAaronMiller.INaturalist.UserMessage.flaggable_message_id
+  type: Field
+  source:
+    id: flaggable_message_id
+    path: ''
+    startLine: 2501
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int flaggable_message_id
+    return:
+      type: System.Int32
+    content.vb: Public flaggable_message_id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.UserMessage}
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.UserMessage}
+  parent: JoshAaronMiller.INaturalist
+  definition: JoshAaronMiller.INaturalist.JsonObject`1
+  name: JsonObject<UserMessage>
+  nameWithType: JsonObject<UserMessage>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.UserMessage>
+  nameWithType.vb: JsonObject(Of UserMessage)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.UserMessage)
+  name.vb: JsonObject(Of UserMessage)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.UserMessage
+    name: UserMessage
+    nameWithType: UserMessage
+    fullName: JoshAaronMiller.INaturalist.UserMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.UserMessage
+    name: UserMessage
+    nameWithType: UserMessage
+    fullName: JoshAaronMiller.INaturalist.UserMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.UserMessage}.CreateFromJson(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.UserMessage}.CreateFromJson(System.String)
+  parent: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.UserMessage}
+  definition: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  name: CreateFromJson(String)
+  nameWithType: JsonObject<UserMessage>.CreateFromJson(String)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.UserMessage>.CreateFromJson(System.String)
+  nameWithType.vb: JsonObject(Of UserMessage).CreateFromJson(String)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.UserMessage).CreateFromJson(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject<UserMessage>.CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.UserMessage>.CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject(Of UserMessage).CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.UserMessage).CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.UserMessage}.ToJson(JoshAaronMiller.INaturalist.UserMessage)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.UserMessage}.ToJson(JoshAaronMiller.INaturalist.UserMessage)
+  parent: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.UserMessage}
+  definition: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  name: ToJson(UserMessage)
+  nameWithType: JsonObject<UserMessage>.ToJson(UserMessage)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.UserMessage>.ToJson(JoshAaronMiller.INaturalist.UserMessage)
+  nameWithType.vb: JsonObject(Of UserMessage).ToJson(UserMessage)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.UserMessage).ToJson(JoshAaronMiller.INaturalist.UserMessage)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject<UserMessage>.ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.UserMessage>.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.UserMessage
+    name: UserMessage
+    nameWithType: UserMessage
+    fullName: JoshAaronMiller.INaturalist.UserMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject(Of UserMessage).ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.UserMessage).ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.UserMessage
+    name: UserMessage
+    nameWithType: UserMessage
+    fullName: JoshAaronMiller.INaturalist.UserMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JoshAaronMiller.INaturalist.JsonObject`1
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject`1
+  name: JsonObject<T>
+  nameWithType: JsonObject<T>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>
+  nameWithType.vb: JsonObject(Of T)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T)
+  name.vb: JsonObject(Of T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  isExternal: true
+  name: CreateFromJson(String)
+  nameWithType: JsonObject<T>.CreateFromJson(String)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson(System.String)
+  nameWithType.vb: JsonObject(Of T).CreateFromJson(String)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject<T>.CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject(Of T).CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  name: ToJson(T)
+  nameWithType: JsonObject<T>.ToJson(T)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson(T)
+  nameWithType.vb: JsonObject(Of T).ToJson(T)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson(T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject<T>.ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject(Of T).ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: JoshAaronMiller.INaturalist.TimeDetails
+  commentId: T:JoshAaronMiller.INaturalist.TimeDetails
+  parent: JoshAaronMiller.INaturalist
+  name: TimeDetails
+  nameWithType: TimeDetails
+  fullName: JoshAaronMiller.INaturalist.TimeDetails
+- uid: JoshAaronMiller.INaturalist.User
+  commentId: T:JoshAaronMiller.INaturalist.User
+  parent: JoshAaronMiller.INaturalist
+  name: User
+  nameWithType: User
+  fullName: JoshAaronMiller.INaturalist.User
+- uid: System.Collections.Generic.List{JoshAaronMiller.INaturalist.Flag}
+  commentId: T:System.Collections.Generic.List{JoshAaronMiller.INaturalist.Flag}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Flag>
+  nameWithType: List<Flag>
+  fullName: System.Collections.Generic.List<JoshAaronMiller.INaturalist.Flag>
+  nameWithType.vb: List(Of Flag)
+  fullName.vb: System.Collections.Generic.List(Of JoshAaronMiller.INaturalist.Flag)
+  name.vb: List(Of Flag)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Flag
+    name: Flag
+    nameWithType: Flag
+    fullName: JoshAaronMiller.INaturalist.Flag
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Flag
+    name: Flag
+    nameWithType: Flag
+    fullName: JoshAaronMiller.INaturalist.Flag
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

@@ -1,0 +1,285 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.Enums
+  commentId: T:JoshAaronMiller.INaturalist.Enums
+  id: Enums
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.Enums.OrderByToString
+  - JoshAaronMiller.INaturalist.Enums.QualityToString
+  langs:
+  - csharp
+  - vb
+  name: Enums
+  nameWithType: Enums
+  fullName: JoshAaronMiller.INaturalist.Enums
+  type: Class
+  source:
+    id: Enums
+    path: ''
+    startLine: 573
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public static class Enums
+    content.vb: Public Module Enums
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: JoshAaronMiller.INaturalist.Enums.QualityToString
+  commentId: F:JoshAaronMiller.INaturalist.Enums.QualityToString
+  id: QualityToString
+  parent: JoshAaronMiller.INaturalist.Enums
+  langs:
+  - csharp
+  - vb
+  name: QualityToString
+  nameWithType: Enums.QualityToString
+  fullName: JoshAaronMiller.INaturalist.Enums.QualityToString
+  type: Field
+  source:
+    id: QualityToString
+    path: ''
+    startLine: 576
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public static Dictionary<QualityGrade, string> QualityToString
+    return:
+      type: System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.QualityGrade,System.String}
+    content.vb: Public Shared QualityToString As Dictionary(Of QualityGrade, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JoshAaronMiller.INaturalist.Enums.OrderByToString
+  commentId: F:JoshAaronMiller.INaturalist.Enums.OrderByToString
+  id: OrderByToString
+  parent: JoshAaronMiller.INaturalist.Enums
+  langs:
+  - csharp
+  - vb
+  name: OrderByToString
+  nameWithType: Enums.OrderByToString
+  fullName: JoshAaronMiller.INaturalist.Enums.OrderByToString
+  type: Field
+  source:
+    id: OrderByToString
+    path: ''
+    startLine: 584
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public static Dictionary<OrderBy, string> OrderByToString
+    return:
+      type: System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.OrderBy,System.String}
+    content.vb: Public Shared OrderByToString As Dictionary(Of OrderBy, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.QualityGrade,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.QualityGrade,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<QualityGrade, String>
+  nameWithType: Dictionary<QualityGrade, String>
+  fullName: System.Collections.Generic.Dictionary<JoshAaronMiller.INaturalist.QualityGrade, System.String>
+  nameWithType.vb: Dictionary(Of QualityGrade, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of JoshAaronMiller.INaturalist.QualityGrade, System.String)
+  name.vb: Dictionary(Of QualityGrade, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.QualityGrade
+    name: QualityGrade
+    nameWithType: QualityGrade
+    fullName: JoshAaronMiller.INaturalist.QualityGrade
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.QualityGrade
+    name: QualityGrade
+    nameWithType: QualityGrade
+    fullName: JoshAaronMiller.INaturalist.QualityGrade
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.OrderBy,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.OrderBy,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<OrderBy, String>
+  nameWithType: Dictionary<OrderBy, String>
+  fullName: System.Collections.Generic.Dictionary<JoshAaronMiller.INaturalist.OrderBy, System.String>
+  nameWithType.vb: Dictionary(Of OrderBy, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of JoshAaronMiller.INaturalist.OrderBy, System.String)
+  name.vb: Dictionary(Of OrderBy, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.OrderBy
+    name: OrderBy
+    nameWithType: OrderBy
+    fullName: JoshAaronMiller.INaturalist.OrderBy
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.OrderBy
+    name: OrderBy
+    nameWithType: OrderBy
+    fullName: JoshAaronMiller.INaturalist.OrderBy
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

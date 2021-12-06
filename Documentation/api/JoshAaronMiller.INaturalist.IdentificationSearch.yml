@@ -1,0 +1,1407 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch
+  commentId: T:JoshAaronMiller.INaturalist.IdentificationSearch
+  id: IdentificationSearch
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.IdentificationSearch.BoolParamToString
+  - JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeObservationTaxonIds(System.Collections.Generic.List{System.Int32})
+  - JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeTaxonIds(System.Collections.Generic.List{System.Int32})
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IncludeCategories(System.Collections.Generic.List{System.String})
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIconicTaxonIds(System.Collections.Generic.List{System.Int32})
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserId(System.Collections.Generic.List{System.Int32})
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserLogin(System.Collections.Generic.List{System.Int32})
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIds(System.Collections.Generic.List{System.Int32})
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationIconicTaxonIds(System.Collections.Generic.List{System.Int32})
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonIds(System.Collections.Generic.List{System.Int32})
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IncludePlaceIds(System.Collections.Generic.List{System.Int32})
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonIds(System.Collections.Generic.List{System.Int32})
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})
+  - JoshAaronMiller.INaturalist.IdentificationSearch.SetBooleanParameter(JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter,System.Boolean)
+  - JoshAaronMiller.INaturalist.IdentificationSearch.SetCreatedOnDateLimits(System.String,System.String)
+  - JoshAaronMiller.INaturalist.IdentificationSearch.SetIdentificationnIdLimits(System.Int32,System.Int32)
+  - JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationCreatedOnDateLimits(System.String,System.String)
+  - JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank,JoshAaronMiller.INaturalist.TaxonRank)
+  - JoshAaronMiller.INaturalist.IdentificationSearch.SetObservedOnDateLimits(System.String,System.String)
+  - JoshAaronMiller.INaturalist.IdentificationSearch.SetOrder(JoshAaronMiller.INaturalist.OrderBy,JoshAaronMiller.INaturalist.SortOrder)
+  - JoshAaronMiller.INaturalist.IdentificationSearch.SetPagination(System.Int32,System.Int32)
+  - JoshAaronMiller.INaturalist.IdentificationSearch.SetQualityGrade(JoshAaronMiller.INaturalist.QualityGrade)
+  - JoshAaronMiller.INaturalist.IdentificationSearch.SetTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank,JoshAaronMiller.INaturalist.TaxonRank)
+  langs:
+  - csharp
+  - vb
+  name: IdentificationSearch
+  nameWithType: IdentificationSearch
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch
+  type: Class
+  source:
+    id: IdentificationSearch
+    path: ''
+    startLine: 2534
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nAn IdentificationSearch is a set of parameters for searching iNaturalist Identifications.\nUsage: myINatManager.SearchIdentifications(myIdentificationSearch)\n"
+  example: []
+  syntax:
+    content: 'public class IdentificationSearch : SearchObject'
+    content.vb: >-
+      Public Class IdentificationSearch
+          Inherits SearchObject
+  inheritance:
+  - System.Object
+  - JoshAaronMiller.INaturalist.SearchObject
+  inheritedMembers:
+  - JoshAaronMiller.INaturalist.SearchObject.boolParams
+  - JoshAaronMiller.INaturalist.SearchObject.stringParams
+  - JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.BoolParamToString
+  commentId: F:JoshAaronMiller.INaturalist.IdentificationSearch.BoolParamToString
+  id: BoolParamToString
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: BoolParamToString
+  nameWithType: IdentificationSearch.BoolParamToString
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.BoolParamToString
+  type: Field
+  source:
+    id: BoolParamToString
+    path: ''
+    startLine: 2542
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public static Dictionary<IdentificationSearch.BooleanParameter, string> BoolParamToString
+    return:
+      type: System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter,System.String}
+    content.vb: Public Shared BoolParamToString As Dictionary(Of IdentificationSearch.BooleanParameter, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetBooleanParameter(JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter,System.Boolean)
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.SetBooleanParameter(JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter,System.Boolean)
+  id: SetBooleanParameter(JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter,System.Boolean)
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: SetBooleanParameter(IdentificationSearch.BooleanParameter, Boolean)
+  nameWithType: IdentificationSearch.SetBooleanParameter(IdentificationSearch.BooleanParameter, Boolean)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetBooleanParameter(JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter, System.Boolean)
+  type: Method
+  source:
+    id: SetBooleanParameter
+    path: ''
+    startLine: 2557
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public void SetBooleanParameter(IdentificationSearch.BooleanParameter param, bool setting)
+    parameters:
+    - id: param
+      type: JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
+    - id: setting
+      type: System.Boolean
+    content.vb: Public Sub SetBooleanParameter(param As IdentificationSearch.BooleanParameter, setting As Boolean)
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.SetBooleanParameter*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIds(System.Collections.Generic.List{System.Int32})
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIds(System.Collections.Generic.List{System.Int32})
+  id: IncludeIds(System.Collections.Generic.List{System.Int32})
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: IncludeIds(List<Int32>)
+  nameWithType: IdentificationSearch.IncludeIds(List<Int32>)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIds(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    id: IncludeIds
+    path: ''
+    startLine: 2567
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nRequire the search to include these IDs.\n"
+  example: []
+  syntax:
+    content: public void IncludeIds(List<int> ids)
+    parameters:
+    - id: ids
+      type: System.Collections.Generic.List{System.Int32}
+      description: IDs to include
+    content.vb: Public Sub IncludeIds(ids As List(Of Integer))
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIds*
+  nameWithType.vb: IdentificationSearch.IncludeIds(List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIds(System.Collections.Generic.List(Of System.Int32))
+  name.vb: IncludeIds(List(Of Int32))
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludePlaceIds(System.Collections.Generic.List{System.Int32})
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludePlaceIds(System.Collections.Generic.List{System.Int32})
+  id: IncludePlaceIds(System.Collections.Generic.List{System.Int32})
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: IncludePlaceIds(List<Int32>)
+  nameWithType: IdentificationSearch.IncludePlaceIds(List<Int32>)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludePlaceIds(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    id: IncludePlaceIds
+    path: ''
+    startLine: 2577
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nRequire the observations to be within these place IDs.\n"
+  example: []
+  syntax:
+    content: public void IncludePlaceIds(List<int> ids)
+    parameters:
+    - id: ids
+      type: System.Collections.Generic.List{System.Int32}
+      description: Place IDs to require
+    content.vb: Public Sub IncludePlaceIds(ids As List(Of Integer))
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.IncludePlaceIds*
+  nameWithType.vb: IdentificationSearch.IncludePlaceIds(List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.IdentificationSearch.IncludePlaceIds(System.Collections.Generic.List(Of System.Int32))
+  name.vb: IncludePlaceIds(List(Of Int32))
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonIds(System.Collections.Generic.List{System.Int32})
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonIds(System.Collections.Generic.List{System.Int32})
+  id: IncludeTaxonIds(System.Collections.Generic.List{System.Int32})
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: IncludeTaxonIds(List<Int32>)
+  nameWithType: IdentificationSearch.IncludeTaxonIds(List<Int32>)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonIds(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    id: IncludeTaxonIds
+    path: ''
+    startLine: 2586
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to these taxa IDs and their descendents.\n"
+  example: []
+  syntax:
+    content: public void IncludeTaxonIds(List<int> ids)
+    parameters:
+    - id: ids
+      type: System.Collections.Generic.List{System.Int32}
+      description: Taxa IDs to include
+    content.vb: Public Sub IncludeTaxonIds(ids As List(Of Integer))
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonIds*
+  nameWithType.vb: IdentificationSearch.IncludeTaxonIds(List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonIds(System.Collections.Generic.List(Of System.Int32))
+  name.vb: IncludeTaxonIds(List(Of Int32))
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonIds(System.Collections.Generic.List{System.Int32})
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonIds(System.Collections.Generic.List{System.Int32})
+  id: IncludeObservationTaxonIds(System.Collections.Generic.List{System.Int32})
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: IncludeObservationTaxonIds(List<Int32>)
+  nameWithType: IdentificationSearch.IncludeObservationTaxonIds(List<Int32>)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonIds(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    id: IncludeObservationTaxonIds
+    path: ''
+    startLine: 2595
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to observations with these taxa IDs and their descendents.\n"
+  example: []
+  syntax:
+    content: public void IncludeObservationTaxonIds(List<int> ids)
+    parameters:
+    - id: ids
+      type: System.Collections.Generic.List{System.Int32}
+      description: Observation taxa IDs to include
+    content.vb: Public Sub IncludeObservationTaxonIds(ids As List(Of Integer))
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonIds*
+  nameWithType.vb: IdentificationSearch.IncludeObservationTaxonIds(List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonIds(System.Collections.Generic.List(Of System.Int32))
+  name.vb: IncludeObservationTaxonIds(List(Of Int32))
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIconicTaxonIds(System.Collections.Generic.List{System.Int32})
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIconicTaxonIds(System.Collections.Generic.List{System.Int32})
+  id: IncludeIconicTaxonIds(System.Collections.Generic.List{System.Int32})
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: IncludeIconicTaxonIds(List<Int32>)
+  nameWithType: IdentificationSearch.IncludeIconicTaxonIds(List<Int32>)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIconicTaxonIds(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    id: IncludeIconicTaxonIds
+    path: ''
+    startLine: 2604
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to identifications with these iconic taxa.\n"
+  example: []
+  syntax:
+    content: public void IncludeIconicTaxonIds(List<int> ids)
+    parameters:
+    - id: ids
+      type: System.Collections.Generic.List{System.Int32}
+      description: Iconic taxa IDs to include
+    content.vb: Public Sub IncludeIconicTaxonIds(ids As List(Of Integer))
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIconicTaxonIds*
+  nameWithType.vb: IdentificationSearch.IncludeIconicTaxonIds(List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIconicTaxonIds(System.Collections.Generic.List(Of System.Int32))
+  name.vb: IncludeIconicTaxonIds(List(Of Int32))
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationIconicTaxonIds(System.Collections.Generic.List{System.Int32})
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationIconicTaxonIds(System.Collections.Generic.List{System.Int32})
+  id: IncludeObservationIconicTaxonIds(System.Collections.Generic.List{System.Int32})
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: IncludeObservationIconicTaxonIds(List<Int32>)
+  nameWithType: IdentificationSearch.IncludeObservationIconicTaxonIds(List<Int32>)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationIconicTaxonIds(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    id: IncludeObservationIconicTaxonIds
+    path: ''
+    startLine: 2613
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to identifications of observations with these iconic taxa.\n"
+  example: []
+  syntax:
+    content: public void IncludeObservationIconicTaxonIds(List<int> ids)
+    parameters:
+    - id: ids
+      type: System.Collections.Generic.List{System.Int32}
+      description: Observation iconic taxa IDs to include
+    content.vb: Public Sub IncludeObservationIconicTaxonIds(ids As List(Of Integer))
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationIconicTaxonIds*
+  nameWithType.vb: IdentificationSearch.IncludeObservationIconicTaxonIds(List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationIconicTaxonIds(System.Collections.Generic.List(Of System.Int32))
+  name.vb: IncludeObservationIconicTaxonIds(List(Of Int32))
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeTaxonIds(System.Collections.Generic.List{System.Int32})
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeTaxonIds(System.Collections.Generic.List{System.Int32})
+  id: ExcludeTaxonIds(System.Collections.Generic.List{System.Int32})
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: ExcludeTaxonIds(List<Int32>)
+  nameWithType: IdentificationSearch.ExcludeTaxonIds(List<Int32>)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeTaxonIds(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    id: ExcludeTaxonIds
+    path: ''
+    startLine: 2622
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to exclude these taxa IDs and their descendents.\n"
+  example: []
+  syntax:
+    content: public void ExcludeTaxonIds(List<int> ids)
+    parameters:
+    - id: ids
+      type: System.Collections.Generic.List{System.Int32}
+      description: Taxa IDs to exclude
+    content.vb: Public Sub ExcludeTaxonIds(ids As List(Of Integer))
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeTaxonIds*
+  nameWithType.vb: IdentificationSearch.ExcludeTaxonIds(List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeTaxonIds(System.Collections.Generic.List(Of System.Int32))
+  name.vb: ExcludeTaxonIds(List(Of Int32))
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeObservationTaxonIds(System.Collections.Generic.List{System.Int32})
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeObservationTaxonIds(System.Collections.Generic.List{System.Int32})
+  id: ExcludeObservationTaxonIds(System.Collections.Generic.List{System.Int32})
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: ExcludeObservationTaxonIds(List<Int32>)
+  nameWithType: IdentificationSearch.ExcludeObservationTaxonIds(List<Int32>)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeObservationTaxonIds(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    id: ExcludeObservationTaxonIds
+    path: ''
+    startLine: 2631
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to exclude identifications of observations with taxa IDs and their descendents.\n"
+  example: []
+  syntax:
+    content: public void ExcludeObservationTaxonIds(List<int> ids)
+    parameters:
+    - id: ids
+      type: System.Collections.Generic.List{System.Int32}
+      description: Observation taxa IDs to exclude
+    content.vb: Public Sub ExcludeObservationTaxonIds(ids As List(Of Integer))
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeObservationTaxonIds*
+  nameWithType.vb: IdentificationSearch.ExcludeObservationTaxonIds(List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeObservationTaxonIds(System.Collections.Generic.List(Of System.Int32))
+  name.vb: ExcludeObservationTaxonIds(List(Of Int32))
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservedOnDateLimits(System.String,System.String)
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.SetObservedOnDateLimits(System.String,System.String)
+  id: SetObservedOnDateLimits(System.String,System.String)
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: SetObservedOnDateLimits(String, String)
+  nameWithType: IdentificationSearch.SetObservedOnDateLimits(String, String)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservedOnDateLimits(System.String, System.String)
+  type: Method
+  source:
+    id: SetObservedOnDateLimits
+    path: ''
+    startLine: 2642
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to observations observed within a timeframe. Both start and end dates are optional.\n"
+  example: []
+  syntax:
+    content: public void SetObservedOnDateLimits(string start = "", string end = "")
+    parameters:
+    - id: start
+      type: System.String
+      description: The start date, formatted as YYYY-MM-DD. Limit observations to on or after this date.
+    - id: end
+      type: System.String
+      description: The end date, formatted as YYYY-MM-DD. Limit observations to on or before this date.
+    content.vb: Public Sub SetObservedOnDateLimits(start As String = "", end As String = "")
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservedOnDateLimits*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetCreatedOnDateLimits(System.String,System.String)
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.SetCreatedOnDateLimits(System.String,System.String)
+  id: SetCreatedOnDateLimits(System.String,System.String)
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: SetCreatedOnDateLimits(String, String)
+  nameWithType: IdentificationSearch.SetCreatedOnDateLimits(String, String)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetCreatedOnDateLimits(System.String, System.String)
+  type: Method
+  source:
+    id: SetCreatedOnDateLimits
+    path: ''
+    startLine: 2659
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to identifications created within a timeframe. Both start and end dates are optional.\n"
+  example: []
+  syntax:
+    content: public void SetCreatedOnDateLimits(string start = "", string end = "")
+    parameters:
+    - id: start
+      type: System.String
+      description: The start date, formatted as YYYY-MM-DD. Limit identifications created on or after this date.
+    - id: end
+      type: System.String
+      description: The end date, formatted as YYYY-MM-DD. Limit identifications created on or before this date.
+    content.vb: Public Sub SetCreatedOnDateLimits(start As String = "", end As String = "")
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.SetCreatedOnDateLimits*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationCreatedOnDateLimits(System.String,System.String)
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationCreatedOnDateLimits(System.String,System.String)
+  id: SetObservationCreatedOnDateLimits(System.String,System.String)
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: SetObservationCreatedOnDateLimits(String, String)
+  nameWithType: IdentificationSearch.SetObservationCreatedOnDateLimits(String, String)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationCreatedOnDateLimits(System.String, System.String)
+  type: Method
+  source:
+    id: SetObservationCreatedOnDateLimits
+    path: ''
+    startLine: 2676
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to identifications of observations created within a timeframe. Both start and end dates are optional.\n"
+  example: []
+  syntax:
+    content: public void SetObservationCreatedOnDateLimits(string start = "", string end = "")
+    parameters:
+    - id: start
+      type: System.String
+      description: The start date, formatted as YYYY-MM-DD. Limit identifications to observations created on or after this date.
+    - id: end
+      type: System.String
+      description: The end date, formatted as YYYY-MM-DD. Limit identifications to observations created on or before this date.
+    content.vb: Public Sub SetObservationCreatedOnDateLimits(start As String = "", end As String = "")
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationCreatedOnDateLimits*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})
+  id: IncludeTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: IncludeTaxonRanks(List<TaxonRank>)
+  nameWithType: IdentificationSearch.IncludeTaxonRanks(List<TaxonRank>)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonRanks(System.Collections.Generic.List<JoshAaronMiller.INaturalist.TaxonRank>)
+  type: Method
+  source:
+    id: IncludeTaxonRanks
+    path: ''
+    startLine: 2692
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to identifications of taxa of these ranks.\n"
+  example: []
+  syntax:
+    content: public void IncludeTaxonRanks(List<TaxonRank> ranks)
+    parameters:
+    - id: ranks
+      type: System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank}
+      description: The list of taxon ranks to include in the search.
+    content.vb: Public Sub IncludeTaxonRanks(ranks As List(Of TaxonRank))
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonRanks*
+  nameWithType.vb: IdentificationSearch.IncludeTaxonRanks(List(Of TaxonRank))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonRanks(System.Collections.Generic.List(Of JoshAaronMiller.INaturalist.TaxonRank))
+  name.vb: IncludeTaxonRanks(List(Of TaxonRank))
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})
+  id: IncludeObservationTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: IncludeObservationTaxonRanks(List<TaxonRank>)
+  nameWithType: IdentificationSearch.IncludeObservationTaxonRanks(List<TaxonRank>)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonRanks(System.Collections.Generic.List<JoshAaronMiller.INaturalist.TaxonRank>)
+  type: Method
+  source:
+    id: IncludeObservationTaxonRanks
+    path: ''
+    startLine: 2701
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to identifications of observations that have a taxon of these ranks.\n"
+  example: []
+  syntax:
+    content: public void IncludeObservationTaxonRanks(List<TaxonRank> ranks)
+    parameters:
+    - id: ranks
+      type: System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank}
+      description: The list of observation taxon ranks to include in the search.
+    content.vb: Public Sub IncludeObservationTaxonRanks(ranks As List(Of TaxonRank))
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonRanks*
+  nameWithType.vb: IdentificationSearch.IncludeObservationTaxonRanks(List(Of TaxonRank))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonRanks(System.Collections.Generic.List(Of JoshAaronMiller.INaturalist.TaxonRank))
+  name.vb: IncludeObservationTaxonRanks(List(Of TaxonRank))
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserId(System.Collections.Generic.List{System.Int32})
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserId(System.Collections.Generic.List{System.Int32})
+  id: IncludeIdentificationsByUserId(System.Collections.Generic.List{System.Int32})
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: IncludeIdentificationsByUserId(List<Int32>)
+  nameWithType: IdentificationSearch.IncludeIdentificationsByUserId(List<Int32>)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserId(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    id: IncludeIdentificationsByUserId
+    path: ''
+    startLine: 2710
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to identifications made by users of these IDs.\n"
+  example: []
+  syntax:
+    content: public void IncludeIdentificationsByUserId(List<int> userIds)
+    parameters:
+    - id: userIds
+      type: System.Collections.Generic.List{System.Int32}
+      description: The list of user IDs; limit the search to their identifications.
+    content.vb: Public Sub IncludeIdentificationsByUserId(userIds As List(Of Integer))
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserId*
+  nameWithType.vb: IdentificationSearch.IncludeIdentificationsByUserId(List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserId(System.Collections.Generic.List(Of System.Int32))
+  name.vb: IncludeIdentificationsByUserId(List(Of Int32))
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserLogin(System.Collections.Generic.List{System.Int32})
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserLogin(System.Collections.Generic.List{System.Int32})
+  id: IncludeIdentificationsByUserLogin(System.Collections.Generic.List{System.Int32})
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: IncludeIdentificationsByUserLogin(List<Int32>)
+  nameWithType: IdentificationSearch.IncludeIdentificationsByUserLogin(List<Int32>)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserLogin(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    id: IncludeIdentificationsByUserLogin
+    path: ''
+    startLine: 2719
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to identifications made by users with these login names.\n"
+  example: []
+  syntax:
+    content: public void IncludeIdentificationsByUserLogin(List<int> userLogins)
+    parameters:
+    - id: userLogins
+      type: System.Collections.Generic.List{System.Int32}
+      description: The list of usernames; limit the search to their identifications.
+    content.vb: Public Sub IncludeIdentificationsByUserLogin(userLogins As List(Of Integer))
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserLogin*
+  nameWithType.vb: IdentificationSearch.IncludeIdentificationsByUserLogin(List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserLogin(System.Collections.Generic.List(Of System.Int32))
+  name.vb: IncludeIdentificationsByUserLogin(List(Of Int32))
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeCategories(System.Collections.Generic.List{System.String})
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeCategories(System.Collections.Generic.List{System.String})
+  id: IncludeCategories(System.Collections.Generic.List{System.String})
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: IncludeCategories(List<String>)
+  nameWithType: IdentificationSearch.IncludeCategories(List<String>)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeCategories(System.Collections.Generic.List<System.String>)
+  type: Method
+  source:
+    id: IncludeCategories
+    path: ''
+    startLine: 2728
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to identifications with these category labels.\n"
+  example: []
+  syntax:
+    content: public void IncludeCategories(List<string> categories)
+    parameters:
+    - id: categories
+      type: System.Collections.Generic.List{System.String}
+      description: The identification categories to include in the search.
+    content.vb: Public Sub IncludeCategories(categories As List(Of String))
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeCategories*
+  nameWithType.vb: IdentificationSearch.IncludeCategories(List(Of String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeCategories(System.Collections.Generic.List(Of System.String))
+  name.vb: IncludeCategories(List(Of String))
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank,JoshAaronMiller.INaturalist.TaxonRank)
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.SetTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank,JoshAaronMiller.INaturalist.TaxonRank)
+  id: SetTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank,JoshAaronMiller.INaturalist.TaxonRank)
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: SetTaxonRankLimits(TaxonRank, TaxonRank)
+  nameWithType: IdentificationSearch.SetTaxonRankLimits(TaxonRank, TaxonRank)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank, JoshAaronMiller.INaturalist.TaxonRank)
+  type: Method
+  source:
+    id: SetTaxonRankLimits
+    path: ''
+    startLine: 2745
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to taxa between these limits.\n"
+  example: []
+  syntax:
+    content: public void SetTaxonRankLimits(TaxonRank lowest = TaxonRank.None, TaxonRank highest = TaxonRank.None)
+    parameters:
+    - id: lowest
+      type: JoshAaronMiller.INaturalist.TaxonRank
+      description: The lowest taxon rank to include in the search (include this and higher).
+    - id: highest
+      type: JoshAaronMiller.INaturalist.TaxonRank
+      description: The highest taxon rank to include in the search (include this and lower).
+    content.vb: Public Sub SetTaxonRankLimits(lowest As TaxonRank = TaxonRank.None, highest As TaxonRank = TaxonRank.None)
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.SetTaxonRankLimits*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank,JoshAaronMiller.INaturalist.TaxonRank)
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank,JoshAaronMiller.INaturalist.TaxonRank)
+  id: SetObservationTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank,JoshAaronMiller.INaturalist.TaxonRank)
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: SetObservationTaxonRankLimits(TaxonRank, TaxonRank)
+  nameWithType: IdentificationSearch.SetObservationTaxonRankLimits(TaxonRank, TaxonRank)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank, JoshAaronMiller.INaturalist.TaxonRank)
+  type: Method
+  source:
+    id: SetObservationTaxonRankLimits
+    path: ''
+    startLine: 2771
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to identifications of observations with taxa between these limits.\n"
+  example: []
+  syntax:
+    content: public void SetObservationTaxonRankLimits(TaxonRank lowest = TaxonRank.None, TaxonRank highest = TaxonRank.None)
+    parameters:
+    - id: lowest
+      type: JoshAaronMiller.INaturalist.TaxonRank
+      description: The lowest observation taxon rank to include in the search (include this and higher).
+    - id: highest
+      type: JoshAaronMiller.INaturalist.TaxonRank
+      description: The highest observation taxon rank to include in the search (include this and lower).
+    content.vb: Public Sub SetObservationTaxonRankLimits(lowest As TaxonRank = TaxonRank.None, highest As TaxonRank = TaxonRank.None)
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationTaxonRankLimits*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetQualityGrade(JoshAaronMiller.INaturalist.QualityGrade)
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.SetQualityGrade(JoshAaronMiller.INaturalist.QualityGrade)
+  id: SetQualityGrade(JoshAaronMiller.INaturalist.QualityGrade)
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: SetQualityGrade(QualityGrade)
+  nameWithType: IdentificationSearch.SetQualityGrade(QualityGrade)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetQualityGrade(JoshAaronMiller.INaturalist.QualityGrade)
+  type: Method
+  source:
+    id: SetQualityGrade
+    path: ''
+    startLine: 2788
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to observations of this quality grade.\n"
+  example: []
+  syntax:
+    content: public void SetQualityGrade(QualityGrade quality)
+    parameters:
+    - id: quality
+      type: JoshAaronMiller.INaturalist.QualityGrade
+      description: The quality grade to search for.
+    content.vb: Public Sub SetQualityGrade(quality As QualityGrade)
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.SetQualityGrade*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetIdentificationnIdLimits(System.Int32,System.Int32)
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.SetIdentificationnIdLimits(System.Int32,System.Int32)
+  id: SetIdentificationnIdLimits(System.Int32,System.Int32)
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: SetIdentificationnIdLimits(Int32, Int32)
+  nameWithType: IdentificationSearch.SetIdentificationnIdLimits(Int32, Int32)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetIdentificationnIdLimits(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: SetIdentificationnIdLimits
+    path: ''
+    startLine: 2805
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to identifications with IDs within this range. Both min and max are optional.\n"
+  example: []
+  syntax:
+    content: public void SetIdentificationnIdLimits(int min = -1, int max = -1)
+    parameters:
+    - id: min
+      type: System.Int32
+      description: Include this ID and higher.
+    - id: max
+      type: System.Int32
+      description: Include this ID and lower.
+    content.vb: Public Sub SetIdentificationnIdLimits(min As Integer = -1, max As Integer = -1)
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.SetIdentificationnIdLimits*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetPagination(System.Int32,System.Int32)
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.SetPagination(System.Int32,System.Int32)
+  id: SetPagination(System.Int32,System.Int32)
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: SetPagination(Int32, Int32)
+  nameWithType: IdentificationSearch.SetPagination(Int32, Int32)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetPagination(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: SetPagination
+    path: ''
+    startLine: 2822
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nSet the number of search results per page and which page to receive. For example, SetPagination(50,2) would return results 51-100.\n"
+  example: []
+  syntax:
+    content: public void SetPagination(int resultsPerPage = 30, int page = 1)
+    parameters:
+    - id: resultsPerPage
+      type: System.Int32
+      description: How many results to return per page (default 30).
+    - id: page
+      type: System.Int32
+      description: Which page of results to return (default 1).
+    content.vb: Public Sub SetPagination(resultsPerPage As Integer = 30, page As Integer = 1)
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.SetPagination*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetOrder(JoshAaronMiller.INaturalist.OrderBy,JoshAaronMiller.INaturalist.SortOrder)
+  commentId: M:JoshAaronMiller.INaturalist.IdentificationSearch.SetOrder(JoshAaronMiller.INaturalist.OrderBy,JoshAaronMiller.INaturalist.SortOrder)
+  id: SetOrder(JoshAaronMiller.INaturalist.OrderBy,JoshAaronMiller.INaturalist.SortOrder)
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch
+  langs:
+  - csharp
+  - vb
+  name: SetOrder(OrderBy, SortOrder)
+  nameWithType: IdentificationSearch.SetOrder(OrderBy, SortOrder)
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetOrder(JoshAaronMiller.INaturalist.OrderBy, JoshAaronMiller.INaturalist.SortOrder)
+  type: Method
+  source:
+    id: SetOrder
+    path: ''
+    startLine: 2833
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nSet how the results are ordered. Defaults to created at date, descending.\n"
+  example: []
+  syntax:
+    content: public void SetOrder(OrderBy orderBy, SortOrder sortOrder)
+    parameters:
+    - id: orderBy
+      type: JoshAaronMiller.INaturalist.OrderBy
+      description: The parameter to sort the order by.
+    - id: sortOrder
+      type: JoshAaronMiller.INaturalist.SortOrder
+      description: Whether to sort ascending or descending.
+    content.vb: Public Sub SetOrder(orderBy As OrderBy, sortOrder As SortOrder)
+  overload: JoshAaronMiller.INaturalist.IdentificationSearch.SetOrder*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: JoshAaronMiller.INaturalist.SearchObject
+  commentId: T:JoshAaronMiller.INaturalist.SearchObject
+  parent: JoshAaronMiller.INaturalist
+  name: SearchObject
+  nameWithType: SearchObject
+  fullName: JoshAaronMiller.INaturalist.SearchObject
+- uid: JoshAaronMiller.INaturalist.SearchObject.boolParams
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.boolParams
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  name: boolParams
+  nameWithType: SearchObject.boolParams
+  fullName: JoshAaronMiller.INaturalist.SearchObject.boolParams
+- uid: JoshAaronMiller.INaturalist.SearchObject.stringParams
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.stringParams
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  name: stringParams
+  nameWithType: SearchObject.stringParams
+  fullName: JoshAaronMiller.INaturalist.SearchObject.stringParams
+- uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  name: ToUrlParameters()
+  nameWithType: SearchObject.ToUrlParameters()
+  fullName: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters()
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+    name: ToUrlParameters
+    nameWithType: SearchObject.ToUrlParameters
+    fullName: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+    name: ToUrlParameters
+    nameWithType: SearchObject.ToUrlParameters
+    fullName: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<IdentificationSearch.BooleanParameter, String>
+  nameWithType: Dictionary<IdentificationSearch.BooleanParameter, String>
+  fullName: System.Collections.Generic.Dictionary<JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter, System.String>
+  nameWithType.vb: Dictionary(Of IdentificationSearch.BooleanParameter, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter, System.String)
+  name.vb: Dictionary(Of IdentificationSearch.BooleanParameter, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
+    name: IdentificationSearch.BooleanParameter
+    nameWithType: IdentificationSearch.BooleanParameter
+    fullName: JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
+    name: IdentificationSearch.BooleanParameter
+    nameWithType: IdentificationSearch.BooleanParameter
+    fullName: JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetBooleanParameter*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.SetBooleanParameter
+  name: SetBooleanParameter
+  nameWithType: IdentificationSearch.SetBooleanParameter
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetBooleanParameter
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
+  commentId: T:JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
+  parent: JoshAaronMiller.INaturalist
+  name: IdentificationSearch.BooleanParameter
+  nameWithType: IdentificationSearch.BooleanParameter
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIds*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIds
+  name: IncludeIds
+  nameWithType: IdentificationSearch.IncludeIds
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIds
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: System.Collections.Generic.List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: System.Collections.Generic.List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludePlaceIds*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.IncludePlaceIds
+  name: IncludePlaceIds
+  nameWithType: IdentificationSearch.IncludePlaceIds
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludePlaceIds
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonIds*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonIds
+  name: IncludeTaxonIds
+  nameWithType: IdentificationSearch.IncludeTaxonIds
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonIds
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonIds*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonIds
+  name: IncludeObservationTaxonIds
+  nameWithType: IdentificationSearch.IncludeObservationTaxonIds
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonIds
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIconicTaxonIds*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIconicTaxonIds
+  name: IncludeIconicTaxonIds
+  nameWithType: IdentificationSearch.IncludeIconicTaxonIds
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIconicTaxonIds
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationIconicTaxonIds*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationIconicTaxonIds
+  name: IncludeObservationIconicTaxonIds
+  nameWithType: IdentificationSearch.IncludeObservationIconicTaxonIds
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationIconicTaxonIds
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeTaxonIds*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeTaxonIds
+  name: ExcludeTaxonIds
+  nameWithType: IdentificationSearch.ExcludeTaxonIds
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeTaxonIds
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeObservationTaxonIds*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeObservationTaxonIds
+  name: ExcludeObservationTaxonIds
+  nameWithType: IdentificationSearch.ExcludeObservationTaxonIds
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.ExcludeObservationTaxonIds
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservedOnDateLimits*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.SetObservedOnDateLimits
+  name: SetObservedOnDateLimits
+  nameWithType: IdentificationSearch.SetObservedOnDateLimits
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservedOnDateLimits
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetCreatedOnDateLimits*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.SetCreatedOnDateLimits
+  name: SetCreatedOnDateLimits
+  nameWithType: IdentificationSearch.SetCreatedOnDateLimits
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetCreatedOnDateLimits
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationCreatedOnDateLimits*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationCreatedOnDateLimits
+  name: SetObservationCreatedOnDateLimits
+  nameWithType: IdentificationSearch.SetObservationCreatedOnDateLimits
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationCreatedOnDateLimits
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonRanks*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonRanks
+  name: IncludeTaxonRanks
+  nameWithType: IdentificationSearch.IncludeTaxonRanks
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeTaxonRanks
+- uid: System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank}
+  commentId: T:System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<TaxonRank>
+  nameWithType: List<TaxonRank>
+  fullName: System.Collections.Generic.List<JoshAaronMiller.INaturalist.TaxonRank>
+  nameWithType.vb: List(Of TaxonRank)
+  fullName.vb: System.Collections.Generic.List(Of JoshAaronMiller.INaturalist.TaxonRank)
+  name.vb: List(Of TaxonRank)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.TaxonRank
+    name: TaxonRank
+    nameWithType: TaxonRank
+    fullName: JoshAaronMiller.INaturalist.TaxonRank
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.TaxonRank
+    name: TaxonRank
+    nameWithType: TaxonRank
+    fullName: JoshAaronMiller.INaturalist.TaxonRank
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonRanks*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonRanks
+  name: IncludeObservationTaxonRanks
+  nameWithType: IdentificationSearch.IncludeObservationTaxonRanks
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeObservationTaxonRanks
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserId*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserId
+  name: IncludeIdentificationsByUserId
+  nameWithType: IdentificationSearch.IncludeIdentificationsByUserId
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserId
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserLogin*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserLogin
+  name: IncludeIdentificationsByUserLogin
+  nameWithType: IdentificationSearch.IncludeIdentificationsByUserLogin
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeIdentificationsByUserLogin
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeCategories*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.IncludeCategories
+  name: IncludeCategories
+  nameWithType: IdentificationSearch.IncludeCategories
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IncludeCategories
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetTaxonRankLimits*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.SetTaxonRankLimits
+  name: SetTaxonRankLimits
+  nameWithType: IdentificationSearch.SetTaxonRankLimits
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetTaxonRankLimits
+- uid: JoshAaronMiller.INaturalist.TaxonRank
+  commentId: T:JoshAaronMiller.INaturalist.TaxonRank
+  parent: JoshAaronMiller.INaturalist
+  name: TaxonRank
+  nameWithType: TaxonRank
+  fullName: JoshAaronMiller.INaturalist.TaxonRank
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationTaxonRankLimits*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationTaxonRankLimits
+  name: SetObservationTaxonRankLimits
+  nameWithType: IdentificationSearch.SetObservationTaxonRankLimits
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetObservationTaxonRankLimits
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetQualityGrade*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.SetQualityGrade
+  name: SetQualityGrade
+  nameWithType: IdentificationSearch.SetQualityGrade
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetQualityGrade
+- uid: JoshAaronMiller.INaturalist.QualityGrade
+  commentId: T:JoshAaronMiller.INaturalist.QualityGrade
+  parent: JoshAaronMiller.INaturalist
+  name: QualityGrade
+  nameWithType: QualityGrade
+  fullName: JoshAaronMiller.INaturalist.QualityGrade
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetIdentificationnIdLimits*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.SetIdentificationnIdLimits
+  name: SetIdentificationnIdLimits
+  nameWithType: IdentificationSearch.SetIdentificationnIdLimits
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetIdentificationnIdLimits
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetPagination*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.SetPagination
+  name: SetPagination
+  nameWithType: IdentificationSearch.SetPagination
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetPagination
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.SetOrder*
+  commentId: Overload:JoshAaronMiller.INaturalist.IdentificationSearch.SetOrder
+  name: SetOrder
+  nameWithType: IdentificationSearch.SetOrder
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.SetOrder
+- uid: JoshAaronMiller.INaturalist.OrderBy
+  commentId: T:JoshAaronMiller.INaturalist.OrderBy
+  parent: JoshAaronMiller.INaturalist
+  name: OrderBy
+  nameWithType: OrderBy
+  fullName: JoshAaronMiller.INaturalist.OrderBy
+- uid: JoshAaronMiller.INaturalist.SortOrder
+  commentId: T:JoshAaronMiller.INaturalist.SortOrder
+  parent: JoshAaronMiller.INaturalist
+  name: SortOrder
+  nameWithType: SortOrder
+  fullName: JoshAaronMiller.INaturalist.SortOrder

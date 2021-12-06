@@ -1,0 +1,631 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.ObservationPhoto
+  commentId: T:JoshAaronMiller.INaturalist.ObservationPhoto
+  id: ObservationPhoto
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.ObservationPhoto.created_at
+  - JoshAaronMiller.INaturalist.ObservationPhoto.created_at_utc
+  - JoshAaronMiller.INaturalist.ObservationPhoto.id
+  - JoshAaronMiller.INaturalist.ObservationPhoto.observation_id
+  - JoshAaronMiller.INaturalist.ObservationPhoto.old_uuid
+  - JoshAaronMiller.INaturalist.ObservationPhoto.photo
+  - JoshAaronMiller.INaturalist.ObservationPhoto.photo_id
+  - JoshAaronMiller.INaturalist.ObservationPhoto.position
+  - JoshAaronMiller.INaturalist.ObservationPhoto.updated_at
+  - JoshAaronMiller.INaturalist.ObservationPhoto.updated_at_utc
+  - JoshAaronMiller.INaturalist.ObservationPhoto.uuid
+  langs:
+  - csharp
+  - vb
+  name: ObservationPhoto
+  nameWithType: ObservationPhoto
+  fullName: JoshAaronMiller.INaturalist.ObservationPhoto
+  type: Class
+  source:
+    id: ObservationPhoto
+    path: ''
+    startLine: 2237
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class ObservationPhoto : JsonObject<ObservationPhoto>
+    content.vb: >-
+      <Serializable>
+
+      Public Class ObservationPhoto
+          Inherits JsonObject(Of ObservationPhoto)
+  inheritance:
+  - System.Object
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.ObservationPhoto}
+  inheritedMembers:
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.ObservationPhoto}.CreateFromJson(System.String)
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.ObservationPhoto}.ToJson(JoshAaronMiller.INaturalist.ObservationPhoto)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JoshAaronMiller.INaturalist.ObservationPhoto.id
+  commentId: F:JoshAaronMiller.INaturalist.ObservationPhoto.id
+  id: id
+  parent: JoshAaronMiller.INaturalist.ObservationPhoto
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: ObservationPhoto.id
+  fullName: JoshAaronMiller.INaturalist.ObservationPhoto.id
+  type: Field
+  source:
+    id: id
+    path: ''
+    startLine: 2240
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int id
+    return:
+      type: System.Int32
+    content.vb: Public id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.ObservationPhoto.observation_id
+  commentId: F:JoshAaronMiller.INaturalist.ObservationPhoto.observation_id
+  id: observation_id
+  parent: JoshAaronMiller.INaturalist.ObservationPhoto
+  langs:
+  - csharp
+  - vb
+  name: observation_id
+  nameWithType: ObservationPhoto.observation_id
+  fullName: JoshAaronMiller.INaturalist.ObservationPhoto.observation_id
+  type: Field
+  source:
+    id: observation_id
+    path: ''
+    startLine: 2241
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int observation_id
+    return:
+      type: System.Int32
+    content.vb: Public observation_id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.ObservationPhoto.photo_id
+  commentId: F:JoshAaronMiller.INaturalist.ObservationPhoto.photo_id
+  id: photo_id
+  parent: JoshAaronMiller.INaturalist.ObservationPhoto
+  langs:
+  - csharp
+  - vb
+  name: photo_id
+  nameWithType: ObservationPhoto.photo_id
+  fullName: JoshAaronMiller.INaturalist.ObservationPhoto.photo_id
+  type: Field
+  source:
+    id: photo_id
+    path: ''
+    startLine: 2242
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int photo_id
+    return:
+      type: System.Int32
+    content.vb: Public photo_id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.ObservationPhoto.position
+  commentId: F:JoshAaronMiller.INaturalist.ObservationPhoto.position
+  id: position
+  parent: JoshAaronMiller.INaturalist.ObservationPhoto
+  langs:
+  - csharp
+  - vb
+  name: position
+  nameWithType: ObservationPhoto.position
+  fullName: JoshAaronMiller.INaturalist.ObservationPhoto.position
+  type: Field
+  source:
+    id: position
+    path: ''
+    startLine: 2243
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int position
+    return:
+      type: System.Int32
+    content.vb: Public position As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.ObservationPhoto.created_at
+  commentId: F:JoshAaronMiller.INaturalist.ObservationPhoto.created_at
+  id: created_at
+  parent: JoshAaronMiller.INaturalist.ObservationPhoto
+  langs:
+  - csharp
+  - vb
+  name: created_at
+  nameWithType: ObservationPhoto.created_at
+  fullName: JoshAaronMiller.INaturalist.ObservationPhoto.created_at
+  type: Field
+  source:
+    id: created_at
+    path: ''
+    startLine: 2244
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public TimeDetails created_at
+    return:
+      type: JoshAaronMiller.INaturalist.TimeDetails
+    content.vb: Public created_at As TimeDetails
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.ObservationPhoto.updated_at
+  commentId: F:JoshAaronMiller.INaturalist.ObservationPhoto.updated_at
+  id: updated_at
+  parent: JoshAaronMiller.INaturalist.ObservationPhoto
+  langs:
+  - csharp
+  - vb
+  name: updated_at
+  nameWithType: ObservationPhoto.updated_at
+  fullName: JoshAaronMiller.INaturalist.ObservationPhoto.updated_at
+  type: Field
+  source:
+    id: updated_at
+    path: ''
+    startLine: 2245
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public TimeDetails updated_at
+    return:
+      type: JoshAaronMiller.INaturalist.TimeDetails
+    content.vb: Public updated_at As TimeDetails
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.ObservationPhoto.old_uuid
+  commentId: F:JoshAaronMiller.INaturalist.ObservationPhoto.old_uuid
+  id: old_uuid
+  parent: JoshAaronMiller.INaturalist.ObservationPhoto
+  langs:
+  - csharp
+  - vb
+  name: old_uuid
+  nameWithType: ObservationPhoto.old_uuid
+  fullName: JoshAaronMiller.INaturalist.ObservationPhoto.old_uuid
+  type: Field
+  source:
+    id: old_uuid
+    path: ''
+    startLine: 2246
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string old_uuid
+    return:
+      type: System.String
+    content.vb: Public old_uuid As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.ObservationPhoto.uuid
+  commentId: F:JoshAaronMiller.INaturalist.ObservationPhoto.uuid
+  id: uuid
+  parent: JoshAaronMiller.INaturalist.ObservationPhoto
+  langs:
+  - csharp
+  - vb
+  name: uuid
+  nameWithType: ObservationPhoto.uuid
+  fullName: JoshAaronMiller.INaturalist.ObservationPhoto.uuid
+  type: Field
+  source:
+    id: uuid
+    path: ''
+    startLine: 2247
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string uuid
+    return:
+      type: System.String
+    content.vb: Public uuid As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.ObservationPhoto.created_at_utc
+  commentId: F:JoshAaronMiller.INaturalist.ObservationPhoto.created_at_utc
+  id: created_at_utc
+  parent: JoshAaronMiller.INaturalist.ObservationPhoto
+  langs:
+  - csharp
+  - vb
+  name: created_at_utc
+  nameWithType: ObservationPhoto.created_at_utc
+  fullName: JoshAaronMiller.INaturalist.ObservationPhoto.created_at_utc
+  type: Field
+  source:
+    id: created_at_utc
+    path: ''
+    startLine: 2248
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public TimeDetails created_at_utc
+    return:
+      type: JoshAaronMiller.INaturalist.TimeDetails
+    content.vb: Public created_at_utc As TimeDetails
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.ObservationPhoto.updated_at_utc
+  commentId: F:JoshAaronMiller.INaturalist.ObservationPhoto.updated_at_utc
+  id: updated_at_utc
+  parent: JoshAaronMiller.INaturalist.ObservationPhoto
+  langs:
+  - csharp
+  - vb
+  name: updated_at_utc
+  nameWithType: ObservationPhoto.updated_at_utc
+  fullName: JoshAaronMiller.INaturalist.ObservationPhoto.updated_at_utc
+  type: Field
+  source:
+    id: updated_at_utc
+    path: ''
+    startLine: 2249
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public TimeDetails updated_at_utc
+    return:
+      type: JoshAaronMiller.INaturalist.TimeDetails
+    content.vb: Public updated_at_utc As TimeDetails
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.ObservationPhoto.photo
+  commentId: F:JoshAaronMiller.INaturalist.ObservationPhoto.photo
+  id: photo
+  parent: JoshAaronMiller.INaturalist.ObservationPhoto
+  langs:
+  - csharp
+  - vb
+  name: photo
+  nameWithType: ObservationPhoto.photo
+  fullName: JoshAaronMiller.INaturalist.ObservationPhoto.photo
+  type: Field
+  source:
+    id: photo
+    path: ''
+    startLine: 2250
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public PhotoJson photo
+    return:
+      type: JoshAaronMiller.INaturalist.PhotoJson
+    content.vb: Public photo As PhotoJson
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.ObservationPhoto}
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.ObservationPhoto}
+  parent: JoshAaronMiller.INaturalist
+  definition: JoshAaronMiller.INaturalist.JsonObject`1
+  name: JsonObject<ObservationPhoto>
+  nameWithType: JsonObject<ObservationPhoto>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.ObservationPhoto>
+  nameWithType.vb: JsonObject(Of ObservationPhoto)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.ObservationPhoto)
+  name.vb: JsonObject(Of ObservationPhoto)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.ObservationPhoto
+    name: ObservationPhoto
+    nameWithType: ObservationPhoto
+    fullName: JoshAaronMiller.INaturalist.ObservationPhoto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.ObservationPhoto
+    name: ObservationPhoto
+    nameWithType: ObservationPhoto
+    fullName: JoshAaronMiller.INaturalist.ObservationPhoto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.ObservationPhoto}.CreateFromJson(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.ObservationPhoto}.CreateFromJson(System.String)
+  parent: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.ObservationPhoto}
+  definition: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  name: CreateFromJson(String)
+  nameWithType: JsonObject<ObservationPhoto>.CreateFromJson(String)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.ObservationPhoto>.CreateFromJson(System.String)
+  nameWithType.vb: JsonObject(Of ObservationPhoto).CreateFromJson(String)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.ObservationPhoto).CreateFromJson(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject<ObservationPhoto>.CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.ObservationPhoto>.CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject(Of ObservationPhoto).CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.ObservationPhoto).CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.ObservationPhoto}.ToJson(JoshAaronMiller.INaturalist.ObservationPhoto)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.ObservationPhoto}.ToJson(JoshAaronMiller.INaturalist.ObservationPhoto)
+  parent: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.ObservationPhoto}
+  definition: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  name: ToJson(ObservationPhoto)
+  nameWithType: JsonObject<ObservationPhoto>.ToJson(ObservationPhoto)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.ObservationPhoto>.ToJson(JoshAaronMiller.INaturalist.ObservationPhoto)
+  nameWithType.vb: JsonObject(Of ObservationPhoto).ToJson(ObservationPhoto)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.ObservationPhoto).ToJson(JoshAaronMiller.INaturalist.ObservationPhoto)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject<ObservationPhoto>.ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.ObservationPhoto>.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.ObservationPhoto
+    name: ObservationPhoto
+    nameWithType: ObservationPhoto
+    fullName: JoshAaronMiller.INaturalist.ObservationPhoto
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject(Of ObservationPhoto).ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.ObservationPhoto).ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.ObservationPhoto
+    name: ObservationPhoto
+    nameWithType: ObservationPhoto
+    fullName: JoshAaronMiller.INaturalist.ObservationPhoto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JoshAaronMiller.INaturalist.JsonObject`1
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject`1
+  name: JsonObject<T>
+  nameWithType: JsonObject<T>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>
+  nameWithType.vb: JsonObject(Of T)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T)
+  name.vb: JsonObject(Of T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  isExternal: true
+  name: CreateFromJson(String)
+  nameWithType: JsonObject<T>.CreateFromJson(String)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson(System.String)
+  nameWithType.vb: JsonObject(Of T).CreateFromJson(String)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject<T>.CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject(Of T).CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  name: ToJson(T)
+  nameWithType: JsonObject<T>.ToJson(T)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson(T)
+  nameWithType.vb: JsonObject(Of T).ToJson(T)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson(T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject<T>.ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject(Of T).ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: JoshAaronMiller.INaturalist.TimeDetails
+  commentId: T:JoshAaronMiller.INaturalist.TimeDetails
+  parent: JoshAaronMiller.INaturalist
+  name: TimeDetails
+  nameWithType: TimeDetails
+  fullName: JoshAaronMiller.INaturalist.TimeDetails
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: JoshAaronMiller.INaturalist.PhotoJson
+  commentId: T:JoshAaronMiller.INaturalist.PhotoJson
+  parent: JoshAaronMiller.INaturalist
+  name: PhotoJson
+  nameWithType: PhotoJson
+  fullName: JoshAaronMiller.INaturalist.PhotoJson

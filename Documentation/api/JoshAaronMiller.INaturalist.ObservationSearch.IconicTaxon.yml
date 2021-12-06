@@ -1,0 +1,477 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  id: ObservationSearch.IconicTaxon
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Actinopterygii
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Amphibia
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Animalia
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Arachnida
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Aves
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Chromista
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Fungi
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Insecta
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Mammalia
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Mollusca
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.None
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Plantae
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Protozoa
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Reptilia
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Unknown
+  langs:
+  - csharp
+  - vb
+  name: ObservationSearch.IconicTaxon
+  nameWithType: ObservationSearch.IconicTaxon
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  type: Enum
+  source:
+    id: IconicTaxon
+    path: ''
+    startLine: 3000
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum IconicTaxon
+    content.vb: Public Enum IconicTaxon
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.None
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.None
+  id: None
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ObservationSearch.IconicTaxon.None
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 3002
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: None = 0
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Actinopterygii
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Actinopterygii
+  id: Actinopterygii
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Actinopterygii
+  nameWithType: ObservationSearch.IconicTaxon.Actinopterygii
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Actinopterygii
+  type: Field
+  source:
+    id: Actinopterygii
+    path: ''
+    startLine: 3002
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Actinopterygii = 1
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Animalia
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Animalia
+  id: Animalia
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Animalia
+  nameWithType: ObservationSearch.IconicTaxon.Animalia
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Animalia
+  type: Field
+  source:
+    id: Animalia
+    path: ''
+    startLine: 3002
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Animalia = 2
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Amphibia
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Amphibia
+  id: Amphibia
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Amphibia
+  nameWithType: ObservationSearch.IconicTaxon.Amphibia
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Amphibia
+  type: Field
+  source:
+    id: Amphibia
+    path: ''
+    startLine: 3002
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Amphibia = 3
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Arachnida
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Arachnida
+  id: Arachnida
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Arachnida
+  nameWithType: ObservationSearch.IconicTaxon.Arachnida
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Arachnida
+  type: Field
+  source:
+    id: Arachnida
+    path: ''
+    startLine: 3002
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Arachnida = 4
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Aves
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Aves
+  id: Aves
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Aves
+  nameWithType: ObservationSearch.IconicTaxon.Aves
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Aves
+  type: Field
+  source:
+    id: Aves
+    path: ''
+    startLine: 3002
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Aves = 5
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Chromista
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Chromista
+  id: Chromista
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Chromista
+  nameWithType: ObservationSearch.IconicTaxon.Chromista
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Chromista
+  type: Field
+  source:
+    id: Chromista
+    path: ''
+    startLine: 3002
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Chromista = 6
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Fungi
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Fungi
+  id: Fungi
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Fungi
+  nameWithType: ObservationSearch.IconicTaxon.Fungi
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Fungi
+  type: Field
+  source:
+    id: Fungi
+    path: ''
+    startLine: 3002
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Fungi = 7
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Insecta
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Insecta
+  id: Insecta
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Insecta
+  nameWithType: ObservationSearch.IconicTaxon.Insecta
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Insecta
+  type: Field
+  source:
+    id: Insecta
+    path: ''
+    startLine: 3003
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Insecta = 8
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Mammalia
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Mammalia
+  id: Mammalia
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Mammalia
+  nameWithType: ObservationSearch.IconicTaxon.Mammalia
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Mammalia
+  type: Field
+  source:
+    id: Mammalia
+    path: ''
+    startLine: 3003
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Mammalia = 9
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Mollusca
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Mollusca
+  id: Mollusca
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Mollusca
+  nameWithType: ObservationSearch.IconicTaxon.Mollusca
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Mollusca
+  type: Field
+  source:
+    id: Mollusca
+    path: ''
+    startLine: 3003
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Mollusca = 10
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Reptilia
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Reptilia
+  id: Reptilia
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Reptilia
+  nameWithType: ObservationSearch.IconicTaxon.Reptilia
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Reptilia
+  type: Field
+  source:
+    id: Reptilia
+    path: ''
+    startLine: 3003
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Reptilia = 11
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Plantae
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Plantae
+  id: Plantae
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Plantae
+  nameWithType: ObservationSearch.IconicTaxon.Plantae
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Plantae
+  type: Field
+  source:
+    id: Plantae
+    path: ''
+    startLine: 3003
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Plantae = 12
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Protozoa
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Protozoa
+  id: Protozoa
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Protozoa
+  nameWithType: ObservationSearch.IconicTaxon.Protozoa
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Protozoa
+  type: Field
+  source:
+    id: Protozoa
+    path: ''
+    startLine: 3003
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Protozoa = 13
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Unknown
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Unknown
+  id: Unknown
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: ObservationSearch.IconicTaxon.Unknown
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.Unknown
+  type: Field
+  source:
+    id: Unknown
+    path: ''
+    startLine: 3003
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Unknown = 14
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.IconicTaxon
+  nameWithType: ObservationSearch.IconicTaxon
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon

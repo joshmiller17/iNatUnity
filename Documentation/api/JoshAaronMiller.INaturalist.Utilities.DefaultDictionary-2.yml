@@ -1,0 +1,238 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2
+  commentId: T:JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2
+  id: Utilities.DefaultDictionary`2
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2.Item(`0)
+  langs:
+  - csharp
+  - vb
+  name: Utilities.DefaultDictionary<Key, Value>
+  nameWithType: Utilities.DefaultDictionary<Key, Value>
+  fullName: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary<Key, Value>
+  type: Class
+  source:
+    id: DefaultDictionary
+    path: ''
+    startLine: 1761
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nA simple implementation of Python&apos;s defaultdict, which creates a default value if the key does not exist.\nAdapted from https://stackoverflow.com/questions/15622622/analogue-of-pythons-defaultdict\n"
+  example: []
+  syntax:
+    content: 'public class DefaultDictionary<Key, Value> : Dictionary<Key, Value>, IDictionary<Key, Value>, ICollection<KeyValuePair<Key, Value>>, IDictionary, ICollection, IReadOnlyDictionary<Key, Value>, IReadOnlyCollection<KeyValuePair<Key, Value>>, IEnumerable<KeyValuePair<Key, Value>>, IEnumerable, ISerializable, IDeserializationCallback where Value : new()'
+    typeParameters:
+    - id: Key
+    - id: Value
+    content.vb: >-
+      Public Class DefaultDictionary(Of Key, Value As New)
+          Inherits Dictionary(Of Key, Value)
+          Implements IDictionary(Of Key, Value), ICollection(Of KeyValuePair(Of Key, Value)), IDictionary, ICollection, IReadOnlyDictionary(Of Key, Value), IReadOnlyCollection(Of KeyValuePair(Of Key, Value)), IEnumerable(Of KeyValuePair(Of Key, Value)), IEnumerable, ISerializable, IDeserializationCallback
+  inheritance:
+  - System.Object
+  - System.Collections.Generic.Dictionary{{Key},{Value}}
+  nameWithType.vb: Utilities.DefaultDictionary(Of Key, Value)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary(Of Key, Value)
+  name.vb: Utilities.DefaultDictionary(Of Key, Value)
+- uid: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2.Item(`0)
+  commentId: P:JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2.Item(`0)
+  id: Item(`0)
+  parent: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2
+  langs:
+  - csharp
+  - vb
+  name: Item[Key]
+  nameWithType: Utilities.DefaultDictionary<Key, Value>.Item[Key]
+  fullName: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary<Key, Value>.Item[Key]
+  type: Property
+  source:
+    id: this[]
+    path: ''
+    startLine: 1763
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public Value this[Key key] { get; set; }
+    parameters:
+    - id: key
+      type: '{Key}'
+    return:
+      type: '{Value}'
+    content.vb: Public Property Item(key As Key) As Value
+  overload: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2.Item*
+  nameWithType.vb: Utilities.DefaultDictionary(Of Key, Value).Item(Key)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary(Of Key, Value).Item(Key)
+  name.vb: Item(Key)
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.Generic.Dictionary{{Key},{Value}}
+  commentId: T:System.Collections.Generic.Dictionary{`0,`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<Key, Value>
+  nameWithType: Dictionary<Key, Value>
+  fullName: System.Collections.Generic.Dictionary<Key, Value>
+  nameWithType.vb: Dictionary(Of Key, Value)
+  fullName.vb: System.Collections.Generic.Dictionary(Of Key, Value)
+  name.vb: Dictionary(Of Key, Value)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: Key
+    nameWithType: Key
+    fullName: Key
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Value
+    nameWithType: Value
+    fullName: Value
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: Key
+    nameWithType: Key
+    fullName: Key
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Value
+    nameWithType: Value
+    fullName: Value
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2.Item*
+  commentId: Overload:JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2.Item
+  name: Item
+  nameWithType: Utilities.DefaultDictionary<Key, Value>.Item
+  fullName: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary<Key, Value>.Item
+  nameWithType.vb: Utilities.DefaultDictionary(Of Key, Value).Item
+  fullName.vb: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary(Of Key, Value).Item
+- uid: '{Key}'
+  commentId: '!:Key'
+  definition: Key
+  name: Key
+  nameWithType: Key
+  fullName: Key
+- uid: '{Value}'
+  commentId: '!:Value'
+  definition: Value
+  name: Value
+  nameWithType: Value
+  fullName: Value
+- uid: Key
+  commentId: '!:Key'
+  name: Key
+  nameWithType: Key
+  fullName: Key
+- uid: Value
+  commentId: '!:Value'
+  name: Value
+  nameWithType: Value
+  fullName: Value

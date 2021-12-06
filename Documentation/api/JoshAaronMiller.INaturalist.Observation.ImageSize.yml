@@ -1,0 +1,187 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.Observation.ImageSize
+  commentId: T:JoshAaronMiller.INaturalist.Observation.ImageSize
+  id: Observation.ImageSize
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.Observation.ImageSize.Any
+  - JoshAaronMiller.INaturalist.Observation.ImageSize.Large
+  - JoshAaronMiller.INaturalist.Observation.ImageSize.Medium
+  - JoshAaronMiller.INaturalist.Observation.ImageSize.Small
+  - JoshAaronMiller.INaturalist.Observation.ImageSize.Square
+  langs:
+  - csharp
+  - vb
+  name: Observation.ImageSize
+  nameWithType: Observation.ImageSize
+  fullName: JoshAaronMiller.INaturalist.Observation.ImageSize
+  type: Enum
+  source:
+    id: ImageSize
+    path: ''
+    startLine: 2067
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum ImageSize
+    content.vb: Public Enum ImageSize
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.Observation.ImageSize.Any
+  commentId: F:JoshAaronMiller.INaturalist.Observation.ImageSize.Any
+  id: Any
+  parent: JoshAaronMiller.INaturalist.Observation.ImageSize
+  langs:
+  - csharp
+  - vb
+  name: Any
+  nameWithType: Observation.ImageSize.Any
+  fullName: JoshAaronMiller.INaturalist.Observation.ImageSize.Any
+  type: Field
+  source:
+    id: Any
+    path: ''
+    startLine: 2067
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Any = 0
+    return:
+      type: JoshAaronMiller.INaturalist.Observation.ImageSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.Observation.ImageSize.Square
+  commentId: F:JoshAaronMiller.INaturalist.Observation.ImageSize.Square
+  id: Square
+  parent: JoshAaronMiller.INaturalist.Observation.ImageSize
+  langs:
+  - csharp
+  - vb
+  name: Square
+  nameWithType: Observation.ImageSize.Square
+  fullName: JoshAaronMiller.INaturalist.Observation.ImageSize.Square
+  type: Field
+  source:
+    id: Square
+    path: ''
+    startLine: 2067
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Square = 1
+    return:
+      type: JoshAaronMiller.INaturalist.Observation.ImageSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.Observation.ImageSize.Small
+  commentId: F:JoshAaronMiller.INaturalist.Observation.ImageSize.Small
+  id: Small
+  parent: JoshAaronMiller.INaturalist.Observation.ImageSize
+  langs:
+  - csharp
+  - vb
+  name: Small
+  nameWithType: Observation.ImageSize.Small
+  fullName: JoshAaronMiller.INaturalist.Observation.ImageSize.Small
+  type: Field
+  source:
+    id: Small
+    path: ''
+    startLine: 2067
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Small = 2
+    return:
+      type: JoshAaronMiller.INaturalist.Observation.ImageSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.Observation.ImageSize.Medium
+  commentId: F:JoshAaronMiller.INaturalist.Observation.ImageSize.Medium
+  id: Medium
+  parent: JoshAaronMiller.INaturalist.Observation.ImageSize
+  langs:
+  - csharp
+  - vb
+  name: Medium
+  nameWithType: Observation.ImageSize.Medium
+  fullName: JoshAaronMiller.INaturalist.Observation.ImageSize.Medium
+  type: Field
+  source:
+    id: Medium
+    path: ''
+    startLine: 2068
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Medium = 3
+    return:
+      type: JoshAaronMiller.INaturalist.Observation.ImageSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.Observation.ImageSize.Large
+  commentId: F:JoshAaronMiller.INaturalist.Observation.ImageSize.Large
+  id: Large
+  parent: JoshAaronMiller.INaturalist.Observation.ImageSize
+  langs:
+  - csharp
+  - vb
+  name: Large
+  nameWithType: Observation.ImageSize.Large
+  fullName: JoshAaronMiller.INaturalist.Observation.ImageSize.Large
+  type: Field
+  source:
+    id: Large
+    path: ''
+    startLine: 2068
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Large = 4
+    return:
+      type: JoshAaronMiller.INaturalist.Observation.ImageSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.Observation.ImageSize
+  commentId: T:JoshAaronMiller.INaturalist.Observation.ImageSize
+  parent: JoshAaronMiller.INaturalist
+  name: Observation.ImageSize
+  nameWithType: Observation.ImageSize
+  fullName: JoshAaronMiller.INaturalist.Observation.ImageSize

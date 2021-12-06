@@ -1,0 +1,187 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  commentId: T:JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  id: IdentificationSearch.IdentificationCategory
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Any
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Improving
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Leading
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Maverick
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Supporting
+  langs:
+  - csharp
+  - vb
+  name: IdentificationSearch.IdentificationCategory
+  nameWithType: IdentificationSearch.IdentificationCategory
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  type: Enum
+  source:
+    id: IdentificationCategory
+    path: ''
+    startLine: 2552
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum IdentificationCategory
+    content.vb: Public Enum IdentificationCategory
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Any
+  commentId: F:JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Any
+  id: Any
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  langs:
+  - csharp
+  - vb
+  name: Any
+  nameWithType: IdentificationSearch.IdentificationCategory.Any
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Any
+  type: Field
+  source:
+    id: Any
+    path: ''
+    startLine: 2554
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Any = 0
+    return:
+      type: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Improving
+  commentId: F:JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Improving
+  id: Improving
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  langs:
+  - csharp
+  - vb
+  name: Improving
+  nameWithType: IdentificationSearch.IdentificationCategory.Improving
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Improving
+  type: Field
+  source:
+    id: Improving
+    path: ''
+    startLine: 2554
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Improving = 1
+    return:
+      type: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Supporting
+  commentId: F:JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Supporting
+  id: Supporting
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  langs:
+  - csharp
+  - vb
+  name: Supporting
+  nameWithType: IdentificationSearch.IdentificationCategory.Supporting
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Supporting
+  type: Field
+  source:
+    id: Supporting
+    path: ''
+    startLine: 2554
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Supporting = 2
+    return:
+      type: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Leading
+  commentId: F:JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Leading
+  id: Leading
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  langs:
+  - csharp
+  - vb
+  name: Leading
+  nameWithType: IdentificationSearch.IdentificationCategory.Leading
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Leading
+  type: Field
+  source:
+    id: Leading
+    path: ''
+    startLine: 2554
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Leading = 3
+    return:
+      type: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Maverick
+  commentId: F:JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Maverick
+  id: Maverick
+  parent: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  langs:
+  - csharp
+  - vb
+  name: Maverick
+  nameWithType: IdentificationSearch.IdentificationCategory.Maverick
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.Maverick
+  type: Field
+  source:
+    id: Maverick
+    path: ''
+    startLine: 2554
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Maverick = 4
+    return:
+      type: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  commentId: T:JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  parent: JoshAaronMiller.INaturalist
+  name: IdentificationSearch.IdentificationCategory
+  nameWithType: IdentificationSearch.IdentificationCategory
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory

@@ -1,0 +1,324 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.MessageSearch
+  commentId: T:JoshAaronMiller.INaturalist.MessageSearch
+  id: MessageSearch
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.MessageSearch.SetBox(JoshAaronMiller.INaturalist.MessageSearch.Box)
+  - JoshAaronMiller.INaturalist.MessageSearch.SetCorrespondent(System.String)
+  - JoshAaronMiller.INaturalist.MessageSearch.SetPage(System.Int32)
+  - JoshAaronMiller.INaturalist.MessageSearch.SetQuery(System.String)
+  - JoshAaronMiller.INaturalist.MessageSearch.ShowOnlyLatestMessagePerThread(System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: MessageSearch
+  nameWithType: MessageSearch
+  fullName: JoshAaronMiller.INaturalist.MessageSearch
+  type: Class
+  source:
+    id: MessageSearch
+    path: ''
+    startLine: 2850
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nA MessageSearch is a set of parameters for searching an iNaturalist user&apos;s private messages.\nUsage: myINatManager.GetUserMessages(myMessageSearch)\n"
+  example: []
+  syntax:
+    content: 'public class MessageSearch : SearchObject'
+    content.vb: >-
+      Public Class MessageSearch
+          Inherits SearchObject
+  inheritance:
+  - System.Object
+  - JoshAaronMiller.INaturalist.SearchObject
+  inheritedMembers:
+  - JoshAaronMiller.INaturalist.SearchObject.boolParams
+  - JoshAaronMiller.INaturalist.SearchObject.stringParams
+  - JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JoshAaronMiller.INaturalist.MessageSearch.SetPage(System.Int32)
+  commentId: M:JoshAaronMiller.INaturalist.MessageSearch.SetPage(System.Int32)
+  id: SetPage(System.Int32)
+  parent: JoshAaronMiller.INaturalist.MessageSearch
+  langs:
+  - csharp
+  - vb
+  name: SetPage(Int32)
+  nameWithType: MessageSearch.SetPage(Int32)
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.SetPage(System.Int32)
+  type: Method
+  source:
+    id: SetPage
+    path: ''
+    startLine: 2862
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nSet the pagination page number.\n"
+  example: []
+  syntax:
+    content: public void SetPage(int page)
+    parameters:
+    - id: page
+      type: System.Int32
+      description: The page of results to fetch.
+    content.vb: Public Sub SetPage(page As Integer)
+  overload: JoshAaronMiller.INaturalist.MessageSearch.SetPage*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.MessageSearch.SetBox(JoshAaronMiller.INaturalist.MessageSearch.Box)
+  commentId: M:JoshAaronMiller.INaturalist.MessageSearch.SetBox(JoshAaronMiller.INaturalist.MessageSearch.Box)
+  id: SetBox(JoshAaronMiller.INaturalist.MessageSearch.Box)
+  parent: JoshAaronMiller.INaturalist.MessageSearch
+  langs:
+  - csharp
+  - vb
+  name: SetBox(MessageSearch.Box)
+  nameWithType: MessageSearch.SetBox(MessageSearch.Box)
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.SetBox(JoshAaronMiller.INaturalist.MessageSearch.Box)
+  type: Method
+  source:
+    id: SetBox
+    path: ''
+    startLine: 2871
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nSet which box to search, defaults to inbox.\n"
+  example: []
+  syntax:
+    content: public void SetBox(MessageSearch.Box box)
+    parameters:
+    - id: box
+      type: JoshAaronMiller.INaturalist.MessageSearch.Box
+      description: The box of messages to search.
+    content.vb: Public Sub SetBox(box As MessageSearch.Box)
+  overload: JoshAaronMiller.INaturalist.MessageSearch.SetBox*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.MessageSearch.SetQuery(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.MessageSearch.SetQuery(System.String)
+  id: SetQuery(System.String)
+  parent: JoshAaronMiller.INaturalist.MessageSearch
+  langs:
+  - csharp
+  - vb
+  name: SetQuery(String)
+  nameWithType: MessageSearch.SetQuery(String)
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.SetQuery(System.String)
+  type: Method
+  source:
+    id: SetQuery
+    path: ''
+    startLine: 2880
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nSet an optional query string to search for in the subject and body of messages.\n"
+  example: []
+  syntax:
+    content: public void SetQuery(string q)
+    parameters:
+    - id: q
+      type: System.String
+      description: The query string; search will return only messages that match this query in subject or body.
+    content.vb: Public Sub SetQuery(q As String)
+  overload: JoshAaronMiller.INaturalist.MessageSearch.SetQuery*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.MessageSearch.SetCorrespondent(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.MessageSearch.SetCorrespondent(System.String)
+  id: SetCorrespondent(System.String)
+  parent: JoshAaronMiller.INaturalist.MessageSearch
+  langs:
+  - csharp
+  - vb
+  name: SetCorrespondent(String)
+  nameWithType: MessageSearch.SetCorrespondent(String)
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.SetCorrespondent(System.String)
+  type: Method
+  source:
+    id: SetCorrespondent
+    path: ''
+    startLine: 2889
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to only messages with a correspondent of this user ID or username.\n"
+  example: []
+  syntax:
+    content: public void SetCorrespondent(string user)
+    parameters:
+    - id: user
+      type: System.String
+      description: The user ID or username to limit the search to.
+    content.vb: Public Sub SetCorrespondent(user As String)
+  overload: JoshAaronMiller.INaturalist.MessageSearch.SetCorrespondent*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.MessageSearch.ShowOnlyLatestMessagePerThread(System.Boolean)
+  commentId: M:JoshAaronMiller.INaturalist.MessageSearch.ShowOnlyLatestMessagePerThread(System.Boolean)
+  id: ShowOnlyLatestMessagePerThread(System.Boolean)
+  parent: JoshAaronMiller.INaturalist.MessageSearch
+  langs:
+  - csharp
+  - vb
+  name: ShowOnlyLatestMessagePerThread(Boolean)
+  nameWithType: MessageSearch.ShowOnlyLatestMessagePerThread(Boolean)
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.ShowOnlyLatestMessagePerThread(System.Boolean)
+  type: Method
+  source:
+    id: ShowOnlyLatestMessagePerThread
+    path: ''
+    startLine: 2905
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nIf this setting is toggled on (default off), group the results by thread ID,\nonly show the latest message per thread, and include a thread_messages_count\nwhich shows the total number of messages in that thread.\n"
+  remarks: "\nNote that this setting can only be used if query (`q`) is not set and\nthread_messages_count always reports the count from `any` box instead of the\nbox specified.\n"
+  example: []
+  syntax:
+    content: public void ShowOnlyLatestMessagePerThread(bool on = false)
+    parameters:
+    - id: on
+      type: System.Boolean
+      description: Whether to only show the latest message per thread.
+    content.vb: Public Sub ShowOnlyLatestMessagePerThread(on As Boolean = False)
+  overload: JoshAaronMiller.INaturalist.MessageSearch.ShowOnlyLatestMessagePerThread*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: JoshAaronMiller.INaturalist.SearchObject
+  commentId: T:JoshAaronMiller.INaturalist.SearchObject
+  parent: JoshAaronMiller.INaturalist
+  name: SearchObject
+  nameWithType: SearchObject
+  fullName: JoshAaronMiller.INaturalist.SearchObject
+- uid: JoshAaronMiller.INaturalist.SearchObject.boolParams
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.boolParams
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  name: boolParams
+  nameWithType: SearchObject.boolParams
+  fullName: JoshAaronMiller.INaturalist.SearchObject.boolParams
+- uid: JoshAaronMiller.INaturalist.SearchObject.stringParams
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.stringParams
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  name: stringParams
+  nameWithType: SearchObject.stringParams
+  fullName: JoshAaronMiller.INaturalist.SearchObject.stringParams
+- uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  name: ToUrlParameters()
+  nameWithType: SearchObject.ToUrlParameters()
+  fullName: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters()
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+    name: ToUrlParameters
+    nameWithType: SearchObject.ToUrlParameters
+    fullName: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+    name: ToUrlParameters
+    nameWithType: SearchObject.ToUrlParameters
+    fullName: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JoshAaronMiller.INaturalist.MessageSearch.SetPage*
+  commentId: Overload:JoshAaronMiller.INaturalist.MessageSearch.SetPage
+  name: SetPage
+  nameWithType: MessageSearch.SetPage
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.SetPage
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: JoshAaronMiller.INaturalist.MessageSearch.SetBox*
+  commentId: Overload:JoshAaronMiller.INaturalist.MessageSearch.SetBox
+  name: SetBox
+  nameWithType: MessageSearch.SetBox
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.SetBox
+- uid: JoshAaronMiller.INaturalist.MessageSearch.Box
+  commentId: T:JoshAaronMiller.INaturalist.MessageSearch.Box
+  parent: JoshAaronMiller.INaturalist
+  name: MessageSearch.Box
+  nameWithType: MessageSearch.Box
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.Box
+- uid: JoshAaronMiller.INaturalist.MessageSearch.SetQuery*
+  commentId: Overload:JoshAaronMiller.INaturalist.MessageSearch.SetQuery
+  name: SetQuery
+  nameWithType: MessageSearch.SetQuery
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.SetQuery
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: JoshAaronMiller.INaturalist.MessageSearch.SetCorrespondent*
+  commentId: Overload:JoshAaronMiller.INaturalist.MessageSearch.SetCorrespondent
+  name: SetCorrespondent
+  nameWithType: MessageSearch.SetCorrespondent
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.SetCorrespondent
+- uid: JoshAaronMiller.INaturalist.MessageSearch.ShowOnlyLatestMessagePerThread*
+  commentId: Overload:JoshAaronMiller.INaturalist.MessageSearch.ShowOnlyLatestMessagePerThread
+  name: ShowOnlyLatestMessagePerThread
+  nameWithType: MessageSearch.ShowOnlyLatestMessagePerThread
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.ShowOnlyLatestMessagePerThread
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,202 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.PhotoFile
+  commentId: T:JoshAaronMiller.INaturalist.PhotoFile
+  id: PhotoFile
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.PhotoFile.fileName
+  - JoshAaronMiller.INaturalist.PhotoFile.filePath
+  - JoshAaronMiller.INaturalist.PhotoFile.fileType
+  - JoshAaronMiller.INaturalist.PhotoFile.ToBytes
+  langs:
+  - csharp
+  - vb
+  name: PhotoFile
+  nameWithType: PhotoFile
+  fullName: JoshAaronMiller.INaturalist.PhotoFile
+  type: Class
+  source:
+    id: PhotoFile
+    path: ''
+    startLine: 1698
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public class PhotoFile
+    content.vb: Public Class PhotoFile
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JoshAaronMiller.INaturalist.PhotoFile.filePath
+  commentId: F:JoshAaronMiller.INaturalist.PhotoFile.filePath
+  id: filePath
+  parent: JoshAaronMiller.INaturalist.PhotoFile
+  langs:
+  - csharp
+  - vb
+  name: filePath
+  nameWithType: PhotoFile.filePath
+  fullName: JoshAaronMiller.INaturalist.PhotoFile.filePath
+  type: Field
+  source:
+    id: filePath
+    path: ''
+    startLine: 1700
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string filePath
+    return:
+      type: System.String
+    content.vb: Public filePath As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.PhotoFile.fileName
+  commentId: F:JoshAaronMiller.INaturalist.PhotoFile.fileName
+  id: fileName
+  parent: JoshAaronMiller.INaturalist.PhotoFile
+  langs:
+  - csharp
+  - vb
+  name: fileName
+  nameWithType: PhotoFile.fileName
+  fullName: JoshAaronMiller.INaturalist.PhotoFile.fileName
+  type: Field
+  source:
+    id: fileName
+    path: ''
+    startLine: 1701
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string fileName
+    return:
+      type: System.String
+    content.vb: Public fileName As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.PhotoFile.fileType
+  commentId: F:JoshAaronMiller.INaturalist.PhotoFile.fileType
+  id: fileType
+  parent: JoshAaronMiller.INaturalist.PhotoFile
+  langs:
+  - csharp
+  - vb
+  name: fileType
+  nameWithType: PhotoFile.fileType
+  fullName: JoshAaronMiller.INaturalist.PhotoFile.fileType
+  type: Field
+  source:
+    id: fileType
+    path: ''
+    startLine: 1702
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string fileType
+    return:
+      type: System.String
+    content.vb: Public fileType As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.PhotoFile.ToBytes
+  commentId: M:JoshAaronMiller.INaturalist.PhotoFile.ToBytes
+  id: ToBytes
+  parent: JoshAaronMiller.INaturalist.PhotoFile
+  langs:
+  - csharp
+  - vb
+  name: ToBytes()
+  nameWithType: PhotoFile.ToBytes()
+  fullName: JoshAaronMiller.INaturalist.PhotoFile.ToBytes()
+  type: Method
+  source:
+    id: ToBytes
+    path: ''
+    startLine: 1704
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public byte[] ToBytes()
+    return:
+      type: System.Byte[]
+    content.vb: Public Function ToBytes As Byte()
+  overload: JoshAaronMiller.INaturalist.PhotoFile.ToBytes*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: JoshAaronMiller.INaturalist.PhotoFile.ToBytes*
+  commentId: Overload:JoshAaronMiller.INaturalist.PhotoFile.ToBytes
+  name: ToBytes
+  nameWithType: PhotoFile.ToBytes
+  fullName: JoshAaronMiller.INaturalist.PhotoFile.ToBytes
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

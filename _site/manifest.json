@@ -1,0 +1,930 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "api/*": {
+        "baseUrl": "https://github.com/joshmiller17/iNatUnity/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://github.com/joshmiller17/iNatUnity/",
+    "changefreq": "weekly"
+  },
+  "homepages": [],
+  "source_base_path": "C:/Users/joshm/iNatUnity/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.Demo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.Demo.html",
+          "hash": "yt3I6jfz3PMkUb+zSwZyMOznDMbjqKsaO+A3RpHhshw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.html",
+          "hash": "AXGcALjV347AVIVQ0YGP4j1RnN9jqDOeUvIpRJyyrb0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Annotation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Annotation.html",
+          "hash": "SYktpnu/5chnQ4QTZsHDqr9uvS8ZkPfR5EV2QBY/sZk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.BoundingBoxGeoJson.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.BoundingBoxGeoJson.html",
+          "hash": "ALK4JtjmqM9Xm8RfXmDw3hPhIx/+1xt0+0wx/Tr2jA8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.ControlledTerm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.ControlledTerm.html",
+          "hash": "x9UQrzNXRiZVJkOICMjk5CVoUQ48wmWL8qZvI1bJxS4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.ControlledTermValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.ControlledTermValue.html",
+          "hash": "vT7UPLrtK/pJDfHAAQXuU/RLNV8sU7hiTQUfDphusdo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Count.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Count.html",
+          "hash": "Y0k7xem6F3cw+Zm8deJDKWcmUrmcR6vBPt8c58CSrVQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Dimensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Dimensions.html",
+          "hash": "85+vt6jv3/WSsDaO7flRb2sxTk+fZKYlUuJgJL/Il18="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Enums.html",
+          "hash": "pnAg1NrKwJ0oEXev12+1RuXn618LYgvDHplNTCaUtyw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Error.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Error.html",
+          "hash": "yf9jytNiKJcwfNK3JZ8Bl1Bb2RilOPEml6o2qTCxmXI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Flag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Flag.html",
+          "hash": "YCBLURwp9WQMxTH/V9ggYrx4GILDC7Dp9LltSnRzO4w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.FlagCounts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.FlagCounts.html",
+          "hash": "1qhcPUdtyVvZtyWz7lPFEo9Tvr5028zuxDPq0J2rCF8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.GeoJson.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.GeoJson.html",
+          "hash": "ueRycLdvp5WLTrP/8K5XrSxOL8ucqYEgVVtqfR4kFp4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.GeometryGeoJson.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.GeometryGeoJson.html",
+          "hash": "8cTaWg1lGE7F+L4H2lzX0W4dXKDKmYMHZ8ABBQnQ0G0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.html",
+          "hash": "TRSBtLT62qLlLXf7QuAgsDQ2i0p3JAraC1ZsPb+gvVo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.INatManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.INatManager.html",
+          "hash": "+Ri89XHjcd/HHiv4n+XKRTe3EYVTojWcJpWQU7iEg3g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Identification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Identification.html",
+          "hash": "T3Q96brC2OIig4c+J+YmsWVF4saWoHzazfyLuz/UfNw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.IdentificationCategoryCount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.IdentificationCategoryCount.html",
+          "hash": "cJJabUD+NFrW/Rc8fPsd5jSJLnoHt0snOoMViN7AX2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter.html",
+          "hash": "OEekURD8OLO45261kAMAWInRXw0AKR3xE4auAWMM1OM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory.html",
+          "hash": "UKcUli2rh2pU5jNTblRQXKmNOIjUnMwdxujmc0v/uDo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.IdentificationSearch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.IdentificationSearch.html",
+          "hash": "aTHhVAyLvXAwTXtNnHKZ+oPcizWpNdrLNQ/i/c3P9Dk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.IdentificationSubmission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.IdentificationSubmission.html",
+          "hash": "o0y6BdE01Nxbht7xvYCEe5QgQqbwWTelTPbbe7jXNo4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.JsonObject-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.JsonObject-1.html",
+          "hash": "wfkt73jUA2vkHccHjHaCts4BZGTiKJi71uus37/XXgQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.MessageSearch.Box.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.MessageSearch.Box.html",
+          "hash": "qWNi6i1hyuOrlJWfT7ynYcI8g9uTY3in2Zcv857gRWc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.MessageSearch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.MessageSearch.html",
+          "hash": "s//7uaegwKMhBl/uFTCaRkXsKjdNLKbZOcKhzzdr4LU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Observation.ImageSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Observation.ImageSize.html",
+          "hash": "FdPmeMk9br1SvV0SM8INmX3ktRbuCPUgFU4kbaZzXc4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Observation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Observation.html",
+          "hash": "lrM631X+OmccEtD7dOkwwKXbnKEnKKMWTQB9D0BJeOE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.ObservationPhoto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.ObservationPhoto.html",
+          "hash": "kY0m6Uhvvo60XFNnP7ZSzR3J4mk1VpIETbw+q/SOmXg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.html",
+          "hash": "aHsP+CFvurPYZAY/taCdZbngPRUcGAdL3dxwUovsRXw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.html",
+          "hash": "pgOHv7XfDIX/PAwPPgEw/g0walj6zOfwPBf+tSmcZI0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.html",
+          "hash": "3dqmxBuo3QtZWs8sJOiuEIZNDHjejNZXtL5cvVT+lvo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.html",
+          "hash": "02vpaSFWtnb5TTlyWcdm9XwvUS9NmoFB1XZtadOFwMg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.html",
+          "hash": "+GrIhxfg7xH5d6GuBu3fDE9C2W7dyXKjVYU6vHNsP3Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.License.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.License.html",
+          "hash": "iXOgo2+Wzr5gphCIRlqN8cNh2CA2w/3ci4+YVrIU3Os="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.html",
+          "hash": "WgSTCKP97QKf7DT+zi23gz8KSOsdo63zU7r9MxgXNRU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.ObservationSearch.html",
+          "hash": "uDzj/yH5wmTwSRARNzOHbL0a9DQ3b5Q/CMOq091l69U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.ObservationSubmission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.ObservationSubmission.html",
+          "hash": "oJIesQMQf9HNIpXTX4WHyRTOGjR7FCkJN6dsReGUe+U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.OrderBy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.OrderBy.html",
+          "hash": "TFDqoaFCyMfBNXQPZrsnmwBo9oYXZlrRhgJW/oncS6A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Outlink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Outlink.html",
+          "hash": "q8+7qEHXwHNtQ2mhFfvM8MI2Qku4gSQ0ra2IA0l8XEE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.PhotoFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.PhotoFile.html",
+          "hash": "tMIxSAqoUui7+NB8mZfvDlSh8O6HbvQPnpW1hICN/jY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.PhotoJson.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.PhotoJson.html",
+          "hash": "Pfizxh6IUs0Nem/Q6HyNonOAM8LAmY6aoA7I24AiD3A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Place.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Place.html",
+          "hash": "OxNiiejYiBCCVe23DviJODuYx/wxNlWR3R95VqlREL4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.PlacesByCuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.PlacesByCuration.html",
+          "hash": "UFR5/6fzQgKuKgASuk18xw5dDl/tGeuGnpz5MeSKA/A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.QualityGrade.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.QualityGrade.html",
+          "hash": "qPzGY2JH50Fagsqm1xEREYz2l6YVNjIKYxt9yX6aPoQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Results-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Results-1.html",
+          "hash": "biidZ6aFpuot9/kQELgxKBsLgVpXwf0XraieBtRvPR0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.SearchObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.SearchObject.html",
+          "hash": "76MVO5spg+XLiaoTFSSwbVGdfZIhQgMRXebcvRVaPMA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.SortOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.SortOrder.html",
+          "hash": "RVHb4QMdD/G/Z2wouFsdMaiQIlFZr6O/b5IsBV5+S7U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Sound.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Sound.html",
+          "hash": "K2A192XEkC870ben2yN0AyfxHHUgUIVJNqF19hYSsvg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.SpeciesCount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.SpeciesCount.html",
+          "hash": "Sas9byMRt7c9mrrWd4XIMD7w9ok4GBz2rbTfwlYIsQI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Taxon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Taxon.html",
+          "hash": "7SbdVWtrG5HLMbXPkZCa5JberRIPlb/HE5MzvbF9i54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.TaxonRank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.TaxonRank.html",
+          "hash": "AmqBrtLnPYVKhoirQtybQDixdBBMzyd3laZqwQZSSkM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.TaxonRankLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.TaxonRankLevel.html",
+          "hash": "DHIHiCZnjxadEcX63KAm2nMyTqnbhCE3eWOd/8IRBDU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter.html",
+          "hash": "nIiJ9QG6y13zl/HMLXtyylfOKrXhXPwvFdYeBhBWMmU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.TaxonSearch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.TaxonSearch.html",
+          "hash": "IajJ8ksXK0FfZv52k9qEPcLHBcTQo2oRLteYLIbCRbA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.TaxonSummary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.TaxonSummary.html",
+          "hash": "fdt4hzTzCaEcnmjJr8X2yCCnUQ3+DqrVnSS/ypMUGAk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.TimeDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.TimeDetails.html",
+          "hash": "Ey2OPI006zV9THjcMVxNgSlPbZKxaxCjp2O1sJEsNgM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.User.html",
+          "hash": "FqMJZRKQRgQLBF7SuJ5A//yzgrLJAcoYbplLb0ZuL7Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.UserMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.UserMessage.html",
+          "hash": "+VLGepQ1eSbMfVomMhDSe4xQbQR4H/gg5cJCrz/CQAw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Utilities.DefaultDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Utilities.DefaultDictionary-2.html",
+          "hash": "qz/0qilTAd3SmiIamflYE/Z99IeY+NtOS3sebEbg2a0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Utilities.html",
+          "hash": "ucToFjikYCzKfYfXPdzPzCu3gNVbX0lC+Z7UBBfVw4E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.Vote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.Vote.html",
+          "hash": "NBZVwCNds7DzYyZEH99p2yFfLBKQtqR2LNb3uw2fuvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.WrappedFlag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.WrappedFlag.html",
+          "hash": "YjDNQGWKRJrwkT4yivC9FNmocWiy/PVNtiCK9YPZ7eo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.WrappedIdentificationSubmission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.WrappedIdentificationSubmission.html",
+          "hash": "o9jTae9qTQSIL+WnwhP5mSszrrD+t7X4ZN9xmwu8pc0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.WrappedObservationSubmission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.WrappedObservationSubmission.html",
+          "hash": "fSLnq/ej7fmPaGsTyZ1Ibo88r4zyhVxfeQvb6zhWFp4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JoshAaronMiller.INaturalist.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JoshAaronMiller.INaturalist.html",
+          "hash": "u4noC19FuUtCF3W6t3UfIf3I1XFuFYcwxLncS0qRod4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "pY4p1gK8a3vj9b4bvYLCwvRvn2hlfFplLBTU8tNJpcI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html",
+          "hash": "qXq/+SQZuCMet8vgfYkX/tKfpyJsv5fJeI44IdZVnXU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "+B7VxbxALNW0h0IhCkoC1BAqwu7JGpQDMw0S8jaznJQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ExampleManual.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ExampleManual.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ExampleScriptingApi.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ExampleScriptingApi.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "fIbNMQDUM/KTrz9uhZ8ZUaFv3saHoUXNzCbJW0DPKZU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 1
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 65,
+          "skipped_file_count": 65
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

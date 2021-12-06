@@ -1,0 +1,245 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  commentId: T:JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  id: INatManager.PlaceAdminLevel
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Continent
+  - JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Country
+  - JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.County
+  - JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.None
+  - JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Park
+  - JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.State
+  - JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Town
+  langs:
+  - csharp
+  - vb
+  name: INatManager.PlaceAdminLevel
+  nameWithType: INatManager.PlaceAdminLevel
+  fullName: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  type: Enum
+  source:
+    id: PlaceAdminLevel
+    path: ''
+    startLine: 629
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum PlaceAdminLevel
+    content.vb: Public Enum PlaceAdminLevel
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.None
+  commentId: F:JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.None
+  id: None
+  parent: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: INatManager.PlaceAdminLevel.None
+  fullName: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 630
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: None = -999
+    return:
+      type: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Continent
+  commentId: F:JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Continent
+  id: Continent
+  parent: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  langs:
+  - csharp
+  - vb
+  name: Continent
+  nameWithType: INatManager.PlaceAdminLevel.Continent
+  fullName: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Continent
+  type: Field
+  source:
+    id: Continent
+    path: ''
+    startLine: 631
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Continent = -1
+    return:
+      type: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Country
+  commentId: F:JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Country
+  id: Country
+  parent: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  langs:
+  - csharp
+  - vb
+  name: Country
+  nameWithType: INatManager.PlaceAdminLevel.Country
+  fullName: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Country
+  type: Field
+  source:
+    id: Country
+    path: ''
+    startLine: 632
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Country = 0
+    return:
+      type: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.State
+  commentId: F:JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.State
+  id: State
+  parent: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: INatManager.PlaceAdminLevel.State
+  fullName: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.State
+  type: Field
+  source:
+    id: State
+    path: ''
+    startLine: 633
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: State = 1
+    return:
+      type: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.County
+  commentId: F:JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.County
+  id: County
+  parent: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  langs:
+  - csharp
+  - vb
+  name: County
+  nameWithType: INatManager.PlaceAdminLevel.County
+  fullName: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.County
+  type: Field
+  source:
+    id: County
+    path: ''
+    startLine: 634
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: County = 2
+    return:
+      type: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Town
+  commentId: F:JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Town
+  id: Town
+  parent: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  langs:
+  - csharp
+  - vb
+  name: Town
+  nameWithType: INatManager.PlaceAdminLevel.Town
+  fullName: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Town
+  type: Field
+  source:
+    id: Town
+    path: ''
+    startLine: 635
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Town = 3
+    return:
+      type: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Park
+  commentId: F:JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Park
+  id: Park
+  parent: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  langs:
+  - csharp
+  - vb
+  name: Park
+  nameWithType: INatManager.PlaceAdminLevel.Park
+  fullName: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel.Park
+  type: Field
+  source:
+    id: Park
+    path: ''
+    startLine: 636
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Park = 10
+    return:
+      type: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  commentId: T:JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  parent: JoshAaronMiller.INaturalist
+  name: INatManager.PlaceAdminLevel
+  nameWithType: INatManager.PlaceAdminLevel
+  fullName: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel

@@ -1,0 +1,593 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  id: ObservationSearch.BooleanParameter
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasPhotos
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasPositionalAccuracy
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasProjectId
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasSounds
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsCaptive
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsEndemic
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsGeoreferenced
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsIdentified
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsLicensed
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsMappable
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsNative
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsOutOfRange
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsPhotoLicensed
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsPopular
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsTaxonActive
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsThreatened
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsVerifiable
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.ReturnIdOnly
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.WasIntroduced
+  langs:
+  - csharp
+  - vb
+  name: ObservationSearch.BooleanParameter
+  nameWithType: ObservationSearch.BooleanParameter
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  type: Enum
+  source:
+    id: BooleanParameter
+    path: ''
+    startLine: 2935
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum BooleanParameter
+    content.vb: Public Enum BooleanParameter
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasPositionalAccuracy
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasPositionalAccuracy
+  id: HasPositionalAccuracy
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: HasPositionalAccuracy
+  nameWithType: ObservationSearch.BooleanParameter.HasPositionalAccuracy
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasPositionalAccuracy
+  type: Field
+  source:
+    id: HasPositionalAccuracy
+    path: ''
+    startLine: 2937
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: HasPositionalAccuracy = 0
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsCaptive
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsCaptive
+  id: IsCaptive
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: IsCaptive
+  nameWithType: ObservationSearch.BooleanParameter.IsCaptive
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsCaptive
+  type: Field
+  source:
+    id: IsCaptive
+    path: ''
+    startLine: 2937
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IsCaptive = 1
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsEndemic
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsEndemic
+  id: IsEndemic
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: IsEndemic
+  nameWithType: ObservationSearch.BooleanParameter.IsEndemic
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsEndemic
+  type: Field
+  source:
+    id: IsEndemic
+    path: ''
+    startLine: 2937
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IsEndemic = 2
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsGeoreferenced
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsGeoreferenced
+  id: IsGeoreferenced
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: IsGeoreferenced
+  nameWithType: ObservationSearch.BooleanParameter.IsGeoreferenced
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsGeoreferenced
+  type: Field
+  source:
+    id: IsGeoreferenced
+    path: ''
+    startLine: 2937
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IsGeoreferenced = 3
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsIdentified
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsIdentified
+  id: IsIdentified
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: IsIdentified
+  nameWithType: ObservationSearch.BooleanParameter.IsIdentified
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsIdentified
+  type: Field
+  source:
+    id: IsIdentified
+    path: ''
+    startLine: 2938
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IsIdentified = 4
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.WasIntroduced
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.WasIntroduced
+  id: WasIntroduced
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: WasIntroduced
+  nameWithType: ObservationSearch.BooleanParameter.WasIntroduced
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.WasIntroduced
+  type: Field
+  source:
+    id: WasIntroduced
+    path: ''
+    startLine: 2938
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: WasIntroduced = 5
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsMappable
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsMappable
+  id: IsMappable
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: IsMappable
+  nameWithType: ObservationSearch.BooleanParameter.IsMappable
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsMappable
+  type: Field
+  source:
+    id: IsMappable
+    path: ''
+    startLine: 2938
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IsMappable = 6
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsNative
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsNative
+  id: IsNative
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: IsNative
+  nameWithType: ObservationSearch.BooleanParameter.IsNative
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsNative
+  type: Field
+  source:
+    id: IsNative
+    path: ''
+    startLine: 2938
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IsNative = 7
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsOutOfRange
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsOutOfRange
+  id: IsOutOfRange
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: IsOutOfRange
+  nameWithType: ObservationSearch.BooleanParameter.IsOutOfRange
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsOutOfRange
+  type: Field
+  source:
+    id: IsOutOfRange
+    path: ''
+    startLine: 2938
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IsOutOfRange = 8
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasProjectId
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasProjectId
+  id: HasProjectId
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: HasProjectId
+  nameWithType: ObservationSearch.BooleanParameter.HasProjectId
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasProjectId
+  type: Field
+  source:
+    id: HasProjectId
+    path: ''
+    startLine: 2938
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: HasProjectId = 9
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasPhotos
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasPhotos
+  id: HasPhotos
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: HasPhotos
+  nameWithType: ObservationSearch.BooleanParameter.HasPhotos
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasPhotos
+  type: Field
+  source:
+    id: HasPhotos
+    path: ''
+    startLine: 2938
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: HasPhotos = 10
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsPopular
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsPopular
+  id: IsPopular
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: IsPopular
+  nameWithType: ObservationSearch.BooleanParameter.IsPopular
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsPopular
+  type: Field
+  source:
+    id: IsPopular
+    path: ''
+    startLine: 2939
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IsPopular = 11
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasSounds
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasSounds
+  id: HasSounds
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: HasSounds
+  nameWithType: ObservationSearch.BooleanParameter.HasSounds
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.HasSounds
+  type: Field
+  source:
+    id: HasSounds
+    path: ''
+    startLine: 2939
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: HasSounds = 12
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsTaxonActive
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsTaxonActive
+  id: IsTaxonActive
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: IsTaxonActive
+  nameWithType: ObservationSearch.BooleanParameter.IsTaxonActive
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsTaxonActive
+  type: Field
+  source:
+    id: IsTaxonActive
+    path: ''
+    startLine: 2939
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IsTaxonActive = 13
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsThreatened
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsThreatened
+  id: IsThreatened
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: IsThreatened
+  nameWithType: ObservationSearch.BooleanParameter.IsThreatened
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsThreatened
+  type: Field
+  source:
+    id: IsThreatened
+    path: ''
+    startLine: 2939
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IsThreatened = 14
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsVerifiable
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsVerifiable
+  id: IsVerifiable
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: IsVerifiable
+  nameWithType: ObservationSearch.BooleanParameter.IsVerifiable
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsVerifiable
+  type: Field
+  source:
+    id: IsVerifiable
+    path: ''
+    startLine: 2939
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IsVerifiable = 15
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsLicensed
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsLicensed
+  id: IsLicensed
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: IsLicensed
+  nameWithType: ObservationSearch.BooleanParameter.IsLicensed
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsLicensed
+  type: Field
+  source:
+    id: IsLicensed
+    path: ''
+    startLine: 2939
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IsLicensed = 16
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsPhotoLicensed
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsPhotoLicensed
+  id: IsPhotoLicensed
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: IsPhotoLicensed
+  nameWithType: ObservationSearch.BooleanParameter.IsPhotoLicensed
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.IsPhotoLicensed
+  type: Field
+  source:
+    id: IsPhotoLicensed
+    path: ''
+    startLine: 2940
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IsPhotoLicensed = 17
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.ReturnIdOnly
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.ReturnIdOnly
+  id: ReturnIdOnly
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  langs:
+  - csharp
+  - vb
+  name: ReturnIdOnly
+  nameWithType: ObservationSearch.BooleanParameter.ReturnIdOnly
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter.ReturnIdOnly
+  type: Field
+  source:
+    id: ReturnIdOnly
+    path: ''
+    startLine: 2940
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ReturnIdOnly = 18
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.BooleanParameter
+  nameWithType: ObservationSearch.BooleanParameter
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter

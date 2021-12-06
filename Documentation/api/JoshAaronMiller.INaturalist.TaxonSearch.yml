@@ -1,0 +1,802 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.TaxonSearch
+  commentId: T:JoshAaronMiller.INaturalist.TaxonSearch
+  id: TaxonSearch
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.TaxonSearch.BoolParamToString
+  - JoshAaronMiller.INaturalist.TaxonSearch.IncludeIds(System.Collections.Generic.List{System.Int32})
+  - JoshAaronMiller.INaturalist.TaxonSearch.IncludeTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})
+  - JoshAaronMiller.INaturalist.TaxonSearch.SetBooleanParameter(JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter,System.Boolean)
+  - JoshAaronMiller.INaturalist.TaxonSearch.SetLocalePreference(System.String)
+  - JoshAaronMiller.INaturalist.TaxonSearch.SetNameBeginsWith(System.String)
+  - JoshAaronMiller.INaturalist.TaxonSearch.SetPagination(System.Int32,System.Int32)
+  - JoshAaronMiller.INaturalist.TaxonSearch.SetParentId(System.Int32)
+  - JoshAaronMiller.INaturalist.TaxonSearch.SetPreferredPlaceId(System.Int32)
+  - JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonIdLimits(System.Int32,System.Int32)
+  - JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonRankLevel(JoshAaronMiller.INaturalist.TaxonRankLevel)
+  langs:
+  - csharp
+  - vb
+  name: TaxonSearch
+  nameWithType: TaxonSearch
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch
+  type: Class
+  source:
+    id: TaxonSearch
+    path: ''
+    startLine: 3673
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nA TaxonSearch is a set of parameters for searching iNaturalist Taxa.\nUsage: myINatManager.SearchTaxa(myTaxonSearch)\n"
+  example: []
+  syntax:
+    content: 'public class TaxonSearch : SearchObject'
+    content.vb: >-
+      Public Class TaxonSearch
+          Inherits SearchObject
+  inheritance:
+  - System.Object
+  - JoshAaronMiller.INaturalist.SearchObject
+  inheritedMembers:
+  - JoshAaronMiller.INaturalist.SearchObject.boolParams
+  - JoshAaronMiller.INaturalist.SearchObject.stringParams
+  - JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.BoolParamToString
+  commentId: F:JoshAaronMiller.INaturalist.TaxonSearch.BoolParamToString
+  id: BoolParamToString
+  parent: JoshAaronMiller.INaturalist.TaxonSearch
+  langs:
+  - csharp
+  - vb
+  name: BoolParamToString
+  nameWithType: TaxonSearch.BoolParamToString
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.BoolParamToString
+  type: Field
+  source:
+    id: BoolParamToString
+    path: ''
+    startLine: 3680
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public static Dictionary<TaxonSearch.BooleanParameter, string> BoolParamToString
+    return:
+      type: System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter,System.String}
+    content.vb: Public Shared BoolParamToString As Dictionary(Of TaxonSearch.BooleanParameter, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetBooleanParameter(JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter,System.Boolean)
+  commentId: M:JoshAaronMiller.INaturalist.TaxonSearch.SetBooleanParameter(JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter,System.Boolean)
+  id: SetBooleanParameter(JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter,System.Boolean)
+  parent: JoshAaronMiller.INaturalist.TaxonSearch
+  langs:
+  - csharp
+  - vb
+  name: SetBooleanParameter(TaxonSearch.BooleanParameter, Boolean)
+  nameWithType: TaxonSearch.SetBooleanParameter(TaxonSearch.BooleanParameter, Boolean)
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetBooleanParameter(JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter, System.Boolean)
+  type: Method
+  source:
+    id: SetBooleanParameter
+    path: ''
+    startLine: 3686
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public void SetBooleanParameter(TaxonSearch.BooleanParameter param, bool setting)
+    parameters:
+    - id: param
+      type: JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
+    - id: setting
+      type: System.Boolean
+    content.vb: Public Sub SetBooleanParameter(param As TaxonSearch.BooleanParameter, setting As Boolean)
+  overload: JoshAaronMiller.INaturalist.TaxonSearch.SetBooleanParameter*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetNameBeginsWith(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.TaxonSearch.SetNameBeginsWith(System.String)
+  id: SetNameBeginsWith(System.String)
+  parent: JoshAaronMiller.INaturalist.TaxonSearch
+  langs:
+  - csharp
+  - vb
+  name: SetNameBeginsWith(String)
+  nameWithType: TaxonSearch.SetNameBeginsWith(String)
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetNameBeginsWith(System.String)
+  type: Method
+  source:
+    id: SetNameBeginsWith
+    path: ''
+    startLine: 3695
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to taxa that begin with this substring\n"
+  example: []
+  syntax:
+    content: public void SetNameBeginsWith(string query)
+    parameters:
+    - id: query
+      type: System.String
+      description: The start of the taxa names
+    content.vb: Public Sub SetNameBeginsWith(query As String)
+  overload: JoshAaronMiller.INaturalist.TaxonSearch.SetNameBeginsWith*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.IncludeIds(System.Collections.Generic.List{System.Int32})
+  commentId: M:JoshAaronMiller.INaturalist.TaxonSearch.IncludeIds(System.Collections.Generic.List{System.Int32})
+  id: IncludeIds(System.Collections.Generic.List{System.Int32})
+  parent: JoshAaronMiller.INaturalist.TaxonSearch
+  langs:
+  - csharp
+  - vb
+  name: IncludeIds(List<Int32>)
+  nameWithType: TaxonSearch.IncludeIds(List<Int32>)
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.IncludeIds(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    id: IncludeIds
+    path: ''
+    startLine: 3704
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nRequire the search to include these IDs.\n"
+  example: []
+  syntax:
+    content: public void IncludeIds(List<int> ids)
+    parameters:
+    - id: ids
+      type: System.Collections.Generic.List{System.Int32}
+      description: IDs to include
+    content.vb: Public Sub IncludeIds(ids As List(Of Integer))
+  overload: JoshAaronMiller.INaturalist.TaxonSearch.IncludeIds*
+  nameWithType.vb: TaxonSearch.IncludeIds(List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.TaxonSearch.IncludeIds(System.Collections.Generic.List(Of System.Int32))
+  name.vb: IncludeIds(List(Of Int32))
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetParentId(System.Int32)
+  commentId: M:JoshAaronMiller.INaturalist.TaxonSearch.SetParentId(System.Int32)
+  id: SetParentId(System.Int32)
+  parent: JoshAaronMiller.INaturalist.TaxonSearch
+  langs:
+  - csharp
+  - vb
+  name: SetParentId(Int32)
+  nameWithType: TaxonSearch.SetParentId(Int32)
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetParentId(System.Int32)
+  type: Method
+  source:
+    id: SetParentId
+    path: ''
+    startLine: 3713
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to children of this taxon ID.\n"
+  example: []
+  syntax:
+    content: public void SetParentId(int parentId)
+    parameters:
+    - id: parentId
+      type: System.Int32
+      description: The parent taxon&apos;s ID
+    content.vb: Public Sub SetParentId(parentId As Integer)
+  overload: JoshAaronMiller.INaturalist.TaxonSearch.SetParentId*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.IncludeTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})
+  commentId: M:JoshAaronMiller.INaturalist.TaxonSearch.IncludeTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})
+  id: IncludeTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})
+  parent: JoshAaronMiller.INaturalist.TaxonSearch
+  langs:
+  - csharp
+  - vb
+  name: IncludeTaxonRanks(List<TaxonRank>)
+  nameWithType: TaxonSearch.IncludeTaxonRanks(List<TaxonRank>)
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.IncludeTaxonRanks(System.Collections.Generic.List<JoshAaronMiller.INaturalist.TaxonRank>)
+  type: Method
+  source:
+    id: IncludeTaxonRanks
+    path: ''
+    startLine: 3722
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to taxa of these ranks.\n"
+  example: []
+  syntax:
+    content: public void IncludeTaxonRanks(List<TaxonRank> ranks)
+    parameters:
+    - id: ranks
+      type: System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank}
+      description: The list of taxon ranks to include in the search.
+    content.vb: Public Sub IncludeTaxonRanks(ranks As List(Of TaxonRank))
+  overload: JoshAaronMiller.INaturalist.TaxonSearch.IncludeTaxonRanks*
+  nameWithType.vb: TaxonSearch.IncludeTaxonRanks(List(Of TaxonRank))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JoshAaronMiller.INaturalist.TaxonSearch.IncludeTaxonRanks(System.Collections.Generic.List(Of JoshAaronMiller.INaturalist.TaxonRank))
+  name.vb: IncludeTaxonRanks(List(Of TaxonRank))
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonRankLevel(JoshAaronMiller.INaturalist.TaxonRankLevel)
+  commentId: M:JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonRankLevel(JoshAaronMiller.INaturalist.TaxonRankLevel)
+  id: SetTaxonRankLevel(JoshAaronMiller.INaturalist.TaxonRankLevel)
+  parent: JoshAaronMiller.INaturalist.TaxonSearch
+  langs:
+  - csharp
+  - vb
+  name: SetTaxonRankLevel(TaxonRankLevel)
+  nameWithType: TaxonSearch.SetTaxonRankLevel(TaxonRankLevel)
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonRankLevel(JoshAaronMiller.INaturalist.TaxonRankLevel)
+  type: Method
+  source:
+    id: SetTaxonRankLevel
+    path: ''
+    startLine: 3731
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to taxa of this rank level.\n"
+  example: []
+  syntax:
+    content: public void SetTaxonRankLevel(TaxonRankLevel rankLevel)
+    parameters:
+    - id: rankLevel
+      type: JoshAaronMiller.INaturalist.TaxonRankLevel
+      description: The rank level to limit the search to.
+    content.vb: Public Sub SetTaxonRankLevel(rankLevel As TaxonRankLevel)
+  overload: JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonRankLevel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonIdLimits(System.Int32,System.Int32)
+  commentId: M:JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonIdLimits(System.Int32,System.Int32)
+  id: SetTaxonIdLimits(System.Int32,System.Int32)
+  parent: JoshAaronMiller.INaturalist.TaxonSearch
+  langs:
+  - csharp
+  - vb
+  name: SetTaxonIdLimits(Int32, Int32)
+  nameWithType: TaxonSearch.SetTaxonIdLimits(Int32, Int32)
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonIdLimits(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: SetTaxonIdLimits
+    path: ''
+    startLine: 3745
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLimit the search to taxa with IDs within this range. Both min and max are optional.\n"
+  example: []
+  syntax:
+    content: public void SetTaxonIdLimits(int min = -1, int max = -1)
+    parameters:
+    - id: min
+      type: System.Int32
+      description: Include this ID and higher.
+    - id: max
+      type: System.Int32
+      description: Include this ID and lower.
+    content.vb: Public Sub SetTaxonIdLimits(min As Integer = -1, max As Integer = -1)
+  overload: JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonIdLimits*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetPagination(System.Int32,System.Int32)
+  commentId: M:JoshAaronMiller.INaturalist.TaxonSearch.SetPagination(System.Int32,System.Int32)
+  id: SetPagination(System.Int32,System.Int32)
+  parent: JoshAaronMiller.INaturalist.TaxonSearch
+  langs:
+  - csharp
+  - vb
+  name: SetPagination(Int32, Int32)
+  nameWithType: TaxonSearch.SetPagination(Int32, Int32)
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetPagination(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: SetPagination
+    path: ''
+    startLine: 3762
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nSet the number of search results per page and which page to receive. For example, SetPagination(50,2) would return results 51-100.\n"
+  example: []
+  syntax:
+    content: public void SetPagination(int resultsPerPage = 30, int page = 1)
+    parameters:
+    - id: resultsPerPage
+      type: System.Int32
+      description: How many results to return per page (default 30).
+    - id: page
+      type: System.Int32
+      description: Which page of results to return (default 1).
+    content.vb: Public Sub SetPagination(resultsPerPage As Integer = 30, page As Integer = 1)
+  overload: JoshAaronMiller.INaturalist.TaxonSearch.SetPagination*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetLocalePreference(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.TaxonSearch.SetLocalePreference(System.String)
+  id: SetLocalePreference(System.String)
+  parent: JoshAaronMiller.INaturalist.TaxonSearch
+  langs:
+  - csharp
+  - vb
+  name: SetLocalePreference(String)
+  nameWithType: TaxonSearch.SetLocalePreference(String)
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetLocalePreference(System.String)
+  type: Method
+  source:
+    id: SetLocalePreference
+    path: ''
+    startLine: 3776
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nSet the locale preference for taxon common names.\n"
+  remarks: "\nI&apos;m not really sure what a valid input looks like.\n"
+  example: []
+  syntax:
+    content: public void SetLocalePreference(string locale)
+    parameters:
+    - id: locale
+      type: System.String
+      description: The locale preference.
+    content.vb: Public Sub SetLocalePreference(locale As String)
+  overload: JoshAaronMiller.INaturalist.TaxonSearch.SetLocalePreference*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetPreferredPlaceId(System.Int32)
+  commentId: M:JoshAaronMiller.INaturalist.TaxonSearch.SetPreferredPlaceId(System.Int32)
+  id: SetPreferredPlaceId(System.Int32)
+  parent: JoshAaronMiller.INaturalist.TaxonSearch
+  langs:
+  - csharp
+  - vb
+  name: SetPreferredPlaceId(Int32)
+  nameWithType: TaxonSearch.SetPreferredPlaceId(Int32)
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetPreferredPlaceId(System.Int32)
+  type: Method
+  source:
+    id: SetPreferredPlaceId
+    path: ''
+    startLine: 3788
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nSet a place preference for regional taxon common names.\n"
+  remarks: "\nI think this means that taxon common names will be based on the place specified.\n"
+  example: []
+  syntax:
+    content: public void SetPreferredPlaceId(int placeId)
+    parameters:
+    - id: placeId
+      type: System.Int32
+      description: The place ID of the preference.
+    content.vb: Public Sub SetPreferredPlaceId(placeId As Integer)
+  overload: JoshAaronMiller.INaturalist.TaxonSearch.SetPreferredPlaceId*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: JoshAaronMiller.INaturalist.SearchObject
+  commentId: T:JoshAaronMiller.INaturalist.SearchObject
+  parent: JoshAaronMiller.INaturalist
+  name: SearchObject
+  nameWithType: SearchObject
+  fullName: JoshAaronMiller.INaturalist.SearchObject
+- uid: JoshAaronMiller.INaturalist.SearchObject.boolParams
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.boolParams
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  name: boolParams
+  nameWithType: SearchObject.boolParams
+  fullName: JoshAaronMiller.INaturalist.SearchObject.boolParams
+- uid: JoshAaronMiller.INaturalist.SearchObject.stringParams
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.stringParams
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  name: stringParams
+  nameWithType: SearchObject.stringParams
+  fullName: JoshAaronMiller.INaturalist.SearchObject.stringParams
+- uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  name: ToUrlParameters()
+  nameWithType: SearchObject.ToUrlParameters()
+  fullName: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters()
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+    name: ToUrlParameters
+    nameWithType: SearchObject.ToUrlParameters
+    fullName: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+    name: ToUrlParameters
+    nameWithType: SearchObject.ToUrlParameters
+    fullName: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<TaxonSearch.BooleanParameter, String>
+  nameWithType: Dictionary<TaxonSearch.BooleanParameter, String>
+  fullName: System.Collections.Generic.Dictionary<JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter, System.String>
+  nameWithType.vb: Dictionary(Of TaxonSearch.BooleanParameter, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter, System.String)
+  name.vb: Dictionary(Of TaxonSearch.BooleanParameter, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
+    name: TaxonSearch.BooleanParameter
+    nameWithType: TaxonSearch.BooleanParameter
+    fullName: JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
+    name: TaxonSearch.BooleanParameter
+    nameWithType: TaxonSearch.BooleanParameter
+    fullName: JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetBooleanParameter*
+  commentId: Overload:JoshAaronMiller.INaturalist.TaxonSearch.SetBooleanParameter
+  name: SetBooleanParameter
+  nameWithType: TaxonSearch.SetBooleanParameter
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetBooleanParameter
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
+  commentId: T:JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
+  parent: JoshAaronMiller.INaturalist
+  name: TaxonSearch.BooleanParameter
+  nameWithType: TaxonSearch.BooleanParameter
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetNameBeginsWith*
+  commentId: Overload:JoshAaronMiller.INaturalist.TaxonSearch.SetNameBeginsWith
+  name: SetNameBeginsWith
+  nameWithType: TaxonSearch.SetNameBeginsWith
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetNameBeginsWith
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.IncludeIds*
+  commentId: Overload:JoshAaronMiller.INaturalist.TaxonSearch.IncludeIds
+  name: IncludeIds
+  nameWithType: TaxonSearch.IncludeIds
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.IncludeIds
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: System.Collections.Generic.List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: System.Collections.Generic.List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetParentId*
+  commentId: Overload:JoshAaronMiller.INaturalist.TaxonSearch.SetParentId
+  name: SetParentId
+  nameWithType: TaxonSearch.SetParentId
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetParentId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.IncludeTaxonRanks*
+  commentId: Overload:JoshAaronMiller.INaturalist.TaxonSearch.IncludeTaxonRanks
+  name: IncludeTaxonRanks
+  nameWithType: TaxonSearch.IncludeTaxonRanks
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.IncludeTaxonRanks
+- uid: System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank}
+  commentId: T:System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<TaxonRank>
+  nameWithType: List<TaxonRank>
+  fullName: System.Collections.Generic.List<JoshAaronMiller.INaturalist.TaxonRank>
+  nameWithType.vb: List(Of TaxonRank)
+  fullName.vb: System.Collections.Generic.List(Of JoshAaronMiller.INaturalist.TaxonRank)
+  name.vb: List(Of TaxonRank)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.TaxonRank
+    name: TaxonRank
+    nameWithType: TaxonRank
+    fullName: JoshAaronMiller.INaturalist.TaxonRank
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.TaxonRank
+    name: TaxonRank
+    nameWithType: TaxonRank
+    fullName: JoshAaronMiller.INaturalist.TaxonRank
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonRankLevel*
+  commentId: Overload:JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonRankLevel
+  name: SetTaxonRankLevel
+  nameWithType: TaxonSearch.SetTaxonRankLevel
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonRankLevel
+- uid: JoshAaronMiller.INaturalist.TaxonRankLevel
+  commentId: T:JoshAaronMiller.INaturalist.TaxonRankLevel
+  parent: JoshAaronMiller.INaturalist
+  name: TaxonRankLevel
+  nameWithType: TaxonRankLevel
+  fullName: JoshAaronMiller.INaturalist.TaxonRankLevel
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonIdLimits*
+  commentId: Overload:JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonIdLimits
+  name: SetTaxonIdLimits
+  nameWithType: TaxonSearch.SetTaxonIdLimits
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonIdLimits
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetPagination*
+  commentId: Overload:JoshAaronMiller.INaturalist.TaxonSearch.SetPagination
+  name: SetPagination
+  nameWithType: TaxonSearch.SetPagination
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetPagination
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetLocalePreference*
+  commentId: Overload:JoshAaronMiller.INaturalist.TaxonSearch.SetLocalePreference
+  name: SetLocalePreference
+  nameWithType: TaxonSearch.SetLocalePreference
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetLocalePreference
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.SetPreferredPlaceId*
+  commentId: Overload:JoshAaronMiller.INaturalist.TaxonSearch.SetPreferredPlaceId
+  name: SetPreferredPlaceId
+  nameWithType: TaxonSearch.SetPreferredPlaceId
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.SetPreferredPlaceId

@@ -1,0 +1,337 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.SearchObject
+  commentId: T:JoshAaronMiller.INaturalist.SearchObject
+  id: SearchObject
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.SearchObject.boolParams
+  - JoshAaronMiller.INaturalist.SearchObject.stringParams
+  - JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  langs:
+  - csharp
+  - vb
+  name: SearchObject
+  nameWithType: SearchObject
+  fullName: JoshAaronMiller.INaturalist.SearchObject
+  type: Class
+  source:
+    id: SearchObject
+    path: ''
+    startLine: 3631
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nA search object has a set of bool and string parameters for conducting a query using the INatManager.\n"
+  example: []
+  syntax:
+    content: public abstract class SearchObject
+    content.vb: Public MustInherit Class SearchObject
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - JoshAaronMiller.INaturalist.IdentificationSearch
+  - JoshAaronMiller.INaturalist.MessageSearch
+  - JoshAaronMiller.INaturalist.ObservationSearch
+  - JoshAaronMiller.INaturalist.TaxonSearch
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: JoshAaronMiller.INaturalist.SearchObject.boolParams
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.boolParams
+  id: boolParams
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  langs:
+  - csharp
+  - vb
+  name: boolParams
+  nameWithType: SearchObject.boolParams
+  fullName: JoshAaronMiller.INaturalist.SearchObject.boolParams
+  type: Field
+  source:
+    id: boolParams
+    path: ''
+    startLine: 3633
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: protected Dictionary<string, bool> boolParams
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Boolean}
+    content.vb: Protected boolParams As Dictionary(Of String, Boolean)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: JoshAaronMiller.INaturalist.SearchObject.stringParams
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.stringParams
+  id: stringParams
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  langs:
+  - csharp
+  - vb
+  name: stringParams
+  nameWithType: SearchObject.stringParams
+  fullName: JoshAaronMiller.INaturalist.SearchObject.stringParams
+  type: Field
+  source:
+    id: stringParams
+    path: ''
+    startLine: 3634
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: protected Dictionary<string, string> stringParams
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Protected stringParams As Dictionary(Of String, String)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  id: ToUrlParameters
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  langs:
+  - csharp
+  - vb
+  name: ToUrlParameters()
+  nameWithType: SearchObject.ToUrlParameters()
+  fullName: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters()
+  type: Method
+  source:
+    id: ToUrlParameters
+    path: ''
+    startLine: 3641
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nReturns this search object as a string of URL parameters.\n"
+  example: []
+  syntax:
+    content: public string ToUrlParameters()
+    return:
+      type: System.String
+      description: A string of URL parameters
+    content.vb: Public Function ToUrlParameters As String
+  overload: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.Dictionary{System.String,System.Boolean}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Boolean}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Boolean>
+  nameWithType: Dictionary<String, Boolean>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Boolean>
+  nameWithType.vb: Dictionary(Of String, Boolean)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Boolean)
+  name.vb: Dictionary(Of String, Boolean)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters*
+  commentId: Overload:JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+  name: ToUrlParameters
+  nameWithType: SearchObject.ToUrlParameters
+  fullName: JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

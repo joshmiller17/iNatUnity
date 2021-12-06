@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.Utilities
+  commentId: T:JoshAaronMiller.INaturalist.Utilities
+  id: Utilities
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.Utilities.LoadImageFromPath(System.String,GameObject,System.Action)
+  langs:
+  - csharp
+  - vb
+  name: Utilities
+  nameWithType: Utilities
+  fullName: JoshAaronMiller.INaturalist.Utilities
+  type: Class
+  source:
+    id: Utilities
+    path: ''
+    startLine: 1719
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public static class Utilities
+    content.vb: Public Module Utilities
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: JoshAaronMiller.INaturalist.Utilities.LoadImageFromPath(System.String,GameObject,System.Action)
+  commentId: M:JoshAaronMiller.INaturalist.Utilities.LoadImageFromPath(System.String,GameObject,System.Action)
+  id: LoadImageFromPath(System.String,GameObject,System.Action)
+  parent: JoshAaronMiller.INaturalist.Utilities
+  langs:
+  - csharp
+  - vb
+  name: LoadImageFromPath(String, GameObject, Action)
+  nameWithType: Utilities.LoadImageFromPath(String, GameObject, Action)
+  fullName: JoshAaronMiller.INaturalist.Utilities.LoadImageFromPath(System.String, GameObject, System.Action)
+  type: Method
+  source:
+    id: LoadImageFromPath
+    path: ''
+    startLine: 1730
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  summary: "\nLoads an image from a local file or URL into the texture of a GameObject&apos;s RawImage component.\nCreates a RawImage component if none exists.\n"
+  example: []
+  syntax:
+    content: public static IEnumerator LoadImageFromPath(string fullPath, GameObject loadTo, Action callback = null)
+    parameters:
+    - id: fullPath
+      type: System.String
+      description: The full local path or URL.
+    - id: loadTo
+      type: Global.GameObject
+      description: The GameObject to load the image into.
+    - id: callback
+      type: System.Action
+      description: Optionally, a void function to call once the image is loaded successfully.
+    return:
+      type: System.Collections.IEnumerator
+      description: ''
+    content.vb: Public Shared Function LoadImageFromPath(fullPath As String, loadTo As GameObject, callback As Action = Nothing) As IEnumerator
+  overload: JoshAaronMiller.INaturalist.Utilities.LoadImageFromPath*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JoshAaronMiller.INaturalist.Utilities.LoadImageFromPath*
+  commentId: Overload:JoshAaronMiller.INaturalist.Utilities.LoadImageFromPath
+  name: LoadImageFromPath
+  nameWithType: Utilities.LoadImageFromPath
+  fullName: JoshAaronMiller.INaturalist.Utilities.LoadImageFromPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Global.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: GameObject
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections

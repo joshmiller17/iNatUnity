@@ -1,0 +1,539 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  id: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.Annotation
+  - JoshAaronMiller.INaturalist.BoundingBoxGeoJson
+  - JoshAaronMiller.INaturalist.ControlledTerm
+  - JoshAaronMiller.INaturalist.ControlledTermValue
+  - JoshAaronMiller.INaturalist.Count
+  - JoshAaronMiller.INaturalist.Dimensions
+  - JoshAaronMiller.INaturalist.Enums
+  - JoshAaronMiller.INaturalist.Error
+  - JoshAaronMiller.INaturalist.Flag
+  - JoshAaronMiller.INaturalist.FlagCounts
+  - JoshAaronMiller.INaturalist.GeoJson
+  - JoshAaronMiller.INaturalist.GeometryGeoJson
+  - JoshAaronMiller.INaturalist.Identification
+  - JoshAaronMiller.INaturalist.IdentificationCategoryCount
+  - JoshAaronMiller.INaturalist.IdentificationSearch
+  - JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
+  - JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  - JoshAaronMiller.INaturalist.IdentificationSubmission
+  - JoshAaronMiller.INaturalist.INatManager
+  - JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  - JoshAaronMiller.INaturalist.JsonObject`1
+  - JoshAaronMiller.INaturalist.MessageSearch
+  - JoshAaronMiller.INaturalist.MessageSearch.Box
+  - JoshAaronMiller.INaturalist.Observation
+  - JoshAaronMiller.INaturalist.Observation.ImageSize
+  - JoshAaronMiller.INaturalist.ObservationPhoto
+  - JoshAaronMiller.INaturalist.ObservationSearch
+  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  - JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  - JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  - JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  - JoshAaronMiller.INaturalist.ObservationSearch.License
+  - JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  - JoshAaronMiller.INaturalist.ObservationSubmission
+  - JoshAaronMiller.INaturalist.OrderBy
+  - JoshAaronMiller.INaturalist.Outlink
+  - JoshAaronMiller.INaturalist.PhotoFile
+  - JoshAaronMiller.INaturalist.PhotoJson
+  - JoshAaronMiller.INaturalist.Place
+  - JoshAaronMiller.INaturalist.PlacesByCuration
+  - JoshAaronMiller.INaturalist.QualityGrade
+  - JoshAaronMiller.INaturalist.Results`1
+  - JoshAaronMiller.INaturalist.SearchObject
+  - JoshAaronMiller.INaturalist.SortOrder
+  - JoshAaronMiller.INaturalist.Sound
+  - JoshAaronMiller.INaturalist.SpeciesCount
+  - JoshAaronMiller.INaturalist.Taxon
+  - JoshAaronMiller.INaturalist.TaxonRank
+  - JoshAaronMiller.INaturalist.TaxonRankLevel
+  - JoshAaronMiller.INaturalist.TaxonSearch
+  - JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
+  - JoshAaronMiller.INaturalist.TaxonSummary
+  - JoshAaronMiller.INaturalist.TimeDetails
+  - JoshAaronMiller.INaturalist.User
+  - JoshAaronMiller.INaturalist.UserMessage
+  - JoshAaronMiller.INaturalist.Utilities
+  - JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2
+  - JoshAaronMiller.INaturalist.Vote
+  - JoshAaronMiller.INaturalist.WrappedFlag
+  - JoshAaronMiller.INaturalist.WrappedIdentificationSubmission
+  - JoshAaronMiller.INaturalist.WrappedObservationSubmission
+  langs:
+  - csharp
+  - vb
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: JoshAaronMiller.INaturalist.TaxonRank
+  commentId: T:JoshAaronMiller.INaturalist.TaxonRank
+  parent: JoshAaronMiller.INaturalist
+  name: TaxonRank
+  nameWithType: TaxonRank
+  fullName: JoshAaronMiller.INaturalist.TaxonRank
+- uid: JoshAaronMiller.INaturalist.QualityGrade
+  commentId: T:JoshAaronMiller.INaturalist.QualityGrade
+  parent: JoshAaronMiller.INaturalist
+  name: QualityGrade
+  nameWithType: QualityGrade
+  fullName: JoshAaronMiller.INaturalist.QualityGrade
+- uid: JoshAaronMiller.INaturalist.OrderBy
+  commentId: T:JoshAaronMiller.INaturalist.OrderBy
+  parent: JoshAaronMiller.INaturalist
+  name: OrderBy
+  nameWithType: OrderBy
+  fullName: JoshAaronMiller.INaturalist.OrderBy
+- uid: JoshAaronMiller.INaturalist.SortOrder
+  commentId: T:JoshAaronMiller.INaturalist.SortOrder
+  parent: JoshAaronMiller.INaturalist
+  name: SortOrder
+  nameWithType: SortOrder
+  fullName: JoshAaronMiller.INaturalist.SortOrder
+- uid: JoshAaronMiller.INaturalist.TaxonRankLevel
+  commentId: T:JoshAaronMiller.INaturalist.TaxonRankLevel
+  parent: JoshAaronMiller.INaturalist
+  name: TaxonRankLevel
+  nameWithType: TaxonRankLevel
+  fullName: JoshAaronMiller.INaturalist.TaxonRankLevel
+- uid: JoshAaronMiller.INaturalist.Enums
+  commentId: T:JoshAaronMiller.INaturalist.Enums
+  name: Enums
+  nameWithType: Enums
+  fullName: JoshAaronMiller.INaturalist.Enums
+- uid: JoshAaronMiller.INaturalist.INatManager
+  commentId: T:JoshAaronMiller.INaturalist.INatManager
+  name: INatManager
+  nameWithType: INatManager
+  fullName: JoshAaronMiller.INaturalist.INatManager
+- uid: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  commentId: T:JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+  parent: JoshAaronMiller.INaturalist
+  name: INatManager.PlaceAdminLevel
+  nameWithType: INatManager.PlaceAdminLevel
+  fullName: JoshAaronMiller.INaturalist.INatManager.PlaceAdminLevel
+- uid: JoshAaronMiller.INaturalist.PhotoFile
+  commentId: T:JoshAaronMiller.INaturalist.PhotoFile
+  parent: JoshAaronMiller.INaturalist
+  name: PhotoFile
+  nameWithType: PhotoFile
+  fullName: JoshAaronMiller.INaturalist.PhotoFile
+- uid: JoshAaronMiller.INaturalist.Utilities
+  commentId: T:JoshAaronMiller.INaturalist.Utilities
+  name: Utilities
+  nameWithType: Utilities
+  fullName: JoshAaronMiller.INaturalist.Utilities
+- uid: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2
+  commentId: T:JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2
+  name: Utilities.DefaultDictionary<Key, Value>
+  nameWithType: Utilities.DefaultDictionary<Key, Value>
+  fullName: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary<Key, Value>
+  nameWithType.vb: Utilities.DefaultDictionary(Of Key, Value)
+  fullName.vb: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary(Of Key, Value)
+  name.vb: Utilities.DefaultDictionary(Of Key, Value)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2
+    name: Utilities.DefaultDictionary
+    nameWithType: Utilities.DefaultDictionary
+    fullName: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: Key
+    nameWithType: Key
+    fullName: Key
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Value
+    nameWithType: Value
+    fullName: Value
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary`2
+    name: Utilities.DefaultDictionary
+    nameWithType: Utilities.DefaultDictionary
+    fullName: JoshAaronMiller.INaturalist.Utilities.DefaultDictionary
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: Key
+    nameWithType: Key
+    fullName: Key
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: Value
+    nameWithType: Value
+    fullName: Value
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.Annotation
+  commentId: T:JoshAaronMiller.INaturalist.Annotation
+  name: Annotation
+  nameWithType: Annotation
+  fullName: JoshAaronMiller.INaturalist.Annotation
+- uid: JoshAaronMiller.INaturalist.BoundingBoxGeoJson
+  commentId: T:JoshAaronMiller.INaturalist.BoundingBoxGeoJson
+  parent: JoshAaronMiller.INaturalist
+  name: BoundingBoxGeoJson
+  nameWithType: BoundingBoxGeoJson
+  fullName: JoshAaronMiller.INaturalist.BoundingBoxGeoJson
+- uid: JoshAaronMiller.INaturalist.ControlledTerm
+  commentId: T:JoshAaronMiller.INaturalist.ControlledTerm
+  name: ControlledTerm
+  nameWithType: ControlledTerm
+  fullName: JoshAaronMiller.INaturalist.ControlledTerm
+- uid: JoshAaronMiller.INaturalist.ControlledTermValue
+  commentId: T:JoshAaronMiller.INaturalist.ControlledTermValue
+  name: ControlledTermValue
+  nameWithType: ControlledTermValue
+  fullName: JoshAaronMiller.INaturalist.ControlledTermValue
+- uid: JoshAaronMiller.INaturalist.Count
+  commentId: T:JoshAaronMiller.INaturalist.Count
+  name: Count
+  nameWithType: Count
+  fullName: JoshAaronMiller.INaturalist.Count
+- uid: JoshAaronMiller.INaturalist.Dimensions
+  commentId: T:JoshAaronMiller.INaturalist.Dimensions
+  parent: JoshAaronMiller.INaturalist
+  name: Dimensions
+  nameWithType: Dimensions
+  fullName: JoshAaronMiller.INaturalist.Dimensions
+- uid: JoshAaronMiller.INaturalist.Error
+  commentId: T:JoshAaronMiller.INaturalist.Error
+  parent: JoshAaronMiller.INaturalist
+  name: Error
+  nameWithType: Error
+  fullName: JoshAaronMiller.INaturalist.Error
+- uid: JoshAaronMiller.INaturalist.Flag
+  commentId: T:JoshAaronMiller.INaturalist.Flag
+  parent: JoshAaronMiller.INaturalist
+  name: Flag
+  nameWithType: Flag
+  fullName: JoshAaronMiller.INaturalist.Flag
+- uid: JoshAaronMiller.INaturalist.WrappedFlag
+  commentId: T:JoshAaronMiller.INaturalist.WrappedFlag
+  parent: JoshAaronMiller.INaturalist
+  name: WrappedFlag
+  nameWithType: WrappedFlag
+  fullName: JoshAaronMiller.INaturalist.WrappedFlag
+- uid: JoshAaronMiller.INaturalist.FlagCounts
+  commentId: T:JoshAaronMiller.INaturalist.FlagCounts
+  parent: JoshAaronMiller.INaturalist
+  name: FlagCounts
+  nameWithType: FlagCounts
+  fullName: JoshAaronMiller.INaturalist.FlagCounts
+- uid: JoshAaronMiller.INaturalist.GeoJson
+  commentId: T:JoshAaronMiller.INaturalist.GeoJson
+  parent: JoshAaronMiller.INaturalist
+  name: GeoJson
+  nameWithType: GeoJson
+  fullName: JoshAaronMiller.INaturalist.GeoJson
+- uid: JoshAaronMiller.INaturalist.GeometryGeoJson
+  commentId: T:JoshAaronMiller.INaturalist.GeometryGeoJson
+  parent: JoshAaronMiller.INaturalist
+  name: GeometryGeoJson
+  nameWithType: GeometryGeoJson
+  fullName: JoshAaronMiller.INaturalist.GeometryGeoJson
+- uid: JoshAaronMiller.INaturalist.Identification
+  commentId: T:JoshAaronMiller.INaturalist.Identification
+  parent: JoshAaronMiller.INaturalist
+  name: Identification
+  nameWithType: Identification
+  fullName: JoshAaronMiller.INaturalist.Identification
+- uid: JoshAaronMiller.INaturalist.IdentificationCategoryCount
+  commentId: T:JoshAaronMiller.INaturalist.IdentificationCategoryCount
+  name: IdentificationCategoryCount
+  nameWithType: IdentificationCategoryCount
+  fullName: JoshAaronMiller.INaturalist.IdentificationCategoryCount
+- uid: JoshAaronMiller.INaturalist.SpeciesCount
+  commentId: T:JoshAaronMiller.INaturalist.SpeciesCount
+  name: SpeciesCount
+  nameWithType: SpeciesCount
+  fullName: JoshAaronMiller.INaturalist.SpeciesCount
+- uid: JoshAaronMiller.INaturalist.IdentificationSubmission
+  commentId: T:JoshAaronMiller.INaturalist.IdentificationSubmission
+  parent: JoshAaronMiller.INaturalist
+  name: IdentificationSubmission
+  nameWithType: IdentificationSubmission
+  fullName: JoshAaronMiller.INaturalist.IdentificationSubmission
+- uid: JoshAaronMiller.INaturalist.WrappedIdentificationSubmission
+  commentId: T:JoshAaronMiller.INaturalist.WrappedIdentificationSubmission
+  name: WrappedIdentificationSubmission
+  nameWithType: WrappedIdentificationSubmission
+  fullName: JoshAaronMiller.INaturalist.WrappedIdentificationSubmission
+- uid: JoshAaronMiller.INaturalist.JsonObject`1
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject`1
+  name: JsonObject<T>
+  nameWithType: JsonObject<T>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>
+  nameWithType.vb: JsonObject(Of T)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T)
+  name.vb: JsonObject(Of T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.Observation
+  commentId: T:JoshAaronMiller.INaturalist.Observation
+  name: Observation
+  nameWithType: Observation
+  fullName: JoshAaronMiller.INaturalist.Observation
+- uid: JoshAaronMiller.INaturalist.Observation.ImageSize
+  commentId: T:JoshAaronMiller.INaturalist.Observation.ImageSize
+  parent: JoshAaronMiller.INaturalist
+  name: Observation.ImageSize
+  nameWithType: Observation.ImageSize
+  fullName: JoshAaronMiller.INaturalist.Observation.ImageSize
+- uid: JoshAaronMiller.INaturalist.ObservationPhoto
+  commentId: T:JoshAaronMiller.INaturalist.ObservationPhoto
+  name: ObservationPhoto
+  nameWithType: ObservationPhoto
+  fullName: JoshAaronMiller.INaturalist.ObservationPhoto
+- uid: JoshAaronMiller.INaturalist.ObservationSubmission
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSubmission
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSubmission
+  nameWithType: ObservationSubmission
+  fullName: JoshAaronMiller.INaturalist.ObservationSubmission
+- uid: JoshAaronMiller.INaturalist.WrappedObservationSubmission
+  commentId: T:JoshAaronMiller.INaturalist.WrappedObservationSubmission
+  name: WrappedObservationSubmission
+  nameWithType: WrappedObservationSubmission
+  fullName: JoshAaronMiller.INaturalist.WrappedObservationSubmission
+- uid: JoshAaronMiller.INaturalist.Outlink
+  commentId: T:JoshAaronMiller.INaturalist.Outlink
+  name: Outlink
+  nameWithType: Outlink
+  fullName: JoshAaronMiller.INaturalist.Outlink
+- uid: JoshAaronMiller.INaturalist.PhotoJson
+  commentId: T:JoshAaronMiller.INaturalist.PhotoJson
+  parent: JoshAaronMiller.INaturalist
+  name: PhotoJson
+  nameWithType: PhotoJson
+  fullName: JoshAaronMiller.INaturalist.PhotoJson
+- uid: JoshAaronMiller.INaturalist.Place
+  commentId: T:JoshAaronMiller.INaturalist.Place
+  name: Place
+  nameWithType: Place
+  fullName: JoshAaronMiller.INaturalist.Place
+- uid: JoshAaronMiller.INaturalist.PlacesByCuration
+  commentId: T:JoshAaronMiller.INaturalist.PlacesByCuration
+  name: PlacesByCuration
+  nameWithType: PlacesByCuration
+  fullName: JoshAaronMiller.INaturalist.PlacesByCuration
+- uid: JoshAaronMiller.INaturalist.Results`1
+  commentId: T:JoshAaronMiller.INaturalist.Results`1
+  name: Results<T>
+  nameWithType: Results<T>
+  fullName: JoshAaronMiller.INaturalist.Results<T>
+  nameWithType.vb: Results(Of T)
+  fullName.vb: JoshAaronMiller.INaturalist.Results(Of T)
+  name.vb: Results(Of T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.Results`1
+    name: Results
+    nameWithType: Results
+    fullName: JoshAaronMiller.INaturalist.Results
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.Sound
+  commentId: T:JoshAaronMiller.INaturalist.Sound
+  name: Sound
+  nameWithType: Sound
+  fullName: JoshAaronMiller.INaturalist.Sound
+- uid: JoshAaronMiller.INaturalist.Taxon
+  commentId: T:JoshAaronMiller.INaturalist.Taxon
+  parent: JoshAaronMiller.INaturalist
+  name: Taxon
+  nameWithType: Taxon
+  fullName: JoshAaronMiller.INaturalist.Taxon
+- uid: JoshAaronMiller.INaturalist.TaxonSummary
+  commentId: T:JoshAaronMiller.INaturalist.TaxonSummary
+  name: TaxonSummary
+  nameWithType: TaxonSummary
+  fullName: JoshAaronMiller.INaturalist.TaxonSummary
+- uid: JoshAaronMiller.INaturalist.TimeDetails
+  commentId: T:JoshAaronMiller.INaturalist.TimeDetails
+  parent: JoshAaronMiller.INaturalist
+  name: TimeDetails
+  nameWithType: TimeDetails
+  fullName: JoshAaronMiller.INaturalist.TimeDetails
+- uid: JoshAaronMiller.INaturalist.User
+  commentId: T:JoshAaronMiller.INaturalist.User
+  parent: JoshAaronMiller.INaturalist
+  name: User
+  nameWithType: User
+  fullName: JoshAaronMiller.INaturalist.User
+- uid: JoshAaronMiller.INaturalist.UserMessage
+  commentId: T:JoshAaronMiller.INaturalist.UserMessage
+  parent: JoshAaronMiller.INaturalist
+  name: UserMessage
+  nameWithType: UserMessage
+  fullName: JoshAaronMiller.INaturalist.UserMessage
+- uid: JoshAaronMiller.INaturalist.Vote
+  commentId: T:JoshAaronMiller.INaturalist.Vote
+  parent: JoshAaronMiller.INaturalist
+  name: Vote
+  nameWithType: Vote
+  fullName: JoshAaronMiller.INaturalist.Vote
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch
+  commentId: T:JoshAaronMiller.INaturalist.IdentificationSearch
+  parent: JoshAaronMiller.INaturalist
+  name: IdentificationSearch
+  nameWithType: IdentificationSearch
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
+  commentId: T:JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
+  parent: JoshAaronMiller.INaturalist
+  name: IdentificationSearch.BooleanParameter
+  nameWithType: IdentificationSearch.BooleanParameter
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
+- uid: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  commentId: T:JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+  parent: JoshAaronMiller.INaturalist
+  name: IdentificationSearch.IdentificationCategory
+  nameWithType: IdentificationSearch.IdentificationCategory
+  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
+- uid: JoshAaronMiller.INaturalist.MessageSearch
+  commentId: T:JoshAaronMiller.INaturalist.MessageSearch
+  parent: JoshAaronMiller.INaturalist
+  name: MessageSearch
+  nameWithType: MessageSearch
+  fullName: JoshAaronMiller.INaturalist.MessageSearch
+- uid: JoshAaronMiller.INaturalist.MessageSearch.Box
+  commentId: T:JoshAaronMiller.INaturalist.MessageSearch.Box
+  parent: JoshAaronMiller.INaturalist
+  name: MessageSearch.Box
+  nameWithType: MessageSearch.Box
+  fullName: JoshAaronMiller.INaturalist.MessageSearch.Box
+- uid: JoshAaronMiller.INaturalist.ObservationSearch
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch
+  nameWithType: ObservationSearch
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.BooleanParameter
+  nameWithType: ObservationSearch.BooleanParameter
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.License
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.License
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.License
+  nameWithType: ObservationSearch.License
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.License
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.IucnConservationStatus
+  nameWithType: ObservationSearch.IucnConservationStatus
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.Geoprivacy
+  nameWithType: ObservationSearch.Geoprivacy
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.IconicTaxon
+  nameWithType: ObservationSearch.IconicTaxon
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.IdentificationAgreement
+  nameWithType: ObservationSearch.IdentificationAgreement
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.SearchProperty
+  nameWithType: ObservationSearch.SearchProperty
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty
+- uid: JoshAaronMiller.INaturalist.SearchObject
+  commentId: T:JoshAaronMiller.INaturalist.SearchObject
+  parent: JoshAaronMiller.INaturalist
+  name: SearchObject
+  nameWithType: SearchObject
+  fullName: JoshAaronMiller.INaturalist.SearchObject
+- uid: JoshAaronMiller.INaturalist.TaxonSearch
+  commentId: T:JoshAaronMiller.INaturalist.TaxonSearch
+  parent: JoshAaronMiller.INaturalist
+  name: TaxonSearch
+  nameWithType: TaxonSearch
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch
+- uid: JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
+  commentId: T:JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
+  parent: JoshAaronMiller.INaturalist
+  name: TaxonSearch.BooleanParameter
+  nameWithType: TaxonSearch.BooleanParameter
+  fullName: JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist

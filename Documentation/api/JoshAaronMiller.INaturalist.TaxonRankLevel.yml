@@ -1,0 +1,303 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.TaxonRankLevel
+  commentId: T:JoshAaronMiller.INaturalist.TaxonRankLevel
+  id: TaxonRankLevel
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.TaxonRankLevel.Class
+  - JoshAaronMiller.INaturalist.TaxonRankLevel.Family
+  - JoshAaronMiller.INaturalist.TaxonRankLevel.Genus
+  - JoshAaronMiller.INaturalist.TaxonRankLevel.Kingdom
+  - JoshAaronMiller.INaturalist.TaxonRankLevel.None
+  - JoshAaronMiller.INaturalist.TaxonRankLevel.Order
+  - JoshAaronMiller.INaturalist.TaxonRankLevel.Phylum
+  - JoshAaronMiller.INaturalist.TaxonRankLevel.Species
+  - JoshAaronMiller.INaturalist.TaxonRankLevel.Subspecies
+  langs:
+  - csharp
+  - vb
+  name: TaxonRankLevel
+  nameWithType: TaxonRankLevel
+  fullName: JoshAaronMiller.INaturalist.TaxonRankLevel
+  type: Enum
+  source:
+    id: TaxonRankLevel
+    path: ''
+    startLine: 560
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum TaxonRankLevel
+    content.vb: Public Enum TaxonRankLevel
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.TaxonRankLevel.None
+  commentId: F:JoshAaronMiller.INaturalist.TaxonRankLevel.None
+  id: None
+  parent: JoshAaronMiller.INaturalist.TaxonRankLevel
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: TaxonRankLevel.None
+  fullName: JoshAaronMiller.INaturalist.TaxonRankLevel.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 562
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: None = -1
+    return:
+      type: JoshAaronMiller.INaturalist.TaxonRankLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.TaxonRankLevel.Subspecies
+  commentId: F:JoshAaronMiller.INaturalist.TaxonRankLevel.Subspecies
+  id: Subspecies
+  parent: JoshAaronMiller.INaturalist.TaxonRankLevel
+  langs:
+  - csharp
+  - vb
+  name: Subspecies
+  nameWithType: TaxonRankLevel.Subspecies
+  fullName: JoshAaronMiller.INaturalist.TaxonRankLevel.Subspecies
+  type: Field
+  source:
+    id: Subspecies
+    path: ''
+    startLine: 563
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Subspecies = 5
+    return:
+      type: JoshAaronMiller.INaturalist.TaxonRankLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.TaxonRankLevel.Species
+  commentId: F:JoshAaronMiller.INaturalist.TaxonRankLevel.Species
+  id: Species
+  parent: JoshAaronMiller.INaturalist.TaxonRankLevel
+  langs:
+  - csharp
+  - vb
+  name: Species
+  nameWithType: TaxonRankLevel.Species
+  fullName: JoshAaronMiller.INaturalist.TaxonRankLevel.Species
+  type: Field
+  source:
+    id: Species
+    path: ''
+    startLine: 564
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Species = 10
+    return:
+      type: JoshAaronMiller.INaturalist.TaxonRankLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.TaxonRankLevel.Genus
+  commentId: F:JoshAaronMiller.INaturalist.TaxonRankLevel.Genus
+  id: Genus
+  parent: JoshAaronMiller.INaturalist.TaxonRankLevel
+  langs:
+  - csharp
+  - vb
+  name: Genus
+  nameWithType: TaxonRankLevel.Genus
+  fullName: JoshAaronMiller.INaturalist.TaxonRankLevel.Genus
+  type: Field
+  source:
+    id: Genus
+    path: ''
+    startLine: 565
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Genus = 20
+    return:
+      type: JoshAaronMiller.INaturalist.TaxonRankLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.TaxonRankLevel.Family
+  commentId: F:JoshAaronMiller.INaturalist.TaxonRankLevel.Family
+  id: Family
+  parent: JoshAaronMiller.INaturalist.TaxonRankLevel
+  langs:
+  - csharp
+  - vb
+  name: Family
+  nameWithType: TaxonRankLevel.Family
+  fullName: JoshAaronMiller.INaturalist.TaxonRankLevel.Family
+  type: Field
+  source:
+    id: Family
+    path: ''
+    startLine: 566
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Family = 30
+    return:
+      type: JoshAaronMiller.INaturalist.TaxonRankLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.TaxonRankLevel.Order
+  commentId: F:JoshAaronMiller.INaturalist.TaxonRankLevel.Order
+  id: Order
+  parent: JoshAaronMiller.INaturalist.TaxonRankLevel
+  langs:
+  - csharp
+  - vb
+  name: Order
+  nameWithType: TaxonRankLevel.Order
+  fullName: JoshAaronMiller.INaturalist.TaxonRankLevel.Order
+  type: Field
+  source:
+    id: Order
+    path: ''
+    startLine: 567
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Order = 40
+    return:
+      type: JoshAaronMiller.INaturalist.TaxonRankLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.TaxonRankLevel.Class
+  commentId: F:JoshAaronMiller.INaturalist.TaxonRankLevel.Class
+  id: Class
+  parent: JoshAaronMiller.INaturalist.TaxonRankLevel
+  langs:
+  - csharp
+  - vb
+  name: Class
+  nameWithType: TaxonRankLevel.Class
+  fullName: JoshAaronMiller.INaturalist.TaxonRankLevel.Class
+  type: Field
+  source:
+    id: Class
+    path: ''
+    startLine: 568
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Class = 50
+    return:
+      type: JoshAaronMiller.INaturalist.TaxonRankLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.TaxonRankLevel.Phylum
+  commentId: F:JoshAaronMiller.INaturalist.TaxonRankLevel.Phylum
+  id: Phylum
+  parent: JoshAaronMiller.INaturalist.TaxonRankLevel
+  langs:
+  - csharp
+  - vb
+  name: Phylum
+  nameWithType: TaxonRankLevel.Phylum
+  fullName: JoshAaronMiller.INaturalist.TaxonRankLevel.Phylum
+  type: Field
+  source:
+    id: Phylum
+    path: ''
+    startLine: 569
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Phylum = 60
+    return:
+      type: JoshAaronMiller.INaturalist.TaxonRankLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.TaxonRankLevel.Kingdom
+  commentId: F:JoshAaronMiller.INaturalist.TaxonRankLevel.Kingdom
+  id: Kingdom
+  parent: JoshAaronMiller.INaturalist.TaxonRankLevel
+  langs:
+  - csharp
+  - vb
+  name: Kingdom
+  nameWithType: TaxonRankLevel.Kingdom
+  fullName: JoshAaronMiller.INaturalist.TaxonRankLevel.Kingdom
+  type: Field
+  source:
+    id: Kingdom
+    path: ''
+    startLine: 570
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Kingdom = 70
+    return:
+      type: JoshAaronMiller.INaturalist.TaxonRankLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.TaxonRankLevel
+  commentId: T:JoshAaronMiller.INaturalist.TaxonRankLevel
+  parent: JoshAaronMiller.INaturalist
+  name: TaxonRankLevel
+  nameWithType: TaxonRankLevel
+  fullName: JoshAaronMiller.INaturalist.TaxonRankLevel

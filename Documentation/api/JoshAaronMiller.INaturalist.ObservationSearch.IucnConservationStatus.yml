@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  id: ObservationSearch.IucnConservationStatus
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Cr
+  - JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.En
+  - JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Ew
+  - JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Ex
+  - JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Lc
+  - JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.None
+  - JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Nt
+  - JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Vu
+  langs:
+  - csharp
+  - vb
+  name: ObservationSearch.IucnConservationStatus
+  nameWithType: ObservationSearch.IucnConservationStatus
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  type: Enum
+  source:
+    id: IucnConservationStatus
+    path: ''
+    startLine: 2982
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum IucnConservationStatus
+    content.vb: Public Enum IucnConservationStatus
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.None
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.None
+  id: None
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ObservationSearch.IucnConservationStatus.None
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 2984
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: None = 0
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Lc
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Lc
+  id: Lc
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  langs:
+  - csharp
+  - vb
+  name: Lc
+  nameWithType: ObservationSearch.IucnConservationStatus.Lc
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Lc
+  type: Field
+  source:
+    id: Lc
+    path: ''
+    startLine: 2984
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Lc = 1
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Nt
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Nt
+  id: Nt
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  langs:
+  - csharp
+  - vb
+  name: Nt
+  nameWithType: ObservationSearch.IucnConservationStatus.Nt
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Nt
+  type: Field
+  source:
+    id: Nt
+    path: ''
+    startLine: 2984
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Nt = 2
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Vu
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Vu
+  id: Vu
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  langs:
+  - csharp
+  - vb
+  name: Vu
+  nameWithType: ObservationSearch.IucnConservationStatus.Vu
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Vu
+  type: Field
+  source:
+    id: Vu
+    path: ''
+    startLine: 2984
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Vu = 3
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.En
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.En
+  id: En
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  langs:
+  - csharp
+  - vb
+  name: En
+  nameWithType: ObservationSearch.IucnConservationStatus.En
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.En
+  type: Field
+  source:
+    id: En
+    path: ''
+    startLine: 2984
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: En = 4
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Cr
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Cr
+  id: Cr
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  langs:
+  - csharp
+  - vb
+  name: Cr
+  nameWithType: ObservationSearch.IucnConservationStatus.Cr
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Cr
+  type: Field
+  source:
+    id: Cr
+    path: ''
+    startLine: 2984
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Cr = 5
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Ew
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Ew
+  id: Ew
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  langs:
+  - csharp
+  - vb
+  name: Ew
+  nameWithType: ObservationSearch.IucnConservationStatus.Ew
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Ew
+  type: Field
+  source:
+    id: Ew
+    path: ''
+    startLine: 2984
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Ew = 6
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Ex
+  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Ex
+  id: Ex
+  parent: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  langs:
+  - csharp
+  - vb
+  name: Ex
+  nameWithType: ObservationSearch.IucnConservationStatus.Ex
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.Ex
+  type: Field
+  source:
+    id: Ex
+    path: ''
+    startLine: 2984
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Ex = 7
+    return:
+      type: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus
+  parent: JoshAaronMiller.INaturalist
+  name: ObservationSearch.IucnConservationStatus
+  nameWithType: ObservationSearch.IucnConservationStatus
+  fullName: JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus

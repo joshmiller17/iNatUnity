@@ -1,0 +1,1331 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Demo
+  commentId: T:Global.Demo
+  id: Demo
+  parent: Global
+  children:
+  - Global.Demo.apiTokenInputObj
+  - Global.Demo.AttributionObj
+  - Global.Demo.CheckApiToken
+  - Global.Demo.CityDropdownObj
+  - Global.Demo.CitySelectDropdownCallback
+  - Global.Demo.ClickLoginButton
+  - Global.Demo.CreateIdentificationCallback(JoshAaronMiller.INaturalist.Identification)
+  - Global.Demo.DoSearch
+  - Global.Demo.ErrorMessageObj
+  - Global.Demo.HandleError(JoshAaronMiller.INaturalist.Error)
+  - Global.Demo.INatImage
+  - Global.Demo.INatManagerObj
+  - Global.Demo.InfoDetailsObj
+  - Global.Demo.LoadingTextObj
+  - Global.Demo.LoggedInAsObj
+  - Global.Demo.LoginButtonObj
+  - Global.Demo.MoveCarouselLeft
+  - Global.Demo.MoveCarouselRight
+  - Global.Demo.ObservationCountObj
+  - Global.Demo.PostLoginObj
+  - Global.Demo.QualityGradeDropdownObj
+  - Global.Demo.QualityGradeSelectDropdownCallback
+  - Global.Demo.RemoveLoading
+  - Global.Demo.RemoveObservation
+  - Global.Demo.SearchButton
+  - Global.Demo.SetUser(JoshAaronMiller.INaturalist.User)
+  - Global.Demo.SetUserError(JoshAaronMiller.INaturalist.Error)
+  - Global.Demo.TaxonDropdownObj
+  - Global.Demo.TaxonSelectDropdownCallback
+  - Global.Demo.ToggleCaptive
+  - Global.Demo.TogglePublicDomain
+  - Global.Demo.ToggleSpeciesSpecific
+  - Global.Demo.ToggleThreatened
+  - Global.Demo.TryShowVotingButtons
+  - Global.Demo.VoteButtonObjs
+  - Global.Demo.VoteButtonOneObj
+  - Global.Demo.VoteButtonTwoObj
+  - Global.Demo.VoteOptionOne
+  - Global.Demo.VoteOptionTwo
+  - Global.Demo.YearDropdownObj
+  - Global.Demo.YearSelectDropdownCallback
+  langs:
+  - csharp
+  - vb
+  name: Demo
+  nameWithType: Demo
+  fullName: Demo
+  type: Class
+  source:
+    id: Demo
+    path: ''
+    startLine: 9
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class Demo : MonoBehaviour'
+    content.vb: >-
+      Public Class Demo
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Global.Demo.INatManagerObj
+  commentId: F:Global.Demo.INatManagerObj
+  id: INatManagerObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: INatManagerObj
+  nameWithType: Demo.INatManagerObj
+  fullName: Demo.INatManagerObj
+  type: Field
+  source:
+    id: INatManagerObj
+    path: ''
+    startLine: 11
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject INatManagerObj
+    return:
+      type: Global.GameObject
+    content.vb: Public INatManagerObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.INatImage
+  commentId: F:Global.Demo.INatImage
+  id: INatImage
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: INatImage
+  nameWithType: Demo.INatImage
+  fullName: Demo.INatImage
+  type: Field
+  source:
+    id: INatImage
+    path: ''
+    startLine: 15
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject INatImage
+    return:
+      type: Global.GameObject
+    content.vb: Public INatImage As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.AttributionObj
+  commentId: F:Global.Demo.AttributionObj
+  id: AttributionObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: AttributionObj
+  nameWithType: Demo.AttributionObj
+  fullName: Demo.AttributionObj
+  type: Field
+  source:
+    id: AttributionObj
+    path: ''
+    startLine: 16
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject AttributionObj
+    return:
+      type: Global.GameObject
+    content.vb: Public AttributionObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.ObservationCountObj
+  commentId: F:Global.Demo.ObservationCountObj
+  id: ObservationCountObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: ObservationCountObj
+  nameWithType: Demo.ObservationCountObj
+  fullName: Demo.ObservationCountObj
+  type: Field
+  source:
+    id: ObservationCountObj
+    path: ''
+    startLine: 17
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject ObservationCountObj
+    return:
+      type: Global.GameObject
+    content.vb: Public ObservationCountObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.LoadingTextObj
+  commentId: F:Global.Demo.LoadingTextObj
+  id: LoadingTextObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: LoadingTextObj
+  nameWithType: Demo.LoadingTextObj
+  fullName: Demo.LoadingTextObj
+  type: Field
+  source:
+    id: LoadingTextObj
+    path: ''
+    startLine: 18
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject LoadingTextObj
+    return:
+      type: Global.GameObject
+    content.vb: Public LoadingTextObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.VoteButtonObjs
+  commentId: F:Global.Demo.VoteButtonObjs
+  id: VoteButtonObjs
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: VoteButtonObjs
+  nameWithType: Demo.VoteButtonObjs
+  fullName: Demo.VoteButtonObjs
+  type: Field
+  source:
+    id: VoteButtonObjs
+    path: ''
+    startLine: 22
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject VoteButtonObjs
+    return:
+      type: Global.GameObject
+    content.vb: Public VoteButtonObjs As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.VoteButtonOneObj
+  commentId: F:Global.Demo.VoteButtonOneObj
+  id: VoteButtonOneObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: VoteButtonOneObj
+  nameWithType: Demo.VoteButtonOneObj
+  fullName: Demo.VoteButtonOneObj
+  type: Field
+  source:
+    id: VoteButtonOneObj
+    path: ''
+    startLine: 23
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject VoteButtonOneObj
+    return:
+      type: Global.GameObject
+    content.vb: Public VoteButtonOneObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.VoteButtonTwoObj
+  commentId: F:Global.Demo.VoteButtonTwoObj
+  id: VoteButtonTwoObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: VoteButtonTwoObj
+  nameWithType: Demo.VoteButtonTwoObj
+  fullName: Demo.VoteButtonTwoObj
+  type: Field
+  source:
+    id: VoteButtonTwoObj
+    path: ''
+    startLine: 24
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject VoteButtonTwoObj
+    return:
+      type: Global.GameObject
+    content.vb: Public VoteButtonTwoObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.LoginButtonObj
+  commentId: F:Global.Demo.LoginButtonObj
+  id: LoginButtonObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: LoginButtonObj
+  nameWithType: Demo.LoginButtonObj
+  fullName: Demo.LoginButtonObj
+  type: Field
+  source:
+    id: LoginButtonObj
+    path: ''
+    startLine: 28
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject LoginButtonObj
+    return:
+      type: Global.GameObject
+    content.vb: Public LoginButtonObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.PostLoginObj
+  commentId: F:Global.Demo.PostLoginObj
+  id: PostLoginObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: PostLoginObj
+  nameWithType: Demo.PostLoginObj
+  fullName: Demo.PostLoginObj
+  type: Field
+  source:
+    id: PostLoginObj
+    path: ''
+    startLine: 29
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject PostLoginObj
+    return:
+      type: Global.GameObject
+    content.vb: Public PostLoginObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.ErrorMessageObj
+  commentId: F:Global.Demo.ErrorMessageObj
+  id: ErrorMessageObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessageObj
+  nameWithType: Demo.ErrorMessageObj
+  fullName: Demo.ErrorMessageObj
+  type: Field
+  source:
+    id: ErrorMessageObj
+    path: ''
+    startLine: 30
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject ErrorMessageObj
+    return:
+      type: Global.GameObject
+    content.vb: Public ErrorMessageObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.apiTokenInputObj
+  commentId: F:Global.Demo.apiTokenInputObj
+  id: apiTokenInputObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: apiTokenInputObj
+  nameWithType: Demo.apiTokenInputObj
+  fullName: Demo.apiTokenInputObj
+  type: Field
+  source:
+    id: apiTokenInputObj
+    path: ''
+    startLine: 31
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject apiTokenInputObj
+    return:
+      type: Global.GameObject
+    content.vb: Public apiTokenInputObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.LoggedInAsObj
+  commentId: F:Global.Demo.LoggedInAsObj
+  id: LoggedInAsObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: LoggedInAsObj
+  nameWithType: Demo.LoggedInAsObj
+  fullName: Demo.LoggedInAsObj
+  type: Field
+  source:
+    id: LoggedInAsObj
+    path: ''
+    startLine: 32
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject LoggedInAsObj
+    return:
+      type: Global.GameObject
+    content.vb: Public LoggedInAsObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.InfoDetailsObj
+  commentId: F:Global.Demo.InfoDetailsObj
+  id: InfoDetailsObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: InfoDetailsObj
+  nameWithType: Demo.InfoDetailsObj
+  fullName: Demo.InfoDetailsObj
+  type: Field
+  source:
+    id: InfoDetailsObj
+    path: ''
+    startLine: 33
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject InfoDetailsObj
+    return:
+      type: Global.GameObject
+    content.vb: Public InfoDetailsObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.SearchButton
+  commentId: F:Global.Demo.SearchButton
+  id: SearchButton
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: SearchButton
+  nameWithType: Demo.SearchButton
+  fullName: Demo.SearchButton
+  type: Field
+  source:
+    id: SearchButton
+    path: ''
+    startLine: 37
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject SearchButton
+    return:
+      type: Global.GameObject
+    content.vb: Public SearchButton As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.CityDropdownObj
+  commentId: F:Global.Demo.CityDropdownObj
+  id: CityDropdownObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: CityDropdownObj
+  nameWithType: Demo.CityDropdownObj
+  fullName: Demo.CityDropdownObj
+  type: Field
+  source:
+    id: CityDropdownObj
+    path: ''
+    startLine: 38
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject CityDropdownObj
+    return:
+      type: Global.GameObject
+    content.vb: Public CityDropdownObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.TaxonDropdownObj
+  commentId: F:Global.Demo.TaxonDropdownObj
+  id: TaxonDropdownObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: TaxonDropdownObj
+  nameWithType: Demo.TaxonDropdownObj
+  fullName: Demo.TaxonDropdownObj
+  type: Field
+  source:
+    id: TaxonDropdownObj
+    path: ''
+    startLine: 39
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject TaxonDropdownObj
+    return:
+      type: Global.GameObject
+    content.vb: Public TaxonDropdownObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.YearDropdownObj
+  commentId: F:Global.Demo.YearDropdownObj
+  id: YearDropdownObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: YearDropdownObj
+  nameWithType: Demo.YearDropdownObj
+  fullName: Demo.YearDropdownObj
+  type: Field
+  source:
+    id: YearDropdownObj
+    path: ''
+    startLine: 40
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject YearDropdownObj
+    return:
+      type: Global.GameObject
+    content.vb: Public YearDropdownObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.QualityGradeDropdownObj
+  commentId: F:Global.Demo.QualityGradeDropdownObj
+  id: QualityGradeDropdownObj
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: QualityGradeDropdownObj
+  nameWithType: Demo.QualityGradeDropdownObj
+  fullName: Demo.QualityGradeDropdownObj
+  type: Field
+  source:
+    id: QualityGradeDropdownObj
+    path: ''
+    startLine: 41
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public GameObject QualityGradeDropdownObj
+    return:
+      type: Global.GameObject
+    content.vb: Public QualityGradeDropdownObj As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.CitySelectDropdownCallback
+  commentId: M:Global.Demo.CitySelectDropdownCallback
+  id: CitySelectDropdownCallback
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: CitySelectDropdownCallback()
+  nameWithType: Demo.CitySelectDropdownCallback()
+  fullName: Demo.CitySelectDropdownCallback()
+  type: Method
+  source:
+    id: CitySelectDropdownCallback
+    path: ''
+    startLine: 208
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void CitySelectDropdownCallback()
+    content.vb: Public Sub CitySelectDropdownCallback
+  overload: Global.Demo.CitySelectDropdownCallback*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.TaxonSelectDropdownCallback
+  commentId: M:Global.Demo.TaxonSelectDropdownCallback
+  id: TaxonSelectDropdownCallback
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: TaxonSelectDropdownCallback()
+  nameWithType: Demo.TaxonSelectDropdownCallback()
+  fullName: Demo.TaxonSelectDropdownCallback()
+  type: Method
+  source:
+    id: TaxonSelectDropdownCallback
+    path: ''
+    startLine: 217
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void TaxonSelectDropdownCallback()
+    content.vb: Public Sub TaxonSelectDropdownCallback
+  overload: Global.Demo.TaxonSelectDropdownCallback*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.YearSelectDropdownCallback
+  commentId: M:Global.Demo.YearSelectDropdownCallback
+  id: YearSelectDropdownCallback
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: YearSelectDropdownCallback()
+  nameWithType: Demo.YearSelectDropdownCallback()
+  fullName: Demo.YearSelectDropdownCallback()
+  type: Method
+  source:
+    id: YearSelectDropdownCallback
+    path: ''
+    startLine: 226
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void YearSelectDropdownCallback()
+    content.vb: Public Sub YearSelectDropdownCallback
+  overload: Global.Demo.YearSelectDropdownCallback*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.QualityGradeSelectDropdownCallback
+  commentId: M:Global.Demo.QualityGradeSelectDropdownCallback
+  id: QualityGradeSelectDropdownCallback
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: QualityGradeSelectDropdownCallback()
+  nameWithType: Demo.QualityGradeSelectDropdownCallback()
+  fullName: Demo.QualityGradeSelectDropdownCallback()
+  type: Method
+  source:
+    id: QualityGradeSelectDropdownCallback
+    path: ''
+    startLine: 235
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void QualityGradeSelectDropdownCallback()
+    content.vb: Public Sub QualityGradeSelectDropdownCallback
+  overload: Global.Demo.QualityGradeSelectDropdownCallback*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.ToggleThreatened
+  commentId: M:Global.Demo.ToggleThreatened
+  id: ToggleThreatened
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: ToggleThreatened()
+  nameWithType: Demo.ToggleThreatened()
+  fullName: Demo.ToggleThreatened()
+  type: Method
+  source:
+    id: ToggleThreatened
+    path: ''
+    startLine: 244
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void ToggleThreatened()
+    content.vb: Public Sub ToggleThreatened
+  overload: Global.Demo.ToggleThreatened*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.ToggleCaptive
+  commentId: M:Global.Demo.ToggleCaptive
+  id: ToggleCaptive
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: ToggleCaptive()
+  nameWithType: Demo.ToggleCaptive()
+  fullName: Demo.ToggleCaptive()
+  type: Method
+  source:
+    id: ToggleCaptive
+    path: ''
+    startLine: 250
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void ToggleCaptive()
+    content.vb: Public Sub ToggleCaptive
+  overload: Global.Demo.ToggleCaptive*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.TogglePublicDomain
+  commentId: M:Global.Demo.TogglePublicDomain
+  id: TogglePublicDomain
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: TogglePublicDomain()
+  nameWithType: Demo.TogglePublicDomain()
+  fullName: Demo.TogglePublicDomain()
+  type: Method
+  source:
+    id: TogglePublicDomain
+    path: ''
+    startLine: 256
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void TogglePublicDomain()
+    content.vb: Public Sub TogglePublicDomain
+  overload: Global.Demo.TogglePublicDomain*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.ToggleSpeciesSpecific
+  commentId: M:Global.Demo.ToggleSpeciesSpecific
+  id: ToggleSpeciesSpecific
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: ToggleSpeciesSpecific()
+  nameWithType: Demo.ToggleSpeciesSpecific()
+  fullName: Demo.ToggleSpeciesSpecific()
+  type: Method
+  source:
+    id: ToggleSpeciesSpecific
+    path: ''
+    startLine: 269
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void ToggleSpeciesSpecific()
+    content.vb: Public Sub ToggleSpeciesSpecific
+  overload: Global.Demo.ToggleSpeciesSpecific*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.DoSearch
+  commentId: M:Global.Demo.DoSearch
+  id: DoSearch
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: DoSearch()
+  nameWithType: Demo.DoSearch()
+  fullName: Demo.DoSearch()
+  type: Method
+  source:
+    id: DoSearch
+    path: ''
+    startLine: 297
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void DoSearch()
+    content.vb: Public Sub DoSearch
+  overload: Global.Demo.DoSearch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.HandleError(JoshAaronMiller.INaturalist.Error)
+  commentId: M:Global.Demo.HandleError(JoshAaronMiller.INaturalist.Error)
+  id: HandleError(JoshAaronMiller.INaturalist.Error)
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: HandleError(Error)
+  nameWithType: Demo.HandleError(Error)
+  fullName: Demo.HandleError(JoshAaronMiller.INaturalist.Error)
+  type: Method
+  source:
+    id: HandleError
+    path: ''
+    startLine: 304
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void HandleError(Error e)
+    parameters:
+    - id: e
+      type: JoshAaronMiller.INaturalist.Error
+    content.vb: Public Sub HandleError(e As  Error)
+  overload: Global.Demo.HandleError*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.ClickLoginButton
+  commentId: M:Global.Demo.ClickLoginButton
+  id: ClickLoginButton
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: ClickLoginButton()
+  nameWithType: Demo.ClickLoginButton()
+  fullName: Demo.ClickLoginButton()
+  type: Method
+  source:
+    id: ClickLoginButton
+    path: ''
+    startLine: 324
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void ClickLoginButton()
+    content.vb: Public Sub ClickLoginButton
+  overload: Global.Demo.ClickLoginButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.CheckApiToken
+  commentId: M:Global.Demo.CheckApiToken
+  id: CheckApiToken
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: CheckApiToken()
+  nameWithType: Demo.CheckApiToken()
+  fullName: Demo.CheckApiToken()
+  type: Method
+  source:
+    id: CheckApiToken
+    path: ''
+    startLine: 331
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void CheckApiToken()
+    content.vb: Public Sub CheckApiToken
+  overload: Global.Demo.CheckApiToken*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.SetUser(JoshAaronMiller.INaturalist.User)
+  commentId: M:Global.Demo.SetUser(JoshAaronMiller.INaturalist.User)
+  id: SetUser(JoshAaronMiller.INaturalist.User)
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: SetUser(User)
+  nameWithType: Demo.SetUser(User)
+  fullName: Demo.SetUser(JoshAaronMiller.INaturalist.User)
+  type: Method
+  source:
+    id: SetUser
+    path: ''
+    startLine: 347
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void SetUser(User me)
+    parameters:
+    - id: me
+      type: JoshAaronMiller.INaturalist.User
+    content.vb: Public Sub SetUser(me As User)
+  overload: Global.Demo.SetUser*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.SetUserError(JoshAaronMiller.INaturalist.Error)
+  commentId: M:Global.Demo.SetUserError(JoshAaronMiller.INaturalist.Error)
+  id: SetUserError(JoshAaronMiller.INaturalist.Error)
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: SetUserError(Error)
+  nameWithType: Demo.SetUserError(Error)
+  fullName: Demo.SetUserError(JoshAaronMiller.INaturalist.Error)
+  type: Method
+  source:
+    id: SetUserError
+    path: ''
+    startLine: 358
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void SetUserError(Error e)
+    parameters:
+    - id: e
+      type: JoshAaronMiller.INaturalist.Error
+    content.vb: Public Sub SetUserError(e As  Error)
+  overload: Global.Demo.SetUserError*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.MoveCarouselLeft
+  commentId: M:Global.Demo.MoveCarouselLeft
+  id: MoveCarouselLeft
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: MoveCarouselLeft()
+  nameWithType: Demo.MoveCarouselLeft()
+  fullName: Demo.MoveCarouselLeft()
+  type: Method
+  source:
+    id: MoveCarouselLeft
+    path: ''
+    startLine: 371
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void MoveCarouselLeft()
+    content.vb: Public Sub MoveCarouselLeft
+  overload: Global.Demo.MoveCarouselLeft*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.MoveCarouselRight
+  commentId: M:Global.Demo.MoveCarouselRight
+  id: MoveCarouselRight
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: MoveCarouselRight()
+  nameWithType: Demo.MoveCarouselRight()
+  fullName: Demo.MoveCarouselRight()
+  type: Method
+  source:
+    id: MoveCarouselRight
+    path: ''
+    startLine: 382
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void MoveCarouselRight()
+    content.vb: Public Sub MoveCarouselRight
+  overload: Global.Demo.MoveCarouselRight*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.TryShowVotingButtons
+  commentId: M:Global.Demo.TryShowVotingButtons
+  id: TryShowVotingButtons
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: TryShowVotingButtons()
+  nameWithType: Demo.TryShowVotingButtons()
+  fullName: Demo.TryShowVotingButtons()
+  type: Method
+  source:
+    id: TryShowVotingButtons
+    path: ''
+    startLine: 393
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void TryShowVotingButtons()
+    content.vb: Public Sub TryShowVotingButtons
+  overload: Global.Demo.TryShowVotingButtons*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.VoteOptionOne
+  commentId: M:Global.Demo.VoteOptionOne
+  id: VoteOptionOne
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: VoteOptionOne()
+  nameWithType: Demo.VoteOptionOne()
+  fullName: Demo.VoteOptionOne()
+  type: Method
+  source:
+    id: VoteOptionOne
+    path: ''
+    startLine: 406
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void VoteOptionOne()
+    content.vb: Public Sub VoteOptionOne
+  overload: Global.Demo.VoteOptionOne*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.VoteOptionTwo
+  commentId: M:Global.Demo.VoteOptionTwo
+  id: VoteOptionTwo
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: VoteOptionTwo()
+  nameWithType: Demo.VoteOptionTwo()
+  fullName: Demo.VoteOptionTwo()
+  type: Method
+  source:
+    id: VoteOptionTwo
+    path: ''
+    startLine: 412
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void VoteOptionTwo()
+    content.vb: Public Sub VoteOptionTwo
+  overload: Global.Demo.VoteOptionTwo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.CreateIdentificationCallback(JoshAaronMiller.INaturalist.Identification)
+  commentId: M:Global.Demo.CreateIdentificationCallback(JoshAaronMiller.INaturalist.Identification)
+  id: CreateIdentificationCallback(JoshAaronMiller.INaturalist.Identification)
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: CreateIdentificationCallback(Identification)
+  nameWithType: Demo.CreateIdentificationCallback(Identification)
+  fullName: Demo.CreateIdentificationCallback(JoshAaronMiller.INaturalist.Identification)
+  type: Method
+  source:
+    id: CreateIdentificationCallback
+    path: ''
+    startLine: 426
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void CreateIdentificationCallback(Identification ident)
+    parameters:
+    - id: ident
+      type: JoshAaronMiller.INaturalist.Identification
+    content.vb: Public Sub CreateIdentificationCallback(ident As Identification)
+  overload: Global.Demo.CreateIdentificationCallback*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.RemoveObservation
+  commentId: M:Global.Demo.RemoveObservation
+  id: RemoveObservation
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: RemoveObservation()
+  nameWithType: Demo.RemoveObservation()
+  fullName: Demo.RemoveObservation()
+  type: Method
+  source:
+    id: RemoveObservation
+    path: ''
+    startLine: 431
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void RemoveObservation()
+    content.vb: Public Sub RemoveObservation
+  overload: Global.Demo.RemoveObservation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Demo.RemoveLoading
+  commentId: M:Global.Demo.RemoveLoading
+  id: RemoveLoading
+  parent: Global.Demo
+  langs:
+  - csharp
+  - vb
+  name: RemoveLoading()
+  nameWithType: Demo.RemoveLoading()
+  fullName: Demo.RemoveLoading()
+  type: Method
+  source:
+    id: RemoveLoading
+    path: ''
+    startLine: 514
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void RemoveLoading()
+    content.vb: Public Sub RemoveLoading
+  overload: Global.Demo.RemoveLoading*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: GameObject
+- uid: Global.Demo.CitySelectDropdownCallback*
+  commentId: Overload:Global.Demo.CitySelectDropdownCallback
+  name: CitySelectDropdownCallback
+  nameWithType: Demo.CitySelectDropdownCallback
+  fullName: Demo.CitySelectDropdownCallback
+- uid: Global.Demo.TaxonSelectDropdownCallback*
+  commentId: Overload:Global.Demo.TaxonSelectDropdownCallback
+  name: TaxonSelectDropdownCallback
+  nameWithType: Demo.TaxonSelectDropdownCallback
+  fullName: Demo.TaxonSelectDropdownCallback
+- uid: Global.Demo.YearSelectDropdownCallback*
+  commentId: Overload:Global.Demo.YearSelectDropdownCallback
+  name: YearSelectDropdownCallback
+  nameWithType: Demo.YearSelectDropdownCallback
+  fullName: Demo.YearSelectDropdownCallback
+- uid: Global.Demo.QualityGradeSelectDropdownCallback*
+  commentId: Overload:Global.Demo.QualityGradeSelectDropdownCallback
+  name: QualityGradeSelectDropdownCallback
+  nameWithType: Demo.QualityGradeSelectDropdownCallback
+  fullName: Demo.QualityGradeSelectDropdownCallback
+- uid: Global.Demo.ToggleThreatened*
+  commentId: Overload:Global.Demo.ToggleThreatened
+  name: ToggleThreatened
+  nameWithType: Demo.ToggleThreatened
+  fullName: Demo.ToggleThreatened
+- uid: Global.Demo.ToggleCaptive*
+  commentId: Overload:Global.Demo.ToggleCaptive
+  name: ToggleCaptive
+  nameWithType: Demo.ToggleCaptive
+  fullName: Demo.ToggleCaptive
+- uid: Global.Demo.TogglePublicDomain*
+  commentId: Overload:Global.Demo.TogglePublicDomain
+  name: TogglePublicDomain
+  nameWithType: Demo.TogglePublicDomain
+  fullName: Demo.TogglePublicDomain
+- uid: Global.Demo.ToggleSpeciesSpecific*
+  commentId: Overload:Global.Demo.ToggleSpeciesSpecific
+  name: ToggleSpeciesSpecific
+  nameWithType: Demo.ToggleSpeciesSpecific
+  fullName: Demo.ToggleSpeciesSpecific
+- uid: Global.Demo.DoSearch*
+  commentId: Overload:Global.Demo.DoSearch
+  name: DoSearch
+  nameWithType: Demo.DoSearch
+  fullName: Demo.DoSearch
+- uid: Global.Demo.HandleError*
+  commentId: Overload:Global.Demo.HandleError
+  name: HandleError
+  nameWithType: Demo.HandleError
+  fullName: Demo.HandleError
+- uid: JoshAaronMiller.INaturalist.Error
+  commentId: T:JoshAaronMiller.INaturalist.Error
+  parent: JoshAaronMiller.INaturalist
+  name: Error
+  nameWithType: Error
+  fullName: JoshAaronMiller.INaturalist.Error
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: Global.Demo.ClickLoginButton*
+  commentId: Overload:Global.Demo.ClickLoginButton
+  name: ClickLoginButton
+  nameWithType: Demo.ClickLoginButton
+  fullName: Demo.ClickLoginButton
+- uid: Global.Demo.CheckApiToken*
+  commentId: Overload:Global.Demo.CheckApiToken
+  name: CheckApiToken
+  nameWithType: Demo.CheckApiToken
+  fullName: Demo.CheckApiToken
+- uid: Global.Demo.SetUser*
+  commentId: Overload:Global.Demo.SetUser
+  name: SetUser
+  nameWithType: Demo.SetUser
+  fullName: Demo.SetUser
+- uid: JoshAaronMiller.INaturalist.User
+  commentId: T:JoshAaronMiller.INaturalist.User
+  parent: JoshAaronMiller.INaturalist
+  name: User
+  nameWithType: User
+  fullName: JoshAaronMiller.INaturalist.User
+- uid: Global.Demo.SetUserError*
+  commentId: Overload:Global.Demo.SetUserError
+  name: SetUserError
+  nameWithType: Demo.SetUserError
+  fullName: Demo.SetUserError
+- uid: Global.Demo.MoveCarouselLeft*
+  commentId: Overload:Global.Demo.MoveCarouselLeft
+  name: MoveCarouselLeft
+  nameWithType: Demo.MoveCarouselLeft
+  fullName: Demo.MoveCarouselLeft
+- uid: Global.Demo.MoveCarouselRight*
+  commentId: Overload:Global.Demo.MoveCarouselRight
+  name: MoveCarouselRight
+  nameWithType: Demo.MoveCarouselRight
+  fullName: Demo.MoveCarouselRight
+- uid: Global.Demo.TryShowVotingButtons*
+  commentId: Overload:Global.Demo.TryShowVotingButtons
+  name: TryShowVotingButtons
+  nameWithType: Demo.TryShowVotingButtons
+  fullName: Demo.TryShowVotingButtons
+- uid: Global.Demo.VoteOptionOne*
+  commentId: Overload:Global.Demo.VoteOptionOne
+  name: VoteOptionOne
+  nameWithType: Demo.VoteOptionOne
+  fullName: Demo.VoteOptionOne
+- uid: Global.Demo.VoteOptionTwo*
+  commentId: Overload:Global.Demo.VoteOptionTwo
+  name: VoteOptionTwo
+  nameWithType: Demo.VoteOptionTwo
+  fullName: Demo.VoteOptionTwo
+- uid: Global.Demo.CreateIdentificationCallback*
+  commentId: Overload:Global.Demo.CreateIdentificationCallback
+  name: CreateIdentificationCallback
+  nameWithType: Demo.CreateIdentificationCallback
+  fullName: Demo.CreateIdentificationCallback
+- uid: JoshAaronMiller.INaturalist.Identification
+  commentId: T:JoshAaronMiller.INaturalist.Identification
+  parent: JoshAaronMiller.INaturalist
+  name: Identification
+  nameWithType: Identification
+  fullName: JoshAaronMiller.INaturalist.Identification
+- uid: Global.Demo.RemoveObservation*
+  commentId: Overload:Global.Demo.RemoveObservation
+  name: RemoveObservation
+  nameWithType: Demo.RemoveObservation
+  fullName: Demo.RemoveObservation
+- uid: Global.Demo.RemoveLoading*
+  commentId: Overload:Global.Demo.RemoveLoading
+  name: RemoveLoading
+  nameWithType: Demo.RemoveLoading
+  fullName: Demo.RemoveLoading

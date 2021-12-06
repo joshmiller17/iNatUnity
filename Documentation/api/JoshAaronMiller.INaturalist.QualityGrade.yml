@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.QualityGrade
+  commentId: T:JoshAaronMiller.INaturalist.QualityGrade
+  id: QualityGrade
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.QualityGrade.Casual
+  - JoshAaronMiller.INaturalist.QualityGrade.NeedsId
+  - JoshAaronMiller.INaturalist.QualityGrade.None
+  - JoshAaronMiller.INaturalist.QualityGrade.Research
+  langs:
+  - csharp
+  - vb
+  name: QualityGrade
+  nameWithType: QualityGrade
+  fullName: JoshAaronMiller.INaturalist.QualityGrade
+  type: Enum
+  source:
+    id: QualityGrade
+    path: ''
+    startLine: 545
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum QualityGrade
+    content.vb: Public Enum QualityGrade
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.QualityGrade.None
+  commentId: F:JoshAaronMiller.INaturalist.QualityGrade.None
+  id: None
+  parent: JoshAaronMiller.INaturalist.QualityGrade
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: QualityGrade.None
+  fullName: JoshAaronMiller.INaturalist.QualityGrade.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 547
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: None = 0
+    return:
+      type: JoshAaronMiller.INaturalist.QualityGrade
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.QualityGrade.Casual
+  commentId: F:JoshAaronMiller.INaturalist.QualityGrade.Casual
+  id: Casual
+  parent: JoshAaronMiller.INaturalist.QualityGrade
+  langs:
+  - csharp
+  - vb
+  name: Casual
+  nameWithType: QualityGrade.Casual
+  fullName: JoshAaronMiller.INaturalist.QualityGrade.Casual
+  type: Field
+  source:
+    id: Casual
+    path: ''
+    startLine: 547
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Casual = 1
+    return:
+      type: JoshAaronMiller.INaturalist.QualityGrade
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.QualityGrade.NeedsId
+  commentId: F:JoshAaronMiller.INaturalist.QualityGrade.NeedsId
+  id: NeedsId
+  parent: JoshAaronMiller.INaturalist.QualityGrade
+  langs:
+  - csharp
+  - vb
+  name: NeedsId
+  nameWithType: QualityGrade.NeedsId
+  fullName: JoshAaronMiller.INaturalist.QualityGrade.NeedsId
+  type: Field
+  source:
+    id: NeedsId
+    path: ''
+    startLine: 547
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: NeedsId = 2
+    return:
+      type: JoshAaronMiller.INaturalist.QualityGrade
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.QualityGrade.Research
+  commentId: F:JoshAaronMiller.INaturalist.QualityGrade.Research
+  id: Research
+  parent: JoshAaronMiller.INaturalist.QualityGrade
+  langs:
+  - csharp
+  - vb
+  name: Research
+  nameWithType: QualityGrade.Research
+  fullName: JoshAaronMiller.INaturalist.QualityGrade.Research
+  type: Field
+  source:
+    id: Research
+    path: ''
+    startLine: 547
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Research = 3
+    return:
+      type: JoshAaronMiller.INaturalist.QualityGrade
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.QualityGrade
+  commentId: T:JoshAaronMiller.INaturalist.QualityGrade
+  parent: JoshAaronMiller.INaturalist
+  name: QualityGrade
+  nameWithType: QualityGrade
+  fullName: JoshAaronMiller.INaturalist.QualityGrade

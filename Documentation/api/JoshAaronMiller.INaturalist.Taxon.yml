@@ -1,0 +1,1259 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.Taxon
+  commentId: T:JoshAaronMiller.INaturalist.Taxon
+  id: Taxon
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.Taxon.ancestor_ids
+  - JoshAaronMiller.INaturalist.Taxon.ancestry
+  - JoshAaronMiller.INaturalist.Taxon.atlas_id
+  - JoshAaronMiller.INaturalist.Taxon.complete_species_count
+  - JoshAaronMiller.INaturalist.Taxon.created_at
+  - JoshAaronMiller.INaturalist.Taxon.default_photo
+  - JoshAaronMiller.INaturalist.Taxon.endemic
+  - JoshAaronMiller.INaturalist.Taxon.extinct
+  - JoshAaronMiller.INaturalist.Taxon.flag_counts
+  - JoshAaronMiller.INaturalist.Taxon.iconic_taxon_id
+  - JoshAaronMiller.INaturalist.Taxon.iconic_taxon_name
+  - JoshAaronMiller.INaturalist.Taxon.id
+  - JoshAaronMiller.INaturalist.Taxon.introduced
+  - JoshAaronMiller.INaturalist.Taxon.is_active
+  - JoshAaronMiller.INaturalist.Taxon.min_species_ancestry
+  - JoshAaronMiller.INaturalist.Taxon.min_species_taxon_id
+  - JoshAaronMiller.INaturalist.Taxon.name
+  - JoshAaronMiller.INaturalist.Taxon.native
+  - JoshAaronMiller.INaturalist.Taxon.observations_count
+  - JoshAaronMiller.INaturalist.Taxon.parent_id
+  - JoshAaronMiller.INaturalist.Taxon.photos_locked
+  - JoshAaronMiller.INaturalist.Taxon.preferred_common_name
+  - JoshAaronMiller.INaturalist.Taxon.rank
+  - JoshAaronMiller.INaturalist.Taxon.rank_level
+  - JoshAaronMiller.INaturalist.Taxon.taxon_changes_count
+  - JoshAaronMiller.INaturalist.Taxon.taxon_schemes_count
+  - JoshAaronMiller.INaturalist.Taxon.threatened
+  - JoshAaronMiller.INaturalist.Taxon.universal_search_rank
+  - JoshAaronMiller.INaturalist.Taxon.wikipedia_summary
+  - JoshAaronMiller.INaturalist.Taxon.wikipedia_url
+  langs:
+  - csharp
+  - vb
+  name: Taxon
+  nameWithType: Taxon
+  fullName: JoshAaronMiller.INaturalist.Taxon
+  type: Class
+  source:
+    id: Taxon
+    path: ''
+    startLine: 2381
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Taxon : JsonObject<Taxon>
+    content.vb: >-
+      <Serializable>
+
+      Public Class Taxon
+          Inherits JsonObject(Of Taxon)
+  inheritance:
+  - System.Object
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.Taxon}
+  inheritedMembers:
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.Taxon}.CreateFromJson(System.String)
+  - JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.Taxon}.ToJson(JoshAaronMiller.INaturalist.Taxon)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JoshAaronMiller.INaturalist.Taxon.is_active
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.is_active
+  id: is_active
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: is_active
+  nameWithType: Taxon.is_active
+  fullName: JoshAaronMiller.INaturalist.Taxon.is_active
+  type: Field
+  source:
+    id: is_active
+    path: ''
+    startLine: 2384
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public bool is_active
+    return:
+      type: System.Boolean
+    content.vb: Public is_active As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.ancestry
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.ancestry
+  id: ancestry
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: ancestry
+  nameWithType: Taxon.ancestry
+  fullName: JoshAaronMiller.INaturalist.Taxon.ancestry
+  type: Field
+  source:
+    id: ancestry
+    path: ''
+    startLine: 2385
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string ancestry
+    return:
+      type: System.String
+    content.vb: Public ancestry As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.min_species_ancestry
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.min_species_ancestry
+  id: min_species_ancestry
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: min_species_ancestry
+  nameWithType: Taxon.min_species_ancestry
+  fullName: JoshAaronMiller.INaturalist.Taxon.min_species_ancestry
+  type: Field
+  source:
+    id: min_species_ancestry
+    path: ''
+    startLine: 2386
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string min_species_ancestry
+    return:
+      type: System.String
+    content.vb: Public min_species_ancestry As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.endemic
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.endemic
+  id: endemic
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: endemic
+  nameWithType: Taxon.endemic
+  fullName: JoshAaronMiller.INaturalist.Taxon.endemic
+  type: Field
+  source:
+    id: endemic
+    path: ''
+    startLine: 2387
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public bool endemic
+    return:
+      type: System.Boolean
+    content.vb: Public endemic As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.iconic_taxon_id
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.iconic_taxon_id
+  id: iconic_taxon_id
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: iconic_taxon_id
+  nameWithType: Taxon.iconic_taxon_id
+  fullName: JoshAaronMiller.INaturalist.Taxon.iconic_taxon_id
+  type: Field
+  source:
+    id: iconic_taxon_id
+    path: ''
+    startLine: 2388
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int iconic_taxon_id
+    return:
+      type: System.Int32
+    content.vb: Public iconic_taxon_id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.min_species_taxon_id
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.min_species_taxon_id
+  id: min_species_taxon_id
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: min_species_taxon_id
+  nameWithType: Taxon.min_species_taxon_id
+  fullName: JoshAaronMiller.INaturalist.Taxon.min_species_taxon_id
+  type: Field
+  source:
+    id: min_species_taxon_id
+    path: ''
+    startLine: 2389
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int min_species_taxon_id
+    return:
+      type: System.Int32
+    content.vb: Public min_species_taxon_id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.threatened
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.threatened
+  id: threatened
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: threatened
+  nameWithType: Taxon.threatened
+  fullName: JoshAaronMiller.INaturalist.Taxon.threatened
+  type: Field
+  source:
+    id: threatened
+    path: ''
+    startLine: 2390
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public bool threatened
+    return:
+      type: System.Boolean
+    content.vb: Public threatened As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.rank_level
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.rank_level
+  id: rank_level
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: rank_level
+  nameWithType: Taxon.rank_level
+  fullName: JoshAaronMiller.INaturalist.Taxon.rank_level
+  type: Field
+  source:
+    id: rank_level
+    path: ''
+    startLine: 2391
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int rank_level
+    return:
+      type: System.Int32
+    content.vb: Public rank_level As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.introduced
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.introduced
+  id: introduced
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: introduced
+  nameWithType: Taxon.introduced
+  fullName: JoshAaronMiller.INaturalist.Taxon.introduced
+  type: Field
+  source:
+    id: introduced
+    path: ''
+    startLine: 2392
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public bool introduced
+    return:
+      type: System.Boolean
+    content.vb: Public introduced As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.native
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.native
+  id: native
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: native
+  nameWithType: Taxon.native
+  fullName: JoshAaronMiller.INaturalist.Taxon.native
+  type: Field
+  source:
+    id: native
+    path: ''
+    startLine: 2393
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public bool native
+    return:
+      type: System.Boolean
+    content.vb: Public native As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.parent_id
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.parent_id
+  id: parent_id
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: parent_id
+  nameWithType: Taxon.parent_id
+  fullName: JoshAaronMiller.INaturalist.Taxon.parent_id
+  type: Field
+  source:
+    id: parent_id
+    path: ''
+    startLine: 2394
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int parent_id
+    return:
+      type: System.Int32
+    content.vb: Public parent_id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.name
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.name
+  id: name
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: Taxon.name
+  fullName: JoshAaronMiller.INaturalist.Taxon.name
+  type: Field
+  source:
+    id: name
+    path: ''
+    startLine: 2395
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string name
+    return:
+      type: System.String
+    content.vb: Public name As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.rank
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.rank
+  id: rank
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: rank
+  nameWithType: Taxon.rank
+  fullName: JoshAaronMiller.INaturalist.Taxon.rank
+  type: Field
+  source:
+    id: rank
+    path: ''
+    startLine: 2396
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string rank
+    return:
+      type: System.String
+    content.vb: Public rank As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.extinct
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.extinct
+  id: extinct
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: extinct
+  nameWithType: Taxon.extinct
+  fullName: JoshAaronMiller.INaturalist.Taxon.extinct
+  type: Field
+  source:
+    id: extinct
+    path: ''
+    startLine: 2397
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public bool extinct
+    return:
+      type: System.Boolean
+    content.vb: Public extinct As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.id
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.id
+  id: id
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: Taxon.id
+  fullName: JoshAaronMiller.INaturalist.Taxon.id
+  type: Field
+  source:
+    id: id
+    path: ''
+    startLine: 2398
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int id
+    return:
+      type: System.Int32
+    content.vb: Public id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.ancestor_ids
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.ancestor_ids
+  id: ancestor_ids
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: ancestor_ids
+  nameWithType: Taxon.ancestor_ids
+  fullName: JoshAaronMiller.INaturalist.Taxon.ancestor_ids
+  type: Field
+  source:
+    id: ancestor_ids
+    path: ''
+    startLine: 2399
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public List<int> ancestor_ids
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public ancestor_ids As List(Of Integer)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.photos_locked
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.photos_locked
+  id: photos_locked
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: photos_locked
+  nameWithType: Taxon.photos_locked
+  fullName: JoshAaronMiller.INaturalist.Taxon.photos_locked
+  type: Field
+  source:
+    id: photos_locked
+    path: ''
+    startLine: 2400
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public bool photos_locked
+    return:
+      type: System.Boolean
+    content.vb: Public photos_locked As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.taxon_schemes_count
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.taxon_schemes_count
+  id: taxon_schemes_count
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: taxon_schemes_count
+  nameWithType: Taxon.taxon_schemes_count
+  fullName: JoshAaronMiller.INaturalist.Taxon.taxon_schemes_count
+  type: Field
+  source:
+    id: taxon_schemes_count
+    path: ''
+    startLine: 2401
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int taxon_schemes_count
+    return:
+      type: System.Int32
+    content.vb: Public taxon_schemes_count As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.wikipedia_url
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.wikipedia_url
+  id: wikipedia_url
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: wikipedia_url
+  nameWithType: Taxon.wikipedia_url
+  fullName: JoshAaronMiller.INaturalist.Taxon.wikipedia_url
+  type: Field
+  source:
+    id: wikipedia_url
+    path: ''
+    startLine: 2402
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string wikipedia_url
+    return:
+      type: System.String
+    content.vb: Public wikipedia_url As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.created_at
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.created_at
+  id: created_at
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: created_at
+  nameWithType: Taxon.created_at
+  fullName: JoshAaronMiller.INaturalist.Taxon.created_at
+  type: Field
+  source:
+    id: created_at
+    path: ''
+    startLine: 2404
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string created_at
+    return:
+      type: System.String
+    content.vb: Public created_at As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.taxon_changes_count
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.taxon_changes_count
+  id: taxon_changes_count
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: taxon_changes_count
+  nameWithType: Taxon.taxon_changes_count
+  fullName: JoshAaronMiller.INaturalist.Taxon.taxon_changes_count
+  type: Field
+  source:
+    id: taxon_changes_count
+    path: ''
+    startLine: 2405
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int taxon_changes_count
+    return:
+      type: System.Int32
+    content.vb: Public taxon_changes_count As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.complete_species_count
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.complete_species_count
+  id: complete_species_count
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: complete_species_count
+  nameWithType: Taxon.complete_species_count
+  fullName: JoshAaronMiller.INaturalist.Taxon.complete_species_count
+  type: Field
+  source:
+    id: complete_species_count
+    path: ''
+    startLine: 2406
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int complete_species_count
+    return:
+      type: System.Int32
+    content.vb: Public complete_species_count As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.universal_search_rank
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.universal_search_rank
+  id: universal_search_rank
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: universal_search_rank
+  nameWithType: Taxon.universal_search_rank
+  fullName: JoshAaronMiller.INaturalist.Taxon.universal_search_rank
+  type: Field
+  source:
+    id: universal_search_rank
+    path: ''
+    startLine: 2407
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int universal_search_rank
+    return:
+      type: System.Int32
+    content.vb: Public universal_search_rank As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.observations_count
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.observations_count
+  id: observations_count
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: observations_count
+  nameWithType: Taxon.observations_count
+  fullName: JoshAaronMiller.INaturalist.Taxon.observations_count
+  type: Field
+  source:
+    id: observations_count
+    path: ''
+    startLine: 2408
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int observations_count
+    return:
+      type: System.Int32
+    content.vb: Public observations_count As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.flag_counts
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.flag_counts
+  id: flag_counts
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: flag_counts
+  nameWithType: Taxon.flag_counts
+  fullName: JoshAaronMiller.INaturalist.Taxon.flag_counts
+  type: Field
+  source:
+    id: flag_counts
+    path: ''
+    startLine: 2409
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public FlagCounts flag_counts
+    return:
+      type: JoshAaronMiller.INaturalist.FlagCounts
+    content.vb: Public flag_counts As FlagCounts
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.atlas_id
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.atlas_id
+  id: atlas_id
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: atlas_id
+  nameWithType: Taxon.atlas_id
+  fullName: JoshAaronMiller.INaturalist.Taxon.atlas_id
+  type: Field
+  source:
+    id: atlas_id
+    path: ''
+    startLine: 2410
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int atlas_id
+    return:
+      type: System.Int32
+    content.vb: Public atlas_id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.default_photo
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.default_photo
+  id: default_photo
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: default_photo
+  nameWithType: Taxon.default_photo
+  fullName: JoshAaronMiller.INaturalist.Taxon.default_photo
+  type: Field
+  source:
+    id: default_photo
+    path: ''
+    startLine: 2411
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public PhotoJson default_photo
+    return:
+      type: JoshAaronMiller.INaturalist.PhotoJson
+    content.vb: Public default_photo As PhotoJson
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.iconic_taxon_name
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.iconic_taxon_name
+  id: iconic_taxon_name
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: iconic_taxon_name
+  nameWithType: Taxon.iconic_taxon_name
+  fullName: JoshAaronMiller.INaturalist.Taxon.iconic_taxon_name
+  type: Field
+  source:
+    id: iconic_taxon_name
+    path: ''
+    startLine: 2412
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string iconic_taxon_name
+    return:
+      type: System.String
+    content.vb: Public iconic_taxon_name As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.preferred_common_name
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.preferred_common_name
+  id: preferred_common_name
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: preferred_common_name
+  nameWithType: Taxon.preferred_common_name
+  fullName: JoshAaronMiller.INaturalist.Taxon.preferred_common_name
+  type: Field
+  source:
+    id: preferred_common_name
+    path: ''
+    startLine: 2413
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string preferred_common_name
+    return:
+      type: System.String
+    content.vb: Public preferred_common_name As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Taxon.wikipedia_summary
+  commentId: F:JoshAaronMiller.INaturalist.Taxon.wikipedia_summary
+  id: wikipedia_summary
+  parent: JoshAaronMiller.INaturalist.Taxon
+  langs:
+  - csharp
+  - vb
+  name: wikipedia_summary
+  nameWithType: Taxon.wikipedia_summary
+  fullName: JoshAaronMiller.INaturalist.Taxon.wikipedia_summary
+  type: Field
+  source:
+    id: wikipedia_summary
+    path: ''
+    startLine: 2414
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string wikipedia_summary
+    return:
+      type: System.String
+    content.vb: Public wikipedia_summary As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.Taxon}
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.Taxon}
+  parent: JoshAaronMiller.INaturalist
+  definition: JoshAaronMiller.INaturalist.JsonObject`1
+  name: JsonObject<Taxon>
+  nameWithType: JsonObject<Taxon>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.Taxon>
+  nameWithType.vb: JsonObject(Of Taxon)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.Taxon)
+  name.vb: JsonObject(Of Taxon)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Taxon
+    name: Taxon
+    nameWithType: Taxon
+    fullName: JoshAaronMiller.INaturalist.Taxon
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Taxon
+    name: Taxon
+    nameWithType: Taxon
+    fullName: JoshAaronMiller.INaturalist.Taxon
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.Taxon}.CreateFromJson(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.Taxon}.CreateFromJson(System.String)
+  parent: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.Taxon}
+  definition: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  name: CreateFromJson(String)
+  nameWithType: JsonObject<Taxon>.CreateFromJson(String)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.Taxon>.CreateFromJson(System.String)
+  nameWithType.vb: JsonObject(Of Taxon).CreateFromJson(String)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.Taxon).CreateFromJson(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject<Taxon>.CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.Taxon>.CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject(Of Taxon).CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.Taxon).CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.Taxon}.ToJson(JoshAaronMiller.INaturalist.Taxon)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.Taxon}.ToJson(JoshAaronMiller.INaturalist.Taxon)
+  parent: JoshAaronMiller.INaturalist.JsonObject{JoshAaronMiller.INaturalist.Taxon}
+  definition: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  name: ToJson(Taxon)
+  nameWithType: JsonObject<Taxon>.ToJson(Taxon)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.Taxon>.ToJson(JoshAaronMiller.INaturalist.Taxon)
+  nameWithType.vb: JsonObject(Of Taxon).ToJson(Taxon)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.Taxon).ToJson(JoshAaronMiller.INaturalist.Taxon)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject<Taxon>.ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<JoshAaronMiller.INaturalist.Taxon>.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.Taxon
+    name: Taxon
+    nameWithType: Taxon
+    fullName: JoshAaronMiller.INaturalist.Taxon
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject(Of Taxon).ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of JoshAaronMiller.INaturalist.Taxon).ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.Taxon
+    name: Taxon
+    nameWithType: Taxon
+    fullName: JoshAaronMiller.INaturalist.Taxon
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JoshAaronMiller.INaturalist.JsonObject`1
+  commentId: T:JoshAaronMiller.INaturalist.JsonObject`1
+  name: JsonObject<T>
+  nameWithType: JsonObject<T>
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>
+  nameWithType.vb: JsonObject(Of T)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T)
+  name.vb: JsonObject(Of T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1
+    name: JsonObject
+    nameWithType: JsonObject
+    fullName: JoshAaronMiller.INaturalist.JsonObject
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+  isExternal: true
+  name: CreateFromJson(String)
+  nameWithType: JsonObject<T>.CreateFromJson(String)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson(System.String)
+  nameWithType.vb: JsonObject(Of T).CreateFromJson(String)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson(System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject<T>.CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<T>.CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.CreateFromJson(System.String)
+    name: CreateFromJson
+    nameWithType: JsonObject(Of T).CreateFromJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of T).CreateFromJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  commentId: M:JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+  name: ToJson(T)
+  nameWithType: JsonObject<T>.ToJson(T)
+  fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson(T)
+  nameWithType.vb: JsonObject(Of T).ToJson(T)
+  fullName.vb: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson(T)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject<T>.ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject<T>.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.JsonObject`1.ToJson(`0)
+    name: ToJson
+    nameWithType: JsonObject(Of T).ToJson
+    fullName: JoshAaronMiller.INaturalist.JsonObject(Of T).ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: System.Collections.Generic.List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: System.Collections.Generic.List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: JoshAaronMiller.INaturalist.FlagCounts
+  commentId: T:JoshAaronMiller.INaturalist.FlagCounts
+  parent: JoshAaronMiller.INaturalist
+  name: FlagCounts
+  nameWithType: FlagCounts
+  fullName: JoshAaronMiller.INaturalist.FlagCounts
+- uid: JoshAaronMiller.INaturalist.PhotoJson
+  commentId: T:JoshAaronMiller.INaturalist.PhotoJson
+  parent: JoshAaronMiller.INaturalist
+  name: PhotoJson
+  nameWithType: PhotoJson
+  fullName: JoshAaronMiller.INaturalist.PhotoJson
