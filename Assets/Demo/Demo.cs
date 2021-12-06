@@ -66,17 +66,23 @@ public class Demo : MonoBehaviour
     static readonly string DefaultYear = "Filter by year...";
     static readonly string DefaultQuality = "Filter by quality...";
 
-    // Created using INatManager::GetPlacesAutocomplete
-    static Dictionary<string, int> citiesToIds = new Dictionary<string, int>()
+    static readonly double SearchRadius = 100; // when filtering by cities, search within 100 km
+
+    static Dictionary<string, (double, double)> citiesToGeoLocations = new Dictionary<string, (double, double)>()
     {
-        {"Boston", 26306 },
-        {"Dubai", 157073 },
-        {"London", 30370 },
-        {"Los Angeles", 962 },
-        {"New York", 48 },
-        {"Paris", 99545 },
-        {"Sydney", 18683 },
-        {"Tokyo", 10935 }
+        // neg lat South
+        // neg lng West
+        {"Boston", (42.3601, -71.0589) },
+        {"Dubai", (25.2048, 55.2708) },
+        {"Johannesburg", (-26.2041, 28.0473) },
+        {"Lima", (-12.0464, -77.0428) },
+        {"London", (51.5072, -0.1276) },
+        {"Los Angeles", (34.0522, -118.2437) },
+        {"New York", (40.7128, -74.006) },
+        {"Paris", (48.8566, 2.3522) },
+        {"Sao Paulo", (-23.558, -46.6396) },
+        {"Sydney", (-33.8688, 151.2093) },
+        {"Tokyo", (35.6762, 139.6503) }
     };
 
 
@@ -104,6 +110,7 @@ public class Demo : MonoBehaviour
 
     List<Observation> observations = new List<Observation>();
     int carouselIndex = 0;
+    int totalResults = 0;
     bool loggedIn = false;
 
     bool threatened = false;
@@ -144,7 +151,7 @@ public class Demo : MonoBehaviour
         option = new Dropdown.OptionData();
         option.text = DefaultCity;
         cities.Add(option);
-        foreach (string city in citiesToIds.Keys)
+        foreach (string city in citiesToGeoLocations.Keys)
         {
             option = new Dropdown.OptionData();
             option.text = city;
@@ -203,7 +210,7 @@ public class Demo : MonoBehaviour
         string choice = CityDropdownObj.transform.GetChild(0).gameObject.GetComponent<Text>().text;
         if (choice != DefaultCity)
         {
-            userSearch.IncludePlaceIds(new List<int>() { citiesToIds[choice] });
+            userSearch.SetBoundingCircle(citiesToGeoLocations[choice].Item1, citiesToGeoLocations[choice].Item2, SearchRadius);
         }
     }
 
@@ -228,7 +235,7 @@ public class Demo : MonoBehaviour
     public void QualityGradeSelectDropdownCallback()
     {
         string choice = QualityGradeDropdownObj.transform.GetChild(0).gameObject.GetComponent<Text>().text;
-        if (choice != DefaultCity)
+        if (choice != DefaultQuality)
         {
             userSearch.SetQualityGrade(qualityGrades[choice]);
         }
@@ -430,13 +437,15 @@ public class Demo : MonoBehaviour
     void RefreshActiveObservation()
     {
         LoadingTextObj.SetActive(true);
+        INatImage.GetComponent<RawImage>().texture = null;
+        attribution.text = "";
         if (observations.Count == 0)
         {
-            observationCount.text = "0 / 0";
+            observationCount.text = "No search results";
         }
         else
         {
-            observationCount.text = (carouselIndex + 1).ToString() + " / " + observations.Count;
+            observationCount.text = string.Format("({0} total results)\n", totalResults) + (carouselIndex + 1).ToString() + " / " + observations.Count;
         }
         TryShowVotingButtons();
         if (observations.Count > 0)
@@ -503,12 +512,13 @@ public class Demo : MonoBehaviour
         LoadingTextObj.SetActive(false);
     }
 
-    void PopulateCarousel(List<Observation> results)
+    void PopulateCarousel(Results<Observation> results)
     {
         observations.Clear();
-        Debug.Log("Search yielded " + results.Count + " results");
+        totalResults = results.total_results;
+        Debug.Log("Search yielded " + totalResults + " results");
         carouselIndex = 0;
-        observations = results;
+        observations = results.results;
         RefreshActiveObservation();
     }
 }

@@ -19,8 +19,8 @@ namespace JoshAaronMiller.INaturalist
         public static readonly string ApiTokenUrl = "https://www.inaturalist.org/users/api_token";
 
         static T FromJson<T>(string jsonString) => JsonObject<T>.CreateFromJson(jsonString);
-        static List<T> ResultsFromJson<T>(string jsonString) => JsonObject<Results<T>>.CreateFromJson(jsonString).results;
-        static T FirstResultFromJson<T>(string jsonString) => ResultsFromJson<T>(jsonString)[0];
+        static Results<T> ResultsFromJson<T>(string jsonString) => JsonObject<Results<T>>.CreateFromJson(jsonString);
+        static T FirstResultFromJson<T>(string jsonString) => ResultsFromJson<T>(jsonString).results[0];
 
         static T NoOp<T>(T x) => x;
 
@@ -139,7 +139,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="authenticate">Whether to pass the API token along with the request, for API calls that require authentication only. This is forced to true for all non-GET calls.</param>
         IEnumerator DoWebRequestAsync(UnityWebRequest request, Action callback, Action<Error> errorCallback, bool authenticate = false)
         {
-            _SendWebRequestAsync(request, authenticate);
+            yield return _SendWebRequestAsync(request, authenticate);
 
             while (!request.isDone)
                 yield return null;
@@ -168,7 +168,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="authenticate">Whether to pass the API token along with the request, for API calls that require authentication only. This is forced to true for all non-GET calls.</param>
         IEnumerator DoWebRequestAsync<T>(UnityWebRequest request, Func<string, T> receiveRequest, Action<T> callback, Action<Error> errorCallback, bool authenticate=false)
         {
-            _SendWebRequestAsync(request, authenticate);
+            yield return _SendWebRequestAsync(request, authenticate);
 
             while (!request.isDone)
                 yield return null;
@@ -279,9 +279,9 @@ namespace JoshAaronMiller.INaturalist
         /// <summary>
         /// Fetch a list of all attribute controlled terms as a List of ControlledTerms.
         /// </summary>
-        /// <param name="callback">A function to callback when the request is done which takes as input the List of Controlled Terms created.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of Controlled Terms created.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetTermsIndex(Action<List<ControlledTerm>> callback, Action<Error> errorCallback)
+        public void GetTermsIndex(Action<Results<ControlledTerm>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "controlled_terms/");
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<ControlledTerm>, callback, errorCallback));
@@ -291,9 +291,9 @@ namespace JoshAaronMiller.INaturalist
         /// Fetch a list of all attribute controlled terms relevant to a taxon as a List of ControlledTerms.
         /// </summary>
         /// <param name="taxonId">The ID of the Taxon.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the List of Controlled Terms created.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of Controlled Terms created.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetTermsForTaxon(int taxonId, Action<List<ControlledTerm>> callback, Action<Error> errorCallback)
+        public void GetTermsForTaxon(int taxonId, Action<Results<ControlledTerm>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "controlled_terms/for_taxon?taxon_id=" + taxonId.ToString());
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<ControlledTerm>, callback, errorCallback));
@@ -359,9 +359,9 @@ namespace JoshAaronMiller.INaturalist
         /// Given an array of IDs, returns corresponding Identifications 
         /// </summary>
         /// <param name="identIds">The list of identification IDs to fetch</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of Identification objects found.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of Identification objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetIdentifications(List<int> identIds, Action<List<Identification>> callback, Action<Error> errorCallback)
+        public void GetIdentifications(List<int> identIds, Action<Results<Identification>> callback, Action<Error> errorCallback)
         {
             string idsAsStringList = string.Join(",", identIds);
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/" + idsAsStringList);
@@ -402,9 +402,9 @@ namespace JoshAaronMiller.INaturalist
         /// Given an IdentificationSearch object, returns a list of matching Identifications
         /// </summary>
         /// <param name="identSearch">An IdentificationSearch object holding the parameters of the search</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of Identification objects found.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of Identification objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void SearchIdentifications(IdentificationSearch identSearch, Action<List<Identification>> callback, Action<Error> errorCallback)
+        public void SearchIdentifications(IdentificationSearch identSearch, Action<Results<Identification>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications?" + identSearch.ToUrlParameters());
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Identification>, callback, errorCallback));
@@ -431,9 +431,9 @@ namespace JoshAaronMiller.INaturalist
         /// Given an IdentificationSearch object, returns the counts of how many identifications matching the search have a particular category.
         /// </summary>
         /// <param name="identSearch">An IdentificationSearch object holding the parameters of the search.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of IdentificationCategoryCount objects found.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of IdentificationCategoryCount objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetIdentificationCategories(IdentificationSearch identSearch, Action<List<IdentificationCategoryCount>> callback, Action<Error> errorCallback)
+        public void GetIdentificationCategories(IdentificationSearch identSearch, Action<Results<IdentificationCategoryCount>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/categories?" + identSearch.ToUrlParameters());
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<IdentificationCategoryCount>, callback, errorCallback));
@@ -443,9 +443,9 @@ namespace JoshAaronMiller.INaturalist
         /// Given an IdentificationSearch object, returns the counts of how many identifications matching the search have a particular leaf taxon.
         /// </summary>
         /// <param name="identSearch">An IdentificationSearch object holding the parameters of the search.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of SpeciesCount objects found.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of SpeciesCount objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetIdentificationSpeciesCounts(IdentificationSearch identSearch, Action<List<SpeciesCount>> callback, Action<Error> errorCallback)
+        public void GetIdentificationSpeciesCounts(IdentificationSearch identSearch, Action<Results<SpeciesCount>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/species_counts?" + identSearch.ToUrlParameters());
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<SpeciesCount>, callback, errorCallback));
@@ -465,9 +465,9 @@ namespace JoshAaronMiller.INaturalist
         /// In short, this returns a list mapping taxa to how many times they co-occurred with the searched taxon.
         /// </remarks>
         /// <param name="taxonId">The ID of the taxon to find similar taxa to.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of SpeciesCount objects representing the results.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of SpeciesCount objects representing the results.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetSimilarSpecies(int taxonId, Action<List<SpeciesCount>> callback, Action<Error> errorCallback)
+        public void GetSimilarSpecies(int taxonId, Action<Results<SpeciesCount>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/similar_species?taxon_id=" + taxonId.ToString());
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<SpeciesCount>, callback, errorCallback));
@@ -483,9 +483,9 @@ namespace JoshAaronMiller.INaturalist
         /// </remarks>
         /// <param name="taxonId">The ID of the taxon to find similar taxa to.</param>
         /// /// <param name="obsSearch">Additional parameters to refine the search, limiting what observations can be included.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of SpeciesCount objects representing the results.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of SpeciesCount objects representing the results.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetSimilarSpecies(int taxonId, ObservationSearch obsSearch, Action<List<SpeciesCount>> callback, Action<Error> errorCallback)
+        public void GetSimilarSpecies(int taxonId, ObservationSearch obsSearch, Action<Results<SpeciesCount>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "identifications/similar_species?taxon_id=" + taxonId.ToString() + "&" + obsSearch.ToUrlParameters());
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<SpeciesCount>, callback, errorCallback));
@@ -502,9 +502,9 @@ namespace JoshAaronMiller.INaturalist
         /// This function does not mark these messages as read. See GetUserMessageThread.
         /// </remarks>
         /// <param name="messageSearch">A MessageSearch object holding the parameters of the search</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of Message objects found.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of Message objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void SearchUserMessages(MessageSearch messageSearch, Action<List<UserMessage>> callback, Action<Error> errorCallback)
+        public void SearchUserMessages(MessageSearch messageSearch, Action<Results<UserMessage>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "messages?" + messageSearch.ToUrlParameters());
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<UserMessage>, callback, errorCallback, authenticate:true));
@@ -539,9 +539,9 @@ namespace JoshAaronMiller.INaturalist
         /// Retrieves all messages in the specified thread and marks them all as read.
         /// </summary>
         /// <param name="threadId">The thread to fetch.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the thread fetched as a list of UserMessages.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the thread fetched as a Results list of UserMessages.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetUserMessageThread(int threadId, Action<List<UserMessage>> callback, Action<Error> errorCallback)
+        public void GetUserMessageThread(int threadId, Action<Results<UserMessage>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "messages/" + threadId.ToString());
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<UserMessage>, callback, errorCallback, authenticate: true));
@@ -638,9 +638,9 @@ namespace JoshAaronMiller.INaturalist
         /// Given an array of IDs, returns corresponding observations 
         /// </summary>
         /// <param name="ids">The list of observation IDs to fetch</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of Observation objects found.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of Observation objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetObservations(List<int> ids, Action<List<Observation>> callback, Action<Error> errorCallback)
+        public void GetObservations(List<int> ids, Action<Results<Observation>> callback, Action<Error> errorCallback)
         {
             string idsAsStringList = string.Join(",", ids);
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations/" + idsAsStringList);
@@ -785,9 +785,9 @@ namespace JoshAaronMiller.INaturalist
         /// Given an ObservationSearch object, returns a list of matching observations
         /// </summary>
         /// <param name="obsSearch">An ObservationSearch object holding the parameters of the search</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of Observation objects found.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of Observation objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void SearchObservations(ObservationSearch obsSearch, Action<List<Observation>> callback, Action<Error> errorCallback)
+        public void SearchObservations(ObservationSearch obsSearch, Action<Results<Observation>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations?" + obsSearch.ToUrlParameters());
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Observation>, callback, errorCallback));
@@ -829,9 +829,9 @@ namespace JoshAaronMiller.INaturalist
         /// Given an ObservationSearch object, returns the counts of how many observations matching the search have a particular leaf taxon.
         /// </summary>
         /// <param name="observationSearch">An ObservationSearch object holding the parameters of the search.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of SpeciesCount objects found.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of SpeciesCount objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetObservationSpeciesCounts(ObservationSearch observationSearch, Action<List<SpeciesCount>> callback, Action<Error> errorCallback)
+        public void GetObservationSpeciesCounts(ObservationSearch observationSearch, Action<Results<SpeciesCount>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "observations/species_counts?" + observationSearch.ToUrlParameters());
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<SpeciesCount>, callback, errorCallback));
@@ -866,9 +866,9 @@ namespace JoshAaronMiller.INaturalist
         /// </summary>
         /// <param name="placeIds">The IDs of the Places.</param>
         /// <param name="adminLevel">Optionally, the admin level of the place to search.</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of Places fetched.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of Places fetched.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetPlaceDetails(List<int> placeIds, Action<List<Place>> callback, Action<Error> errorCallback, PlaceAdminLevel adminLevel = PlaceAdminLevel.None)
+        public void GetPlaceDetails(List<int> placeIds, Action<Results<Place>> callback, Action<Error> errorCallback, PlaceAdminLevel adminLevel = PlaceAdminLevel.None)
         {
             string idsAsStringList = string.Join(",", placeIds);
             string urlSuffix = idsAsStringList;
@@ -886,9 +886,9 @@ namespace JoshAaronMiller.INaturalist
         /// </summary>
         /// <param name="query">The search term.</param>
         /// <param name="orderByArea">If true, sort the results by area (default false).</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of Places fetched.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of Places fetched.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetPlacesAutocomplete(string query, Action<List<Place>> callback, Action<Error> errorCallback, bool orderByArea = false)
+        public void GetPlacesAutocomplete(string query, Action<Results<Place>> callback, Action<Error> errorCallback, bool orderByArea = false)
         {
             string urlSuffix = query;
             if (orderByArea)
@@ -960,9 +960,9 @@ namespace JoshAaronMiller.INaturalist
         /// Given an array of IDs, returns corresponding Taxa 
         /// </summary>
         /// <param name="identIds">The list of taxa IDs to fetch</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of Taxon objects found.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of Taxon objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void GetTaxonDetails(List<int> taxaIds, Action<List<Taxon>> callback, Action<Error> errorCallback)
+        public void GetTaxonDetails(List<int> taxaIds, Action<Results<Taxon>> callback, Action<Error> errorCallback)
         {
             string idsAsStringList = string.Join(",", taxaIds);
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "taxa/" + idsAsStringList);
@@ -986,9 +986,9 @@ namespace JoshAaronMiller.INaturalist
         /// Given a TaxonSearch object, returns a list of matching taxa
         /// </summary>
         /// <param name="taxonSearch">An TaxonSearch object holding the parameters of the search</param>
-        /// <param name="callback">A function to callback when the request is done which takes as input the list of Taxon objects found.</param>
+        /// <param name="callback">A function to callback when the request is done which takes as input the Results list of Taxon objects found.</param>
         /// <param name="errorCallback">A function to callback when iNaturalist returns an error message.</param>
-        public void SearchTaxa(TaxonSearch taxonSearch, Action<List<Taxon>> callback, Action<Error> errorCallback)
+        public void SearchTaxa(TaxonSearch taxonSearch, Action<Results<Taxon>> callback, Action<Error> errorCallback)
         {
             UnityWebRequest request = UnityWebRequest.Get(BaseUrl + "taxa?" + taxonSearch.ToUrlParameters());
             StartCoroutine(DoWebRequestAsync(request, ResultsFromJson<Taxon>, callback, errorCallback));
