@@ -11,33 +11,12 @@ namespace JoshAaronMiller.INaturalist
     /// Usage: myINatManager.SearchIdentifications(myIdentificationSearch)
     /// </summary>
     public class IdentificationSearch : SearchObject
-    {
-        public enum BooleanParameter
-        {
-            MatchesObservationTaxon, IsObserversIdentification, IsFromTaxonChange, IsTaxonActive,
-            IsObservationTaxonActive, IsCurrent, ReturnIdOnly
-        };
-
-        public static Dictionary<BooleanParameter, string> BoolParamToString = new Dictionary<BooleanParameter, string>() {
-            { BooleanParameter.MatchesObservationTaxon, "current_taxon" },
-            { BooleanParameter.IsObserversIdentification, "own_observation" },
-            { BooleanParameter.IsFromTaxonChange, "is_change" },
-            { BooleanParameter.IsTaxonActive, "taxon_active" },
-            { BooleanParameter.IsObservationTaxonActive, "observation_taxon_active" },
-            { BooleanParameter.IsCurrent, "current" }, //defaults to True
-            { BooleanParameter.ReturnIdOnly, "only_id" }
-        };
+    { 
 
         public enum IdentificationCategory
         {
             Any, Improving, Supporting, Leading, Maverick
         };
-
-        public void SetBooleanParameter(BooleanParameter param, bool setting)
-        {
-            boolParams[BoolParamToString[param]] = setting;
-        }
-
 
         /// <summary>
         /// Require the search to include these IDs.

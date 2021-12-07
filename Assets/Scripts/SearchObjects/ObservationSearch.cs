@@ -12,36 +12,6 @@ namespace JoshAaronMiller.INaturalist
     /// </summary>
     public class ObservationSearch : SearchObject
     {
-        public enum BooleanParameter
-        {
-            HasPositionalAccuracy, IsCaptive, IsEndemic, IsGeoreferenced,
-            IsIdentified, WasIntroduced, IsMappable, IsNative, IsOutOfRange, HasProjectId, HasPhotos,
-            IsPopular, HasSounds, IsTaxonActive, IsThreatened, IsVerifiable, IsLicensed,
-            IsPhotoLicensed, ReturnIdOnly
-        };
-
-        public static Dictionary<BooleanParameter, string> BoolParamToString = new Dictionary<BooleanParameter, string>() {
-        { BooleanParameter.HasPositionalAccuracy, "acc" },
-        { BooleanParameter.IsCaptive, "captive" },
-        { BooleanParameter.IsEndemic, "endemic" },
-        { BooleanParameter.IsGeoreferenced, "geo" },
-        { BooleanParameter.IsIdentified, "identified" },
-        { BooleanParameter.WasIntroduced, "introduced" },
-        { BooleanParameter.IsMappable, "mappable" },
-        { BooleanParameter.IsNative, "native" },
-        { BooleanParameter.IsOutOfRange, "out_of_range" },
-        { BooleanParameter.HasProjectId, "pcid" },
-        { BooleanParameter.HasPhotos, "photos" },
-        { BooleanParameter.IsPopular, "popular" },
-        { BooleanParameter.HasSounds, "sounds" },
-        { BooleanParameter.IsTaxonActive, "taxon_is_active" },
-        { BooleanParameter.IsThreatened, "threatened" },
-        { BooleanParameter.IsVerifiable, "verifiable" },
-        { BooleanParameter.IsLicensed, "licensed" },
-        { BooleanParameter.IsPhotoLicensed, "photo_licensed" },
-        { BooleanParameter.ReturnIdOnly, "only_id" }
-    };
-
         public enum License
         {
             None, CcAttr, CcAttrNonCommercial, CcAttrNoDerivs, CcShareAlike,
@@ -100,12 +70,6 @@ namespace JoshAaronMiller.INaturalist
         {
             All, Names, Tags, Description, Place
         }
-
-        public void SetBooleanParameter(BooleanParameter param, bool setting)
-        {
-            boolParams[BoolParamToString[param]] = setting;
-        }
-
 
         /// <summary>
         /// Require the search to include these IDs.

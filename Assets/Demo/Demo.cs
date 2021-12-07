@@ -216,9 +216,9 @@ public class Demo : MonoBehaviour
         }
         else
         {
-            userSearch.RemoveStringParameter("lat");
-            userSearch.RemoveStringParameter("lng");
-            userSearch.RemoveStringParameter("radius");
+            userSearch.RemoveStringParameter(SearchObject.StringParameter.Latitude);
+            userSearch.RemoveStringParameter(SearchObject.StringParameter.Longitude);
+            userSearch.RemoveStringParameter(SearchObject.StringParameter.Radius);
         }
     }
 
@@ -231,7 +231,7 @@ public class Demo : MonoBehaviour
         }
         else
         {
-            userSearch.RemoveStringParameter("iconic_taxa");
+            userSearch.RemoveStringParameter(SearchObject.StringParameter.IconicTaxa);
         }
     }
 
@@ -244,7 +244,7 @@ public class Demo : MonoBehaviour
         }
         else
         {
-            userSearch.RemoveStringParameter("year");
+            userSearch.RemoveStringParameter(SearchObject.StringParameter.Year);
         }
     }
 
@@ -257,7 +257,7 @@ public class Demo : MonoBehaviour
         }
         else
         {
-            userSearch.RemoveStringParameter("quality_grade");
+            userSearch.RemoveStringParameter(SearchObject.StringParameter.QualityGrade);
         }
     }
 
