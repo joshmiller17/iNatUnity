@@ -6,6 +6,9 @@ This repository is not endorsed by iNaturalist, the California Academy of Scienc
 
 This repository is not sponsored by or affiliated with Unity Technologies or its affiliates. “Unity” is a trademark or registered trademark of Unity Technologies or its affiliates in the U.S. and elsewhere.
 
+## Demo
+A pre-built demo is available for [Windows](https://github.com/joshmiller17/iNatUnity/blob/main/WindowsBuild.zip) and [Mac](https://github.com/joshmiller17/iNatUnity/blob/main/iNatUnity.app.zip).
+
 ## Getting Started
 1. Add this repository to your Unity project by downloading the code and moving it into your project or by adding it directly from the Unity Asset Store (coming soon!)
 2. For any scripts that want to interact with iNaturalist, import this code by adding `using JoshAaronMiller.INaturalist;` at the top of the file.
