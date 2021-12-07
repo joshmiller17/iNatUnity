@@ -11,22 +11,6 @@ namespace JoshAaronMiller.INaturalist
     /// </summary>
     public class TaxonSearch : SearchObject
     {
-        public enum BooleanParameter
-        {
-            IsActive, ReturnIdOnly, IncludeAllTaxonNames
-        };
-
-        public static Dictionary<BooleanParameter, string> BoolParamToString = new Dictionary<BooleanParameter, string>() {
-            { BooleanParameter.IsActive, "is_active" },
-            { BooleanParameter.ReturnIdOnly, "only_id" },
-            { BooleanParameter.IncludeAllTaxonNames, "all_names" }
-        };
-
-        public void SetBooleanParameter(BooleanParameter param, bool setting)
-        {
-            boolParams[BoolParamToString[param]] = setting;
-        }
-
         /// <summary>
         /// Limit the search to taxa that begin with this substring
         /// </summary>

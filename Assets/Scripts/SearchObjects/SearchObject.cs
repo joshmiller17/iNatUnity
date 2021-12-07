@@ -14,7 +14,7 @@ namespace JoshAaronMiller.INaturalist
 
         public enum BooleanParameter
         {
-            HasPhotos, HasPositionalAccuracy, HasProjectId, HasSounds, IsCaptive, 
+            HasPhotos, HasPositionalAccuracy, HasProjectId, HasSounds, IncludeAllTaxonNames, IsActive, IsCaptive, 
             IsCurrent, IsEndemic, IsFromTaxonChange, IsGeoreferenced, IsIdentificationTaxonActive, 
             IsIdentified, IsLicensed, IsMappable, IsNative, IsObservationTaxonActive, 
             IsObservationTaxonActiveForIdentification, IsObserversIdentification, IsOutOfRange, 
@@ -27,6 +27,8 @@ namespace JoshAaronMiller.INaturalist
             { BooleanParameter.HasPositionalAccuracy, "acc" },
             { BooleanParameter.HasProjectId, "pcid" },
             { BooleanParameter.HasSounds, "sounds" },
+            { BooleanParameter.IsActive, "is_active" },
+            { BooleanParameter.IncludeAllTaxonNames, "all_names" },
             { BooleanParameter.IsCaptive, "captive" },
             { BooleanParameter.IsCurrent, "current" }, //defaults to True
             { BooleanParameter.IsEndemic, "endemic" },
