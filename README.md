@@ -115,6 +115,39 @@ public void HandleError(Error error){
 
 **Example**:
 ```
+INatManager iNatManager = gameObject.AddComponent<INatManager>();
+ObservationSearch myObservationSearch = new ObservationSearch();
+
+public double myLatitude; // set the geolocation of the place of interest
+public double myLongitude; // set the geolocation of the place of interest
+public double radius = 100; // in kilometers
+
+myObservationSearch.SetBoundingCircle(myLatitude, myLongitude, radius);
+// we could have also searched by bounding box using SetBoundingBox
+
+iNatManager.SearchObservations(myObservationSearch, ProcessObservations, HandleError);
+
+public void ProcessObservations(Results<Observations> myObservationResults){
+    List<Observation> myObservations = myObservationResults.results;
+    foreach (Observation o in myObservations){
+        List<Identification> identifications = o.identifications;
+        foreach (Identification ident in identifications){
+            if (ident.current) { // only take the latest identification per observation per user
+                Taxon taxon = ident.taxon;
+                string name = taxon.preferred_common_name;
+                // do more stuff with this name
+                // for example sum them in a dictionary to get the most popular species
+            }
+        }
+    }
+}
+
+public void HandleError(Error error){
+    Debug.LogError(error.status); // print the HTTP status code
+    // other error handling
+}
+
+
 ```
 
 #### Help classify images or sounds
@@ -122,6 +155,46 @@ public void HandleError(Error error){
 
 **Example**:
 ```
+// NOTE: This operation requires authentication, see Authentication section above
+
+List<Observation> myObservations; // assume we have already gathered observations, see examples above
+INatManager iNatManager = gameObject.AddComponent<INatManager>();
+
+Dictionary<string, Taxon> existingGuesses = new Dictionary<string, Taxon>();
+foreach (Observation o in myObservations){
+    List<Identification> identifications = o.identifications;
+    foreach (Identification ident in identifications){
+        if (ident.current) { // only take the latest identification per observation per user
+            Taxon taxon = ident.taxon;
+            string name = taxon.preferred_common_name;
+            existingGuesses[name] = taxon;
+        }
+        
+        // present the user with the list of existingGuesses.Keys, get their guess
+        // for more advanced users, you could get them to write in a new guess
+        // use INatManager.SearchTaxa to perform an autocomplete search based on their input string
+
+        string userGuessName; // assume they fill this in
+
+        Taxon userGuessTaxon = existingGuesses[userGuessName];
+
+        IdentificationSubmission identSub = new IdentificationSubmission();
+        identSub.observation_id = o.id;
+        identSub.taxon_id = userGuessTaxon.id;
+        iNatManager.CreateIdentification(identSub, CreateIdentificationCallback, HandleError);
+    }
+}
+
+public void CreateIdentificationCallback(Identification ident)
+{
+    Debug.Log("Successfully submitted identification " + ident.id);
+}
+
+public void HandleError(Error error){
+    Debug.LogError(error.status); // print the HTTP status code
+    // other error handling
+}
+
 ```
 
 
