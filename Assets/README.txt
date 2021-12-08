@@ -10,6 +10,8 @@ This repository is not sponsored by or affiliated with Unity Technologies or its
 
 Thanks to Patrick Leary on the iNaturalist staff for technical assistance.
 
+See the source code for this project on GitHub at https://github.com/joshmiller17/iNatUnity.
+
 Questions or feedback? Contact me at miller.josh [at] northeastern [dot] edu.
 
 For updates on what I'm working on, follow me on Twitter @joshaaronmiller.
