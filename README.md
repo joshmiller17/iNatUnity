@@ -211,7 +211,7 @@ public void HandleError(Error error){
 # Documentation
 
 ## iNaturalist + Unity
-The full documentation for this code is available [here](https://joshmiller17.github.io/iNatUnity/docs/api/JoshAaronMiller.INaturalist.html).
+The full documentation for this code is available [here](https://joshmiller17.github.io/iNatUnity/api/JoshAaronMiller.INaturalist.html).
 
 #### iNaturalist API Documentation
 The official iNaturalist API documentation is available [here](https://api.inaturalist.org/v1/docs/).
