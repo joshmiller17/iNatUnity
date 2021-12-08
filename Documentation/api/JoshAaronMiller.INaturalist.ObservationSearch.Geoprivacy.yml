@@ -20,7 +20,7 @@ items:
   source:
     id: Geoprivacy
     path: ''
-    startLine: 3005
+    startLine: 2961
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -47,7 +47,7 @@ items:
   source:
     id: None
     path: ''
-    startLine: 3007
+    startLine: 2963
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -75,7 +75,7 @@ items:
   source:
     id: Obscured
     path: ''
-    startLine: 3007
+    startLine: 2963
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -103,7 +103,7 @@ items:
   source:
     id: ObscuredPrivate
     path: ''
-    startLine: 3007
+    startLine: 2963
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -131,7 +131,7 @@ items:
   source:
     id: Open
     path: ''
-    startLine: 3007
+    startLine: 2963
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -159,7 +159,7 @@ items:
   source:
     id: Private
     path: ''
-    startLine: 3007
+    startLine: 2963
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

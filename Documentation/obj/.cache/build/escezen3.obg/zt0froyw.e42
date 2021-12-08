@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ObservationSearch
+   | iNat+Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ObservationSearch
+   | iNat+Unity ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="JoshAaronMiller.INaturalist.ObservationSearch">
+  
+  
+  <h1 id="JoshAaronMiller_INaturalist_ObservationSearch" data-uid="JoshAaronMiller.INaturalist.ObservationSearch" class="text-break">Class ObservationSearch
+  </h1>
+  <div class="markdown level0 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="3">An ObservationSearch is a set of parameters for searching iNaturalist Observations.
+Usage: myINatManager.SearchObservations(myObservationSearch)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html">SearchObject</a></div>
+    <div class="level2"><span class="xref">ObservationSearch</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_boolParams">SearchObject.boolParams</a>
+    </div>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_stringParams">SearchObject.stringParams</a>
+    </div>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_SetBooleanParameter_JoshAaronMiller_INaturalist_SearchObject_BooleanParameter_System_Boolean_">SearchObject.SetBooleanParameter(SearchObject.BooleanParameter, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_RemoveBooleanParameter_JoshAaronMiller_INaturalist_SearchObject_BooleanParameter_">SearchObject.RemoveBooleanParameter(SearchObject.BooleanParameter)</a>
+    </div>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_SetStringParameter_JoshAaronMiller_INaturalist_SearchObject_StringParameter_System_String_">SearchObject.SetStringParameter(SearchObject.StringParameter, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_RemoveStringParameter_JoshAaronMiller_INaturalist_SearchObject_StringParameter_">SearchObject.RemoveStringParameter(SearchObject.StringParameter)</a>
+    </div>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_ToUrlParameters">SearchObject.ToUrlParameters()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="JoshAaronMiller.INaturalist.html">JoshAaronMiller.INaturalist</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="JoshAaronMiller_INaturalist_ObservationSearch_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ObservationSearch : SearchObject</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_GeoprivacyToString" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.GeoprivacyToString">GeoprivacyToString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;ObservationSearch.Geoprivacy, string&gt; GeoprivacyToString</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.html">ObservationSearch.Geoprivacy</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IdentAgreementToString" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IdentAgreementToString">IdentAgreementToString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;ObservationSearch.IdentificationAgreement, string&gt; IdentAgreementToString</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.html">ObservationSearch.IdentificationAgreement</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_LicenseToString" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.LicenseToString">LicenseToString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;ObservationSearch.License, string&gt; LicenseToString</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.License.html">ObservationSearch.License</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_ApplyProjectRulesFor_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.ApplyProjectRulesFor*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_ApplyProjectRulesFor_System_Int32_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.ApplyProjectRulesFor(System.Int32)">ApplyProjectRulesFor(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to the project restrictions of the given project ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyProjectRulesFor(int projectId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The project ID to base this restriction on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_ExcludeIds_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.ExcludeIds*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_ExcludeIds_System_Collections_Generic_List_System_Int32__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.ExcludeIds(System.Collections.Generic.List{System.Int32})">ExcludeIds(List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Require the search to exclude these IDs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExcludeIds(List&lt;int&gt; ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">IDs to exclude</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_ExcludeProjectId_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.ExcludeProjectId*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_ExcludeProjectId_System_Int32_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.ExcludeProjectId(System.Int32)">ExcludeProjectId(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Require the observations to be not in this project ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExcludeProjectId(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Project ID to exclude</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_ExcludeProjectRulesFor_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.ExcludeProjectRulesFor*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_ExcludeProjectRulesFor_System_Int32_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.ExcludeProjectRulesFor(System.Int32)">ExcludeProjectRulesFor(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations that don&apos;t match the rules of the given project ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExcludeProjectRulesFor(int projectId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The project ID to base this restriction on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_ExcludeTaxonIds_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.ExcludeTaxonIds*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_ExcludeTaxonIds_System_Collections_Generic_List_System_Int32__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.ExcludeTaxonIds(System.Collections.Generic.List{System.Int32})">ExcludeTaxonIds(List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to exclude these taxa IDs and their descendents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExcludeTaxonIds(List&lt;int&gt; ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Taxa IDs to exclude</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeDays_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeDays*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeDays_System_Collections_Generic_List_System_Int32__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeDays(System.Collections.Generic.List{System.Int32})">IncludeDays(List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations on these days of the month.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeDays(List&lt;int&gt; days)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">days</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Days to match.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeIds_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeIds*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeIds_System_Collections_Generic_List_System_Int32__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeIds(System.Collections.Generic.List{System.Int32})">IncludeIds(List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Require the search to include these IDs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeIds(List&lt;int&gt; ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">IDs to include</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeIUCNConservationStatuses_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeIUCNConservationStatuses*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeIUCNConservationStatuses_System_Collections_Generic_List_JoshAaronMiller_INaturalist_ObservationSearch_IucnConservationStatus__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeIUCNConservationStatuses(System.Collections.Generic.List{JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus})">IncludeIUCNConservationStatuses(List&lt;ObservationSearch.IucnConservationStatus&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to taxa with these IUCN conservation statuses. If PlaceId is also set, only consider statuses specific to those places.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeIUCNConservationStatuses(List&lt;ObservationSearch.IucnConservationStatus&gt; statuses)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.IucnConservationStatus.html">ObservationSearch.IucnConservationStatus</a>&gt;</td>
+        <td><span class="parametername">statuses</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeMonths_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeMonths*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeMonths_System_Collections_Generic_List_System_Int32__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeMonths(System.Collections.Generic.List{System.Int32})">IncludeMonths(List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations on these months.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeMonths(List&lt;int&gt; months)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">months</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Months to match.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludePlaceIds_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludePlaceIds*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludePlaceIds_System_Collections_Generic_List_System_Int32__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludePlaceIds(System.Collections.Generic.List{System.Int32})">IncludePlaceIds(List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Require the observations to be within these place IDs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludePlaceIds(List&lt;int&gt; ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Place IDs to require</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeProjectIds_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeProjectIds*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeProjectIds_System_Collections_Generic_List_System_Int32__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeProjectIds(System.Collections.Generic.List{System.Int32})">IncludeProjectIds(List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Require the observations to be included in these project IDs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeProjectIds(List&lt;int&gt; ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Project IDs to search</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeTaxonGeoprivacy_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeTaxonGeoprivacy*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeTaxonGeoprivacy_System_Collections_Generic_List_JoshAaronMiller_INaturalist_ObservationSearch_Geoprivacy__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeTaxonGeoprivacy(System.Collections.Generic.List{JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy})">IncludeTaxonGeoprivacy(List&lt;ObservationSearch.Geoprivacy&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Filter observations by the most conservative geoprivacy applied by a conservation status associated with one of the taxa proposed in the current identifications.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeTaxonGeoprivacy(List&lt;ObservationSearch.Geoprivacy&gt; geos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.html">ObservationSearch.Geoprivacy</a>&gt;</td>
+        <td><span class="parametername">geos</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The geoprivacy settings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeTaxonIds_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeTaxonIds*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeTaxonIds_System_Collections_Generic_List_System_Int32__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeTaxonIds(System.Collections.Generic.List{System.Int32})">IncludeTaxonIds(List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to these taxa IDs and their descendents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeTaxonIds(List&lt;int&gt; ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Taxa IDs to include</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeTaxonNames_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeTaxonNames*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeTaxonNames_System_Collections_Generic_List_System_String__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeTaxonNames(System.Collections.Generic.List{System.String})">IncludeTaxonNames(List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to these scientific or common taxa names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeTaxonNames(List&lt;string&gt; names)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">names</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Taxa names to match</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeTermIds_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeTermIds*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeTermIds" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeTermIds">IncludeTermIds()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeTermIds()</code></pre>
+  </div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeTermValueIds_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeTermValueIds*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeTermValueIds" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeTermValueIds">IncludeTermValueIds()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeTermValueIds()</code></pre>
+  </div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeUserIds_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeUserIds*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeUserIds" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeUserIds">IncludeUserIds()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeUserIds()</code></pre>
+  </div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeUserLogins_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeUserLogins*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeUserLogins" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeUserLogins">IncludeUserLogins()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeUserLogins()</code></pre>
+  </div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeYears_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeYears*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_IncludeYears_System_Collections_Generic_List_System_Int32__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.IncludeYears(System.Collections.Generic.List{System.Int32})">IncludeYears(List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations on these years.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeYears(List&lt;int&gt; years)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">years</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Years to match.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SearchOnProperties_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SearchOnProperties*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SearchOnProperties_JoshAaronMiller_INaturalist_ObservationSearch_SearchProperty_System_String_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SearchOnProperties(JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty,System.String)">SearchOnProperties(ObservationSearch.SearchProperty, String)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Search observation properties matching the query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SearchOnProperties(ObservationSearch.SearchProperty property, string query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty.html">ObservationSearch.SearchProperty</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The search property to apply the query to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The search query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetAccuracyMaximum_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetAccuracyMaximum*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetAccuracyMaximum_System_Int32_System_Boolean_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetAccuracyMaximum(System.Int32,System.Boolean)">SetAccuracyMaximum(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations with a positional accuracy below this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAccuracyMaximum(int max, bool canBeUnknown = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">max</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The positional accuracy in meters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">canBeUnknown</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Whether the positional accuracy can be unknown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetAccuracyMinimum_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetAccuracyMinimum*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetAccuracyMinimum_System_Int32_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetAccuracyMinimum(System.Int32)">SetAccuracyMinimum(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations with a positional accuracy above this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAccuracyMinimum(int min)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">min</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The positional accuracy in meters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetBoundingBox_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetBoundingBox*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetBoundingBox_System_Double_System_Double_System_Double_System_Double_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetBoundingBox(System.Double,System.Double,System.Double,System.Double)">SetBoundingBox(Double, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search within a bounding box specified by northeast and southwest corners given in latitude and longitude.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBoundingBox(double nelat, double nelng, double swlat, double swlng)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">nelat</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The northeast latitude.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">nelng</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The northeast longitude.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">swlat</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The southwest latitude.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">swlng</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The southwest longitude.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetBoundingCircle_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetBoundingCircle*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetBoundingCircle_System_Double_System_Double_System_Double_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetBoundingCircle(System.Double,System.Double,System.Double)">SetBoundingCircle(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to a circle of [radius] kilometers around the specified latitude and longitude.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBoundingCircle(double lat, double lng, double radius)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">lat</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The latitude of the search&apos;s center.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">lng</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The longitude of the search&apos;s center.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">radius</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The radius of search in kilometers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetCacheControl_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetCacheControl*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetCacheControl_System_Int32_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetCacheControl(System.Int32)">SetCacheControl(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Set the Cache-Control HTTP header with this value as max-age, in seconds.This means subsequent identical requests will be cached on iNaturalist servers, and commonly within web browsers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCacheControl(int timeToLive)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">timeToLive</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The max-age of the request, in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetConservationStatusAuthority_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetConservationStatusAuthority*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetConservationStatusAuthority_System_String_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetConservationStatusAuthority(System.String)">SetConservationStatusAuthority(String)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to taxa with a conservation status from this authority. If PlaceId is also set, only consider statuses specific to those places.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConservationStatusAuthority(string auth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">auth</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The conservation status authority.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetConservationStatusCode_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetConservationStatusCode*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetConservationStatusCode_System_String_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetConservationStatusCode(System.String)">SetConservationStatusCode(String)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to taxa of this conservation status code. If PlaceId is also set, only consider statuses specific to those places.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConservationStatusCode(string code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">code</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The conservation status code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetCreatedOnDateTimeLimits_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetCreatedOnDateTimeLimits*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetCreatedOnDateTimeLimits_System_String_System_String_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetCreatedOnDateTimeLimits(System.String,System.String)">SetCreatedOnDateTimeLimits(String, String)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations created within a timeframe. Both start and end dates are optional.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCreatedOnDateTimeLimits(string start = &quot;&quot;, string end = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">start</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The start datetime, formatted as ISO-8601 datetime format: YYYY-MM-DDTHH:MMSS.mmmZ. Limit observations to created on or after this date.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">end</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The end datetime, formatted as ISO-8601 datetime format: YYYY-MM-DDTHH:MMSS.mmmZ. Limit observations to created on or before this date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetGeoprivacy_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetGeoprivacy*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetGeoprivacy_System_Collections_Generic_List_JoshAaronMiller_INaturalist_ObservationSearch_Geoprivacy__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetGeoprivacy(System.Collections.Generic.List{JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy})">SetGeoprivacy(List&lt;ObservationSearch.Geoprivacy&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations with these geoprivacy settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGeoprivacy(List&lt;ObservationSearch.Geoprivacy&gt; geos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy.html">ObservationSearch.Geoprivacy</a>&gt;</td>
+        <td><span class="parametername">geos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetIconicTaxa_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetIconicTaxa*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetIconicTaxa_System_Collections_Generic_List_JoshAaronMiller_INaturalist_ObservationSearch_IconicTaxon__" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetIconicTaxa(System.Collections.Generic.List{JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon})">SetIconicTaxa(List&lt;ObservationSearch.IconicTaxon&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations with these iconic taxa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIconicTaxa(List&lt;ObservationSearch.IconicTaxon&gt; iconicTaxa)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon.html">ObservationSearch.IconicTaxon</a>&gt;</td>
+        <td><span class="parametername">iconicTaxa</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The iconic taxa to include.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetIdentificationAgreement_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetIdentificationAgreement*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetIdentificationAgreement_JoshAaronMiller_INaturalist_ObservationSearch_IdentificationAgreement_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetIdentificationAgreement(JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement)">SetIdentificationAgreement(ObservationSearch.IdentificationAgreement)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIdentificationAgreement(ObservationSearch.IdentificationAgreement agreement)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement.html">ObservationSearch.IdentificationAgreement</a></td>
+        <td><span class="parametername">agreement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetIdentifiedByUserId_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetIdentifiedByUserId*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetIdentifiedByUserId_System_Int32_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetIdentifiedByUserId(System.Int32)">SetIdentifiedByUserId(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations with identifications by the user with this ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIdentifiedByUserId(int userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The user&apos;s ID to restrict the search to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetLicense_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetLicense*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetLicense_JoshAaronMiller_INaturalist_ObservationSearch_License_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetLicense(JoshAaronMiller.INaturalist.ObservationSearch.License)">SetLicense(ObservationSearch.License)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Require the observations returned to have this license.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLicense(ObservationSearch.License license)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.License.html">ObservationSearch.License</a></td>
+        <td><span class="parametername">license</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Required license</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetListId_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetListId*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetListId" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetListId">SetListId()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetListId()</code></pre>
+  </div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetLocalePreference_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetLocalePreference*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetLocalePreference" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetLocalePreference">SetLocalePreference()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLocalePreference()</code></pre>
+  </div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetObservationIdLimits_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetObservationIdLimits*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetObservationIdLimits_System_Int32_System_Int32_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetObservationIdLimits(System.Int32,System.Int32)">SetObservationIdLimits(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations with IDs within this range. Both min and max are optional.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetObservationIdLimits(int min = -1, int max = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">min</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Include this ID and higher.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">max</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Include this ID and lower.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetObservedOnDateLimits_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetObservedOnDateLimits*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetObservedOnDateLimits_System_String_System_String_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetObservedOnDateLimits(System.String,System.String)">SetObservedOnDateLimits(String, String)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations observed within a timeframe. Both start and end dates are optional.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetObservedOnDateLimits(string start = &quot;&quot;, string end = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">start</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The start date, formatted as YYYY-MM-DD. Limit observations to on or after this date.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">end</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The end date, formatted as YYYY-MM-DD. Limit observations to on or before this date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetOfvDataType_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetOfvDataType*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetOfvDataType" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetOfvDataType">SetOfvDataType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOfvDataType()</code></pre>
+  </div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetOrder_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetOrder*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetOrder_JoshAaronMiller_INaturalist_OrderBy_JoshAaronMiller_INaturalist_SortOrder_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetOrder(JoshAaronMiller.INaturalist.OrderBy,JoshAaronMiller.INaturalist.SortOrder)">SetOrder(OrderBy, SortOrder)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Set how the results are ordered. Defaults to created at date, descending.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOrder(OrderBy orderBy, SortOrder sortOrder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.OrderBy.html">OrderBy</a></td>
+        <td><span class="parametername">orderBy</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The parameter to sort the order by.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.SortOrder.html">SortOrder</a></td>
+        <td><span class="parametername">sortOrder</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Whether to sort ascending or descending.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetPagination_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetPagination*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetPagination_System_Int32_System_Int32_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetPagination(System.Int32,System.Int32)">SetPagination(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Set the number of search results per page and which page to receive. For example, SetPagination(50,2) would return results 51-100.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPagination(int resultsPerPage = 30, int page = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">resultsPerPage</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">How many results to return per page (default 30).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">page</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Which page of results to return (default 1).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetPhotoLicense_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetPhotoLicense*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetPhotoLicense_JoshAaronMiller_INaturalist_ObservationSearch_License_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetPhotoLicense(JoshAaronMiller.INaturalist.ObservationSearch.License)">SetPhotoLicense(ObservationSearch.License)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Require the observations to have at least one photo with this license.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPhotoLicense(ObservationSearch.License license)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.License.html">ObservationSearch.License</a></td>
+        <td><span class="parametername">license</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Required license</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetPreferredPlaceId_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetPreferredPlaceId*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetPreferredPlaceId" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetPreferredPlaceId">SetPreferredPlaceId()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreferredPlaceId()</code></pre>
+  </div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetQualityGrade_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetQualityGrade*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetQualityGrade_JoshAaronMiller_INaturalist_QualityGrade_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetQualityGrade(JoshAaronMiller.INaturalist.QualityGrade)">SetQualityGrade(QualityGrade)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations of this quality grade.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetQualityGrade(QualityGrade quality)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.QualityGrade.html">QualityGrade</a></td>
+        <td><span class="parametername">quality</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The quality grade to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetReviewedByUser_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetReviewedByUser*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetReviewedByUser_System_Int32_System_Boolean_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetReviewedByUser(System.Int32,System.Boolean)">SetReviewedByUser(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to observations that [have / have not] been reviewed by a given user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetReviewedByUser(int userId, bool hasReviewed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The user ID to consider their review.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">hasReviewed</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">If true, only include observations they have reviewed. If false, only include observations they have not reviewed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetSiteId_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetSiteId*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetSiteId" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetSiteId">SetSiteId()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSiteId()</code></pre>
+  </div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetSoundLicense_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetSoundLicense*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetSoundLicense_JoshAaronMiller_INaturalist_ObservationSearch_License_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetSoundLicense(JoshAaronMiller.INaturalist.ObservationSearch.License)">SetSoundLicense(ObservationSearch.License)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Require the observations to have at least one sound with this license.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSoundLicense(ObservationSearch.License license)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.ObservationSearch.License.html">ObservationSearch.License</a></td>
+        <td><span class="parametername">license</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Required license</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetTaxonRank_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetTaxonRank*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetTaxonRank_JoshAaronMiller_INaturalist_TaxonRank_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetTaxonRank(JoshAaronMiller.INaturalist.TaxonRank)">SetTaxonRank(TaxonRank)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Require the observations returned to have this taxon rank.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTaxonRank(TaxonRank rank)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.TaxonRank.html">TaxonRank</a></td>
+        <td><span class="parametername">rank</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Required taxonomic rank.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetTaxonRankLimits_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetTaxonRankLimits*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetTaxonRankLimits_JoshAaronMiller_INaturalist_TaxonRank_JoshAaronMiller_INaturalist_TaxonRank_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetTaxonRankLimits(JoshAaronMiller.INaturalist.TaxonRank,JoshAaronMiller.INaturalist.TaxonRank)">SetTaxonRankLimits(TaxonRank, TaxonRank)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to taxa between these limits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTaxonRankLimits(TaxonRank lowest = TaxonRank.None, TaxonRank highest = TaxonRank.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.TaxonRank.html">TaxonRank</a></td>
+        <td><span class="parametername">lowest</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The lowest taxon rank to include in the search (include this and higher).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.TaxonRank.html">TaxonRank</a></td>
+        <td><span class="parametername">highest</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The highest taxon rank to include in the search (include this and lower).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetUnobservedByUserId_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetUnobservedByUserId*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetUnobservedByUserId_System_Int32_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetUnobservedByUserId(System.Int32)">SetUnobservedByUserId(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to taxa that this user has not previously observed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUnobservedByUserId(int userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.ObservationSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The user ID to base this restriction on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_ObservationSearch_SetUpdatedSince_" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetUpdatedSince*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_ObservationSearch_SetUpdatedSince" data-uid="JoshAaronMiller.INaturalist.ObservationSearch.SetUpdatedSince">SetUpdatedSince()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUpdatedSince()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

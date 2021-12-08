@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TaxonSearch
+   | iNat+Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TaxonSearch
+   | iNat+Unity ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="JoshAaronMiller.INaturalist.TaxonSearch">
+  
+  
+  <h1 id="JoshAaronMiller_INaturalist_TaxonSearch" data-uid="JoshAaronMiller.INaturalist.TaxonSearch" class="text-break">Class TaxonSearch
+  </h1>
+  <div class="markdown level0 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="3">A TaxonSearch is a set of parameters for searching iNaturalist Taxa.
+Usage: myINatManager.SearchTaxa(myTaxonSearch)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html">SearchObject</a></div>
+    <div class="level2"><span class="xref">TaxonSearch</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_boolParams">SearchObject.boolParams</a>
+    </div>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_stringParams">SearchObject.stringParams</a>
+    </div>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_SetBooleanParameter_JoshAaronMiller_INaturalist_SearchObject_BooleanParameter_System_Boolean_">SearchObject.SetBooleanParameter(SearchObject.BooleanParameter, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_RemoveBooleanParameter_JoshAaronMiller_INaturalist_SearchObject_BooleanParameter_">SearchObject.RemoveBooleanParameter(SearchObject.BooleanParameter)</a>
+    </div>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_SetStringParameter_JoshAaronMiller_INaturalist_SearchObject_StringParameter_System_String_">SearchObject.SetStringParameter(SearchObject.StringParameter, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_RemoveStringParameter_JoshAaronMiller_INaturalist_SearchObject_StringParameter_">SearchObject.RemoveStringParameter(SearchObject.StringParameter)</a>
+    </div>
+    <div>
+      <a class="xref" href="JoshAaronMiller.INaturalist.SearchObject.html#JoshAaronMiller_INaturalist_SearchObject_ToUrlParameters">SearchObject.ToUrlParameters()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="JoshAaronMiller.INaturalist.html">JoshAaronMiller.INaturalist</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="JoshAaronMiller_INaturalist_TaxonSearch_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TaxonSearch : SearchObject</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_TaxonSearch_IncludeIds_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.IncludeIds*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_TaxonSearch_IncludeIds_System_Collections_Generic_List_System_Int32__" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.IncludeIds(System.Collections.Generic.List{System.Int32})">IncludeIds(List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Require the search to include these IDs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeIds(List&lt;int&gt; ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">IDs to include</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_TaxonSearch_IncludeTaxonRanks_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.IncludeTaxonRanks*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_TaxonSearch_IncludeTaxonRanks_System_Collections_Generic_List_JoshAaronMiller_INaturalist_TaxonRank__" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.IncludeTaxonRanks(System.Collections.Generic.List{JoshAaronMiller.INaturalist.TaxonRank})">IncludeTaxonRanks(List&lt;TaxonRank&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to taxa of these ranks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncludeTaxonRanks(List&lt;TaxonRank&gt; ranks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="JoshAaronMiller.INaturalist.TaxonRank.html">TaxonRank</a>&gt;</td>
+        <td><span class="parametername">ranks</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The list of taxon ranks to include in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_TaxonSearch_SetLocalePreference_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetLocalePreference*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_TaxonSearch_SetLocalePreference_System_String_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetLocalePreference(System.String)">SetLocalePreference(String)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Set the locale preference for taxon common names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLocalePreference(string locale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">locale</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The locale preference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="JoshAaronMiller_INaturalist_TaxonSearch_SetLocalePreference_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">I&apos;m not really sure what a valid input looks like.</p>
+</div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_TaxonSearch_SetNameBeginsWith_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetNameBeginsWith*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_TaxonSearch_SetNameBeginsWith_System_String_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetNameBeginsWith(System.String)">SetNameBeginsWith(String)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to taxa that begin with this substring</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNameBeginsWith(string query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The start of the taxa names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_TaxonSearch_SetPagination_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetPagination*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_TaxonSearch_SetPagination_System_Int32_System_Int32_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetPagination(System.Int32,System.Int32)">SetPagination(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Set the number of search results per page and which page to receive. For example, SetPagination(50,2) would return results 51-100.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPagination(int resultsPerPage = 30, int page = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">resultsPerPage</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">How many results to return per page (default 30).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">page</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Which page of results to return (default 1).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_TaxonSearch_SetParentId_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetParentId*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_TaxonSearch_SetParentId_System_Int32_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetParentId(System.Int32)">SetParentId(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to children of this taxon ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParentId(int parentId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">parentId</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The parent taxon&apos;s ID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_TaxonSearch_SetPreferredPlaceId_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetPreferredPlaceId*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_TaxonSearch_SetPreferredPlaceId_System_Int32_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetPreferredPlaceId(System.Int32)">SetPreferredPlaceId(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Set a place preference for regional taxon common names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreferredPlaceId(int placeId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">placeId</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The place ID of the preference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="JoshAaronMiller_INaturalist_TaxonSearch_SetPreferredPlaceId_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">I think this means that taxon common names will be based on the place specified.</p>
+</div>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_TaxonSearch_SetTaxonIdLimits_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonIdLimits*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_TaxonSearch_SetTaxonIdLimits_System_Int32_System_Int32_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonIdLimits(System.Int32,System.Int32)">SetTaxonIdLimits(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to taxa with IDs within this range. Both min and max are optional.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTaxonIdLimits(int min = -1, int max = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">min</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Include this ID and higher.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">max</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Include this ID and lower.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="JoshAaronMiller_INaturalist_TaxonSearch_SetTaxonRankLevel_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonRankLevel*"></a>
+  <h4 id="JoshAaronMiller_INaturalist_TaxonSearch_SetTaxonRankLevel_JoshAaronMiller_INaturalist_TaxonRankLevel_" data-uid="JoshAaronMiller.INaturalist.TaxonSearch.SetTaxonRankLevel(JoshAaronMiller.INaturalist.TaxonRankLevel)">SetTaxonRankLevel(TaxonRankLevel)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Limit the search to taxa of this rank level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTaxonRankLevel(TaxonRankLevel rankLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JoshAaronMiller.INaturalist.TaxonRankLevel.html">TaxonRankLevel</a></td>
+        <td><span class="parametername">rankLevel</span></td>
+        <td><p sourcefile="api/JoshAaronMiller.INaturalist.TaxonSearch.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The rank level to limit the search to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

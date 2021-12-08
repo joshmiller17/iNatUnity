@@ -6,8 +6,14 @@ items:
   parent: JoshAaronMiller.INaturalist
   children:
   - JoshAaronMiller.INaturalist.Sound.attribution
+  - JoshAaronMiller.INaturalist.Sound.file_content_type
+  - JoshAaronMiller.INaturalist.Sound.file_url
+  - JoshAaronMiller.INaturalist.Sound.flags
   - JoshAaronMiller.INaturalist.Sound.id
   - JoshAaronMiller.INaturalist.Sound.license_code
+  - JoshAaronMiller.INaturalist.Sound.native_sound_id
+  - JoshAaronMiller.INaturalist.Sound.play_local
+  - JoshAaronMiller.INaturalist.Sound.secret_token
   langs:
   - csharp
   - vb
@@ -125,6 +131,168 @@ items:
     return:
       type: System.String
     content.vb: Public license_code As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Sound.secret_token
+  commentId: F:JoshAaronMiller.INaturalist.Sound.secret_token
+  id: secret_token
+  parent: JoshAaronMiller.INaturalist.Sound
+  langs:
+  - csharp
+  - vb
+  name: secret_token
+  nameWithType: Sound.secret_token
+  fullName: JoshAaronMiller.INaturalist.Sound.secret_token
+  type: Field
+  source:
+    id: secret_token
+    path: ''
+    startLine: 2390
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string secret_token
+    return:
+      type: System.String
+    content.vb: Public secret_token As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Sound.file_content_type
+  commentId: F:JoshAaronMiller.INaturalist.Sound.file_content_type
+  id: file_content_type
+  parent: JoshAaronMiller.INaturalist.Sound
+  langs:
+  - csharp
+  - vb
+  name: file_content_type
+  nameWithType: Sound.file_content_type
+  fullName: JoshAaronMiller.INaturalist.Sound.file_content_type
+  type: Field
+  source:
+    id: file_content_type
+    path: ''
+    startLine: 2391
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string file_content_type
+    return:
+      type: System.String
+    content.vb: Public file_content_type As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Sound.flags
+  commentId: F:JoshAaronMiller.INaturalist.Sound.flags
+  id: flags
+  parent: JoshAaronMiller.INaturalist.Sound
+  langs:
+  - csharp
+  - vb
+  name: flags
+  nameWithType: Sound.flags
+  fullName: JoshAaronMiller.INaturalist.Sound.flags
+  type: Field
+  source:
+    id: flags
+    path: ''
+    startLine: 2392
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public List<Flag> flags
+    return:
+      type: System.Collections.Generic.List{JoshAaronMiller.INaturalist.Flag}
+    content.vb: Public flags As List(Of Flag)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Sound.native_sound_id
+  commentId: F:JoshAaronMiller.INaturalist.Sound.native_sound_id
+  id: native_sound_id
+  parent: JoshAaronMiller.INaturalist.Sound
+  langs:
+  - csharp
+  - vb
+  name: native_sound_id
+  nameWithType: Sound.native_sound_id
+  fullName: JoshAaronMiller.INaturalist.Sound.native_sound_id
+  type: Field
+  source:
+    id: native_sound_id
+    path: ''
+    startLine: 2393
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public int native_sound_id
+    return:
+      type: System.Int32
+    content.vb: Public native_sound_id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Sound.play_local
+  commentId: F:JoshAaronMiller.INaturalist.Sound.play_local
+  id: play_local
+  parent: JoshAaronMiller.INaturalist.Sound
+  langs:
+  - csharp
+  - vb
+  name: play_local
+  nameWithType: Sound.play_local
+  fullName: JoshAaronMiller.INaturalist.Sound.play_local
+  type: Field
+  source:
+    id: play_local
+    path: ''
+    startLine: 2394
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public bool play_local
+    return:
+      type: System.Boolean
+    content.vb: Public play_local As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JoshAaronMiller.INaturalist.Sound.file_url
+  commentId: F:JoshAaronMiller.INaturalist.Sound.file_url
+  id: file_url
+  parent: JoshAaronMiller.INaturalist.Sound
+  langs:
+  - csharp
+  - vb
+  name: file_url
+  nameWithType: Sound.file_url
+  fullName: JoshAaronMiller.INaturalist.Sound.file_url
+  type: Field
+  source:
+    id: file_url
+    path: ''
+    startLine: 2396
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public string file_url
+    return:
+      type: System.String
+    content.vb: Public file_url As String
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -393,3 +561,97 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: System.Collections.Generic.List{JoshAaronMiller.INaturalist.Flag}
+  commentId: T:System.Collections.Generic.List{JoshAaronMiller.INaturalist.Flag}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Flag>
+  nameWithType: List<Flag>
+  fullName: System.Collections.Generic.List<JoshAaronMiller.INaturalist.Flag>
+  nameWithType.vb: List(Of Flag)
+  fullName.vb: System.Collections.Generic.List(Of JoshAaronMiller.INaturalist.Flag)
+  name.vb: List(Of Flag)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JoshAaronMiller.INaturalist.Flag
+    name: Flag
+    nameWithType: Flag
+    fullName: JoshAaronMiller.INaturalist.Flag
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JoshAaronMiller.INaturalist.Flag
+    name: Flag
+    nameWithType: Flag
+    fullName: JoshAaronMiller.INaturalist.Flag
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

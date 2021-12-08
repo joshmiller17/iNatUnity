@@ -21,7 +21,7 @@ items:
   source:
     id: TimeDetails
     path: ''
-    startLine: 2455
+    startLine: 2462
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -65,7 +65,7 @@ items:
   source:
     id: date
     path: ''
-    startLine: 2458
+    startLine: 2465
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -92,7 +92,7 @@ items:
   source:
     id: day
     path: ''
-    startLine: 2459
+    startLine: 2466
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -119,7 +119,7 @@ items:
   source:
     id: month
     path: ''
-    startLine: 2460
+    startLine: 2467
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -146,7 +146,7 @@ items:
   source:
     id: year
     path: ''
-    startLine: 2461
+    startLine: 2468
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -173,7 +173,7 @@ items:
   source:
     id: hour
     path: ''
-    startLine: 2462
+    startLine: 2469
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -200,7 +200,7 @@ items:
   source:
     id: week
     path: ''
-    startLine: 2463
+    startLine: 2470
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

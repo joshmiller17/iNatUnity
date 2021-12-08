@@ -20,7 +20,7 @@ items:
   source:
     id: MessageSearch
     path: ''
-    startLine: 2868
+    startLine: 2854
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -37,7 +37,10 @@ items:
   inheritedMembers:
   - JoshAaronMiller.INaturalist.SearchObject.boolParams
   - JoshAaronMiller.INaturalist.SearchObject.stringParams
-  - JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  - JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter,System.Boolean)
+  - JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter)
+  - JoshAaronMiller.INaturalist.SearchObject.SetStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter,System.String)
+  - JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter)
   - JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
   modifiers.csharp:
   - public
@@ -59,7 +62,7 @@ items:
   source:
     id: SetPage
     path: ''
-    startLine: 2880
+    startLine: 2866
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -91,7 +94,7 @@ items:
   source:
     id: SetBox
     path: ''
-    startLine: 2889
+    startLine: 2875
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -123,7 +126,7 @@ items:
   source:
     id: SetQuery
     path: ''
-    startLine: 2898
+    startLine: 2884
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -155,7 +158,7 @@ items:
   source:
     id: SetCorrespondent
     path: ''
-    startLine: 2907
+    startLine: 2893
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -187,7 +190,7 @@ items:
   source:
     id: ShowOnlyLatestMessagePerThread
     path: ''
-    startLine: 2923
+    startLine: 2909
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -237,21 +240,117 @@ references:
   name: stringParams
   nameWithType: SearchObject.stringParams
   fullName: JoshAaronMiller.INaturalist.SearchObject.stringParams
-- uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
-  commentId: M:JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+- uid: JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter,System.Boolean)
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter,System.Boolean)
   parent: JoshAaronMiller.INaturalist.SearchObject
   isExternal: true
-  name: RemoveStringParameter(String)
-  nameWithType: SearchObject.RemoveStringParameter(String)
-  fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  name: SetBooleanParameter(SearchObject.BooleanParameter, Boolean)
+  nameWithType: SearchObject.SetBooleanParameter(SearchObject.BooleanParameter, Boolean)
+  fullName: JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter, System.Boolean)
   spec.csharp:
-  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
-    name: RemoveStringParameter
-    nameWithType: SearchObject.RemoveStringParameter
-    fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
+  - uid: JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter,System.Boolean)
+    name: SetBooleanParameter
+    nameWithType: SearchObject.SetBooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter
   - name: (
     nameWithType: (
     fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+    name: SearchObject.BooleanParameter
+    nameWithType: SearchObject.BooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter,System.Boolean)
+    name: SetBooleanParameter
+    nameWithType: SearchObject.SetBooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+    name: SearchObject.BooleanParameter
+    nameWithType: SearchObject.BooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter)
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter)
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  name: RemoveBooleanParameter(SearchObject.BooleanParameter)
+  nameWithType: SearchObject.RemoveBooleanParameter(SearchObject.BooleanParameter)
+  fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter)
+    name: RemoveBooleanParameter
+    nameWithType: SearchObject.RemoveBooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+    name: SearchObject.BooleanParameter
+    nameWithType: SearchObject.BooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter)
+    name: RemoveBooleanParameter
+    nameWithType: SearchObject.RemoveBooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+    name: SearchObject.BooleanParameter
+    nameWithType: SearchObject.BooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.SearchObject.SetStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter,System.String)
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.SetStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter,System.String)
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  isExternal: true
+  name: SetStringParameter(SearchObject.StringParameter, String)
+  nameWithType: SearchObject.SetStringParameter(SearchObject.StringParameter, String)
+  fullName: JoshAaronMiller.INaturalist.SearchObject.SetStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter, System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.SetStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter,System.String)
+    name: SetStringParameter
+    nameWithType: SearchObject.SetStringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.SetStringParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+    name: SearchObject.StringParameter
+    nameWithType: SearchObject.StringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
   - uid: System.String
     name: String
     nameWithType: String
@@ -261,18 +360,61 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  - uid: JoshAaronMiller.INaturalist.SearchObject.SetStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter,System.String)
+    name: SetStringParameter
+    nameWithType: SearchObject.SetStringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.SetStringParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+    name: SearchObject.StringParameter
+    nameWithType: SearchObject.StringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter)
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter)
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  name: RemoveStringParameter(SearchObject.StringParameter)
+  nameWithType: SearchObject.RemoveStringParameter(SearchObject.StringParameter)
+  fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter)
     name: RemoveStringParameter
     nameWithType: SearchObject.RemoveStringParameter
     fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
+  - uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+    name: SearchObject.StringParameter
+    nameWithType: SearchObject.StringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter)
+    name: RemoveStringParameter
+    nameWithType: SearchObject.RemoveStringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+    name: SearchObject.StringParameter
+    nameWithType: SearchObject.StringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter
   - name: )
     nameWithType: )
     fullName: )

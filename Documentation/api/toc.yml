@@ -38,8 +38,6 @@
     name: IdentificationCategoryCount
   - uid: JoshAaronMiller.INaturalist.IdentificationSearch
     name: IdentificationSearch
-  - uid: JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
-    name: IdentificationSearch.BooleanParameter
   - uid: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
     name: IdentificationSearch.IdentificationCategory
   - uid: JoshAaronMiller.INaturalist.IdentificationSubmission
@@ -63,8 +61,6 @@
     name: ObservationPhoto
   - uid: JoshAaronMiller.INaturalist.ObservationSearch
     name: ObservationSearch
-  - uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
-    name: ObservationSearch.BooleanParameter
   - uid: JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
     name: ObservationSearch.Geoprivacy
   - uid: JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
@@ -98,6 +94,10 @@
     name.vb: Results(Of T)
   - uid: JoshAaronMiller.INaturalist.SearchObject
     name: SearchObject
+  - uid: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+    name: SearchObject.BooleanParameter
+  - uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+    name: SearchObject.StringParameter
   - uid: JoshAaronMiller.INaturalist.SortOrder
     name: SortOrder
   - uid: JoshAaronMiller.INaturalist.Sound
@@ -112,8 +112,6 @@
     name: TaxonRankLevel
   - uid: JoshAaronMiller.INaturalist.TaxonSearch
     name: TaxonSearch
-  - uid: JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
-    name: TaxonSearch.BooleanParameter
   - uid: JoshAaronMiller.INaturalist.TaxonSummary
     name: TaxonSummary
   - uid: JoshAaronMiller.INaturalist.TimeDetails

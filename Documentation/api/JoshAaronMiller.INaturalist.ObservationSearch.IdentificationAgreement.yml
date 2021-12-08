@@ -19,7 +19,7 @@ items:
   source:
     id: IdentificationAgreement
     path: ''
-    startLine: 3024
+    startLine: 2980
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -46,7 +46,7 @@ items:
   source:
     id: None
     path: ''
-    startLine: 3026
+    startLine: 2982
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -74,7 +74,7 @@ items:
   source:
     id: MostAgree
     path: ''
-    startLine: 3026
+    startLine: 2982
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -102,7 +102,7 @@ items:
   source:
     id: MostDisagree
     path: ''
-    startLine: 3026
+    startLine: 2982
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -130,7 +130,7 @@ items:
   source:
     id: SomeAgree
     path: ''
-    startLine: 3026
+    startLine: 2982
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

@@ -19,7 +19,6 @@ items:
   - JoshAaronMiller.INaturalist.Identification
   - JoshAaronMiller.INaturalist.IdentificationCategoryCount
   - JoshAaronMiller.INaturalist.IdentificationSearch
-  - JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
   - JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
   - JoshAaronMiller.INaturalist.IdentificationSubmission
   - JoshAaronMiller.INaturalist.INatManager
@@ -31,7 +30,6 @@ items:
   - JoshAaronMiller.INaturalist.Observation.ImageSize
   - JoshAaronMiller.INaturalist.ObservationPhoto
   - JoshAaronMiller.INaturalist.ObservationSearch
-  - JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
   - JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy
   - JoshAaronMiller.INaturalist.ObservationSearch.IconicTaxon
   - JoshAaronMiller.INaturalist.ObservationSearch.IdentificationAgreement
@@ -48,6 +46,8 @@ items:
   - JoshAaronMiller.INaturalist.QualityGrade
   - JoshAaronMiller.INaturalist.Results`1
   - JoshAaronMiller.INaturalist.SearchObject
+  - JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter
   - JoshAaronMiller.INaturalist.SortOrder
   - JoshAaronMiller.INaturalist.Sound
   - JoshAaronMiller.INaturalist.SpeciesCount
@@ -55,7 +55,6 @@ items:
   - JoshAaronMiller.INaturalist.TaxonRank
   - JoshAaronMiller.INaturalist.TaxonRankLevel
   - JoshAaronMiller.INaturalist.TaxonSearch
-  - JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
   - JoshAaronMiller.INaturalist.TaxonSummary
   - JoshAaronMiller.INaturalist.TimeDetails
   - JoshAaronMiller.INaturalist.User
@@ -442,12 +441,6 @@ references:
   name: IdentificationSearch
   nameWithType: IdentificationSearch
   fullName: JoshAaronMiller.INaturalist.IdentificationSearch
-- uid: JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
-  commentId: T:JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
-  parent: JoshAaronMiller.INaturalist
-  name: IdentificationSearch.BooleanParameter
-  nameWithType: IdentificationSearch.BooleanParameter
-  fullName: JoshAaronMiller.INaturalist.IdentificationSearch.BooleanParameter
 - uid: JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
   commentId: T:JoshAaronMiller.INaturalist.IdentificationSearch.IdentificationCategory
   parent: JoshAaronMiller.INaturalist
@@ -472,12 +465,6 @@ references:
   name: ObservationSearch
   nameWithType: ObservationSearch
   fullName: JoshAaronMiller.INaturalist.ObservationSearch
-- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
-  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
-  parent: JoshAaronMiller.INaturalist
-  name: ObservationSearch.BooleanParameter
-  nameWithType: ObservationSearch.BooleanParameter
-  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
 - uid: JoshAaronMiller.INaturalist.ObservationSearch.License
   commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.License
   parent: JoshAaronMiller.INaturalist
@@ -520,18 +507,24 @@ references:
   name: SearchObject
   nameWithType: SearchObject
   fullName: JoshAaronMiller.INaturalist.SearchObject
+- uid: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+  commentId: T:JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+  parent: JoshAaronMiller.INaturalist
+  name: SearchObject.BooleanParameter
+  nameWithType: SearchObject.BooleanParameter
+  fullName: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  commentId: T:JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  parent: JoshAaronMiller.INaturalist
+  name: SearchObject.StringParameter
+  nameWithType: SearchObject.StringParameter
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter
 - uid: JoshAaronMiller.INaturalist.TaxonSearch
   commentId: T:JoshAaronMiller.INaturalist.TaxonSearch
   parent: JoshAaronMiller.INaturalist
   name: TaxonSearch
   nameWithType: TaxonSearch
   fullName: JoshAaronMiller.INaturalist.TaxonSearch
-- uid: JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
-  commentId: T:JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
-  parent: JoshAaronMiller.INaturalist
-  name: TaxonSearch.BooleanParameter
-  nameWithType: TaxonSearch.BooleanParameter
-  fullName: JoshAaronMiller.INaturalist.TaxonSearch.BooleanParameter
 - uid: JoshAaronMiller.INaturalist
   commentId: N:JoshAaronMiller.INaturalist
   name: JoshAaronMiller.INaturalist

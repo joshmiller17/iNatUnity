@@ -20,7 +20,7 @@ items:
   source:
     id: IdentificationCategory
     path: ''
-    startLine: 2570
+    startLine: 2562
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -47,7 +47,7 @@ items:
   source:
     id: Any
     path: ''
-    startLine: 2572
+    startLine: 2564
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -75,7 +75,7 @@ items:
   source:
     id: Improving
     path: ''
-    startLine: 2572
+    startLine: 2564
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -103,7 +103,7 @@ items:
   source:
     id: Supporting
     path: ''
-    startLine: 2572
+    startLine: 2564
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -131,7 +131,7 @@ items:
   source:
     id: Leading
     path: ''
-    startLine: 2572
+    startLine: 2564
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -159,7 +159,7 @@ items:
   source:
     id: Maverick
     path: ''
-    startLine: 2572
+    startLine: 2564
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

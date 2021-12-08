@@ -1,0 +1,2101 @@
+### YamlMime:ManagedReference
+items:
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  commentId: T:JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  id: SearchObject.StringParameter
+  parent: JoshAaronMiller.INaturalist
+  children:
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.AccMax
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.AccMaxOrUnknown
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.AccMin
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ApplyProjectRules
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.Box
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.Category
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ConservationStatus
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ConservationStatusAuthority
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.CreatedEndDate
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.CreatedOn
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.CreatedStartDate
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.Day
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.EndDate
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeObservationTaxonId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeProjectId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeProjectRules
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeTaxonId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.Geoprivacy
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.HighestRank
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IconicTaxa
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IconicTaxonId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentificationAgreement
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentificationObservedEndDate
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentificationObservedStartDate
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentifiedByUserId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdMax
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdMin
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeObservationTaxonId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludePlaceId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeProjectId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeTaxonId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.IucnConservationStatus
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.Latitude
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.License
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.Longitude
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.LowestRank
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.Month
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.NortheastLatitudeBound
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.NortheastLongitudeBound
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationCreatedEndDate
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationCreatedStartDate
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationHighestRank
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationIconicTaxonId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationLowestRank
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationTaxonRank
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservedOn
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.OrderBy
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.Page
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.PerPage
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.PhotoLicense
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.QualityGrade
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.Query
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.Radius
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.Reviewed
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.ReviewerId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.SearchOnProperty
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.SortOrder
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.SoundLicense
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.SouthwestLatitudeBound
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.SouthwestLongitudeBound
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.StartDate
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.TaxonGeoprivacy
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.TaxonName
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.TaxonRank
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.TimeToLive
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.UnobservedByUser
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.UserId
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.UserLogin
+  - JoshAaronMiller.INaturalist.SearchObject.StringParameter.Year
+  langs:
+  - csharp
+  - vb
+  name: SearchObject.StringParameter
+  nameWithType: SearchObject.StringParameter
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  type: Enum
+  source:
+    id: StringParameter
+    path: ''
+    startLine: 3643
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: public enum StringParameter
+    content.vb: Public Enum StringParameter
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.AccMax
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.AccMax
+  id: AccMax
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: AccMax
+  nameWithType: SearchObject.StringParameter.AccMax
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.AccMax
+  type: Field
+  source:
+    id: AccMax
+    path: ''
+    startLine: 3645
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: AccMax = 0
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.AccMaxOrUnknown
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.AccMaxOrUnknown
+  id: AccMaxOrUnknown
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: AccMaxOrUnknown
+  nameWithType: SearchObject.StringParameter.AccMaxOrUnknown
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.AccMaxOrUnknown
+  type: Field
+  source:
+    id: AccMaxOrUnknown
+    path: ''
+    startLine: 3645
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: AccMaxOrUnknown = 1
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.AccMin
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.AccMin
+  id: AccMin
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: AccMin
+  nameWithType: SearchObject.StringParameter.AccMin
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.AccMin
+  type: Field
+  source:
+    id: AccMin
+    path: ''
+    startLine: 3645
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: AccMin = 2
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ApplyProjectRules
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ApplyProjectRules
+  id: ApplyProjectRules
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ApplyProjectRules
+  nameWithType: SearchObject.StringParameter.ApplyProjectRules
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ApplyProjectRules
+  type: Field
+  source:
+    id: ApplyProjectRules
+    path: ''
+    startLine: 3645
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ApplyProjectRules = 3
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Box
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.Box
+  id: Box
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: Box
+  nameWithType: SearchObject.StringParameter.Box
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Box
+  type: Field
+  source:
+    id: Box
+    path: ''
+    startLine: 3645
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Box = 4
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Category
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.Category
+  id: Category
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: Category
+  nameWithType: SearchObject.StringParameter.Category
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Category
+  type: Field
+  source:
+    id: Category
+    path: ''
+    startLine: 3645
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Category = 5
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ConservationStatus
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ConservationStatus
+  id: ConservationStatus
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ConservationStatus
+  nameWithType: SearchObject.StringParameter.ConservationStatus
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ConservationStatus
+  type: Field
+  source:
+    id: ConservationStatus
+    path: ''
+    startLine: 3645
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ConservationStatus = 6
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ConservationStatusAuthority
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ConservationStatusAuthority
+  id: ConservationStatusAuthority
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ConservationStatusAuthority
+  nameWithType: SearchObject.StringParameter.ConservationStatusAuthority
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ConservationStatusAuthority
+  type: Field
+  source:
+    id: ConservationStatusAuthority
+    path: ''
+    startLine: 3646
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ConservationStatusAuthority = 7
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.CreatedEndDate
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.CreatedEndDate
+  id: CreatedEndDate
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: CreatedEndDate
+  nameWithType: SearchObject.StringParameter.CreatedEndDate
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.CreatedEndDate
+  type: Field
+  source:
+    id: CreatedEndDate
+    path: ''
+    startLine: 3646
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: CreatedEndDate = 8
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.CreatedOn
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.CreatedOn
+  id: CreatedOn
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: CreatedOn
+  nameWithType: SearchObject.StringParameter.CreatedOn
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.CreatedOn
+  type: Field
+  source:
+    id: CreatedOn
+    path: ''
+    startLine: 3646
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: CreatedOn = 9
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.CreatedStartDate
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.CreatedStartDate
+  id: CreatedStartDate
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: CreatedStartDate
+  nameWithType: SearchObject.StringParameter.CreatedStartDate
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.CreatedStartDate
+  type: Field
+  source:
+    id: CreatedStartDate
+    path: ''
+    startLine: 3646
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: CreatedStartDate = 10
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Day
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.Day
+  id: Day
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: Day
+  nameWithType: SearchObject.StringParameter.Day
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Day
+  type: Field
+  source:
+    id: Day
+    path: ''
+    startLine: 3646
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Day = 11
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.EndDate
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.EndDate
+  id: EndDate
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: EndDate
+  nameWithType: SearchObject.StringParameter.EndDate
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.EndDate
+  type: Field
+  source:
+    id: EndDate
+    path: ''
+    startLine: 3646
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: EndDate = 12
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeId
+  id: ExcludeId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ExcludeId
+  nameWithType: SearchObject.StringParameter.ExcludeId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeId
+  type: Field
+  source:
+    id: ExcludeId
+    path: ''
+    startLine: 3647
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ExcludeId = 13
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeObservationTaxonId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeObservationTaxonId
+  id: ExcludeObservationTaxonId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ExcludeObservationTaxonId
+  nameWithType: SearchObject.StringParameter.ExcludeObservationTaxonId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeObservationTaxonId
+  type: Field
+  source:
+    id: ExcludeObservationTaxonId
+    path: ''
+    startLine: 3647
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ExcludeObservationTaxonId = 14
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeProjectId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeProjectId
+  id: ExcludeProjectId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ExcludeProjectId
+  nameWithType: SearchObject.StringParameter.ExcludeProjectId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeProjectId
+  type: Field
+  source:
+    id: ExcludeProjectId
+    path: ''
+    startLine: 3647
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ExcludeProjectId = 15
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeProjectRules
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeProjectRules
+  id: ExcludeProjectRules
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ExcludeProjectRules
+  nameWithType: SearchObject.StringParameter.ExcludeProjectRules
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeProjectRules
+  type: Field
+  source:
+    id: ExcludeProjectRules
+    path: ''
+    startLine: 3647
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ExcludeProjectRules = 16
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeTaxonId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeTaxonId
+  id: ExcludeTaxonId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ExcludeTaxonId
+  nameWithType: SearchObject.StringParameter.ExcludeTaxonId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ExcludeTaxonId
+  type: Field
+  source:
+    id: ExcludeTaxonId
+    path: ''
+    startLine: 3647
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ExcludeTaxonId = 17
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Geoprivacy
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.Geoprivacy
+  id: Geoprivacy
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: Geoprivacy
+  nameWithType: SearchObject.StringParameter.Geoprivacy
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Geoprivacy
+  type: Field
+  source:
+    id: Geoprivacy
+    path: ''
+    startLine: 3648
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Geoprivacy = 18
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.HighestRank
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.HighestRank
+  id: HighestRank
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: HighestRank
+  nameWithType: SearchObject.StringParameter.HighestRank
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.HighestRank
+  type: Field
+  source:
+    id: HighestRank
+    path: ''
+    startLine: 3648
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: HighestRank = 19
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IconicTaxa
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IconicTaxa
+  id: IconicTaxa
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IconicTaxa
+  nameWithType: SearchObject.StringParameter.IconicTaxa
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IconicTaxa
+  type: Field
+  source:
+    id: IconicTaxa
+    path: ''
+    startLine: 3648
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IconicTaxa = 20
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IconicTaxonId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IconicTaxonId
+  id: IconicTaxonId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IconicTaxonId
+  nameWithType: SearchObject.StringParameter.IconicTaxonId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IconicTaxonId
+  type: Field
+  source:
+    id: IconicTaxonId
+    path: ''
+    startLine: 3648
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IconicTaxonId = 21
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentificationObservedEndDate
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentificationObservedEndDate
+  id: IdentificationObservedEndDate
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IdentificationObservedEndDate
+  nameWithType: SearchObject.StringParameter.IdentificationObservedEndDate
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentificationObservedEndDate
+  type: Field
+  source:
+    id: IdentificationObservedEndDate
+    path: ''
+    startLine: 3648
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IdentificationObservedEndDate = 22
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentificationObservedStartDate
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentificationObservedStartDate
+  id: IdentificationObservedStartDate
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IdentificationObservedStartDate
+  nameWithType: SearchObject.StringParameter.IdentificationObservedStartDate
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentificationObservedStartDate
+  type: Field
+  source:
+    id: IdentificationObservedStartDate
+    path: ''
+    startLine: 3648
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IdentificationObservedStartDate = 23
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdMax
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdMax
+  id: IdMax
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IdMax
+  nameWithType: SearchObject.StringParameter.IdMax
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdMax
+  type: Field
+  source:
+    id: IdMax
+    path: ''
+    startLine: 3649
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IdMax = 24
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdMin
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdMin
+  id: IdMin
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IdMin
+  nameWithType: SearchObject.StringParameter.IdMin
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdMin
+  type: Field
+  source:
+    id: IdMin
+    path: ''
+    startLine: 3649
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IdMin = 25
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentificationAgreement
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentificationAgreement
+  id: IdentificationAgreement
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IdentificationAgreement
+  nameWithType: SearchObject.StringParameter.IdentificationAgreement
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentificationAgreement
+  type: Field
+  source:
+    id: IdentificationAgreement
+    path: ''
+    startLine: 3649
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IdentificationAgreement = 26
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentifiedByUserId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentifiedByUserId
+  id: IdentifiedByUserId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IdentifiedByUserId
+  nameWithType: SearchObject.StringParameter.IdentifiedByUserId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IdentifiedByUserId
+  type: Field
+  source:
+    id: IdentifiedByUserId
+    path: ''
+    startLine: 3649
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IdentifiedByUserId = 27
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeId
+  id: IncludeId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IncludeId
+  nameWithType: SearchObject.StringParameter.IncludeId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeId
+  type: Field
+  source:
+    id: IncludeId
+    path: ''
+    startLine: 3649
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IncludeId = 28
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeObservationTaxonId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeObservationTaxonId
+  id: IncludeObservationTaxonId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IncludeObservationTaxonId
+  nameWithType: SearchObject.StringParameter.IncludeObservationTaxonId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeObservationTaxonId
+  type: Field
+  source:
+    id: IncludeObservationTaxonId
+    path: ''
+    startLine: 3649
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IncludeObservationTaxonId = 29
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludePlaceId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludePlaceId
+  id: IncludePlaceId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IncludePlaceId
+  nameWithType: SearchObject.StringParameter.IncludePlaceId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludePlaceId
+  type: Field
+  source:
+    id: IncludePlaceId
+    path: ''
+    startLine: 3650
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IncludePlaceId = 30
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeProjectId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeProjectId
+  id: IncludeProjectId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IncludeProjectId
+  nameWithType: SearchObject.StringParameter.IncludeProjectId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeProjectId
+  type: Field
+  source:
+    id: IncludeProjectId
+    path: ''
+    startLine: 3650
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IncludeProjectId = 31
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeTaxonId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeTaxonId
+  id: IncludeTaxonId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IncludeTaxonId
+  nameWithType: SearchObject.StringParameter.IncludeTaxonId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IncludeTaxonId
+  type: Field
+  source:
+    id: IncludeTaxonId
+    path: ''
+    startLine: 3650
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IncludeTaxonId = 32
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IucnConservationStatus
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.IucnConservationStatus
+  id: IucnConservationStatus
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: IucnConservationStatus
+  nameWithType: SearchObject.StringParameter.IucnConservationStatus
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.IucnConservationStatus
+  type: Field
+  source:
+    id: IucnConservationStatus
+    path: ''
+    startLine: 3650
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: IucnConservationStatus = 33
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Latitude
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.Latitude
+  id: Latitude
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: Latitude
+  nameWithType: SearchObject.StringParameter.Latitude
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Latitude
+  type: Field
+  source:
+    id: Latitude
+    path: ''
+    startLine: 3650
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Latitude = 34
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.License
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.License
+  id: License
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: License
+  nameWithType: SearchObject.StringParameter.License
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.License
+  type: Field
+  source:
+    id: License
+    path: ''
+    startLine: 3650
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: License = 35
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Longitude
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.Longitude
+  id: Longitude
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: Longitude
+  nameWithType: SearchObject.StringParameter.Longitude
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Longitude
+  type: Field
+  source:
+    id: Longitude
+    path: ''
+    startLine: 3651
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Longitude = 36
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.LowestRank
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.LowestRank
+  id: LowestRank
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: LowestRank
+  nameWithType: SearchObject.StringParameter.LowestRank
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.LowestRank
+  type: Field
+  source:
+    id: LowestRank
+    path: ''
+    startLine: 3651
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: LowestRank = 37
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Month
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.Month
+  id: Month
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: Month
+  nameWithType: SearchObject.StringParameter.Month
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Month
+  type: Field
+  source:
+    id: Month
+    path: ''
+    startLine: 3651
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Month = 38
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.NortheastLatitudeBound
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.NortheastLatitudeBound
+  id: NortheastLatitudeBound
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: NortheastLatitudeBound
+  nameWithType: SearchObject.StringParameter.NortheastLatitudeBound
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.NortheastLatitudeBound
+  type: Field
+  source:
+    id: NortheastLatitudeBound
+    path: ''
+    startLine: 3651
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: NortheastLatitudeBound = 39
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.NortheastLongitudeBound
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.NortheastLongitudeBound
+  id: NortheastLongitudeBound
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: NortheastLongitudeBound
+  nameWithType: SearchObject.StringParameter.NortheastLongitudeBound
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.NortheastLongitudeBound
+  type: Field
+  source:
+    id: NortheastLongitudeBound
+    path: ''
+    startLine: 3651
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: NortheastLongitudeBound = 40
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationCreatedEndDate
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationCreatedEndDate
+  id: ObservationCreatedEndDate
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ObservationCreatedEndDate
+  nameWithType: SearchObject.StringParameter.ObservationCreatedEndDate
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationCreatedEndDate
+  type: Field
+  source:
+    id: ObservationCreatedEndDate
+    path: ''
+    startLine: 3652
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ObservationCreatedEndDate = 41
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationCreatedStartDate
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationCreatedStartDate
+  id: ObservationCreatedStartDate
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ObservationCreatedStartDate
+  nameWithType: SearchObject.StringParameter.ObservationCreatedStartDate
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationCreatedStartDate
+  type: Field
+  source:
+    id: ObservationCreatedStartDate
+    path: ''
+    startLine: 3652
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ObservationCreatedStartDate = 42
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationHighestRank
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationHighestRank
+  id: ObservationHighestRank
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ObservationHighestRank
+  nameWithType: SearchObject.StringParameter.ObservationHighestRank
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationHighestRank
+  type: Field
+  source:
+    id: ObservationHighestRank
+    path: ''
+    startLine: 3652
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ObservationHighestRank = 43
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationIconicTaxonId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationIconicTaxonId
+  id: ObservationIconicTaxonId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ObservationIconicTaxonId
+  nameWithType: SearchObject.StringParameter.ObservationIconicTaxonId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationIconicTaxonId
+  type: Field
+  source:
+    id: ObservationIconicTaxonId
+    path: ''
+    startLine: 3652
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ObservationIconicTaxonId = 44
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationLowestRank
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationLowestRank
+  id: ObservationLowestRank
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ObservationLowestRank
+  nameWithType: SearchObject.StringParameter.ObservationLowestRank
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationLowestRank
+  type: Field
+  source:
+    id: ObservationLowestRank
+    path: ''
+    startLine: 3653
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ObservationLowestRank = 45
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationTaxonRank
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationTaxonRank
+  id: ObservationTaxonRank
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ObservationTaxonRank
+  nameWithType: SearchObject.StringParameter.ObservationTaxonRank
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservationTaxonRank
+  type: Field
+  source:
+    id: ObservationTaxonRank
+    path: ''
+    startLine: 3653
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ObservationTaxonRank = 46
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservedOn
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservedOn
+  id: ObservedOn
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ObservedOn
+  nameWithType: SearchObject.StringParameter.ObservedOn
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ObservedOn
+  type: Field
+  source:
+    id: ObservedOn
+    path: ''
+    startLine: 3653
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ObservedOn = 47
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.OrderBy
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.OrderBy
+  id: OrderBy
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: OrderBy
+  nameWithType: SearchObject.StringParameter.OrderBy
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.OrderBy
+  type: Field
+  source:
+    id: OrderBy
+    path: ''
+    startLine: 3653
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: OrderBy = 48
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Page
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.Page
+  id: Page
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: Page
+  nameWithType: SearchObject.StringParameter.Page
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Page
+  type: Field
+  source:
+    id: Page
+    path: ''
+    startLine: 3653
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Page = 49
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.PerPage
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.PerPage
+  id: PerPage
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: PerPage
+  nameWithType: SearchObject.StringParameter.PerPage
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.PerPage
+  type: Field
+  source:
+    id: PerPage
+    path: ''
+    startLine: 3653
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: PerPage = 50
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.PhotoLicense
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.PhotoLicense
+  id: PhotoLicense
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: PhotoLicense
+  nameWithType: SearchObject.StringParameter.PhotoLicense
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.PhotoLicense
+  type: Field
+  source:
+    id: PhotoLicense
+    path: ''
+    startLine: 3653
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: PhotoLicense = 51
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.QualityGrade
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.QualityGrade
+  id: QualityGrade
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: QualityGrade
+  nameWithType: SearchObject.StringParameter.QualityGrade
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.QualityGrade
+  type: Field
+  source:
+    id: QualityGrade
+    path: ''
+    startLine: 3653
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: QualityGrade = 52
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Query
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.Query
+  id: Query
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: Query
+  nameWithType: SearchObject.StringParameter.Query
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Query
+  type: Field
+  source:
+    id: Query
+    path: ''
+    startLine: 3654
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Query = 53
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Radius
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.Radius
+  id: Radius
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: Radius
+  nameWithType: SearchObject.StringParameter.Radius
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Radius
+  type: Field
+  source:
+    id: Radius
+    path: ''
+    startLine: 3654
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Radius = 54
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Reviewed
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.Reviewed
+  id: Reviewed
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: Reviewed
+  nameWithType: SearchObject.StringParameter.Reviewed
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Reviewed
+  type: Field
+  source:
+    id: Reviewed
+    path: ''
+    startLine: 3654
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Reviewed = 55
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ReviewerId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.ReviewerId
+  id: ReviewerId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: ReviewerId
+  nameWithType: SearchObject.StringParameter.ReviewerId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.ReviewerId
+  type: Field
+  source:
+    id: ReviewerId
+    path: ''
+    startLine: 3654
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: ReviewerId = 56
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.SearchOnProperty
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.SearchOnProperty
+  id: SearchOnProperty
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: SearchOnProperty
+  nameWithType: SearchObject.StringParameter.SearchOnProperty
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.SearchOnProperty
+  type: Field
+  source:
+    id: SearchOnProperty
+    path: ''
+    startLine: 3654
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: SearchOnProperty = 57
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.SortOrder
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.SortOrder
+  id: SortOrder
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: SortOrder
+  nameWithType: SearchObject.StringParameter.SortOrder
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.SortOrder
+  type: Field
+  source:
+    id: SortOrder
+    path: ''
+    startLine: 3654
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: SortOrder = 58
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.SoundLicense
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.SoundLicense
+  id: SoundLicense
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: SoundLicense
+  nameWithType: SearchObject.StringParameter.SoundLicense
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.SoundLicense
+  type: Field
+  source:
+    id: SoundLicense
+    path: ''
+    startLine: 3654
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: SoundLicense = 59
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.SouthwestLatitudeBound
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.SouthwestLatitudeBound
+  id: SouthwestLatitudeBound
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: SouthwestLatitudeBound
+  nameWithType: SearchObject.StringParameter.SouthwestLatitudeBound
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.SouthwestLatitudeBound
+  type: Field
+  source:
+    id: SouthwestLatitudeBound
+    path: ''
+    startLine: 3654
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: SouthwestLatitudeBound = 60
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.SouthwestLongitudeBound
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.SouthwestLongitudeBound
+  id: SouthwestLongitudeBound
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: SouthwestLongitudeBound
+  nameWithType: SearchObject.StringParameter.SouthwestLongitudeBound
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.SouthwestLongitudeBound
+  type: Field
+  source:
+    id: SouthwestLongitudeBound
+    path: ''
+    startLine: 3655
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: SouthwestLongitudeBound = 61
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.StartDate
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.StartDate
+  id: StartDate
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: StartDate
+  nameWithType: SearchObject.StringParameter.StartDate
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.StartDate
+  type: Field
+  source:
+    id: StartDate
+    path: ''
+    startLine: 3655
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: StartDate = 62
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.TaxonGeoprivacy
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.TaxonGeoprivacy
+  id: TaxonGeoprivacy
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: TaxonGeoprivacy
+  nameWithType: SearchObject.StringParameter.TaxonGeoprivacy
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.TaxonGeoprivacy
+  type: Field
+  source:
+    id: TaxonGeoprivacy
+    path: ''
+    startLine: 3655
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: TaxonGeoprivacy = 63
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.TaxonName
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.TaxonName
+  id: TaxonName
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: TaxonName
+  nameWithType: SearchObject.StringParameter.TaxonName
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.TaxonName
+  type: Field
+  source:
+    id: TaxonName
+    path: ''
+    startLine: 3655
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: TaxonName = 64
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.TaxonRank
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.TaxonRank
+  id: TaxonRank
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: TaxonRank
+  nameWithType: SearchObject.StringParameter.TaxonRank
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.TaxonRank
+  type: Field
+  source:
+    id: TaxonRank
+    path: ''
+    startLine: 3655
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: TaxonRank = 65
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.TimeToLive
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.TimeToLive
+  id: TimeToLive
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: TimeToLive
+  nameWithType: SearchObject.StringParameter.TimeToLive
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.TimeToLive
+  type: Field
+  source:
+    id: TimeToLive
+    path: ''
+    startLine: 3655
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: TimeToLive = 66
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.UnobservedByUser
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.UnobservedByUser
+  id: UnobservedByUser
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: UnobservedByUser
+  nameWithType: SearchObject.StringParameter.UnobservedByUser
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.UnobservedByUser
+  type: Field
+  source:
+    id: UnobservedByUser
+    path: ''
+    startLine: 3655
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: UnobservedByUser = 67
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.UserId
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.UserId
+  id: UserId
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: SearchObject.StringParameter.UserId
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.UserId
+  type: Field
+  source:
+    id: UserId
+    path: ''
+    startLine: 3656
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: UserId = 68
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.UserLogin
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.UserLogin
+  id: UserLogin
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: UserLogin
+  nameWithType: SearchObject.StringParameter.UserLogin
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.UserLogin
+  type: Field
+  source:
+    id: UserLogin
+    path: ''
+    startLine: 3656
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: UserLogin = 69
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Year
+  commentId: F:JoshAaronMiller.INaturalist.SearchObject.StringParameter.Year
+  id: Year
+  parent: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  langs:
+  - csharp
+  - vb
+  name: Year
+  nameWithType: SearchObject.StringParameter.Year
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter.Year
+  type: Field
+  source:
+    id: Year
+    path: ''
+    startLine: 3656
+  assemblies:
+  - cs.temp.dll
+  namespace: JoshAaronMiller.INaturalist
+  syntax:
+    content: Year = 70
+    return:
+      type: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JoshAaronMiller.INaturalist
+  commentId: N:JoshAaronMiller.INaturalist
+  name: JoshAaronMiller.INaturalist
+  nameWithType: JoshAaronMiller.INaturalist
+  fullName: JoshAaronMiller.INaturalist
+- uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  commentId: T:JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  parent: JoshAaronMiller.INaturalist
+  name: SearchObject.StringParameter
+  nameWithType: SearchObject.StringParameter
+  fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter

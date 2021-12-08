@@ -23,7 +23,7 @@ items:
   source:
     id: IucnConservationStatus
     path: ''
-    startLine: 3000
+    startLine: 2956
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -50,7 +50,7 @@ items:
   source:
     id: None
     path: ''
-    startLine: 3002
+    startLine: 2958
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -78,7 +78,7 @@ items:
   source:
     id: Lc
     path: ''
-    startLine: 3002
+    startLine: 2958
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -106,7 +106,7 @@ items:
   source:
     id: Nt
     path: ''
-    startLine: 3002
+    startLine: 2958
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -134,7 +134,7 @@ items:
   source:
     id: Vu
     path: ''
-    startLine: 3002
+    startLine: 2958
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -162,7 +162,7 @@ items:
   source:
     id: En
     path: ''
-    startLine: 3002
+    startLine: 2958
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -190,7 +190,7 @@ items:
   source:
     id: Cr
     path: ''
-    startLine: 3002
+    startLine: 2958
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -218,7 +218,7 @@ items:
   source:
     id: Ew
     path: ''
-    startLine: 3002
+    startLine: 2958
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -246,7 +246,7 @@ items:
   source:
     id: Ex
     path: ''
-    startLine: 3002
+    startLine: 2958
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

@@ -28,7 +28,7 @@ items:
   source:
     id: UserMessage
     path: ''
-    startLine: 2504
+    startLine: 2511
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -72,7 +72,7 @@ items:
   source:
     id: id
     path: ''
-    startLine: 2507
+    startLine: 2514
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -99,7 +99,7 @@ items:
   source:
     id: user_id
     path: ''
-    startLine: 2508
+    startLine: 2515
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -126,7 +126,7 @@ items:
   source:
     id: thread_id
     path: ''
-    startLine: 2509
+    startLine: 2516
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -153,7 +153,7 @@ items:
   source:
     id: subject
     path: ''
-    startLine: 2510
+    startLine: 2517
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -180,7 +180,7 @@ items:
   source:
     id: body
     path: ''
-    startLine: 2511
+    startLine: 2518
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -207,7 +207,7 @@ items:
   source:
     id: thread_messages_count
     path: ''
-    startLine: 2512
+    startLine: 2519
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -234,7 +234,7 @@ items:
   source:
     id: read_at
     path: ''
-    startLine: 2513
+    startLine: 2520
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -261,7 +261,7 @@ items:
   source:
     id: created_at
     path: ''
-    startLine: 2514
+    startLine: 2521
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -288,7 +288,7 @@ items:
   source:
     id: updated_at
     path: ''
-    startLine: 2515
+    startLine: 2522
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -315,7 +315,7 @@ items:
   source:
     id: from_user
     path: ''
-    startLine: 2516
+    startLine: 2523
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -342,7 +342,7 @@ items:
   source:
     id: to_user
     path: ''
-    startLine: 2517
+    startLine: 2524
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -369,7 +369,7 @@ items:
   source:
     id: thread_flags
     path: ''
-    startLine: 2518
+    startLine: 2525
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -396,7 +396,7 @@ items:
   source:
     id: flaggable_message_id
     path: ''
-    startLine: 2519
+    startLine: 2526
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist

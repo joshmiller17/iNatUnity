@@ -6,7 +6,6 @@ items:
   parent: JoshAaronMiller.INaturalist
   children:
   - JoshAaronMiller.INaturalist.ObservationSearch.ApplyProjectRulesFor(System.Int32)
-  - JoshAaronMiller.INaturalist.ObservationSearch.BoolParamToString
   - JoshAaronMiller.INaturalist.ObservationSearch.ExcludeIds(System.Collections.Generic.List{System.Int32})
   - JoshAaronMiller.INaturalist.ObservationSearch.ExcludeProjectId(System.Int32)
   - JoshAaronMiller.INaturalist.ObservationSearch.ExcludeProjectRulesFor(System.Int32)
@@ -31,7 +30,6 @@ items:
   - JoshAaronMiller.INaturalist.ObservationSearch.SearchOnProperties(JoshAaronMiller.INaturalist.ObservationSearch.SearchProperty,System.String)
   - JoshAaronMiller.INaturalist.ObservationSearch.SetAccuracyMaximum(System.Int32,System.Boolean)
   - JoshAaronMiller.INaturalist.ObservationSearch.SetAccuracyMinimum(System.Int32)
-  - JoshAaronMiller.INaturalist.ObservationSearch.SetBooleanParameter(JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter,System.Boolean)
   - JoshAaronMiller.INaturalist.ObservationSearch.SetBoundingBox(System.Double,System.Double,System.Double,System.Double)
   - JoshAaronMiller.INaturalist.ObservationSearch.SetBoundingCircle(System.Double,System.Double,System.Double)
   - JoshAaronMiller.INaturalist.ObservationSearch.SetCacheControl(System.Int32)
@@ -70,7 +68,7 @@ items:
   source:
     id: ObservationSearch
     path: ''
-    startLine: 2951
+    startLine: 2937
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -87,7 +85,10 @@ items:
   inheritedMembers:
   - JoshAaronMiller.INaturalist.SearchObject.boolParams
   - JoshAaronMiller.INaturalist.SearchObject.stringParams
-  - JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  - JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter,System.Boolean)
+  - JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter)
+  - JoshAaronMiller.INaturalist.SearchObject.SetStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter,System.String)
+  - JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter)
   - JoshAaronMiller.INaturalist.SearchObject.ToUrlParameters
   modifiers.csharp:
   - public
@@ -95,35 +96,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: JoshAaronMiller.INaturalist.ObservationSearch.BoolParamToString
-  commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.BoolParamToString
-  id: BoolParamToString
-  parent: JoshAaronMiller.INaturalist.ObservationSearch
-  langs:
-  - csharp
-  - vb
-  name: BoolParamToString
-  nameWithType: ObservationSearch.BoolParamToString
-  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BoolParamToString
-  type: Field
-  source:
-    id: BoolParamToString
-    path: ''
-    startLine: 2961
-  assemblies:
-  - cs.temp.dll
-  namespace: JoshAaronMiller.INaturalist
-  syntax:
-    content: public static Dictionary<ObservationSearch.BooleanParameter, string> BoolParamToString
-    return:
-      type: System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter,System.String}
-    content.vb: Public Shared BoolParamToString As Dictionary(Of ObservationSearch.BooleanParameter, String)
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
 - uid: JoshAaronMiller.INaturalist.ObservationSearch.LicenseToString
   commentId: F:JoshAaronMiller.INaturalist.ObservationSearch.LicenseToString
   id: LicenseToString
@@ -138,7 +110,7 @@ items:
   source:
     id: LicenseToString
     path: ''
-    startLine: 2989
+    startLine: 2945
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -167,7 +139,7 @@ items:
   source:
     id: GeoprivacyToString
     path: ''
-    startLine: 3010
+    startLine: 2966
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -196,7 +168,7 @@ items:
   source:
     id: IdentAgreementToString
     path: ''
-    startLine: 3029
+    startLine: 2985
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -211,37 +183,6 @@ items:
   modifiers.vb:
   - Public
   - Shared
-- uid: JoshAaronMiller.INaturalist.ObservationSearch.SetBooleanParameter(JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter,System.Boolean)
-  commentId: M:JoshAaronMiller.INaturalist.ObservationSearch.SetBooleanParameter(JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter,System.Boolean)
-  id: SetBooleanParameter(JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter,System.Boolean)
-  parent: JoshAaronMiller.INaturalist.ObservationSearch
-  langs:
-  - csharp
-  - vb
-  name: SetBooleanParameter(ObservationSearch.BooleanParameter, Boolean)
-  nameWithType: ObservationSearch.SetBooleanParameter(ObservationSearch.BooleanParameter, Boolean)
-  fullName: JoshAaronMiller.INaturalist.ObservationSearch.SetBooleanParameter(JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter, System.Boolean)
-  type: Method
-  source:
-    id: SetBooleanParameter
-    path: ''
-    startLine: 3042
-  assemblies:
-  - cs.temp.dll
-  namespace: JoshAaronMiller.INaturalist
-  syntax:
-    content: public void SetBooleanParameter(ObservationSearch.BooleanParameter param, bool setting)
-    parameters:
-    - id: param
-      type: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
-    - id: setting
-      type: System.Boolean
-    content.vb: Public Sub SetBooleanParameter(param As ObservationSearch.BooleanParameter, setting As Boolean)
-  overload: JoshAaronMiller.INaturalist.ObservationSearch.SetBooleanParameter*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: JoshAaronMiller.INaturalist.ObservationSearch.IncludeIds(System.Collections.Generic.List{System.Int32})
   commentId: M:JoshAaronMiller.INaturalist.ObservationSearch.IncludeIds(System.Collections.Generic.List{System.Int32})
   id: IncludeIds(System.Collections.Generic.List{System.Int32})
@@ -256,7 +197,7 @@ items:
   source:
     id: IncludeIds
     path: ''
-    startLine: 3052
+    startLine: 3002
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -291,7 +232,7 @@ items:
   source:
     id: ExcludeIds
     path: ''
-    startLine: 3061
+    startLine: 3011
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -326,7 +267,7 @@ items:
   source:
     id: SetLicense
     path: ''
-    startLine: 3070
+    startLine: 3020
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -358,7 +299,7 @@ items:
   source:
     id: SetOfvDataType
     path: ''
-    startLine: 3082
+    startLine: 3032
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -384,7 +325,7 @@ items:
   source:
     id: SetPhotoLicense
     path: ''
-    startLine: 3091
+    startLine: 3041
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -416,7 +357,7 @@ items:
   source:
     id: IncludePlaceIds
     path: ''
-    startLine: 3107
+    startLine: 3057
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -451,7 +392,7 @@ items:
   source:
     id: IncludeProjectIds
     path: ''
-    startLine: 3116
+    startLine: 3066
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -486,7 +427,7 @@ items:
   source:
     id: SetTaxonRank
     path: ''
-    startLine: 3125
+    startLine: 3075
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -518,7 +459,7 @@ items:
   source:
     id: SetSiteId
     path: ''
-    startLine: 3137
+    startLine: 3087
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -544,7 +485,7 @@ items:
   source:
     id: SetSoundLicense
     path: ''
-    startLine: 3146
+    startLine: 3096
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -576,7 +517,7 @@ items:
   source:
     id: IncludeTaxonIds
     path: ''
-    startLine: 3162
+    startLine: 3112
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -611,7 +552,7 @@ items:
   source:
     id: ExcludeTaxonIds
     path: ''
-    startLine: 3171
+    startLine: 3121
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -646,7 +587,7 @@ items:
   source:
     id: IncludeTaxonNames
     path: ''
-    startLine: 3180
+    startLine: 3130
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -681,7 +622,7 @@ items:
   source:
     id: IncludeUserIds
     path: ''
-    startLine: 3185
+    startLine: 3135
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -707,7 +648,7 @@ items:
   source:
     id: IncludeUserLogins
     path: ''
-    startLine: 3190
+    startLine: 3140
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -733,7 +674,7 @@ items:
   source:
     id: SetIdentifiedByUserId
     path: ''
-    startLine: 3199
+    startLine: 3149
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -765,7 +706,7 @@ items:
   source:
     id: IncludeDays
     path: ''
-    startLine: 3208
+    startLine: 3158
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -800,7 +741,7 @@ items:
   source:
     id: IncludeMonths
     path: ''
-    startLine: 3217
+    startLine: 3167
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -835,7 +776,7 @@ items:
   source:
     id: IncludeYears
     path: ''
-    startLine: 3226
+    startLine: 3176
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -870,7 +811,7 @@ items:
   source:
     id: IncludeTermIds
     path: ''
-    startLine: 3231
+    startLine: 3181
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -896,7 +837,7 @@ items:
   source:
     id: IncludeTermValueIds
     path: ''
-    startLine: 3236
+    startLine: 3186
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -922,7 +863,7 @@ items:
   source:
     id: SetAccuracyMinimum
     path: ''
-    startLine: 3245
+    startLine: 3195
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -954,7 +895,7 @@ items:
   source:
     id: SetAccuracyMaximum
     path: ''
-    startLine: 3255
+    startLine: 3205
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -989,7 +930,7 @@ items:
   source:
     id: SetObservedOnDateLimits
     path: ''
-    startLine: 3272
+    startLine: 3222
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1024,7 +965,7 @@ items:
   source:
     id: SetCreatedOnDateTimeLimits
     path: ''
-    startLine: 3296
+    startLine: 3246
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1059,7 +1000,7 @@ items:
   source:
     id: SetUnobservedByUserId
     path: ''
-    startLine: 3319
+    startLine: 3269
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1091,7 +1032,7 @@ items:
   source:
     id: ApplyProjectRulesFor
     path: ''
-    startLine: 3328
+    startLine: 3278
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1123,7 +1064,7 @@ items:
   source:
     id: SetConservationStatusCode
     path: ''
-    startLine: 3337
+    startLine: 3287
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1155,7 +1096,7 @@ items:
   source:
     id: SetConservationStatusAuthority
     path: ''
-    startLine: 3346
+    startLine: 3296
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1187,7 +1128,7 @@ items:
   source:
     id: IncludeIUCNConservationStatuses
     path: ''
-    startLine: 3355
+    startLine: 3305
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1221,7 +1162,7 @@ items:
   source:
     id: SetGeoprivacy
     path: ''
-    startLine: 3376
+    startLine: 3326
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1255,7 +1196,7 @@ items:
   source:
     id: IncludeTaxonGeoprivacy
     path: ''
-    startLine: 3397
+    startLine: 3347
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1290,7 +1231,7 @@ items:
   source:
     id: SetTaxonRankLimits
     path: ''
-    startLine: 3419
+    startLine: 3369
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1325,7 +1266,7 @@ items:
   source:
     id: SetIconicTaxa
     path: ''
-    startLine: 3444
+    startLine: 3394
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1360,7 +1301,7 @@ items:
   source:
     id: SetObservationIdLimits
     path: ''
-    startLine: 3474
+    startLine: 3424
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1395,7 +1336,7 @@ items:
   source:
     id: SetIdentificationAgreement
     path: ''
-    startLine: 3486
+    startLine: 3436
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1424,7 +1365,7 @@ items:
   source:
     id: SetBoundingCircle
     path: ''
-    startLine: 3504
+    startLine: 3454
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1462,7 +1403,7 @@ items:
   source:
     id: SetBoundingBox
     path: ''
-    startLine: 3518
+    startLine: 3468
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1503,7 +1444,7 @@ items:
   source:
     id: SetListId
     path: ''
-    startLine: 3527
+    startLine: 3477
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1529,7 +1470,7 @@ items:
   source:
     id: ExcludeProjectId
     path: ''
-    startLine: 3537
+    startLine: 3487
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1561,7 +1502,7 @@ items:
   source:
     id: ExcludeProjectRulesFor
     path: ''
-    startLine: 3546
+    startLine: 3496
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1593,7 +1534,7 @@ items:
   source:
     id: SearchOnProperties
     path: ''
-    startLine: 3557
+    startLine: 3507
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1628,7 +1569,7 @@ items:
   source:
     id: SetQualityGrade
     path: ''
-    startLine: 3570
+    startLine: 3520
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1660,7 +1601,7 @@ items:
   source:
     id: SetUpdatedSince
     path: ''
-    startLine: 3582
+    startLine: 3532
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1686,7 +1627,7 @@ items:
   source:
     id: SetReviewedByUser
     path: ''
-    startLine: 3592
+    startLine: 3542
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1721,7 +1662,7 @@ items:
   source:
     id: SetLocalePreference
     path: ''
-    startLine: 3598
+    startLine: 3548
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1747,7 +1688,7 @@ items:
   source:
     id: SetPreferredPlaceId
     path: ''
-    startLine: 3603
+    startLine: 3553
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1773,7 +1714,7 @@ items:
   source:
     id: SetCacheControl
     path: ''
-    startLine: 3612
+    startLine: 3562
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1805,7 +1746,7 @@ items:
   source:
     id: SetPagination
     path: ''
-    startLine: 3622
+    startLine: 3572
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1840,7 +1781,7 @@ items:
   source:
     id: SetOrder
     path: ''
-    startLine: 3633
+    startLine: 3583
   assemblies:
   - cs.temp.dll
   namespace: JoshAaronMiller.INaturalist
@@ -1892,21 +1833,117 @@ references:
   name: stringParams
   nameWithType: SearchObject.stringParams
   fullName: JoshAaronMiller.INaturalist.SearchObject.stringParams
-- uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
-  commentId: M:JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+- uid: JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter,System.Boolean)
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter,System.Boolean)
   parent: JoshAaronMiller.INaturalist.SearchObject
   isExternal: true
-  name: RemoveStringParameter(String)
-  nameWithType: SearchObject.RemoveStringParameter(String)
-  fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  name: SetBooleanParameter(SearchObject.BooleanParameter, Boolean)
+  nameWithType: SearchObject.SetBooleanParameter(SearchObject.BooleanParameter, Boolean)
+  fullName: JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter, System.Boolean)
   spec.csharp:
-  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
-    name: RemoveStringParameter
-    nameWithType: SearchObject.RemoveStringParameter
-    fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
+  - uid: JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter,System.Boolean)
+    name: SetBooleanParameter
+    nameWithType: SearchObject.SetBooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter
   - name: (
     nameWithType: (
     fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+    name: SearchObject.BooleanParameter
+    nameWithType: SearchObject.BooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter,System.Boolean)
+    name: SetBooleanParameter
+    nameWithType: SearchObject.SetBooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.SetBooleanParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+    name: SearchObject.BooleanParameter
+    nameWithType: SearchObject.BooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter)
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter)
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  name: RemoveBooleanParameter(SearchObject.BooleanParameter)
+  nameWithType: SearchObject.RemoveBooleanParameter(SearchObject.BooleanParameter)
+  fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter)
+    name: RemoveBooleanParameter
+    nameWithType: SearchObject.RemoveBooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+    name: SearchObject.BooleanParameter
+    nameWithType: SearchObject.BooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter(JoshAaronMiller.INaturalist.SearchObject.BooleanParameter)
+    name: RemoveBooleanParameter
+    nameWithType: SearchObject.RemoveBooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveBooleanParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+    name: SearchObject.BooleanParameter
+    nameWithType: SearchObject.BooleanParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.BooleanParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.SearchObject.SetStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter,System.String)
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.SetStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter,System.String)
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  isExternal: true
+  name: SetStringParameter(SearchObject.StringParameter, String)
+  nameWithType: SearchObject.SetStringParameter(SearchObject.StringParameter, String)
+  fullName: JoshAaronMiller.INaturalist.SearchObject.SetStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter, System.String)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.SetStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter,System.String)
+    name: SetStringParameter
+    nameWithType: SearchObject.SetStringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.SetStringParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+    name: SearchObject.StringParameter
+    nameWithType: SearchObject.StringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
   - uid: System.String
     name: String
     nameWithType: String
@@ -1916,18 +1953,61 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(System.String)
+  - uid: JoshAaronMiller.INaturalist.SearchObject.SetStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter,System.String)
+    name: SetStringParameter
+    nameWithType: SearchObject.SetStringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.SetStringParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+    name: SearchObject.StringParameter
+    nameWithType: SearchObject.StringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter)
+  commentId: M:JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter)
+  parent: JoshAaronMiller.INaturalist.SearchObject
+  name: RemoveStringParameter(SearchObject.StringParameter)
+  nameWithType: SearchObject.RemoveStringParameter(SearchObject.StringParameter)
+  fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter)
+  spec.csharp:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter)
     name: RemoveStringParameter
     nameWithType: SearchObject.RemoveStringParameter
     fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
+  - uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+    name: SearchObject.StringParameter
+    nameWithType: SearchObject.StringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter(JoshAaronMiller.INaturalist.SearchObject.StringParameter)
+    name: RemoveStringParameter
+    nameWithType: SearchObject.RemoveStringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.RemoveStringParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JoshAaronMiller.INaturalist.SearchObject.StringParameter
+    name: SearchObject.StringParameter
+    nameWithType: SearchObject.StringParameter
+    fullName: JoshAaronMiller.INaturalist.SearchObject.StringParameter
   - name: )
     nameWithType: )
     fullName: )
@@ -1965,16 +2045,16 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter,System.String}
-  commentId: T:System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter,System.String}
+- uid: System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.ObservationSearch.License,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.ObservationSearch.License,System.String}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.Dictionary`2
-  name: Dictionary<ObservationSearch.BooleanParameter, String>
-  nameWithType: Dictionary<ObservationSearch.BooleanParameter, String>
-  fullName: System.Collections.Generic.Dictionary<JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter, System.String>
-  nameWithType.vb: Dictionary(Of ObservationSearch.BooleanParameter, String)
-  fullName.vb: System.Collections.Generic.Dictionary(Of JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter, System.String)
-  name.vb: Dictionary(Of ObservationSearch.BooleanParameter, String)
+  name: Dictionary<ObservationSearch.License, String>
+  nameWithType: Dictionary<ObservationSearch.License, String>
+  fullName: System.Collections.Generic.Dictionary<JoshAaronMiller.INaturalist.ObservationSearch.License, System.String>
+  nameWithType.vb: Dictionary(Of ObservationSearch.License, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of JoshAaronMiller.INaturalist.ObservationSearch.License, System.String)
+  name.vb: Dictionary(Of ObservationSearch.License, String)
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2
     name: Dictionary
@@ -1984,10 +2064,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
-    name: ObservationSearch.BooleanParameter
-    nameWithType: ObservationSearch.BooleanParameter
-    fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  - uid: JoshAaronMiller.INaturalist.ObservationSearch.License
+    name: ObservationSearch.License
+    nameWithType: ObservationSearch.License
+    fullName: JoshAaronMiller.INaturalist.ObservationSearch.License
   - name: ', '
     nameWithType: ', '
     fullName: ', '
@@ -2008,10 +2088,10 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
-    name: ObservationSearch.BooleanParameter
-    nameWithType: ObservationSearch.BooleanParameter
-    fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
+  - uid: JoshAaronMiller.INaturalist.ObservationSearch.License
+    name: ObservationSearch.License
+    nameWithType: ObservationSearch.License
+    fullName: JoshAaronMiller.INaturalist.ObservationSearch.License
   - name: ', '
     nameWithType: ', '
     fullName: ', '
@@ -2080,64 +2160,6 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
-- uid: System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.ObservationSearch.License,System.String}
-  commentId: T:System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.ObservationSearch.License,System.String}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.Dictionary`2
-  name: Dictionary<ObservationSearch.License, String>
-  nameWithType: Dictionary<ObservationSearch.License, String>
-  fullName: System.Collections.Generic.Dictionary<JoshAaronMiller.INaturalist.ObservationSearch.License, System.String>
-  nameWithType.vb: Dictionary(Of ObservationSearch.License, String)
-  fullName.vb: System.Collections.Generic.Dictionary(Of JoshAaronMiller.INaturalist.ObservationSearch.License, System.String)
-  name.vb: Dictionary(Of ObservationSearch.License, String)
-  spec.csharp:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: JoshAaronMiller.INaturalist.ObservationSearch.License
-    name: ObservationSearch.License
-    nameWithType: ObservationSearch.License
-    fullName: JoshAaronMiller.INaturalist.ObservationSearch.License
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: JoshAaronMiller.INaturalist.ObservationSearch.License
-    name: ObservationSearch.License
-    nameWithType: ObservationSearch.License
-    fullName: JoshAaronMiller.INaturalist.ObservationSearch.License
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy,System.String}
   commentId: T:System.Collections.Generic.Dictionary{JoshAaronMiller.INaturalist.ObservationSearch.Geoprivacy,System.String}
   parent: System.Collections.Generic
@@ -2254,24 +2276,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: JoshAaronMiller.INaturalist.ObservationSearch.SetBooleanParameter*
-  commentId: Overload:JoshAaronMiller.INaturalist.ObservationSearch.SetBooleanParameter
-  name: SetBooleanParameter
-  nameWithType: ObservationSearch.SetBooleanParameter
-  fullName: JoshAaronMiller.INaturalist.ObservationSearch.SetBooleanParameter
-- uid: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
-  commentId: T:JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
-  parent: JoshAaronMiller.INaturalist
-  name: ObservationSearch.BooleanParameter
-  nameWithType: ObservationSearch.BooleanParameter
-  fullName: JoshAaronMiller.INaturalist.ObservationSearch.BooleanParameter
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
 - uid: JoshAaronMiller.INaturalist.ObservationSearch.IncludeIds*
   commentId: Overload:JoshAaronMiller.INaturalist.ObservationSearch.IncludeIds
   name: IncludeIds
@@ -2533,6 +2537,13 @@ references:
   name: SetAccuracyMaximum
   nameWithType: ObservationSearch.SetAccuracyMaximum
   fullName: JoshAaronMiller.INaturalist.ObservationSearch.SetAccuracyMaximum
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: JoshAaronMiller.INaturalist.ObservationSearch.SetObservedOnDateLimits*
   commentId: Overload:JoshAaronMiller.INaturalist.ObservationSearch.SetObservedOnDateLimits
   name: SetObservedOnDateLimits
