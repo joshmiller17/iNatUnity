@@ -264,13 +264,13 @@ public class Demo : MonoBehaviour
     public void ToggleThreatened()
     {
         threatened = !threatened;
-        userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.IsThreatened, threatened);
+        userSearch.SetBooleanParameter(SearchObject.BooleanParameter.IsThreatened, threatened);
     }
 
     public void ToggleCaptive()
     {
         captive = !captive;
-        userSearch.SetBooleanParameter(ObservationSearch.BooleanParameter.IsCaptive, captive);
+        userSearch.SetBooleanParameter(SearchObject.BooleanParameter.IsCaptive, captive);
     }
 
     public void TogglePublicDomain()

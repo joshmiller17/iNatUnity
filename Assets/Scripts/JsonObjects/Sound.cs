@@ -11,5 +11,12 @@ namespace JoshAaronMiller.INaturalist
         public int id;
         public string attribution;
         public string license_code;
+        public string secret_token;
+        public string file_content_type;
+        public List<Flag> flags;
+        public int native_sound_id;
+        public bool play_local;
+        //subtype not yet implemented
+        public string file_url;
     }
 }
