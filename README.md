@@ -9,13 +9,13 @@ This repository is not sponsored by or affiliated with Unity Technologies or its
 ## Demo
 A pre-built demo is available for [Windows](https://github.com/joshmiller17/iNatUnity/blob/main/WindowsBuild.zip) and [Mac](https://github.com/joshmiller17/iNatUnity/blob/main/iNatUnity.app.zip).
 
-## Getting Started
+# Getting Started
 1. Add this repository to your Unity project by downloading the code and moving it into your project or by adding it directly from the Unity Asset Store (coming soon!)
 2. For any scripts that want to interact with iNaturalist, import this code by adding `using JoshAaronMiller.INaturalist;` at the top of the file.
 3. Add an `INatManager` component to any GameObject, e.g.: `INatManager myINatManager = gameObject.AddComponent<INatManager>();` or by adding the component in the Unity editor.
 4. Use the INatManager to make calls to the API following the documentation, see the examples below.
 
-### General Usage Notes
+## General Usage Notes
 All calls to the `INatManager` require two parameters: a function to callback when the request returns successfully, and a function to callback when the request fails.
 
 Example:
@@ -36,10 +36,20 @@ public void HandleError(Error error){
 iNatManager.SearchObservations(myObservationSearch, ProcessObservations, HandleError);
 ```
 
+## Authentication
+The demo authenticates in a way that is simple to program but cumbersome for the user, i.e., by asking the user to copy/paste in their API token. For a production-ready application, you would want to instead use a web viewer to load the iNaturalist login screen within the client. See iNaturalist's recommended means for authenticating, [here](https://www.inaturalist.org/pages/api+reference#auth).
 
-### Common Use Cases and Examples
+### Free web viewers
+For free web viewer packages, I have found these options (this is not an endorsement of any software listed below):
 
-#### Fetch sounds
+- **Windows**: https://github.com/tunerok/unity_browser
+- **Everything else**: https://github.com/gree/unity-webview
+- **Android** / **iOS**: https://assetstore.unity.com/packages/tools/utilities/game-package-manager-147711
+
+
+## Common Use Cases and Examples
+
+### Fetch sounds
 **Why**: Your game/project wants to have authentic nature sounds, such as bird calls from real birds of a specific species.
 
 **Example**:
@@ -78,7 +88,7 @@ public void HandleError(Error error){
 
 ```
 
-#### Fetch pictures
+### Fetch pictures
 **Why**: Your game/project wants to use authentic nature photography for flavorful immersion.
 
 **Example**:
@@ -110,7 +120,7 @@ public void HandleError(Error error){
 }
 ```
 
-#### Get information about local flora/fauna
+### Get information about local flora/fauna
 **Why**: Your game/project uses a real-life place and wants to have accurate information about the animals and plants that live in that area.
 
 **Example**:
@@ -150,7 +160,7 @@ public void HandleError(Error error){
 
 ```
 
-#### Help classify images or sounds
+### Help classify images or sounds
 **Why**: Your game/project has a real citizen science component where users can submit labels or vote on existing labels.
 
 **Example**:
