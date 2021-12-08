@@ -37,7 +37,92 @@ iNatManager.SearchObservations(myObservationSearch, ProcessObservations, HandleE
 ```
 
 
-## Common Use Cases and Examples
+### Common Use Cases and Examples
+
+#### Fetch sounds
+**Why**: Your game/project wants to have authentic nature sounds, such as bird calls from real birds of a specific species.
+
+**Example**:
+```
+INatManager iNatManager = gameObject.AddComponent<INatManager>();
+ObservationSearch myObservationSearch = new ObservationSearch();
+myObservationSearch.SetLicense(ObservationSearch.License.Cc0); // fetch only public domain
+myObservationSearch.SetBooleanParameter(SearchObject.BooleanParameter.HasSounds, true);
+
+// set other parameters here to narrow your search as preferred
+myObservationSearch.SetIconicTaxa( 
+    new List<ObservationSearch.IconicTaxon>() { 
+    ObservationSearch.IconicTaxon.Aves }); // fetch only birds
+
+iNatManager.SearchObservations(myObservationSearch, ProcessObservations, HandleError);
+
+public void ProcessObservations(Results<Observations> myObservationResults){
+    List<Observation> myObservations = myObservationResults.results;
+    foreach (Observation o in myObservations){
+        List<Sound> observationSounds = o.sounds;
+        foreach (Sound s in observationSounds){
+            string attribution = s.attribution;
+            string fileUrl = s.file_url;
+            string license = s.license_code;
+            string audioType = s.file_content_type;
+            // do stuff with the sound file, see WebClient.DownloadFile to download
+            // or load directly using UnityWebRequestMultimedia.GetAudioClip
+        }
+    }
+}
+
+public void HandleError(Error error){
+    Debug.LogError(error.status); // print the HTTP status code
+    // other error handling
+}
+
+```
+
+#### Fetch pictures
+**Why**: Your game/project wants to use authentic nature photography for flavorful immersion.
+
+**Example**:
+```
+INatManager iNatManager = gameObject.AddComponent<INatManager>();
+ObservationSearch myObservationSearch = new ObservationSearch();
+myObservationSearch.SetLicense(ObservationSearch.License.Cc0); // fetch only public domain
+myObservationSearch.SetBooleanParameter(SearchObject.BooleanParameter.HasPhotos, true);
+
+// set other parameters here to narrow your search as preferred
+myObservationSearch.SetIconicTaxa( 
+    new List<ObservationSearch.IconicTaxon>() { 
+    ObservationSearch.IconicTaxon.Plantae }); // fetch only plants
+
+iNatManager.SearchObservations(myObservationSearch, ProcessObservations, HandleError);
+
+public void ProcessObservations(Results<Observations> myObservationResults){
+    List<Observation> myObservations = myObservationResults.results;
+    foreach (Observation o in myObservations){
+        List<string> photoUrls = o.GetPhotoUrls(Observation.ImageSize.Large);
+        // do stuff with the photo files, see WebClient.DownloadFile to download
+        // or load directly using UnityWebRequestTexture.GetTexture
+    }
+}
+
+public void HandleError(Error error){
+    Debug.LogError(error.status); // print the HTTP status code
+    // other error handling
+}
+```
+
+#### Get information about local flora/fauna
+**Why**: Your game/project uses a real-life place and wants to have accurate information about the animals and plants that live in that area.
+
+**Example**:
+```
+```
+
+#### Help classify images or sounds
+**Why**: Your game/project has a real citizen science component where users can submit labels or vote on existing labels.
+
+**Example**:
+```
+```
 
 
 # Documentation
