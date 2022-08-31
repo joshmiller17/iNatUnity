@@ -24,7 +24,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="ids">IDs to include</param>
         public void IncludeIds(List<int> ids)
         {
-            stringParams["id"] = string.Join(",", ids);
+            SetStringParameter(StringParameter.IncludeId, string.Join(",", ids));
         }
 
 
@@ -34,7 +34,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="ids">Place IDs to require</param>
         public void IncludePlaceIds(List<int> ids)
         {
-            stringParams["place_id"] = string.Join(",", ids);
+            SetStringParameter(StringParameter.IncludePlaceId, string.Join(",", ids));
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="ids">Taxa IDs to include</param>
         public void IncludeTaxonIds(List<int> ids)
         {
-            stringParams["taxon_id"] = string.Join(",", ids);
+            SetStringParameter(StringParameter.IncludeTaxonId, string.Join(",", ids));
         }
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="ids">Observation taxa IDs to include</param>
         public void IncludeObservationTaxonIds(List<int> ids)
         {
-            stringParams["observation_taxon_id"] = string.Join(",", ids);
+            SetStringParameter(StringParameter.IncludeObservationTaxonId, string.Join(",", ids));
         }
 
         /// <summary>
@@ -61,7 +61,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="ids">Iconic taxa IDs to include</param>
         public void IncludeIconicTaxonIds(List<int> ids)
         {
-            stringParams["iconic_taxon_id"] = string.Join(",", ids);
+            SetStringParameter(StringParameter.IconicTaxonId, string.Join(",", ids));
         }
 
         /// <summary>
@@ -70,7 +70,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="ids">Observation iconic taxa IDs to include</param>
         public void IncludeObservationIconicTaxonIds(List<int> ids)
         {
-            stringParams["observation_iconic_taxon_id"] = string.Join(",", ids);
+            SetStringParameter(StringParameter.ObservationIconicTaxonId, string.Join(",", ids));
         }
 
         /// <summary>
@@ -79,7 +79,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="ids">Taxa IDs to exclude</param>
         public void ExcludeTaxonIds(List<int> ids)
         {
-            stringParams["without_taxon_id"] = string.Join(",", ids);
+            SetStringParameter(StringParameter.ExcludeTaxonId, string.Join(",", ids));
         }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="ids">Observation taxa IDs to exclude</param>
         public void ExcludeObservationTaxonIds(List<int> ids)
         {
-            stringParams["without_observation_taxon_id"] = string.Join(",", ids);
+            SetStringParameter(StringParameter.ExcludeObservationTaxonId, string.Join(",", ids));
         }
 
 
@@ -101,11 +101,11 @@ namespace JoshAaronMiller.INaturalist
         {
             if (start != "")
             {
-                stringParams["observed_d1"] = start;
+                SetStringParameter(StringParameter.IdentificationObservedStartDate, start);
             }
             if (end != "")
             {
-                stringParams["observed_d2"] = start;
+                SetStringParameter(StringParameter.IdentificationObservedEndDate, end);
             }
         }
 
@@ -118,11 +118,11 @@ namespace JoshAaronMiller.INaturalist
         {
             if (start != "")
             {
-                stringParams["d1"] = start;
+                SetStringParameter(StringParameter.StartDate, start);
             }
             if (end != "")
             {
-                stringParams["d2"] = start;
+                SetStringParameter(StringParameter.EndDate, end);
             }
         }
 
@@ -135,11 +135,11 @@ namespace JoshAaronMiller.INaturalist
         {
             if (start != "")
             {
-                stringParams["observation_created_d1"] = start;
+                SetStringParameter(StringParameter.ObservationCreatedStartDate, start);
             }
             if (end != "")
             {
-                stringParams["observation_created_d2"] = start;
+                SetStringParameter(StringParameter.ObservationCreatedEndDate, end);
             }
         }
 
@@ -149,7 +149,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="ranks">The list of taxon ranks to include in the search.</param>
         public void IncludeTaxonRanks(List<TaxonRank> ranks)
         {
-            stringParams["rank"] = string.Join(",", ranks);
+            SetStringParameter(StringParameter.TaxonRank, string.Join(",", ranks));
         }
 
         /// <summary>
@@ -158,7 +158,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="ranks">The list of observation taxon ranks to include in the search.</param>
         public void IncludeObservationTaxonRanks(List<TaxonRank> ranks)
         {
-            stringParams["observation_rank"] = string.Join(",", ranks);
+            SetStringParameter(StringParameter.ObservationTaxonRank, string.Join(",", ranks));
         }
 
         /// <summary>
@@ -167,7 +167,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="userIds">The list of user IDs; limit the search to their identifications.</param>
         public void IncludeIdentificationsByUserId(List<int> userIds)
         {
-            stringParams["user_id"] = string.Join(",", userIds);
+            SetStringParameter(StringParameter.UserId, string.Join(",", userIds));
         }
 
         /// <summary>
@@ -176,7 +176,7 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="userLogins">The list of usernames; limit the search to their identifications.</param>
         public void IncludeIdentificationsByUserLogin(List<int> userLogins)
         {
-            stringParams["user_login"] = string.Join(",", userLogins);
+            SetStringParameter(StringParameter.UserLogin, string.Join(",", userLogins));
         }
 
         /// <summary>
@@ -187,11 +187,11 @@ namespace JoshAaronMiller.INaturalist
         {
             if (categories.Contains("Any"))
             {
-                stringParams.Remove("category"); //Any is already default
+                RemoveStringParameter(StringParameter.Category); //Any is already default
             }
             else
             {
-                stringParams["category"] = string.Join(",", categories);
+                SetStringParameter(StringParameter.Category, string.Join(",", categories));
             }
         }
 
@@ -204,20 +204,20 @@ namespace JoshAaronMiller.INaturalist
         {
             if (lowest != TaxonRank.None)
             {
-                stringParams["lrank"] = lowest.ToString().ToLower();
+                SetStringParameter(StringParameter.LowestRank, lowest.ToString().ToLower());
             }
             else
             {
-                stringParams.Remove("lrank");
+                RemoveStringParameter(StringParameter.LowestRank);
             }
 
             if (highest != TaxonRank.None)
             {
-                stringParams["hrank"] = highest.ToString().ToLower();
+                SetStringParameter(StringParameter.HighestRank, highest.ToString().ToLower());
             }
             else
             {
-                stringParams.Remove("hrank");
+                RemoveStringParameter(StringParameter.HighestRank);
             }
         }
 
@@ -230,12 +230,20 @@ namespace JoshAaronMiller.INaturalist
         {
             if (lowest != TaxonRank.None)
             {
-                stringParams["observation_lrank"] = lowest.ToString().ToLower();
+                SetStringParameter(StringParameter.ObservationLowestRank, lowest.ToString().ToLower());
+            }
+            else
+            {
+                RemoveStringParameter(StringParameter.ObservationLowestRank);
             }
 
             if (highest != TaxonRank.None)
             {
-                stringParams["observation_hrank"] = highest.ToString().ToLower();
+                SetStringParameter(StringParameter.ObservationHighestRank, highest.ToString().ToLower());
+            }
+            else
+            {
+                RemoveStringParameter(StringParameter.ObservationHighestRank);
             }
         }
 
@@ -247,11 +255,11 @@ namespace JoshAaronMiller.INaturalist
         {
             if (quality != QualityGrade.None)
             {
-                stringParams["quality_grade"] = Enums.QualityToString[quality];
+                SetStringParameter(StringParameter.QualityGrade, Enums.QualityToString[quality]);
             }
             else
             {
-                stringParams.Remove("quality_grade");
+                RemoveStringParameter(StringParameter.QualityGrade);
             }
         }
 
@@ -264,11 +272,11 @@ namespace JoshAaronMiller.INaturalist
         {
             if (min >= 0)
             {
-                stringParams["id_above"] = (min - 1).ToString(); //API lists min and max as exclusive
+                SetStringParameter(StringParameter.IdMin, (min - 1).ToString()); //API lists min and max as exclusive
             }
             if (max >= 0)
             {
-                stringParams["id_below"] = (max + 1).ToString(); //API lists min and max as exclusive
+                SetStringParameter(StringParameter.IdMax, (max + 1).ToString()); //API lists min and max as exclusive
             }
         }
 
@@ -279,8 +287,8 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="page">Which page of results to return (default 1).</param>
         public void SetPagination(int resultsPerPage = 30, int page = 1)
         {
-            stringParams["per_page"] = resultsPerPage.ToString();
-            stringParams["page"] = page.ToString();
+            SetStringParameter(StringParameter.PerPage, resultsPerPage.ToString());
+            SetStringParameter(StringParameter.Page, page.ToString());
         }
 
         /// <summary>
@@ -290,8 +298,8 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="sortOrder">Whether to sort ascending or descending.</param>
         public void SetOrder(OrderBy orderBy, SortOrder sortOrder)
         {
-            stringParams["order"] = sortOrder.ToString().ToLower();
-            stringParams["order_by"] = Enums.OrderByToString[orderBy];
+            SetStringParameter(StringParameter.SortOrder, sortOrder.ToString().ToLower());
+            SetStringParameter(StringParameter.OrderBy, Enums.OrderByToString[orderBy]);
         }
     }
 }
