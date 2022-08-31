@@ -29,7 +29,7 @@ namespace JoshAaronMiller.INaturalist
             UnityWebRequest request = UnityWebRequestTexture.GetTexture(fullPath);
             yield return request.SendWebRequest();
 
-            if (request.isHttpError || request.isNetworkError)
+            if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
             {
                 Debug.LogError("LoadImageFromPath failed with status code " + request.responseCode.ToString());
                 Debug.LogError(request.error);

@@ -111,8 +111,8 @@ namespace JoshAaronMiller.INaturalist
             // check if it's an error by interpreting it as an error and seeing if we're wrong
             Error error = FromJson<Error>(json);
 
-            if (!request.isHttpError
-                && !request.isNetworkError
+            if (request.result != UnityWebRequest.Result.ProtocolError
+                && request.result != UnityWebRequest.Result.ConnectionError
                 && error.status == (int)HttpStatusCode.OK)
             {
                 return null;
