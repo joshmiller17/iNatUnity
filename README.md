@@ -217,4 +217,4 @@ The full documentation for this code is available [here](https://joshmiller17.gi
 The official iNaturalist API documentation is available [here](https://api.inaturalist.org/v1/docs/).
 
 ## Support
-For questions or feedback, contact me at miller.josh \[at\] northeastern \[dot\] edu
+For questions or feedback, contact me at josh \[at\] joshaaronmiller \[dot\] com
