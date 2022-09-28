@@ -529,9 +529,15 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="radius">The radius of search in kilometers.</param>
         public void SetBoundingCircle(double lat, double lng, double radius)
         {
-            stringParams["lat"] = lat.ToString();
-            stringParams["lng"] = lng.ToString();
-            stringParams["radius"] = radius.ToString();
+            if (Mathf.Abs((float)lat) > 90 || Mathf.Abs((float)lng) > 180)
+            {
+                Debug.LogError("Invalid latitude and longitude.");
+            }
+            else {
+                stringParams["lat"] = lat.ToString();
+                stringParams["lng"] = lng.ToString();
+                stringParams["radius"] = radius.ToString();
+            }
         }
 
         /// <summary>
@@ -543,10 +549,18 @@ namespace JoshAaronMiller.INaturalist
         /// <param name="swlng">The southwest longitude.</param>
         public void SetBoundingBox(double nelat, double nelng, double swlat, double swlng)
         {
-            stringParams["nelat"] = nelat.ToString();
-            stringParams["nelng"] = nelng.ToString();
-            stringParams["swlat"] = swlat.ToString();
-            stringParams["swlng"] = swlng.ToString();
+            if (Mathf.Abs((float)nelat) > 90 || Mathf.Abs((float)swlat) > 90 ||
+                Mathf.Abs((float)nelng) > 180 || Mathf.Abs((float)swlng) > 180)
+            {
+                Debug.LogError("Invalid latitude and longitude.");
+            }
+            else
+            {
+                stringParams["nelat"] = nelat.ToString();
+                stringParams["nelng"] = nelng.ToString();
+                stringParams["swlat"] = swlat.ToString();
+                stringParams["swlng"] = swlng.ToString();
+            }
         }
 
 
