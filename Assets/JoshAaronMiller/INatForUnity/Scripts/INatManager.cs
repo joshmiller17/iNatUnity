@@ -185,6 +185,9 @@ namespace JoshAaronMiller.INaturalist
             {
                 errorCallback(error);
             }
+
+            // would be safer to wrap all calls in using blocks, but that makes it harder to use this generic request function
+            request.Dispose();
         }
 
         /// <summary>
